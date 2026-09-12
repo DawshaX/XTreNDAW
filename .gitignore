@@ -1,0 +1,35 @@
+# === أسرار — ممنوع تدخل git أبدًا ===
+secrets.txt
+.env
+*.secret
+token*.json
+state/tokens.json
+
+# === ميديا — تروح Artifacts/Releases مش git ===
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.m4a
+work/
+content/out/
+content/media_cache/
+
+# === بايثون ===
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# === حالة محلية ===
+state/*.db
+state/*.db-journal
+state/*.json
+!state/.gitkeep
+
+# === نظام ===
+.DS_Store
+node_modules/
