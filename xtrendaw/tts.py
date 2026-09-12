@@ -1,0 +1,206 @@
+"""التعليق الصوتي + توقيت كلمة-بكلمة (أساس مزامنة الكابتشنز).
+
+المصدر: edge-tts — مجاني، شغال من السيرفر (مايكروسوفت قفلته في المتصفحات
+من 2025-12-17 بس السيرفر بيتحكم في هيدر الـWebSocket).
+خدمة غير رسمية → أي فشل هنا لازم يطلع رسالة واضحة، مش استثناء غامض.
+"""
+from __future__ import annotations
+
+import asyncio
+import json
+import shutil
+import subprocess
+from pathlib import Path
+
+from . import settings
+
+_FFMPEG: str | None = None
+
+
+def ffmpeg() -> str:
+    """ffmpeg من النظام، وإلا من حزمة imageio-ffmpeg الثابتة."""
+    global _FFMPEG
+    if _FFMPEG is None:
+        found = shutil.which("ffmpeg")
+        if not found:
+            import imageio_ffmpeg
+
+            found = imageio_ffmpeg.get_ffmpeg_exe()
+        _FFMPEG = found
+    return _FFMPEG
+
+
+def probe_duration(path: Path) -> float:
+    """مدة ملف بالثواني — عن طريق ffmpeg (من غير ffprobe)."""
+    import re
+
+    r = subprocess.run([ffmpeg(), "-i", str(path)], capture_output=True, text=True)
+    m = re.search(r"Duration: (\d+):(\d+):(\d+\.?\d*)", r.stderr)
+    if not m:
+        return 0.0
+    h, mi, s = m.groups()
+    return int(h) * 3600 + int(mi) * 60 + float(s)
+
+
+def to_wav(src: Path, dst: Path, rate: int = 44100) -> Path:
+    """تحويل إلى WAV موحد — لازم قبل الدمج في الفيديو."""
+    subprocess.run(
+        [ffmpeg(), "-y", "-i", str(src), "-ar", str(rate), "-ac", "2",
+         "-c:a", "pcm_s16le", str(dst)],
+        capture_output=True, check=True,
+    )
+    return dst
+
+
+def _spread(sentence: str, start: float, end: float) -> list[dict]:
+    """يوزّع مدة جملة على كلماتها بوزن طول الكلمة.
+
+    ده البديل الضروري لأن edge-tts 7.2.8 بيرجع SentenceBoundary فقط
+    (مقيس على ar-EG-SalmaNeural وar-SA-ZariyahNeural وen-US-JennyNeural) —
+    فأي كود بيعتمد على WordBoundary هياخد قايمة فاضية.
+    """
+    tokens = sentence.split()
+    if not tokens:
+        return []
+    weights = [max(1, len(t)) for t in tokens]
+    total_w = sum(weights)
+    span = max(0.0, end - start)
+    out: list[dict] = []
+    cursor = start
+    for tok, w in zip(tokens, weights):
+        piece = span * w / total_w
+        out.append({"word": tok, "start": round(cursor, 3),
+                    "end": round(cursor + piece, 3)})
+        cursor += piece
+    return out
+
+
+async def _synth_line(text: str, voice: str, out_mp3: Path) -> dict:
+    """يولّد سطرًا ويعيد {words, sentences, source}.
+
+    source = "word" (توقيتات أصلية من الخدمة) أو "sentence" (موزّعة من الجمل)
+    أو "estimated" (مفيش حدود خالص).
+    """
+    import edge_tts
+
+    word_bounds: list[dict] = []
+    sent_bounds: list[dict] = []
+    out_mp3.parent.mkdir(parents=True, exist_ok=True)
+
+    communicate = edge_tts.Communicate(
+        text, voice, rate=settings.VOICE_RATE, pitch=settings.VOICE_PITCH
+    )
+    with open(out_mp3, "wb") as audio:
+        async for chunk in communicate.stream():
+            kind = chunk["type"]
+            if kind == "audio":
+                audio.write(chunk["data"])
+            elif kind in ("WordBoundary", "SentenceBoundary"):
+                # offset/duration بوحدات 100 نانوثانية
+                rec = {
+                    "text": chunk.get("text", ""),
+                    "start": chunk["offset"] / 10_000_000,
+                    "end": (chunk["offset"] + chunk["duration"]) / 10_000_000,
+                }
+                (word_bounds if kind == "WordBoundary" else sent_bounds).append(rec)
+
+    if not out_mp3.exists() or out_mp3.stat().st_size == 0:
+        raise RuntimeError(f"edge-tts رجع صوت فاضي للنص: {text[:40]!r}")
+
+    if word_bounds:
+        words = [{"word": w["text"], "start": round(w["start"], 3),
+                  "end": round(w["end"], 3)} for w in word_bounds]
+        return {"words": words, "sentences": sent_bounds, "source": "word"}
+
+    if sent_bounds:
+        words = []
+        for sb in sent_bounds:
+            words.extend(_spread(sb["text"], sb["start"], sb["end"]))
+        if words:
+            return {"words": words, "sentences": sent_bounds, "source": "sentence"}
+
+    return {"words": [], "sentences": sent_bounds, "source": "empty"}
+
+
+def synthesize_line(text: str, lang: str, out_dir: Path, name: str = "line") -> dict:
+    """سطر واحد → {mp3, wav, duration, words, timing_source}."""
+    voice = settings.VOICE_EN if lang == "en" else settings.VOICE_AR
+    out_dir.mkdir(parents=True, exist_ok=True)
+    mp3 = out_dir / f"{name}.mp3"
+
+    r = asyncio.run(_synth_line(text, voice, mp3))
+    duration = probe_duration(mp3)
+    if duration <= 0:
+        raise RuntimeError(f"مدة الصوت صفر لـ{name} — edge-tts فشل")
+
+    words = r["words"]
+    # لو الخدمة مارجعتش أي حد زمني: وزّع على مدة الملف الحقيقية
+    if not words:
+        words = _spread(text, 0.0, duration)
+        r["source"] = "estimated"
+    # تصحيح: التوقيتات لازم ماتعدّاش مدة الملف الفعلية
+    elif words[-1]["end"] > duration:
+        scale = duration / words[-1]["end"]
+        words = [{"word": w["word"], "start": round(w["start"] * scale, 3),
+                  "end": round(w["end"] * scale, 3)} for w in words]
+
+    wav = to_wav(mp3, out_dir / f"{name}.wav")
+    return {"mp3": mp3, "wav": wav, "duration": duration,
+            "words": words, "timing_source": r["source"]}
+
+
+def synthesize_segments(segments: list[dict], lang: str, out_dir: Path) -> dict:
+    """كل مقاطع الحلقة → ملف صوت واحد + توقيتات مطلقة لكل كلمة.
+
+    segments: [{"seg": "hook"|"fact1"…, "text": "…"}]
+    يعيد: {"wav", "total_duration", "items": [{seg, text, start, end, words}]}
+    """
+    out_dir.mkdir(parents=True, exist_ok=True)
+    items: list[dict] = []
+    wavs: list[Path] = []
+    offset = 0.0
+
+    for i, seg in enumerate(segments):
+        text = (seg.get("text") or "").strip()
+        if not text:
+            continue
+        r = synthesize_line(text, lang, out_dir, name=f"seg{i}")
+        wavs.append(r["wav"])
+        items.append({
+            "seg": seg.get("seg", f"seg{i}"),
+            "text": text,
+            "start": round(offset, 3),
+            "end": round(offset + r["duration"], 3),
+            "timing_source": r["timing_source"],
+            "words": [
+                {**w, "start": round(w["start"] + offset, 3),
+                 "end": round(w["end"] + offset, 3)}
+                for w in r["words"]
+            ],
+        })
+        offset += r["duration"]
+
+    if not items:
+        raise RuntimeError("مفيش مقاطع صوتية اتولدت — السيناريو فاضي")
+
+    # دمج كل المقاطع في ملف واحد بالترتيب (re-encode عشان الترميز يتوحد)
+    list_file = out_dir / "concat.txt"
+    list_file.write_text(
+        "".join(f"file '{p.name}'\n" for p in wavs), encoding="utf-8"
+    )
+    final_wav = out_dir / "narration.wav"
+    subprocess.run(
+        [ffmpeg(), "-y", "-f", "concat", "-safe", "0", "-i", str(list_file),
+         "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le", str(final_wav)],
+        capture_output=True, check=True, cwd=str(out_dir),
+    )
+
+    plan = {"wav": final_wav, "total_duration": offset, "items": items}
+    (out_dir / "plan.json").write_text(
+        json.dumps(
+            {k: (str(v) if isinstance(v, Path) else v) for k, v in plan.items()},
+            ensure_ascii=False, indent=1,
+        ),
+        encoding="utf-8",
+    )
+    return plan

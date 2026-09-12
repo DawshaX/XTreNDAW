@@ -1,0 +1,97 @@
+"""الإعدادات المركزية.
+
+قاعدة إلزامية: **مفيش قيمة سرية مكتوبة هنا**. كل حاجة من متغيرات البيئة
+(محليًا: .env/secrets.txt المهمل في git · على GitHub: Secrets).
+"""
+from __future__ import annotations
+
+import os
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+WORK = ROOT / "work"
+OUT = ROOT / "content" / "out"
+STATE = ROOT / "state"
+ASSETS = ROOT / "assets"
+FONTS = ASSETS / "fonts"
+
+for _d in (WORK, OUT, STATE, FONTS):
+    _d.mkdir(parents=True, exist_ok=True)
+
+
+def get(key: str, default: str = "") -> str:
+    return (os.environ.get(key) or default).strip()
+
+
+def get_int(key: str, default: int) -> int:
+    try:
+        return int(float(get(key, str(default))))
+    except ValueError:
+        return default
+
+
+def get_float(key: str, default: float) -> float:
+    try:
+        return float(get(key, str(default)))
+    except ValueError:
+        return default
+
+
+def get_bool(key: str, default: bool = False) -> bool:
+    v = get(key, "").lower()
+    return default if not v else v in ("1", "true", "yes", "on")
+
+
+# ─────────────────────────────────────────────────────────────
+# مواصفات الفيديو — ثابتة لأن المنصات بتفرضها، مش تفضيل
+# ─────────────────────────────────────────────────────────────
+VIDEO = {
+    "width": 1080,
+    "height": 1920,          # 9:16 مطلوب لـReels/Shorts
+    "fps": 30,               # إنستجرام يقبل 23–60
+    "vcodec": "libx264",     # H.264 — إنستجرام يرفض غيره (خطأ 24)
+    "acodec": "aac",         # AAC إلزامي
+    "max_seconds": 90,       # حد إنستجرام API للـReels
+    "target_seconds": 55,    # الهدف: 35–55 ثانية
+    "max_bytes": 40 * 1024 * 1024,  # ≤40MB (حد إنستجرام 100MB — هامش أمان)
+}
+
+# ─────────────────────────────────────────────────────────────
+# الصوت
+# ─────────────────────────────────────────────────────────────
+VOICE_AR = get("XT_VOICE_AR", "ar-EG-SalmaNeural")
+VOICE_EN = get("XT_VOICE_EN", "en-US-JennyNeural")
+VOICE_RATE = get("XT_VOICE_RATE", "+8%")
+VOICE_PITCH = get("XT_VOICE_PITCH", "+12Hz")
+
+# ─────────────────────────────────────────────────────────────
+# LLM مجاني (Groq) — اختياري، والمحرك شغال بدونه
+# ─────────────────────────────────────────────────────────────
+LLM = {
+    "base": get("LLM_API_BASE"),
+    "key": get("LLM_API_KEY"),
+    "model": get("LLM_MODEL", "llama-3.3-70b-versatile"),
+}
+
+PEXELS_KEY = get("PEXELS_API_KEY")
+
+TELEGRAM = {"bot_token": get("TELEGRAM_BOT_TOKEN"), "chat_id": get("TELEGRAM_CHAT_ID")}
+
+
+def has_llm() -> bool:
+    return bool(LLM["base"] and LLM["key"])
+
+
+def has_telegram() -> bool:
+    return bool(TELEGRAM["bot_token"] and TELEGRAM["chat_id"])
+
+
+def has_pexels() -> bool:
+    return bool(PEXELS_KEY)
+
+
+BRAND = {
+    "name": "XTreNDAW",
+    "hashtags": "#حقائق #علوم #XTreNDAW",
+    "outro_ar": "تابع XTreNDAW — الحلقة الجاية أقوى.",
+}
