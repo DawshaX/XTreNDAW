@@ -81,11 +81,15 @@ def _draw_centered(draw: ImageDraw.ImageDraw, line: str, W: int, y: int,
 
 def text_image(text: str, out_path: Path, canvas=(1080, 1920), font_size=76,
                fill="#FFFFFF", stroke="#000000", stroke_width=6,
-               y_ratio=0.62, max_width_ratio=0.86, bold=True) -> Path:
+               y_ratio=0.62, max_width_ratio=0.86, bold=True,
+               font_path=None) -> Path:
     W, H = canvas
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
-    font = _font(font_size, bold)
+    if font_path:
+        font = ImageFont.truetype(str(font_path), font_size)
+    else:
+        font = _font(font_size, bold)
     lines = [l for l in wrap_ar(text, font, int(W * max_width_ratio))]
     shaped_lines = [l for l in lines if l.strip()]
     if not shaped_lines:

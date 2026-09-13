@@ -91,9 +91,11 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Ayah,Tajawal,84,&H00FFFFFF,&H000000FF,&H00000000,&H7A000000,-1,0,0,0,100,100,0,0,1,4,2,5,60,60,0,1
+Style: Ayah,Amiri Quran,106,&H00FFFFFF,&H000000FF,&H00000000,&H8A000000,0,0,0,0,100,100,0,0,1,3,2,5,70,70,0,1
 Style: Trj,Tajawal,44,&H00B6FFB6,&H000000FF,&H00000000,&H7A000000,0,0,0,0,100,100,0,0,1,3,1,2,60,60,150,1
 Style: Shr,Tajawal,56,&H00D6C9A6,&H000000FF,&H00000000,&H7A000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,220,1
+Style: Hdr,Amiri Quran,58,&H009AD8FF,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,2,8,60,60,90,1
+Style: WM,Tajawal,30,&H8CFFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,2,0,1,2,0,9,50,50,60,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -105,6 +107,26 @@ def _t(s: float) -> str:
     m = int(s % 3600 // 60)
     sec = s % 60
     return f"{h}:{m:02d}:{sec:05.2f}"
+
+
+_AR = "٠١٢٣٤٥٦٧٨٩"
+
+
+def _ar_num(n: int) -> str:
+    return "".join(_AR[int(c)] for c in str(n))
+
+
+def _trim_sent(text: str, limit: int = 200) -> str:
+    """قصّ على حد جملة حتى تفضل الفائدة مقروءة."""
+    t = text.strip().replace("\n", " ")
+    if len(t) <= limit:
+        return t
+    cut = t[:limit]
+    for sep in ("۔", ".", "،", "؛", " "):
+        i = cut.rfind(sep)
+        if i > limit // 2:
+            return cut[: i + 1].strip()
+    return cut + "…"
 
 
 def _get_json(url: str) -> dict:
@@ -149,15 +171,32 @@ def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
     return {"base": base, "overlays": [], "grade": "soft"}
 
 
-def _end_card(workdir: Path) -> dict:
-    base = scenes.render_bg(workdir / "end" / "base.png", "outro", "noor-end")
-    ov = [scenes._brand_layer(workdir / "end" / "brand.png")]
-    from . import textrender
+def _end_card(workdir: Path, fayda: str, seconds: float) -> dict:
+    """كرت الختام: لقطة حيّة هادئة + فائدة الآية/الدعاء + الهوية."""
+    from . import footage, textrender
+
+    d = workdir / "end"
+    clip = None
+    for qq in ("kaaba mecca night", "candle flame dark", "stars night sky",
+               "aurora night"):
+        clip = footage.fetch_clip(qq, seconds, d, f"end-{qq}")
+        if clip:
+            break
+    ov = [scenes._brand_layer(d / "brand.png")]
     ov.append(textrender.text_image(
-        "نُورٌ يُشرِق… تابِع XDAW NOVA", workdir / "end" / "txt.png",
-        canvas=(1080, 1920), font_size=64, y_ratio=0.5, fill="#ffd9a0",
-        stroke="#000000", stroke_width=5))
-    return {"base": base, "overlays": ov}
+        "﴿ فَائِدَةٌ وَنُور ﴾", d / "h.png", font_size=54, y_ratio=0.28,
+        fill="#ffd9a0", stroke_width=4,
+        font_path=settings.FONTS / "AmiriQuran-Regular.ttf"))
+    ov.append(textrender.text_image(fayda, d / "f.png", font_size=46,
+                                    y_ratio=0.52, fill="#f7ecd7",
+                                    stroke_width=4))
+    ov.append(textrender.text_image("XDAW NOVA — انشر الخير", d / "b.png",
+                                    font_size=30, y_ratio=0.90,
+                                    fill="#ffffff", stroke_width=3))
+    if clip:
+        return {"video": clip, "overlays": ov, "grade": "soft"}
+    return {"base": scenes.render_bg(d / "base.png", "outro", "noor-end"),
+            "overlays": ov}
 
 
 def produce_din(kind: str, workdir: Path, reciter_idx: int = 0) -> dict:
@@ -175,25 +214,33 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0) -> dict:
         spec = {**spec, "style": "cinema" if kind == "qissa" else "cosmic"}
         ayahs = _get_json(f"{APIQ}/surah/{spec['surah']}/quran-uthmani")["ayahs"]
         sel = [a for a in ayahs if spec["frm"] <= a["numberInSurah"] <= spec["to"]]
-        sname = _get_json(f"{APIQ}/surah/{spec['surah']}/quran-uthmani")["name"]
+        q = _get_json(f"{APIQ}/surah/{spec['surah']}/quran-uthmani")
+        sname = q["name"]
+        meta = _get_json(f"{APIQ}/surah/{spec['surah']}")
+        rev = "مَكِّيَّة" if meta.get("revelationType") == "Meccan" else "مَدَنِيَّة"
         title = f"{sname} ﴿{spec['frm']}–{spec['to']}﴾ — {rec_name}"
-        tafs = None
-        if kind == "tafsir":
-            t = _get_json(f"{APIQ}/surah/{spec['surah']}/ar.muyassar")["ayahs"]
-            tafs = {a["numberInSurah"]: a["text"] for a in t}
+        t = _get_json(f"{APIQ}/surah/{spec['surah']}/ar.muyassar")["ayahs"]
+        tafs = {a["numberInSurah"]: a["text"] for a in t}
+        fayda = _trim_sent(tafs.get(spec["frm"], ""), 190)
+        fayda = f"نزلت {rev}. {fayda}"
+        # ترويسة السورة أول ٣٫٥ ثانية
+        events.append({"style": "Hdr",
+                       "text": f"{sname} • {rev}",
+                       "start": 0.0, "end": 3.5})
 
         off = 0.0
         for i, a in enumerate(sel):
             wav = _ayah_audio(a["number"], reciter, workdir)
             d = probe_duration(wav)
             wavs.append(wav)
-            events.append({"style": "Ayah", "text": a["text"],
+            events.append({"style": "Ayah",
+                           "text": f"{a['text']} ﴿{_ar_num(a['numberInSurah'])}﴾",
                            "start": off, "end": off + d})
             sc = _scene_media(i, spec, workdir, spec["id"], d)
             sc.update(start=off, end=off + d)
             scene_list.append(sc)
             off += d
-            if tafs:
+            if kind == "tafsir":
                 r = synthesize_line(f"قال المفسر: {tafs[a['numberInSurah']]}", "ar",
                                     workdir / "shr", name=f"t{i}",
                                     rate="-8%", pitch="-2Hz")
@@ -240,6 +287,10 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0) -> dict:
         events.append({"style": "Trj", "text": item["src"],
                        "start": base_off, "end": base_off + r["duration"]})
         off = base_off + r["duration"]
+        fayda = ("الدعاء عبادةٌ تُشرَح بها الصدور ويُرَدّ بها البلاء — "
+                 "اجعله وَردَك اليوم." if kind == "dua" else
+                 "علمٌ يُعمَل به ويُنشَر يضاعِف اللهُ به الأجر — "
+                 "اعمل به وذكِّر غيرك.")
         qs = ["mosque night lights", "kaaba mecca", "quran book candle",
               "praying hands sky", "dawn mountains peace"]
         n = 3
@@ -252,10 +303,16 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0) -> dict:
             scene_list.append(sc)
         ep_id = f"noor-{kind}-{reciter_idx % len(items)}"
 
-    # كرت الختام + صمت 3ث
-    wavs.append(_silence(workdir / "end.wav", 3.0))
-    scene_list.append({**_end_card(workdir), "start": off, "end": off + 3.0})
-    total = off + 3.0
+    # كرت الختام: فائدة مسموعة فوق لقطة حيّة هادئة
+    fr = synthesize_line(fayda, "ar", workdir / "end", name="fayda",
+                         rate="-7%", pitch="-2Hz")
+    wavs.append(fr["wav"])
+    end_dur = fr["duration"] + 1.0
+    scene_list.append({**_end_card(workdir, fayda, end_dur),
+                       "start": off, "end": off + end_dur})
+    events.append({"style": "WM", "text": "نُور • XDAW NOVA",
+                   "start": 0.0, "end": off + end_dur})
+    total = off + end_dur
 
     # دمج الصوت + كتابة ASS + تجميع
     list_f = workdir / "vox.txt"
@@ -270,8 +327,18 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0) -> dict:
     lines = [ASS_HEADER]
     for ev in events:
         txt = ev["text"].replace("\n", " ")
-        lines.append(f"Dialogue: 0,{_t(ev['start'])},{_t(ev['end'])},{ev['style']},"
-                     f",0,0,0,,{{\\fad(450,350)}}{txt}\n")
+        st = ev["style"]
+        if st == "Ayah":
+            # دخول نبضي ناعم: الآية تتنفّس للداخل بدل القطع الناشف
+            fx = "{\\fad(320,240)\\fscx88\\fscy88\\t(80,560,\\fscx100\\fscy100)}"
+        elif st == "Hdr":
+            fx = "{\\fad(600,400)}"
+        elif st == "WM":
+            fx = "{\\fad(1200,800)}"
+        else:
+            fx = "{\\fad(450,350)}"
+        lines.append(f"Dialogue: 0,{_t(ev['start'])},{_t(ev['end'])},{st},"
+                     f",0,0,0,,{fx}{txt}\n")
     ass.write_text("".join(lines), encoding="utf-8")
 
     out = settings.OUT / f"{ep_id}.mp4"
