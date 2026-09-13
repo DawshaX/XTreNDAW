@@ -75,6 +75,28 @@ LLM = {
 
 PEXELS_KEY = get("PEXELS_API_KEY")
 
+YOUTUBE = {
+    "client_id": get("YOUTUBE_CLIENT_ID"),
+    "client_secret": get("YOUTUBE_CLIENT_SECRET"),
+    "refresh_token": get("YOUTUBE_REFRESH_TOKEN"),
+}
+FACEBOOK = {"page_id": get("FACEBOOK_PAGE_ID"), "token": get("FACEBOOK_PAGE_TOKEN")}
+INSTAGRAM = {"user_id": get("INSTAGRAM_USER_ID"), "token": get("INSTAGRAM_ACCESS_TOKEN")}
+
+DAILY_CAP = get_int("XT_DAILY_CAP", 4)          # سقف نشر آمن/يوم
+
+
+def has_youtube() -> bool:
+    return all(YOUTUBE.values())
+
+
+def has_facebook() -> bool:
+    return bool(FACEBOOK["page_id"] and FACEBOOK["token"])
+
+
+def has_instagram() -> bool:
+    return bool(INSTAGRAM["user_id"] and INSTAGRAM["token"])
+
 TELEGRAM = {"bot_token": get("TELEGRAM_BOT_TOKEN"), "chat_id": get("TELEGRAM_CHAT_ID")}
 
 

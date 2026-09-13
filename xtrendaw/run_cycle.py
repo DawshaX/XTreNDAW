@@ -50,6 +50,7 @@ def _produce(topic: dict, upload: bool = True) -> int:
             _log(f"☁ على GitHub: {urls['video']}")
         except Exception as e:  # فشل الرفع ما يوقفش الدورة
             _log(f"⚠ رفع GitHub اتخطى: {str(e)[:120]}")
+    _publish(topic, r, urls)
     state.mark_produced(topic, str(r["video"]), info["duration"], urls=urls)
     _log(
         f"✓ {topic['id']} في {dt:.0f}ث — "
@@ -68,6 +69,33 @@ def _auto_id(topics: list[dict]) -> str:
             except ValueError:
                 pass
     return f"auto-{mx + 1:03d}"
+
+
+def _publish(topic, r: dict, urls: dict) -> None:
+    """ينشر على المنصات المتصلة بس — رابط Releases العام هو مصدر الفيديو."""
+    from . import publish
+    video_url = urls.get("video")
+    if not video_url:
+        return  # من غير رابط عام مفيش نشر (إنستجرام/فيسبوك بيحتاجوه)
+    title = topic["title_ar"]
+    caption = content.make_caption(topic)
+    tags = [t.strip() for t in topic.get("tags", "").split(",") if t.strip()]
+    for name, mod, ok in (("youtube", publish.youtube, settings.has_youtube),
+                          ("facebook", publish.facebook, settings.has_facebook),
+                          ("instagram", publish.instagram, settings.has_instagram)):
+        if not ok():
+            continue
+        try:
+            if name == "youtube":
+                url, err = mod.publish(r["video"], title, caption, tags)
+            else:
+                url, err = mod.publish(video_url, title, caption, tags)
+            if err:
+                _log(f"⚠ {name}: {err[:100]}")
+            else:
+                _log(f"📣 {name}: {url}")
+        except Exception as e:  # النشر ما يكسرش الدورة أبدًا
+            _log(f"⚠ {name} اتخطى: {str(e)[:100]}")
 
 
 def main() -> int:
