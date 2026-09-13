@@ -33,7 +33,7 @@ def compose_cover(topic: dict, out_path: Path, seed: str = "") -> Path:
 
     # اللوجو فوق العنوان — قالب ثابت
     if settings.LOGO.exists():
-        logo = Image.open(settings.LOGO).convert("RGBA").resize((260, 260), Image.LANCZOS)
+        logo = scenes.load_logo(260)
         base.paste(logo, ((W - 260) // 2, int(H * 0.16)), logo)
 
     # اسم البراند + التاجلاين تحت

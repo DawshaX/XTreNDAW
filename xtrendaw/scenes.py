@@ -177,3 +177,119 @@ def render_scene(out_path: Path, kind: str, text: str, seed: str,
     _watermark(base)
     base.save(out_path, "PNG")
     return out_path
+
+STYLE = {
+    "hook":  "epic cinematic reveal, dramatic, mysterious",
+    "fact":  "ultra-detailed sci-fi illustration, cinematic lighting",
+    "outro": "glowing futuristic emblem, heroic",
+}
+
+
+def _ai_prompt(kind: str, subject: str) -> str:
+    base_style = ("dark futuristic sci-fi scene, red and cyan neon glow, cyberpunk, "
+                  "high detail, dramatic cinematic lighting, 9:16 vertical, no text, no watermark")
+    flavor = STYLE.get("fact" if kind.startswith("fact") else kind, STYLE["fact"])
+    return f"{subject}, {flavor}, {base_style}"
+
+
+def fetch_ai_visual(prompt: str, out_path: Path, seed: int) -> bool:
+    """صورة AI قوية من Pollinations (مجاني/بلا مفتاح) مقصوصة 1080×1920."""
+    import urllib.parse
+    import requests
+    url = ("https://image.pollinations.ai/prompt/"
+           + urllib.parse.quote(prompt)
+           + f"?width=768&height=1344&seed={seed}&nologo=true")
+    try:
+        r = requests.get(url, timeout=90)
+        if not r.ok or not r.content:
+            return False
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_bytes(r.content)
+        img = Image.open(out_path).convert("RGB")
+        w, h = img.size
+        img = img.crop((0, 0, w, h - max(24, h // 25)))  # قصّ علامة المصدر السفلية
+        # cover-crop لـ1080×1920
+        w, h = img.size
+        tw, th = W, H
+        scale = max(tw / w, th / h)
+        img = img.resize((int(w * scale), int(h * scale)), Image.LANCZOS)
+        w, h = img.size
+        left = (w - tw) // 2; top = (h - th) // 2
+        img = img.crop((left, top, left + tw, top + th))
+        img.save(out_path, "PNG")
+        return True
+    except Exception:
+        return False
+
+
+def load_logo(size: int, alpha: int = 255) -> Image.Image:
+    """لوجو XDAW NOVA بمقاس معين والخلفية السوداء متحوّلة لشفافية."""
+    logo = Image.open(settings.LOGO).convert("RGBA").resize((size, size), Image.LANCZOS)
+    arr = np.array(logo)
+    lum = arr[:, :, :3].max(axis=2).astype(np.float32)
+    arr[:, :, 3] = np.minimum(arr[:, :, 3], np.clip(lum * 1.6, 0, 255)).astype(np.uint8)
+    logo = Image.fromarray(arr, "RGBA")
+    if alpha < 255:
+        a = logo.getchannel("A").point(lambda v: int(v * alpha / 255))
+        logo.putalpha(a)
+    return logo
+
+
+def _brand_layer(out_path: Path) -> Path:
+    """طبقة شفافة ثابتة: لوجو XDAW NOVA فوق-يمين + تدرّج سينمائي فوق/تحت
+    (يضبط قراءة الكابتشن ويخفي أي علامة مصدر صغيرة)."""
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    logo_path = settings.LOGO
+    if logo_path.exists():
+        size = 150
+        lg = load_logo(size, 215)
+        layer.paste(lg, (W - size - 40, 40), lg)
+    grad = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(grad)
+    gh = int(H * 0.18)
+    for i in range(gh):  # تحت: قراءة الكابتشن + إخفاء علامة المصدر
+        alpha = int(215 * (i / gh) ** 1.6)
+        d.line([(0, H - gh + i), (W, H - gh + i)], fill=(6, 0, 2, alpha), width=1)
+    gt = int(H * 0.10)
+    for i in range(gt):  # فوق: تثبيت اللوجو والشارة
+        alpha = int(120 * (1 - i / gt) ** 1.6)
+        d.line([(0, i), (W, i)], fill=(6, 0, 2, alpha), width=1)
+    layer = Image.alpha_composite(layer, grad)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    layer.save(out_path, "PNG")
+    return out_path
+
+
+def build_scene(kind: str, text: str, seed: str, workdir: Path,
+                subject: str = "", chip: str = "") -> dict:
+    """مشهد = قاعدة (AI أو نيون احتياطي) + طبقات نص شفافة.
+
+    بيرجع {"base": Path, "overlays":[Path,...]} عشان الفيديو يركّبها.
+    """
+    workdir.mkdir(parents=True, exist_ok=True)
+    rng = _seeded(seed)
+    base = workdir / "base.png"
+    prompt = _ai_prompt(kind, subject or text)
+    if not fetch_ai_visual(prompt, base, int(rng.integers(1, 10_000_000))):
+        base = render_bg(base, kind, seed)  # وقوع آمن للنيون
+
+    pal = PALETTES.get(kind, PALETTES["fact1"])
+    st = STYLE_FONT.get("fact" if kind.startswith("fact") else kind, STYLE_FONT["fact"])
+    overlays = []
+    if chip:
+        overlays.append(textrender.text_image(
+            chip, workdir / "chip.png", canvas=(W, H), font_size=56,
+            fill=pal["neon"], y_ratio=st["y"] - 0.17, max_width_ratio=0.8, stroke_width=4))
+    overlays.append(textrender.text_image(
+        text or settings.BRAND["name"], workdir / "txt.png", canvas=(W, H),
+        font_size=st["size"], y_ratio=st["y"], max_width_ratio=st["max"],
+        fill="#f4fffb", stroke="#000000", stroke_width=6))
+    overlays.append(_brand_layer(workdir / "brand.png"))  # لوجو + تدرّج — قالب ثابت
+    return {"base": base, "overlays": overlays}
+
+
+STYLE_FONT = {
+    "hook":  {"size": 92, "y": 0.42, "max": 0.84},
+    "outro": {"size": 82, "y": 0.44, "max": 0.82},
+    "fact":  {"size": 70, "y": 0.46, "max": 0.86},
+}

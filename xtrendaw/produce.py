@@ -19,8 +19,9 @@ def produce_episode(topic: dict, workdir: Path) -> dict:
         shutil.rmtree(workdir)
     workdir.mkdir(parents=True, exist_ok=True)
 
-    # 1) السيناريو
+    # 1) السيناريو (عربي للصوت + إنجليزي للقراءة/الـAI)
     segs = content.compose_script(topic, "ar")
+    en_lines = content.english_lines(topic)
 
     # 2) الصوت + التوقيتات
     plan = tts.synthesize_segments(segs, "ar", workdir / "tts")
@@ -28,7 +29,8 @@ def produce_episode(topic: dict, workdir: Path) -> dict:
     if total <= 0:
         raise RuntimeError("مدة الصوت صفر")
 
-    # 3) المشاهد — مشهد لكل مقطع، بنفس مدته
+    # 3) المشاهد — قاعدة AI قوية (Pollinations) أو نيون احتياطي + طبقات نص
+    from . import music as _music
     scene_list: list[dict] = []
     for i, item in enumerate(plan["items"]):
         kind = item["seg"] if item["seg"] in ("hook", "outro") else f"fact{(i % 3) + 1}"
@@ -36,11 +38,19 @@ def produce_episode(topic: dict, workdir: Path) -> dict:
         if ":" in text:
             text = text.split(":", 1)[1].strip()
         chip = CHIPS_AR[i - 1] if kind.startswith("fact") and 1 <= i <= 3 else ""
-        path = scenes.render_scene(
-            workdir / f"scene_{i:02d}.png", kind, text,
-            seed=f"{topic['id']}:{i}", chip=chip,
-        )
-        scene_list.append({"path": path, "start": item["start"], "end": item["end"]})
+        subject = ""
+        if i < len(en_lines):
+            subject = en_lines[i]
+            if ":" in subject:
+                subject = subject.split(":", 1)[1].strip()
+        sc = scenes.build_scene(kind, text, seed=f"{topic['id']}:{i}",
+                                workdir=workdir / f"sc{i:02d}", subject=subject, chip=chip)
+        sc["start"] = item["start"]
+        sc["end"] = item["end"]
+        scene_list.append(sc)
+
+    # 3.5) موسيقى خلفية مولّدة (بلا حقوق)
+    music_path = _music.make_music(plan["total_duration"], workdir / "music.wav")
 
     # 4) الكابتشنز المتزامنة (ASS — libass بيتكفل بالتشكيل العربي)
     #    + سطر إنجليزي موازٍ لكل مقطع عشان القراءة العالمية
@@ -50,7 +60,7 @@ def produce_episode(topic: dict, workdir: Path) -> dict:
     # 5) التجميع
     out = settings.OUT / f"{topic['id']}.mp4"
     out.parent.mkdir(parents=True, exist_ok=True)
-    video.assemble(plan, scene_list, ass_path, out, workdir / "build")
+    video.assemble(plan, scene_list, ass_path, out, workdir / "build", music=music_path)
 
     # 5.5) الغلاف — نفس هوية المشاهد
     from . import brand
