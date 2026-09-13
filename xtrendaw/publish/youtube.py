@@ -21,7 +21,8 @@ def publish(video_path, title, caption, tags):
     if not tok:
         return None, "refresh_failed"
     meta = {"snippet": {"title": title[:100], "description": caption[:4900],
-                        "tags": tags[:15], "categoryId": "27"},
+                        "tags": tags[:15], "categoryId": "27",
+                        "defaultLanguage": "ar", "defaultAudioLanguage": "ar"},
             "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False}}
     init = requests.post(
         "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
