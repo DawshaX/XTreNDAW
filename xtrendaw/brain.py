@@ -101,11 +101,12 @@ def _llm_topic() -> dict | None:
     return None
 
 
-def trend_topic() -> dict | None:
+def trend_topic(skip: set | None = None) -> dict | None:
     """موضوع من الرادار اللحظي: نوفا بتركب التريند بروحها (بلا اختلاق وقائع —
-    كل "حقيقة" هنا رقم حقيقي من الرادار نفسه)."""
+    كل "حقيقة" هنا رقم حقيقي من الرادار نفسه). بيعدّي المستهلك قبل كده."""
     from . import trend
 
+    skip = skip or set()
     try:
         top = trend.scan()
     except Exception:
@@ -115,7 +116,12 @@ def trend_topic() -> dict | None:
             continue
         title = t["title"][:60]
         srcs = t.get("sources", 1)
-        return {
+        words = [w for w in title.split() if len(w) >= 3][:3]
+        queries = [title] + words
+        if words:
+            queries.append(f"{words[0]} stadium")
+            queries.append(f"{words[0]} match")
+        cand = {
             "angle": f"ترند:{t['key'][:24]}",
             "title_ar": f"ليه الكل بيبحث عن «{title}» دلوقتي؟",
             "title_en": f"Why is everyone searching '{title}' right now?",
@@ -132,6 +138,7 @@ def trend_topic() -> dict | None:
                 "NOVA sees everything… we only pick what's worth it.",
             ],
             "tags": "ترند,رادار_نوفا,XTreNDAW",
+            "_visual_queries": queries,
             "takeaway_ar": {
                 "aql": "الترند بيعدي… بس اللي بيفهم ليه انتشر بيستفيد.",
                 "qalb": "إنت مش مجرد متفرج — إنت جزء من الحكاية.",
@@ -143,6 +150,9 @@ def trend_topic() -> dict | None:
                 "rouh": "Goodness and light from God… and you're free to choose.",
             },
         }
+        if content.fingerprint(cand) in skip:
+            continue  # مستهلك قبل كده → الترند اللي بعده
+        return cand
     return None
 
 
@@ -170,7 +180,8 @@ def generate(topics: list[dict], want: str = "auto") -> dict | None:
             return cand
 
     if want in ("auto", "trend"):
-        tr = _fresh(trend_topic(), "trend")
+        skip = seen | _state.seen_fingerprints()
+        tr = _fresh(trend_topic(skip), "trend")
         if tr:
             return tr
     if want == "trend":

@@ -192,6 +192,59 @@ def _ai_prompt(kind: str, subject: str) -> str:
     return f"{subject}, {flavor}, {base_style}"
 
 
+def fetch_real_visual(query: str, out_path: Path) -> bool:
+    """مشهد حقيقي من Wikimedia Commons (ناس/أماكن/أحداث حقيقية، بلا مفتاح).
+
+    بيختار صورة فوتوغرافية كافية الدقة ويقصّها cover لـ1080×1920.
+    """
+    import requests
+
+    if not query or not query.strip():
+        return False
+    # ويكيميديا بترفض الـUA الافتراضي لمكتبة requests — توقيع واضح ومحترم
+    ua = {"User-Agent": "XDAW-NOVA-factory/1.0 (free knowledge shorts; "
+                        "dawshaxlol@gmail.com) requests"}
+    try:
+        r = requests.get(
+            "https://commons.wikimedia.org/w/api.php",
+            params={"action": "query", "generator": "search",
+                    "gsrsearch": query, "gsrnamespace": 6, "gsrlimit": 8,
+                    "prop": "imageinfo", "iiprop": "url|size|mime",
+                    "iiurlwidth": 1080, "format": "json"},
+            headers=ua, timeout=20,
+        )
+        if not r.ok:
+            return False
+        pages = (r.json().get("query") or {}).get("pages") or {}
+        cands = []
+        for p in pages.values():
+            ii = (p.get("imageinfo") or [{}])[0]
+            if ii.get("mime") == "image/jpeg" and ii.get("width", 0) >= 900:
+                cands.append(ii)
+        if not cands:
+            return False
+        ii = max(cands, key=lambda x: x.get("width", 0) * x.get("height", 0))
+        url = ii.get("thumburl") or ii.get("url")
+        img_r = requests.get(url, headers=ua, timeout=60)
+        if not img_r.ok or not img_r.content:
+            return False
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_bytes(img_r.content)
+        img = Image.open(out_path).convert("RGB")
+        w, h = img.size
+        img = img.crop((0, 0, w, h - max(0, h // 30)))
+        w, h = img.size
+        scale = max(W / w, H / h)
+        img = img.resize((int(w * scale), int(h * scale)), Image.LANCZOS)
+        w, h = img.size
+        left, top = (w - W) // 2, (h - H) // 2
+        img = img.crop((left, top, left + W, top + H))
+        img.save(out_path, "PNG")
+        return True
+    except Exception:
+        return False
+
+
 def fetch_ai_visual(prompt: str, out_path: Path, seed: int) -> bool:
     """صورة AI قوية من Pollinations (مجاني/بلا مفتاح) مقصوصة 1080×1920."""
     import urllib.parse
@@ -261,16 +314,19 @@ def _brand_layer(out_path: Path) -> Path:
 
 
 def build_scene(kind: str, text: str, seed: str, workdir: Path,
-                subject: str = "", chip: str = "") -> dict:
-    """مشهد = قاعدة (AI أو نيون احتياطي) + طبقات نص شفافة.
+                subject: str = "", chip: str = "", real_query: str = "") -> dict:
+    """مشهد = قاعدة (حقيقي ← AI ← نيون احتياطي) + طبقات نص شفافة.
 
     بيرجع {"base": Path, "overlays":[Path,...]} عشان الفيديو يركّبها.
     """
     workdir.mkdir(parents=True, exist_ok=True)
     rng = _seeded(seed)
     base = workdir / "base.png"
-    prompt = _ai_prompt(kind, subject or text)
-    if not fetch_ai_visual(prompt, base, int(rng.integers(1, 10_000_000))):
+    ok = fetch_real_visual(real_query, base) if real_query else False
+    if not ok:
+        prompt = _ai_prompt(kind, subject or text)
+        ok = fetch_ai_visual(prompt, base, int(rng.integers(1, 10_000_000)))
+    if not ok:
         base = render_bg(base, kind, seed)  # وقوع آمن للنيون
 
     pal = PALETTES.get(kind, PALETTES["fact1"])

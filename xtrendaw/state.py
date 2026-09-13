@@ -39,6 +39,10 @@ def fingerprint_seen(topic: dict) -> bool:
     return fp in _read()["fingerprints"]
 
 
+def seen_fingerprints() -> set:
+    return set(_read()["fingerprints"])
+
+
 def mark_produced(topic: dict, video: str, duration: float, urls: dict | None = None) -> None:
     data = _read()
     fp = content.fingerprint(topic)

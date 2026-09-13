@@ -49,8 +49,11 @@ def produce_episode(topic: dict, workdir: Path) -> dict:
             subject = en_lines[i]
             if ":" in subject:
                 subject = subject.split(":", 1)[1].strip()
+        queries = topic.get("_visual_queries") or []
+        real_q = queries[i % len(queries)] if queries else ""
         sc = scenes.build_scene(kind, text, seed=f"{topic['id']}:{i}",
-                                workdir=workdir / f"sc{i:02d}", subject=subject, chip=chip)
+                                workdir=workdir / f"sc{i:02d}", subject=subject,
+                                chip=chip, real_query=real_q)
         sc["start"] = item["start"]
         sc["end"] = item["end"]
         scene_list.append(sc)
