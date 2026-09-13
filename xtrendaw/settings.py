@@ -18,10 +18,8 @@ FONTS = ASSETS / "fonts"
 for _d in (WORK, OUT, STATE, FONTS):
     _d.mkdir(parents=True, exist_ok=True)
 
-
 def get(key: str, default: str = "") -> str:
     return (os.environ.get(key) or default).strip()
-
 
 def get_int(key: str, default: int) -> int:
     try:
@@ -29,18 +27,15 @@ def get_int(key: str, default: int) -> int:
     except ValueError:
         return default
 
-
 def get_float(key: str, default: float) -> float:
     try:
         return float(get(key, str(default)))
     except ValueError:
         return default
 
-
 def get_bool(key: str, default: bool = False) -> bool:
     v = get(key, "").lower()
     return default if not v else v in ("1", "true", "yes", "on")
-
 
 # ─────────────────────────────────────────────────────────────
 # مواصفات الفيديو — ثابتة لأن المنصات بتفرضها، مش تفضيل
@@ -95,36 +90,23 @@ TELEGRAM = {"token": get("TELEGRAM_BOT_TOKEN"), "chat_id": get("TELEGRAM_CHAT_ID
 
 DAILY_CAP = get_int("XT_DAILY_CAP", 4)          # سقف نشر آمن/يوم
 
-
 def has_youtube() -> bool:
     return all(YOUTUBE.values())
-
 
 def has_facebook() -> bool:
     return bool(FACEBOOK["page_id"] and FACEBOOK["token"])
 
-
 def has_instagram() -> bool:
     return bool(INSTAGRAM["user_id"] and INSTAGRAM["token"])
-
 
 def has_telegram() -> bool:
     return bool(TELEGRAM["token"] and TELEGRAM["chat_id"])
 
-TELEGRAM = {"bot_token": get("TELEGRAM_BOT_TOKEN"), "chat_id": get("TELEGRAM_CHAT_ID")}
-
-
 def has_llm() -> bool:
     return bool(LLM["base"] and LLM["key"])
 
-
-def has_telegram() -> bool:
-    return bool(TELEGRAM["bot_token"] and TELEGRAM["chat_id"])
-
-
 def has_pexels() -> bool:
     return bool(PEXELS_KEY)
-
 
 BRAND = {
     "name": "XDAW NOVA",
