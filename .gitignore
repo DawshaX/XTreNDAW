@@ -27,9 +27,11 @@ venv/
 # === حالة محلية ===
 state/*.db
 state/*.db-journal
-state/*.json
+state/tokens.json
 !state/.gitkeep
+!state/produced.json
 
 # === نظام ===
 .DS_Store
 node_modules/
+assets/brand/banner.png

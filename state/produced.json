@@ -1,0 +1,18 @@
+{
+ "episodes": {
+  "ep1": {
+   "title": "جسمك فيه نجوم حقيقية… والدليل هيصدمك!",
+   "fingerprint": "c90d144099296754",
+   "video": "/home/user/project/content/out/ep1.mp4",
+   "duration": 33.69,
+   "at": "2026-09-13 04:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/episodes/ep1.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/episodes/ep1-cover.png"
+   }
+  }
+ },
+ "fingerprints": [
+  "c90d144099296754"
+ ]
+}

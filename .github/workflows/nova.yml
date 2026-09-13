@@ -1,0 +1,51 @@
+name: NOVA — المصنع الذاتي (حلقة كل ساعة)
+
+# الساعة: كل ساعة بيختار الموضوع التالي اللي لسه ما اتنتجش،
+# ينتجه، يرفعه GitHub Releases، ويحدّث الذاكرة (produced.json) في git.
+on:
+  schedule:
+    - cron: "7 * * * *"     # كل ساعة :07 UTC
+  workflow_dispatch: {}     # زر يدوي للتجربة
+
+concurrency:
+  group: nova
+  cancel-in-progress: false
+
+permissions:
+  contents: write          # عشان يعمل release + يحدّث الذاكرة
+
+jobs:
+  nova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      # مفاتيح اختيارية (لو مفيهاش المصنع بيكمّل إنتاج ويرفع، والنشر بيستنى)
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      LLM_API_BASE: ${{ secrets.LLM_API_BASE }}
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: المكتبات
+        run: pip install -r requirements.txt
+
+      - name: إنتاج الحلقة التالية + رفعها Releases
+        run: timeout 2400 python -m xtrendaw.run_cycle --next
+
+      - name: تحديث الذاكرة في git (عشان الحلقة الجاية تكمل مش تعيد)
+        if: always()
+        run: |
+          git config user.name  "XDAW NOVA factory"
+          git config user.email "dawshaxlol@gmail.com"
+          git add state/produced.json || true
+          git diff --cached --quiet || {
+            git commit -m "auto: factory state $(date -u +%Y-%m-%dT%H:%MZ)"
+            git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+            git push
+          }

@@ -91,7 +91,11 @@ def has_pexels() -> bool:
 
 
 BRAND = {
-    "name": "XTreNDAW",
-    "hashtags": "#حقائق #علوم #XTreNDAW",
-    "outro_ar": "تابع XTreNDAW — الحلقة الجاية أقوى.",
+    "name": "XDAW NOVA",
+    "tagline_ar": "نور • معرفة • رحمة • قوة مسؤولة",
+    "tagline_en": "LIGHT • KNOWLEDGE • MERCY • RESPONSIBLE STRENGTH",
+    "hashtags": "#حقائق #علوم #XDAWNOVA",
+    "outro_ar": "انتو خير ونور من الله. تابع XDAW NOVA.",
+    "outro_en": "You are goodness and light. Follow XDAW NOVA.",
 }
+LOGO = ASSETS / "brand" / "logo.png"

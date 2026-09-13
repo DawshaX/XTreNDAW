@@ -31,13 +31,21 @@ def compose_cover(topic: dict, out_path: Path, seed: str = "") -> Path:
     )
     base.paste(Image.open(title_layer), (0, 0), Image.open(title_layer))
 
-    # اسم المشروع تحت
-    brand_layer = textrender.text_image(
-        settings.BRAND["name"], out_path.with_suffix(".b.png"),
-        canvas=(W, H), font_size=52, fill="#ffd166", y_ratio=0.90,
-        max_width_ratio=0.6, stroke_width=4,
-    )
-    base.paste(Image.open(brand_layer), (0, 0), Image.open(brand_layer))
+    # اللوجو فوق العنوان — قالب ثابت
+    if settings.LOGO.exists():
+        logo = Image.open(settings.LOGO).convert("RGBA").resize((260, 260), Image.LANCZOS)
+        base.paste(logo, ((W - 260) // 2, int(H * 0.16)), logo)
+
+    # اسم البراند + التاجلاين تحت
+    for txt, yr, fs, fill in [
+        (settings.BRAND["name"], 0.86, 60, "#ffd166"),
+        (settings.BRAND["tagline_ar"], 0.925, 40, "#ff8080"),
+    ]:
+        layer = textrender.text_image(
+            txt, out_path.with_suffix(".b.png"), canvas=(W, H),
+            font_size=fs, fill=fill, y_ratio=yr, max_width_ratio=0.8, stroke_width=4,
+        )
+        base.paste(Image.open(layer), (0, 0), Image.open(layer))
 
     base.save(out_path, "PNG")
     return out_path

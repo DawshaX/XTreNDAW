@@ -18,11 +18,11 @@ W, H = settings.VIDEO["width"], settings.VIDEO["height"]
 
 # هوية 2099: فحمي + نيون (أخضر/سماوي/ماجنتا)
 PALETTES = {
-    "hook":  {"bg": ("#020604", "#04150c"), "neon": "#00ff9c", "neon2": "#00e5ff"},
-    "fact1": {"bg": ("#020604", "#03140e"), "neon": "#00ff9c", "neon2": "#b6ff00"},
-    "fact2": {"bg": ("#03040a", "#061024"), "neon": "#00e5ff", "neon2": "#7a5cff"},
-    "fact3": {"bg": ("#0a0310", "#180624"), "neon": "#ff2ee6", "neon2": "#00e5ff"},
-    "outro": {"bg": ("#020604", "#0a1408"), "neon": "#00ff9c", "neon2": "#ffd166"},
+    "hook":  {"bg": ("#0a0202", "#200606"), "neon": "#ff2a2a", "neon2": "#ff7a1a"},
+    "fact1": {"bg": ("#0a0202", "#1c0505"), "neon": "#ff3b3b", "neon2": "#ffb347"},
+    "fact2": {"bg": ("#080208", "#1c0610"), "neon": "#ff2a5e", "neon2": "#ff7a1a"},
+    "fact3": {"bg": ("#0a0302", "#200a04"), "neon": "#ff7a1a", "neon2": "#ff2a2a"},
+    "outro": {"bg": ("#0a0202", "#1a0a04"), "neon": "#ff3b3b", "neon2": "#ffd166"},
 }
 
 
@@ -134,6 +134,18 @@ STYLE = {
 }
 
 
+def _watermark(base: Image.Image, size: int = 150, alpha: int = 210) -> None:
+    """لوجو XDAW NOVA شفاف فوق-يمين — قالب ثابت لكل فيديو."""
+    logo_path = settings.LOGO
+    if not logo_path.exists():
+        return
+    logo = Image.open(logo_path).convert("RGBA").resize((size, size), Image.LANCZOS)
+    if alpha < 255:
+        a = logo.getchannel("A").point(lambda v: int(v * alpha / 255))
+        logo.putalpha(a)
+    base.paste(logo, (W - size - 40, 40), logo)
+
+
 def render_scene(out_path: Path, kind: str, text: str, seed: str,
                  chip: str = "") -> Path:
     """مشهد 2099: خلفية نيون + شارة + عنوان كبير بتوهج."""
@@ -162,5 +174,6 @@ def render_scene(out_path: Path, kind: str, text: str, seed: str,
         stroke=pal["neon"], stroke_width=7,
     ))
 
+    _watermark(base)
     base.save(out_path, "PNG")
     return out_path

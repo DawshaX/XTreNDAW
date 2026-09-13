@@ -75,6 +75,82 @@ SEED_TOPICS: list[dict] = [
         "outro_en": "You are goodness and light. Follow XTreNDAW — the next one is wilder!",
         "tags": "حقائق,علوم,مخ,XTreNDAW",
     },
+    {
+        "id": "ep4",
+        "angle": "ذكاء الأخطبوط",
+        "title_ar": "الأخطبوط عنده 3 قلوب و9 أدمغة… مش هزار!",
+        "title_en": "An octopus has 3 hearts and 9 brains!",
+        "hook_ar": "تحذير: بعد الحلقة دي هتحس إن الأخطبوط أذكى منك… معلش!",
+        "hook_en": "Warning: after this, you'll feel the octopus is smarter than you… sorry!",
+        "facts_ar": [
+            "الأخطبوط عنده 3 قلوب، واتنين منهم بيضخوا للخياشيم بس.",
+            "ثلثي خلاياه العصبية في دراعاته — يعني دراعه بيفكر لوحده.",
+            "يعني لو قطعوا دراع، الدراع بيكمل شغل كأنه مخ صغير. مرعب ولطيف!",
+        ],
+        "facts_en": [
+            "An octopus has 3 hearts, and two only pump to the gills.",
+            "Two-thirds of its neurons are in its arms — each arm thinks on its own.",
+            "So a severed arm keeps working like a tiny brain. Creepy and cute!",
+        ],
+        "tags": "حقائق,بحر,ذكاء,XTreNDAW",
+    },
+    {
+        "id": "ep5",
+        "angle": "الثقوب السوداء",
+        "title_ar": "الثقب الأسود بيمسح الزمن… والدليل هيخليك تدوخ!",
+        "title_en": "A black hole literally bends time!",
+        "hook_ar": "تحذير أخير: لو قربت من ثقب أسود، ساعتك هتمشي أبطأ من صحابك!",
+        "hook_en": "Final warning: near a black hole, your clock ticks slower than your friends'!",
+        "facts_ar": [
+            "الجاذبية هناك قوية لدرجة إن الزمن نفسه بيتمدد.",
+            "ساعة قرب ثقب أسود ممكن تساوي سنين على الأرض.",
+            "يعني السفر للمستقبل ممكن نظريًا… بس من غير تذكرة رجوع!",
+        ],
+        "facts_en": [
+            "Gravity there is so strong that time itself stretches.",
+            "One hour near a black hole can equal years on Earth.",
+            "So traveling to the future is theoretically possible… just no return ticket!",
+        ],
+        "tags": "حقائق,فضاء,فيزياء,XTreNDAW",
+    },
+    {
+        "id": "ep6",
+        "angle": "العسل لا يفسد",
+        "title_ar": "لقى عسل في مقبرة فرعونية… ولسه يتاكل!",
+        "title_en": "Honey found in a pharaoh's tomb… still edible!",
+        "hook_ar": "تحذير: الأكل الوحيد اللي بيعيش آلاف السنين من غير ثلاجة… خمن!",
+        "hook_en": "Warning: the only food that lasts thousands of years without a fridge… guess!",
+        "facts_ar": [
+            "العسل مفيهوش مية وحمضيته قليلة، فالبكتيريا مش بتقدر تعيش فيه.",
+            "علماء لقوا عسل في مقابر مصرية عمره 3000 سنة ولسه صالح.",
+            "يعنى الفراعنة خزنوا أكلهم أحسن مننا واحنا عندنا ثلاجات!",
+        ],
+        "facts_en": [
+            "Honey has almost no water and low acidity, so bacteria can't survive in it.",
+            "Scientists found 3,000-year-old honey in Egyptian tombs, still edible.",
+            "So the pharaohs stored food better than us — with fridges!",
+        ],
+        "tags": "حقائق,تاريخ,طعام,XTreNDAW",
+    },
+    {
+        "id": "ep7",
+        "angle": "سرعة الضوء",
+        "title_ar": "لو ركبت شعاع ضوء… هتشوف الكون بشكل مجنون!",
+        "title_en": "Ride a light beam and the universe goes wild!",
+        "hook_ar": "تحذير: مفيش حاجة في الكون بتكسر حاجز الضوء… ولا حتى أفكارك!",
+        "hook_en": "Warning: nothing in the universe breaks the light barrier… not even your thoughts!",
+        "facts_ar": [
+            "الضوء بيمشي 300 ألف كيلومتر في الثانية الواحدة.",
+            "يعني ضوء الشمس اللي بيوصلك دلوقتي طلع منها من 8 دقايق.",
+            "يعني إنت مش بتشف الشمس دلوقتي… إنت بتشف الماضي!",
+        ],
+        "facts_en": [
+            "Light travels 300,000 kilometers every single second.",
+            "So the sunlight reaching you now left the sun 8 minutes ago.",
+            "So you're not seeing the sun now… you're seeing the past!",
+        ],
+        "tags": "حقائق,فضاء,ضوء,XTreNDAW",
+    },
 ]
 
 LABELS_AR = ["الحقيقة الأولى:", "الحقيقة الثانية:", "والحقيقة الثالثة:"]
@@ -94,7 +170,7 @@ def compose_script(topic: dict, lang: str = "ar") -> list[dict]:
     labels = LABELS_EN if lang == "en" else LABELS_AR
     hook = topic.get(f"hook_{lang}") or topic.get("hook_ar", "")
     facts = topic.get(f"facts_{lang}") or topic.get("facts_ar") or []
-    outro = topic.get(f"outro_{lang}") or settings.BRAND["outro_ar"]
+    outro = settings.BRAND["outro_en" if lang == "en" else "outro_ar"]
 
     segs = [{"seg": "hook", "text": hook.strip()}]
     for i, fact in enumerate(facts[:3]):
