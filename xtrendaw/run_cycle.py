@@ -46,6 +46,8 @@ def _produce(topic: dict, upload: bool = True) -> int:
         for name, ok in r["report"]["checks"].items():
             if not ok:
                 _log(f"    - {name}")
+        import shutil
+        shutil.rmtree(workdir, ignore_errors=True)
         return 1
 
     urls = {}
