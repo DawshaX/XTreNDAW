@@ -32,7 +32,12 @@ def _produce(topic: dict, upload: bool = True) -> int:
     _log(f"▶ إنتاج {topic['id']}: {topic['title_ar']}")
     workdir = settings.WORK / topic["id"]
     t0 = time.time()
-    r = produce.produce_episode(topic, workdir)
+    if topic.get("_din"):
+        from . import din as _din
+
+        r = _din.produce_din(topic["_din"], workdir, topic.get("_din_rec", 0))
+    else:
+        r = produce.produce_episode(topic, workdir)
     dt = time.time() - t0
 
     info = r["report"]["info"]
@@ -182,6 +187,21 @@ def main() -> int:
         return _produce(topic, upload=not args.no_upload)
 
     if args.next:
+        if settings.CHANNEL_MODE == "deen":
+            # تناوب النور: قرآن ← دعاء ← حديث ← قصة ← تفسير (والقارئ بيتبدل)
+            kinds = ["quran", "dua", "hadith", "qissa", "tafsir"]
+            last = state.last_kind()
+            kind = kinds[(kinds.index(last) + 1) % len(kinds)] \
+                if last in kinds else "quran"
+            rec = len(state.produced_ids())
+            topic = {"id": f"noor-{kind}-{rec}",
+                     "title_ar": f"نُور: {kind} · تلاوة {rec % 4 + 1}",
+                     "tags": "نور,قرآن,دعوة,XDAWNOVA",
+                     "_din": kind, "_din_rec": rec, "_kind": kind}
+            rc = _produce(topic, upload=not args.no_upload)
+            if not args.no_upload:
+                _promote_due()
+            return rc
         topics = content.load_topics()
         # التناوب: ساعة تريند / ساعة معرفة — عكس آخر نوع اتنشر
         want = args.want or ("know" if state.last_kind() == "trend" else "trend")

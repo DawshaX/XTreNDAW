@@ -65,10 +65,13 @@ VOICE_RATE = get("XT_VOICE_RATE", "+8%")
 VOICE_PITCH = get("XT_VOICE_PITCH", "+12Hz")
 
 # مواعيد نشر الذروة (بتوقيت القاهرة) — المصنع يخزّن في أي وقت، ويفرج في المواعيد دي
-_ph = get("XT_PUBLISH_HOURS", "all").strip()
 # "all" = نشر كل ساعة (النموذج النهائي) — أو قائمة ساعات محددة لو اتطلب
+_ph = get("XT_PUBLISH_HOURS", "all").strip()
 PUBLISH_HOURS = (list(range(24)) if _ph in ("all", "") else
                  [int(h) for h in _ph.split(",") if h.strip().lstrip("-").isdigit()])
+
+# وضع القناة: "deen" = محرك النور (الافتراضي بعد الانقلاب) · "old" = ترند/معرفة
+CHANNEL_MODE = get("XT_MODE", "deen")
 
 # ─────────────────────────────────────────────────────────────
 # LLM مجاني (Groq) — اختياري، والمحرك شغال بدونه

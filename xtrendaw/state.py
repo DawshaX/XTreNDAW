@@ -47,7 +47,7 @@ def mark_produced(topic: dict, video: str, duration: float, urls: dict | None = 
     data = _read()
     fp = content.fingerprint(topic)
     data["episodes"][topic["id"]] = {
-        "title": topic.get("title_ar", topic["angle"]),
+        "title": topic.get("title_ar") or topic.get("angle", ""),
         "fingerprint": fp,
         "video": video,
         "duration": round(duration, 2),

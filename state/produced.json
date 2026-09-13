@@ -69,6 +69,22 @@
    "duration": 73.1,
    "at": "2026-09-13 11:52",
    "urls": {}
+  },
+  "noor-dua-8": {
+   "title": "نُور: dua · تلاوة 1",
+   "fingerprint": "49a3e8a8c782dcb0",
+   "video": "/home/user/project/content/vids/noor-dua-8.mp4",
+   "duration": 10.16,
+   "at": "2026-09-13 15:41",
+   "urls": {}
+  },
+  "noor-dua-9": {
+   "title": "نُور: dua · تلاوة 2",
+   "fingerprint": "faaa3df13b027182",
+   "video": "/home/user/project/content/vids/noor-dua-9.mp4",
+   "duration": 13.36,
+   "at": "2026-09-13 15:41",
+   "urls": {}
   }
  },
  "fingerprints": [
@@ -80,7 +96,9 @@
   "0edd19b0bb2aff2c",
   "8f1faac007dbff7b",
   "78492a8b783f4038",
-  "37f235477fed55a8"
+  "37f235477fed55a8",
+  "49a3e8a8c782dcb0",
+  "faaa3df13b027182"
  ],
- "last_kind": "know"
+ "last_kind": "quran"
 }
