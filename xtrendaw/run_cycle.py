@@ -126,6 +126,42 @@ def _publish(topic, r: dict, urls: dict) -> None:
             _log(f"⚠ {name} اتخطى: {str(e)[:100]}")
 
 
+def _health_check() -> None:
+    """فحص ذاتي كل دورة: تجديد توكن يوتيوب + نبضة تيليجرام + تنبيه فوري."""
+    import json as _json
+
+    import requests as _rq
+
+    rep = {"youtube": None, "telegram": None}
+    if settings.has_youtube():
+        from .publish import youtube as _yt
+
+        rep["youtube"] = bool(_yt._token())
+    if settings.has_telegram():
+        try:
+            r = _rq.get(
+                f"https://api.telegram.org/bot{settings.TELEGRAM['token']}/getMe",
+                timeout=15)
+            rep["telegram"] = bool(r.ok)
+        except Exception:
+            rep["telegram"] = False
+    try:
+        (settings.STATE / "health.json").write_text(_json.dumps(rep))
+    except Exception:
+        pass
+    bad = [k for k, v in rep.items() if v is False]
+    if bad and settings.has_telegram():
+        try:
+            _rq.post(
+                f"https://api.telegram.org/bot{settings.TELEGRAM['token']}/sendMessage",
+                json={"chat_id": settings.TELEGRAM["chat_id"],
+                      "text": "⚠️ فحص المصنع: عطل في " + ", ".join(bad) +
+                              " — الإنتاج والتخزين مستمرين، هيتصل تاني أوتوماتيك"},
+                timeout=20)
+        except Exception:
+            pass
+
+
 def _flush_yt_pending() -> None:
     """يحاول نشر أقدم حلقة معلقة (كوتة) — واحدة كل دورة."""
     import tempfile
@@ -234,6 +270,7 @@ def main() -> int:
             # المخطّط الذكي: سلسلة + تناوب + بلا تكرار (الذاكرة على git)
             from . import planner
 
+            _health_check()
             topic = planner.next_episode()
             _log(f"🧭 المخطط: {topic['_din']} · {topic['title_ar']}")
             rec = topic["_din_rec"]
