@@ -10,9 +10,21 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/episodes/ep1.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/episodes/ep1-cover.png"
    }
+  },
+  "ep2": {
+   "title": "أغلى من الماس بمليون مرة… مادة تكلف تريليونات!",
+   "fingerprint": "c6331f7b31e9d029",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/out/ep2.mp4",
+   "duration": 34.92,
+   "at": "2026-09-13 04:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/episodes/ep2.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/episodes/ep2-cover.png"
+   }
   }
  },
  "fingerprints": [
-  "c90d144099296754"
+  "c90d144099296754",
+  "c6331f7b31e9d029"
  ]
 }
