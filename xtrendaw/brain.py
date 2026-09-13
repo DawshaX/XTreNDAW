@@ -146,34 +146,42 @@ def trend_topic() -> dict | None:
     return None
 
 
-def generate(topics: list[dict]) -> dict | None:
+def generate(topics: list[dict], want: str = "auto") -> dict | None:
     """موضوع جديد مش مكرر بالبصمة، وإلا None.
 
-    الأولوية: طلبات المشاهدين ← التريند اللحظي ← LLM ← المخزون.
+    الأولوية: طلبات المشاهدين ← التريند (لو مطلوب/أوتو) ← LLM ← المخزون.
+    want: "trend" | "know" | "auto" — التناوب بيحدده run_cycle.
     """
     from . import requests as viewer_requests
     from . import state as _state
 
     seen = {content.fingerprint(t) for t in topics}
 
-    def _fresh(cand: dict | None) -> dict | None:
-        return cand if cand and content.fingerprint(cand) not in seen \
-            and not _state.fingerprint_seen(cand) else None
+    def _fresh(cand: dict | None, kind: str) -> dict | None:
+        if cand and content.fingerprint(cand) not in seen \
+                and not _state.fingerprint_seen(cand):
+            cand["_kind"] = kind
+            return cand
+        return None
 
     for req in viewer_requests.pending():
-        cand = _fresh(viewer_requests.topic_from(req))
+        cand = _fresh(viewer_requests.topic_from(req), "request")
         if cand:
             return cand
 
-    tr = _fresh(trend_topic())
-    if tr:
-        return tr
+    if want in ("auto", "trend"):
+        tr = _fresh(trend_topic(), "trend")
+        if tr:
+            return tr
+    if want == "trend":
+        return None  # مفيش ترند سخن دلوقتي — الدورة تتعدل على معرفة
 
-    t = _llm_topic()
-    if (t2 := _fresh(t)):
-        return t2
+    t = _fresh(_llm_topic(), "know")
+    if t:
+        return t
 
     for cand in FALLBACK_POOL:
-        if (c2 := _fresh(dict(cand))):
+        c2 = _fresh(dict(cand), "know")
+        if c2:
             return c2
     return None

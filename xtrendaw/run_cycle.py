@@ -47,7 +47,8 @@ def _produce(topic: dict, upload: bool = True) -> int:
     if upload and github_store.available():
         try:
             meta = {"id": topic["id"], "title_ar": topic["title_ar"],
-                    "tags": topic.get("tags", ""), "_issue": topic.get("_issue")}
+                    "tags": topic.get("tags", ""), "_issue": topic.get("_issue"),
+                    "kind": topic.get("_kind", "know")}
             urls = github_store.upload_to_vault(r["video"], r["cover"], meta)
             _log("📦 اتخزنت في الـvault — مستنية موعد الذروة")
         except Exception as e:  # فشل التخزين ما يوقفش الدورة
@@ -121,6 +122,7 @@ def _promote_due(force: bool = False) -> None:
         return
     meta = res["meta"]
     _log(f"📺 موعد الذروة: {res['id']} نزلت على القناة → {res['urls']['video']}")
+    state.set_last_kind(meta.get("kind", "know"))  # التناوب: الجاية النوع التاني
     topic = {"id": meta.get("id", res["id"]),
              "title_ar": meta.get("title_ar", ""),
              "tags": meta.get("tags", ""), "_issue": meta.get("_issue")}
@@ -142,6 +144,8 @@ def main() -> int:
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--stock", type=int, default=0,
                     help="تموين: ينتج N حلقات جديدة ويخزّنها")
+    ap.add_argument("--want", choices=["trend", "know"],
+                    help="فرض نوع الحلقة (لتجهيز عينات الاعتماد)")
     ap.add_argument("--promote", action="store_true",
                     help="إفراج فوري عن حلقة من الـvault (للاختبار)")
     ap.add_argument("--no-upload", action="store_true")
@@ -162,7 +166,8 @@ def main() -> int:
             topic["id"] = _auto_id(topics)
             topics.append(topic)
             rc |= _produce(topic, upload=not args.no_upload)
-            _promote_due()  # لو ساعة الذروة عدّت وإحنا شغالين: فرّج فورًا
+            if not args.no_upload:
+                _promote_due()
         content.save_topics(topics)
         return rc
 
@@ -178,18 +183,27 @@ def main() -> int:
 
     if args.next:
         topics = content.load_topics()
-        topic = state.next_topic(topics)
-        if not topic:  # المخزون خلص → المخ يولّد موضوع جديد
-            topic = brain.generate(topics)
-            if not topic:
-                _log("المخ ما قدرش يولّد موضوع جديد — استنى المفتاح أو زوّد القوالب")
-                return 0
+        # التناوب: ساعة تريند / ساعة معرفة — عكس آخر نوع اتنشر
+        want = args.want or ("know" if state.last_kind() == "trend" else "trend")
+        topic = None
+        if want == "know":
+            topic = state.next_topic(topics)
+        if not topic:
+            topic = brain.generate(topics, want=want)
+        if not topic:  # ترند مطلوب ومش سخن دلوقتي → معرفة بدل ما نضيع الدورة
+            topic = state.next_topic(topics) or brain.generate(topics, want="know")
+        if not topic:
+            _log("المخ ما قدرش يولّد موضوع جديد — استنى المفتاح أو زوّد القوالب")
+            return 0
+        if topic.get("id") is None or \
+                not any(t["id"] == topic.get("id") for t in topics):
             topic["id"] = _auto_id(topics)
             topics.append(topic)
             content.save_topics(topics)
-            _log(f" المخ ولّد موضوع جديد: {topic['id']}")
+            _log(f" المخ ولّد موضوع جديد ({want}): {topic['id']}")
         rc = _produce(topic, upload=not args.no_upload)
-        _promote_due()
+        if not args.no_upload:
+            _promote_due()
         return rc
 
     if args.all:
@@ -199,7 +213,8 @@ def main() -> int:
                 _log(f"· {t['id']} متنتجة قبل كده — تخطي")
                 continue
             rc |= _produce(t, upload=not args.no_upload)
-        _promote_due()
+        if not args.no_upload:
+            _promote_due()
         cmd_list()
         return rc
 

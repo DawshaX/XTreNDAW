@@ -59,6 +59,17 @@ def produced_ids() -> list[str]:
     return list(_read()["episodes"].keys())
 
 
+def last_kind() -> str:
+    """نوع آخر حلقة اتنشرت ("trend"/"know"/"request") — عشان التناوب."""
+    return _read().get("last_kind", "know")
+
+
+def set_last_kind(kind: str) -> None:
+    data = _read()
+    data["last_kind"] = kind
+    _write(data)
+
+
 def next_topic(topics: list[dict]) -> dict | None:
     """أول موضوع لسه ما اتنتجش ومش مكرر بالبصمة."""
     seen_fps = set(_read()["fingerprints"])
