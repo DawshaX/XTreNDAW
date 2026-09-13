@@ -64,9 +64,9 @@ VOICE_EN = get("XT_VOICE_EN", "en-US-JennyNeural")
 VOICE_RATE = get("XT_VOICE_RATE", "+8%")
 VOICE_PITCH = get("XT_VOICE_PITCH", "+12Hz")
 
-# مواعيد نشر الذروة (بتوقيت القاهرة) — المصنع يخزّن في أي وقت، ويفرج في المواعيد دي
-# "all" = نشر كل ساعة (النموذج النهائي) — أو قائمة ساعات محددة لو اتطلب
-_ph = get("XT_PUBLISH_HOURS", "all").strip()
+# مواعيد نشر الذروة (بتوقيت القاهرة) — المصنع يخزّن في أي ساعة ويفرج في الذروة.
+# كوتة يوتيوب الرسمية ≈ 6 عمليات رفع/يوم → ست ذروات القاهرة تكفل النشر اليومي كاملًا.
+_ph = get("XT_PUBLISH_HOURS", "8,12,16,19,21,23").strip()
 PUBLISH_HOURS = (list(range(24)) if _ph in ("all", "") else
                  [int(h) for h in _ph.split(",") if h.strip().lstrip("-").isdigit()])
 
