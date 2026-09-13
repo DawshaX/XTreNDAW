@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 WORK = ROOT / "work"
-OUT = ROOT / "content" / "out"
+OUT = ROOT / "content" / "vids"
 STATE = ROOT / "state"
 ASSETS = ROOT / "assets"
 FONTS = ASSETS / "fonts"

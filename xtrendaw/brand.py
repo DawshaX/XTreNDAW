@@ -48,4 +48,7 @@ def compose_cover(topic: dict, out_path: Path, seed: str = "") -> Path:
         base.paste(Image.open(layer), (0, 0), Image.open(layer))
 
     base.save(out_path, "PNG")
+    # Workspace lightweight: delete intermediate cover layers
+    for tmp in (".bg.png", ".t.png", ".b.png"):
+        out_path.with_suffix(tmp).unlink(missing_ok=True)
     return out_path
