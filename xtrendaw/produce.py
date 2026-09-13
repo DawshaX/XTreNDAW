@@ -50,6 +50,11 @@ def produce_episode(topic: dict, workdir: Path) -> dict:
     out.parent.mkdir(parents=True, exist_ok=True)
     video.assemble(plan, scene_list, ass_path, out, workdir / "build")
 
+    # 5.5) الغلاف — نفس هوية المشاهد
+    from . import brand
+    cover = settings.OUT / f"{topic['id']}-cover.png"
+    brand.compose_cover(topic, cover)
+
     # 6) التحقق من المواصفات
     report = video.validate(out)
 
@@ -61,6 +66,7 @@ def produce_episode(topic: dict, workdir: Path) -> dict:
                 "total_duration": round(total, 3),
                 "scenes": len(scene_list),
                 "captions": len(chunks),
+                "cover": str(cover),
                 "validate": {
                     "info": report["info"],
                     "checks": report["checks"],
@@ -74,6 +80,7 @@ def produce_episode(topic: dict, workdir: Path) -> dict:
 
     return {
         "video": out,
+        "cover": cover,
         "plan": plan,
         "ass": ass_path,
         "captions": chunks,
