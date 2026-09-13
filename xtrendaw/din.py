@@ -124,9 +124,18 @@ def _ayah_audio(num: int, reciter: str, workdir: Path) -> Path:
     return to_wav(mp3, wav)
 
 
-def _scene_base(i: int, spec: dict, workdir: Path, seed: str) -> Path:
+def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
+                 seconds: float) -> dict:
+    """لقطة فيديو حيّة مطابقة للمعنى ← وإلا صورة حقيقية ← وإلا AI."""
+    from . import footage
+
     q = spec["scenes"][i % len(spec["scenes"])]
-    base = workdir / f"sc{i:02d}" / "base.png"
+    scdir = workdir / f"sc{i:02d}"
+    clip = footage.fetch_clip(q, max(1.0, seconds), scdir, f"{seed}:{i}",
+                              source="auto")
+    if clip:
+        return {"video": clip, "overlays": [], "grade": "soft"}
+    base = scdir / "base.png"
     if spec.get("style") == "cinema":
         prompt = (f"{q}, ancient middle-east historical scene, cinematic film still, "
                   "realistic, dramatic natural light, 9:16 vertical, no text")
@@ -137,7 +146,7 @@ def _scene_base(i: int, spec: dict, workdir: Path, seed: str) -> Path:
             scenes.fetch_ai_visual(
                 f"{q}, majestic cosmic cinematic scene, 9:16 vertical, no text",
                 base, hash(seed) % 10_000_000) or scenes.render_bg(base, "hook", seed)
-    return base
+    return {"base": base, "overlays": [], "grade": "soft"}
 
 
 def _end_card(workdir: Path) -> dict:
@@ -180,8 +189,9 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0) -> dict:
             wavs.append(wav)
             events.append({"style": "Ayah", "text": a["text"],
                            "start": off, "end": off + d})
-            scene_list.append({"base": _scene_base(i, spec, workdir, spec["id"]),
-                               "overlays": [], "start": off, "end": off + d})
+            sc = _scene_media(i, spec, workdir, spec["id"], d)
+            sc.update(start=off, end=off + d)
+            scene_list.append(sc)
             off += d
             if tafs:
                 r = synthesize_line(f"قال المفسر: {tafs[a['numberInSurah']]}", "ar",
@@ -235,10 +245,11 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0) -> dict:
         n = 3
         for i in range(n):
             s = off * i / n
-            scene_list.append({
-                "base": _scene_base(i, {"scenes": qs, "style": "cosmic"},
-                                    workdir, kind),
-                "overlays": [], "start": s, "end": off * (i + 1) / n})
+            e = off * (i + 1) / n
+            sc = _scene_media(i, {"scenes": qs, "style": "cosmic"},
+                              workdir, kind, e - s)
+            sc.update(start=s, end=e)
+            scene_list.append(sc)
         ep_id = f"noor-{kind}-{reciter_idx % len(items)}"
 
     # كرت الختام + صمت 3ث
