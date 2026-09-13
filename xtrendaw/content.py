@@ -7,9 +7,12 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import re
 
 from . import settings
+
+TOPICS_PATH = settings.ROOT / "content" / "topics.json"
 
 SEED_TOPICS: list[dict] = [
     {
@@ -193,3 +196,21 @@ def make_caption(topic: dict) -> str:
 
 def scene_queries(topic: dict) -> list[str]:
     return [t.strip() for t in topic.get("tags", "").split(",") if t.strip()][:4]
+
+
+def load_topics() -> list[dict]:
+    """المواضيع من content/topics.json — بتتزرع بالـSEED أول مرة."""
+    if TOPICS_PATH.exists():
+        try:
+            return json.loads(TOPICS_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    save_topics(SEED_TOPICS)
+    return [dict(t) for t in SEED_TOPICS]
+
+
+def save_topics(topics: list[dict]) -> None:
+    TOPICS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    TOPICS_PATH.write_text(
+        json.dumps(topics, ensure_ascii=False, indent=1), encoding="utf-8"
+    )

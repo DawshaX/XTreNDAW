@@ -13,7 +13,7 @@ import sys
 import time
 from pathlib import Path
 
-from . import content, github_store, produce, settings, state, video
+from . import brain, content, github_store, produce, settings, state, video
 
 
 def _log(*a) -> None:
@@ -22,7 +22,7 @@ def _log(*a) -> None:
 
 def cmd_list() -> int:
     _log("المواضيع:")
-    for t in content.SEED_TOPICS:
+    for t in content.load_topics():
         status = "✓ متنتجة" if state.is_produced(t["id"]) else "· لسه"
         _log(f"  [{t['id']}] {status} — {t['title_ar']}")
     return 0
@@ -59,6 +59,17 @@ def _produce(topic: dict, upload: bool = True) -> int:
     return 0
 
 
+def _auto_id(topics: list[dict]) -> str:
+    mx = 0
+    for t in topics:
+        if t["id"].startswith("auto-"):
+            try:
+                mx = max(mx, int(t["id"].split("-", 1)[1]))
+            except ValueError:
+                pass
+    return f"auto-{mx + 1:03d}"
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(prog="xtrendaw")
     ap.add_argument("--list", action="store_true")
@@ -72,22 +83,29 @@ def main() -> int:
         return cmd_list()
 
     if args.episode:
-        topic = next((t for t in content.SEED_TOPICS if t["id"] == args.episode), None)
+        topic = next((t for t in content.load_topics() if t["id"] == args.episode), None)
         if not topic:
             _log(f"✗ مفيش موضوع بالـid ده: {args.episode}")
             return 1
         return _produce(topic, upload=not args.no_upload)
 
     if args.next:
-        topic = state.next_topic(content.SEED_TOPICS)
-        if not topic:
-            _log("مفيش حاجة جديدة — كله متنتج أو مكرر")
-            return 0
+        topics = content.load_topics()
+        topic = state.next_topic(topics)
+        if not topic:  # المخزون خلص → المخ يولّد موضوع جديد
+            topic = brain.generate(topics)
+            if not topic:
+                _log("المخ ما قدرش يولّد موضوع جديد — استنى المفتاح أو زوّد القوالب")
+                return 0
+            topic["id"] = _auto_id(topics)
+            topics.append(topic)
+            content.save_topics(topics)
+            _log(f" المخ ولّد موضوع جديد: {topic['id']}")
         return _produce(topic, upload=not args.no_upload)
 
     if args.all:
         rc = 0
-        for t in content.SEED_TOPICS:
+        for t in content.load_topics():
             if state.is_produced(t["id"]):
                 _log(f"· {t['id']} متنتجة قبل كده — تخطي")
                 continue
