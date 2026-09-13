@@ -39,7 +39,7 @@ def fingerprint_seen(topic: dict) -> bool:
     return fp in _read()["fingerprints"]
 
 
-def mark_produced(topic: dict, video: str, duration: float) -> None:
+def mark_produced(topic: dict, video: str, duration: float, urls: dict | None = None) -> None:
     data = _read()
     fp = content.fingerprint(topic)
     data["episodes"][topic["id"]] = {
@@ -48,6 +48,7 @@ def mark_produced(topic: dict, video: str, duration: float) -> None:
         "video": video,
         "duration": round(duration, 2),
         "at": time.strftime("%Y-%m-%d %H:%M"),
+        "urls": urls or {},
     }
     if fp not in data["fingerprints"]:
         data["fingerprints"].append(fp)

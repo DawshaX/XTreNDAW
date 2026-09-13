@@ -39,6 +39,12 @@ def test_full_episode_produces_valid_video() -> None:
     assert info["bytes"] <= settings.VIDEO["max_bytes"], "الحجم أكبر من الحد"
     assert r["report"]["ok"], "فيه بند فشل في فحص المواصفات"
 
+    # الكابتشن ثنائي اللغة: عربي كينيتيك + سطر إنجليزي للقراءة
+    ass_text = Path(r["ass"]).read_text(encoding="utf-8")
+    assert "Style: CapEN" in ass_text, "ستايل الإنجليزي ناقص من الـASS"
+    assert "Every carbon atom" in ass_text, "سطر الإنجليزي مش موجود في الـASS"
+    print("  [✓] كابتشن ثنائي اللغة (عربي كينيتيك + إنجليزي للقراءة)")
+
     # الكابتشنز لازم تغطي معظم مدة الحلقة (مش شريحة واحدة ميتة)
     covered = sum(o["end"] - o["start"] for o in r["captions"])
     ratio = covered / info["duration"]

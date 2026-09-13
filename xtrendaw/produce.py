@@ -43,7 +43,9 @@ def produce_episode(topic: dict, workdir: Path) -> dict:
         scene_list.append({"path": path, "start": item["start"], "end": item["end"]})
 
     # 4) الكابتشنز المتزامنة (ASS — libass بيتكفل بالتشكيل العربي)
-    ass_path, chunks = captions.build_ass(plan, workdir / "caps.ass")
+    #    + سطر إنجليزي موازٍ لكل مقطع عشان القراءة العالمية
+    en_lines = content.english_lines(topic)
+    ass_path, chunks = captions.build_ass(plan, workdir / "caps.ass", en_lines=en_lines)
 
     # 5) التجميع
     out = settings.OUT / f"{topic['id']}.mp4"

@@ -25,6 +25,7 @@ ScaledBorderAndShadow: yes
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Cap,{font},{size},&H00FFFFFF,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,{outline},{shadow},2,{ml},{mr},{mv},1
+Style: CapEN,{font_en},{size_en},&H00B6FF00,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,3,1,2,{ml},{mr},{mv_en},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -67,7 +68,7 @@ def _escape(text: str) -> str:
     return text.replace("{", "(").replace("}", ")").replace("\n", "\\N")
 
 
-def build_ass(plan: dict, out_path: Path,
+def build_ass(plan: dict, out_path: Path, en_lines: list[str] | None = None,
               font_name: str = "Tajawal", font_size: int = 68) -> tuple[Path, list[dict]]:
     """خطة الصوت → ملف ASS + قايمة الشرائح (للتقارير والاختبارات)."""
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -84,10 +85,12 @@ def build_ass(plan: dict, out_path: Path,
             a["end"] = b["start"]
 
     # الهامش السفلي: 12% من الارتفاع — بعيد عن عناصر واجهة المنصات
-    mv = int(V["height"] * 0.13)
+    mv = int(V["height"] * 0.16)      # العربي الكينيتيك
+    mv_en = int(V["height"] * 0.075)  # الإنجليزي تحت خالص
     header = HEADER.format(
         w=V["width"], h=V["height"], font=font_name, size=font_size,
         outline=6, shadow=2, ml=70, mr=70, mv=mv,
+        font_en="Tajawal", size_en=int(font_size * 0.62), mv_en=mv_en,
     )
     lines = [header]
     for c in chunks:
@@ -95,6 +98,16 @@ def build_ass(plan: dict, out_path: Path,
             f"Dialogue: 0,{_ass_time(c['start'])},{_ass_time(c['end'])},"
             f"Cap,,0,0,0,,{_escape(c['text'])}\n"
         )
+
+    # سطر إنجليزي ثابت لكل مقطع — عشان العالم يقرا (مش بس يسمع عربي)
+    if en_lines:
+        for item, en in zip(plan["items"], en_lines):
+            if not (en or "").strip():
+                continue
+            lines.append(
+                f"Dialogue: 0,{_ass_time(item['start'])},{_ass_time(item['end'])},"
+                f"CapEN,,0,0,0,,{_escape(en)}\n"
+            )
 
     out_path.write_text("".join(lines), encoding="utf-8")
     return out_path, chunks

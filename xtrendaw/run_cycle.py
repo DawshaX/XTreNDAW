@@ -13,7 +13,7 @@ import sys
 import time
 from pathlib import Path
 
-from . import content, produce, settings, state, video
+from . import content, github_store, produce, settings, state, video
 
 
 def _log(*a) -> None:
@@ -28,7 +28,7 @@ def cmd_list() -> int:
     return 0
 
 
-def _produce(topic: dict) -> int:
+def _produce(topic: dict, upload: bool = True) -> int:
     _log(f"▶ إنتاج {topic['id']}: {topic['title_ar']}")
     workdir = settings.WORK / topic["id"]
     t0 = time.time()
@@ -43,7 +43,14 @@ def _produce(topic: dict) -> int:
                 _log(f"    - {name}")
         return 1
 
-    state.mark_produced(topic, str(r["video"]), info["duration"])
+    urls = {}
+    if upload and github_store.available():
+        try:
+            urls = github_store.upload_episode(r["video"], r["cover"])
+            _log(f"☁ على GitHub: {urls['video']}")
+        except Exception as e:  # فشل الرفع ما يوقفش الدورة
+            _log(f"⚠ رفع GitHub اتخطى: {str(e)[:120]}")
+    state.mark_produced(topic, str(r["video"]), info["duration"], urls=urls)
     _log(
         f"✓ {topic['id']} في {dt:.0f}ث — "
         f"{info['width']}×{info['height']} · {info['duration']:.1f}s · "
@@ -58,6 +65,7 @@ def main() -> int:
     ap.add_argument("--episode")
     ap.add_argument("--next", action="store_true")
     ap.add_argument("--all", action="store_true")
+    ap.add_argument("--no-upload", action="store_true")
     args = ap.parse_args()
 
     if args.list:
@@ -68,14 +76,14 @@ def main() -> int:
         if not topic:
             _log(f"✗ مفيش موضوع بالـid ده: {args.episode}")
             return 1
-        return _produce(topic)
+        return _produce(topic, upload=not args.no_upload)
 
     if args.next:
         topic = state.next_topic(content.SEED_TOPICS)
         if not topic:
             _log("مفيش حاجة جديدة — كله متنتج أو مكرر")
             return 0
-        return _produce(topic)
+        return _produce(topic, upload=not args.no_upload)
 
     if args.all:
         rc = 0
@@ -83,7 +91,7 @@ def main() -> int:
             if state.is_produced(t["id"]):
                 _log(f"· {t['id']} متنتجة قبل كده — تخطي")
                 continue
-            rc |= _produce(t)
+            rc |= _produce(t, upload=not args.no_upload)
         cmd_list()
         return rc
 
