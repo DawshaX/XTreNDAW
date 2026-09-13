@@ -93,6 +93,17 @@
    "duration": 14.9,
    "at": "2026-09-13 17:54",
    "urls": {}
+  },
+  "noor-qissa-feel-r1": {
+   "title": "قصة: أصحاب الفيل — محمود خليل الحصري",
+   "fingerprint": "5fcb8cddeac6fa69",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-feel-husary.mp4",
+   "duration": 61.47,
+   "at": "2026-09-13 18:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789322564.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789322564.png"
+   }
   }
  },
  "fingerprints": [
@@ -107,7 +118,8 @@
   "37f235477fed55a8",
   "49a3e8a8c782dcb0",
   "faaa3df13b027182",
-  "4f468f7d1b4b33a3"
+  "4f468f7d1b4b33a3",
+  "5fcb8cddeac6fa69"
  ],
- "last_kind": "quran"
+ "last_kind": "qissa"
 }
