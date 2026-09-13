@@ -104,6 +104,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789322564.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789322564.png"
    }
+  },
+  "noor-dua-2-r2": {
+   "title": "دعاء: اللهم إني أسألك العافية في الدنيا والآخرة.…",
+   "fingerprint": "88edabf3de310783",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-2.mp4",
+   "duration": 15.86,
+   "at": "2026-09-13 20:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789332173.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789332173.png"
+   }
   }
  },
  "fingerprints": [
@@ -119,7 +130,8 @@
   "49a3e8a8c782dcb0",
   "faaa3df13b027182",
   "4f468f7d1b4b33a3",
-  "5fcb8cddeac6fa69"
+  "5fcb8cddeac6fa69",
+  "88edabf3de310783"
  ],
- "last_kind": "qissa"
+ "last_kind": "dua"
 }
