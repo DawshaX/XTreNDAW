@@ -75,7 +75,8 @@ def _spread(sentence: str, start: float, end: float) -> list[dict]:
     return out
 
 
-async def _synth_line(text: str, voice: str, out_mp3: Path) -> dict:
+async def _synth_line(text: str, voice: str, out_mp3: Path,
+                      rate: str | None = None, pitch: str | None = None) -> dict:
     """يولّد سطرًا ويعيد {words, sentences, source}.
 
     source = "word" (توقيتات أصلية من الخدمة) أو "sentence" (موزّعة من الجمل)
@@ -88,7 +89,9 @@ async def _synth_line(text: str, voice: str, out_mp3: Path) -> dict:
     out_mp3.parent.mkdir(parents=True, exist_ok=True)
 
     communicate = edge_tts.Communicate(
-        text, voice, rate=settings.VOICE_RATE, pitch=settings.VOICE_PITCH
+        text, voice,
+        rate=rate or settings.VOICE_RATE,
+        pitch=pitch or settings.VOICE_PITCH,
     )
     with open(out_mp3, "wb") as audio:
         async for chunk in communicate.stream():
@@ -122,13 +125,14 @@ async def _synth_line(text: str, voice: str, out_mp3: Path) -> dict:
     return {"words": [], "sentences": sent_bounds, "source": "empty"}
 
 
-def synthesize_line(text: str, lang: str, out_dir: Path, name: str = "line") -> dict:
+def synthesize_line(text: str, lang: str, out_dir: Path, name: str = "line",
+                    rate: str | None = None, pitch: str | None = None) -> dict:
     """سطر واحد → {mp3, wav, duration, words, timing_source}."""
     voice = settings.VOICE_EN if lang == "en" else settings.VOICE_AR
     out_dir.mkdir(parents=True, exist_ok=True)
     mp3 = out_dir / f"{name}.mp3"
 
-    r = asyncio.run(_synth_line(text, voice, mp3))
+    r = asyncio.run(_synth_line(text, voice, mp3, rate=rate, pitch=pitch))
     duration = probe_duration(mp3)
     if duration <= 0:
         raise RuntimeError(f"مدة الصوت صفر لـ{name} — edge-tts فشل")
@@ -149,6 +153,28 @@ def synthesize_line(text: str, lang: str, out_dir: Path, name: str = "line") -> 
             "words": words, "timing_source": r["source"]}
 
 
+def _prosody(seg: str, text: str, i: int) -> tuple[str, str, float]:
+    """إخراج الصوت: سرعة/طبقة لكل نوع سطر + وقفة درامية بعده.
+
+    hook = طاقة واندفاع · تحذير = تهدئة وثِقل · outro = دفء · facts = تنويع خفيف.
+    """
+    import random
+
+    rng = random.Random(f"{i}:{text[:12]}")
+    if seg == "hook":
+        rate, pitch, gap = 10, 6, 0.38
+    elif seg == "outro":
+        rate, pitch, gap = -6, -4, 0.30
+    elif "تحذير" in text:
+        rate, pitch, gap = -8, -6, 0.42
+    else:
+        rate, pitch, gap = 2, 0, 0.30
+    rate += rng.randint(-2, 2)  # كسر الرتابة
+    pitch += rng.randint(-2, 2)
+    return (f"{'+' if rate >= 0 else ''}{rate}%",
+            f"{'+' if pitch >= 0 else ''}{pitch}Hz", gap)
+
+
 def synthesize_segments(segments: list[dict], lang: str, out_dir: Path) -> dict:
     """كل مقاطع الحلقة → ملف صوت واحد + توقيتات مطلقة لكل كلمة.
 
@@ -164,7 +190,9 @@ def synthesize_segments(segments: list[dict], lang: str, out_dir: Path) -> dict:
         text = (seg.get("text") or "").strip()
         if not text:
             continue
-        r = synthesize_line(text, lang, out_dir, name=f"seg{i}")
+        rate, pitch, gap = _prosody(seg.get("seg", ""), text, i)
+        r = synthesize_line(text, lang, out_dir, name=f"seg{i}",
+                            rate=rate, pitch=pitch)
         wavs.append(r["wav"])
         items.append({
             "seg": seg.get("seg", f"seg{i}"),
@@ -179,6 +207,16 @@ def synthesize_segments(segments: list[dict], lang: str, out_dir: Path) -> dict:
             ],
         })
         offset += r["duration"]
+        # وقفة درامية بين السطور (مش بعد الأخير)
+        if i < len(segments) - 1:
+            gap_wav = out_dir / f"gap{i}.wav"
+            subprocess.run(
+                [ffmpeg(), "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
+                 "-t", f"{gap:.2f}", "-c:a", "pcm_s16le", str(gap_wav)],
+                capture_output=True, check=True,
+            )
+            wavs.append(gap_wav)
+            offset += gap
 
     if not items:
         raise RuntimeError("مفيش مقاطع صوتية اتولدت — السيناريو فاضي")
@@ -188,11 +226,24 @@ def synthesize_segments(segments: list[dict], lang: str, out_dir: Path) -> dict:
     list_file.write_text(
         "".join(f"file '{p.name}'\n" for p in wavs), encoding="utf-8"
     )
-    final_wav = out_dir / "narration.wav"
+    raw_wav = out_dir / "narration_raw.wav"
     subprocess.run(
         [ffmpeg(), "-y", "-f", "concat", "-safe", "0", "-i", str(list_file),
-         "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le", str(final_wav)],
+         "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le", str(raw_wav)],
         capture_output=True, check=True, cwd=str(out_dir),
+    )
+
+    # ماسترينج: دفء + حضور + ضغط خفيف + توحيد مستوى → صوت "شخص" مش آلة
+    final_wav = out_dir / "narration.wav"
+    subprocess.run(
+        [ffmpeg(), "-y", "-i", str(raw_wav), "-af",
+         "highpass=f=90,"
+         "equalizer=f=180:width_type=q:w=0.9:g=1.5,"
+         "equalizer=f=3200:width_type=q:w=1.4:g=2.5,"
+         "acompressor=threshold=0.1:ratio=3:attack=8:release=250,"
+         "loudnorm=I=-16:TP=-1.5:LRA=11",
+         "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le", str(final_wav)],
+        capture_output=True, check=True,
     )
 
     plan = {"wav": final_wav, "total_duration": offset, "items": items}

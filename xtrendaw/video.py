@@ -41,20 +41,42 @@ def probe(path: Path) -> dict:
             "bytes": path.stat().st_size if path.exists() else 0}
 
 
+def _move_variant(seed_str: str) -> int:
+    import hashlib
+
+    return int(hashlib.sha256(seed_str.encode()).hexdigest()[:8], 16) % 4
+
+
 def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
-    """قاعدة (صورة) + طبقات نص → مقطع Ken Burns."""
+    """قاعدة (صورة) + طبقات نص → مقطع بحركة سينمائية متنوعة + انتقال ناعم."""
     frames = max(2, int(round(seconds * V["fps"])))
     inputs = ["-i", str(scene["base"])]
     for ov in scene.get("overlays", []):
         inputs += ["-i", str(ov)]
 
+    # حركة مختلفة لكل مشهد: تقريب / إبعاد / بان يمين / بان شمال
+    cx = "iw/2-(iw/zoom/2)"
+    cy = "ih/2-(ih/zoom/2)"
+    mv = _move_variant(out_mp4.name)
+    if mv == 0:
+        zp = f"z='1+0.11*on/{frames}':x='{cx}':y='{cy}'"
+    elif mv == 1:
+        zp = f"z='1.11-0.11*on/{frames}':x='{cx}':y='{cy}'"
+    elif mv == 2:
+        zp = f"z='1.08':x='(iw-iw/zoom)*(0.12+0.76*on/{frames})':y='{cy}'"
+    else:
+        zp = f"z='1.08':x='(iw-iw/zoom)*(0.88-0.76*on/{frames})':y='{cy}'"
+
+    dip_out = max(0.0, seconds - 0.20)
     parts = [
         f"[0:v]scale={V['width'] * 3 // 2}:{V['height'] * 3 // 2},"
         # دفعة هوية حمراء سينمائية موحّدة فوق أي صورة مصدر
         f"eq=contrast=1.08:saturation=1.22:brightness=0.01,"
         f"colorbalance=rs=0.14:rm=0.14:rh=0.08:gm=-0.05:bm=-0.14,"
-        f"zoompan=z='1+0.10*on/{frames}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
-        f"d={frames}:s={V['width']}x{V['height']}:fps={V['fps']}[base]"
+        f"zoompan={zp}:d={frames}:s={V['width']}x{V['height']}:fps={V['fps']},"
+        # انتقال ناعم: دخول من فحمي أحمر + خروج لأسود (مش قطع ناشف)
+        f"fade=t=in:st=0:d=0.24:color=0x140404,"
+        f"fade=t=out:st={dip_out:.2f}:d=0.20:color=black[base]"
     ]
     prev = "[base]"
     for i in range(1, len(inputs) // 2):
@@ -92,12 +114,18 @@ def assemble(plan: dict, scenes: list[dict], ass_path: Path, out_mp4: Path,
           "-pix_fmt", "yuv420p", "-r", str(V["fps"]), "-an", str(base_video)], "دمج")
 
     ass = f"ass={ass_path.as_posix()}:fontsdir={settings.FONTS}"
+    # لمسة فيلم: حبيبات خفيفة + فينييت مريح
+    grade = ",noise=alls=4:allf=t,vignette=a=0.3"
     if music and Path(music).exists():
-        fc = f"[0:v]{ass}[v];[2:a]volume=0.7[m];[1:a][m]amix=inputs=2:duration=first[a]"
+        # الموسيقى تتنفس: دخول/خروج + خفض تلقائي تحت الصوت (sidechain)
+        duck = (f"[2:a]afade=t=in:d=0.8,afade=t=out:st={max(0, total - 1.4):.2f}:d=1.4[m0];"
+                f"[m0][1:a]sidechaincompress=threshold=0.08:ratio=5:attack=15:release=350[m];"
+                f"[1:a][m]amix=inputs=2:duration=first:normalize=0[a]")
+        fc = f"[0:v]{ass}{grade}[v];{duck}"
         audio_in = ["-i", str(plan["wav"]), "-i", str(music)]
         amap = "[a]"
     else:
-        fc = f"[0:v]{ass}[v]"
+        fc = f"[0:v]{ass}{grade}[v]"
         audio_in = ["-i", str(plan["wav"])]
         amap = "1:a"
     _run([ff, "-y", "-i", str(base_video), *audio_in,

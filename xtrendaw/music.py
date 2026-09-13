@@ -17,7 +17,7 @@ def _sine(freq: float, dur: float, sr: int = SR) -> np.ndarray:
 
 
 def make_music(duration: float, out_path: Path, bpm: int = 100,
-               volume: float = 0.16) -> Path:
+               volume: float = 0.22) -> Path:
     n = int(duration * SR)
     beat = 60.0 / bpm
 
