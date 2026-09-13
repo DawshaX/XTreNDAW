@@ -85,6 +85,14 @@
    "duration": 13.36,
    "at": "2026-09-13 15:41",
    "urls": {}
+  },
+  "noor-hadith-9-r1": {
+   "title": "حديث: الكلمة الطيبة صدقة.…",
+   "fingerprint": "4f468f7d1b4b33a3",
+   "video": "/home/user/project/content/vids/noor-hadith-1.mp4",
+   "duration": 14.9,
+   "at": "2026-09-13 17:54",
+   "urls": {}
   }
  },
  "fingerprints": [
@@ -98,7 +106,8 @@
   "78492a8b783f4038",
   "37f235477fed55a8",
   "49a3e8a8c782dcb0",
-  "faaa3df13b027182"
+  "faaa3df13b027182",
+  "4f468f7d1b4b33a3"
  ],
  "last_kind": "quran"
 }

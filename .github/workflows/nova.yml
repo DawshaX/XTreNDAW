@@ -43,7 +43,8 @@ jobs:
         run: |
           git config user.name  "XDAW NOVA factory"
           git config user.email "dawshaxlol@gmail.com"
-          git add state/produced.json content/topics.json || true
+          git add state/produced.json state/ledger.json state/quran_windows.json \
+                  content/topics.json content/din_stock.json || true
           git diff --cached --quiet || {
             git commit -m "auto: factory state $(date -u +%Y-%m-%dT%H:%MZ)"
             git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"

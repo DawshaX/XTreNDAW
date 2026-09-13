@@ -35,7 +35,8 @@ def _produce(topic: dict, upload: bool = True) -> int:
     if topic.get("_din"):
         from . import din as _din
 
-        r = _din.produce_din(topic["_din"], workdir, topic.get("_din_rec", 0))
+        r = _din.produce_din(topic["_din"], workdir, topic.get("_din_rec", 0),
+                             topic.get("_din_spec"))
     else:
         r = produce.produce_episode(topic, workdir)
     dt = time.time() - t0
@@ -61,6 +62,10 @@ def _produce(topic: dict, upload: bool = True) -> int:
         except Exception as e:  # فشل التخزين ما يوقفش الدورة
             _log(f"⚠ تخزين GitHub اتخطى: {str(e)[:120]}")
     state.mark_produced(topic, str(r["video"]), info["duration"], urls=urls)
+    if topic.get("_ledger_key"):
+        from . import planner
+
+        planner.mark_done(topic)
     # عادة المساحة: اللي اترفع على GitHub بيتحذف محليًا،
     # ومجلد الشغل الوسيط بيتحذف دايمًا (الفيديو النهائي يفضل في content/vids)
     if urls.get("video"):
@@ -190,16 +195,13 @@ def main() -> int:
 
     if args.next:
         if settings.CHANNEL_MODE == "deen":
-            # تناوب النور: قرآن ← دعاء ← حديث ← قصة ← تفسير (والقارئ بيتبدل)
-            kinds = ["quran", "dua", "hadith", "qissa", "tafsir"]
-            last = state.last_kind()
-            kind = kinds[(kinds.index(last) + 1) % len(kinds)] \
-                if last in kinds else "quran"
-            rec = len(state.produced_ids())
-            topic = {"id": f"noor-{kind}-{rec}",
-                     "title_ar": f"نُور: {kind} · تلاوة {rec % 4 + 1}",
-                     "tags": "نور,قرآن,دعوة,XDAWNOVA",
-                     "_din": kind, "_din_rec": rec, "_kind": kind}
+            # المخطّط الذكي: سلسلة + تناوب + بلا تكرار (الذاكرة على git)
+            from . import planner
+
+            topic = planner.next_episode()
+            _log(f"🧭 المخطط: {topic['_din']} · {topic['title_ar']}")
+            rec = topic["_din_rec"]
+            topic = {**topic, "_din_rec": rec}
             rc = _produce(topic, upload=not args.no_upload)
             if not args.no_upload:
                 _promote_due()

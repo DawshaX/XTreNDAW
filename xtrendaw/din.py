@@ -50,20 +50,56 @@ QURAN = [
 
 # قصص بآيات متتابعة — مشاهد سينمائية تاريخية
 QISSA = [
-    dict(id="naqat", surah=11, frm=64, to=67,
+    dict(id="naqat", title="ناقة صالح", surah=11, frm=64, to=67,
          scenes=["camel ancient desert village", "ancient stone village desert mountains",
                  "camel rock cliff desert", "ancient people robes desert",
                  "desert mountains dawn"]),
-    dict(id="feel", surah=105, frm=1, to=5,
+    dict(id="feel", title="أصحاب الفيل", surah=105, frm=1, to=5,
          scenes=["elephant desert ancient", "ancient army desert history",
                  "kaaba mecca old photo", "birds flock sky sunset",
                  "desert stones ground"]),
-    dict(id="yusuf-dream", surah=12, frm=4, to=6,
+    dict(id="yusuf-dream", title="رؤيا يوسف", surah=12, frm=4, to=6,
          scenes=["desert night stars", "sun moon stars sky", "ancient caravan night",
                  "father son desert robes"]),
-    dict(id="kahf", surah=18, frm=9, to=12,
+    dict(id="kahf", title="أهل الكهف", surah=18, frm=9, to=12,
          scenes=["cave inside light rays", "ancient cave mountains",
                  "sleeping cave darkness", "sunlight cave entrance"]),
+    dict(id="adam", title="آدم وتعلّم الأسماء", surah=2, frm=30, to=33,
+         scenes=["garden eden trees light", "angels light sky", "first man earth dawn",
+                 "stars cosmos creation"]),
+    dict(id="nuh", title="سفينة نوح", surah=11, frm=37, to=41,
+         scenes=["ancient wooden ship flood", "heavy rain clouds sea", "mountain waves storm",
+                 "dove bird sky calm"]),
+    dict(id="ibrahim-nar", title="نار إبراهيم بردًا", surah=21, frm=68, to=70,
+         scenes=["huge fire flames night", "man standing fire calm", "green garden from ashes",
+                 "ancient babylon ruins"]),
+    dict(id="musa", title="عصا موسى", surah=20, frm=17, to=21,
+         scenes=["ancient egypt nile river", "wooden staff hand desert", "snake sand ancient",
+                 "pharaoh palace ruins"]),
+    dict(id="yunus", title="يونس في بطن الحوت", surah=37, frm=139, to=144,
+         scenes=["whale deep sea dark", "man sea night waves", "glowing plankton ocean deep",
+                 "pumpkin plant shore"]),
+    dict(id="sulayman", title="سليمان والنملة", surah=27, frm=17, to=19,
+         scenes=["ancient army desert march", "tiny ant sand closeup", "king throne ancient",
+                 "birds flock sky army"]),
+    dict(id="zakariya", title="دعاء زكريا", surah=19, frm=2, to=6,
+         scenes=["old man praying mihrab", "candle light ancient mosque", "white hair hands dua",
+                 "dawn light window"]),
+    dict(id="maryam", title="مريم ونخلة الرطب", surah=19, frm=22, to=26,
+         scenes=["palm tree desert oasis", "dates palm closeup", "stream water desert",
+                 "mother baby light"]),
+    dict(id="ayyub", title="صبر أيوب", surah=38, frm=41, to=43,
+         scenes=["sick man patient ancient", "spring water gushing rock", "family reunion desert",
+                 "green field after rain"]),
+    dict(id="dhaby", title="فداء إسماعيل", surah=37, frm=102, to=107,
+         scenes=["father son mountain walk", "ram mountain dawn", "kaaba ancient desert",
+                 "sky clouds mercy light"]),
+    dict(id="hijra", title="هجرة النبي ﷺ والغار", surah=9, frm=40, to=40,
+         scenes=["cave entrance spider web", "two men cave light", "desert night journey camels",
+                 "dawn horizon hijra"]),
+    dict(id="badr", title="نصر بدر", surah=3, frm=123, to=125,
+         scenes=["ancient battle desert dawn", "angels light sky riders", "desert camp night fires",
+                 "victory sunrise desert"]),
 ]
 
 # آيات الدعوة — تلاوة + شرح ميسّر بالصوت
@@ -190,7 +226,8 @@ def _end_card(workdir: Path, fayda: str) -> dict:
             "overlays": ov}
 
 
-def produce_din(kind: str, workdir: Path, reciter_idx: int = 0) -> dict:
+def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
+                spec: dict | None = None) -> dict:
     """ينتج حلقة نور ويعيد {video, cover, report, title, id}."""
     workdir.mkdir(parents=True, exist_ok=True)
     reciter, rec_name = RECITERS[reciter_idx % len(RECITERS)]
@@ -201,7 +238,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0) -> dict:
 
     if kind in ("quran", "qissa", "tafsir"):
         pool = {"quran": QURAN, "qissa": QISSA, "tafsir": TAFASEER}[kind]
-        spec = pool[reciter_idx % len(pool)]  # تنويع بسيط مع القارئ
+        spec = spec or pool[reciter_idx % len(pool)]
         spec = {**spec, "style": "cinema" if kind == "qissa" else "cosmic"}
         ayahs = _get_json(f"{APIQ}/surah/{spec['surah']}/quran-uthmani")["ayahs"]
         sel = [a for a in ayahs if spec["frm"] <= a["numberInSurah"] <= spec["to"]]
@@ -254,12 +291,15 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0) -> dict:
         except Exception:
             pass
         ep_id = f"noor-{spec['id']}-{reciter.split('.')[-1]}"
-    else:  # dua / hadith من المخزون المحلي
+    else:  # dua / hadith / adhkar / info من المخزون المحلي الصحيح
         stock = json.loads((settings.ROOT / "content" / "din_stock.json")
                            .read_text(encoding="utf-8"))
-        items = stock["duas"] if kind == "dua" else stock["hadiths"]
-        item = items[reciter_idx % len(items)]
-        label = "دعاء" if kind == "dua" else "قال رسول الله ﷺ"
+        lists = {"dua": ("duas", "دعاء"), "hadith": ("hadiths", "قال رسول الله ﷺ"),
+                 "adhkar": ("adhkar", "مِن أذكار المسلم"),
+                 "info": ("info", "معلومة تُضيء")}
+        lname, label = lists[kind]
+        items = stock[lname]
+        item = items[(spec or {}).get("idx", reciter_idx) % len(items)]
         title = f"{label}: {item['text'][:40]}…"
         r = synthesize_line(item["text"], "ar", workdir / "vox", name="main",
                             rate="-8%", pitch="-2Hz")
@@ -278,10 +318,15 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0) -> dict:
         events.append({"style": "Trj", "text": item["src"],
                        "start": base_off, "end": base_off + r["duration"]})
         off = base_off + r["duration"]
-        fayda = ("الدعاء عبادةٌ تُشرَح بها الصدور ويُرَدّ بها البلاء — "
-                 "اجعله وَردَك اليوم." if kind == "dua" else
-                 "علمٌ يُعمَل به ويُنشَر يضاعِف اللهُ به الأجر — "
-                 "اعمل به وذكِّر غيرك.")
+        fayda = {
+            "dua": "الدعاء عبادةٌ تُشرَح بها الصدور ويُرَدّ بها البلاء — "
+                   "اجعله وَردَك اليوم.",
+            "hadith": "علمٌ يُعمَل به ويُنشَر يضاعِف اللهُ به الأجر — "
+                      "اعمل به وذكِّر غيرك.",
+            "adhkar": "ذِكرُ الله تُطمئنّ به القلوب وتُحطّ به الخطايا — "
+                      "لا يفارق لسانك.",
+            "info": "التفكّر عبادة، والمعرفة نور — تدبَّر وشارك الخير.",
+        }[kind]
         qs = ["mosque night lights", "kaaba mecca", "quran book candle",
               "praying hands sky", "dawn mountains peace"]
         n = 3
