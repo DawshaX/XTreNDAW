@@ -96,7 +96,7 @@ def _auto_id(topics: list[dict]) -> str:
 
 def _publish(topic, r: dict, urls: dict) -> None:
     """ينشر على المنصات المتصلة بس — رابط Releases العام هو مصدر الفيديو."""
-    from .publish import facebook as _fb, instagram as _ig, youtube as _yt
+    from .publish import facebook as _fb, instagram as _ig, telegram as _tg, youtube as _yt
     video_url = urls.get("video")
     if not video_url:
         return  # من غير رابط عام مفيش نشر (إنستجرام/فيسبوك بيحتاجوه)
@@ -104,12 +104,13 @@ def _publish(topic, r: dict, urls: dict) -> None:
     caption = content.make_caption(topic)
     tags = [t.strip() for t in topic.get("tags", "").split(",") if t.strip()]
     for name, mod, ok in (("youtube", _yt, settings.has_youtube),
+                          ("telegram", _tg, settings.has_telegram),
                           ("facebook", _fb, settings.has_facebook),
                           ("instagram", _ig, settings.has_instagram)):
         if not ok():
             continue
         try:
-            if name == "youtube":
+            if name in ("youtube", "telegram"):
                 url, err = mod.publish(r["video"], title, caption, tags)
             else:
                 url, err = mod.publish(video_url, title, caption, tags)
