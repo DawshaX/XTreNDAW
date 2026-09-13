@@ -91,11 +91,10 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Ayah,Amiri Quran,106,&H00FFFFFF,&H000000FF,&H00000000,&H8A000000,0,0,0,0,100,100,0,0,1,3,2,5,70,70,0,1
-Style: Trj,Tajawal,44,&H00B6FFB6,&H000000FF,&H00000000,&H7A000000,0,0,0,0,100,100,0,0,1,3,1,2,60,60,150,1
-Style: Shr,Tajawal,56,&H00D6C9A6,&H000000FF,&H00000000,&H7A000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,220,1
-Style: Hdr,Amiri Quran,58,&H009AD8FF,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,2,8,60,60,90,1
-Style: WM,Tajawal,30,&H8CFFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,2,0,1,2,0,9,50,50,60,1
+Style: Ayah,Tajawal,104,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,4,2,5,70,70,0,1
+Style: Trj,Tajawal,46,&H00B6FFB6,&H000000FF,&H00000000,&H8A000000,0,0,0,0,100,100,0,0,1,3,1,2,60,60,150,1
+Style: Shr,Tajawal,58,&H00D6C9A6,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,220,1
+Style: Hdr,Amiri Quran,60,&H009AD8FF,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,2,8,60,60,90,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -171,30 +170,22 @@ def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
     return {"base": base, "overlays": [], "grade": "soft"}
 
 
-def _end_card(workdir: Path, fayda: str, seconds: float) -> dict:
-    """كرت الختام: لقطة حيّة هادئة + فائدة الآية/الدعاء + الهوية."""
-    from . import footage, textrender
+def _end_card(workdir: Path, fayda: str) -> dict:
+    """كرت الختام: خلفية البراند النيون + اللوجو + فائدة الآية/الدعاء."""
+    from . import textrender
 
     d = workdir / "end"
-    clip = None
-    for qq in ("kaaba mecca night", "candle flame dark", "stars night sky",
-               "aurora night"):
-        clip = footage.fetch_clip(qq, seconds, d, f"end-{qq}")
-        if clip:
-            break
     ov = [scenes._brand_layer(d / "brand.png")]
     ov.append(textrender.text_image(
-        "﴿ فَائِدَةٌ وَنُور ﴾", d / "h.png", font_size=54, y_ratio=0.28,
+        "﴿ فَائِدَةٌ وَنُور ﴾", d / "h.png", font_size=56, y_ratio=0.28,
         fill="#ffd9a0", stroke_width=4,
         font_path=settings.FONTS / "AmiriQuran-Regular.ttf"))
-    ov.append(textrender.text_image(fayda, d / "f.png", font_size=46,
+    ov.append(textrender.text_image(fayda, d / "f.png", font_size=48,
                                     y_ratio=0.52, fill="#f7ecd7",
                                     stroke_width=4))
-    ov.append(textrender.text_image("XDAW NOVA — انشر الخير", d / "b.png",
-                                    font_size=30, y_ratio=0.90,
-                                    fill="#ffffff", stroke_width=3))
-    if clip:
-        return {"video": clip, "overlays": ov, "grade": "soft"}
+    ov.append(textrender.text_image("انشر الخير — XDAW NOVA", d / "b.png",
+                                    font_size=34, y_ratio=0.90,
+                                    fill="#ffd166", stroke_width=3))
     return {"base": scenes.render_bg(d / "base.png", "outro", "noor-end"),
             "overlays": ov}
 
@@ -237,7 +228,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0) -> dict:
                            "text": f"{a['text']} ﴿{_ar_num(a['numberInSurah'])}﴾",
                            "start": off, "end": off + d})
             sc = _scene_media(i, spec, workdir, spec["id"], d)
-            sc.update(start=off, end=off + d)
+            sc.update(start=off, end=off + d, frame=True)
             scene_list.append(sc)
             off += d
             if kind == "tafsir":
@@ -299,19 +290,36 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0) -> dict:
             e = off * (i + 1) / n
             sc = _scene_media(i, {"scenes": qs, "style": "cosmic"},
                               workdir, kind, e - s)
-            sc.update(start=s, end=e)
+            sc.update(start=s, end=e, frame=True)
             scene_list.append(sc)
         ep_id = f"noor-{kind}-{reciter_idx % len(items)}"
 
-    # كرت الختام: فائدة مسموعة فوق لقطة حيّة هادئة
+    # هوية البراند فوق كل المشاهد: لوجو + تدرّجات + إطار ذهبي للمشاهد
+    INTRO = 1.4
+    bl = scenes._brand_layer(workdir / "ov" / "brand.png")
+    fr_ov = scenes.frame_overlay(workdir / "ov" / "frame.png")
+    for sc in scene_list:
+        sc["overlays"] = [bl] + (sc.get("overlays") or [])
+        if sc.get("frame"):
+            sc["overlays"].append(fr_ov)
+    for ev in events:
+        ev["start"] += INTRO
+        ev["end"] += INTRO
+    for sc in scene_list:
+        sc["start"] += INTRO
+        sc["end"] += INTRO
+    wavs.insert(0, _silence(workdir / "intro.wav", INTRO))
+    scene_list.insert(0, {"base": scenes.intro_base(workdir / "intro.png"),
+                          "overlays": [], "start": 0.0, "end": INTRO})
+    off += INTRO
+
+    # كرت الختام: فائدة مسموعة فوق خلفية البراند
     fr = synthesize_line(fayda, "ar", workdir / "end", name="fayda",
                          rate="-7%", pitch="-2Hz")
     wavs.append(fr["wav"])
     end_dur = fr["duration"] + 1.0
-    scene_list.append({**_end_card(workdir, fayda, end_dur),
+    scene_list.append({**_end_card(workdir, fayda),
                        "start": off, "end": off + end_dur})
-    events.append({"style": "WM", "text": "نُور • XDAW NOVA",
-                   "start": 0.0, "end": off + end_dur})
     total = off + end_dur
 
     # دمج الصوت + كتابة ASS + تجميع

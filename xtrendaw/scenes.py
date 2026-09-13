@@ -288,6 +288,54 @@ def load_logo(size: int, alpha: int = 255) -> Image.Image:
     return logo
 
 
+def frame_overlay(out_path: Path) -> Path:
+    """إطار ذهبي هندسي هادي: خطّان + نجمة ثمانية في الزوايا (روح إسلامية)."""
+    cache = settings.ASSETS / "ornaments" / "frame.png"
+    if not cache.exists():
+        import math
+
+        layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        d = ImageDraw.Draw(layer)
+        gold = (216, 180, 110, 150)
+        gold2 = (216, 180, 110, 80)
+        m = 46
+        d.rectangle([m, m, W - m, H - m], outline=gold, width=3)
+        d.rectangle([m + 14, m + 14, W - m - 14, H - m - 14],
+                    outline=gold2, width=1)
+
+        def star(cx: float, cy: float, r: float) -> None:
+            p1 = [(cx + r * math.cos(i * math.pi / 2),
+                   cy + r * math.sin(i * math.pi / 2)) for i in range(4)]
+            p2 = [(cx + r * math.cos(math.pi / 4 + i * math.pi / 2),
+                   cy + r * math.sin(math.pi / 4 + i * math.pi / 2))
+                  for i in range(4)]
+            d.polygon(p1, outline=gold)
+            d.polygon(p2, outline=gold)
+
+        for cx, cy in [(m, m), (W - m, m), (m, H - m), (W - m, H - m)]:
+            star(cx, cy, 40)
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        layer.save(cache, "PNG")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_bytes(cache.read_bytes())
+    return out_path
+
+
+def intro_base(out_path: Path) -> Path:
+    """افتتاحية البراند: سواد + توهّج أحمر نابض + اللوجو في القلب."""
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    layer = Image.new("RGB", (W, H), (5, 0, 0))
+    d = ImageDraw.Draw(layer, "RGBA")
+    cx, cy = W // 2, H // 2 - 60
+    for r, a in [(680, 12), (520, 18), (380, 28), (250, 42), (150, 60)]:
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(255, 42, 42, a))
+    if settings.LOGO.exists():
+        lg = load_logo(460, 250)
+        layer.paste(lg, (cx - 230, cy - 230), lg)
+    layer.save(out_path, "PNG")
+    return out_path
+
+
 def _brand_layer(out_path: Path) -> Path:
     """طبقة شفافة ثابتة: لوجو XDAW NOVA فوق-يمين + تدرّج سينمائي فوق/تحت
     (يضبط قراءة الكابتشن ويخفي أي علامة مصدر صغيرة)."""
