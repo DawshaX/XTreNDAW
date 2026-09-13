@@ -159,6 +159,23 @@ SEED_TOPICS: list[dict] = [
 LABELS_AR = ["الحقيقة الأولى:", "الحقيقة الثانية:", "والحقيقة الثالثة:"]
 LABELS_EN = ["Fact one:", "Fact two:", "And fact three:"]
 
+# دعوة المشاركة الثابتة — المصنع بيكلم المشاهد كأنه قاعد جنبه، وبيسيبه حر
+CTA_AR = ("وقولنا إنت عايز تشوف إيه؟ كل واحد حر — اكتب براحتك في التعليقات أو افتح Issue عندنا، "
+          "ومتستحش… نوفا بتقرأ كل حاجة، وبصراحة بتحب تدلّع جمهورها.")
+CTA_EN = ("Tell us what YOU want to see. Everyone's free — comment or open an Issue, don't be shy… "
+          "NOVA reads everything, and honestly loves spoiling its audience.")
+
+
+def _takeaway_text(topic: dict, lang: str) -> str:
+    """ملخص ذكي للعقل والقلب والروح — خاتمة كل فيديو."""
+    tk = topic.get(f"takeaway_{lang}") or settings.BRAND[f"takeaway_{lang}"]
+    if lang == "en":
+        return (f"And tonight's takeaway in three touches. "
+                f"For your mind: {tk['aql']} For your heart: {tk['qalb']} "
+                f"For your soul: {tk['rouh']}")
+    return (f"وخلاصة الليلة في تلات لمسات: لعقلك: {tk['aql']} "
+            f"لقلبك: {tk['qalb']} ولروحك: {tk['rouh']}")
+
 
 def fingerprint(topic: dict) -> str:
     raw = "|".join([
@@ -169,16 +186,25 @@ def fingerprint(topic: dict) -> str:
 
 
 def compose_script(topic: dict, lang: str = "ar") -> list[dict]:
-    """موضوع → مقاطع مرتبة hook/fact1..3/outro بلغة محددة."""
+    """موضوع → مقاطع مرتبة hook/fact1..3/cta/outro بلغة محددة."""
     labels = LABELS_EN if lang == "en" else LABELS_AR
     hook = topic.get(f"hook_{lang}") or topic.get("hook_ar", "")
     facts = topic.get(f"facts_{lang}") or topic.get("facts_ar") or []
     outro = settings.BRAND["outro_en" if lang == "en" else "outro_ar"]
+    cta = (CTA_EN if lang == "en" else CTA_AR)
 
     segs = [{"seg": "hook", "text": hook.strip()}]
     for i, fact in enumerate(facts[:3]):
         label = labels[i] if i < len(labels) else f"Fact {i + 1}:" if lang == "en" else f"الحقيقة {i + 1}:"
         segs.append({"seg": f"fact{i + 1}", "text": f"{label} {fact.strip()}"})
+    # زاد نوفا — ملخص ذكي للعقل والقلب والروح (الجدّ يستاهل ختامه)
+    raw_tk = topic.get(f"takeaway_{lang}")
+    if not isinstance(raw_tk, dict):
+        raw_tk = None
+    segs.append({"seg": "takeaway", "text": _takeaway_text(
+        {**topic, f"takeaway_{lang}": raw_tk}, lang)})
+    # دعوة المشاركة — المشاهد حر يطلب أي حاجة والمصنع بيسمعه
+    segs.append({"seg": "cta", "text": cta.strip()})
     segs.append({"seg": "outro", "text": outro.strip()})
     return segs
 

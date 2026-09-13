@@ -50,6 +50,11 @@ def _produce(topic: dict, upload: bool = True) -> int:
             _log(f"☁ على GitHub: {urls['video']}")
         except Exception as e:  # فشل الرفع ما يوقفش الدورة
             _log(f"⚠ رفع GitHub اتخطى: {str(e)[:120]}")
+    if urls.get("video") and topic.get("_issue"):
+        from . import requests as viewer_requests
+
+        viewer_requests.answer_and_close(topic["_issue"], urls["video"])
+        _log("💬 اترد على طلب المشاهد واتقفل باللينك")
     _publish(topic, r, urls)
     state.mark_produced(topic, str(r["video"]), info["duration"], urls=urls)
     # عادة المساحة: اللي اترفع على GitHub بيتحذف محليًا،
@@ -82,16 +87,16 @@ def _auto_id(topics: list[dict]) -> str:
 
 def _publish(topic, r: dict, urls: dict) -> None:
     """ينشر على المنصات المتصلة بس — رابط Releases العام هو مصدر الفيديو."""
-    from . import publish
+    from .publish import facebook as _fb, instagram as _ig, youtube as _yt
     video_url = urls.get("video")
     if not video_url:
         return  # من غير رابط عام مفيش نشر (إنستجرام/فيسبوك بيحتاجوه)
     title = topic["title_ar"]
     caption = content.make_caption(topic)
     tags = [t.strip() for t in topic.get("tags", "").split(",") if t.strip()]
-    for name, mod, ok in (("youtube", publish.youtube, settings.has_youtube),
-                          ("facebook", publish.facebook, settings.has_facebook),
-                          ("instagram", publish.instagram, settings.has_instagram)):
+    for name, mod, ok in (("youtube", _yt, settings.has_youtube),
+                          ("facebook", _fb, settings.has_facebook),
+                          ("instagram", _ig, settings.has_instagram)):
         if not ok():
             continue
         try:

@@ -37,7 +37,13 @@ def produce_episode(topic: dict, workdir: Path) -> dict:
         text = item["text"]
         if ":" in text:
             text = text.split(":", 1)[1].strip()
-        chip = CHIPS_AR[i - 1] if kind.startswith("fact") and 1 <= i <= 3 else ""
+        chip = ""
+        if kind.startswith("fact") and 1 <= i <= 3:
+            chip = CHIPS_AR[i - 1]
+        elif item["seg"] == "takeaway":
+            chip = "زاد نوفا"
+        elif item["seg"] == "cta":
+            chip = "كلمتك مسموعة"
         subject = ""
         if i < len(en_lines):
             subject = en_lines[i]

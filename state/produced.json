@@ -18,10 +18,22 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/episodes/ep2.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/episodes/ep2-cover.png"
    }
+  },
+  "ep3": {
+   "title": "مخك بيغسل نفسه وإنت نايم… الحقيقة مرعبة!",
+   "fingerprint": "bfd8bf719eca4a58",
+   "video": "/home/user/project/content/vids/ep3.mp4",
+   "duration": 73.13,
+   "at": "2026-09-13 05:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/episodes/ep3.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/episodes/ep3-cover.png"
+   }
   }
  },
  "fingerprints": [
   "c90d144099296754",
-  "c6331f7b31e9d029"
+  "c6331f7b31e9d029",
+  "bfd8bf719eca4a58"
  ]
 }

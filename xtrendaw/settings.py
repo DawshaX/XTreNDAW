@@ -119,5 +119,16 @@ BRAND = {
     "hashtags": "#حقائق #علوم #XDAWNOVA",
     "outro_ar": "انتو خير ونور من الله. تابع XDAW NOVA.",
     "outro_en": "You are goodness and light. Follow XDAW NOVA.",
+    # زاد نوفا الافتراضي — ملخص العقل والقلب والروح لما الموضوع مايكتبش زاده
+    "takeaway_ar": {
+        "aql": "المعرفة مش معلومات… المعرفة قوة مسؤولة.",
+        "qalb": "إنت مش وحدك في الكون ده — إحنا معاك.",
+        "rouh": "نور • رحمة • خير من الله… دايمًا.",
+    },
+    "takeaway_en": {
+        "aql": "Knowledge isn't trivia — it's responsible power.",
+        "qalb": "You're not alone in this universe — we're with you.",
+        "rouh": "Light • mercy • goodness from God… always.",
+    },
 }
 LOGO = ASSETS / "brand" / "logo.png"

@@ -162,13 +162,21 @@ def _prosody(seg: str, text: str, i: int) -> tuple[str, str, float]:
 
     rng = random.Random(f"{i}:{text[:12]}")
     if seg == "hook":
-        rate, pitch, gap = 10, 6, 0.38
+        rate, pitch, gap = 10, 6, 0.38          # طاقة واندفاع
+    elif seg == "takeaway":
+        rate, pitch, gap = -7, -4, 0.5          # جدّ هادي — لحظة تستقر في القلب
+    elif seg == "cta":
+        rate, pitch, gap = 3, 2, 0.35           # دفء ولعب — المشاهد صاحب مكان
     elif seg == "outro":
-        rate, pitch, gap = -6, -4, 0.30
+        rate, pitch, gap = -6, -4, 0.30         # خاتمة دافية
     elif "تحذير" in text:
-        rate, pitch, gap = -8, -6, 0.42
+        rate, pitch, gap = -8, -6, 0.42         # ثِقل التحذير
     else:
         rate, pitch, gap = 2, 0, 0.30
+    # لحظة جنون/فكاهة جوّا السطر؟ الجنون ياخد حقه هو كمان
+    if any(k in text for k in ("استمتع", "بجد", "تدلع", "متستحش", "Mic drop", "Enjoy")):
+        rate += 6
+        pitch += 4
     rate += rng.randint(-2, 2)  # كسر الرتابة
     pitch += rng.randint(-2, 2)
     return (f"{'+' if rate >= 0 else ''}{rate}%",

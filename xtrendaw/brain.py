@@ -132,13 +132,33 @@ def trend_topic() -> dict | None:
                 "NOVA sees everything… we only pick what's worth it.",
             ],
             "tags": "ترند,رادار_نوفا,XTreNDAW",
+            "takeaway_ar": {
+                "aql": "الترند بيعدي… بس اللي بيفهم ليه انتشر بيستفيد.",
+                "qalb": "إنت مش مجرد متفرج — إنت جزء من الحكاية.",
+                "rouh": "خير ونور من الله… وإنت الحر في اللي يجذبك.",
+            },
+            "takeaway_en": {
+                "aql": "Trends fade… but understanding why they spread is power.",
+                "qalb": "You're not just a viewer — you're part of the story.",
+                "rouh": "Goodness and light from God… and you're free to choose.",
+            },
         }
     return None
 
 
 def generate(topics: list[dict]) -> dict | None:
-    """موضوع جديد مش مكرر بالبصمة، وإلا None."""
+    """موضوع جديد مش مكرر بالبصمة، وإلا None.
+
+    الأولوية: طلبات المشاهدين ← التريند اللحظي ← LLM ← المخزون.
+    """
+    from . import requests as viewer_requests
+
     seen = {content.fingerprint(t) for t in topics}
+
+    for req in viewer_requests.pending():
+        cand = viewer_requests.topic_from(req)
+        if content.fingerprint(cand) not in seen:
+            return cand
 
     tr = trend_topic()
     if tr and content.fingerprint(tr) not in seen:
