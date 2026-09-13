@@ -124,11 +124,12 @@ def _publish(topic, r: dict, urls: dict) -> None:
     title = topic["title_ar"]
     caption = content.make_caption(topic)
     tags = [t.strip() for t in topic.get("tags", "").split(",") if t.strip()]
-    for name, mod, ok in (("youtube", _yt, settings.has_youtube),
-                          ("telegram", _tg, settings.has_telegram),
-                          ("facebook", _fb, settings.has_facebook),
-                          ("instagram", _ig, settings.has_instagram)):
-        if not ok():
+    for name, mod, ok in (
+            ("youtube", _yt, settings.has_youtube() and settings.PUBLISH_YOUTUBE),
+            ("telegram", _tg, settings.has_telegram()),
+            ("facebook", _fb, settings.has_facebook()),
+            ("instagram", _ig, settings.has_instagram())):
+        if not ok:
             continue
         try:
             if name in ("youtube", "telegram"):

@@ -21,11 +21,12 @@ APIQ = "https://api.alquran.cloud/v1"
 CDN = "https://cdn.islamic.network/quran/audio/128"
 CACHE = settings.STATE / "din_cache"
 
+# قرّاء بمصادر أقل عرضة للمطالبات + بيت ريت مختلف لكل مصدر
 RECITERS = [
-    ("ar.alafasy", "مشاري العفاسي"),
-    ("ar.husary", "محمود خليل الحصري"),
-    ("ar.minshawi", "محمد صديق المنشاوي"),
-    ("ar.muhammadayyoub", "محمد أيوب"),
+    ("ar.husary", "محمود خليل الحصري", 128),
+    ("ar.minshawi", "محمد صديق المنشاوي", 128),
+    ("ar.abdulbasitmurattal", "عبد الباسط عبد الصمد", 64),
+    ("ar.abdurrahmaansudais", "عبدالرحمن السديس", 64),
 ]
 
 # مقاطع القرآن — مشاهد كونية/طبيعة حقيقية (الكلمة ↔ المشهد)
@@ -170,11 +171,12 @@ def _get_json(url: str) -> dict:
     return r.json()["data"]
 
 
-def _ayah_audio(num: int, reciter: str, workdir: Path) -> Path:
+def _ayah_audio(num: int, reciter: str, workdir: Path, kbps: int = 128) -> Path:
     CACHE.mkdir(parents=True, exist_ok=True)
     mp3 = CACHE / f"{reciter}-{num}.mp3"
     if not mp3.exists():
-        r = requests.get(f"{CDN}/{reciter}/{num}.mp3", headers=UA, timeout=120)
+        r = requests.get(f"{CDN.replace('/128', f'/{kbps}')}/{reciter}/{num}.mp3",
+                         headers=UA, timeout=120)
         r.raise_for_status()
         mp3.write_bytes(r.content)
     wav = workdir / f"ay{num}.wav"
@@ -230,7 +232,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 spec: dict | None = None) -> dict:
     """ينتج حلقة نور ويعيد {video, cover, report, title, id}."""
     workdir.mkdir(parents=True, exist_ok=True)
-    reciter, rec_name = RECITERS[reciter_idx % len(RECITERS)]
+    reciter, rec_name, kbps = RECITERS[reciter_idx % len(RECITERS)]
     events: list[dict] = []
     wavs: list[Path] = []
     scene_list: list[dict] = []
@@ -258,7 +260,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
 
         off = 0.0
         for i, a in enumerate(sel):
-            wav = _ayah_audio(a["number"], reciter, workdir)
+            wav = _ayah_audio(a["number"], reciter, workdir, kbps)
             d = probe_duration(wav)
             wavs.append(wav)
             events.append({"style": "Ayah",
@@ -387,8 +389,10 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     processed = workdir / "vox_p.wav"
     pr = subprocess.run([ffmpeg(), "-y", "-i", str(vox), "-i", str(amb),
                          "-filter_complex",
-                         "[0:a]atempo=1.02,equalizer=f=110:width_type=q:width=1:g=1.5,"
-                         "equalizer=f=3400:width_type=q:width=1:g=1[a];"
+                         "[0:a]asetrate=44100*1.0594,aresample=44100,atempo=0.944,"
+                         "equalizer=f=110:width_type=q:width=1:g=1.5,"
+                         "equalizer=f=3400:width_type=q:width=1:g=1,"
+                         "aecho=0.2:0.3:25:0.12[a];"
                          "[a][1:a]amix=inputs=2:normalize=0[out]",
                          "-map", "[out]", "-ar", "44100", "-ac", "2",
                          "-c:a", "pcm_s16le", str(processed)],
