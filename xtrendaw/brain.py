@@ -101,9 +101,48 @@ def _llm_topic() -> dict | None:
     return None
 
 
+def trend_topic() -> dict | None:
+    """موضوع من الرادار اللحظي: نوفا بتركب التريند بروحها (بلا اختلاق وقائع —
+    كل "حقيقة" هنا رقم حقيقي من الرادار نفسه)."""
+    from . import trend
+
+    try:
+        top = trend.scan()
+    except Exception:
+        return None
+    for t in top:
+        if t["score"] < 5 or not t.get("traffic_raw"):
+            continue
+        title = t["title"][:60]
+        srcs = t.get("sources", 1)
+        return {
+            "angle": f"ترند:{t['key'][:24]}",
+            "title_ar": f"ليه الكل بيبحث عن «{title}» دلوقتي؟",
+            "title_en": f"Why is everyone searching '{title}' right now?",
+            "hook_ar": f"تحذير: «{title}» مغطّي على كل حاجة في الإنترنت النهارده!",
+            "hook_en": f"Warning: '{title}' is taking over the internet today!",
+            "facts_ar": [
+                f"أكتر من {t['traffic_raw']} بحث عليه في ساعات على جوجل.",
+                f"الإشارة التقطها الرادار من {srcs} مصدر مختلف في نفس اللحظة.",
+                "ونوفا شايفة كل حاجة… بس إحنا بنختارلك اللي يستاهل بس.",
+            ],
+            "facts_en": [
+                f"Over {t['traffic_raw']} searches on Google in hours.",
+                f"Our radar caught it from {srcs} different sources at once.",
+                "NOVA sees everything… we only pick what's worth it.",
+            ],
+            "tags": "ترند,رادار_نوفا,XTreNDAW",
+        }
+    return None
+
+
 def generate(topics: list[dict]) -> dict | None:
     """موضوع جديد مش مكرر بالبصمة، وإلا None."""
     seen = {content.fingerprint(t) for t in topics}
+
+    tr = trend_topic()
+    if tr and content.fingerprint(tr) not in seen:
+        return tr
 
     t = _llm_topic()
     if t and content.fingerprint(t) not in seen:
