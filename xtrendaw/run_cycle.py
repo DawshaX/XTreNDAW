@@ -115,16 +115,51 @@ def _publish(topic, r: dict, urls: dict) -> None:
                 url, err = mod.publish(video_url, title, caption, tags)
             if err:
                 _log(f"⚠ {name}: {err[:100]}")
+                if name == "youtube" and video_url:
+                    state.push_yt_pending({"url": video_url, "title": title,
+                                           "caption": caption, "tags": tags})
+                    _log("⏳ الحلقة اتعلقت في طابور يوتيوب — هتنشر أول ما الكوتة تفتح")
             else:
                 _log(f"📣 {name}: {url}")
         except Exception as e:  # النشر ما يكسرش الدورة أبدًا
             _log(f"⚠ {name} اتخطى: {str(e)[:100]}")
 
 
+def _flush_yt_pending() -> None:
+    """يحاول نشر أقدم حلقة معلقة (كوتة) — واحدة كل دورة."""
+    import tempfile
+
+    import requests as _rq
+
+    from .publish import youtube as _yt
+
+    if not settings.has_youtube():
+        return
+    pend = state.yt_pending()
+    if not pend:
+        return
+    item = pend[0]
+    tmp = Path(tempfile.mkdtemp()) / "v.mp4"
+    try:
+        r = _rq.get(item["url"], timeout=600)
+        r.raise_for_status()
+        tmp.write_bytes(r.content)
+        url, err = _yt.publish(tmp, item["title"], item["caption"], item["tags"])
+        if err:
+            _log(f"⏳ المعلقة لسه مستنية الكوتة: {str(err)[:80]}")
+            return
+        state.pop_yt_pending()
+        _log(f"📣 يوتيوب (من الطابور): {url}")
+    except Exception as e:
+        _log(f"⚠ تفريغ الطابور اتخطى: {str(e)[:80]}")
+
+
 def _promote_due(force: bool = False) -> None:
     """الإفراج عن أقدم حلقة من الـvault على القناة في مواعيد الذروة (القاهرة)."""
     from datetime import datetime
     from zoneinfo import ZoneInfo
+
+    _flush_yt_pending()
 
     hour = datetime.now(ZoneInfo("Africa/Cairo")).hour
     if not force and hour not in settings.PUBLISH_HOURS:

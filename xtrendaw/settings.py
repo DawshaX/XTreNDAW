@@ -66,7 +66,7 @@ VOICE_PITCH = get("XT_VOICE_PITCH", "+12Hz")
 
 # مواعيد نشر الذروة (بتوقيت القاهرة) — المصنع يخزّن في أي ساعة ويفرج في الذروة.
 # كوتة يوتيوب الرسمية ≈ 6 عمليات رفع/يوم → ست ذروات القاهرة تكفل النشر اليومي كاملًا.
-_ph = get("XT_PUBLISH_HOURS", "8,12,16,19,21,23").strip()
+_ph = get("XT_PUBLISH_HOURS", "all").strip()
 PUBLISH_HOURS = (list(range(24)) if _ph in ("all", "") else
                  [int(h) for h in _ph.split(",") if h.strip().lstrip("-").isdigit()])
 

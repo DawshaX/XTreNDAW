@@ -84,3 +84,20 @@ def next_topic(topics: list[dict]) -> dict | None:
             continue
         return t
     return None
+
+
+def yt_pending() -> list:
+    return _read().get("yt_pending", [])
+
+
+def push_yt_pending(item: dict) -> None:
+    data = _read()
+    data.setdefault("yt_pending", []).append(item)
+    _write(data)
+
+
+def pop_yt_pending() -> None:
+    data = _read()
+    if data.get("yt_pending"):
+        data["yt_pending"].pop(0)
+        _write(data)
