@@ -29,11 +29,23 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/episodes/ep3.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/episodes/ep3-cover.png"
    }
+  },
+  "auto-001": {
+   "title": "ليه الكل بيبحث عن «إنتر ميامي ضد ناشفيل» دلوقتي؟",
+   "fingerprint": "d88f510444ba64ac",
+   "video": "/home/user/project/content/vids/auto-001.mp4",
+   "duration": 74.83,
+   "at": "2026-09-13 06:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789279696.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789279696.png"
+   }
   }
  },
  "fingerprints": [
   "c90d144099296754",
   "c6331f7b31e9d029",
-  "bfd8bf719eca4a58"
+  "bfd8bf719eca4a58",
+  "d88f510444ba64ac"
  ]
 }

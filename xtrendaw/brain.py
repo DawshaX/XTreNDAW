@@ -152,23 +152,28 @@ def generate(topics: list[dict]) -> dict | None:
     الأولوية: طلبات المشاهدين ← التريند اللحظي ← LLM ← المخزون.
     """
     from . import requests as viewer_requests
+    from . import state as _state
 
     seen = {content.fingerprint(t) for t in topics}
 
+    def _fresh(cand: dict | None) -> dict | None:
+        return cand if cand and content.fingerprint(cand) not in seen \
+            and not _state.fingerprint_seen(cand) else None
+
     for req in viewer_requests.pending():
-        cand = viewer_requests.topic_from(req)
-        if content.fingerprint(cand) not in seen:
+        cand = _fresh(viewer_requests.topic_from(req))
+        if cand:
             return cand
 
-    tr = trend_topic()
-    if tr and content.fingerprint(tr) not in seen:
+    tr = _fresh(trend_topic())
+    if tr:
         return tr
 
     t = _llm_topic()
-    if t and content.fingerprint(t) not in seen:
-        return t
+    if (t2 := _fresh(t)):
+        return t2
 
     for cand in FALLBACK_POOL:
-        if content.fingerprint(cand) not in seen:
-            return dict(cand)
+        if (c2 := _fresh(dict(cand))):
+            return c2
     return None
