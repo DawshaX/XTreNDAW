@@ -115,6 +115,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789332173.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789332173.png"
    }
+  },
+  "noor-tafsir-s002-9-r3": {
+   "title": "سُورَةُ البَقَرَةِ ﴿9–12﴾ — محمد أيوب",
+   "fingerprint": "dacfb4c3dd4b28fb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts002-9-muhammadayyoub.mp4",
+   "duration": 76.6,
+   "at": "2026-09-13 22:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789338058.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789338058.png"
+   }
   }
  },
  "fingerprints": [
@@ -131,7 +142,8 @@
   "faaa3df13b027182",
   "4f468f7d1b4b33a3",
   "5fcb8cddeac6fa69",
-  "88edabf3de310783"
+  "88edabf3de310783",
+  "dacfb4c3dd4b28fb"
  ],
- "last_kind": "dua"
+ "last_kind": "tafsir"
 }
