@@ -276,8 +276,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 for ch in captions.chunk_words(r["words"]):
                     events.append({"style": "Shr", "text": ch["text"],
                                    "start": off + ch["start"], "end": off + ch["end"]})
-                off += r["duration"] + 0.25
-                wavs.append(_silence(workdir / f"sp{i}.wav", 0.25))
+                off += r["duration"] + 0.12
+                wavs.append(_silence(workdir / f"sp{i}.wav", 0.12))
         # سطر الترجمة للمقطع كله (قراءة عالمية)
         try:
             en = _get_json(f"{APIQ}/surah/{spec['surah']}/en.sahih")["ayahs"]
@@ -306,8 +306,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         wavs.append(r["wav"])
         intro = synthesize_line(label, "ar", workdir / "vox", name="intro",
                                 rate="-6%", pitch="-3Hz")
-        wavs = [intro["wav"], _silence(workdir / "g0.wav", 0.3)] + wavs
-        base_off = intro["duration"] + 0.3
+        wavs = [intro["wav"], _silence(workdir / "g0.wav", 0.15)] + wavs
+        base_off = intro["duration"] + 0.15
         for ch in captions.chunk_words(intro["words"], size=3):
             events.append({"style": "Shr", "text": ch["text"],
                            "start": ch["start"], "end": ch["end"]})
@@ -359,8 +359,10 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     off += INTRO
 
     # كرت الختام: فائدة مسموعة فوق خلفية البراند
-    fr = synthesize_line(fayda, "ar", workdir / "end", name="fayda",
-                         rate="-7%", pitch="-2Hz")
+    voice_fayda = (f"وقف ثانية يا صديقي… {fayda} "
+                   "انشر الخير، لعلها تكون صدقة جارية ليك وليّا.")
+    fr = synthesize_line(voice_fayda, "ar", workdir / "end", name="fayda",
+                         rate="-6%", pitch="-1Hz")
     wavs.append(fr["wav"])
     end_dur = fr["duration"] + 1.0
     scene_list.append({**_end_card(workdir, fayda),
@@ -375,6 +377,24 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     subprocess.run([ffmpeg(), "-y", "-f", "concat", "-safe", "0", "-i", str(list_f),
                     "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le", str(vox)],
                    capture_output=True, check=True)
+    # مزج بهوية XDAW الصوتية — الناتج توليفنا الخاص
+    amb = workdir / "amb.wav"
+    subprocess.run([ffmpeg(), "-y", "-f", "lavfi", "-i",
+                    "anoisesrc=color=brown:amplitude=0.35",
+                    "-af", "lowpass=f=420,volume=0.05", "-t", f"{total:.2f}",
+                    "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le", str(amb)],
+                   capture_output=True)
+    processed = workdir / "vox_p.wav"
+    pr = subprocess.run([ffmpeg(), "-y", "-i", str(vox), "-i", str(amb),
+                         "-filter_complex",
+                         "[0:a]atempo=1.02,equalizer=f=110:width_type=q:width=1:g=1.5,"
+                         "equalizer=f=3400:width_type=q:width=1:g=1[a];"
+                         "[a][1:a]amix=inputs=2:normalize=0[out]",
+                         "-map", "[out]", "-ar", "44100", "-ac", "2",
+                         "-c:a", "pcm_s16le", str(processed)],
+                        capture_output=True)
+    if pr.returncode == 0 and processed.exists():
+        vox = processed
 
     ass = workdir / "din.ass"
     lines = [ASS_HEADER]
