@@ -31,21 +31,20 @@
    }
   },
   "auto-001": {
-   "title": "ليه الكل بيبحث عن «إنتر ميامي ضد ناشفيل» دلوقتي؟",
-   "fingerprint": "d88f510444ba64ac",
+   "title": "ليه الكل بيبحث عن «santos vs cruzeiro» دلوقتي؟",
+   "fingerprint": "86e4128aac115424",
    "video": "/home/user/project/content/vids/auto-001.mp4",
-   "duration": 74.83,
-   "at": "2026-09-13 06:08",
-   "urls": {
-    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789279696.mp4",
-    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789279696.png"
-   }
+   "duration": 73.97,
+   "at": "2026-09-13 06:24",
+   "urls": {}
   }
  },
  "fingerprints": [
   "c90d144099296754",
   "c6331f7b31e9d029",
   "bfd8bf719eca4a58",
-  "d88f510444ba64ac"
- ]
+  "d88f510444ba64ac",
+  "86e4128aac115424"
+ ],
+ "last_kind": "know"
 }

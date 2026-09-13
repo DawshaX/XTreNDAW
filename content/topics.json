@@ -137,5 +137,35 @@
    "So you're not seeing the sun now… you're seeing the past!"
   ],
   "tags": "حقائق,فضاء,ضوء,XTreNDAW"
+ },
+ {
+  "angle": "ترند:santos vs cruzeiro",
+  "title_ar": "ليه الكل بيبحث عن «santos vs cruzeiro» دلوقتي؟",
+  "title_en": "Why is everyone searching 'santos vs cruzeiro' right now?",
+  "hook_ar": "تحذير: «santos vs cruzeiro» مغطّي على كل حاجة في الإنترنت النهارده!",
+  "hook_en": "Warning: 'santos vs cruzeiro' is taking over the internet today!",
+  "facts_ar": [
+   "أكتر من 2000+ بحث عليه في ساعات على جوجل.",
+   "الإشارة التقطها الرادار من 1 مصدر مختلف في نفس اللحظة.",
+   "ونوفا شايفة كل حاجة… بس إحنا بنختارلك اللي يستاهل بس."
+  ],
+  "facts_en": [
+   "Over 2000+ searches on Google in hours.",
+   "Our radar caught it from 1 different sources at once.",
+   "NOVA sees everything… we only pick what's worth it."
+  ],
+  "tags": "ترند,رادار_نوفا,XTreNDAW",
+  "takeaway_ar": {
+   "aql": "الترند بيعدي… بس اللي بيفهم ليه انتشر بيستفيد.",
+   "qalb": "إنت مش مجرد متفرج — إنت جزء من الحكاية.",
+   "rouh": "خير ونور من الله… وإنت الحر في اللي يجذبك."
+  },
+  "takeaway_en": {
+   "aql": "Trends fade… but understanding why they spread is power.",
+   "qalb": "You're not just a viewer — you're part of the story.",
+   "rouh": "Goodness and light from God… and you're free to choose."
+  },
+  "_kind": "trend",
+  "id": "auto-001"
  }
 ]
