@@ -167,5 +167,115 @@
   },
   "_kind": "trend",
   "id": "auto-001"
+ },
+ {
+  "angle": "ترند:clima",
+  "title_ar": "ليه الكل بيبحث عن «clima» دلوقتي؟",
+  "title_en": "Why is everyone searching 'clima' right now?",
+  "hook_ar": "تحذير: «clima» مغطّي على كل حاجة في الإنترنت النهارده!",
+  "hook_en": "Warning: 'clima' is taking over the internet today!",
+  "facts_ar": [
+   "أكتر من 10000+ بحث عليه في ساعات على جوجل.",
+   "الإشارة التقطها الرادار من 1 مصدر مختلف في نفس اللحظة.",
+   "ونوفا شايفة كل حاجة… بس إحنا بنختارلك اللي يستاهل بس."
+  ],
+  "facts_en": [
+   "Over 10000+ searches on Google in hours.",
+   "Our radar caught it from 1 different sources at once.",
+   "NOVA sees everything… we only pick what's worth it."
+  ],
+  "tags": "ترند,رادار_نوفا,XTreNDAW",
+  "_visual_queries": [
+   "clima",
+   "clima",
+   "clima stadium",
+   "clima match"
+  ],
+  "takeaway_ar": {
+   "aql": "الترند بيعدي… بس اللي بيفهم ليه انتشر بيستفيد.",
+   "qalb": "إنت مش مجرد متفرج — إنت جزء من الحكاية.",
+   "rouh": "خير ونور من الله… وإنت الحر في اللي يجذبك."
+  },
+  "takeaway_en": {
+   "aql": "Trends fade… but understanding why they spread is power.",
+   "qalb": "You're not just a viewer — you're part of the story.",
+   "rouh": "Goodness and light from God… and you're free to choose."
+  },
+  "_kind": "trend",
+  "id": "auto-002"
+ },
+ {
+  "angle": "ترند:sheffield united vs wolv",
+  "title_ar": "ليه الكل بيبحث عن «sheffield united vs wolves» دلوقتي؟",
+  "title_en": "Why is everyone searching 'sheffield united vs wolves' right now?",
+  "hook_ar": "تحذير: «sheffield united vs wolves» مغطّي على كل حاجة في الإنترنت النهارده!",
+  "hook_en": "Warning: 'sheffield united vs wolves' is taking over the internet today!",
+  "facts_ar": [
+   "أكتر من 200+ بحث عليه في ساعات على جوجل.",
+   "الإشارة التقطها الرادار من 2 مصدر مختلف في نفس اللحظة.",
+   "ونوفا شايفة كل حاجة… بس إحنا بنختارلك اللي يستاهل بس."
+  ],
+  "facts_en": [
+   "Over 200+ searches on Google in hours.",
+   "Our radar caught it from 2 different sources at once.",
+   "NOVA sees everything… we only pick what's worth it."
+  ],
+  "tags": "ترند,رادار_نوفا,XTreNDAW",
+  "_visual_queries": [
+   "sheffield united vs wolves",
+   "sheffield",
+   "united",
+   "wolves",
+   "sheffield stadium",
+   "sheffield match"
+  ],
+  "takeaway_ar": {
+   "aql": "الترند بيعدي… بس اللي بيفهم ليه انتشر بيستفيد.",
+   "qalb": "إنت مش مجرد متفرج — إنت جزء من الحكاية.",
+   "rouh": "خير ونور من الله… وإنت الحر في اللي يجذبك."
+  },
+  "takeaway_en": {
+   "aql": "Trends fade… but understanding why they spread is power.",
+   "qalb": "You're not just a viewer — you're part of the story.",
+   "rouh": "Goodness and light from God… and you're free to choose."
+  },
+  "_kind": "trend",
+  "id": "auto-003"
+ },
+ {
+  "angle": "ترند:فرنسا",
+  "title_ar": "ليه الكل بيبحث عن «فرنسا» دلوقتي؟",
+  "title_en": "Why is everyone searching 'فرنسا' right now?",
+  "hook_ar": "تحذير: «فرنسا» مغطّي على كل حاجة في الإنترنت النهارده!",
+  "hook_en": "Warning: 'فرنسا' is taking over the internet today!",
+  "facts_ar": [
+   "أكتر من 100+ بحث عليه في ساعات على جوجل.",
+   "الإشارة التقطها الرادار من 2 مصدر مختلف في نفس اللحظة.",
+   "ونوفا شايفة كل حاجة… بس إحنا بنختارلك اللي يستاهل بس."
+  ],
+  "facts_en": [
+   "Over 100+ searches on Google in hours.",
+   "Our radar caught it from 2 different sources at once.",
+   "NOVA sees everything… we only pick what's worth it."
+  ],
+  "tags": "ترند,رادار_نوفا,XTreNDAW",
+  "_visual_queries": [
+   "فرنسا",
+   "فرنسا",
+   "فرنسا stadium",
+   "فرنسا match"
+  ],
+  "takeaway_ar": {
+   "aql": "الترند بيعدي… بس اللي بيفهم ليه انتشر بيستفيد.",
+   "qalb": "إنت مش مجرد متفرج — إنت جزء من الحكاية.",
+   "rouh": "خير ونور من الله… وإنت الحر في اللي يجذبك."
+  },
+  "takeaway_en": {
+   "aql": "Trends fade… but understanding why they spread is power.",
+   "qalb": "You're not just a viewer — you're part of the story.",
+   "rouh": "Goodness and light from God… and you're free to choose."
+  },
+  "_kind": "trend",
+  "id": "auto-004"
  }
 ]

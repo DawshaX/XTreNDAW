@@ -37,6 +37,38 @@
    "duration": 73.97,
    "at": "2026-09-13 06:24",
    "urls": {}
+  },
+  "ep4": {
+   "title": "الأخطبوط عنده 3 قلوب و9 أدمغة… مش هزار!",
+   "fingerprint": "0edd19b0bb2aff2c",
+   "video": "/home/user/project/content/vids/ep4.mp4",
+   "duration": 75.8,
+   "at": "2026-09-13 11:32",
+   "urls": {}
+  },
+  "auto-003": {
+   "title": "ليه الكل بيبحث عن «sheffield united vs wolves» دلوقتي؟",
+   "fingerprint": "8f1faac007dbff7b",
+   "video": "/home/user/project/content/vids/auto-003.mp4",
+   "duration": 74.73,
+   "at": "2026-09-13 11:40",
+   "urls": {}
+  },
+  "ep5": {
+   "title": "الثقب الأسود بيمسح الزمن… والدليل هيخليك تدوخ!",
+   "fingerprint": "78492a8b783f4038",
+   "video": "/home/user/project/content/vids/ep5.mp4",
+   "duration": 72.8,
+   "at": "2026-09-13 11:49",
+   "urls": {}
+  },
+  "auto-004": {
+   "title": "ليه الكل بيبحث عن «فرنسا» دلوقتي؟",
+   "fingerprint": "37f235477fed55a8",
+   "video": "/home/user/project/content/vids/auto-004.mp4",
+   "duration": 73.1,
+   "at": "2026-09-13 11:52",
+   "urls": {}
   }
  },
  "fingerprints": [
@@ -44,7 +76,11 @@
   "c6331f7b31e9d029",
   "bfd8bf719eca4a58",
   "d88f510444ba64ac",
-  "86e4128aac115424"
+  "86e4128aac115424",
+  "0edd19b0bb2aff2c",
+  "8f1faac007dbff7b",
+  "78492a8b783f4038",
+  "37f235477fed55a8"
  ],
  "last_kind": "know"
 }

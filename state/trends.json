@@ -1,75 +1,111 @@
 [
  {
-  "title": "اسعار الدولار اليوم",
-  "traffic": 2000,
-  "traffic_raw": "2000+",
+  "title": "sheffield united vs wolves",
+  "traffic": 500,
+  "traffic_raw": "200+",
   "source": "google:EG",
-  "published": "Sat, 12 Sep 2026 23:10:00 -0700",
-  "sources": 1,
-  "key": "اسعار الدولار اليوم",
-  "score": 10.0,
+  "published": "Sun, 13 Sep 2026 04:00:00 -0700",
+  "sources": 2,
+  "key": "sheffield united vs wolves",
+  "score": 27.5,
   "rank": 1,
   "velocity": 0
  },
  {
-  "title": "santos vs cruzeiro",
-  "traffic": 2000,
-  "traffic_raw": "2000+",
-  "source": "google:SA",
-  "published": "Sat, 12 Sep 2026 16:20:00 -0700",
-  "sources": 1,
-  "key": "santos vs cruzeiro",
-  "score": 18.0,
-  "rank": 2,
-  "velocity": 1
- },
- {
-  "title": "mariners - athletics",
-  "traffic": 2000,
-  "traffic_raw": "2000+",
-  "source": "google:US",
-  "published": "Sat, 12 Sep 2026 21:30:00 -0700",
-  "sources": 1,
-  "key": "mariners - athletics",
-  "score": 18.0,
-  "rank": 3,
-  "velocity": 1
- },
- {
-  "title": "موعد الشروق",
-  "traffic": 1000,
-  "traffic_raw": "1000+",
+  "title": "فرنسا",
+  "traffic": 100,
+  "traffic_raw": "100+",
   "source": "google:EG",
-  "published": "Sat, 12 Sep 2026 20:30:00 -0700",
-  "sources": 1,
-  "key": "موعد الشروق",
-  "score": 13.0,
-  "rank": 4,
-  "velocity": 1
+  "published": "Sun, 13 Sep 2026 03:50:00 -0700",
+  "sources": 2,
+  "key": "فرنسا",
+  "score": 25.5,
+  "rank": 2,
+  "velocity": 0
  },
  {
-  "title": "منصه",
-  "traffic": 1000,
-  "traffic_raw": "1000+",
+  "title": "spanish grand prix",
+  "traffic": 5000,
+  "traffic_raw": "5000+",
+  "source": "google:US",
+  "published": "Sun, 13 Sep 2026 04:30:00 -0700",
+  "sources": 1,
+  "key": "spanish grand prix",
+  "score": 25.0,
+  "rank": 3,
+  "velocity": -1
+ },
+ {
+  "title": "السعودية",
+  "traffic": 2000,
+  "traffic_raw": "2000+",
   "source": "google:SA",
-  "published": "Sat, 12 Sep 2026 20:20:00 -0700",
+  "published": "Sun, 13 Sep 2026 04:30:00 -0700",
   "sources": 1,
-  "key": "منصه",
-  "score": 13.0,
-  "rank": 5,
-  "velocity": 1
+  "key": "السعودية",
+  "score": 10.0,
+  "rank": 4,
+  "velocity": -1
  },
  {
-  "title": "henry cavill",
+  "title": "f1 schedule",
+  "traffic": 2000,
+  "traffic_raw": "2000+",
+  "source": "google:US",
+  "published": "Sun, 13 Sep 2026 04:30:00 -0700",
+  "sources": 1,
+  "key": "f1 schedule",
+  "score": 10.0,
+  "rank": 5,
+  "velocity": -1
+ },
+ {
+  "title": "detroit lions",
+  "traffic": 2000,
+  "traffic_raw": "2000+",
+  "source": "google:US",
+  "published": "Sun, 13 Sep 2026 04:20:00 -0700",
+  "sources": 1,
+  "key": "detroit lions",
+  "score": 10.0,
+  "rank": 6,
+  "velocity": -1
+ },
+ {
+  "title": "new york giants",
   "traffic": 1000,
   "traffic_raw": "1000+",
   "source": "google:US",
-  "published": "Sat, 12 Sep 2026 21:30:00 -0700",
+  "published": "Sun, 13 Sep 2026 04:30:00 -0700",
   "sources": 1,
-  "key": "henry cavill",
-  "score": 13.0,
-  "rank": 6,
-  "velocity": 1
+  "key": "new york giants",
+  "score": 5.0,
+  "rank": 7,
+  "velocity": -1
+ },
+ {
+  "title": "celta de vigo - málaga",
+  "traffic": 1000,
+  "traffic_raw": "1000+",
+  "source": "google:US",
+  "published": "Sun, 13 Sep 2026 04:20:00 -0700",
+  "sources": 1,
+  "key": "celta de vigo - málaga",
+  "score": 5.0,
+  "rank": 8,
+  "velocity": -1
+ },
+ {
+  "title": "nba",
+  "traffic": 1000,
+  "traffic_raw": "1000+",
+  "source": "google:US",
+  "published": "Sun, 13 Sep 2026 04:20:00 -0700",
+  "sources": 1,
+  "key": "nba",
+  "score": 5.0,
+  "rank": 9,
+  "velocity": -1
  },
  {
   "title": "مباريات اليوم",
@@ -79,9 +115,9 @@
   "published": "",
   "sources": 1,
   "key": "مباريات اليوم",
-  "score": 12.0,
-  "rank": 7,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 10,
+  "velocity": -1
  },
  {
   "title": "مباراة ريال مدريد اليوم",
@@ -91,9 +127,9 @@
   "published": "",
   "sources": 1,
   "key": "مباراة ريال مدريد اليوم",
-  "score": 12.0,
-  "rank": 8,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 11,
+  "velocity": -1
  },
  {
   "title": "مباراة المغرب اليوم مباشر",
@@ -103,9 +139,9 @@
   "published": "",
   "sources": 1,
   "key": "مباراة المغرب اليوم مباشر",
-  "score": 12.0,
-  "rank": 9,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 12,
+  "velocity": -1
  },
  {
   "title": "مباراه ريال مدريد",
@@ -116,8 +152,8 @@
   "sources": 1,
   "key": "مباراه ريال مدريد",
   "score": 4.0,
-  "rank": 10,
-  "velocity": 0
+  "rank": 13,
+  "velocity": -1
  },
  {
   "title": "حلقة الرعد السلطة تحت سيطرتي",
@@ -127,9 +163,9 @@
   "published": "",
   "sources": 1,
   "key": "حلقة الرعد السلطة تحت سيطرتي",
-  "score": 12.0,
-  "rank": 11,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 14,
+  "velocity": -1
  },
  {
   "title": "حلقة وليد السيسي",
@@ -139,9 +175,9 @@
   "published": "",
   "sources": 1,
   "key": "حلقة وليد السيسي",
-  "score": 12.0,
-  "rank": 12,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 15,
+  "velocity": -1
  },
  {
   "title": "حلقة 55 قسمة ونصيب",
@@ -151,9 +187,9 @@
   "published": "",
   "sources": 1,
   "key": "حلقة 55 قسمة ونصيب",
-  "score": 12.0,
-  "rank": 13,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 16,
+  "velocity": -1
  },
  {
   "title": "حلقة الرعد السلطة تحت سيطرتي كاملة",
@@ -163,9 +199,9 @@
   "published": "",
   "sources": 1,
   "key": "حلقة الرعد السلطة تحت سيطرتي كاملة",
-  "score": 12.0,
-  "rank": 14,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 17,
+  "velocity": -1
  },
  {
   "title": "اغنية بيسان الجديدة",
@@ -175,9 +211,9 @@
   "published": "",
   "sources": 1,
   "key": "اغنية بيسان الجديدة",
-  "score": 12.0,
-  "rank": 15,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 18,
+  "velocity": -1
  },
  {
   "title": "اغنية",
@@ -187,9 +223,9 @@
   "published": "",
   "sources": 1,
   "key": "اغنية",
-  "score": 12.0,
-  "rank": 16,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 19,
+  "velocity": -1
  },
  {
   "title": "اغنية اصالة الجديدة",
@@ -199,9 +235,9 @@
   "published": "",
   "sources": 1,
   "key": "اغنية اصالة الجديدة",
-  "score": 12.0,
-  "rank": 17,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 20,
+  "velocity": -1
  },
  {
   "title": "اغنية اصالة الجديدة عن الشام",
@@ -211,9 +247,9 @@
   "published": "",
   "sources": 1,
   "key": "اغنية اصالة الجديدة عن الشام",
-  "score": 12.0,
-  "rank": 18,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 21,
+  "velocity": -1
  },
  {
   "title": "فيلم مصري",
@@ -223,9 +259,9 @@
   "published": "",
   "sources": 1,
   "key": "فيلم مصري",
-  "score": 12.0,
-  "rank": 19,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 22,
+  "velocity": -1
  },
  {
   "title": "فيلم رعب",
@@ -235,9 +271,9 @@
   "published": "",
   "sources": 1,
   "key": "فيلم رعب",
-  "score": 12.0,
-  "rank": 20,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 23,
+  "velocity": -1
  },
  {
   "title": "فيلم",
@@ -247,9 +283,9 @@
   "published": "",
   "sources": 1,
   "key": "فيلم",
-  "score": 12.0,
-  "rank": 21,
-  "velocity": 1
+  "score": 4.0,
+  "rank": 24,
+  "velocity": -1
  },
  {
   "title": "فيلم مارد مترجم بالعربي كامل",
@@ -259,44 +295,8 @@
   "published": "",
   "sources": 1,
   "key": "فيلم مارد مترجم بالعربي كامل",
-  "score": 12.0,
-  "rank": 22,
-  "velocity": 1
- },
- {
-  "title": "تحدي الثلاثين",
-  "traffic": 0,
-  "traffic_raw": "",
-  "source": "youtube:suggest",
-  "published": "",
-  "sources": 1,
-  "key": "تحدي الثلاثين",
-  "score": 12.0,
-  "rank": 23,
-  "velocity": 1
- },
- {
-  "title": "تحديات",
-  "traffic": 0,
-  "traffic_raw": "",
-  "source": "youtube:suggest",
-  "published": "",
-  "sources": 1,
-  "key": "تحديات",
-  "score": 12.0,
-  "rank": 24,
-  "velocity": 1
- },
- {
-  "title": "تحدي الاكل",
-  "traffic": 0,
-  "traffic_raw": "",
-  "source": "youtube:suggest",
-  "published": "",
-  "sources": 1,
-  "key": "تحدي الاكل",
   "score": 4.0,
   "rank": 25,
-  "velocity": 0
+  "velocity": -1
  }
 ]
