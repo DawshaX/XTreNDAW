@@ -52,6 +52,14 @@ def _produce(topic: dict, upload: bool = True) -> int:
             _log(f"⚠ رفع GitHub اتخطى: {str(e)[:120]}")
     _publish(topic, r, urls)
     state.mark_produced(topic, str(r["video"]), info["duration"], urls=urls)
+    # عادة المساحة: اللي اترفع على GitHub بيتحذف محليًا
+    if urls.get("video"):
+        for f in (r["video"], r["cover"]):
+            try: Path(f).unlink(missing_ok=True)
+            except Exception: pass
+        import shutil
+        shutil.rmtree(workdir, ignore_errors=True)
+        _log(" النواتج المحلية اتحذفت (موجودة على GitHub)")
     _log(
         f"✓ {topic['id']} في {dt:.0f}ث — "
         f"{info['width']}×{info['height']} · {info['duration']:.1f}s · "

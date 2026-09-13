@@ -34,4 +34,3 @@ state/tokens.json
 # === نظام ===
 .DS_Store
 node_modules/
-assets/brand/banner.png
