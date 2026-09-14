@@ -313,6 +313,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789402240.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789402240.png"
    }
+  },
+  "noor-hadith-21-r3": {
+   "title": "قال رسول الله ﷺ: كُنْ فِي الدُّنْيَا كَأَنَّكَ غَرِيبٌ أَ…",
+   "fingerprint": "383a11f7c9cfa989",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 29.17,
+   "at": "2026-09-14 16:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789402532.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789402532.png"
+   }
   }
  },
  "fingerprints": [
@@ -347,7 +358,8 @@
   "cd46bc5e8b2df1db",
   "e2d16d87bb1c0891",
   "30d448d741b62761",
-  "9a26b1eff050c121"
+  "9a26b1eff050c121",
+  "383a11f7c9cfa989"
  ],
- "last_kind": "info"
+ "last_kind": "quran"
 }
