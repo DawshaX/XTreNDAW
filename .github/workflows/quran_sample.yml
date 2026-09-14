@@ -12,8 +12,11 @@ on:
         description: "إلى آية"
         default: "11"
       rec:
-        description: "رقم القارئ (0-6)"
+        description: "رقم القارئ (0-8)"
         default: "4"
+      tts:
+        description: "1 = بصوت نور المملوك"
+        default: "0"
 permissions:
   contents: write
 jobs:
@@ -35,6 +38,7 @@ jobs:
           SAMPLE_FRM: ${{ inputs.frm }}
           SAMPLE_TO: ${{ inputs.to }}
           SAMPLE_REC: ${{ inputs.rec }}
+          SAMPLE_TTS: ${{ inputs.tts }}
         run: python tools/quran_sample.py
       - name: upload artifact
         uses: actions/upload-artifact@v4

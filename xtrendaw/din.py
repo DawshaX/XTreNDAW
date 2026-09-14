@@ -253,7 +253,8 @@ def _end_card(workdir: Path, fayda: str) -> dict:
 
 
 def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
-                spec: dict | None = None) -> dict:
+                spec: dict | None = None,
+                tts_recite: bool = False) -> dict:
     """ينتج حلقة نور ويعيد {video, cover, report, title, id}."""
     workdir.mkdir(parents=True, exist_ok=True)
     reciter, rec_name, kbps = RECITERS[reciter_idx % len(RECITERS)]
@@ -297,10 +298,18 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                        "text": f"{sname} • {rev}",
                        "start": 0.0, "end": 3.5})
 
+        if tts_recite:
+            rec_name = "بصوت نُور"
         off = 0.0
         for i, a in enumerate(sel):
-            wav = _ayah_audio(a["number"], reciter, workdir, kbps)
-            d = probe_duration(wav)
+            if tts_recite:
+                # تلاوة مملوكة لنا 100% — صفر حقوق ملكية للأبد
+                _r = synthesize_line(a["text"], "ar", workdir / "rec",
+                                     name=f"r{a['number']}", rate="-20%")
+                wav, d = _r["wav"], _r["duration"]
+            else:
+                wav = _ayah_audio(a["number"], reciter, workdir, kbps)
+                d = probe_duration(wav)
             wavs.append(wav)
             events.append({"style": "Ayah",
                            "text": f"{a['text']} ﴿{_ar_num(a['numberInSurah'])}﴾",

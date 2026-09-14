@@ -28,7 +28,8 @@ def main() -> int:
     workdir.mkdir(parents=True, exist_ok=True)
     spec = {"id": f"sample-s{surah:03d}-{frm}", "surah": surah,
             "frm": frm, "to": to, "scenes": GENERIC_SCENES}
-    r = din.produce_din("quran", workdir, rec, spec)
+    tts = os.environ.get("SAMPLE_TTS", "") == "1"
+    r = din.produce_din("quran", workdir, rec, spec, tts_recite=tts)
     if not r["report"]["ok"]:
         print("فشل فحص المواصفات:", r["report"]["checks"])
         return 1

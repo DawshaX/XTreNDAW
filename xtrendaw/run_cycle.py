@@ -256,6 +256,11 @@ def _publish(topic, r: dict, urls: dict) -> None:
             ("instagram", _ig, settings.has_instagram())):
         if not ok:
             continue
+        if (name == "youtube"
+                and topic.get("_din") in ("quran", "tafsir", "qissa")
+                and settings.YT_RECITE_MODE == "off"):
+            _log("🛡️ يوتيوب: حلقات التلاوة محجوبة (صفر حقوق) — نازلة على باقي المنصات")
+            continue
         try:
             if name in ("youtube", "telegram"):
                 url, err = mod.publish(r["video"], title, caption, tags)

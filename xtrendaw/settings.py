@@ -72,6 +72,9 @@ PUBLISH_YOUTUBE = get("XT_YT", "1").strip() == "1"
 # الصوت: piper = عربي حرفي بمخارج صحيحة (مجاني بلا حد)، وedge بديل احتياطي
 TTS_ENGINE = get("XT_TTS_ENGINE", "piper")
 PIPER_RELEASE = "noor-models"
+# يوتيوب: حلقات التلاوة — off = ما تنزلش يوتيوب (تيليجرام تنزل عادي)
+# tts = تتلاوى بصوت نور المملوك لنا (صفر حقوق للأبد)
+YT_RECITE_MODE = get("XT_YT_QURAN", "off")
 PIPER_DIR = Path(os.environ.get("XT_PIPER_DIR", "/tmp/noor-models"))
 
 # ─────────────────────────────────────────────────────────────
