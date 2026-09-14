@@ -95,6 +95,23 @@ YOUTUBE = {
 }
 FACEBOOK = {"page_id": get("FACEBOOK_PAGE_ID"), "token": get("FACEBOOK_PAGE_TOKEN")}
 INSTAGRAM = {"user_id": get("INSTAGRAM_USER_ID"), "token": get("INSTAGRAM_ACCESS_TOKEN")}
+
+
+def _ig_state_token():
+    """التوكن المتجدد المخزن في الحالة — بيعلو على المتغير البيئي."""
+    f = STATE / "ig_token.json"
+    if f.exists():
+        try:
+            import json as _json
+            return (_json.loads(f.read_text(encoding="utf-8")) or {}).get("token")
+        except Exception:
+            pass
+    return None
+
+
+_igt = _ig_state_token()
+if _igt:
+    INSTAGRAM["token"] = _igt
 TELEGRAM = {"token": get("TELEGRAM_BOT_TOKEN"),
             "chat_id": get("TELEGRAM_CHAT_ID"),
             "admin_chat": get("TELEGRAM_ADMIN_CHAT_ID")}

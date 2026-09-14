@@ -159,3 +159,12 @@ def add_reciter_proven(rid: str) -> None:
     if rid and rid not in lst:
         lst.append(rid)
         _wr(PROVEN_FILE, lst)
+
+
+IG_TOKEN_FILE = settings.STATE / "ig_token.json"
+
+
+def set_ig_token(tok: str) -> None:
+    import time as _t
+    _wr(IG_TOKEN_FILE, {"token": tok, "ts": _t.time()})
+    settings.INSTAGRAM["token"] = tok

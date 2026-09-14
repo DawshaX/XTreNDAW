@@ -243,6 +243,12 @@ def run_pass() -> None:
     if offset:
         OFFSET_FILE.parent.mkdir(parents=True, exist_ok=True)
         OFFSET_FILE.write_text(json.dumps({"offset": offset}), encoding="utf-8")
+    try:
+        if settings.INSTAGRAM.get("token"):
+            from .publish import instagram as _ig
+            _ig.refresh_token()
+    except Exception:
+        pass
     _daily_digest()
 
 
