@@ -10,7 +10,8 @@ sys.path.insert(0, str(ROOT))
 
 import os
 
-URL = "https://github.com/DawshaX/XTreNDAW/releases/download/noor-samples/sample.mp4"
+URL = os.environ.get("RELEASE_URL") or \
+    "https://github.com/DawshaX/XTreNDAW/releases/download/noor-samples/sample.mp4"
 TITLE = os.environ.get("RELEASE_TITLE") or "سُورَةُ الشَّرۡحِ ﴿1–8﴾ — تلاوة نادرة للشيخ أيمن سويد 🤍"
 _DEFAULT_CAPTION = (
     "🎧 غمّض عينك واسمع… تلاوة نادرة تهدي القلب وتشفي الصدر.\n\n"
