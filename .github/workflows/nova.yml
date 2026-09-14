@@ -52,6 +52,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: إنتاج الحلقة التالية + رفعها Releases
+        continue-on-error: true
         run: timeout 2400 python -m xtrendaw.run_cycle --next
 
       - name: تحديث الذاكرة في git (عشان الحلقة الجاية تكمل مش تعيد)
