@@ -1,0 +1,33 @@
+name: cleanup
+on:
+  workflow_dispatch:
+    inputs:
+      yt_id:
+        description: "معرف فيديو يوتيوب"
+        default: ""
+      tg_message_id:
+        description: "رقم رسالة تيليجرام"
+        default: ""
+permissions:
+  contents: read
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: install
+        run: pip install --quiet requests google-api-python-client google-auth
+      - name: clean
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CLEAN_YT: ${{ inputs.yt_id }}
+          CLEAN_TG: ${{ inputs.tg_message_id }}
+        run: python tools/cleanup.py
