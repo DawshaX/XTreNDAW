@@ -62,11 +62,12 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
     grade = grade_soft if scene.get("grade") == "soft" else grade_red
     # لمسة سينمائية: فينييت + حبيبة فيلم خفيفة + وضوح
     rich = "vignette=PI/5,noise=alls=2:allf=t,unsharp=5:5:0.5"
+    _fin = "" if scene.get("nofade_in") else "fade=t=in:st=0:d=0.24:"
     if scene.get("video"):
         # قاعدة فيديو حيّ متحرك — مفيش zoompan، الحركة من اللقطة نفسها
         parts = [
             f"[0:v]{grade},{rich},"
-            f"fade=t=in:st=0:d=0.24:color=0x0a0603,"
+            f"{_fin}color=0x0a0603,"
             f"fade=t=out:st={dip_out:.2f}:d=0.20:color=black[base]"
         ]
     else:
@@ -87,8 +88,8 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
             # دفعة هوية حمراء سينمائية موحّدة فوق أي صورة مصدر
             f"{grade},{rich},"
             f"zoompan={zp}:d={frames}:s={V['width']}x{V['height']}:fps={V['fps']},"
-            # انتقال ناعم: دخول من فحمي أحمر + خروج لأسود (مش قطع ناشف)
-            f"fade=t=in:st=0:d=0.24:color=0x140404,"
+            # انتقال ناعم: خروج لأسود — والدخول مشرّق لأول مشهد (غلاف إنستجرام)
+            f"{_fin}color=0x140404,"
             f"fade=t=out:st={dip_out:.2f}:d=0.20:color=black[base]"
         ]
     prev = "[base]"

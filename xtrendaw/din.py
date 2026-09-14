@@ -409,7 +409,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         sc["end"] += INTRO
     wavs.insert(0, _silence(workdir / "intro.wav", INTRO))
     scene_list.insert(0, {"base": scenes.intro_base(workdir / "intro.png"),
-                          "overlays": [], "start": 0.0, "end": INTRO})
+                          "overlays": [], "start": 0.0, "end": INTRO,
+                          "nofade_in": True})
     off += INTRO
 
     # كرت الختام: فائدة مسموعة فوق خلفية البراند
