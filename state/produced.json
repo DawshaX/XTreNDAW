@@ -324,6 +324,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789402532.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789402532.png"
    }
+  },
+  "noor-qissa-abnay-adam-r7": {
+   "title": "سُورَةُ المَائـِدَةِ ﴿27–27﴾ — أيمن سويد",
+   "fingerprint": "066cf4ca72cfddd0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-abnay-adam-aymanswoaid.mp4",
+   "duration": 84.38,
+   "at": "2026-09-14 16:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789402911.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789402911.png"
+   }
   }
  },
  "fingerprints": [
@@ -359,7 +370,8 @@
   "e2d16d87bb1c0891",
   "30d448d741b62761",
   "9a26b1eff050c121",
-  "383a11f7c9cfa989"
+  "383a11f7c9cfa989",
+  "066cf4ca72cfddd0"
  ],
- "last_kind": "quran"
+ "last_kind": "adhkar"
 }
