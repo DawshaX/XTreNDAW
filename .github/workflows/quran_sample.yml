@@ -1,0 +1,44 @@
+name: quran-sample
+on:
+  workflow_dispatch:
+    inputs:
+      surah:
+        description: "رقم السورة"
+        default: "93"
+      frm:
+        description: "من آية"
+        default: "1"
+      to:
+        description: "إلى آية"
+        default: "11"
+      rec:
+        description: "رقم القارئ (0-6)"
+        default: "4"
+permissions:
+  contents: write
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: install
+        run: pip install --quiet -r requirements.txt
+      - name: produce
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          SAMPLE_SURAH: ${{ inputs.surah }}
+          SAMPLE_FRM: ${{ inputs.frm }}
+          SAMPLE_TO: ${{ inputs.to }}
+          SAMPLE_REC: ${{ inputs.rec }}
+        run: python tools/quran_sample.py
+      - name: upload artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sample
+          path: work/sample/*.mp4
