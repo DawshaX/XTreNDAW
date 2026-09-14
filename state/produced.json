@@ -368,6 +368,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789416666.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789416666.png"
    }
+  },
+  "noor-hadith-17-r3": {
+   "title": "قال رسول الله ﷺ: الدِّينُ النَّصِيحَةُ.…",
+   "fingerprint": "bbadec96800612b6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 25.95,
+   "at": "2026-09-14 21:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789420077.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789420077.png"
+   }
   }
  },
  "fingerprints": [
@@ -407,7 +418,8 @@
   "066cf4ca72cfddd0",
   "128539108abc33e6",
   "fa82763b18d35bf1",
-  "d3788c8a537fc45f"
+  "d3788c8a537fc45f",
+  "bbadec96800612b6"
  ],
- "last_kind": "quran"
+ "last_kind": "hadith"
 }
