@@ -238,6 +238,9 @@ def _yt_watchdog() -> None:
 
 def _publish(topic, r: dict, urls: dict) -> None:
     """ينشر على المنصات المتصلة بس — رابط Releases العام هو مصدر الفيديو."""
+    if (settings.STATE / "pause.json").exists():
+        _log("⏸ النشر متوقف بطلب الأدمن — الحلقة اتخزنت ومستنية /resume")
+        return
     from .publish import facebook as _fb, instagram as _ig, telegram as _tg, youtube as _yt
     video_url = urls.get("video")
     if not video_url:
