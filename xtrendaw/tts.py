@@ -176,6 +176,42 @@ def _sent_prosody(sent: str, base_rate: str) -> tuple[str, str, str]:
     return base_rate or "-6%", "-1Hz", "+0%"
 
 
+def _piper_model() -> Path | None:
+    """نموذج Piper من ريليز noor-models — يتخزن في /tmp (خارج مساحة العمل)."""
+    import requests as _rq
+
+    m = settings.PIPER_DIR / "ar-kareem.onnx"
+    j = Path(str(m) + ".json")
+    if not (m.exists() and j.exists()):
+        try:
+            m.parent.mkdir(parents=True, exist_ok=True)
+            base = (f"https://github.com/DawshaX/XTreNDAW/releases/download/"
+                    f"{settings.PIPER_RELEASE}")
+            r = _rq.get(f"{base}/ar-kareem.onnx", timeout=600, stream=True)
+            if not r.ok:
+                return None
+            with open(m, "wb") as f:
+                for ch in r.iter_content(1 << 18):
+                    f.write(ch)
+            j.write_bytes(_rq.get(f"{base}/ar-kareem.json", timeout=60).content)
+        except Exception:
+            return None
+    return m if (m.exists() and j.exists()) else None
+
+
+def _piper_synth(text: str, out_wav: Path, model: Path) -> bool:
+    import subprocess as _sp
+    import sys as _sys
+
+    try:
+        r = _sp.run([_sys.executable, "-m", "piper", "--model", str(model),
+                       "--output_file", str(out_wav), "--length_scale", "1.12"],
+                      input=text.encode("utf-8"), capture_output=True, timeout=300)
+        return r.returncode == 0 and out_wav.exists()
+    except Exception:
+        return False
+
+
 def synthesize_line(text: str, lang: str, out_dir: Path, name: str = "line",
                     rate: str | None = None, pitch: str | None = None) -> dict:
     """سطر واحد → {wav, duration, words, timing_source}.
@@ -184,6 +220,17 @@ def synthesize_line(text: str, lang: str, out_dir: Path, name: str = "line",
     """
     voice = settings.VOICE_EN if lang == "en" else settings.VOICE_AR
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    if lang == "ar" and settings.TTS_ENGINE == "piper":
+        model = _piper_model()
+        if model:
+            wav = out_dir / f"{name}.wav"
+            if _piper_synth(normalize_for_speech(text), wav, model):
+                d = probe_duration(wav)
+                if d > 0:
+                    return {"wav": wav, "duration": d,
+                            "words": _spread(text, 0, d),
+                            "timing_source": "piper"}
 
     if lang == "ar":
         text = normalize_for_speech(text)

@@ -69,6 +69,10 @@ PUBLISH_HOURS = (list(range(24)) if _ph in ("all", "") else
 CHANNEL_MODE = get("XT_MODE", "deen")
 # نشر يوتيوب (بيتوقف مؤقتًا لاختبار سلامة المطالبات — تيليجرام شغال دايمًا)
 PUBLISH_YOUTUBE = get("XT_YT", "1").strip() == "1"
+# الصوت: piper = عربي حرفي بمخارج صحيحة (مجاني بلا حد)، وedge بديل احتياطي
+TTS_ENGINE = get("XT_TTS_ENGINE", "piper")
+PIPER_RELEASE = "noor-models"
+PIPER_DIR = Path(os.environ.get("XT_PIPER_DIR", "/tmp/noor-models"))
 
 # ─────────────────────────────────────────────────────────────
 # LLM مجاني (Groq) — اختياري، والمحرك شغال بدونه
