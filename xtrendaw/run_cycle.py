@@ -97,6 +97,11 @@ def _produce(topic: dict, upload: bool = True) -> int:
 
         r = _din.produce_din(topic["_din"], workdir, topic.get("_din_rec", 0),
                              topic.get("_din_spec"))
+        # العنوان والقارئ الفعليّان (بعد استبدال المحظور) مش تسمية المخطط القديمة
+        if r.get("title"):
+            topic["title_ar"] = r["title"]
+        if r.get("reciter"):
+            topic["_reciter"] = r["reciter"]
     else:
         r = produce.produce_episode(topic, workdir)
     dt = time.time() - t0
@@ -265,11 +270,13 @@ def _publish(topic, r: dict, urls: dict) -> None:
         if name == "youtube" and topic.get("_din") in ("quran", "tafsir", "qissa"):
             rec_used = topic.get("_reciter") or ""
             if settings.YT_RECITE_MODE == "off" or (
-                    settings.YT_RECITE_MODE == "auto"
-                    and rec_used not in state.reciter_proven()):
-                _log("🛡️ يوتيوب: القارئ تحت الاختبار (24 ساعة) — "
-                     "الحلقة نازلة على باقي المنصات")
+                    rec_used and rec_used in state.reciter_badlist()):
+                _log("🛡️ يوتيوب: القارئ محظور — الحلقة نازلة على باقي المنصات")
                 continue
+            if (settings.YT_RECITE_MODE == "auto" and rec_used
+                    and rec_used not in state.reciter_proven()):
+                _log("🧪 يوتيوب: نشر مراقَب — القارئ تحت الاختبار 24 ساعة "
+                     "(حذف فوري + حظر لو ظهر أي اعتراض)")
         try:
             if name in ("youtube", "telegram"):
                 url, err = mod.publish(r["video"], title, caption, tags)

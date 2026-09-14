@@ -114,8 +114,15 @@ def mark_done(topic: dict) -> None:
 
 def _topic(kind: str, key: str, spec: dict, rec: int, n: int) -> dict:
     from . import din
+    from . import state as _st
 
-    rec_name = din.RECITERS[rec][1]
+    _bad = _st.reciter_badlist()
+    if din.RECITERS[rec % len(din.RECITERS)][0] in _bad:
+        for _i, _alt in enumerate(din.RECITERS):
+            if _alt[0] not in _bad:
+                rec = _i
+                break
+    rec_name = din.RECITERS[rec % len(din.RECITERS)][1]
     if kind in ("quran", "tafsir"):
         pool = [x["scenes"] for x in _dinmod.QURAN]
         scenes = pool[n % len(pool)]

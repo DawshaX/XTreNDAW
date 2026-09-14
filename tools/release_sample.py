@@ -30,9 +30,20 @@ CAPTION = os.environ.get("RELEASE_CAPTION") or _DEFAULT_CAPTION
 TAGS = ["قرآن", "تلاوة", "سورة الشرح", "أيمن سويد", "نور", "shorts"]
 
 
+PLATFORMS = [x.strip() for x in
+             (os.environ.get("RELEASE_PLATFORMS") or "all").split(",")
+             if x.strip()]
+
+
+def _want(name: str) -> bool:
+    return "all" in PLATFORMS or name in PLATFORMS
+
+
 def main() -> int:
-    from xtrendaw import state
-    from xtrendaw.publish import telegram, youtube
+    import time as _time
+
+    from xtrendaw import settings, state
+    from xtrendaw.publish import facebook, instagram, telegram, youtube
 
     vid = ROOT / "work" / "sample_release.mp4"
     vid.parent.mkdir(parents=True, exist_ok=True)
@@ -40,17 +51,30 @@ def main() -> int:
     vid.write_bytes(r.content)
     print(f"✓ تحميل العينة: {vid.stat().st_size} bytes")
 
-    yt_url, err = youtube.publish(vid, TITLE, CAPTION, TAGS)
-    print("YOUTUBE:", yt_url or f"FAIL {err}")
-    if yt_url and "watch?v=" in yt_url:
-        state.push_yt_recent({
-            "id": yt_url.split("watch?v=")[-1].split("&")[0],
-            "title": TITLE, "reciter": os.environ.get("RELEASE_RECITER") or "ar.aymanswoaid",
-            "ts": __import__("time").time()})
-        print("✓ مسجلة في قائمة المراقبة — الووتشدوج هيحميها")
+    if _want("youtube") and settings.has_youtube():
+        yt_url, err = youtube.publish(vid, TITLE, CAPTION, TAGS)
+        print("YOUTUBE:", yt_url or f"FAIL {err}")
+        if yt_url and "watch?v=" in yt_url:
+            state.push_yt_recent({
+                "id": yt_url.split("watch?v=")[-1].split("&")[0],
+                "title": TITLE,
+                "reciter": os.environ.get("RELEASE_RECITER") or "ar.aymanswoaid",
+                "ts": _time.time()})
+            print("✓ مسجلة في قائمة المراقبة — الووتشدوج هيحميها")
+    else:
+        print("YOUTUBE: متخطي (اختيار المنصات)")
 
-    tg_url, err = telegram.publish(vid, TITLE, CAPTION, TAGS)
-    print("TELEGRAM:", tg_url or f"FAIL {err}")
+    if _want("telegram") and settings.has_telegram():
+        tg_url, err = telegram.publish(vid, TITLE, CAPTION, TAGS)
+        print("TELEGRAM:", tg_url or f"FAIL {err}")
+
+    if _want("instagram") and settings.has_instagram():
+        ig_url, err = instagram.publish(URL, TITLE, CAPTION, TAGS)
+        print("INSTAGRAM:", ig_url or f"FAIL {err}")
+
+    if _want("facebook") and settings.has_facebook():
+        fb_url, err = facebook.publish(URL, TITLE, CAPTION, TAGS)
+        print("FACEBOOK:", fb_url or f"FAIL {err}")
     return 0
 
 

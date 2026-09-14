@@ -1,0 +1,48 @@
+name: tg-fix
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "edit أو delete"
+        default: "edit"
+      message_id:
+        description: "رقم الرسالة في القناة"
+        default: "0"
+      text:
+        description: "النص الجديد (للتعديل)"
+        default: ""
+permissions:
+  contents: read
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: install
+        run: pip install --quiet requests
+      - name: fix
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TG_ACTION: ${{ inputs.action }}
+          TG_MESSAGE_ID: ${{ inputs.message_id }}
+          TG_TEXT: ${{ inputs.text }}
+        run: |
+          curl -sO https://raw.githubusercontent.com/DawshaX/XTreNDAW/main/tools/tg_fix.py || true
+          python - <<'PY'
+          import os, requests
+          TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+          CHAT = os.environ.get("TELEGRAM_CHAT_ID")
+          ACTION = os.environ.get("TG_ACTION", "edit")
+          MSG_ID = int(os.environ.get("TG_MESSAGE_ID", "0"))
+          TEXT = os.environ.get("TG_TEXT", "")
+          API = f"https://api.telegram.org/bot{TOKEN}"
+          if ACTION == "delete":
+              r = requests.post(f"{API}/deleteMessage", json={"chat_id": CHAT, "message_id": MSG_ID}, timeout=30)
+          else:
+              r = requests.post(f"{API}/editMessageText", json={"chat_id": CHAT, "message_id": MSG_ID, "text": TEXT}, timeout=30)
+          print(ACTION, r.status_code, r.text[:300])
+          PY

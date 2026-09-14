@@ -368,12 +368,29 @@ def frame_overlay(out_path: Path) -> Path:
 
 
 def intro_base(out_path: Path) -> Path:
-    """افتتاحية البراند: سواد + توهّج أحمر نابض + اللوجو في القلب."""
+    """افتتاحية البراند: سديم كوني ملوّن + نجوم + توهّج أحمر + اللوجو.
+
+    الإطار الأول لازم يكون ملوّن مش أسود — إنستجرام بياخد أول إطار غلافًا."""
+    import random as _rnd
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    layer = Image.new("RGB", (W, H), (5, 0, 0))
+    layer = Image.new("RGB", (W, H), (9, 12, 30))
     d = ImageDraw.Draw(layer, "RGBA")
+    # سديم ملوّن ناعم (أزرق/بنفسجي/تركواز)
+    for (bx, by, br, col) in [(W * 0.25, H * 0.28, 560, (28, 62, 145, 30)),
+                              (W * 0.80, H * 0.52, 640, (96, 32, 118, 26)),
+                              (W * 0.50, H * 0.80, 720, (18, 96, 128, 24))]:
+        for r in range(int(br), 60, -50):
+            d.ellipse([bx - r, by - r, bx + r, by + r], fill=col)
+    # نجوم متناثرة
+    _rng = _rnd.Random(7)
+    for _ in range(460):
+        x, y = _rng.randint(0, W - 1), _rng.randint(0, H - 1)
+        sz = _rng.choice([1, 1, 1, 2, 2, 3])
+        d.ellipse([x, y, x + sz, y + sz],
+                  fill=(235, 240, 255, _rng.randint(130, 255)))
+    # توهّج البراند الأحمر + اللوجو في القلب
     cx, cy = W // 2, H // 2 - 60
-    for r, a in [(680, 12), (520, 18), (380, 28), (250, 42), (150, 60)]:
+    for r, a in [(680, 14), (520, 20), (380, 30), (250, 46), (150, 66)]:
         d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(255, 42, 42, a))
     if settings.LOGO.exists():
         lg = load_logo(460, 250)

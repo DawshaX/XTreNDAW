@@ -11,6 +11,9 @@ on:
       reciter:
         description: "معرّف القارئ"
         default: "ar.aymanswoaid"
+      platforms:
+        description: "المنصات (مفصولة بفواصل) أو all"
+        default: "all"
 permissions:
   contents: write
 jobs:
@@ -35,6 +38,11 @@ jobs:
           RELEASE_TITLE: ${{ inputs.title }}
           RELEASE_CAPTION: ${{ inputs.caption }}
           RELEASE_RECITER: ${{ inputs.reciter }}
+          RELEASE_PLATFORMS: ${{ inputs.platforms }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
         run: python tools/release_sample.py
       - name: save state
         run: |
