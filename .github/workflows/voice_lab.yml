@@ -1,5 +1,7 @@
 name: voice-lab
 on: workflow_dispatch
+permissions:
+  contents: write
 jobs:
   lab:
     runs-on: ubuntu-latest
