@@ -170,6 +170,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789347810.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789347810.png"
    }
+  },
+  "noor-qissa-yunus-r0": {
+   "title": "قصة: يونس في بطن الحوت — محمود خليل الحصري",
+   "fingerprint": "75419dd30e84a5ee",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-yunus-husary.mp4",
+   "duration": 89.93,
+   "at": "2026-09-14 01:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789348964.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789348964.png"
+   }
   }
  },
  "fingerprints": [
@@ -191,7 +202,8 @@
   "bbb89404ed969cdc",
   "c54de0d325f803a5",
   "40035df208460fd5",
-  "bebfbf6c44e2e26e"
+  "bebfbf6c44e2e26e",
+  "75419dd30e84a5ee"
  ],
- "last_kind": "hadith"
+ "last_kind": "qissa"
 }
