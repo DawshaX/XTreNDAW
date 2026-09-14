@@ -84,11 +84,12 @@ jobs:
         if: always()
         run: |
           [ -f /tmp/skipflag ] && { echo "دورة راحة — السلسلة بتستنى الكرون"; exit 0; }
-          m=$(date -u +%-M); sec=$(date -u +%-S)
-          now=$((m*60+sec)); target=300
-          delta=$(( (target - now + 3600) % 3600 ))
-          [ "$delta" -lt 30 ] && delta=$((delta + 3600))
-          echo "ناعس $delta ثانية لحد الدورة الجاية"
+          ts=$(python3 -c "import json; print(int(json.load(open('state/last_publish.json'))['ts']))" 2>/dev/null || echo 0)
+          now=$(date +%s)
+          delta=$((ts + 3600 - now))
+          [ "$delta" -lt 60 ] && delta=60
+          [ "$delta" -gt 3600 ] && delta=3600
+          echo "ناعس $delta ثانية — فيديو جديد بعد ساعة بالظبط من آخر واحد"
           sleep "$delta"
           curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
