@@ -12,7 +12,8 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write          # عشان يعمل release + يحدّث الذاكرة
+  contents: write
+  actions: write          # عشان يعمل release + يحدّث الذاكرة
 
 jobs:
   nova:
@@ -56,6 +57,10 @@ jobs:
             git commit -m "auto: factory state $(date -u +%Y-%m-%dT%H:%MZ)"
             git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
             git push
+          curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/bot.yml/dispatches" \
+            -d '{"ref":"main"}' || true
           }
 
 # re-arm schedule 18:29

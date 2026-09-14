@@ -246,5 +246,24 @@ def run_pass() -> None:
     _daily_digest()
 
 
+def run_loop(seconds: int = 1500) -> None:
+    """جلسة حية: تقرأ وترد باستمرار لحد ما تخلص المدة — بعدها الرنر يعيد الإطلاق."""
+    import time as _t
+
+    end = _t.time() + seconds
+    while _t.time() < end:
+        try:
+            run_pass()
+        except Exception:
+            pass
+        _t.sleep(1)
+
+
 if __name__ == "__main__":
-    run_pass()
+    import sys
+
+    if "--loop" in sys.argv:
+        i = sys.argv.index("--loop")
+        run_loop(int(sys.argv[i + 1]) if len(sys.argv) > i + 1 else 1500)
+    else:
+        run_pass()
