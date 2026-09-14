@@ -223,8 +223,22 @@ def fetch_real_visual(query: str, out_path: Path) -> bool:
                 cands.append(ii)
         if not cands:
             return False
-        ii = max(cands, key=lambda x: x.get("width", 0) * x.get("height", 0))
-        url = ii.get("thumburl") or ii.get("url")
+        from . import library as _lib
+        used = _lib._used(query)
+        cands.sort(key=lambda x: x.get("width", 0) * x.get("height", 0),
+                   reverse=True)
+        pick = None
+        for c in cands:
+            u = c.get("thumburl") or c.get("url")
+            if u and u not in used:
+                pick = u
+                break
+        if not pick and cands:
+            pick = cands[0].get("thumburl") or cands[0].get("url")
+        if not pick:
+            return False
+        _lib._mark_used(query, pick)
+        url = pick
         img_r = requests.get(url, headers=ua, timeout=60)
         if not img_r.ok or not img_r.content:
             return False

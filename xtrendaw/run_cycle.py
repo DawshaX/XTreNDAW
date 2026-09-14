@@ -53,9 +53,10 @@ def _din_caption(topic: dict) -> str:
             lists = {"dua": "duas", "hadith": "hadiths",
                      "adhkar": "adhkar", "info": "info"}
             items = stock[lists[kind]]
-            it = items[(topic.get("_din_spec") or {}).get("idx", 0)
-                       % len(items)]
-            body = f"📜 نص الحلقة:\n{it['text']}\n— {it['src']}\n"
+            _spec = topic.get("_din_spec") or {}
+            if "idx" in _spec:
+                it = items[_spec["idx"] % len(items)]
+                body = f"📜 نص الحلقة:\n{it['text']}\n— {it['src']}\n"
         elif kind in ("quran", "tafsir", "qissa"):
             spec = topic.get("_din_spec") or {}
             if spec.get("surah"):
@@ -124,7 +125,9 @@ def _produce(topic: dict, upload: bool = True) -> int:
         try:
             meta = {"id": topic["id"], "title_ar": topic["title_ar"],
                     "tags": topic.get("tags", ""), "_issue": topic.get("_issue"),
-                    "kind": topic.get("_kind", "know")}
+                    "kind": topic.get("_kind", "know"),
+                    "_din": topic.get("_din"),
+                    "_din_spec": topic.get("_din_spec")}
             urls = github_store.upload_to_vault(r["video"], r["cover"], meta)
             _log("📦 اتخزنت في الـvault — مستنية موعد الذروة")
         except Exception as e:  # فشل التخزين ما يوقفش الدورة
@@ -202,7 +205,19 @@ def _yt_watchdog() -> None:
         vid = item.get("id")
         if not vid:
             continue
-        blocked, why = _yt.check_blocked(vid)
+        api_st = None
+        try:
+            api_st = _yt.check_blocked_api(vid)
+        except Exception:
+            pass
+        if api_st == "gone":
+            blocked, why = False, "gone"
+        elif api_st == "blocked":
+            blocked, why = True, "blocked"
+        elif api_st == "ok":
+            blocked, why = False, "ok"
+        else:
+            blocked, why = _yt.check_blocked(vid)
         if why == "gone":
             state.pop_yt_recent(vid)
         elif blocked:
@@ -342,9 +357,14 @@ def _promote_due(force: bool = False) -> None:
     meta = res["meta"]
     _log(f"📺 موعد الذروة: {res['id']} نزلت على القناة → {res['urls']['video']}")
     state.set_last_kind(meta.get("kind", "know"))  # التناوب: الجاية النوع التاني
+    _kinds = ("quran", "tafsir", "qissa", "dua", "hadith", "adhkar", "info")
     topic = {"id": meta.get("id", res["id"]),
              "title_ar": meta.get("title_ar", ""),
-             "tags": meta.get("tags", ""), "_issue": meta.get("_issue")}
+             "tags": meta.get("tags", ""), "_issue": meta.get("_issue"),
+             "_din": meta.get("_din") or (meta.get("kind")
+                                          if meta.get("kind") in _kinds
+                                          else None),
+             "_din_spec": meta.get("_din_spec")}
     _publish(topic, {"video": res["local_video"]}, res["urls"])
     if topic.get("_issue"):
         from . import requests as viewer_requests

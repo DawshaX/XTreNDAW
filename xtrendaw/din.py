@@ -31,6 +31,8 @@ RECITERS = [
     ("ar.hanirifai", "هاني الرفاعي", 64),
     ("ar.husarymujawwad", "محمود خليل الحصري (مجوَّد)", 128),
     ("ar.muhammadjibreel", "محمد جبريل", 128),
+    ("ar.aymanswoaid", "أيمن سويد", 64),
+    ("ar.hudhaify", "علي الحذيفي", 128),
 ]
 
 # مقاطع القرآن — مشاهد كونية/طبيعة حقيقية (الكلمة ↔ المشهد)
@@ -207,6 +209,8 @@ def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
     from . import footage
 
     q = spec["scenes"][i % len(spec["scenes"])]
+    # تنويع حقيقي: كل مشهد بزاوية/إضاءة مختلفة — بلا تكرار بين الحلقات
+    q = f"{q}, {['cinematic wide shot', 'golden hour light', 'aerial view', 'close-up detail', 'dramatic side light'][i % 5]}"
     scdir = workdir / f"sc{i:02d}"
     clip = footage.fetch_clip(q, max(1.0, seconds), scdir, f"{seed}:{i}",
                               source="auto")

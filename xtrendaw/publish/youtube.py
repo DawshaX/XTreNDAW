@@ -65,3 +65,28 @@ def delete(video_id: str) -> bool:
         params={"id": video_id},
         headers={"Authorization": f"Bearer {tok}"}, timeout=30)
     return r.status_code in (200, 204)
+
+
+def check_blocked_api(video_id: str):
+    """الفحص الرسمي: regionRestriction.blocked = محظور ولو جزئيًا."""
+    tok = _token()
+    if not tok:
+        return None
+    try:
+        r = requests.get(
+            "https://www.googleapis.com/youtube/v3/videos",
+            params={"id": video_id, "part": "contentDetails,status"},
+            headers={"Authorization": f"Bearer {tok}"}, timeout=30)
+        if not r.ok:
+            return None
+        items = r.json().get("items", [])
+        if not items:
+            return "gone"
+        rr = (items[0].get("contentDetails") or {}).get("regionRestriction") or {}
+        if rr.get("blocked"):
+            return "blocked"
+        if (items[0].get("status") or {}).get("uploadStatus") == "rejected":
+            return "blocked"
+        return "ok"
+    except Exception:
+        return None
