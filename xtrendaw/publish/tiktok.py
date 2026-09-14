@@ -52,6 +52,24 @@ def exchange_code(code: str, redirect_uri: str):
     return False, str(d)[:140]
 
 
+def _privacy() -> str:
+    """أفضل خصوصية متاحة لحالة الحساب/التطبيق (سياسة النشر الرسمية)."""
+    want = settings.TIKTOK_PRIVACY
+    try:
+        r = requests.post(f"{API}/post/publish/creator_info/query/",
+                          headers={"Authorization": f"Bearer {_tok()}"},
+                          json={}, timeout=30)
+        opts = (r.json().get("data") or {}).get("privacy_level_options") or []
+    except Exception:
+        opts = []
+    if want in opts:
+        return want
+    for cand in ("PUBLIC_TO_EVERYONE", "SELF_ONLY"):
+        if cand in opts:
+            return cand
+    return want or "SELF_ONLY"
+
+
 def _ensure_fresh() -> None:
     import time as _t
     from .. import state
@@ -76,7 +94,7 @@ def publish(video, title, caption, tags):
                           headers={"Authorization": f"Bearer {_tok()}",
                                    "Content-Type": "application/json; charset=UTF-8"},
                           json={"post_info": {"title": text,
-                                              "privacy_level": settings.TIKTOK_PRIVACY,
+                                              "privacy_level": _privacy(),
                                               "disable_comment": False,
                                               "disable_duet": False,
                                               "disable_stitch": False},
@@ -88,6 +106,9 @@ def publish(video, title, caption, tags):
         d = r.json().get("data") or {}
         up, pid = d.get("upload_url"), d.get("publish_id")
         if not up:
+            if "private_accounts" in r.text:
+                return None, ("tt_خاص: تيك توك بيشترط الحساب خاص فترة "
+                              "المراجعة — راجع البوت")
             return None, f"tt_init:{r.text[:140]}"
         u = requests.put(up, data=path.read_bytes(),
                          headers={"Content-Type": "video/mp4",
