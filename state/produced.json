@@ -379,6 +379,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789420077.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789420077.png"
    }
+  },
+  "noor-qissa-ayyub-r7": {
+   "title": "سُورَةُ صٓ ﴿41–43﴾ — أيمن سويد",
+   "fingerprint": "2f679d5bc4fd1e9a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ayyub-aymanswoaid.mp4",
+   "duration": 80.03,
+   "at": "2026-09-14 22:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789423914.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789423914.png"
+   }
   }
  },
  "fingerprints": [
@@ -419,7 +430,8 @@
   "128539108abc33e6",
   "fa82763b18d35bf1",
   "d3788c8a537fc45f",
-  "bbadec96800612b6"
+  "bbadec96800612b6",
+  "2f679d5bc4fd1e9a"
  ],
- "last_kind": "hadith"
+ "last_kind": "qissa"
 }
