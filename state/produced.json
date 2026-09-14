@@ -335,6 +335,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789402911.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789402911.png"
    }
+  },
+  "noor-dua-23-r3": {
+   "title": "دعاء: رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي …",
+   "fingerprint": "128539108abc33e6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 24.43,
+   "at": "2026-09-14 16:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789403182.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789403182.png"
+   }
   }
  },
  "fingerprints": [
@@ -371,7 +382,8 @@
   "30d448d741b62761",
   "9a26b1eff050c121",
   "383a11f7c9cfa989",
-  "066cf4ca72cfddd0"
+  "066cf4ca72cfddd0",
+  "128539108abc33e6"
  ],
- "last_kind": "adhkar"
+ "last_kind": "hadith"
 }
