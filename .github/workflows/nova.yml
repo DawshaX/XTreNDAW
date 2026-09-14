@@ -40,6 +40,8 @@ jobs:
       IG_APP_SECRET: ${{ secrets.IG_APP_SECRET }}
       TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
       TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+      XT_TOKEN_KEY: ${{ secrets.XT_TOKEN_KEY }}
       XT_YT: "1"   # يوتيوب شغال + ووتشدوج يحذف أي فيديو محظور خلال دقائق
     steps:
       - uses: actions/checkout@v4
