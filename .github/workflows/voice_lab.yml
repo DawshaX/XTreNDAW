@@ -1,0 +1,22 @@
+name: voice-lab
+on: workflow_dispatch
+jobs:
+  lab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: install
+        run: |
+          pip install --quiet torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install --quiet "coqui-tts" "transformers==4.53.2" edge-tts requests
+      - name: generate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          TTS_HOME: /tmp/tts
+          COQUI_TOS_AGREED: "1"
+        run: python tools/voice_lab.py
