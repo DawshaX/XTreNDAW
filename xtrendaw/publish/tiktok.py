@@ -112,7 +112,10 @@ def publish(video, title, caption, tags):
             return None, f"tt_init:{r.text[:140]}"
         u = requests.put(up, data=path.read_bytes(),
                          headers={"Content-Type": "video/mp4",
-                                  "Content-Length": str(size)}, timeout=600)
+                                  "Content-Length": str(size),
+                                  "Content-Range":
+                                      f"bytes 0-{size - 1}/{size}"},
+                         timeout=600)
         if u.status_code not in (200, 201, 204):
             return None, f"tt_upload:{u.status_code}"
         for _ in range(40):
