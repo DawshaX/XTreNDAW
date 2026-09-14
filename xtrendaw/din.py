@@ -288,6 +288,12 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             sel.pop()
             _durs.pop()
             spec = {**spec, "to": sel[-1]["numberInSurah"]}
+        if kind == "tafsir":
+            # شرح المفسر بيضيف وقت — 3 آيات كفاية عشان نفضل تحت 90 ثانية
+            while len(sel) > 3:
+                sel.pop()
+                _durs.pop()
+                spec = {**spec, "to": sel[-1]["numberInSurah"]}
         q = _get_json(f"{APIQ}/surah/{spec['surah']}/quran-uthmani")
         sname = q["name"]
         meta = _get_json(f"{APIQ}/surah/{spec['surah']}")
@@ -323,7 +329,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             scene_list.append(sc)
             off += d
             if kind == "tafsir":
-                r = synthesize_line(f"قال المفسر: {tafs[a['numberInSurah']]}", "ar",
+                r = synthesize_line(
+                    "قال المفسر: " + _trim_sent(tafs[a["numberInSurah"]], 130), "ar",
                                     workdir / "shr", name=f"t{i}",
                                     rate="-8%", pitch="-2Hz")
                 wavs.append(r["wav"])
