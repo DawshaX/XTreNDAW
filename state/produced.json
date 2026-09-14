@@ -258,6 +258,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789368962.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789368962.png"
    }
+  },
+  "noor-dua-16-r3": {
+   "title": "دعاء: رَبَّنَا مَا خَلَقْتَ هَذَا بَاطِلًا سُب…",
+   "fingerprint": "a02a2c672354a50c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 27.28,
+   "at": "2026-09-14 07:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789371462.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789371462.png"
+   }
   }
  },
  "fingerprints": [
@@ -287,7 +298,8 @@
   "014199dd58ac02ab",
   "0c54ec439a4e248e",
   "d94c9d015c369411",
-  "f2fe2bdd4c33f986"
+  "f2fe2bdd4c33f986",
+  "a02a2c672354a50c"
  ],
- "last_kind": "qissa"
+ "last_kind": "dua"
 }
