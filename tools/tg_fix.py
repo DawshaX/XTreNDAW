@@ -17,8 +17,8 @@ if ACTION == "delete":
     r = requests.post(f"{API}/deleteMessage",
                       json={"chat_id": CHAT, "message_id": MSG_ID}, timeout=30)
 else:
-    r = requests.post(f"{API}/editMessageText",
+    r = requests.post(f"{API}/editMessageCaption",
                       json={"chat_id": CHAT, "message_id": MSG_ID,
-                            "text": TEXT}, timeout=30)
+                            "caption": TEXT}, timeout=30)
 print(ACTION, r.status_code, r.text[:200])
 sys.exit(0 if r.ok else 1)
