@@ -119,10 +119,11 @@ def publish(video, title, caption, tags):
         if u.status_code not in (200, 201, 204):
             return None, f"tt_upload:{u.status_code}"
         for _ in range(40):
-            st = requests.get(f"{API}/post/publish/status/",
-                              params={"publish_id": pid},
-                              headers={"Authorization": f"Bearer {_tok()}"},
-                              timeout=30).json()
+            st = requests.post(f"{API}/post/publish/status/fetch/",
+                               headers={"Authorization": f"Bearer {_tok()}",
+                                        "Content-Type":
+                                            "application/json; charset=UTF-8"},
+                               json={"publish_id": pid}, timeout=30).json()
             status = (st.get("data") or {}).get("status")
             if status == "PUBLISH_COMPLETE":
                 return f"https://www.tiktok.com (publish {pid})", None
