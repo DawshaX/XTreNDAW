@@ -408,7 +408,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                          "equalizer=f=110:width_type=q:width=1:g=1.5,"
                          "equalizer=f=3400:width_type=q:width=1:g=1,"
                          "aecho=0.2:0.3:25:0.12[a];"
-                         "[a][1:a]amix=inputs=2:normalize=0[out]",
+                         "[a][1:a]amix=inputs=2:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[out]",
                          "-map", "[out]", "-ar", "44100", "-ac", "2",
                          "-c:a", "pcm_s16le", str(processed)],
                         capture_output=True)
