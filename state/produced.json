@@ -236,6 +236,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789366220.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789366220.png"
    }
+  },
+  "noor-hadith-14-r3": {
+   "title": "قال رسول الله ﷺ: مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْم…",
+   "fingerprint": "d94c9d015c369411",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 30.9,
+   "at": "2026-09-14 06:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789367481.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789367481.png"
+   }
   }
  },
  "fingerprints": [
@@ -263,7 +274,8 @@
   "741b13e85db41add",
   "72d84e2048a5a795",
   "014199dd58ac02ab",
-  "0c54ec439a4e248e"
+  "0c54ec439a4e248e",
+  "d94c9d015c369411"
  ],
- "last_kind": "adhkar"
+ "last_kind": "hadith"
 }
