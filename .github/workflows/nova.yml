@@ -18,7 +18,7 @@ permissions:
 jobs:
   nova:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 110
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_REPOSITORY: ${{ github.repository }}
@@ -55,7 +55,12 @@ jobs:
 
       - name: إنتاج الحلقة التالية + رفعها Releases
         continue-on-error: true
-        run: timeout 2400 python -m xtrendaw.run_cycle --next
+        run: |
+          set +e
+          timeout 2400 python -m xtrendaw.run_cycle --next
+          rc=$?
+          [ $rc -eq 42 ] && touch /tmp/skipflag
+          exit $rc
 
       - name: تحديث الذاكرة في git (عشان الحلقة الجاية تكمل مش تعيد)
         if: always()
@@ -75,4 +80,17 @@ jobs:
             -d '{"ref":"main"}' || true
           }
 
-# re-arm schedule 18:29
+      - name: سلسلة الساعة (لو الكرون نام — المصنع يصحي نفسه)
+        if: always()
+        run: |
+          [ -f /tmp/skipflag ] && { echo "دورة راحة — السلسلة بتستنى الكرون"; exit 0; }
+          m=$(date -u +%-M); sec=$(date -u +%-S)
+          now=$((m*60+sec)); target=300
+          delta=$(( (target - now + 3600) % 3600 ))
+          [ "$delta" -lt 30 ] && delta=$((delta + 3600))
+          echo "ناعس $delta ثانية لحد الدورة الجاية"
+          sleep "$delta"
+          curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/nova.yml/dispatches" \
+            -d '{"ref":"main"}' || true

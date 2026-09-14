@@ -430,6 +430,8 @@ def main() -> int:
     ap.add_argument("--promote", action="store_true",
                     help="إفراج فوري عن حلقة من الـvault (للاختبار)")
     ap.add_argument("--no-upload", action="store_true")
+    ap.add_argument("--force", action="store_true",
+                    help="تجاهل حماية الساعة الواحدة")
     args = ap.parse_args()
 
     if args.promote:
@@ -467,8 +469,18 @@ def main() -> int:
             # المخطّط الذكي: سلسلة + تناوب + بلا تكرار (الذاكرة على git)
             from . import planner
 
-            _health_check()
+            # حماية الساعة: فيديو واحد كل ساعة حتى لو اتفعلت الدورتين
+            try:
+                _lp = settings.STATE / "last_publish.json"
+                if _lp.exists() and not args.force:
+                    _ts = json.loads(_lp.read_text(encoding="utf-8")).get("ts", 0)
+                    if time.time() - float(_ts) < 3000:
+                        _log("⏳ لسه مفيش ساعة على آخر فيديو — الدورة دي راحة")
+                        return 42
+            except Exception:
+                pass
 
+            _health_check()
 
             _yt_watchdog()
             topic = planner.next_episode()
@@ -476,6 +488,14 @@ def main() -> int:
             rec = topic["_din_rec"]
             topic = {**topic, "_din_rec": rec}
             rc = _produce(topic, upload=not args.no_upload)
+            if rc != 0:
+                planner.mark_fail(topic)   # بعد محاولتين يتخطاها للأبد
+            else:
+                try:
+                    (settings.STATE / "last_publish.json").write_text(
+                        json.dumps({"ts": time.time()}), encoding="utf-8")
+                except Exception:
+                    pass
             if not args.no_upload:
                 _promote_due()
             return rc

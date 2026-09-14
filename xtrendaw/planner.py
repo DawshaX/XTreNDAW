@@ -77,20 +77,34 @@ def _series(kind: str) -> list[tuple[str, dict]]:
     return [(f"{i}", {"idx": i}) for i in range(len(items))]
 
 
+def _coverage_order(kind: str, n: int) -> list[int]:
+    """ترتيب شبه عشوائي ثابت لكل المخزون — تغطية 100% قبل أي تكرار.
+    (إصلاح عيب قديم: خطوة ثابتة كانت بتلف على 9 عناصر فقط من 63 معلومة)"""
+    import hashlib
+    return sorted(range(n), key=lambda i: hashlib.sha1(
+        f"{kind}:{i}".encode()).hexdigest())
+
+
 def next_episode() -> dict:
-    """الحلقة الجاية: نوع متناوب + أول مفتاح لسه ما اتعملش."""
+    """الحلقة الجاية: نوع متناوب (متغيّر كل دور) + تغطية كاملة للمخزون."""
+    import random as _rnd
     led = _read_ledger()
     done = led["done"]
+    skip = led.get("skip") or {}
     last = led.get("last") or ""
-    start = (KIND_ROTATION.index(last) + 1) % len(KIND_ROTATION)         if last in KIND_ROTATION else 0
-    for k in range(len(KIND_ROTATION)):
-        kind = KIND_ROTATION[(start + k) % len(KIND_ROTATION)]
+    # ترتيب الأنواع يتبدّل كل دور كامل — نفس التغطية، شكل مختلف كل مرة
+    order = KIND_ROTATION[:]
+    _rnd.Random(led["n"] // len(KIND_ROTATION)).shuffle(order)
+    start = (order.index(last) + 1) % len(order) if last in order else 0
+    for k in range(len(order)):
+        kind = order[(start + k) % len(order)]
         series = _series(kind)
-        off = led["n"] % max(1, len(series))
-        for i in range(len(series)):
-            key, spec = series[(off + i) % len(series)]
+        for i in _coverage_order(kind, len(series)):
+            key, spec = series[i]
             lk = f"{kind}:{key}"
-            if lk not in done:
+            if lk in done or skip.get(lk, 0) >= 2:
+                continue
+            if True:
                 from . import din as _din2
                 from . import state as _st2
                 _prov = [i for i, (rid, _, _) in enumerate(_din2.RECITERS)
@@ -108,6 +122,16 @@ def next_episode() -> dict:
     led["done"] = {}
     _write_ledger(led)
     return next_episode()
+
+
+def mark_fail(topic: dict) -> None:
+    """حلقة فشلت إنتاج — بعد محاولتين المخطّط يتخطاها للأبد (مفيش تجميد)."""
+    led = _read_ledger()
+    led.setdefault("skip", {})
+    k = topic.get("_ledger_key")
+    if k:
+        led["skip"][k] = int(led["skip"].get(k, 0)) + 1
+        _write_ledger(led)
 
 
 def mark_done(topic: dict) -> None:
