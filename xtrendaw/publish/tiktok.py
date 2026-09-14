@@ -71,15 +71,23 @@ def _privacy() -> str:
 
 
 def _ensure_fresh() -> None:
+    """توكن طازة: من الحالة المشفرة أو باشتقاقه من الـrefresh في الأسرار."""
     import time as _t
-    from .. import state
-    f = state.TIKTOK_TOKEN_FILE
-    try:
-        d = json.loads(f.read_text(encoding="utf-8"))
-    except Exception:
+    if settings.TIKTOK.get("access_token"):
         return
-    if _t.time() > float(d.get("expires_at", 0)):
-        refresh_token()
+    rt = settings.TIKTOK.get("refresh_token")
+    if rt and settings.TIKTOK.get("client_key"):
+        try:
+            r = requests.post(f"{API}/oauth/token/", data={
+                "client_key": settings.TIKTOK["client_key"],
+                "client_secret": settings.TIKTOK["client_secret"],
+                "grant_type": "refresh_token",
+                "refresh_token": rt}, timeout=30)
+            d = (r.json() or {}).get("data") or {}
+            if d.get("access_token"):
+                settings.TIKTOK["access_token"] = d["access_token"]
+        except Exception:
+            pass
 
 
 def publish(video, title, caption, tags):

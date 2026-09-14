@@ -173,9 +173,28 @@ def set_ig_token(tok: str) -> None:
 TIKTOK_TOKEN_FILE = settings.STATE / "tiktok_token.json"
 
 
+def _cipher():
+    if not settings.TOKEN_KEY:
+        return None
+    try:
+        import base64 as _b
+        import nacl.bindings as _nb
+        return _b.b64decode(settings.TOKEN_KEY)
+    except Exception:
+        return None
+
+
 def set_tiktok_tokens(access_token: str, refresh_token: str) -> None:
     import time as _t
-    _wr(TIKTOK_TOKEN_FILE, {"access_token": access_token,
-                            "refresh_token": refresh_token, "ts": _t.time()})
+    payload = {"access_token": access_token, "refresh_token": refresh_token,
+               "ts": _t.time()}
+    key = _cipher()
+    if key:
+        import base64 as _b
+        import nacl.secret as _ns
+        box = _ns.SecretBox(key)
+        payload = {"enc": _b.b64encode(box.encrypt(
+            __import__("json").dumps(payload).encode())).decode()}
+    _wr(TIKTOK_TOKEN_FILE, payload)
     settings.TIKTOK["access_token"] = access_token
     settings.TIKTOK["refresh_token"] = refresh_token

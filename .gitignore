@@ -34,3 +34,4 @@ state/tokens.json
 # === نظام ===
 .DS_Store
 node_modules/
+state/tiktok_token.json

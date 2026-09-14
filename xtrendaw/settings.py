@@ -99,17 +99,26 @@ INSTAGRAM = {"user_id": get("INSTAGRAM_USER_ID"), "token": get("INSTAGRAM_ACCESS
 # الساندبوك = SELF_ONLY؛ بعد الموافقة الرسمية حوّلها PUBLIC_TO_EVERYONE
 TIKTOK_PRIVACY = get("TIKTOK_PRIVACY", "SELF_ONLY")
 
+TOKEN_KEY = get("XT_TOKEN_KEY")  # مفتاح تشفير التوكنز في الحالة العامة
+
 TIKTOK = {"client_key": get("TIKTOK_CLIENT_KEY"),
           "client_secret": get("TIKTOK_CLIENT_SECRET"),
-          "access_token": get("TIKTOK_ACCESS_TOKEN")}
+          "access_token": get("TIKTOK_ACCESS_TOKEN"),
+          "refresh_token": get("TIKTOK_REFRESH_TOKEN")}
 
 
 def _tt_state():
     f = STATE / "tiktok_token.json"
     if f.exists():
         try:
+            import base64 as _b
             import json as _json
-            return _json.loads(f.read_text(encoding="utf-8")) or {}
+            d = _json.loads(f.read_text(encoding="utf-8")) or {}
+            if d.get("enc") and TOKEN_KEY:
+                import nacl.secret as _ns
+                box = _ns.SecretBox(_b.b64decode(TOKEN_KEY))
+                d = _json.loads(box.decrypt(_b.b64decode(d["enc"])).decode())
+            return d
         except Exception:
             pass
     return {}
