@@ -346,6 +346,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789403182.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789403182.png"
    }
+  },
+  "noor-adhkar-3-r3": {
+   "title": "مِن أذكار المسلم: حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ …",
+   "fingerprint": "fa82763b18d35bf1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 29.6,
+   "at": "2026-09-14 19:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789414322.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789414322.png"
+   }
   }
  },
  "fingerprints": [
@@ -383,7 +394,8 @@
   "9a26b1eff050c121",
   "383a11f7c9cfa989",
   "066cf4ca72cfddd0",
-  "128539108abc33e6"
+  "128539108abc33e6",
+  "fa82763b18d35bf1"
  ],
- "last_kind": "dua"
+ "last_kind": "adhkar"
 }
