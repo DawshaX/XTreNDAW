@@ -281,7 +281,10 @@ def _publish(topic, r: dict, urls: dict) -> None:
                      "الحلقة نازلة على باقي المنصات")
                 continue
         try:
-            if name in ("youtube", "telegram", "tiktok"):
+            if name == "youtube":
+                url, err = mod.publish(r["video"], title, caption, tags,
+                                       cover=r.get("cover"))
+            elif name in ("telegram", "tiktok"):
                 url, err = mod.publish(r["video"], title, caption, tags)
             else:
                 url, err = mod.publish(video_url, title, caption, tags)

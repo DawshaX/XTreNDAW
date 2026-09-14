@@ -14,7 +14,7 @@ def _token():
         "grant_type": "refresh_token"}, timeout=30)
     return r.json().get("access_token") if r.ok else None
 
-def publish(video_path, title, caption, tags):
+def publish(video_path, title, caption, tags, cover=None):
     if not settings.has_youtube():
         return None, "no_credentials"
     tok = _token()
@@ -37,7 +37,19 @@ def publish(video_path, title, caption, tags):
                       data=open(video_path, "rb"), timeout=900)
     if up.status_code not in (200, 201):
         return None, f"upload_{up.status_code}"
-    return f"https://www.youtube.com/watch?v={up.json().get('id','')}", None
+    vid = up.json().get("id", "")
+    if cover and Path(cover).exists():
+        try:
+            th = requests.post(
+                "https://www.googleapis.com/upload/youtube/v3/thumbnails/set",
+                params={"videoId": vid},
+                headers={"Authorization": f"Bearer {tok}",
+                         "Content-Type": "image/png"},
+                data=Path(cover).read_bytes(), timeout=120)
+            print("THUMB:", th.status_code)
+        except Exception as e:
+            print("THUMB-err:", str(e)[:80])
+    return f"https://www.youtube.com/watch?v={vid}", None
 
 
 def check_blocked(video_id: str):
