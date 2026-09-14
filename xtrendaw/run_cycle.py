@@ -470,15 +470,16 @@ def main() -> int:
             from . import planner
 
             # حماية الساعة: فيديو واحد كل ساعة حتى لو اتفعلت الدورتين
+            import json as _json_lp
             try:
                 _lp = settings.STATE / "last_publish.json"
                 if _lp.exists() and not args.force:
-                    _ts = json.loads(_lp.read_text(encoding="utf-8")).get("ts", 0)
+                    _ts = _json_lp.loads(_lp.read_text(encoding="utf-8")).get("ts", 0)
                     if time.time() - float(_ts) < 3000:
                         _log("⏳ لسه مفيش ساعة على آخر فيديو — الدورة دي راحة")
                         return 42
-            except Exception:
-                pass
+            except Exception as _e:
+                _log(f"⚠ حماية الساعة مش قادرة تقرأ الطابع: {_e}")
 
             _health_check()
 
@@ -493,9 +494,10 @@ def main() -> int:
             else:
                 try:
                     (settings.STATE / "last_publish.json").write_text(
-                        json.dumps({"ts": time.time()}), encoding="utf-8")
-                except Exception:
-                    pass
+                        _json_lp.dumps({"ts": time.time()}), encoding="utf-8")
+                    _log("🕐 طابع الساعة اتسجل — الفيديو الجاي بعد ساعة")
+                except Exception as _e:
+                    _log(f"⚠ طابع الساعة فشل: {_e}")
             if not args.no_upload:
                 _promote_due()
             return rc
