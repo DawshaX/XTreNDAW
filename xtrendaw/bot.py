@@ -314,6 +314,12 @@ def run_pass() -> None:
             _ig.refresh_token()
     except Exception:
         pass
+    try:
+        if settings.TIKTOK.get("access_token"):
+            from .publish import tiktok as _tt
+            _tt.refresh_token()
+    except Exception:
+        pass
     _daily_digest()
 
 

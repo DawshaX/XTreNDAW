@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """تيك توك — Content Posting API (Direct Post برفع مباشر، بلا دومينات)."""
+import json
 import time
 from pathlib import Path
 
@@ -51,9 +52,22 @@ def exchange_code(code: str, redirect_uri: str):
     return False, str(d)[:140]
 
 
+def _ensure_fresh() -> None:
+    import time as _t
+    from .. import state
+    f = state.TIKTOK_TOKEN_FILE
+    try:
+        d = json.loads(f.read_text(encoding="utf-8"))
+    except Exception:
+        return
+    if _t.time() > float(d.get("expires_at", 0)):
+        refresh_token()
+
+
 def publish(video, title, caption, tags):
     if not settings.has_tiktok():
         return None, "no_credentials"
+    _ensure_fresh()
     path = Path(video)
     size = path.stat().st_size
     text = (title + "\n\n" + caption)[:2200]
