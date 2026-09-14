@@ -159,6 +159,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789347361.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789347361.png"
    }
+  },
+  "noor-hadith-7-r3": {
+   "title": "حديث: المسلم من سلِم المسلمون من لسانه ويده.…",
+   "fingerprint": "bebfbf6c44e2e26e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 28.89,
+   "at": "2026-09-14 01:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789347810.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789347810.png"
+   }
   }
  },
  "fingerprints": [
@@ -179,7 +190,8 @@
   "dacfb4c3dd4b28fb",
   "bbb89404ed969cdc",
   "c54de0d325f803a5",
-  "40035df208460fd5"
+  "40035df208460fd5",
+  "bebfbf6c44e2e26e"
  ],
- "last_kind": "adhkar"
+ "last_kind": "hadith"
 }
