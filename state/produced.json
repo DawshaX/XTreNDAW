@@ -192,6 +192,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789350257.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789350257.png"
    }
+  },
+  "noor-tafsir-s002-37-r2": {
+   "title": "سُورَةُ البَقَرَةِ ﴿37–40﴾ — عبد الباسط عبد الصمد",
+   "fingerprint": "741b13e85db41add",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts002-37-abdulbasitmurattal.mp4",
+   "duration": 51.57,
+   "at": "2026-09-14 03:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789356789.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789356789.png"
+   }
   }
  },
  "fingerprints": [
@@ -215,7 +226,8 @@
   "40035df208460fd5",
   "bebfbf6c44e2e26e",
   "75419dd30e84a5ee",
-  "2ad52050cde2571c"
+  "2ad52050cde2571c",
+  "741b13e85db41add"
  ],
- "last_kind": "dua"
+ "last_kind": "tafsir"
 }
