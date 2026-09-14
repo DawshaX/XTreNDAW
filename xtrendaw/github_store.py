@@ -80,14 +80,17 @@ def _vault_id(tok: str) -> int:
 
 
 def _delete_same_name(tok: str, release_id: int, name: str) -> None:
-    r = requests.get(f"{API}/repos/{_repo()}/releases/{release_id}/assets",
-                     headers=_headers(tok), timeout=30)
-    if not r.ok:
-        return
-    for a in r.json():
-        if a["name"] == name:
-            requests.delete(f"{API}/repos/{_repo()}/releases/assets/{a['id']}",
-                            headers=_headers(tok), timeout=30)
+    for page in range(1, 8):
+        r = requests.get(f"{API}/repos/{_repo()}/releases/{release_id}/assets",
+                         params={"per_page": 100, "page": page},
+                         headers=_headers(tok), timeout=30)
+        if not r.ok or not r.json():
+            return
+        for a in r.json():
+            if a["name"] == name:
+                requests.delete(
+                    f"{API}/repos/{_repo()}/releases/assets/{a['id']}",
+                    headers=_headers(tok), timeout=30)
 
 
 def upload_file(tok: str, release_id: int, path: Path, name: str | None = None) -> str:
@@ -105,6 +108,17 @@ def upload_file(tok: str, release_id: int, path: Path, name: str | None = None) 
                      "Content-Length": str(path.stat().st_size)},
             data=f, timeout=900,
         )
+    if r.status_code == 422:  # مكرر لسه موجود — امسح صراحة واعد
+        import time as _t
+        _delete_same_name(tok, release_id, name)
+        _t.sleep(2)
+        with open(path, "rb") as f2:
+            r = requests.post(
+                f"{UPLOADS}/repos/{_repo()}/releases/{release_id}/assets",
+                params={"name": name},
+                headers={**_headers(tok), "Content-Type": ctype,
+                         "Content-Length": str(path.stat().st_size)},
+                data=f2, timeout=900)
     r.raise_for_status()
     return r.json().get(
         "browser_download_url",
