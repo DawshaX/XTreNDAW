@@ -259,8 +259,9 @@ def _publish(topic, r: dict, urls: dict) -> None:
         return  # من غير رابط عام مفيش نشر (إنستجرام/فيسبوك بيحتاجوه)
     title = topic["title_ar"]
     # الغلاف: محليًا لو موجود، وإلا ننزّله من الـvault (بيتحذف محليًا بعد التخزين)
+    from pathlib import Path as _Path
     cov = r.get("cover")
-    if not (cov and Path(cov).exists()) and urls.get("cover"):
+    if not (cov and _Path(cov).exists()) and urls.get("cover"):
         try:
             import requests as _rq
             cov = settings.WORK / "thumb_last.png"
