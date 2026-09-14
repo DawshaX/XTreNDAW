@@ -148,6 +148,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789344684.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789344684.png"
    }
+  },
+  "noor-adhkar-6-r2": {
+   "title": "ذِكر: يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَ…",
+   "fingerprint": "40035df208460fd5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-2.mp4",
+   "duration": 25.82,
+   "at": "2026-09-14 00:56",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789347361.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789347361.png"
+   }
   }
  },
  "fingerprints": [
@@ -167,7 +178,8 @@
   "88edabf3de310783",
   "dacfb4c3dd4b28fb",
   "bbb89404ed969cdc",
-  "c54de0d325f803a5"
+  "c54de0d325f803a5",
+  "40035df208460fd5"
  ],
- "last_kind": "quran"
+ "last_kind": "adhkar"
 }
