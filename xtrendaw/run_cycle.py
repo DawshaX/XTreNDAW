@@ -29,9 +29,12 @@ def cmd_list() -> int:
 
 
 def _din_caption(topic: dict) -> str:
-    """وصف يدلع المشاهد ويوصل لطفل — واضح، دافي، قوي للخوارزمية."""
+    """وصف كامل: شرح + نص الحلقة + كلمات قوية + هاشتاجات — يدلع المشاهد."""
+    import json as _json
+
+    kind = topic.get("_din", "")
     hooks = {
-        "quran": "🎧 غمّض عينك واسمع… تلاوة تهدي القلب وتشفي الصدر.",
+        "quran": "🎧 غمّض عينك واسمع… تلاوة نادرة تهدي القلب وتشفي الصدر.",
         "tafsir": "📖 مش بس هتسمع — هتفهم: تلاوة + شرح الميسّر بصوت هادي.",
         "qissa": "🕌 قصة من القرآن بتعيشها بمشاهد حقيقية قدام عينك.",
         "dua": "🤲 دعاء تردّده معانا… لعل الله يستجيب لك وليّا.",
@@ -39,14 +42,49 @@ def _din_caption(topic: dict) -> str:
         "adhkar": "🌙 ذِكر يطمّن القلب — ردّده صباحك ومساك.",
         "info": "💡 معلومة إسلامية هتفرح بيك وتنفعك وتنفع ولادك.",
     }
-    hook = hooks.get(topic.get("_din", ""), "🤍 جرعة نور لقلبك")
-    return (f"{hook}\n\nفي حلقتنا النهارده:\n{topic['title_ar']}\n\n"
-            "✅ تلاوة صحيحة بتشكيل دقيق من المصحف\n"
-            "✅ ترجمة ومعنى وفائدة في الختام\n"
-            "✅ بدون موسيقى — راحة لأذنك وقلبك\n\n"
+    hook = hooks.get(kind, "🤍 جرعة نور لقلبك")
+
+    body = ""
+    try:
+        if kind in ("hadith", "adhkar", "dua", "info"):
+            stock = _json.loads(
+                (settings.ROOT / "content" / "din_stock.json")
+                .read_text(encoding="utf-8"))
+            lists = {"dua": "duas", "hadith": "hadiths",
+                     "adhkar": "adhkar", "info": "info"}
+            items = stock[lists[kind]]
+            it = items[(topic.get("_din_spec") or {}).get("idx", 0)
+                       % len(items)]
+            body = f"📜 نص الحلقة:\n{it['text']}\n— {it['src']}\n"
+        elif kind in ("quran", "tafsir", "qissa"):
+            spec = topic.get("_din_spec") or {}
+            if spec.get("surah"):
+                body = (f"📖 من القرآن الكريم — الآيات "
+                        f"{spec['frm']} إلى {spec['to']}.\n"
+                        "تلاوة صحيحة بالتشكيل الدقيق من المصحف، "
+                        "ومعها ترجمة وفائدة في الختام.\n")
+    except Exception:
+        body = ""
+
+    keys = {
+        "quran": "قرآن كريم, تلاوة خاشعة, قرآن بدون موسيقى, تلاوة نادرة, آيات",
+        "tafsir": "تفسير القرآن, التفسير الميسر, فهم القرآن, تدبر, آيات",
+        "qissa": "قصص الأنبياء, قصص القرآن, قصص إسلامية, عبرة, تاريخ",
+        "dua": "دعاء, أدعية مستجابة, دعاء القرآن, مناجاة, رجاء",
+        "hadith": "حديث شريف, أحاديث صحيحة, السنة النبوية, أقوال النبي",
+        "adhkar": "أذكار الصباح, أذكار المساء, ذكر الله, حصن المسلم, طمأنينة",
+        "info": "معلومات إسلامية, إعجاز القرآن, هل تعلم, ثقافة إسلامية",
+    }
+    kw = keys.get(kind, "نور, إسلام, دعوة")
+
+    return (f"{hook}\n\n{body}\n"
+            "✅ بدون موسيقى — راحة لأذنك وقلبك\n"
+            "✅ كلام موثق من القرآن والسنة الصحيحة\n\n"
             "شارِكها مع اللي تحبهم — «الدال على الخير كفاعله» 🤍\n"
-            "وانتظر نور جديد كل ساعة على قناتنا: @XTreNDAW\n\n"
-            "#قرآن #تلاوة #اذكار #دعاء #اسلام #قصص_الانبياء #حديث #shorts")
+            "نور جديد كل ساعة: @XTreNDAW\n\n"
+            f"🔎 {kw}\n"
+            "#قرآن #اسلام #دعوة #اذكار #دعاء #حديث #قصص_الانبياء "
+            "#تلاوة #shorts #نور")[:950]
 
 
 def _produce(topic: dict, upload: bool = True) -> int:
@@ -178,7 +216,7 @@ def _yt_watchdog() -> None:
                    + (f" والقارئ {rec} اتحظر نهائيًا من المصنع" if rec else ""))
             _log(msg)
             try:
-                _tg.publish_text(msg)
+                _tg.send_text(msg)
             except Exception:
                 pass
 
@@ -190,7 +228,8 @@ def _publish(topic, r: dict, urls: dict) -> None:
     if not video_url:
         return  # من غير رابط عام مفيش نشر (إنستجرام/فيسبوك بيحتاجوه)
     title = topic["title_ar"]
-    caption = content.make_caption(topic)
+    caption = (_din_caption(topic) if topic.get("_din")
+               else content.make_caption(topic))
     tags = [t.strip() for t in topic.get("tags", "").split(",") if t.strip()]
     for name, mod, ok in (
             ("youtube", _yt, settings.has_youtube() and settings.PUBLISH_YOUTUBE),

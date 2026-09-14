@@ -23,5 +23,24 @@ def publish(video_path, title, caption, tags):
                           files={"video": f}, timeout=900)
     if not r.ok:
         return None, f"tg_{r.status_code}:{r.text[:80]}"
-    return f"https://t.me/{r.json()['result']['chat']['username']}/" \
-           f"{r.json()['result']['message_id']}", None
+    url = (f"https://t.me/{r.json()['result']['chat']['username']}/"
+           f"{r.json()['result']['message_id']}")
+    admin = settings.TELEGRAM.get("admin_chat")
+    if admin:
+        send_text(f"📣 نُشر الآن على القناة:\n{title}\n{url}", admin)
+    return url, None
+
+
+def send_text(text: str, chat_id: str | None = None) -> bool:
+    """رسالة نصية للقناة أو لأدمن المصنع (إشعارات فورية)."""
+    if not settings.has_telegram():
+        return False
+    base = API.format(tok=settings.TELEGRAM["token"])
+    try:
+        r = requests.post(
+            f"{base}/sendMessage",
+            data={"chat_id": chat_id or settings.TELEGRAM["chat_id"],
+                  "text": text[:4000]}, timeout=60)
+        return r.ok
+    except Exception:
+        return False

@@ -92,7 +92,9 @@ YOUTUBE = {
 }
 FACEBOOK = {"page_id": get("FACEBOOK_PAGE_ID"), "token": get("FACEBOOK_PAGE_TOKEN")}
 INSTAGRAM = {"user_id": get("INSTAGRAM_USER_ID"), "token": get("INSTAGRAM_ACCESS_TOKEN")}
-TELEGRAM = {"token": get("TELEGRAM_BOT_TOKEN"), "chat_id": get("TELEGRAM_CHAT_ID")}
+TELEGRAM = {"token": get("TELEGRAM_BOT_TOKEN"),
+            "chat_id": get("TELEGRAM_CHAT_ID"),
+            "admin_chat": get("TELEGRAM_ADMIN_CHAT_ID")}
 
 DAILY_CAP = get_int("XT_DAILY_CAP", 4)          # سقف نشر آمن/يوم
 
