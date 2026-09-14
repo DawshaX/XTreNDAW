@@ -137,6 +137,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789340789.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789340789.png"
    }
+  },
+  "noor-quran-s002-17-r1": {
+   "title": "سُورَةُ البَقَرَةِ ﴿17–20﴾ — محمد صديق المنشاوي",
+   "fingerprint": "c54de0d325f803a5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs002-17-minshawi.mp4",
+   "duration": 76.3,
+   "at": "2026-09-14 00:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789344684.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789344684.png"
+   }
   }
  },
  "fingerprints": [
@@ -155,7 +166,8 @@
   "5fcb8cddeac6fa69",
   "88edabf3de310783",
   "dacfb4c3dd4b28fb",
-  "bbb89404ed969cdc"
+  "bbb89404ed969cdc",
+  "c54de0d325f803a5"
  ],
- "last_kind": "info"
+ "last_kind": "quran"
 }
