@@ -357,6 +357,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789414322.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789414322.png"
    }
+  },
+  "noor-quran-s001-1-r7": {
+   "title": "سُورَةُ ٱلْفَاتِحَةِ ﴿1–7﴾ — أيمن سويد",
+   "fingerprint": "d3788c8a537fc45f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs001-1-aymanswoaid.mp4",
+   "duration": 86.78,
+   "at": "2026-09-14 20:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789416666.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789416666.png"
+   }
   }
  },
  "fingerprints": [
@@ -395,7 +406,8 @@
   "383a11f7c9cfa989",
   "066cf4ca72cfddd0",
   "128539108abc33e6",
-  "fa82763b18d35bf1"
+  "fa82763b18d35bf1",
+  "d3788c8a537fc45f"
  ],
- "last_kind": "adhkar"
+ "last_kind": "quran"
 }
