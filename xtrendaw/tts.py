@@ -224,11 +224,14 @@ def synthesize_line(text: str, lang: str, out_dir: Path, name: str = "line",
     if lang == "ar" and settings.TTS_ENGINE == "piper":
         model = _piper_model()
         if model:
-            wav = out_dir / f"{name}.wav"
-            if _piper_synth(normalize_for_speech(text), wav, model):
-                d = probe_duration(wav)
+            raw = out_dir / f"{name}_p.wav"
+            if _piper_synth(normalize_for_speech(text), raw, model):
+                d = probe_duration(raw)
                 if d > 0:
-                    return {"wav": wav, "duration": d,
+                    # توحيد: 44100 ستيريو — غير كده الدمج بيتلف بعد أول مقطع
+                    wav = to_wav(raw, out_dir / f"{name}.wav")
+                    raw.unlink(missing_ok=True)
+                    return {"wav": wav, "duration": probe_duration(wav),
                             "words": _spread(text, 0, d),
                             "timing_source": "piper"}
 

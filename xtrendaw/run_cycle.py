@@ -72,6 +72,15 @@ def _produce(topic: dict, upload: bool = True) -> int:
         shutil.rmtree(workdir, ignore_errors=True)
         return 1
 
+    qc_ok, qc_why = _qc(r["video"])
+    if not qc_ok:
+        _log(f"🛡️ فحص ما قبل النشر رفض الحلقة: {qc_why} — هتتنتج من جديد")
+        import shutil
+        shutil.rmtree(workdir, ignore_errors=True)
+        try: Path(r["video"]).unlink(missing_ok=True)
+        except Exception: pass
+        return 1
+
     urls = {}
     if upload and github_store.available():
         try:
@@ -115,6 +124,65 @@ def _auto_id(topics: list[dict]) -> str:
     return f"auto-{mx + 1:03d}"
 
 
+def _qc(mp4) -> tuple:
+    """فحص ما قبل النشر — مفيش فيديو فيه صوت تالف ينزل أبدًا."""
+    import re as _re
+    import subprocess as _sp
+    import tempfile as _tf
+
+    from .tts import ffmpeg, probe_duration
+
+    ff = ffmpeg()
+    dur = probe_duration(mp4)
+    if dur <= 0:
+        return False, "مدة صفر"
+    with _tf.TemporaryDirectory() as td:
+        wa = Path(td) / "a.wav"
+        _sp.run([ff, "-y", "-i", str(mp4), "-vn", "-ac", "1", "-ar", "16000",
+                 str(wa)], capture_output=True)
+        ad = probe_duration(wa)
+        if ad < dur - 2.0:
+            return False, f"الصوت {ad:.0f}ث أقصر من الفيديو {dur:.0f}ث"
+        r1 = _sp.run([ff, "-i", str(wa), "-af", "silencedetect=n=-50dB:d=4.0",
+                      "-f", "null", "-"], capture_output=True, text=True)
+        for g in _re.findall(r"silence_start: ([\d.]+)", r1.stderr):
+            if 3.0 < float(g) < dur - 4.0:
+                return False, f"صمت طويل عند {float(g):.0f}ث"
+        r2 = _sp.run([ff, "-i", str(wa), "-af", "volumedetect", "-f", "null", "-"],
+                     capture_output=True, text=True)
+        m = _re.search(r"mean_volume: (-?[\d.]+) dB", r2.stderr)
+        if m and float(m.group(1)) < -42:
+            return False, "صوت ضعيف جدا"
+    return True, ""
+
+
+def _yt_watchdog() -> None:
+    """كل دورة: لو يوتيوب حظر فيديو → حذف فوري + القائمة السوداء + تنبيه."""
+    from .publish import telegram as _tg, youtube as _yt
+
+    for item in list(state.yt_recent()):
+        vid = item.get("id")
+        if not vid:
+            continue
+        blocked, why = _yt.check_blocked(vid)
+        if why == "gone":
+            state.pop_yt_recent(vid)
+        elif blocked:
+            _yt.delete(vid)
+            state.pop_yt_recent(vid)
+            rec = item.get("reciter") or ""
+            if rec:
+                state.add_reciter_badlist(rec)
+            msg = (f"🛡️ يوتيوب حظر «{item.get('title', 'فيديو')}» — "
+                   f"اتحذف تلقائيًا خلال دقائق"
+                   + (f" والقارئ {rec} اتحظر نهائيًا من المصنع" if rec else ""))
+            _log(msg)
+            try:
+                _tg.publish_text(msg)
+            except Exception:
+                pass
+
+
 def _publish(topic, r: dict, urls: dict) -> None:
     """ينشر على المنصات المتصلة بس — رابط Releases العام هو مصدر الفيديو."""
     from .publish import facebook as _fb, instagram as _ig, telegram as _tg, youtube as _yt
@@ -144,6 +212,12 @@ def _publish(topic, r: dict, urls: dict) -> None:
                     _log("⏳ الحلقة اتعلقت في طابور يوتيوب — هتنشر أول ما الكوتة تفتح")
             else:
                 _log(f"📣 {name}: {url}")
+                if name == "youtube" and url and "watch?v=" in url:
+                    state.push_yt_recent({
+                        "id": url.split("watch?v=")[-1].split("&")[0],
+                        "title": title,
+                        "reciter": (r.get("reciter") or ""),
+                        "ts": time.time()})
         except Exception as e:  # النشر ما يكسرش الدورة أبدًا
             _log(f"⚠ {name} اتخطى: {str(e)[:100]}")
 
@@ -293,6 +367,9 @@ def main() -> int:
             from . import planner
 
             _health_check()
+
+
+            _yt_watchdog()
             topic = planner.next_episode()
             _log(f"🧭 المخطط: {topic['_din']} · {topic['title_ar']}")
             rec = topic["_din_rec"]

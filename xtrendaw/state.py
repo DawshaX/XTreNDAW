@@ -101,3 +101,47 @@ def pop_yt_pending() -> None:
     if data.get("yt_pending"):
         data["yt_pending"].pop(0)
         _write(data)
+
+
+BADLIST_FILE = settings.STATE / "reciter_badlist.json"
+YT_RECENT_FILE = settings.STATE / "yt_recent.json"
+
+
+def _rw(path, default):
+    if path.exists():
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return default
+
+
+def _wr(path, data) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=1),
+                    encoding="utf-8")
+
+
+def reciter_badlist() -> list:
+    return _rw(BADLIST_FILE, [])
+
+
+def add_reciter_badlist(rid: str) -> None:
+    bl = reciter_badlist()
+    if rid and rid not in bl:
+        bl.append(rid)
+        _wr(BADLIST_FILE, bl)
+
+
+def yt_recent() -> list:
+    return _rw(YT_RECENT_FILE, [])
+
+
+def push_yt_recent(item: dict) -> None:
+    lst = [x for x in yt_recent() if x.get("id") != item.get("id")]
+    lst.append(item)
+    _wr(YT_RECENT_FILE, lst[-30:])
+
+
+def pop_yt_recent(vid: str) -> None:
+    _wr(YT_RECENT_FILE, [x for x in yt_recent() if x.get("id") != vid])

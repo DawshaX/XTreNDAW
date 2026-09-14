@@ -233,6 +233,13 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     """ينتج حلقة نور ويعيد {video, cover, report, title, id}."""
     workdir.mkdir(parents=True, exist_ok=True)
     reciter, rec_name, kbps = RECITERS[reciter_idx % len(RECITERS)]
+    from . import state as _state
+    _bad = _state.reciter_badlist()
+    if reciter in _bad:
+        for _alt in RECITERS:
+            if _alt[0] not in _bad:
+                reciter, rec_name, kbps = _alt
+                break
     events: list[dict] = []
     wavs: list[Path] = []
     scene_list: list[dict] = []
@@ -433,7 +440,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     brand.compose_cover({"id": ep_id, "title_ar": title,
                          "tags": "نور,قرآن,دعوة,XDAWNOVA"}, cover)
     return {"video": out, "cover": cover, "report": video.validate(out),
-            "title": title, "id": ep_id}
+            "title": title, "id": ep_id, "reciter": reciter}
 
 
 def _silence(path: Path, sec: float) -> Path:

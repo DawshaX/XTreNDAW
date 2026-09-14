@@ -38,3 +38,30 @@ def publish(video_path, title, caption, tags):
     if up.status_code not in (200, 201):
         return None, f"upload_{up.status_code}"
     return f"https://www.youtube.com/watch?v={up.json().get('id','')}", None
+
+
+def check_blocked(video_id: str):
+    """oEmbed: 200 = ظاهر، 401/403 = محظور/خاص، 404 = محذوف."""
+    try:
+        r = requests.get(
+            "https://www.youtube.com/oembed",
+            params={"url": f"https://www.youtube.com/watch?v={video_id}",
+                    "format": "json"}, timeout=20)
+        if r.status_code == 404:
+            return False, "gone"
+        if r.status_code in (401, 403):
+            return True, "blocked"
+        return False, "ok"
+    except Exception:
+        return False, "error"
+
+
+def delete(video_id: str) -> bool:
+    tok = _token()
+    if not tok:
+        return False
+    r = requests.delete(
+        "https://www.googleapis.com/youtube/v3/videos",
+        params={"id": video_id},
+        headers={"Authorization": f"Bearer {tok}"}, timeout=30)
+    return r.status_code in (200, 204)
