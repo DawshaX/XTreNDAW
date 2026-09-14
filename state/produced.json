@@ -214,6 +214,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789359370.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789359370.png"
    }
+  },
+  "noor-quran-s002-45-r0": {
+   "title": "سُورَةُ البَقَرَةِ ﴿45–48﴾ — محمود خليل الحصري",
+   "fingerprint": "014199dd58ac02ab",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs002-45-abdulbasitmurattal.mp4",
+   "duration": 69.95,
+   "at": "2026-09-14 05:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789364045.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789364045.png"
+   }
   }
  },
  "fingerprints": [
@@ -239,7 +250,8 @@
   "75419dd30e84a5ee",
   "2ad52050cde2571c",
   "741b13e85db41add",
-  "72d84e2048a5a795"
+  "72d84e2048a5a795",
+  "014199dd58ac02ab"
  ],
- "last_kind": "info"
+ "last_kind": "quran"
 }
