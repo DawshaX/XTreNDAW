@@ -225,6 +225,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789364045.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789364045.png"
    }
+  },
+  "noor-adhkar-13-r3": {
+   "title": "مِن أذكار المسلم: لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّه…",
+   "fingerprint": "0c54ec439a4e248e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 25.97,
+   "at": "2026-09-14 06:10",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789366220.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789366220.png"
+   }
   }
  },
  "fingerprints": [
@@ -251,7 +262,8 @@
   "2ad52050cde2571c",
   "741b13e85db41add",
   "72d84e2048a5a795",
-  "014199dd58ac02ab"
+  "014199dd58ac02ab",
+  "0c54ec439a4e248e"
  ],
- "last_kind": "quran"
+ "last_kind": "adhkar"
 }
