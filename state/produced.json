@@ -280,6 +280,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789375310.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789375310.png"
    }
+  },
+  "noor-info-18-r3": {
+   "title": "معلومة تُضيء: أكثر الأنبياء ذكرًا في القرآن: موسى عليه…",
+   "fingerprint": "e2d16d87bb1c0891",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.53,
+   "at": "2026-09-14 09:36",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789378582.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789378582.png"
+   }
   }
  },
  "fingerprints": [
@@ -311,7 +322,8 @@
   "d94c9d015c369411",
   "f2fe2bdd4c33f986",
   "a02a2c672354a50c",
-  "cd46bc5e8b2df1db"
+  "cd46bc5e8b2df1db",
+  "e2d16d87bb1c0891"
  ],
- "last_kind": "tafsir"
+ "last_kind": "info"
 }
