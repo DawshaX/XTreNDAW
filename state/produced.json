@@ -269,6 +269,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789371462.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789371462.png"
    }
+  },
+  "noor-tafsir-s002-65-r7": {
+   "title": "سُورَةُ البَقَرَةِ ﴿65–65﴾ — أيمن سويد",
+   "fingerprint": "cd46bc5e8b2df1db",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts002-65-aymanswoaid.mp4",
+   "duration": 56.67,
+   "at": "2026-09-14 08:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789375310.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789375310.png"
+   }
   }
  },
  "fingerprints": [
@@ -299,7 +310,8 @@
   "0c54ec439a4e248e",
   "d94c9d015c369411",
   "f2fe2bdd4c33f986",
-  "a02a2c672354a50c"
+  "a02a2c672354a50c",
+  "cd46bc5e8b2df1db"
  ],
- "last_kind": "dua"
+ "last_kind": "tafsir"
 }
