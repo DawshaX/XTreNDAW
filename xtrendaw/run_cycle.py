@@ -127,7 +127,8 @@ def _produce(topic: dict, upload: bool = True) -> int:
                     "tags": topic.get("tags", ""), "_issue": topic.get("_issue"),
                     "kind": topic.get("_kind", "know"),
                     "_din": topic.get("_din"),
-                    "_din_spec": topic.get("_din_spec")}
+                    "_din_spec": topic.get("_din_spec"),
+                    "_reciter": r.get("reciter")}
             urls = github_store.upload_to_vault(r["video"], r["cover"], meta)
             _log("📦 اتخزنت في الـvault — مستنية موعد الذروة")
         except Exception as e:  # فشل التخزين ما يوقفش الدورة
@@ -220,6 +221,11 @@ def _yt_watchdog() -> None:
             blocked, why = _yt.check_blocked(vid)
         if why == "gone":
             state.pop_yt_recent(vid)
+        elif not blocked and item.get("reciter") and \
+                time.time() - float(item.get("ts") or 0) > 72 * 3600:
+            state.add_reciter_proven(item["reciter"])
+            state.pop_yt_recent(vid)
+            _log(f"🏅 القارئ {item['reciter']} اتعتمد — 3 أيام نظيفة على يوتيوب")
         elif blocked:
             _yt.delete(vid)
             state.pop_yt_recent(vid)
@@ -256,11 +262,14 @@ def _publish(topic, r: dict, urls: dict) -> None:
             ("instagram", _ig, settings.has_instagram())):
         if not ok:
             continue
-        if (name == "youtube"
-                and topic.get("_din") in ("quran", "tafsir", "qissa")
-                and settings.YT_RECITE_MODE == "off"):
-            _log("🛡️ يوتيوب: حلقات التلاوة محجوبة (صفر حقوق) — نازلة على باقي المنصات")
-            continue
+        if name == "youtube" and topic.get("_din") in ("quran", "tafsir", "qissa"):
+            rec_used = topic.get("_reciter") or ""
+            if settings.YT_RECITE_MODE == "off" or (
+                    settings.YT_RECITE_MODE == "auto"
+                    and rec_used not in state.reciter_proven()):
+                _log("🛡️ يوتيوب: القارئ لسه مش معتمد (صفر حقوق أولًا) — "
+                     "الحلقة نازلة على باقي المنصات")
+                continue
         try:
             if name in ("youtube", "telegram"):
                 url, err = mod.publish(r["video"], title, caption, tags)
@@ -372,7 +381,8 @@ def _promote_due(force: bool = False) -> None:
              "_din": meta.get("_din") or (meta.get("kind")
                                           if meta.get("kind") in _kinds
                                           else None),
-             "_din_spec": meta.get("_din_spec")}
+             "_din_spec": meta.get("_din_spec"),
+             "_reciter": meta.get("_reciter")}
     _publish(topic, {"video": res["local_video"]}, res["urls"])
     if topic.get("_issue"):
         from . import requests as viewer_requests

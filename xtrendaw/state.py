@@ -145,3 +145,17 @@ def push_yt_recent(item: dict) -> None:
 
 def pop_yt_recent(vid: str) -> None:
     _wr(YT_RECENT_FILE, [x for x in yt_recent() if x.get("id") != vid])
+
+
+PROVEN_FILE = settings.STATE / "reciter_proven.json"
+
+
+def reciter_proven() -> list:
+    return _rw(PROVEN_FILE, [])
+
+
+def add_reciter_proven(rid: str) -> None:
+    lst = reciter_proven()
+    if rid and rid not in lst:
+        lst.append(rid)
+        _wr(PROVEN_FILE, lst)

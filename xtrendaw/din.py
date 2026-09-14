@@ -33,6 +33,10 @@ RECITERS = [
     ("ar.muhammadjibreel", "محمد جبريل", 128),
     ("ar.aymanswoaid", "أيمن سويد", 64),
     ("ar.hudhaify", "علي الحذيفي", 128),
+    ("ar.shaatree", "أبو بكر الشاطري", 128),
+    ("ar.abdullahbasfar", "عبدالله بصفر", 64),
+    ("ar.mahermuaiqly", "ماهر المعيقلي", 128),
+    ("ar.saoodshuraym", "سعود الشريم", 64),
 ]
 
 # مقاطع القرآن — مشاهد كونية/طبيعة حقيقية (الكلمة ↔ المشهد)

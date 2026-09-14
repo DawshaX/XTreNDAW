@@ -74,7 +74,7 @@ TTS_ENGINE = get("XT_TTS_ENGINE", "piper")
 PIPER_RELEASE = "noor-models"
 # يوتيوب: حلقات التلاوة — off = ما تنزلش يوتيوب (تيليجرام تنزل عادي)
 # tts = تتلاوى بصوت نور المملوك لنا (صفر حقوق للأبد)
-YT_RECITE_MODE = get("XT_YT_QURAN", "off")
+YT_RECITE_MODE = get("XT_YT_QURAN", "auto")  # auto=المعتمدين فقط / off=منع كامل
 PIPER_DIR = Path(os.environ.get("XT_PIPER_DIR", "/tmp/noor-models"))
 
 # ─────────────────────────────────────────────────────────────
