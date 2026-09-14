@@ -101,6 +101,20 @@ QISSA = [
     dict(id="badr", title="نصر بدر", surah=3, frm=123, to=125,
          scenes=["ancient battle desert dawn", "angels light sky riders", "desert camp night fires",
                  "victory sunrise desert"]),
+    {"id": "ukhdud", "title": "أصحاب الأخدود", "surah": 85, "frm": 4, "to": 9, "scenes": ["ancient fire trench desert night", "believers standing firm crowd", "ancient king palace throne", "fire burning pit desert", "stars night sky hope"]},
+    {"id": "talut", "title": "طالوت وجالوت", "surah": 2, "frm": 246, "to": 251, "scenes": ["ancient army river crossing", "young shepherd with sling", "giant warrior battlefield", "ancient battle desert dust", "victory sunrise soldiers"]},
+    {"id": "baqara-q", "title": "قصة البقرة", "surah": 2, "frm": 67, "to": 73, "scenes": ["cow grazing green field", "ancient israelite village", "people arguing prophets", "golden light miracle", "ancient scroll torah"]},
+    {"id": "khidr", "title": "موسى والخضر", "surah": 18, "frm": 65, "to": 75, "scenes": ["two travelers sea shore", "wooden boat old sea", "ancient wall rebuilding village", "sea waves journey mystery", "wisdom old man light"]},
+    {"id": "jannatayn", "title": "صاحب الجنتين", "surah": 18, "frm": 32, "to": 43, "scenes": ["lush garden grape vines", "two beautiful gardens fountain", "storm destroying garden night", "rich man proud palace", "ruins garden regret dawn"]},
+    {"id": "uzair", "title": "الذي نام مئة عام", "surah": 2, "frm": 259, "to": 259, "scenes": ["ancient ruined city walls", "donkey standing desert road", "bones rising life miracle", "sunrise sunset time lapse", "rebuilt ancient town light"]},
+    {"id": "abnay-adam", "title": "ابنا آدم", "surah": 5, "frm": 27, "to": 31, "scenes": ["two brothers ancient field", "raven digging earth", "green hills ancient land", "sacrifice offering fire sky", "lonely man regret sunset"]},
+    {"id": "luqman", "title": "وصايا لقمان", "surah": 31, "frm": 12, "to": 19, "scenes": ["wise father son talking", "ancient simple home", "mountains steadfast rock", "bird flying sky small", "path humble walk sunset"]},
+    {"id": "namla", "title": "سليمان والنملة", "surah": 27, "frm": 17, "to": 19, "scenes": ["ant on ground close up", "ancient army marching valley", "king prophet smiling sky", "ants colony moving", "desert valley sunlight"]},
+    {"id": "hudhud", "title": "الهدهد وملكة سبأ", "surah": 27, "frm": 20, "to": 28, "scenes": ["hoopoe bird flying", "ancient queen throne palace", "letter scroll royal seal", "sun worshipping people ancient", "majestic kingdom gold"]},
+    {"id": "sabt", "title": "أصحاب السبت", "surah": 7, "frm": 163, "to": 166, "scenes": ["sea shore fishing village", "fish jumping water sabbath", "ancient seaside town walls", "storm sea punishment waves", "quiet empty village lesson"]},
+    {"id": "firawn", "title": "غرق فرعون", "surah": 10, "frm": 90, "to": 92, "scenes": ["sea parting walls water", "ancient egypt chariots army", "pharaoh drowning waves", "pyramids desert ancient egypt", "calm sea after storm dawn"]},
+    {"id": "abrar", "title": "الأبرار في الجنة", "surah": 76, "frm": 8, "to": 12, "scenes": ["poor family sharing food", "orphan receiving bread kindness", "captive fed mercy hands", "paradise garden rivers light", "silk garments reward glow"]},
+    {"id": "qarun", "title": "قارون وكنوزه", "surah": 28, "frm": 76, "to": 82, "scenes": ["treasure gold chests ancient", "rich man arrogant crowd", "earth swallowing palace ruin", "gold coins shining dark", "desert emptiness lesson dawn"]},
 ]
 
 # آيات الدعوة — تلاوة + شرح ميسّر بالصوت
@@ -199,9 +213,11 @@ def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
         prompt = (f"{q}, ancient middle-east historical scene, cinematic film still, "
                   "realistic, dramatic natural light, 9:16 vertical, no text")
         if not scenes.fetch_ai_visual(prompt, base, hash(seed) % 10_000_000):
-            scenes.fetch_real_visual(q, base) or scenes.render_bg(base, "fact1", seed)
+            (scenes.fetch_real_visual(q, base)
+             or scenes.fetch_library_visual(q, base)
+             or scenes.render_bg(base, "fact1", seed))
     else:
-        if not scenes.fetch_real_visual(q, base):
+        if not (scenes.fetch_real_visual(q, base) or scenes.fetch_library_visual(q, base)):
             scenes.fetch_ai_visual(
                 f"{q}, majestic cosmic cinematic scene, 9:16 vertical, no text",
                 base, hash(seed) % 10_000_000) or scenes.render_bg(base, "hook", seed)

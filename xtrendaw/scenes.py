@@ -245,6 +245,38 @@ def fetch_real_visual(query: str, out_path: Path) -> bool:
         return False
 
 
+def fetch_library_visual(query: str, out_path: Path) -> bool:
+    """بديل احتياطي من مكتبة الوسائط الموحدة (أرشيف/NASA/Pixabay).
+
+    تُستدعى فقط لو ويكيميديا ما رجعتش نتيجة — إضافة بلا أي تغيير سابق.
+    """
+    from . import library
+
+    url = library.find_image(query)
+    if not url:
+        return False
+    tmp = out_path.with_suffix(".dl.jpg")
+    if not library.download(url, tmp):
+        return False
+    try:
+        img = Image.open(tmp).convert("RGB")
+        w, h = img.size
+        if w < 700 or h < 700:
+            tmp.unlink(missing_ok=True)
+            return False
+        scale = max(W / w, H / h)
+        img = img.resize((int(w * scale), int(h * scale)), Image.LANCZOS)
+        w, h = img.size
+        left, top = (w - W) // 2, (h - H) // 2
+        img = img.crop((left, top, left + W, top + H))
+        img.save(out_path, "PNG")
+        return True
+    except Exception:
+        return False
+    finally:
+        tmp.unlink(missing_ok=True)
+
+
 def fetch_ai_visual(prompt: str, out_path: Path, seed: int) -> bool:
     """صورة AI قوية من Pollinations (مجاني/بلا مفتاح) مقصوصة 1080×1920."""
     import urllib.parse
@@ -370,7 +402,8 @@ def build_scene(kind: str, text: str, seed: str, workdir: Path,
     workdir.mkdir(parents=True, exist_ok=True)
     rng = _seeded(seed)
     base = workdir / "base.png"
-    ok = fetch_real_visual(real_query, base) if real_query else False
+    ok = (fetch_real_visual(real_query, base)
+          or fetch_library_visual(real_query, base)) if real_query else False
     if not ok:
         prompt = _ai_prompt(kind, subject or text)
         ok = fetch_ai_visual(prompt, base, int(rng.integers(1, 10_000_000)))
