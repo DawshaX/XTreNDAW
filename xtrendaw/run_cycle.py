@@ -258,6 +258,16 @@ def _publish(topic, r: dict, urls: dict) -> None:
     if not video_url:
         return  # من غير رابط عام مفيش نشر (إنستجرام/فيسبوك بيحتاجوه)
     title = topic["title_ar"]
+    # الغلاف: محليًا لو موجود، وإلا ننزّله من الـvault (بيتحذف محليًا بعد التخزين)
+    cov = r.get("cover")
+    if not (cov and Path(cov).exists()) and urls.get("cover"):
+        try:
+            import requests as _rq
+            cov = settings.WORK / "thumb_last.png"
+            cov.parent.mkdir(parents=True, exist_ok=True)
+            cov.write_bytes(_rq.get(urls["cover"], timeout=120).content)
+        except Exception:
+            cov = None
     caption = (_din_caption(topic) if topic.get("_din")
                else content.make_caption(topic))
     tags = [t.strip() for t in topic.get("tags", "").split(",") if t.strip()]
@@ -283,7 +293,7 @@ def _publish(topic, r: dict, urls: dict) -> None:
         try:
             if name == "youtube":
                 url, err = mod.publish(r["video"], title, caption, tags,
-                                       cover=r.get("cover"))
+                                       cover=cov)
             elif name in ("telegram", "tiktok"):
                 url, err = mod.publish(r["video"], title, caption, tags)
             else:
