@@ -96,6 +96,9 @@ YOUTUBE = {
 FACEBOOK = {"page_id": get("FACEBOOK_PAGE_ID"), "token": get("FACEBOOK_PAGE_TOKEN")}
 INSTAGRAM = {"user_id": get("INSTAGRAM_USER_ID"), "token": get("INSTAGRAM_ACCESS_TOKEN")}
 
+# ساندبوك = خاص فقط؛ بعد الموافقة الرسمية حوّلها EVERYONE
+TIKTOK_PRIVACY = get("TIKTOK_PRIVACY", "SELF_ONLY")
+
 TIKTOK = {"client_key": get("TIKTOK_CLIENT_KEY"),
           "client_secret": get("TIKTOK_CLIENT_SECRET"),
           "access_token": get("TIKTOK_ACCESS_TOKEN")}

@@ -76,7 +76,7 @@ def publish(video, title, caption, tags):
                           headers={"Authorization": f"Bearer {_tok()}",
                                    "Content-Type": "application/json; charset=UTF-8"},
                           json={"post_info": {"title": text,
-                                              "privacy_level": "EVERYONE",
+                                              "privacy_level": settings.TIKTOK_PRIVACY,
                                               "disable_comment": False,
                                               "disable_duet": False,
                                               "disable_stitch": False},
