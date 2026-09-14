@@ -1,5 +1,16 @@
 name: publish-sample
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: "عنوان الفيديو"
+        default: ""
+      caption:
+        description: "الوصف"
+        default: ""
+      reciter:
+        description: "معرّف القارئ"
+        default: "ar.aymanswoaid"
 permissions:
   contents: write
 jobs:
@@ -21,6 +32,9 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+          RELEASE_TITLE: ${{ inputs.title }}
+          RELEASE_CAPTION: ${{ inputs.caption }}
+          RELEASE_RECITER: ${{ inputs.reciter }}
         run: python tools/release_sample.py
       - name: save state
         run: |

@@ -222,10 +222,10 @@ def _yt_watchdog() -> None:
         if why == "gone":
             state.pop_yt_recent(vid)
         elif not blocked and item.get("reciter") and \
-                time.time() - float(item.get("ts") or 0) > 72 * 3600:
+                time.time() - float(item.get("ts") or 0) > 24 * 3600:
             state.add_reciter_proven(item["reciter"])
             state.pop_yt_recent(vid)
-            _log(f"🏅 القارئ {item['reciter']} اتعتمد — 3 أيام نظيفة على يوتيوب")
+            _log(f"🏅 القارئ {item['reciter']} اتعتمد — 24 ساعة نظيفة على يوتيوب")
         elif blocked:
             _yt.delete(vid)
             state.pop_yt_recent(vid)
@@ -267,7 +267,7 @@ def _publish(topic, r: dict, urls: dict) -> None:
             if settings.YT_RECITE_MODE == "off" or (
                     settings.YT_RECITE_MODE == "auto"
                     and rec_used not in state.reciter_proven()):
-                _log("🛡️ يوتيوب: القارئ لسه مش معتمد (صفر حقوق أولًا) — "
+                _log("🛡️ يوتيوب: القارئ تحت الاختبار (24 ساعة) — "
                      "الحلقة نازلة على باقي المنصات")
                 continue
         try:

@@ -8,9 +8,11 @@ import requests
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+import os
+
 URL = "https://github.com/DawshaX/XTreNDAW/releases/download/noor-samples/sample.mp4"
-TITLE = "سُورَةُ الشَّرۡحِ ﴿1–8﴾ — تلاوة نادرة للشيخ أيمن سويد 🤍"
-CAPTION = (
+TITLE = os.environ.get("RELEASE_TITLE") or "سُورَةُ الشَّرۡحِ ﴿1–8﴾ — تلاوة نادرة للشيخ أيمن سويد 🤍"
+_DEFAULT_CAPTION = (
     "🎧 غمّض عينك واسمع… تلاوة نادرة تهدي القلب وتشفي الصدر.\n\n"
     "📖 سورة الشرح (ألم نشرح) — الآيات 1–8 كاملة، بصوت الشيخ أيمن سويد.\n\n"
     "✨ معنى السورة: منّ الله على نبيه ﷺ بشرح الصدر، ووضع الوزر، "
@@ -24,6 +26,7 @@ CAPTION = (
     "قرآن كريم, إن مع العسر يسرا\n"
     "#سورة_الشرح #قرآن #تلاوة #ايمن_سويد #نور #اسلام #shorts"
 )
+CAPTION = os.environ.get("RELEASE_CAPTION") or _DEFAULT_CAPTION
 TAGS = ["قرآن", "تلاوة", "سورة الشرح", "أيمن سويد", "نور", "shorts"]
 
 
@@ -42,7 +45,7 @@ def main() -> int:
     if yt_url and "watch?v=" in yt_url:
         state.push_yt_recent({
             "id": yt_url.split("watch?v=")[-1].split("&")[0],
-            "title": TITLE, "reciter": "ar.aymanswoaid",
+            "title": TITLE, "reciter": os.environ.get("RELEASE_RECITER") or "ar.aymanswoaid",
             "ts": __import__("time").time()})
         print("✓ مسجلة في قائمة المراقبة — الووتشدوج هيحميها")
 
