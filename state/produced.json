@@ -203,6 +203,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789356789.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789356789.png"
    }
+  },
+  "noor-info-11-r3": {
+   "title": "معلومة: ابن الهيثم مؤسس علم البصريات الحديث وصاحب …",
+   "fingerprint": "72d84e2048a5a795",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.83,
+   "at": "2026-09-14 04:16",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789359370.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789359370.png"
+   }
   }
  },
  "fingerprints": [
@@ -227,7 +238,8 @@
   "bebfbf6c44e2e26e",
   "75419dd30e84a5ee",
   "2ad52050cde2571c",
-  "741b13e85db41add"
+  "741b13e85db41add",
+  "72d84e2048a5a795"
  ],
- "last_kind": "tafsir"
+ "last_kind": "info"
 }
