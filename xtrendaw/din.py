@@ -244,6 +244,14 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         spec = {**spec, "style": "cinema" if kind == "qissa" else "cosmic"}
         ayahs = _get_json(f"{APIQ}/surah/{spec['surah']}/quran-uthmani")["ayahs"]
         sel = [a for a in ayahs if spec["frm"] <= a["numberInSurah"] <= spec["to"]]
+        # حماية المواصفات: التلاوة الطويلة → قصّ عدد الآيات تلقائيا
+        max_rec = 30.0 if kind == "tafsir" else 66.0
+        _durs = [probe_duration(_ayah_audio(a["number"], reciter, workdir, kbps))
+                 for a in sel]
+        while len(sel) > 1 and sum(_durs) > max_rec:
+            sel.pop()
+            _durs.pop()
+            spec = {**spec, "to": sel[-1]["numberInSurah"]}
         q = _get_json(f"{APIQ}/surah/{spec['surah']}/quran-uthmani")
         sname = q["name"]
         meta = _get_json(f"{APIQ}/surah/{spec['surah']}")
