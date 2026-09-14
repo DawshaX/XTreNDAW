@@ -91,7 +91,14 @@ def next_episode() -> dict:
             key, spec = series[(off + i) % len(series)]
             lk = f"{kind}:{key}"
             if lk not in done:
-                rec = led["n"] % 4
+                from . import din as _din2
+                from . import state as _st2
+                _prov = [i for i, (rid, _, _) in enumerate(_din2.RECITERS)
+                         if rid in _st2.reciter_proven()]
+                if kind in ("quran", "tafsir", "qissa") and _prov:
+                    rec = _prov[led["n"] % len(_prov)]
+                else:
+                    rec = led["n"] % 4
                 n = led["n"] + 1
                 t = _topic(kind, key, spec, rec, n)
                 t["_ledger_key"] = lk

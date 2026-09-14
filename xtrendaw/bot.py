@@ -129,13 +129,48 @@ def cmd_watch(chat_id) -> None:
         send(chat_id, f"⚠️ الفحص اتعطل: {str(e)[:80]}")
 
 
+def cmd_qurra(chat_id) -> None:
+    from . import din, state
+    prov, bad = state.reciter_proven(), state.reciter_badlist()
+    lines = ["🎙️ قراء المصنع:"]
+    for i, (rid, name, _) in enumerate(din.RECITERS):
+        st = ("✅ معتمد" if rid in prov
+              else "⛔ محظور" if rid in bad else "⏳ مرشح — محتاج اعتمادك")
+        lines.append(f"{i}) {name} — {st}")
+    lines.append("\nلاعتماد قارئ جديد بضغطة: /approve الرقم أو الاسم")
+    send(chat_id, "\n".join(lines))
+
+
+def cmd_approve(chat_id, arg: str) -> None:
+    from . import din, state
+    arg = (arg or "").strip()
+    hit = None
+    if arg.isdigit():
+        i = int(arg)
+        if 0 <= i < len(din.RECITERS):
+            hit = din.RECITERS[i]
+    elif arg:
+        for r in din.RECITERS:
+            if arg in r[0] or arg in r[1]:
+                hit = r
+                break
+    if not hit:
+        send(chat_id, "⚠️ معرفتش القارئ — اكتب /qurra تشوف القائمة بأرقامها.")
+        return
+    state.add_reciter_proven(hit[0])
+    send(chat_id, f"✅ {hit[1]} اتعتمد رسميًا — هيبدأ ينزل يوتيوب "
+                  f"من الحلقة الجاية، والحماية ظلّه فوقه.")
+
+
 HELP = ("🤖 أنا بوت نوفا — مساعدك في المصنع:\n\n"
         "/stats — الإحصائيات (مشتركين/مشاهدات)\n"
         "/status — حالة المصنع والحماية\n"
         "/next — فيديو فوري\n"
         "/pause — إيقاف النشر مؤقتًا\n"
         "/resume — رجوع النشر\n"
-        "/watch — فحص المحظور الآن\n\n"
+        "/watch — فحص المحظور الآن\n"
+        "/qurra — قائمة القراء (معتمد/محظور/مرشح)\n"
+        "/approve — اعتماد قارئ جديد\n\n"
         "أو كلمني عادي بالعربي: «احصائيات»، «وقف»، «كمل»، «التالي»، «افحص».")
 
 _KEYWORDS = (
@@ -151,11 +186,18 @@ _KEYWORDS = (
 def _handle(chat_id, text: str) -> None:
     t = (text or "").strip()
     low = t.lower()
+    if low.startswith("/approve"):
+        if not _admin(chat_id):
+            send(chat_id, "⚠️ الأمر ده لصاحب المصنع بس.")
+            return
+        cmd_approve(chat_id, t.split(maxsplit=1)[1] if " " in t else "")
+        return
     action = None
     if low.startswith("/"):
         action = {"start": "help", "help": "help", "stats": "stats",
                   "status": "status", "next": "next", "pause": "pause",
-                  "resume": "resume", "watch": "watch"}.get(low.split()[0][1:])
+                  "resume": "resume", "watch": "watch",
+                  "qurra": "qurra"}.get(low.split()[0][1:])
     if not action:
         for keys, act in _KEYWORDS:
             if any(k in t for k in keys):
@@ -174,7 +216,8 @@ def _handle(chat_id, text: str) -> None:
      "next": lambda: cmd_next(chat_id),
      "pause": lambda: cmd_pause(chat_id),
      "resume": lambda: cmd_resume(chat_id),
-     "watch": lambda: cmd_watch(chat_id)}[action]()
+     "watch": lambda: cmd_watch(chat_id),
+     "qurra": lambda: cmd_qurra(chat_id)}[action]()
 
 
 def _daily_digest() -> None:

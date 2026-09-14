@@ -275,8 +275,9 @@ def _publish(topic, r: dict, urls: dict) -> None:
                 continue
             if (settings.YT_RECITE_MODE == "auto" and rec_used
                     and rec_used not in state.reciter_proven()):
-                _log("🧪 يوتيوب: نشر مراقَب — القارئ تحت الاختبار 24 ساعة "
-                     "(حذف فوري + حظر لو ظهر أي اعتراض)")
+                _log("🛡️ يوتيوب: قراء معتمدون فقط — صفر تجارب، "
+                     "الحلقة نازلة على باقي المنصات")
+                continue
         try:
             if name in ("youtube", "telegram"):
                 url, err = mod.publish(r["video"], title, caption, tags)
