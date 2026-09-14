@@ -62,6 +62,7 @@ jobs:
           git diff --cached --quiet || {
             git commit -m "auto: factory state $(date -u +%Y-%m-%dT%H:%MZ)"
             git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+            git pull --rebase origin main || true
             git push
           curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
