@@ -393,6 +393,10 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             scene_list.append(sc)
         ep_id = f"noor-{kind}-{reciter_idx % len(items)}"
 
+    # جاذبية بصرية: لمعة ضوء تجوب كل مشهد
+    for sc in scene_list:
+        sc.setdefault("glint", True)
+
     # هوية البراند فوق كل المشاهد: لوجو + تدرّجات + إطار ذهبي للمشاهد
     INTRO = 1.4
     bl = scenes._brand_layer(workdir / "ov" / "brand.png")
@@ -408,7 +412,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         sc["start"] += INTRO
         sc["end"] += INTRO
     wavs.insert(0, _silence(workdir / "intro.wav", INTRO))
-    scene_list.insert(0, {"base": scenes.intro_base(workdir / "intro.png"),
+    scene_list.insert(0, {"base": scenes.intro_base(workdir / "intro.png", title),
                           "overlays": [], "start": 0.0, "end": INTRO,
                           "nofade_in": True})
     off += INTRO

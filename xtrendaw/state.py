@@ -168,3 +168,14 @@ def set_ig_token(tok: str) -> None:
     import time as _t
     _wr(IG_TOKEN_FILE, {"token": tok, "ts": _t.time()})
     settings.INSTAGRAM["token"] = tok
+
+
+TIKTOK_TOKEN_FILE = settings.STATE / "tiktok_token.json"
+
+
+def set_tiktok_tokens(access_token: str, refresh_token: str) -> None:
+    import time as _t
+    _wr(TIKTOK_TOKEN_FILE, {"access_token": access_token,
+                            "refresh_token": refresh_token, "ts": _t.time()})
+    settings.TIKTOK["access_token"] = access_token
+    settings.TIKTOK["refresh_token"] = refresh_token

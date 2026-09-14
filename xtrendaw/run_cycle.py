@@ -252,7 +252,8 @@ def _publish(topic, r: dict, urls: dict) -> None:
     if (settings.STATE / "pause.json").exists():
         _log("⏸ النشر متوقف بطلب الأدمن — الحلقة اتخزنت ومستنية /resume")
         return
-    from .publish import facebook as _fb, instagram as _ig, telegram as _tg, youtube as _yt
+    from .publish import (facebook as _fb, instagram as _ig, telegram as _tg,
+                          tiktok as _tt, youtube as _yt)
     video_url = urls.get("video")
     if not video_url:
         return  # من غير رابط عام مفيش نشر (إنستجرام/فيسبوك بيحتاجوه)
@@ -264,7 +265,8 @@ def _publish(topic, r: dict, urls: dict) -> None:
             ("youtube", _yt, settings.has_youtube() and settings.PUBLISH_YOUTUBE),
             ("telegram", _tg, settings.has_telegram()),
             ("facebook", _fb, settings.has_facebook()),
-            ("instagram", _ig, settings.has_instagram())):
+            ("instagram", _ig, settings.has_instagram()),
+            ("tiktok", _tt, settings.has_tiktok())):
         if not ok:
             continue
         if name == "youtube" and topic.get("_din") in ("quran", "tafsir", "qissa"):
@@ -279,7 +281,7 @@ def _publish(topic, r: dict, urls: dict) -> None:
                      "الحلقة نازلة على باقي المنصات")
                 continue
         try:
-            if name in ("youtube", "telegram"):
+            if name in ("youtube", "telegram", "tiktok"):
                 url, err = mod.publish(r["video"], title, caption, tags)
             else:
                 url, err = mod.publish(video_url, title, caption, tags)

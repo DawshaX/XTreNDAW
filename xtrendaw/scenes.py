@@ -367,10 +367,10 @@ def frame_overlay(out_path: Path) -> Path:
     return out_path
 
 
-def intro_base(out_path: Path) -> Path:
-    """افتتاحية البراند: سديم كوني ملوّن + نجوم + توهّج أحمر + اللوجو.
+def intro_base(out_path: Path, title: str = "") -> Path:
+    """افتتاحية البراند: سديم كوني + نجوم + توهّج أحمر + اللوجو + عنوان الحلقة.
 
-    الإطار الأول لازم يكون ملوّن مش أسود — إنستجرام بياخد أول إطار غلافًا."""
+    الإطار الأول غلاف جذّاب يوصف الحلقة (تيك توك/إنستجرام/يوتيوب)."""
     import random as _rnd
     out_path.parent.mkdir(parents=True, exist_ok=True)
     layer = Image.new("RGB", (W, H), (9, 12, 30))
@@ -395,6 +395,47 @@ def intro_base(out_path: Path) -> Path:
     if settings.LOGO.exists():
         lg = load_logo(460, 250)
         layer.paste(lg, (cx - 230, cy - 230), lg)
+    # عنوان الحلقة — الغلاف الجذّاب اللي بيوصف المحتوى
+    if title:
+        import re as _re
+        # الخط بيرسم الأرقام LTR وbidi بيقلبها — بنعكس النطاق يدويًا
+        # عشان القارئ يشوفه صح: 45–48
+        def _flip(m):
+            a, sep, b = m.group(1), m.group(2), m.group(3)
+            return f"{b}{sep}{a}"
+        title = _re.sub(r"(\d+)(\s*[–-]\s*)(\d+)", _flip, title)
+        from . import textrender as _tr
+        f = _tr._font(88, bold=True)
+        lines = _tr.wrap_ar(title, f, W - 200)[:3]
+        y = cy + 330
+        for ln in lines:
+            d2 = ImageDraw.Draw(layer, "RGBA")
+            w = d2.textlength(_tr._display(ln), font=f)
+            x = (W - w) / 2
+            for ox, oy, al in [(-3, 3, 190), (3, 3, 190), (-3, -2, 150), (3, -2, 150)]:
+                d2.text((x + ox, y + oy), _tr._display(ln), font=f,
+                        fill=(20, 6, 4, al))
+            d2.text((x, y), _tr._display(ln), font=f, fill=(255, 214, 120, 255))
+            y += 118
+    layer.save(out_path, "PNG")
+    return out_path
+
+
+def render_glint(out_path: Path) -> Path:
+    """لمعة ضوء مائلة خفيفة تتحرك عبر المشهد — جاذبية سينمائية."""
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    if out_path.exists():
+        return out_path
+    band = Image.new("RGBA", (520, H + 400), (0, 0, 0, 0))
+    d = ImageDraw.Draw(band)
+    for x in range(520):
+        t = x / 519.0
+        a = int(46 * (1 - abs(2 * t - 1)) ** 1.6)   # ذروة ناعمة في المنتصف
+        d.line([(x, 0), (x, H + 400)], fill=(255, 244, 224, a))
+    band = band.rotate(18, expand=True, resample=Image.BICUBIC)
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    bw, bh = band.size
+    layer.paste(band, ((W - bw) // 2, (H - bh) // 2), band)
     layer.save(out_path, "PNG")
     return out_path
 

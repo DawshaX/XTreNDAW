@@ -162,6 +162,21 @@ def cmd_approve(chat_id, arg: str) -> None:
                   f"من الحلقة الجاية، والحماية ظلّه فوقه.")
 
 
+def cmd_tiktok(chat_id, arg: str) -> None:
+    from . import settings
+    from .publish import tiktok as _tt
+    if not settings.TIKTOK.get("client_key"):
+        send(chat_id, "⚠️ أسرار تيك توك لسه متضافةش في GitHub.")
+        return
+    ok, info = _tt.exchange_code(
+        (arg or "").strip(), "https://dawshax.github.io/XTreNDAW/callback.html")
+    if ok:
+        send(chat_id, f"✅ تيك توك اتربط يا كبير! من الدورة الجاية كل فيديو "
+                      f"هينزل تيك توك تلقائيًا. (open_id: {info[:18]})")
+    else:
+        send(chat_id, f"⚠️ الربط فشل: {info}")
+
+
 HELP = ("🤖 أنا بوت نوفا — مساعدك في المصنع:\n\n"
         "/stats — الإحصائيات (مشتركين/مشاهدات)\n"
         "/status — حالة المصنع والحماية\n"
@@ -170,7 +185,8 @@ HELP = ("🤖 أنا بوت نوفا — مساعدك في المصنع:\n\n"
         "/resume — رجوع النشر\n"
         "/watch — فحص المحظور الآن\n"
         "/qurra — قائمة القراء (معتمد/محظور/مرشح)\n"
-        "/approve — اعتماد قارئ جديد\n\n"
+        "/approve — اعتماد قارئ جديد\n"
+        "/tiktok — ربط تيك توك برمز التفويض\n\n"
         "أو كلمني عادي بالعربي: «احصائيات»، «وقف»، «كمل»، «التالي»، «افحص».")
 
 _KEYWORDS = (
@@ -186,6 +202,12 @@ _KEYWORDS = (
 def _handle(chat_id, text: str) -> None:
     t = (text or "").strip()
     low = t.lower()
+    if low.startswith("/tiktok"):
+        if not _admin(chat_id):
+            send(chat_id, "⚠️ الأمر ده لصاحب المصنع بس.")
+            return
+        cmd_tiktok(chat_id, t.split(maxsplit=1)[1] if " " in t else "")
+        return
     if low.startswith("/approve"):
         if not _admin(chat_id):
             send(chat_id, "⚠️ الأمر ده لصاحب المصنع بس.")

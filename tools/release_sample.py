@@ -44,7 +44,7 @@ def main() -> int:
     import time as _time
 
     from xtrendaw import settings, state
-    from xtrendaw.publish import facebook, instagram, telegram, youtube
+    from xtrendaw.publish import facebook, instagram, telegram, tiktok, youtube
 
     vid = ROOT / "work" / "sample_release.mp4"
     vid.parent.mkdir(parents=True, exist_ok=True)
@@ -76,6 +76,10 @@ def main() -> int:
     if _want("facebook") and settings.has_facebook():
         fb_url, err = facebook.publish(URL, TITLE, CAPTION, TAGS)
         print("FACEBOOK:", fb_url or f"FAIL {err}")
+
+    if _want("tiktok") and settings.has_tiktok():
+        tt_url, err = tiktok.publish(vid, TITLE, CAPTION, TAGS)
+        print("TIKTOK:", tt_url or f"FAIL {err}")
     return 0
 
 

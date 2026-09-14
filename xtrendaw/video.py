@@ -92,10 +92,17 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
             f"{_fin}color=0x140404,"
             f"fade=t=out:st={dip_out:.2f}:d=0.20:color=black[base]"
         ]
+    if scene.get("glint"):
+        from . import scenes as _sc
+        inputs += ["-i", str(_sc.render_glint(out_mp4.parent / "glint.png"))]
     prev = "[base]"
     for i in range(1, len(inputs) // 2):
         nxt = f"[v{i}]"
-        parts.append(f"{prev}[{i}:v]overlay=0:0{nxt}")
+        if scene.get("glint") and i == len(inputs) // 2 - 1:
+            parts.append(f"{prev}[{i}:v]overlay="
+                         f"x='mod(t*230,W+900)-900':y=-200{nxt}")
+        else:
+            parts.append(f"{prev}[{i}:v]overlay=0:0{nxt}")
         prev = nxt
 
     _run([

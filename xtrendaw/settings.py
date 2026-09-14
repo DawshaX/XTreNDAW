@@ -96,6 +96,28 @@ YOUTUBE = {
 FACEBOOK = {"page_id": get("FACEBOOK_PAGE_ID"), "token": get("FACEBOOK_PAGE_TOKEN")}
 INSTAGRAM = {"user_id": get("INSTAGRAM_USER_ID"), "token": get("INSTAGRAM_ACCESS_TOKEN")}
 
+TIKTOK = {"client_key": get("TIKTOK_CLIENT_KEY"),
+          "client_secret": get("TIKTOK_CLIENT_SECRET"),
+          "access_token": get("TIKTOK_ACCESS_TOKEN")}
+
+
+def _tt_state():
+    f = STATE / "tiktok_token.json"
+    if f.exists():
+        try:
+            import json as _json
+            return _json.loads(f.read_text(encoding="utf-8")) or {}
+        except Exception:
+            pass
+    return {}
+
+
+_tt = _tt_state()
+if _tt.get("access_token"):
+    TIKTOK["access_token"] = _tt["access_token"]
+if _tt.get("refresh_token"):
+    TIKTOK["refresh_token"] = _tt.get("refresh_token")
+
 
 def _ig_state_token():
     """التوكن المتجدد المخزن في الحالة — بيعلو على المتغير البيئي."""
@@ -123,6 +145,10 @@ def has_youtube() -> bool:
 
 def has_facebook() -> bool:
     return bool(FACEBOOK["page_id"] and FACEBOOK["token"])
+
+def has_tiktok() -> bool:
+    return bool(TIKTOK.get("client_key") and TIKTOK.get("access_token"))
+
 
 def has_instagram() -> bool:
     return bool(INSTAGRAM["user_id"] and INSTAGRAM["token"])
