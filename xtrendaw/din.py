@@ -143,6 +143,14 @@ TAFASEER = [
                  "desert atom sand"]),
 ]
 
+# أسئلة تدبُّر منتقاة بعناية — خطّاف قالب التفسير (بصمة المراجع الهادئة)
+HOOKS = {
+    "t-asr": "لماذا أقسم الله بالوقت في ثلاث آيات فقط؟",
+    "t-thikr": "لماذا تطمئن القلوب بذكر الله تحديدًا؟",
+    "t-yusr": "لماذا جاء اليُسْر مع العسر لا بعده؟",
+    "t-thara": "لماذا خُتمت السورة بمثقال الذرّة؟",
+}
+
 ASS_HEADER = """[Script Info]
 ScriptType: v4.00+
 PlayResX: 1080
@@ -156,6 +164,8 @@ Style: Ayah,Amiri,92,&H0039C8FF,&H00F2F2F2,&H00000000,&H96000000,-1,0,0,0,100,10
 Style: Trj,Tajawal,46,&H00B6FFB6,&H000000FF,&H00000000,&H8A000000,0,0,0,0,100,100,0,0,1,3,1,2,60,60,150,1
 Style: Shr,Amiri,56,&H00D6C9A6,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,220,1
 Style: Calm,Amiri,60,&H00FFFFFF,&H00000000,&H00101010,&H8A000000,0,0,0,0,100,100,0,0,1,2,2,2,70,70,300,1
+Style: CalmL,Amiri,60,&H00FFFFFF,&H00000000,&H00101010,&H8A000000,0,0,0,0,100,100,0,0,1,2,2,1,90,70,300,1
+Style: Hook,Amiri,47,&H0086C8F4,&H00000000,&H00101010,&H8A000000,0,0,0,0,100,100,0,0,1,2,2,8,70,70,820,1
 Style: Hdr,Amiri Quran,60,&H009AD8FF,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,2,8,60,60,90,1
 
 [Events]
@@ -229,6 +239,12 @@ def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
     scdir = workdir / f"sc{i:02d}"
     clip = footage.fetch_clip(q, max(1.0, seconds), scdir, f"{seed}:{i}",
                               source="auto")
+    if not clip:
+        # محاولة ثانية باستعلام أبسط — اللقطة الحيّة أولى من الصورة
+        _q2 = " ".join(q.split(",")[0].split()[:3])
+        if _q2 and _q2 != q:
+            clip = footage.fetch_clip(_q2, max(1.0, seconds), scdir,
+                                      f"{seed}:{i}r", source="auto")
     if clip:
         return {"video": clip, "overlays": [],
                 "grade": spec.get("grade", "soft")}
@@ -351,6 +367,12 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         events.append({"style": "Hdr",
                        "text": f"{sname} • {rev}",
                        "start": 0.0, "end": 1.35})
+        if kind == "tafsir":
+            # خطّاف تدبُّري يفتح الحلقة بسؤال — بصمة قالب التفسير
+            events.append({"style": "Hook",
+                           "text": HOOKS.get(spec["id"],
+                                             f"وقفة تدبُّر في {sname} 🤍"),
+                           "start": 1.4, "end": 4.8})
 
         if tts_recite:
             rec_name = "بصوت نُور"
@@ -387,7 +409,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                             _ar_frag += f" ﴿{_ar_num(a['numberInSurah'])}﴾"
                         _en_frag = " ".join(_en_w[_e0:_e1])
                         events.append({
-                            "style": "Calm",
+                            "style": "CalmL" if kind == "tafsir" else "Calm",
                             "text": _ar_frag + "\\N" + _en_frag,
                             "start": off + d * _a0 / _lw,
                             "end": off + d * _a1 / _lw})
@@ -582,8 +604,10 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 txt = " ".join(
                     "{\\kf%d}%s" % (max(8, _dur * max(1, len(w)) // _tot), w)
                     for w in _ws)
-        elif st == "Calm":
+        elif st in ("Calm", "CalmL"):
             fx = "{\\fad(420,320)}"
+        elif st == "Hook":
+            fx = "{\\fad(500,400)}"
         elif st == "Hdr":
             fx = "{\\fad(600,400)}"
         elif st == "WM":
