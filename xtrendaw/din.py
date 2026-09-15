@@ -155,6 +155,7 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Ayah,Tajawal,104,&H0039C8FF,&H00F2F2F2,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,4,2,5,70,70,0,1
 Style: Trj,Tajawal,46,&H00B6FFB6,&H000000FF,&H00000000,&H8A000000,0,0,0,0,100,100,0,0,1,3,1,2,60,60,150,1
 Style: Shr,Tajawal,58,&H00D6C9A6,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,220,1
+Style: Calm,Tajawal,56,&H00FFFFFF,&H00000000,&H00101010,&H8A000000,0,0,0,0,0,100,100,0,0,1,2,2,2,70,70,300,1
 Style: Hdr,Amiri Quran,60,&H009AD8FF,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,2,8,60,60,90,1
 
 [Events]
@@ -229,7 +230,8 @@ def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
     clip = footage.fetch_clip(q, max(1.0, seconds), scdir, f"{seed}:{i}",
                               source="auto")
     if clip:
-        return {"video": clip, "overlays": [], "grade": "soft"}
+        return {"video": clip, "overlays": [],
+                "grade": spec.get("grade", "soft")}
     base = scdir / "base.png"
     if spec.get("style") == "cinema":
         prompt = (f"{q}, ancient middle-east historical scene, cinematic film still, "
@@ -291,7 +293,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         ayahs = _get_json(f"{APIQ}/surah/{spec['surah']}/quran-uthmani")["ayahs"]
         sel = [a for a in ayahs if spec["frm"] <= a["numberInSurah"] <= spec["to"]]
         # حماية المواصفات: التلاوة الطويلة → قصّ عدد الآيات تلقائيا
-        max_rec = 30.0 if kind == "tafsir" else 66.0
+        max_rec = 30.0 if kind == "tafsir" else 63.0
         _durs = [probe_duration(_ayah_audio(a["number"], reciter, workdir, kbps))
                  for a in sel]
         while len(sel) > 1 and sum(_durs) > max_rec:
@@ -313,6 +315,31 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         tafs = {a["numberInSurah"]: a["text"] for a in t}
         fayda = _trim_sent(tafs.get(spec["frm"], ""), 190)
         fayda = f"نزلت {rev}. {fayda}"
+        # لمسة المراجع الناجحة: مود بصري واحد موحّد للفيديو كله
+        if kind in ("quran", "tafsir"):
+            import hashlib as _h
+            _moods = [
+                ["sunset over calm sea", "ocean horizon golden light",
+                 "sun setting into water", "slow sea waves golden hour"],
+                ["candle flame close up", "warm candlelight dark room",
+                 "candles glowing night", "lantern warm light night"],
+                ["rain on window night", "rainy street lights reflection",
+                 "window rain drops dark", "night rain city glow"],
+                ["mosque silhouette dusk", "minarets sunset sky",
+                 "mosque dome blue hour", "masjid lights night"],
+                ["starry night sky", "milky way over desert",
+                 "stars night clouds", "moon night sky calm"],
+                ["old street lantern night", "vintage room warm light",
+                 "flowers by window dusk", "cozy interior candle light"],
+            ]
+            _mi = int(_h.sha1(spec["id"].encode()).hexdigest(), 16) % len(_moods)
+            spec = {**spec, "scenes": _moods[_mi], "grade": "calm"}
+        try:
+            _en_ay = _get_json(f"{APIQ}/surah/{spec['surah']}/en.sahih")["ayahs"]
+            _en_txt = {a["numberInSurah"]: a["text"] for a in _en_ay}
+        except Exception:
+            _en_txt = {}
+
         # ترويسة السورة أول ٣٫٥ ثانية
         events.append({"style": "Hdr",
                        "text": f"{sname} • {rev}",
@@ -331,9 +358,30 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 wav = _ayah_audio(a["number"], reciter, workdir, kbps)
                 d = probe_duration(wav)
             wavs.append(wav)
-            events.append({"style": "Ayah",
-                           "text": f"{a['text']} ﴿{_ar_num(a['numberInSurah'])}﴾",
-                           "start": off, "end": off + d})
+            if kind in ("quran", "tafsir"):
+                # مقاطع قصيرة ثنائية اللغة متتابعة — أسلوب القنوات الهادئة
+                _ar_w = a["text"].split()
+                _en_w = _en_txt.get(a["numberInSurah"], "").split()
+                _nfr = max(1, min(3, len(_ar_w) // 6 + 1))
+                _lw = max(1, len(_ar_w))
+                for _f in range(_nfr):
+                    _a0 = _f * len(_ar_w) // _nfr
+                    _a1 = (_f + 1) * len(_ar_w) // _nfr
+                    _e0 = _f * len(_en_w) // _nfr
+                    _e1 = (_f + 1) * len(_en_w) // _nfr
+                    _ar_frag = " ".join(_ar_w[_a0:_a1])
+                    if _f == _nfr - 1:
+                        _ar_frag += f" ﴿{_ar_num(a['numberInSurah'])}﴾"
+                    _en_frag = " ".join(_en_w[_e0:_e1])
+                    events.append({
+                        "style": "Calm",
+                        "text": _ar_frag + "\\N" + _en_frag,
+                        "start": off + d * _a0 / _lw,
+                        "end": off + d * _a1 / _lw})
+            else:
+                events.append({"style": "Ayah",
+                               "text": f"{a['text']} ﴿{_ar_num(a['numberInSurah'])}﴾",
+                               "start": off, "end": off + d})
             sc = _scene_media(i, spec, workdir, spec["id"], d)
             sc.update(start=off, end=off + d, frame=True)
             scene_list.append(sc)
@@ -486,6 +534,23 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     if pr.returncode == 0 and processed.exists():
         vox = processed
 
+    if kind in ("quran", "tafsir"):
+        # ختام ساكن: شاشة سوداء + سطر واحد (لمسة المراجع)
+        _blk = workdir / "black.mp4"
+        subprocess.run([ffmpeg(), "-y", "-f", "lavfi", "-i",
+                        "color=c=black:s=1080x1920:d=2.0:r=30",
+                        "-c:v", "libx264", "-preset", "fast", "-crf", "20",
+                        "-pix_fmt", "yuv420p", str(_blk)], capture_output=True)
+        if _blk.exists():
+            wavs.append(_silence(workdir / "tail.wav", 2.0))
+            scene_list.append({"video": _blk, "overlays": [], "grade": "calm",
+                               "nofade_in": True, "start": off,
+                               "end": off + 2.0, "frame": False})
+            events.append({"style": "Calm", "start": off + 0.25,
+                           "end": off + 2.0,
+                           "text": "سلامٌ على قلبك 🤍\\N@XTreNDAW"})
+            off += 2.0
+
     ass = workdir / "din.ass"
     lines = [ASS_HEADER]
     for ev in events:
@@ -501,6 +566,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 txt = " ".join(
                     "{\\kf%d}%s" % (max(8, _dur * max(1, len(w)) // _tot), w)
                     for w in _ws)
+        elif st == "Calm":
+            fx = "{\\fad(420,320)}"
         elif st == "Hdr":
             fx = "{\\fad(600,400)}"
         elif st == "WM":

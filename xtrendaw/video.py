@@ -59,7 +59,10 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
     grade_red = (f"eq=contrast=1.08:saturation=1.22:brightness=0.01,"
                  f"colorbalance=rs=0.14:rm=0.14:rh=0.08:gm=-0.05:bm=-0.14")
     grade_soft = "eq=contrast=1.05:saturation=1.08:brightness=0.01"
-    grade = grade_soft if scene.get("grade") == "soft" else grade_red
+    grade_calm = ("eq=contrast=1.06:saturation=1.07,"
+                  "colorbalance=rs=0.07:rm=0.05:rh=0.02:bs=0.03:bm=0.07")
+    grade = {"soft": grade_soft, "calm": grade_calm}.get(
+        scene.get("grade"), grade_red)
     # لمسة سينمائية: فينييت + حبيبة فيلم خفيفة + وضوح
     rich = "vignette=PI/5,noise=alls=2:allf=t,unsharp=5:5:0.5"
     _fin = "" if scene.get("nofade_in") else "fade=t=in:st=0:d=0.24:"
