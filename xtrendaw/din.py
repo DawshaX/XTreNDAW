@@ -155,7 +155,7 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Ayah,Amiri,92,&H0039C8FF,&H00F2F2F2,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,4,2,5,70,70,0,1
 Style: Trj,Tajawal,46,&H00B6FFB6,&H000000FF,&H00000000,&H8A000000,0,0,0,0,100,100,0,0,1,3,1,2,60,60,150,1
 Style: Shr,Amiri,56,&H00D6C9A6,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,220,1
-Style: Calm,Amiri,54,&H00FFFFFF,&H00000000,&H00101010,&H8A000000,0,0,0,0,0,100,100,0,0,1,2,2,2,70,70,300,1
+Style: Calm,Amiri,60,&H00FFFFFF,&H00000000,&H00101010,&H8A000000,0,0,0,0,100,100,0,0,1,2,2,2,70,70,300,1
 Style: Hdr,Amiri Quran,60,&H009AD8FF,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,2,8,60,60,90,1
 
 [Events]
@@ -318,20 +318,27 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         # لمسة المراجع الناجحة: مود بصري واحد موحّد للفيديو كله
         if kind in ("quran", "tafsir"):
             import hashlib as _h
-            _moods = [
-                ["sunset over calm sea", "ocean horizon golden light",
-                 "sun setting into water", "slow sea waves golden hour"],
-                ["candle flame close up", "warm candlelight dark room",
-                 "candles glowing night", "lantern warm light night"],
-                ["rain on window night", "rainy street lights reflection",
-                 "window rain drops dark", "night rain city glow"],
-                ["mosque silhouette dusk", "minarets sunset sky",
-                 "mosque dome blue hour", "masjid lights night"],
-                ["starry night sky", "milky way over desert",
-                 "stars night clouds", "moon night sky calm"],
-                ["old street lantern night", "vintage room warm light",
-                 "flowers by window dusk", "cozy interior candle light"],
-            ]
+            # لكل نوع شخصيته البصرية — القناة بتطوّر وبتنوِّع قوالبها
+            if kind == "tafsir":
+                _moods = [
+                    ["candle flame close up", "warm candlelight dark room",
+                     "old quran book pages", "vintage room warm light"],
+                    ["rain on window night", "rainy street lights reflection",
+                     "window rain drops dark", "night rain city glow"],
+                    ["old street lantern night", "antique lantern glow",
+                     "flowers by window dusk", "cozy interior candle light"],
+                ]
+            else:
+                _moods = [
+                    ["sunset over calm sea", "ocean horizon golden light",
+                     "sun setting into water", "slow sea waves golden hour"],
+                    ["mosque silhouette dusk", "minarets sunset sky",
+                     "mosque dome blue hour", "masjid lights night"],
+                    ["starry night sky", "milky way over desert",
+                     "stars night clouds", "moon night sky calm"],
+                    ["kaaba mecca pilgrims", "masjid al haram night",
+                     "mecca mosque lights", "pilgrims praying dusk"],
+                ]
             _mi = int(_h.sha1(spec["id"].encode()).hexdigest(), 16) % len(_moods)
             spec = {**spec, "scenes": _moods[_mi], "grade": "calm"}
         try:
@@ -359,25 +366,31 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 d = probe_duration(wav)
             wavs.append(wav)
             if kind in ("quran", "tafsir"):
-                # مقاطع قصيرة ثنائية اللغة متتابعة — أسلوب القنوات الهادئة
-                _ar_w = a["text"].split()
-                _en_w = _en_txt.get(a["numberInSurah"], "").split()
-                _nfr = max(1, min(8, round(d / 4.5)))
-                _lw = max(1, len(_ar_w))
-                for _f in range(_nfr):
-                    _a0 = _f * len(_ar_w) // _nfr
-                    _a1 = (_f + 1) * len(_ar_w) // _nfr
-                    _e0 = _f * len(_en_w) // _nfr
-                    _e1 = (_f + 1) * len(_en_w) // _nfr
-                    _ar_frag = " ".join(_ar_w[_a0:_a1])
-                    if _f == _nfr - 1:
-                        _ar_frag += f" ﴿{_ar_num(a['numberInSurah'])}﴾"
-                    _en_frag = " ".join(_en_w[_e0:_e1])
-                    events.append({
-                        "style": "Calm",
-                        "text": _ar_frag + "\\N" + _en_frag,
-                        "start": off + d * _a0 / _lw,
-                        "end": off + d * _a1 / _lw})
+                if i == 0 and not tts_recite:
+                    # الخطاف الذهبي: الآية الأولى كاملة بالكاراوكي الدهبي كلمة-كلمة — توقيع القناة
+                    events.append({"style": "Ayah",
+                                   "text": f"{a['text']} ﴿{_ar_num(a['numberInSurah'])}﴾",
+                                   "start": off, "end": off + d})
+                else:
+                    # مقاطع قصيرة ثنائية اللغة متتابعة — أسلوب القنوات الهادئة
+                    _ar_w = a["text"].split()
+                    _en_w = _en_txt.get(a["numberInSurah"], "").split()
+                    _nfr = max(1, min(8, round(d / 4.5)))
+                    _lw = max(1, len(_ar_w))
+                    for _f in range(_nfr):
+                        _a0 = _f * len(_ar_w) // _nfr
+                        _a1 = (_f + 1) * len(_ar_w) // _nfr
+                        _e0 = _f * len(_en_w) // _nfr
+                        _e1 = (_f + 1) * len(_en_w) // _nfr
+                        _ar_frag = " ".join(_ar_w[_a0:_a1])
+                        if _f == _nfr - 1:
+                            _ar_frag += f" ﴿{_ar_num(a['numberInSurah'])}﴾"
+                        _en_frag = " ".join(_en_w[_e0:_e1])
+                        events.append({
+                            "style": "Calm",
+                            "text": _ar_frag + "\\N" + _en_frag,
+                            "start": off + d * _a0 / _lw,
+                            "end": off + d * _a1 / _lw})
             else:
                 events.append({"style": "Ayah",
                                "text": f"{a['text']} ﴿{_ar_num(a['numberInSurah'])}﴾",
@@ -439,13 +452,23 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                       "لا يفارق لسانك.",
             "info": "التفكّر عبادة، والمعرفة نور — تدبَّر وشارك الخير.",
         }[kind]
-        qs = ["mosque night lights", "kaaba mecca", "quran book candle",
-              "praying hands sky", "dawn mountains peace"]
+        # شخصية بصرية مميزة لكل نوع من المخزون — مش قالب واحد للجميع
+        qs = {
+            "dua": ["sunset over calm sea", "doves flying sky",
+                    "soft sunrise clouds", "olive branch morning light"],
+            "adhkar": ["starry night sky", "moon night clouds",
+                       "milky way over desert", "night sky stars calm"],
+            "hadith": ["old lantern warm light", "vintage book candle",
+                       "antique quran pages", "warm candlelight dark room"],
+            "info": ["aerial desert dunes", "underwater sun rays",
+                     "forest fog sunrise", "mountains clouds aerial"],
+        }.get(kind, ["mosque night lights", "kaaba mecca", "quran book candle",
+                     "praying hands sky", "dawn mountains peace"])
         n = 3
         for i in range(n):
             s = off * i / n
             e = off * (i + 1) / n
-            sc = _scene_media(i, {"scenes": qs, "style": "cosmic"},
+            sc = _scene_media(i, {"scenes": qs, "grade": "calm"},
                               workdir, kind, e - s)
             sc.update(start=s, end=e, frame=True)
             scene_list.append(sc)

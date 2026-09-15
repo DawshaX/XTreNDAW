@@ -215,9 +215,14 @@ def fetch_real_visual(query: str, out_path: Path) -> bool:
         )
         if not r.ok:
             return False
+        import re as _re
+        _junk = _re.compile(r"collage|mosaic|composite|montage|\bmap\b|"
+                            r"diagram|chart|logo|poster|coat of arms", _re.I)
         pages = (r.json().get("query") or {}).get("pages") or {}
         cands = []
         for p in pages.values():
+            if _junk.search(p.get("title", "")):
+                continue  # ملفات الكولاج/الخرائط مش مشهد حقيقي
             ii = (p.get("imageinfo") or [{}])[0]
             if ii.get("mime") == "image/jpeg" and ii.get("width", 0) >= 900:
                 cands.append(ii)
@@ -225,8 +230,7 @@ def fetch_real_visual(query: str, out_path: Path) -> bool:
             return False
         from . import library as _lib
         used = _lib._used(query)
-        cands.sort(key=lambda x: x.get("width", 0) * x.get("height", 0),
-                   reverse=True)
+        # ترتيب صلة البحث (مش الأكبر حجماً) — الكولاجات العملاقة كانت بتتصدر
         pick = None
         for c in cands:
             u = c.get("thumburl") or c.get("url")
@@ -245,6 +249,11 @@ def fetch_real_visual(query: str, out_path: Path) -> bool:
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_bytes(img_r.content)
         img = Image.open(out_path).convert("RGB")
+        # حارس البياض: خلفيات بيضاء/مخططات مش مشهد سينمائي
+        _tiny = img.convert("L").resize((8, 8))
+        if sum(1 for v in _tiny.getdata() if v > 235) > 40:
+            out_path.unlink(missing_ok=True)
+            return False
         w, h = img.size
         img = img.crop((0, 0, w, h - max(0, h // 30)))
         w, h = img.size
