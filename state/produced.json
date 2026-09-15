@@ -533,6 +533,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789475856.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789475856.png"
    }
+  },
+  "noor-qissa-nuh-r9": {
+   "title": "سُورَةُ هُودٍ ﴿37–39﴾ — أبو بكر الشاطري",
+   "fingerprint": "21fccde945d92b15",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nuh-shaatree.mp4",
+   "duration": 75.45,
+   "at": "2026-09-15 18:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789495986.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789495986.png"
+   }
   }
  },
  "fingerprints": [
@@ -587,7 +598,8 @@
   "5e6f644549890b16",
   "158fcff998f6292f",
   "18c25b635de38ea9",
-  "cf2ebcc43d2263ea"
+  "cf2ebcc43d2263ea",
+  "21fccde945d92b15"
  ],
- "last_kind": "info"
+ "last_kind": "qissa"
 }
