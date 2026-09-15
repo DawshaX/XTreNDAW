@@ -109,7 +109,7 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
         ffmpeg(), "-y", *inputs,
         "-filter_complex", ";".join(parts),
         "-map", prev, "-frames:v", str(frames), "-r", str(V["fps"]),
-        "-c:v", V["vcodec"], "-preset", "veryfast", "-crf", "23",
+        "-c:v", V["vcodec"], "-preset", "fast", "-crf", "20",
         "-pix_fmt", "yuv420p", "-an", str(out_mp4),
     ], f"clip {out_mp4.name}")
     return out_mp4
@@ -131,7 +131,7 @@ def assemble(plan: dict, scenes: list[dict], ass_path: Path, out_mp4: Path,
     concat_list.write_text("".join(f"file '{p.name}'\n" for p in clip_paths), encoding="utf-8")
     base_video = workdir / "base.mp4"
     _run([ff, "-y", "-f", "concat", "-safe", "0", "-i", str(concat_list),
-          "-c:v", V["vcodec"], "-preset", "veryfast", "-crf", "23",
+          "-c:v", V["vcodec"], "-preset", "fast", "-crf", "20",
           "-pix_fmt", "yuv420p", "-r", str(V["fps"]), "-an", str(base_video)], "دمج")
 
     ass = f"ass={ass_path.as_posix()}:fontsdir={settings.FONTS}"
@@ -151,7 +151,7 @@ def assemble(plan: dict, scenes: list[dict], ass_path: Path, out_mp4: Path,
         amap = "1:a"
     _run([ff, "-y", "-i", str(base_video), *audio_in,
           "-filter_complex", fc, "-map", "[v]", "-map", amap,
-          "-c:v", V["vcodec"], "-preset", "veryfast", "-crf", "23",
+          "-c:v", V["vcodec"], "-preset", "fast", "-crf", "20",
           "-pix_fmt", "yuv420p", "-r", str(V["fps"]),
           "-c:a", V["acodec"], "-b:a", "160k", "-ar", "44100",
           "-t", f"{total:.3f}", "-shortest", "-movflags", "+faststart",

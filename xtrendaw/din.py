@@ -31,7 +31,7 @@ RECITERS = [
     ("ar.hanirifai", "هاني الرفاعي", 64),
     ("ar.husarymujawwad", "محمود خليل الحصري (مجوَّد)", 128),
     ("ar.muhammadjibreel", "محمد جبريل", 128),
-    ("ar.aymanswoaid", "أيمن سويد", 64),
+    ("ar.aymanswoaid", "أيمن سويد", 128),
     ("ar.hudhaify", "علي الحذيفي", 128),
     ("ar.shaatree", "أبو بكر الشاطري", 128),
     ("ar.abdullahbasfar", "عبدالله بصفر", 64),
@@ -199,10 +199,20 @@ def _ayah_audio(num: int, reciter: str, workdir: Path, kbps: int = 128) -> Path:
     CACHE.mkdir(parents=True, exist_ok=True)
     mp3 = CACHE / f"{reciter}-{num}.mp3"
     if not mp3.exists():
-        r = requests.get(f"{CDN.replace('/128', f'/{kbps}')}/{reciter}/{num}.mp3",
-                         headers=UA, timeout=120)
-        r.raise_for_status()
-        mp3.write_bytes(r.content)
+        _tried = []
+        for _kb in dict.fromkeys((kbps, 128, 64)):   # الأعلى أولًا ثم تراجع
+            try:
+                r = requests.get(
+                    f"{CDN.replace('/128', f'/{_kb}')}/{reciter}/{num}.mp3",
+                    headers=UA, timeout=120)
+                if r.ok and len(r.content) > 1000:
+                    mp3.write_bytes(r.content)
+                    break
+            except Exception:
+                pass
+            _tried.append(_kb)
+        else:
+            raise RuntimeError(f"تلاوة {reciter}:{num} مش متاحة ({_tried})")
     wav = workdir / f"ay{num}.wav"
     return to_wav(mp3, wav)
 
@@ -443,24 +453,36 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     subprocess.run([ffmpeg(), "-y", "-f", "concat", "-safe", "0", "-i", str(list_f),
                     "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le", str(vox)],
                    capture_output=True, check=True)
-    # مزج بهوية XDAW الصوتية — الناتج توليفنا الخاص
-    amb = workdir / "amb.wav"
-    subprocess.run([ffmpeg(), "-y", "-f", "lavfi", "-i",
-                    "anoisesrc=color=brown:amplitude=0.35",
-                    "-af", "lowpass=f=420,volume=0.05", "-t", f"{total:.2f}",
-                    "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le", str(amb)],
-                   capture_output=True)
+    # معالجة الصوت — لكل محتوى ما يناسبه:
     processed = workdir / "vox_p.wav"
-    pr = subprocess.run([ffmpeg(), "-y", "-i", str(vox), "-i", str(amb),
-                         "-filter_complex",
-                         "[0:a]asetrate=44100*1.0594,aresample=44100,atempo=0.944,"
-                         "equalizer=f=110:width_type=q:width=1:g=1.5,"
-                         "equalizer=f=3400:width_type=q:width=1:g=1,"
-                         "aecho=0.2:0.3:25:0.12[a];"
-                         "[a][1:a]amix=inputs=2:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[out]",
-                         "-map", "[out]", "-ar", "44100", "-ac", "2",
-                         "-c:a", "pcm_s16le", str(processed)],
-                        capture_output=True)
+    if kind in ("quran", "tafsir", "qissa"):
+        # التلاوة مقدسة: نقية 100% — إزالة تشويش + وضوح + جهارة بث
+        # (بلا رفع تون، بلا إيكو، بلا همس — زي الاستوديو)
+        pr = subprocess.run([ffmpeg(), "-y", "-i", str(vox), "-af",
+                             "highpass=f=55,afftdn=nf=-28,"
+                             "equalizer=f=3200:width_type=q:width=1.2:g=1.5,"
+                             "loudnorm=I=-14:TP=-1.2:LRA=11",
+                             "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le",
+                             str(processed)], capture_output=True)
+    else:
+        # الأدعية/الأحاديث/المعلومات: هوية XDAW — دفء ووضوح بلا تشويه
+        amb = workdir / "amb.wav"
+        subprocess.run([ffmpeg(), "-y", "-f", "lavfi", "-i",
+                        "anoisesrc=color=brown:amplitude=0.35",
+                        "-af", "lowpass=f=300,volume=0.018", "-t", f"{total:.2f}",
+                        "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le",
+                        str(amb)], capture_output=True)
+        pr = subprocess.run([ffmpeg(), "-y", "-i", str(vox), "-i", str(amb),
+                             "-filter_complex",
+                             "[0:a]afftdn=nf=-30,"
+                             "equalizer=f=110:width_type=q:width=1:g=1,"
+                             "equalizer=f=3400:width_type=q:width=1:g=1.5,"
+                             "aecho=0.2:0.25:30:0.07[a];"
+                             "[a][1:a]amix=inputs=2:normalize=0,"
+                             "loudnorm=I=-14:TP=-1.2:LRA=11[out]",
+                             "-map", "[out]", "-ar", "44100", "-ac", "2",
+                             "-c:a", "pcm_s16le", str(processed)],
+                            capture_output=True)
     if pr.returncode == 0 and processed.exists():
         vox = processed
 

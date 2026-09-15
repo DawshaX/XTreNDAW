@@ -54,7 +54,7 @@ VIDEO = {
 # ─────────────────────────────────────────────────────────────
 # الصوت
 # ─────────────────────────────────────────────────────────────
-VOICE_AR = get("XT_VOICE_AR", "ar-EG-SalmaNeural")
+VOICE_AR = get("XT_VOICE_AR", "ar-SA-HamedNeural")  # صوت ذكر وقور للمحتوى الديني
 VOICE_EN = get("XT_VOICE_EN", "en-US-JennyNeural")
 VOICE_RATE = get("XT_VOICE_RATE", "+8%")
 VOICE_PITCH = get("XT_VOICE_PITCH", "+12Hz")
@@ -70,7 +70,7 @@ CHANNEL_MODE = get("XT_MODE", "deen")
 # نشر يوتيوب (بيتوقف مؤقتًا لاختبار سلامة المطالبات — تيليجرام شغال دايمًا)
 PUBLISH_YOUTUBE = get("XT_YT", "1").strip() == "1"
 # الصوت: piper = عربي حرفي بمخارج صحيحة (مجاني بلا حد)، وedge بديل احتياطي
-TTS_ENGINE = get("XT_TTS_ENGINE", "piper")
+TTS_ENGINE = get("XT_TTS_ENGINE", "edge")  # نيورال طبيعي، piper احتياطي
 PIPER_RELEASE = "noor-models"
 # يوتيوب: حلقات التلاوة — off = ما تنزلش يوتيوب (تيليجرام تنزل عادي)
 # tts = تتلاوى بصوت نور المملوك لنا (صفر حقوق للأبد)

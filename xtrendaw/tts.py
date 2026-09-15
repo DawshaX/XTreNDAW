@@ -212,30 +212,49 @@ def _piper_synth(text: str, out_wav: Path, model: Path) -> bool:
         return False
 
 
+def _piper_line(text: str, out_dir: Path, name: str) -> dict | None:
+    """Piper — المحرك الاحتياطي (محلي 100%)."""
+    model = _piper_model()
+    if not model:
+        return None
+    raw = out_dir / f"{name}_p.wav"
+    if _piper_synth(normalize_for_speech(text), raw, model):
+        d = probe_duration(raw)
+        if d > 0:
+            wav = to_wav(raw, out_dir / f"{name}.wav")
+            raw.unlink(missing_ok=True)
+            return {"wav": wav, "duration": d,
+                    "words": _spread(text, 0, d), "timing_source": "piper"}
+    return None
+
+
 def synthesize_line(text: str, lang: str, out_dir: Path, name: str = "line",
                     rate: str | None = None, pitch: str | None = None) -> dict:
     """سطر واحد → {wav, duration, words, timing_source}.
 
-    للعربي: نطق مطبّع + نبرة جملة-بجملة (تعجب/استفهام/تأمل) عشان الروح.
+    للعربي: صوت نيورال طبيعي (edge) + نبرة جملة-بجملة، وPiper احتياطي محلي.
     """
     voice = settings.VOICE_EN if lang == "en" else settings.VOICE_AR
     out_dir.mkdir(parents=True, exist_ok=True)
 
     if lang == "ar" and settings.TTS_ENGINE == "piper":
-        model = _piper_model()
-        if model:
-            raw = out_dir / f"{name}_p.wav"
-            if _piper_synth(normalize_for_speech(text), raw, model):
-                d = probe_duration(raw)
-                if d > 0:
-                    # توحيد: 44100 ستيريو — غير كده الدمج بيتلف بعد أول مقطع
-                    wav = to_wav(raw, out_dir / f"{name}.wav")
-                    raw.unlink(missing_ok=True)
-                    return {"wav": wav, "duration": probe_duration(wav),
-                            "words": _spread(text, 0, d),
-                            "timing_source": "piper"}
+        _r = _piper_line(text, out_dir, name)
+        if _r:
+            return _r
 
     if lang == "ar":
+        try:
+            return _edge_ar(text, out_dir, name, rate, pitch, voice)
+        except Exception:
+            _r = _piper_line(text, out_dir, name)   # fallback محلي
+            if _r:
+                return _r
+            raise
+    return _edge_single(text, out_dir, name, rate, pitch, voice)
+
+
+def _edge_ar(text: str, out_dir: Path, name: str, rate, pitch, voice) -> dict:
+    if True:
         text = normalize_for_speech(text)
         parts = [p for p in _re.split(r"(?<=[!؟…])", text) if p.strip()]
         if len(parts) > 1:
@@ -262,6 +281,10 @@ def synthesize_line(text: str, lang: str, out_dir: Path, name: str = "line",
                 return {"wav": final, "duration": total, "words": words,
                         "timing_source": "sentence"}
 
+    return _edge_single(text, out_dir, name, rate, pitch, voice)
+
+
+def _edge_single(text: str, out_dir: Path, name: str, rate, pitch, voice) -> dict:
     mp3 = out_dir / f"{name}.mp3"
     r = asyncio.run(_synth_line(text, voice, mp3, rate=rate, pitch=pitch))
     duration = probe_duration(mp3)
