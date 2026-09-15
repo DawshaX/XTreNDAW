@@ -544,6 +544,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789495986.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789495986.png"
    }
+  },
+  "noor-quran-s035-1-r7": {
+   "title": "سُورَةُ فَاطِرٍ ﴿1–1﴾ — أيمن سويد",
+   "fingerprint": "11ebd61db26160e1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs035-1-aymanswoaid.mp4",
+   "duration": 71.4,
+   "at": "2026-09-15 19:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789499912.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789499912.png"
+   }
   }
  },
  "fingerprints": [
@@ -599,7 +610,8 @@
   "158fcff998f6292f",
   "18c25b635de38ea9",
   "cf2ebcc43d2263ea",
-  "21fccde945d92b15"
+  "21fccde945d92b15",
+  "11ebd61db26160e1"
  ],
- "last_kind": "qissa"
+ "last_kind": "quran"
 }
