@@ -152,10 +152,10 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Ayah,Tajawal,104,&H0039C8FF,&H00F2F2F2,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,4,2,5,70,70,0,1
+Style: Ayah,Amiri,92,&H0039C8FF,&H00F2F2F2,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,4,2,5,70,70,0,1
 Style: Trj,Tajawal,46,&H00B6FFB6,&H000000FF,&H00000000,&H8A000000,0,0,0,0,100,100,0,0,1,3,1,2,60,60,150,1
-Style: Shr,Tajawal,58,&H00D6C9A6,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,220,1
-Style: Calm,Tajawal,56,&H00FFFFFF,&H00000000,&H00101010,&H8A000000,0,0,0,0,0,100,100,0,0,1,2,2,2,70,70,300,1
+Style: Shr,Amiri,56,&H00D6C9A6,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,220,1
+Style: Calm,Amiri,54,&H00FFFFFF,&H00000000,&H00101010,&H8A000000,0,0,0,0,0,100,100,0,0,1,2,2,2,70,70,300,1
 Style: Hdr,Amiri Quran,60,&H009AD8FF,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,2,8,60,60,90,1
 
 [Events]
@@ -343,7 +343,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         # ترويسة السورة أول ٣٫٥ ثانية
         events.append({"style": "Hdr",
                        "text": f"{sname} • {rev}",
-                       "start": 0.0, "end": 3.5})
+                       "start": 0.0, "end": 1.35})
 
         if tts_recite:
             rec_name = "بصوت نُور"
@@ -362,7 +362,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 # مقاطع قصيرة ثنائية اللغة متتابعة — أسلوب القنوات الهادئة
                 _ar_w = a["text"].split()
                 _en_w = _en_txt.get(a["numberInSurah"], "").split()
-                _nfr = max(1, min(3, len(_ar_w) // 6 + 1))
+                _nfr = max(1, min(8, round(d / 4.5)))
                 _lw = max(1, len(_ar_w))
                 for _f in range(_nfr):
                     _a0 = _f * len(_ar_w) // _nfr
@@ -382,9 +382,13 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 events.append({"style": "Ayah",
                                "text": f"{a['text']} ﴿{_ar_num(a['numberInSurah'])}﴾",
                                "start": off, "end": off + d})
-            sc = _scene_media(i, spec, workdir, spec["id"], d)
-            sc.update(start=off, end=off + d, frame=True)
-            scene_list.append(sc)
+            _nsc = max(1, min(4, int(d // 7)))
+            for _si in range(_nsc):
+                _s0 = off + d * _si / _nsc
+                _s1 = off + d * (_si + 1) / _nsc
+                sc = _scene_media(i + _si, spec, workdir, spec["id"], _s1 - _s0)
+                sc.update(start=_s0, end=_s1, frame=_si == 0)
+                scene_list.append(sc)
             off += d
             if kind == "tafsir":
                 r = synthesize_line(
@@ -397,18 +401,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                                    "start": off + ch["start"], "end": off + ch["end"]})
                 off += r["duration"] + 0.12
                 wavs.append(_silence(workdir / f"sp{i}.wav", 0.12))
-        # سطر الترجمة للمقطع كله (قراءة عالمية)
-        try:
-            en = _get_json(f"{APIQ}/surah/{spec['surah']}/en.sahih")["ayahs"]
-            en_sel = [a["text"] for a in en
-                      if spec["frm"] <= a["numberInSurah"] <= spec["to"]]
-            total = off
-            for i, et in enumerate(en_sel):
-                s = total * i / max(1, len(en_sel))
-                e = total * (i + 1) / max(1, len(en_sel))
-                events.append({"style": "Trj", "text": et, "start": s, "end": e})
-        except Exception:
-            pass
+        # الترجمة الإنجليزية بقت مدمجة سطر-بسطر داخل الكابتشن الهادئ
         ep_id = f"noor-{spec['id']}-{reciter.split('.')[-1]}"
     else:  # dua / hadith / adhkar / info من المخزون المحلي الصحيح
         stock = json.loads((settings.ROOT / "content" / "din_stock.json")
