@@ -108,6 +108,13 @@ def _good_title(title: str) -> bool:
     return not any(b in t for b in BAD_TITLES)
 
 
+def _relevant(text: str, query: str) -> bool:
+    """عنوان اللقطة لازم يشارك الاستعلام كلمة حقيقية — لا وثائقيات عشوائية."""
+    t = (text or "").lower()
+    words = [w for w in re.split(r"[^a-z]+", query.lower()) if len(w) >= 4]
+    return any(w in t for w in words)
+
+
 def _commons_candidates(query: str) -> list:
     try:
         r = requests.get(
@@ -123,7 +130,8 @@ def _commons_candidates(query: str) -> list:
             ii = (p.get("imageinfo") or [{}])[0]
             if ((ii.get("mime") or "").startswith("video")
                     and 500_000 < ii.get("size", 1 << 30) < MAX_DL
-                    and _good_title(p.get("title", ""))):
+                    and _good_title(p.get("title", ""))
+                    and _relevant(p.get("title", ""), query)):
                 out.append(ii)
         return sorted(out, key=lambda x: -x.get("size", 0))[:3]
     except Exception:
@@ -143,6 +151,10 @@ def _ia_candidates(query: str) -> list:
                 continue
             meta = requests.get(f"https://archive.org/metadata/{d['identifier']}",
                                 headers=UA, timeout=20).json()
+            _mt = (meta.get("metadata") or {}).get("title", "")
+            if not _relevant(_mt, query) and not _relevant(d["identifier"],
+                                                           query):
+                continue  # وثائقي عشوائي عن شخص/حدث لا علاقة له بالمشهد
             for f in meta.get("files", []):
                 if f["name"].endswith(".mp4") \
                         and 500_000 < int(f.get("size", 1 << 30)) < MAX_DL:
@@ -162,7 +174,8 @@ def _nasa_candidates(query: str) -> list:
         out = []
         for it in r["collection"]["items"][:4]:
             d = it["data"][0]
-            if not _good_title(d.get("title", "")):
+            if not _good_title(d.get("title", "")) \
+                    or not _relevant(d.get("title", ""), query):
                 continue
             m = requests.get(
                 f"{NASA}/archive/{requests.utils.quote(d['nasa_id'])}",
