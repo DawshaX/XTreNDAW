@@ -555,6 +555,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789499912.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789499912.png"
    }
+  },
+  "noor-dua-30-r3": {
+   "title": "دعاء: اللَّهُمَّ إِنِّي أَسْأَلُكَ يَا اللَّهُ…",
+   "fingerprint": "27d6fcdabb229fce",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 34.17,
+   "at": "2026-09-15 20:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789503744.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789503744.png"
+   }
   }
  },
  "fingerprints": [
@@ -611,7 +622,8 @@
   "18c25b635de38ea9",
   "cf2ebcc43d2263ea",
   "21fccde945d92b15",
-  "11ebd61db26160e1"
+  "11ebd61db26160e1",
+  "27d6fcdabb229fce"
  ],
- "last_kind": "quran"
+ "last_kind": "dua"
 }
