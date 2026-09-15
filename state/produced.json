@@ -522,6 +522,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789472101.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789472101.png"
    }
+  },
+  "noor-info-52-r3": {
+   "title": "معلومة تُضيء: القراءات القرآنية المتواترة سبع قراءات ب…",
+   "fingerprint": "cf2ebcc43d2263ea",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.47,
+   "at": "2026-09-15 12:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789475856.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789475856.png"
+   }
   }
  },
  "fingerprints": [
@@ -575,7 +586,8 @@
   "9747d1a1a8692b0d",
   "5e6f644549890b16",
   "158fcff998f6292f",
-  "18c25b635de38ea9"
+  "18c25b635de38ea9",
+  "cf2ebcc43d2263ea"
  ],
- "last_kind": "dua"
+ "last_kind": "info"
 }
