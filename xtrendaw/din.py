@@ -152,7 +152,7 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Ayah,Tajawal,104,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,4,2,5,70,70,0,1
+Style: Ayah,Tajawal,104,&H0039C8FF,&H00F2F2F2,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,4,2,5,70,70,0,1
 Style: Trj,Tajawal,46,&H00B6FFB6,&H000000FF,&H00000000,&H8A000000,0,0,0,0,100,100,0,0,1,3,1,2,60,60,150,1
 Style: Shr,Tajawal,58,&H00D6C9A6,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,220,1
 Style: Hdr,Amiri Quran,60,&H009AD8FF,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,2,8,60,60,90,1
@@ -492,8 +492,15 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         txt = ev["text"].replace("\n", " ")
         st = ev["style"]
         if st == "Ayah":
-            # دخول نبضي ناعم: الآية تتنفّس للداخل بدل القطع الناشف
+            # دخول نبضي ناعم + كاراوكي: الكلمة تتوهج دهبي لما تتقال
             fx = "{\\fad(320,240)\\fscx88\\fscy88\\t(80,560,\\fscx100\\fscy100)}"
+            _ws = txt.split()
+            if len(_ws) > 1:
+                _dur = max(1, int((ev["end"] - ev["start"]) * 100))
+                _tot = sum(max(1, len(w)) for w in _ws) or 1
+                txt = " ".join(
+                    "{\\kf%d}%s" % (max(8, _dur * max(1, len(w)) // _tot), w)
+                    for w in _ws)
         elif st == "Hdr":
             fx = "{\\fad(600,400)}"
         elif st == "WM":

@@ -77,12 +77,39 @@ def _series(kind: str) -> list[tuple[str, dict]]:
     return [(f"{i}", {"idx": i}) for i in range(len(items))]
 
 
-def _coverage_order(kind: str, n: int) -> list[int]:
-    """ترتيب شبه عشوائي ثابت لكل المخزون — تغطية 100% قبل أي تكرار.
-    (إصلاح عيب قديم: خطوة ثابتة كانت بتلف على 9 عناصر فقط من 63 معلومة)"""
+# آيات ذهبية — الأقرب للقلب والأشهر: تتقدم على الترتيب العادي
+GOLD_AYAHS = [
+    (55, 1), (55, 13), (55, 26), (55, 46), (55, 60),      # الرحمن
+    (67, 1), (67, 3),                                     # الملك
+    (93, 1), (93, 5), (93, 9), (94, 1),                   # الضحى والشرح
+    (2, 152), (2, 156), (2, 186), (2, 255), (2, 285),     # البقرة: اذكروني/الصبر/الدعاء/الكرسي/آمن الرسول
+    (3, 139), (3, 159), (13, 28), (39, 53), (9, 40),      # لا تهن/فبما رحمة/تطمئن القلوب/لا يقنط/لا تحزن
+    (20, 25), (14, 7), (12, 87), (21, 107), (19, 96),     # اشرح لي/لأزيدنكم/لا تيأسوا/رحمة للعالمين/ودّ المؤمنين
+    (57, 22), (65, 2), (11, 88), (29, 69), (10, 62),      # المصيبة/يتق يجعل مخرجا/توكلت/يجاهدون/أولياء الله
+    (112, 1), (113, 1), (114, 1), (1, 1),                 # الإخلاص والمعوذتان والفاتحة
+    (17, 80), (25, 74), (35, 2), (7, 56), (4, 69),        # مدخل صدق/قرة أعين/الرحمة/لا تفسدوا/مع المنعمين
+]
+
+
+def _golden_keys(kind: str) -> set:
+    """مفاتيح النوافذ اللي فيها آية ذهبية."""
+    keys = set()
+    if kind not in ("quran", "tafsir"):
+        return keys
+    for w in quran_windows():
+        for su, ay in GOLD_AYAHS:
+            if w["surah"] == su and w["frm"] <= ay <= w["to"]:
+                keys.add(f"s{w['surah']:03d}-{w['frm']}")
+    return keys
+
+
+def _coverage_order(kind: str, keys: list) -> list[int]:
+    """الذهبي أولًا ثم تغطية 100% شبه عشوائية — بلا تكرار قبل استكمال الكل."""
     import hashlib
-    return sorted(range(n), key=lambda i: hashlib.sha1(
-        f"{kind}:{i}".encode()).hexdigest())
+    gold = _golden_keys(kind)
+    return sorted(range(len(keys)), key=lambda i: (
+        0 if keys[i] in gold else 1,
+        hashlib.sha1(f"{kind}:{i}".encode()).hexdigest()))
 
 
 def next_episode() -> dict:
@@ -99,7 +126,7 @@ def next_episode() -> dict:
     for k in range(len(order)):
         kind = order[(start + k) % len(order)]
         series = _series(kind)
-        for i in _coverage_order(kind, len(series)):
+        for i in _coverage_order(kind, [k for k, _ in series]):
             key, spec = series[i]
             lk = f"{kind}:{key}"
             if lk in done or skip.get(lk, 0) >= 2:
