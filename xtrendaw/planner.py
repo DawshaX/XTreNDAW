@@ -123,6 +123,17 @@ def next_episode() -> dict:
     order = KIND_ROTATION[:]
     _rnd.Random(led["n"] // len(KIND_ROTATION)).shuffle(order)
     start = (order.index(last) + 1) % len(order) if last in order else 0
+    # 🎛 زر الأدمن: state/force_kind.json يقدّم نوعًا واحدًا لمرة واحدة (بلا تكرار)
+    _fkp = LEDGER.with_name("force_kind.json")
+    if _fkp.exists():
+        try:
+            _fk = _fkp.read_text(encoding="utf-8").strip().strip('"')
+            _fkp.unlink(missing_ok=True)
+            if _fk in KIND_ROTATION:
+                order = [_fk] + [k for k in order if k != _fk]
+                start = 0
+        except Exception:
+            pass
     for k in range(len(order)):
         kind = order[(start + k) % len(order)]
         series = _series(kind)
