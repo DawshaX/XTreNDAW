@@ -401,6 +401,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789428132.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789428132.png"
    }
+  },
+  "noor-hadith-42-r3": {
+   "title": "قال رسول الله ﷺ: الراحمون يرحمهم الرحمن، ارحموا من في الأ…",
+   "fingerprint": "aebb1adf58bb4ca3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 32.41,
+   "at": "2026-09-15 00:25",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789431920.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789431920.png"
+   }
   }
  },
  "fingerprints": [
@@ -443,7 +454,8 @@
   "d3788c8a537fc45f",
   "bbadec96800612b6",
   "2f679d5bc4fd1e9a",
-  "f11a1737dc80f9ca"
+  "f11a1737dc80f9ca",
+  "aebb1adf58bb4ca3"
  ],
- "last_kind": "quran"
+ "last_kind": "hadith"
 }
