@@ -489,6 +489,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789459790.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789459790.png"
    }
+  },
+  "noor-tafsir-s019-93-r8": {
+   "title": "سُورَةُ مَرۡيَمَ ﴿93–95﴾ — علي الحذيفي",
+   "fingerprint": "5e6f644549890b16",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts019-93-hudhaify.mp4",
+   "duration": 47.17,
+   "at": "2026-09-15 09:14",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789463637.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789463637.png"
+   }
   }
  },
  "fingerprints": [
@@ -539,7 +550,8 @@
   "f5fb2f6e3e2513f1",
   "91a0f460a71aa224",
   "e83c6b7cd8bf293c",
-  "9747d1a1a8692b0d"
+  "9747d1a1a8692b0d",
+  "5e6f644549890b16"
  ],
- "last_kind": "quran"
+ "last_kind": "tafsir"
 }
