@@ -566,6 +566,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789503744.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789503744.png"
    }
+  },
+  "noor-info-35-r3": {
+   "title": "معلومة تُضيء: قال تعالى: ﴿وَأَنْزَلْنَا الْحَدِيدَ فِي…",
+   "fingerprint": "76018090f4955d89",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.56,
+   "at": "2026-09-15 21:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789507581.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789507581.png"
+   }
   }
  },
  "fingerprints": [
@@ -623,7 +634,8 @@
   "cf2ebcc43d2263ea",
   "21fccde945d92b15",
   "11ebd61db26160e1",
-  "27d6fcdabb229fce"
+  "27d6fcdabb229fce",
+  "76018090f4955d89"
  ],
- "last_kind": "dua"
+ "last_kind": "info"
 }
