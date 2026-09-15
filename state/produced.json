@@ -456,6 +456,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789447173.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789447173.png"
    }
+  },
+  "noor-qissa-ibrahim-nar-r8": {
+   "title": "سُورَةُ الأَنبِيَاءِ ﴿68–70﴾ — علي الحذيفي",
+   "fingerprint": "91a0f460a71aa224",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ibrahim-nar-hudhaify.mp4",
+   "duration": 56.22,
+   "at": "2026-09-15 05:44",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789451049.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789451049.png"
+   }
   }
  },
  "fingerprints": [
@@ -503,7 +514,8 @@
   "58d8020ec2d96d56",
   "d764178e105801a1",
   "652cf4251d6b296e",
-  "f5fb2f6e3e2513f1"
+  "f5fb2f6e3e2513f1",
+  "91a0f460a71aa224"
  ],
- "last_kind": "info"
+ "last_kind": "qissa"
 }
