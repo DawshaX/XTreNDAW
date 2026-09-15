@@ -434,6 +434,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789439544.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789439544.png"
    }
+  },
+  "noor-dua-27-r3": {
+   "title": "دعاء: رَبِّ هَبْ لِي مِنَ الصَّالِحِينَ.…",
+   "fingerprint": "652cf4251d6b296e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 23.77,
+   "at": "2026-09-15 03:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789443352.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789443352.png"
+   }
   }
  },
  "fingerprints": [
@@ -479,7 +490,8 @@
   "f11a1737dc80f9ca",
   "aebb1adf58bb4ca3",
   "58d8020ec2d96d56",
-  "d764178e105801a1"
+  "d764178e105801a1",
+  "652cf4251d6b296e"
  ],
- "last_kind": "tafsir"
+ "last_kind": "dua"
 }
