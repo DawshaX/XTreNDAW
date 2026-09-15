@@ -478,6 +478,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789454863.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789454863.png"
    }
+  },
+  "noor-quran-s012-85-r7": {
+   "title": "سُورَةُ يُوسُفَ ﴿85–86﴾ — أيمن سويد",
+   "fingerprint": "9747d1a1a8692b0d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs012-85-aymanswoaid.mp4",
+   "duration": 64.34,
+   "at": "2026-09-15 08:09",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789459790.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789459790.png"
+   }
   }
  },
  "fingerprints": [
@@ -527,7 +538,8 @@
   "652cf4251d6b296e",
   "f5fb2f6e3e2513f1",
   "91a0f460a71aa224",
-  "e83c6b7cd8bf293c"
+  "e83c6b7cd8bf293c",
+  "9747d1a1a8692b0d"
  ],
- "last_kind": "adhkar"
+ "last_kind": "quran"
 }
