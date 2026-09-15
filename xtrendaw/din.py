@@ -431,6 +431,11 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                                     workdir / "shr", name=f"t{i}",
                                     rate="-8%", pitch="-2Hz")
                 wavs.append(r["wav"])
+                # مشاهد حية تغطي شرح المفسر — بدونها الفيديو كان بيتقصّ نص الجملة
+                sc = _scene_media(i + 10, spec, workdir, spec["id"],
+                                  r["duration"])
+                sc.update(start=off, end=off + r["duration"], frame=False)
+                scene_list.append(sc)
                 for ch in captions.chunk_words(r["words"]):
                     events.append({"style": "Shr", "text": ch["text"],
                                    "start": off + ch["start"], "end": off + ch["end"]})
