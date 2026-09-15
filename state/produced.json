@@ -445,6 +445,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789443352.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789443352.png"
    }
+  },
+  "noor-info-2-r3": {
+   "title": "معلومة تُضيء: أول ما نزل من القرآن: ﴿اقْرَأْ بِاسْمِ ر…",
+   "fingerprint": "f5fb2f6e3e2513f1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.75,
+   "at": "2026-09-15 04:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789447173.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789447173.png"
+   }
   }
  },
  "fingerprints": [
@@ -491,7 +502,8 @@
   "aebb1adf58bb4ca3",
   "58d8020ec2d96d56",
   "d764178e105801a1",
-  "652cf4251d6b296e"
+  "652cf4251d6b296e",
+  "f5fb2f6e3e2513f1"
  ],
- "last_kind": "dua"
+ "last_kind": "info"
 }
