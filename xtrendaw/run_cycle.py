@@ -125,6 +125,17 @@ def _produce(topic: dict, upload: bool = True) -> int:
         except Exception: pass
         return 1
 
+    # 📸 ورقة إطارات للحلقة — مراقبة بصرية دائمة على GitHub (state/latest_sheet.jpg)
+    try:
+        from . import sheetshot
+
+        _sh = sheetshot.shoot(r["video"], topic.get("_kind", "know"),
+                              topic["title_ar"])
+        if _sh:
+            _log("📸 ورقة الإطارات اتصورّت واتحفظت في state")
+    except Exception as e:
+        _log(f"⚠ ورقة الإطارات اتخطت: {str(e)[:80]}")
+
     urls = {}
     if upload and github_store.available():
         try:
