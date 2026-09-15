@@ -588,6 +588,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789511411.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789511411.png"
    }
+  },
+  "noor-tafsir-s009-37-r8": {
+   "title": "سُورَةُ التَّوۡبَةِ ﴿37–37﴾ — علي الحذيفي",
+   "fingerprint": "b91e5cdfe6e2cfc2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts009-37-hudhaify.mp4",
+   "duration": 73.17,
+   "at": "2026-09-15 23:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789515460.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789515460.png"
+   }
   }
  },
  "fingerprints": [
@@ -647,7 +658,8 @@
   "11ebd61db26160e1",
   "27d6fcdabb229fce",
   "76018090f4955d89",
-  "67bc2a5c9e7f91d1"
+  "67bc2a5c9e7f91d1",
+  "b91e5cdfe6e2cfc2"
  ],
- "last_kind": "hadith"
+ "last_kind": "tafsir"
 }
