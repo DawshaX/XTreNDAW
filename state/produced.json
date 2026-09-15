@@ -577,6 +577,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789507581.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789507581.png"
    }
+  },
+  "noor-hadith-32-r3": {
+   "title": "قال رسول الله ﷺ: لا تغضب.…",
+   "fingerprint": "67bc2a5c9e7f91d1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 24.93,
+   "at": "2026-09-15 22:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789511411.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789511411.png"
+   }
   }
  },
  "fingerprints": [
@@ -635,7 +646,8 @@
   "21fccde945d92b15",
   "11ebd61db26160e1",
   "27d6fcdabb229fce",
-  "76018090f4955d89"
+  "76018090f4955d89",
+  "67bc2a5c9e7f91d1"
  ],
- "last_kind": "info"
+ "last_kind": "hadith"
 }
