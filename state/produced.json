@@ -500,6 +500,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789463637.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789463637.png"
    }
+  },
+  "noor-hadith-13-r3": {
+   "title": "قال رسول الله ﷺ: لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ ل…",
+   "fingerprint": "158fcff998f6292f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 28.23,
+   "at": "2026-09-15 10:17",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789467461.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789467461.png"
+   }
   }
  },
  "fingerprints": [
@@ -551,7 +562,8 @@
   "91a0f460a71aa224",
   "e83c6b7cd8bf293c",
   "9747d1a1a8692b0d",
-  "5e6f644549890b16"
+  "5e6f644549890b16",
+  "158fcff998f6292f"
  ],
- "last_kind": "tafsir"
+ "last_kind": "hadith"
 }
