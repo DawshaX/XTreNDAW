@@ -423,6 +423,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789435744.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789435744.png"
    }
+  },
+  "noor-tafsir-s037-97-r8": {
+   "title": "سُورَةُ الصَّافَّاتِ ﴿97–99﴾ — علي الحذيفي",
+   "fingerprint": "d764178e105801a1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts037-97-hudhaify.mp4",
+   "duration": 48.07,
+   "at": "2026-09-15 02:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789439544.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789439544.png"
+   }
   }
  },
  "fingerprints": [
@@ -467,7 +478,8 @@
   "2f679d5bc4fd1e9a",
   "f11a1737dc80f9ca",
   "aebb1adf58bb4ca3",
-  "58d8020ec2d96d56"
+  "58d8020ec2d96d56",
+  "d764178e105801a1"
  ],
- "last_kind": "adhkar"
+ "last_kind": "tafsir"
 }
