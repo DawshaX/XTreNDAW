@@ -412,6 +412,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789431920.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789431920.png"
    }
+  },
+  "noor-adhkar-25-r3": {
+   "title": "مِن أذكار المسلم: أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي …",
+   "fingerprint": "58d8020ec2d96d56",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 27.17,
+   "at": "2026-09-15 01:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789435744.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789435744.png"
+   }
   }
  },
  "fingerprints": [
@@ -455,7 +466,8 @@
   "bbadec96800612b6",
   "2f679d5bc4fd1e9a",
   "f11a1737dc80f9ca",
-  "aebb1adf58bb4ca3"
+  "aebb1adf58bb4ca3",
+  "58d8020ec2d96d56"
  ],
- "last_kind": "hadith"
+ "last_kind": "adhkar"
 }
