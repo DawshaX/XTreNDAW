@@ -610,6 +610,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789519255.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789519255.png"
    }
+  },
+  "noor-qissa-kahf-r7": {
+   "title": "سُورَةُ الكَهۡفِ ﴿9–11﴾ — أيمن سويد",
+   "fingerprint": "79ac123d133b0bde",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kahf-aymanswoaid.mp4",
+   "duration": 79.63,
+   "at": "2026-09-16 02:14",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789524864.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789524864.png"
+   }
   }
  },
  "fingerprints": [
@@ -671,7 +682,8 @@
   "76018090f4955d89",
   "67bc2a5c9e7f91d1",
   "b91e5cdfe6e2cfc2",
-  "607b77d9199dea4c"
+  "607b77d9199dea4c",
+  "79ac123d133b0bde"
  ],
- "last_kind": "adhkar"
+ "last_kind": "qissa"
 }
