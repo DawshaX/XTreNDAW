@@ -654,6 +654,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789537529.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789537529.png"
    }
+  },
+  "noor-info-48-r3": {
+   "title": "معلومة تُضيء: قصة موسى هي أكثر القصص تكرارًا في القرآن…",
+   "fingerprint": "acbc31a681e53a44",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.9,
+   "at": "2026-09-16 06:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789541343.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789541343.png"
+   }
   }
  },
  "fingerprints": [
@@ -719,7 +730,8 @@
   "79ac123d133b0bde",
   "c7ec7da1fa4258d7",
   "650b60d053ec63f3",
-  "bc4f167e8620b9db"
+  "bc4f167e8620b9db",
+  "acbc31a681e53a44"
  ],
- "last_kind": "tafsir"
+ "last_kind": "info"
 }
