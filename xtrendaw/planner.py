@@ -213,7 +213,10 @@ def _topic(kind: str, key: str, spec: dict, rec: int, n: int) -> dict:
     else:
         st = _stock()
         lists = {"dua": ("duas", "دعاء"), "adhkar": ("adhkar", "ذِكر"),
-                 "hadith": ("hadiths", "حديث"), "info": ("info", "معلومة")}
+                 "hadith": ("hadiths", "حديث"), "info": ("info", "معلومة"),
+                 "seerah": ("seerah", "سيرة"), "asma": ("asma", "اسم"),
+                 "kawn": ("kawn", "كون"), "akhira": ("akhira", "آخرة"),
+                 "akhlaq": ("akhlaq", "خُلق")}
         lname, lab = lists[kind]
         item = st[lname][spec["idx"] % len(st[lname])]
         title = f"{lab}: {item['text'][:42]}…"
