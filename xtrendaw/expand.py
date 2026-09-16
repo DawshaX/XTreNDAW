@@ -253,8 +253,10 @@ def duas_batch() -> list[dict]:
         if k in seen:
             continue
         seen.add(k)
+        _en = _clean(d.get("english") or "")
         out.append({"text": a,
-                    "src": f"دعاء مأثور — {d.get('category', 'أدعية')}"})
+                    "src": f"دعاء مأثور — {d.get('category', 'أدعية')}",
+                    **({"en": _en} if _en else {})})
     st["h"] = list(seen)
     _save_seen(st)
     return out

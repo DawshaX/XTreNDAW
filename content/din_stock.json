@@ -14,7 +14,8 @@
   },
   {
    "text": "اللهم أعني على ذكرك وشكرك وحسن عبادتك.",
-   "src": "أبو داود"
+   "src": "أبو داود",
+   "en": "O Allah, help me to remember You, to thank You, and to worship You in the best manner."
   },
   {
    "text": "يا مقلب القلوب ثبت قلبي على دينك.",
@@ -50,7 +51,8 @@
   },
   {
    "text": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ.",
-   "src": "البقرة 201"
+   "src": "البقرة 201",
+   "en": "Our Lord, give us good in this world and good in the Hereafter, and protect us from the torment of the Fire."
   },
   {
    "text": "رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا.",
@@ -70,7 +72,8 @@
   },
   {
    "text": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا.",
-   "src": "الفرقان 74"
+   "src": "الفرقان 74",
+   "en": "Our Lord, grant us comfort in our spouses and offspring, and make us a model for the righteous."
   },
   {
    "text": "رَبَّنَا اغْفِرْ لَنَا ذُنُوبَنَا وَإِسْرَافَنَا فِي أَمْرِنَا.",
@@ -94,7 +97,8 @@
   },
   {
    "text": "رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي.",
-   "src": "طه 25-26"
+   "src": "طه 25-26",
+   "en": "My Lord, expand for me my breast and ease for me my task."
   },
   {
    "text": "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ.",
@@ -158,7 +162,8 @@
   },
   {
    "text": "اللَّهُمَّ اجْعَلْ خَيْرَ عُمُرِي آخِرَهُ، وَخَيْرَ عَمَلِي خَوَاتِيمَهُ، وَخَيْرَ أَيَّامِي يَوْمَ أَلْقَاكَ.",
-   "src": "رواه الطبراني"
+   "src": "رواه الطبراني",
+   "en": "O Allah, make the best of my life its end, the best of my deeds their conclusion, and the best of my days the day I meet You."
   },
   {
    "text": "رضيت بالله ربًا، وبالإسلام دينًا، وبمحمد ﷺ نبيًا.",
@@ -374,7 +379,8 @@
   },
   {
    "text": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
-   "src": "البقرة 201 — أكثر دعاء النبي ﷺ"
+   "src": "البقرة 201 — أكثر دعاء النبي ﷺ",
+   "en": "Our Lord, give us good in this world and good in the Hereafter, and protect us from the torment of the Fire."
   },
   {
    "text": "رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا",
@@ -382,11 +388,13 @@
   },
   {
    "text": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً",
-   "src": "آل عمران 8"
+   "src": "آل عمران 8",
+   "en": "Our Lord, do not let our hearts deviate after You have guided us, and grant us mercy from Yourself."
   },
   {
    "text": "رَبِّ هَبْ لِي مِن لَّدُنكَ ذُرِّيَّةً طَيِّبَةً إِنَّكَ سَمِيعُ الدُّعَاءِ",
-   "src": "آل عمران 38 — دعاء زكريا"
+   "src": "آل عمران 38 — دعاء زكريا",
+   "en": "My Lord, grant me good offspring from Yourself. Indeed, You are the Hearer of supplication."
   },
   {
    "text": "رَبَّنَا تَقَبَّلْ مِنَّا إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ",
@@ -402,11 +410,13 @@
   },
   {
    "text": "رَّبِّ زِدْنِي عِلْمًا",
-   "src": "طه 114 — ما أُمر النبي ﷺ بطلب زيادة إلا العلم"
+   "src": "طه 114 — ما أُمر النبي ﷺ بطلب زيادة إلا العلم",
+   "en": "My Lord, increase me in knowledge."
   },
   {
    "text": "رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي",
-   "src": "طه 25-26 — دعاء موسى"
+   "src": "طه 25-26 — دعاء موسى",
+   "en": "My Lord, expand for me my breast and ease for me my task."
   },
   {
    "text": "لَّا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ",
@@ -430,7 +440,8 @@
   },
   {
    "text": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ",
-   "src": "الفرقان 74 — دعاء عباد الرحمن"
+   "src": "الفرقان 74 — دعاء عباد الرحمن",
+   "en": "Our Lord, grant us comfort in our spouses and offspring, and make us a model for the righteous."
   },
   {
    "text": "رَّبِّ اغْفِرْ وَارْحَمْ وَأَنتَ خَيْرُ الرَّاحِمِينَ",
@@ -446,7 +457,8 @@
   },
   {
    "text": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ",
-   "src": "آل عمران 173 — قالها إبراهيم في النار ومحمد ﷺ في حمراء الأسد"
+   "src": "آل عمران 173 — قالها إبراهيم في النار ومحمد ﷺ في حمراء الأسد",
+   "en": "Sufficient for us is Allah, and He is the best Disposer of affairs."
   },
   {
    "text": "رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا",
@@ -686,7 +698,8 @@
   },
   {
    "text": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
-   "src": "دعاء مأثور — after_prayer"
+   "src": "دعاء مأثور — after_prayer",
+   "en": "Our Lord, give us good in this world and good in the Hereafter, and protect us from the torment of the Fire."
   },
   {
    "text": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
@@ -742,7 +755,8 @@
   },
   {
    "text": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ",
-   "src": "دعاء مأثور — distress"
+   "src": "دعاء مأثور — distress",
+   "en": "Sufficient for us is Allah, and He is the best Disposer of affairs."
   },
   {
    "text": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
@@ -838,7 +852,8 @@
   },
   {
    "text": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
-   "src": "دعاء مأثور — marriage"
+   "src": "دعاء مأثور — marriage",
+   "en": "Our Lord, grant us comfort in our spouses and offspring, and make us a model for the righteous."
   },
   {
    "text": "بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ",

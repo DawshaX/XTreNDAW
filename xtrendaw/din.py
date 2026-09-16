@@ -448,6 +448,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         "ar-EG-SalmaNeural", "ar-SA-ZariyahNeural",
         "ar-LB-LaylaNeural", "ar-AE-FatimaNeural"][int(_tm.time() / 3600) % 4]
     workdir.mkdir(parents=True, exist_ok=True)
+    chip = ""
     reciter, rec_name, kbps = RECITERS[reciter_idx % len(RECITERS)]
     from . import state as _state
     _bad = _state.reciter_badlist()
@@ -672,6 +673,23 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         events.append({"style": "Trj", "text": item["src"],
                        "start": base_off, "end": base_off + r["duration"]})
         off = base_off + r["duration"]
+        chip = label
+        # 🌍 دبلجة للعالم: نفس النص بإنجليزي واضح + كابتشن كلمات
+        _en = (item.get("en") or "").strip()
+        if _en:
+            wavs.append(_silence(workdir / "g_en.wav", 0.4))
+            off += 0.4
+            er = synthesize_line(_en, "en", workdir / "vox", name="endub",
+                                 rate="-4%")
+            wavs.append(er["wav"])
+            for ch in captions.chunk_words(er["words"], size=4):
+                events.append({"style": "Shr", "text": ch["text"],
+                               "start": off + ch["start"],
+                               "end": off + ch["end"]})
+            events.append({"style": "Trj",
+                           "text": "English 🌍 — XDAW NOVA",
+                           "start": off, "end": off + er["duration"]})
+            off += er["duration"]
         fayda = {
             "dua": "الدعاء عبادةٌ تُشرَح بها الصدور ويُرَدّ بها البلاء — "
                    "اجعله وَردَك اليوم.",
@@ -726,7 +744,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                         "calm desert dawn", "stars night sky"],
         }.get(kind, ["mosque night lights", "kaaba mecca", "quran book candle",
                      "praying hands sky", "dawn mountains peace"])
-        n = 3
+        n = 6  # مونتاج حي: قصات أسرع ومقاطع أكثر
         for i in range(n):
             s = off * i / n
             e = off * (i + 1) / n
@@ -744,8 +762,12 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     INTRO = 1.4
     bl = scenes._brand_layer(workdir / "ov" / "brand.png")
     fr_ov = scenes.frame_overlay(workdir / "ov" / "frame.png")
+    _stk = (scenes.sticker_overlay(workdir / "ov" / "sticker.png", chip)
+            if chip else None)
     for sc in scene_list:
         sc["overlays"] = [bl] + (sc.get("overlays") or [])
+        if _stk is not None:
+            sc["overlays"].append(_stk)
         # الإطار الذهبي هوية الأنواع الجريئة فقط — الهادئة تتنفس بدونه
         if sc.get("frame") and kind in NEON_KINDS:
             sc["overlays"].append(fr_ov)

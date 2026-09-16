@@ -473,6 +473,30 @@ def render_glint(out_path: Path) -> Path:
     return out_path
 
 
+def sticker_overlay(out_path: Path, chip: str = "") -> Path:
+    """ملصق أنيق فوق يسار: شيب النوع + الهاندل — هوية جديدة لكل مشهد."""
+    from . import textrender as _tr
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    f = _tr._font(34)
+    txt = f"@XTreNDAW 🤍 {chip}" if chip else "@XTreNDAW 🤍"
+    shaped = _tr.shape_ar(txt)
+    try:
+        tw = d.textlength(shaped, font=f)
+    except Exception:
+        tw = 380
+    pad, th = 20, 46
+    x0, y0 = 40, 224
+    d.rounded_rectangle([x0, y0, x0 + tw + pad * 2, y0 + th + pad],
+                        radius=26, fill=(10, 12, 20, 168),
+                        outline=(230, 190, 110, 225), width=3)
+    d.text((x0 + pad, y0 + pad - 8), shaped, font=f,
+           fill=(245, 225, 180, 255))
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    layer.save(out_path)
+    return out_path
+
+
 def _brand_layer(out_path: Path) -> Path:
     """طبقة شفافة ثابتة: لوجو XDAW NOVA فوق-يمين + تدرّج سينمائي فوق/تحت
     (يضبط قراءة الكابتشن ويخفي أي علامة مصدر صغيرة)."""
