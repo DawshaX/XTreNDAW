@@ -676,6 +676,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789545164.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789545164.png"
    }
+  },
+  "noor-quran-s013-25-r7": {
+   "title": "سُورَةُ الرَّعۡدِ ﴿25–25﴾ — أيمن سويد",
+   "fingerprint": "db9b59184222e76b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs013-25-aymanswoaid.mp4",
+   "duration": 73.08,
+   "at": "2026-09-16 09:16",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789550174.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789550174.png"
+   }
   }
  },
  "fingerprints": [
@@ -743,7 +754,8 @@
   "650b60d053ec63f3",
   "bc4f167e8620b9db",
   "acbc31a681e53a44",
-  "6bb384458b21468e"
+  "6bb384458b21468e",
+  "db9b59184222e76b"
  ],
- "last_kind": "dua"
+ "last_kind": "quran"
 }
