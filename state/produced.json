@@ -742,6 +742,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789572537.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789572537.png"
    }
+  },
+  "noor-quran-s055-57-r7": {
+   "title": "سُورَةُ الرَّحۡمَٰن ﴿57–60﴾ — أيمن سويد",
+   "fingerprint": "59e07d53f24e4ad9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs055-57-aymanswoaid.mp4",
+   "duration": 60.21,
+   "at": "2026-09-16 16:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789576436.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789576436.png"
+   }
   }
  },
  "fingerprints": [
@@ -815,7 +826,8 @@
   "45f19a8dec8c347e",
   "b0c216b98af8ee9f",
   "b21827be166d99f3",
-  "2e9a5439e60d90ae"
+  "2e9a5439e60d90ae",
+  "59e07d53f24e4ad9"
  ],
  "last_kind": "quran"
 }
