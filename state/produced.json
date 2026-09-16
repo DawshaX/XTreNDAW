@@ -720,6 +720,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789565045.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789565045.png"
    }
+  },
+  "noor-quran-s055-13-r8": {
+   "title": "سُورَةُ الرَّحۡمَٰن ﴿13–16﴾ — علي الحذيفي",
+   "fingerprint": "b21827be166d99f3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs055-13-hudhaify.mp4",
+   "duration": 72.29,
+   "at": "2026-09-16 14:23",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789568587.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789568587.png"
+   }
   }
  },
  "fingerprints": [
@@ -791,7 +802,8 @@
   "db9b59184222e76b",
   "f9202f807b0593ed",
   "45f19a8dec8c347e",
-  "b0c216b98af8ee9f"
+  "b0c216b98af8ee9f",
+  "b21827be166d99f3"
  ],
- "last_kind": "asma"
+ "last_kind": "quran"
 }
