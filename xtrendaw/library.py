@@ -102,18 +102,24 @@ def archive_image(query: str) -> str | None:
 
 
 def nasa_image(query: str) -> str | None:
-    try:
-        r = requests.get("https://images-api.nasa.gov/search",
-                         params={"q": query, "media_type": "image"},
-                         headers=UA, timeout=20).json()
-        for item in r.get("collection", {}).get("items", []):
-            links = item.get("links") or []
-            for l in links:
-                u = l.get("href", "")
-                if u.endswith((".jpg", ".jpeg")) and u not in _used(query):
-                    return u
-    except Exception:
-        pass
+    # مفتاح المستخدم أولًا، ولو رجّع فاضي (مفتاح موقوف) → DEMO_KEY
+    for _k in (settings.get("NASA_API_KEY", ""), None):
+        try:
+            _pr = {"q": query}
+            if _k:
+                _pr["api_key"] = _k
+            r = requests.get("https://images-api.nasa.gov/search",
+                             params=_pr, headers=UA, timeout=20).json()
+            for item in r.get("collection", {}).get("items", []):
+                links = item.get("links") or []
+                for l in links:
+                    u = l.get("href", "")
+                    if u.endswith((".jpg", ".jpeg")) and u not in _used(query):
+                        return u
+            if r.get("collection", {}).get("items"):
+                return None
+        except Exception:
+            continue
     return None
 
 
@@ -149,7 +155,9 @@ def openverse_image(query: str) -> str | None:
             "https://api.openverse.org/v1/images/",
             params={"q": query, "page_size": 12, "mature": "false",
                     "license_type": "all-cc"},
-            headers=UA, timeout=20)
+            headers={**UA, **({"Authorization": f"Bearer {_ovt}"}
+                              if (_ovt := settings.get("OPENVERSE_TOKEN", ""))
+                              else {})}, timeout=20)
         if not r.ok:
             return None
         used = _used(query)
@@ -161,6 +169,54 @@ def openverse_image(query: str) -> str | None:
             if w and w < 900:
                 continue
             return u
+    except Exception:
+        return None
+    return None
+
+
+def pexels_video(query: str) -> str | None:
+    """فيديو حقيقي متحرك من Pexels — مجاني بمفتاح، بلا حقوق."""
+    key = settings.get("PEXELS_API_KEY", "")
+    if not key:
+        return None
+    try:
+        r = requests.get(
+            "https://api.pexels.com/videos/search",
+            params={"query": query, "per_page": 6, "orientation": "portrait"},
+            headers={"Authorization": key}, timeout=25)
+        if not r.ok:
+            return None
+        used = _used(query)
+        vids = r.json().get("videos") or []
+        for v in vids:
+            files = sorted(v.get("video_files") or [],
+                           key=lambda f: f.get("width") or 0, reverse=True)
+            for f in files:
+                u = f.get("link") or ""
+                if u and u not in used and (f.get("width") or 0) >= 720:
+                    return u
+    except Exception:
+        return None
+    return None
+
+
+def freesound_ambience(query: str) -> str | None:
+    """صوت طبيعة هادئ CC0 من Freesound — أجواء بلا موسيقى."""
+    cid = settings.get("FREESOUND_ID", "")
+    sec = settings.get("FREESOUND_SECRET", "")
+    if not cid or not sec:
+        return None
+    try:
+        r = requests.get(
+            "https://freesound.org/apiv2/search/text/",
+            params={"query": query, "filter": 'license:"Creative Commons 0"',
+                    "fields": "id,name,previews,avg_rating",
+                    "page_size": 8, "sort": "rating_desc",
+                    "token": sec}, timeout=25)
+        for s in r.json().get("results") or []:
+            u = (s.get("previews") or {}).get("preview-hq-mp3") or ""
+            if u:
+                return u
     except Exception:
         return None
     return None
@@ -181,7 +237,7 @@ def find_image(query: str) -> str | None:
 
 def find_video(query: str) -> str | None:
     """فيديو مجاني (أرشيف/Pixabay) — يُستدعى وقت الحاجة للمشاهد المتحركة."""
-    for src in (lambda q: pixabay_media(q, video=True),):
+    for src in (pexels_video, lambda q: pixabay_media(q, video=True),):
         url = src(query)
         if url:
             _mark_used(query, url)

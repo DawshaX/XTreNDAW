@@ -24,6 +24,11 @@ jobs:
       GITHUB_REPOSITORY: ${{ github.repository }}
       # مفاتيح اختيارية (لو مفيهاش المصنع بيكمّل إنتاج ويرفع، والنشر بيستنى)
       PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
+      NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
+      OPENVERSE_TOKEN: ${{ secrets.OPENVERSE_TOKEN }}
+      FREESOUND_ID: ${{ secrets.FREESOUND_ID }}
+      FREESOUND_SECRET: ${{ secrets.FREESOUND_SECRET }}
       LLM_API_BASE: ${{ secrets.LLM_API_BASE }}
       LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
       YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
