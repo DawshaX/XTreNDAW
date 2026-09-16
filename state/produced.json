@@ -687,6 +687,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789550174.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789550174.png"
    }
+  },
+  "noor-qissa-ukhdud-r8": {
+   "title": "سُورَةُ البُرُوجِ ﴿4–9﴾ — علي الحذيفي",
+   "fingerprint": "f9202f807b0593ed",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ukhdud-hudhaify.mp4",
+   "duration": 73.47,
+   "at": "2026-09-16 11:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789557344.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789557344.png"
+   }
   }
  },
  "fingerprints": [
@@ -755,7 +766,8 @@
   "bc4f167e8620b9db",
   "acbc31a681e53a44",
   "6bb384458b21468e",
-  "db9b59184222e76b"
+  "db9b59184222e76b",
+  "f9202f807b0593ed"
  ],
- "last_kind": "quran"
+ "last_kind": "qissa"
 }
