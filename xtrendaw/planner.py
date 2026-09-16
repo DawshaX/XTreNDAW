@@ -123,6 +123,14 @@ def next_episode() -> dict:
     order = KIND_ROTATION[:]
     _rnd.Random(led["n"] // len(KIND_ROTATION)).shuffle(order)
     start = (order.index(last) + 1) % len(order) if last in order else 0
+    # 🧠 ذكاء الذروة: مساء مصر (١٦–٢٣ القاهرة) الجمهور الأعظم → قدّم الأعمق
+    import datetime as _dt
+
+    if _dt.datetime.now(_dt.timezone(
+            _dt.timedelta(hours=2))).hour in range(16, 23):
+        order = [k for k in ("quran", "tafsir") if k in order] + \
+                [k for k in order if k not in ("quran", "tafsir")]
+        start = 0
     # 🎛 زر الأدمن: state/force_kind.json يقدّم نوعًا واحدًا لمرة واحدة (بلا تكرار)
     _fkp = LEDGER.with_name("force_kind.json")
     if _fkp.exists():

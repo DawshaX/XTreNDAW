@@ -312,12 +312,26 @@ def _publish(topic, r: dict, urls: dict) -> None:
                 url, err = mod.publish(video_url, title, caption, tags)
             if err:
                 _log(f"⚠ {name}: {err[:100]}")
+                try:
+                    from .publish import telegram as _tg
+
+                    _tg.send_text(f"⚠ فشل نشر على {name}: {err[:140]}",
+                                  settings.TELEGRAM.get("admin_chat"))
+                except Exception:
+                    pass
                 if name == "youtube" and video_url:
                     state.push_yt_pending({"url": video_url, "title": title,
                                            "caption": caption, "tags": tags})
                     _log("⏳ الحلقة اتعلقت في طابور يوتيوب — هتنشر أول ما الكوتة تفتح")
             else:
                 _log(f"📣 {name}: {url}")
+                try:  # إشعار فوري للأدمن عن كل منصة تنشر
+                    from .publish import telegram as _tg
+
+                    _tg.send_text(f"📣 نُشر على {name} ✔\n{title}\n{url}",
+                                  settings.TELEGRAM.get("admin_chat"))
+                except Exception:
+                    pass
                 if name == "youtube" and url and "watch?v=" in url:
                     state.push_yt_recent({
                         "id": url.split("watch?v=")[-1].split("&")[0],
