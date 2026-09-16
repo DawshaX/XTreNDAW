@@ -643,6 +643,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789532436.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789532436.png"
    }
+  },
+  "noor-tafsir-s002-149-r7": {
+   "title": "سُورَةُ البَقَرَةِ ﴿149–149﴾ — أيمن سويد",
+   "fingerprint": "bc4f167e8620b9db",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts002-149-aymanswoaid.mp4",
+   "duration": 73.49,
+   "at": "2026-09-16 05:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789537529.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789537529.png"
+   }
   }
  },
  "fingerprints": [
@@ -707,7 +718,8 @@
   "607b77d9199dea4c",
   "79ac123d133b0bde",
   "c7ec7da1fa4258d7",
-  "650b60d053ec63f3"
+  "650b60d053ec63f3",
+  "bc4f167e8620b9db"
  ],
- "last_kind": "hadith"
+ "last_kind": "tafsir"
 }
