@@ -54,7 +54,7 @@ VIDEO = {
 # ─────────────────────────────────────────────────────────────
 # الصوت
 # ─────────────────────────────────────────────────────────────
-VOICE_AR = get("XT_VOICE_AR", "ar-SA-HamedNeural")  # صوت ذكر وقور للمحتوى الديني
+VOICE_AR = get("XT_VOICE_AR", "ar-EG-SalmaNeural")  # صوت أنثوي دافئ للمحتوى الديني
 VOICE_EN = get("XT_VOICE_EN", "en-US-JennyNeural")
 VOICE_RATE = get("XT_VOICE_RATE", "+8%")
 VOICE_PITCH = get("XT_VOICE_PITCH", "+12Hz")

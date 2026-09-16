@@ -37,6 +37,13 @@ RECITERS = [
     ("ar.abdullahbasfar", "عبدالله بصفر", 64),
     ("ar.mahermuaiqly", "ماهر المعيقلي", 128),
     ("ar.saoodshuraym", "سعود الشريم", 64),
+    ("ar.alafasy", "مشاري راشد العفاسي", 128),
+    ("ar.ahmedajamy", "أحمد بن علي العجمي", 64),
+    ("ar.muhammadayyoub", "محمد أيوب", 128),
+    ("ar.minshawimujawwad", "المنشاوي (مجوَّد)", 128),
+    ("ar.abdullahmatroud", "عبدالله المطرود", 128),
+    ("ar.salahbukhatir", "صلاح بوخاطر", 128),
+    ("ar.ibrahimakhbar", "إبراهيم الأخضر", 128),
 ]
 
 # مقاطع القرآن — مشاهد كونية/طبيعة حقيقية (الكلمة ↔ المشهد)
@@ -240,17 +247,33 @@ HOOKS = {
 # الأنواع الجريئة تحتفظ بهوية النيون الكاملة؛ الهادئة تنزع الإطار والشبكة
 NEON_KINDS = {"hadith", "info", "qissa"}
 
+# الرقية الشرعية — أعلى طلب في المحتوى الإسلامي (سلسلة تلاوة)
+RUQYAH = [
+    dict(id="ruq-fatiha", surah=1, frm=1, to=7),
+    dict(id="ruq-kursi", surah=2, frm=255, to=255),
+    dict(id="ruq-amanar", surah=2, frm=285, to=286),
+    dict(id="ruq-ilah", surah=2, frm=163, to=164),
+    dict(id="ruq-shifa", surah=17, frm=82, to=82),
+    dict(id="ruq-hashr", surah=59, frm=21, to=24),
+    dict(id="ruq-ikhlas", surah=112, frm=1, to=4),
+    dict(id="ruq-falaq", surah=113, frm=1, to=5),
+    dict(id="ruq-nas", surah=114, frm=1, to=6),
+    dict(id="ruq-yunus", surah=10, frm=57, to=57),
+]
+
 # جزء عمّ: كل سورة سلسلة تلاوة مرقّمة (التقليم التلقائي يحافظ على ≤90ث)
 JUZ = [dict(id=f"juz{s}", surah=s, frm=1, to=999) for s in range(78, 115)]
 
 # سلاسل واعية مرقّمة: المصنع عارف إنه بينشر الجزء (س/ص) من سلسلة كاملة
 SERIES_KINDS = {"asma", "seerah", "kawn", "akhira", "akhlaq", "qissa",
-                "tafsir", "juz", "nawawi"}
+                "tafsir", "juz", "nawawi", "ruqyah", "hisn"}
 SERIES_LABEL = {"asma": "سلسلة الأسماء الحسنى", "seerah": "سلسلة السيرة النبوية",
                 "kawn": "سلسلة آيات في الكون", "akhira": "سلسلة الاستعداد للآخرة",
                 "akhlaq": "سلسلة مكارم الأخلاق", "qissa": "سلسلة قصص الأنبياء",
                 "tafsir": "سلسلة التدبُّر", "juz": "سلسلة جزء عمّ",
-                "nawawi": "سلسلة الأربعين النووية"}
+                "nawawi": "سلسلة الأربعين النووية",
+                "ruqyah": "سلسلة الرقية الشرعية",
+                "hisn": "سلسلة حصن المسلم"}
 
 ASS_HEADER = """[Script Info]
 ScriptType: v4.00+
@@ -398,8 +421,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     from . import tts as _tt
     import time as _tm
     _tt.VOICE_OVERRIDE_AR = [
-        "ar-SA-HamedNeural", "ar-EG-ShakirNeural",
-        "ar-JO-TaimNeural", "ar-SY-LaithNeural"][int(_tm.time() / 3600) % 4]
+        "ar-EG-SalmaNeural", "ar-SA-ZariyahNeural",
+        "ar-LB-LaylaNeural", "ar-AE-FatimaNeural"][int(_tm.time() / 3600) % 4]
     workdir.mkdir(parents=True, exist_ok=True)
     reciter, rec_name, kbps = RECITERS[reciter_idx % len(RECITERS)]
     from . import state as _state
@@ -416,7 +439,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
 
     if kind in ("quran", "qissa", "tafsir"):
         pool = {"quran": QURAN, "qissa": QISSA, "tafsir": TAFASEER,
-                "juz": JUZ}[kind]
+                "juz": JUZ, "ruqyah": RUQYAH}[kind]
         spec = spec or pool[reciter_idx % len(pool)]
         spec = {**spec, "style": "cinema" if kind == "qissa" else "cosmic"}
         ayahs = _get_json(f"{APIQ}/surah/{spec['surah']}/quran-uthmani")["ayahs"]
@@ -444,6 +467,12 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             title = ["آيةٌ تُريح القلب 🤍 ", "استمع بقلبك… 🎧 ",
                      "راحةٌ لصدرِك 🤍 ", "دقيقة نور 🌙 ",
                      "هديّة لقلبك اليوم 🤍 "][spec["surah"] % 5] + title
+        if kind == "ruqyah":
+            _ri = next((j for j, w in enumerate(RUQYAH)
+                        if w["surah"] == spec["surah"]
+                        and w["frm"] == spec["frm"]), 0)
+            title = (f"{SERIES_LABEL['ruqyah']} ({_ri + 1}/{len(RUQYAH)}): "
+                     f"{title}")
         if kind == "juz":
             from . import planner as _pl
 
@@ -462,7 +491,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         fayda = _trim_sent(tafs.get(spec["frm"], ""), 190)
         fayda = f"نزلت {rev}. {fayda}"
         # لمسة المراجع الناجحة: مود بصري واحد موحّد للفيديو كله
-        if kind in ("quran", "tafsir", "juz"):
+        if kind in ("quran", "tafsir", "juz", "ruqyah"):
             import hashlib as _h
             # لكل نوع شخصيته البصرية — القناة بتطوّر وبتنوِّع قوالبها
             if kind == "tafsir":
@@ -584,7 +613,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                  "kawn": ("kawn", "آية في الكون"),
                  "akhira": ("akhira", "استعد للقاء"),
                  "akhlaq": ("akhlaq", "خُلق حسن"),
-                 "nawawi": ("nawawi", "قال رسول الله ﷺ")}
+                 "nawawi": ("nawawi", "قال رسول الله ﷺ"),
+                 "hisn": ("hisn", "حصن المسلم")}
         lname, label = lists[kind]
         items = stock[lname]
         _idx = (spec or {}).get("idx", reciter_idx) % len(items)
@@ -626,6 +656,9 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             "akhlaq": "أثقل ما في الميزان خُلق حسن — فأحسنوا الخلق.",
             "nawawi": "من حفظ الأربعين النوويّة حاز جوامع الكلم — "
                       "احفظها وعلّمها.",
+            "hisn": "من لزم ذكر الله حُفظ — «ألا بذكر الله تطمئن القلوب».",
+            "ruqyah": "الرقية الشرعية حصن المؤمن — اقرأها على نفسك "
+                      "وأهلك كل يوم.",
         }[kind]
         # شخصية بصرية مميزة لكل نوع من المخزون — مش قالب واحد للجميع
         qs = {
@@ -649,6 +682,10 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                        "children playing joy", "smile friends warm"],
             "nawawi": ["old quran book candle", "lantern warm light night",
                        "vintage room warm light", "scholar desk ancient"],
+            "hisn": ["morning sunrise sky", "olive tree light",
+                     "calm sea horizon", "night stars sky"],
+            "ruqyah": ["soft light mosque", "golden dome light",
+                       "olive branch light", "calm sky clouds"],
         }.get(kind, ["mosque night lights", "kaaba mecca", "quran book candle",
                      "praying hands sky", "dawn mountains peace"])
         n = 3

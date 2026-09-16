@@ -23,7 +23,7 @@ WINDOWS_CACHE = settings.STATE / "quran_windows.json"
 
 KIND_ROTATION = ["quran", "adhkar", "hadith", "qissa", "dua",
                "tafsir", "info", "seerah", "asma", "kawn", "akhira",
-               "akhlaq", "juz", "nawawi"]
+               "akhlaq", "juz", "nawawi", "ruqyah", "hisn"]
 
 
 def _read_ledger() -> dict:
@@ -68,6 +68,9 @@ def _stock() -> dict:
 
 def _series(kind: str) -> list[tuple[str, dict]]:
     """[(مفتاح, spec)] بترتيب ثابت للسلسلة."""
+    if kind == "ruqyah":
+        from . import din as _dd
+        return [(f"r{w['surah']:03d}-{w['frm']}", w) for w in _dd.RUQYAH]
     if kind == "juz":
         return [(f"j{w['surah']:03d}-{w['frm']}", w)
                 for w in quran_windows() if w["surah"] >= 78]
@@ -79,7 +82,7 @@ def _series(kind: str) -> list[tuple[str, dict]]:
     lists = {"dua": "duas", "adhkar": "adhkar", "hadith": "hadiths",
              "info": "info", "seerah": "seerah", "asma": "asma",
              "kawn": "kawn", "akhira": "akhira", "akhlaq": "akhlaq",
-             "nawawi": "nawawi"}
+             "nawawi": "nawawi", "hisn": "hisn"}
     items = st.get(lists[kind], [])
     return [(f"{i}", {"idx": i}) for i in range(len(items))]
 
@@ -214,7 +217,7 @@ def _topic(kind: str, key: str, spec: dict, rec: int, n: int) -> dict:
                 rec = _i
                 break
     rec_name = din.RECITERS[rec % len(din.RECITERS)][1]
-    if kind in ("quran", "tafsir", "juz"):
+    if kind in ("quran", "tafsir", "juz", "ruqyah"):
         pool = [x["scenes"] for x in _dinmod.QURAN]
         scenes = pool[n % len(pool)]
         spec = {**spec, "id": f"{kind[:1]}{key}", "scenes": scenes}
@@ -233,7 +236,8 @@ def _topic(kind: str, key: str, spec: dict, rec: int, n: int) -> dict:
                  "seerah": ("seerah", "سيرة"), "asma": ("asma", "اسم"),
                  "kawn": ("kawn", "كون"), "akhira": ("akhira", "آخرة"),
                  "akhlaq": ("akhlaq", "خُلق"),
-                 "nawawi": ("nawawi", "نووية")}
+                 "nawawi": ("nawawi", "نووية"),
+                 "hisn": ("hisn", "حصن")}
         lname, lab = lists[kind]
         item = st[lname][spec["idx"] % len(st[lname])]
         from . import din as _d

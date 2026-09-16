@@ -30,6 +30,8 @@ KIND_COVER = {
     "akhlaq": ("akhlaq_c", "#e8a8a0", "خُلق حسن"),
     "juz": ("quran_c", "#7fb4ff", "سلسلة جزء عمّ"),
     "nawawi": ("nawawi_c", "#d8c8a0", "الأربعون النووية"),
+    "ruqyah": ("ruqyah_c", "#7fe0b0", "الرقية الشرعية"),
+    "hisn": ("hisn_c", "#8fd0d8", "حصن المسلم"),
 }
 
 
