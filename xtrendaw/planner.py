@@ -266,7 +266,10 @@ def _topic(kind: str, key: str, spec: dict, rec: int, n: int) -> dict:
             title = (f"{_d.SERIES_LABEL[kind]} ({spec['idx'] + 1}"
                      f"/{len(st[lname])}): {item['text'][:34]}…")
         else:
-            title = f"{lab}: {item['text'][:42]}…"
+            # خطاف دافئ دوّار — أول كلمة تدلع المشاهد قبل النص
+            _hk = ["وقفة قلب 🤍 ", "نور لدقيقتك 🌙 ", "هدية اليوم 🤍 ",
+                   "كلام يلمس القلب ✨ ", "لحظة صفا 🕊 "][spec["idx"] % 5]
+            title = f"{_hk}{lab}: {item['text'][:42]}…"
     return {"id": f"noor-{kind}-{key}-r{rec}",
             "title_ar": title, "tags": "نور,قرآن,دعوة,XDAWNOVA",
             "_din": kind, "_din_rec": rec, "_din_spec": spec, "_kind": kind}
