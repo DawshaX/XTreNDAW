@@ -698,6 +698,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789557344.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789557344.png"
    }
+  },
+  "noor-quran-s019-93-r9": {
+   "title": "سُورَةُ مَرۡيَمَ ﴿93–96﴾ — أبو بكر الشاطري",
+   "fingerprint": "45f19a8dec8c347e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs019-93-shaatree.mp4",
+   "duration": 52.74,
+   "at": "2026-09-16 12:20",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789561230.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789561230.png"
+   }
   }
  },
  "fingerprints": [
@@ -767,7 +778,8 @@
   "acbc31a681e53a44",
   "6bb384458b21468e",
   "db9b59184222e76b",
-  "f9202f807b0593ed"
+  "f9202f807b0593ed",
+  "45f19a8dec8c347e"
  ],
- "last_kind": "qissa"
+ "last_kind": "quran"
 }
