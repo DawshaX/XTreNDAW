@@ -296,14 +296,16 @@ def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
     # تنويع حقيقي: كل مشهد بزاوية/إضاءة مختلفة — بلا تكرار بين الحلقات
     q = f"{q}, {['cinematic wide shot', 'golden hour light', 'aerial view', 'close-up detail', 'dramatic side light'][i % 5]}"
     scdir = workdir / f"sc{i:02d}"
+    # الأنواع الهادئة: طبيعة وسماء فقط — بلا أرشيف وثائقيات (أشخاص/أناشيد)
+    _src = "noia" if spec.get("grade") == "calm" else "auto"
     clip = footage.fetch_clip(q, max(1.0, seconds), scdir, f"{seed}:{i}",
-                              source="auto")
+                              source=_src)
     if not clip:
         # محاولة ثانية باستعلام أبسط — اللقطة الحيّة أولى من الصورة
         _q2 = " ".join(q.split(",")[0].split()[:3])
         if _q2 and _q2 != q:
             clip = footage.fetch_clip(_q2, max(1.0, seconds), scdir,
-                                      f"{seed}:{i}r", source="auto")
+                                      f"{seed}:{i}r", source=_src)
     if clip:
         return {"video": clip, "overlays": [],
                 "grade": spec.get("grade", "soft")}

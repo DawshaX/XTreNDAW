@@ -33,7 +33,9 @@ MAX_DL = 30 * 1024 * 1024
 
 BAD_TITLES = ("this week", "announce", "briefing", "news", "podcast",
               "interview", "hosted", "narrated", "trailer", "webinar",
-              "press", "recap", "episode")
+              "press", "recap", "episode", "nasheed", "music", "song",
+              "concert", "performance", "singer", "lyrics",
+              "official video")
 
 
 def _dl(url: str, dst: Path) -> bool:
@@ -92,9 +94,12 @@ def _has_captions(path: Path) -> bool:
                 continue
             a = np.asarray(Image.open(tmp).convert("RGB"), dtype=int)
             h = a.shape[0]
-            for band in (a[0:int(h * 0.13)], a[int(h * 0.78):]):
-                frac = ((band[..., 0] > 225) & (band[..., 1] > 175)).mean()
-                if frac > 0.02:
+            for band in (a[0:int(h * 0.13)], a[int(h * 0.70):]):
+                white = ((band[..., 0] > 215) & (band[..., 1] > 200)
+                         & (band[..., 2] > 200)).mean()
+                purple = ((band[..., 0] > 120) & (band[..., 2] > 120)
+                          & (band[..., 1] < 110)).mean()
+                if white > 0.015 or purple > 0.008:
                     return True
         return False
     except Exception:
@@ -200,11 +205,11 @@ def fetch_clip(query: str, seconds: float, workdir: Path, seed: str,
 
     if not cached.exists():
         cands: list = []
-        if source in ("auto", "commons"):
+        if source in ("auto", "commons", "noia"):
             cands += _commons_candidates(query)
         if source in ("auto", "ia"):
             cands += _ia_candidates(query)
-        if source in ("auto", "nasa"):
+        if source in ("auto", "nasa", "noia"):
             cands += _nasa_candidates(query)
         raw = workdir / f"raw_{key}.bin"
         bad = _badlist()
