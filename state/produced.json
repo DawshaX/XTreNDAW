@@ -775,6 +775,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789585750.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789585750.png"
    }
+  },
+  "noor-quran-s114-1-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ النَّاسِ ﴿1–6﴾ — أيمن سويد",
+   "fingerprint": "159960ee14a6e19c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs114-1-aymanswoaid.mp4",
+   "duration": 65.78,
+   "at": "2026-09-16 20:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789590838.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789590838.png"
+   }
   }
  },
  "fingerprints": [
@@ -851,7 +862,8 @@
   "2e9a5439e60d90ae",
   "59e07d53f24e4ad9",
   "baf78ca0618cbb2b",
-  "2130f038b77f1075"
+  "2130f038b77f1075",
+  "159960ee14a6e19c"
  ],
  "last_kind": "quran"
 }
