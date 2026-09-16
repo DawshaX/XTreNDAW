@@ -440,6 +440,10 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         meta = _get_json(f"{APIQ}/surah/{spec['surah']}")
         rev = "مَكِّيَّة" if meta.get("revelationType") == "Meccan" else "مَدَنِيَّة"
         title = f"{sname} ﴿{spec['frm']}–{spec['to']}﴾ — {rec_name}"
+        if kind == "quran":
+            title = ["آيةٌ تُريح القلب 🤍 ", "استمع بقلبك… 🎧 ",
+                     "راحةٌ لصدرِك 🤍 ", "دقيقة نور 🌙 ",
+                     "هديّة لقلبك اليوم 🤍 "][spec["surah"] % 5] + title
         if kind == "juz":
             from . import planner as _pl
 

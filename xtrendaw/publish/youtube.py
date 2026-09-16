@@ -25,7 +25,8 @@ def publish(video_path, title, caption, tags, cover=None):
     meta = {"snippet": {"title": title[:100], "description": caption[:4900],
                         "tags": tags[:15], "categoryId": "27",
                         "defaultLanguage": "ar", "defaultAudioLanguage": "ar"},
-            "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False}}
+            "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False,
+                       "notifySubscribers": True}}
     init = requests.post(
         "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
         headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json",
@@ -51,6 +52,23 @@ def publish(video_path, title, caption, tags, cover=None):
             print("THUMB:", th.status_code)
         except Exception as e:
             print("THUMB-err:", str(e)[:80])
+    # تعليق دعوة للاشتراك — إشارة تفاعل للخوارزمية
+    try:
+        _c = requests.post(
+            "https://www.googleapis.com/youtube/v3/commentThreads",
+            params={"part": "snippet"},
+            headers={"Authorization": f"Bearer {tok}",
+                     "Content-Type": "application/json"},
+            json={"snippet": {"videoId": vid, "topLevelComment": {
+                "snippet": {
+                    "textOriginal": (
+                    "لو الفيديو وصل قلبك 🤍 اشترك وفعل الجرس — "
+                    "كل ساعة نور جديد، وصدقًا: «الدال على الخير كفاعله». "
+                    "اكتب «آمين» في تعليق ودعوة بظهر الغيب لك 🌙")}}}},
+            timeout=30)
+        print("COMMENT:", _c.status_code)
+    except Exception as e:
+        print("COMMENT-err:", str(e)[:80])
     return f"https://www.youtube.com/watch?v={vid}", None
 
 
