@@ -709,6 +709,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789561230.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789561230.png"
    }
+  },
+  "noor-asma-10-r3": {
+   "title": "مِن الأسماء الحسنى: المتكبر — المتعالي عن صفات الخلق.…",
+   "fingerprint": "b0c216b98af8ee9f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 24.4,
+   "at": "2026-09-16 13:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789565045.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789565045.png"
+   }
   }
  },
  "fingerprints": [
@@ -779,7 +790,8 @@
   "6bb384458b21468e",
   "db9b59184222e76b",
   "f9202f807b0593ed",
-  "45f19a8dec8c347e"
+  "45f19a8dec8c347e",
+  "b0c216b98af8ee9f"
  ],
- "last_kind": "quran"
+ "last_kind": "asma"
 }
