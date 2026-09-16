@@ -514,9 +514,10 @@ def main() -> int:
             # إيچنت المكتبة: المخزون بيتجدد كل دورة (مضاف فقط)
             try:
                 from . import expand as _exp
-                _rep = _exp.run(80, 6)
+                _rep = _exp.run(120, 6)
                 _log(f"📚 إيچنت المكتبة: +{_rep['hadiths']} حديث "
-                     f"+{_rep['tafsir']} تفسير (إجمالي {_rep['total_hadiths']})")
+                     f"+{_rep.get('hisn', 0)} ذكر حصن +{_rep['tafsir']} تفسير "
+                     f"(إجمالي {_rep['total_hadiths']} حديثًا)")
             except Exception as _e:
                 _log(f"⚠ إيچنت المكتبة: {str(_e)[:80]}")
 

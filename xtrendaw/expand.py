@@ -26,7 +26,13 @@ HADITH_SOURCES = [
     ("ara-abudawud", "سنن أبي داود"),
     ("ara-ibnmajah", "سنن ابن ماجه"),
     ("ara-malik", "موطأ مالك"),
+    ("ara-nasai", "سنن النسائي"),
+    ("ara-tirmidhi", "جامع الترمذي"),
+    ("ara-nawawi", "رياض الصالحين"),
+    ("ara-qudsi", "الأحاديث القدسية"),
 ]
+HISN_URL = ("https://cdn.jsdelivr.net/gh/rn0x/hisn_almuslim_json@main/"
+            "hisn_almuslim.json")
 TAFSIR_ID = 16          # الميسر — عربي
 MIN_LEN, MAX_LEN = 45, 330   # طول مناسب لحلقة ≤90ث
 UA = {"User-Agent": "XDAW-NOVA-factory/1.0 (free knowledge shorts)"}
@@ -197,17 +203,50 @@ def hadith_batch(limit: int = 120) -> list[dict]:
     return out
 
 
+def hisn_batch() -> list[dict]:
+    """حصن المسلم كاملًا (134 بابًا) — مضاف فقط مع منع التكرار."""
+    try:
+        r = requests.get(HISN_URL, headers=UA, timeout=60)
+        data = r.json()
+        data = data.get("data", data)
+    except Exception:
+        return []
+    st = _seen()
+    seen = set(st.get("h", []))
+    out = []
+    for cat, v in data.items():
+        if not isinstance(v, dict):
+            continue
+        for txt in v.get("text") or []:
+            a = _clean(txt)
+            if not (20 <= len(a) <= 400):
+                continue
+            k = _h(a)
+            if k in seen:
+                continue
+            seen.add(k)
+            out.append({"text": a, "src": f"حصن المسلم — {cat}"})
+    st["h"] = list(seen)
+    _save_seen(st)
+    return out
+
+
 def run(hadith_limit: int = 120, tafsir_limit: int = 8) -> dict:
     """تنفيذ دورة تجديد — يعيد إحصائيات الإضافة."""
-    rep = {"hadiths": 0, "tafsir": 0}
+    rep = {"hadiths": 0, "tafsir": 0, "hisn": 0}
     sp = settings.ROOT / "content" / "din_stock.json"
     stock = json.loads(sp.read_text(encoding="utf-8"))
     hs = hadith_batch(hadith_limit)
-    if hs:
-        stock.setdefault("hadiths", []).extend(hs)
+    hn = hisn_batch()
+    if hs or hn:
+        if hs:
+            stock.setdefault("hadiths", []).extend(hs)
+        if hn:
+            stock.setdefault("adhkar", []).extend(hn)
         sp.write_text(json.dumps(stock, ensure_ascii=False, indent=1),
                       encoding="utf-8")
         rep["hadiths"] = len(hs)
+        rep["hisn"] = len(hn)
     tf = tafsir_batch(tafsir_limit)
     if tf:
         bank = []
