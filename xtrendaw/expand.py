@@ -234,16 +234,80 @@ def hisn_batch() -> list[dict]:
     return out
 
 
+def duas_batch() -> list[dict]:
+    """126 دعاءً مأثورًا مصنّفًا من UmmahAPI (بلا مفتاح)."""
+    try:
+        r = requests.get("https://ummahapi.com/api/duas", headers=UA,
+                         timeout=30)
+        duas = (r.json().get("data") or {}).get("duas") or []
+    except Exception:
+        return []
+    st = _seen()
+    seen = set(st.get("h", []))
+    out = []
+    for d in duas:
+        a = _clean(d.get("arabic") or "")
+        if not (15 <= len(a) <= 420):
+            continue
+        k = _h(a)
+        if k in seen:
+            continue
+        seen.add(k)
+        out.append({"text": a,
+                    "src": f"دعاء مأثور — {d.get('category', 'أدعية')}"})
+    st["h"] = list(seen)
+    _save_seen(st)
+    return out
+
+
+def mawaqit_batch() -> list[dict]:
+    """حلقة واحدة يوميًا: مواقيت صلاة الإسكندرية + التاريخ الهجري."""
+    import datetime as _dt
+    today = _dt.date.today().isoformat()
+    st = _seen()
+    if st.get("mw") == today:
+        return []
+    try:
+        r = requests.get(
+            "https://api.aladhan.com/v1/timingsByCity",
+            params={"city": "Alexandria", "country": "Egypt", "method": 5},
+            headers=UA, timeout=20)
+        d = r.json().get("data") or {}
+        tm = d.get("timings") or {}
+        hj = (d.get("date") or {}).get("hijri") or {}
+        if not tm:
+            return []
+        txt = (f"مواقيت اليوم في الإسكندرية — الفجر {tm.get('Fajr')}، "
+               f"الظهر {tm.get('Dhuhr')}، العصر {tm.get('Asr')}، "
+               f"المغرب {tm.get('Maghrib')}، العشاء {tm.get('Isha')} — "
+               f"والتاريخ الهجري {hj.get('day')} {hj.get('month', {}).get('ar')} "
+               f"{hj.get('year')}")
+        st["mw"] = today
+        _save_seen(st)
+        return [{"text": txt, "src": "مواقيت الصلاة — الإسكندرية"}]
+    except Exception:
+        return []
+
+
 def run(hadith_limit: int = 120, tafsir_limit: int = 8) -> dict:
     """تنفيذ دورة تجديد — يعيد إحصائيات الإضافة."""
-    rep = {"hadiths": 0, "tafsir": 0, "hisn": 0, "qudsi": 0}
+    rep = {"hadiths": 0, "tafsir": 0, "hisn": 0, "qudsi": 0, "mawaqit": 0,
+           "duas": 0}
     sp = settings.ROOT / "content" / "din_stock.json"
     stock = json.loads(sp.read_text(encoding="utf-8"))
     hs = hadith_batch(hadith_limit)
     hn = hisn_batch()
+    mw = mawaqit_batch()
+    du = duas_batch()
     qd = [h for h in hs if h.get("src") == "الأحاديث القدسية"]
     hs = [h for h in hs if h.get("src") != "الأحاديث القدسية"]
-    if hs or hn or qd:
+    if hs or hn or qd or mw or du:
+        if du:
+            stock.setdefault("duas", []).extend(du)
+            rep["duas"] = len(du)
+        if mw:
+            stock.setdefault("info", []).extend(mw)
+            rep["mawaqit"] = len(mw)
         if hs:
             stock.setdefault("hadiths", []).extend(hs)
         if qd:

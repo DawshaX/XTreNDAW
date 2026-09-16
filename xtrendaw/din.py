@@ -795,11 +795,38 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     else:
         # الأدعية/الأحاديث/المعلومات: هوية XDAW — دفء ووضوح بلا تشويه
         amb = workdir / "amb.wav"
-        subprocess.run([ffmpeg(), "-y", "-f", "lavfi", "-i",
-                        "anoisesrc=color=brown:amplitude=0.35",
-                        "-af", "lowpass=f=300,volume=0.018", "-t", f"{total:.2f}",
-                        "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le",
-                        str(amb)], capture_output=True)
+        # أجواء طبيعة حقيقية CC0 من Freesound (بلا موسيقى) — للصوت البشري فقط،
+        # التلاوة تفضل صافية 100%. ولو المصدر فشل → ضوضاء بنية زي الأول.
+        _amb_ok = False
+        if kind in ("dua", "adhkar", "hisn"):
+            try:
+                from . import library as _lb
+                import requests as _rq
+                _u = _lb.freesound_ambience(
+                    {"dua": "soft rain calm", "adhkar": "gentle night wind",
+                     "hisn": "morning birds soft"}[kind])
+                if _u:
+                    _rb = _rq.get(_u, timeout=90)
+                    if _rb.ok and len(_rb.content) > 20000:
+                        _mp = workdir / "amb_src.mp3"
+                        _mp.write_bytes(_rb.content)
+                        subprocess.run(
+                            [ffmpeg(), "-y", "-stream_loop", "-1",
+                             "-i", str(_mp), "-t", f"{total:.2f}",
+                             "-af", f"volume=0.05,afade=t=out:"
+                             f"st={max(total - 2.0, 0.0):.2f}:d=2",
+                             "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le",
+                             str(amb)], capture_output=True)
+                        _amb_ok = amb.exists()
+            except Exception:
+                _amb_ok = False
+        if not _amb_ok:
+            subprocess.run([ffmpeg(), "-y", "-f", "lavfi", "-i",
+                            "anoisesrc=color=brown:amplitude=0.35",
+                            "-af", "lowpass=f=300,volume=0.018",
+                            "-t", f"{total:.2f}",
+                            "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le",
+                            str(amb)], capture_output=True)
         pr = subprocess.run([ffmpeg(), "-y", "-i", str(vox), "-i", str(amb),
                              "-filter_complex",
                              "[0:a]afftdn=nf=-30,"
