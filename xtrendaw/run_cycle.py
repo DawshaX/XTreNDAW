@@ -511,6 +511,15 @@ def main() -> int:
 
             _health_check()
 
+            # إيچنت المكتبة: المخزون بيتجدد كل دورة (مضاف فقط)
+            try:
+                from . import expand as _exp
+                _rep = _exp.run(80, 6)
+                _log(f"📚 إيچنت المكتبة: +{_rep['hadiths']} حديث "
+                     f"+{_rep['tafsir']} تفسير (إجمالي {_rep['total_hadiths']})")
+            except Exception as _e:
+                _log(f"⚠ إيچنت المكتبة: {str(_e)[:80]}")
+
             _yt_watchdog()
             topic = planner.next_episode()
             _log(f"🧭 المخطط: {topic['_din']} · {topic['title_ar']}")

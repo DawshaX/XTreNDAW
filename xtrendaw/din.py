@@ -236,6 +236,15 @@ TAFASEER = [
                  "ancient city sun", "tribe ruins desert"]),
 ]
 
+# بنك التفسير الحي — إيچنت المكتبة بيضيف فيه كل دورة (مضاف فقط)
+_tbank = settings.ROOT / "content" / "tafsir_bank.json"
+if _tbank.exists():
+    try:
+        import json as _tj
+        TAFASEER = TAFASEER + _tj.loads(_tbank.read_text(encoding="utf-8"))
+    except Exception:
+        pass
+
 # أسئلة تدبُّر منتقاة بعناية — خطّاف قالب التفسير (بصمة المراجع الهادئة)
 HOOKS = {
     "t-asr": "لماذا أقسم الله بالوقت في ثلاث آيات فقط؟",
