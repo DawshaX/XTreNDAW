@@ -786,6 +786,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789590838.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789590838.png"
    }
+  },
+  "noor-adhkar-48-r3": {
+   "title": "مِن أذكار المسلم: لا إله إلا الله الملك الحق المبين، سبحان…",
+   "fingerprint": "a0aae69aa73dbdcc",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 28.6,
+   "at": "2026-09-16 21:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789594659.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789594659.png"
+   }
   }
  },
  "fingerprints": [
@@ -863,7 +874,8 @@
   "59e07d53f24e4ad9",
   "baf78ca0618cbb2b",
   "2130f038b77f1075",
-  "159960ee14a6e19c"
+  "159960ee14a6e19c",
+  "a0aae69aa73dbdcc"
  ],
- "last_kind": "quran"
+ "last_kind": "adhkar"
 }
