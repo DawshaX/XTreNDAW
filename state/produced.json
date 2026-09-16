@@ -753,6 +753,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789576436.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789576436.png"
    }
+  },
+  "noor-quran-s093-9-r8": {
+   "title": "دقيقة نور 🌙 سُورَةُ الضُّحَىٰ ﴿9–11﴾ — علي الحذيفي",
+   "fingerprint": "baf78ca0618cbb2b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs093-9-hudhaify.mp4",
+   "duration": 42.15,
+   "at": "2026-09-16 17:38",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789580306.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789580306.png"
+   }
   }
  },
  "fingerprints": [
@@ -827,7 +838,8 @@
   "b0c216b98af8ee9f",
   "b21827be166d99f3",
   "2e9a5439e60d90ae",
-  "59e07d53f24e4ad9"
+  "59e07d53f24e4ad9",
+  "baf78ca0618cbb2b"
  ],
  "last_kind": "quran"
 }
