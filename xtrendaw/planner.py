@@ -23,7 +23,7 @@ WINDOWS_CACHE = settings.STATE / "quran_windows.json"
 
 KIND_ROTATION = ["quran", "adhkar", "hadith", "qissa", "dua",
                "tafsir", "info", "seerah", "asma", "kawn", "akhira",
-               "akhlaq", "juz", "nawawi", "ruqyah", "hisn"]
+               "akhlaq", "juz", "nawawi", "ruqyah", "hisn", "tahseen"]
 
 
 def _read_ledger() -> dict:
@@ -68,6 +68,9 @@ def _stock() -> dict:
 
 def _series(kind: str) -> list[tuple[str, dict]]:
     """[(مفتاح, spec)] بترتيب ثابت للسلسلة."""
+    if kind == "tahseen":
+        from . import din as _dt
+        return [(f"t{w['surah']:03d}-{w['frm']}", w) for w in _dt.TAHSEEN]
     if kind == "ruqyah":
         from . import din as _dd
         return [(f"r{w['surah']:03d}-{w['frm']}", w) for w in _dd.RUQYAH]
@@ -217,7 +220,7 @@ def _topic(kind: str, key: str, spec: dict, rec: int, n: int) -> dict:
                 rec = _i
                 break
     rec_name = din.RECITERS[rec % len(din.RECITERS)][1]
-    if kind in ("quran", "tafsir", "juz", "ruqyah"):
+    if kind in ("quran", "tafsir", "juz", "ruqyah", "tahseen"):
         pool = [x["scenes"] for x in _dinmod.QURAN]
         scenes = pool[n % len(pool)]
         spec = {**spec, "id": f"{kind[:1]}{key}", "scenes": scenes}

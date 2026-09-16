@@ -32,6 +32,7 @@ KIND_COVER = {
     "nawawi": ("nawawi_c", "#d8c8a0", "الأربعون النووية"),
     "ruqyah": ("ruqyah_c", "#7fe0b0", "الرقية الشرعية"),
     "hisn": ("hisn_c", "#8fd0d8", "حصن المسلم"),
+    "tahseen": ("tahseen_c", "#e0c87f", "التحصين"),
 }
 
 

@@ -261,19 +261,32 @@ RUQYAH = [
     dict(id="ruq-yunus", surah=10, frm=57, to=57),
 ]
 
+# التحصين — آيات الحفظ الصباحية والمسائية (سلسلة تلاوة)
+TAHSEEN = [
+    dict(id="tah-kursi", surah=2, frm=255, to=255),
+    dict(id="tah-amanar", surah=2, frm=285, to=286),
+    dict(id="tah-saffat", surah=37, frm=1, to=10),
+    dict(id="tah-isra", surah=17, frm=45, to=46),
+    dict(id="tah-ikhlas", surah=112, frm=1, to=4),
+    dict(id="tah-falaq", surah=113, frm=1, to=5),
+    dict(id="tah-nas", surah=114, frm=1, to=6),
+    dict(id="tah-taha", surah=20, frm=111, to=112),
+]
+
 # جزء عمّ: كل سورة سلسلة تلاوة مرقّمة (التقليم التلقائي يحافظ على ≤90ث)
 JUZ = [dict(id=f"juz{s}", surah=s, frm=1, to=999) for s in range(78, 115)]
 
 # سلاسل واعية مرقّمة: المصنع عارف إنه بينشر الجزء (س/ص) من سلسلة كاملة
 SERIES_KINDS = {"asma", "seerah", "kawn", "akhira", "akhlaq", "qissa",
-                "tafsir", "juz", "nawawi", "ruqyah", "hisn"}
+                "tafsir", "juz", "nawawi", "ruqyah", "hisn", "tahseen"}
 SERIES_LABEL = {"asma": "سلسلة الأسماء الحسنى", "seerah": "سلسلة السيرة النبوية",
                 "kawn": "سلسلة آيات في الكون", "akhira": "سلسلة الاستعداد للآخرة",
                 "akhlaq": "سلسلة مكارم الأخلاق", "qissa": "سلسلة قصص الأنبياء",
                 "tafsir": "سلسلة التدبُّر", "juz": "سلسلة جزء عمّ",
                 "nawawi": "سلسلة الأربعين النووية",
                 "ruqyah": "سلسلة الرقية الشرعية",
-                "hisn": "سلسلة حصن المسلم"}
+                "hisn": "سلسلة حصن المسلم",
+                "tahseen": "سلسلة التحصين"}
 
 ASS_HEADER = """[Script Info]
 ScriptType: v4.00+
@@ -439,7 +452,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
 
     if kind in ("quran", "qissa", "tafsir"):
         pool = {"quran": QURAN, "qissa": QISSA, "tafsir": TAFASEER,
-                "juz": JUZ, "ruqyah": RUQYAH}[kind]
+                "juz": JUZ, "ruqyah": RUQYAH, "tahseen": TAHSEEN}[kind]
         spec = spec or pool[reciter_idx % len(pool)]
         spec = {**spec, "style": "cinema" if kind == "qissa" else "cosmic"}
         ayahs = _get_json(f"{APIQ}/surah/{spec['surah']}/quran-uthmani")["ayahs"]
@@ -467,6 +480,12 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             title = ["آيةٌ تُريح القلب 🤍 ", "استمع بقلبك… 🎧 ",
                      "راحةٌ لصدرِك 🤍 ", "دقيقة نور 🌙 ",
                      "هديّة لقلبك اليوم 🤍 "][spec["surah"] % 5] + title
+        if kind == "tahseen":
+            _ti = next((j for j, w in enumerate(TAHSEEN)
+                        if w["surah"] == spec["surah"]
+                        and w["frm"] == spec["frm"]), 0)
+            title = (f"{SERIES_LABEL['tahseen']} ({_ti + 1}/{len(TAHSEEN)}): "
+                     f"{title}")
         if kind == "ruqyah":
             _ri = next((j for j, w in enumerate(RUQYAH)
                         if w["surah"] == spec["surah"]
@@ -491,7 +510,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         fayda = _trim_sent(tafs.get(spec["frm"], ""), 190)
         fayda = f"نزلت {rev}. {fayda}"
         # لمسة المراجع الناجحة: مود بصري واحد موحّد للفيديو كله
-        if kind in ("quran", "tafsir", "juz", "ruqyah"):
+        if kind in ("quran", "tafsir", "juz", "ruqyah", "tahseen"):
             import hashlib as _h
             # لكل نوع شخصيته البصرية — القناة بتطوّر وبتنوِّع قوالبها
             if kind == "tafsir":
@@ -659,6 +678,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             "hisn": "من لزم ذكر الله حُفظ — «ألا بذكر الله تطمئن القلوب».",
             "ruqyah": "الرقية الشرعية حصن المؤمن — اقرأها على نفسك "
                       "وأهلك كل يوم.",
+            "tahseen": "من قالها صباحًا ومساءً حُفظ بإذن الله — "
+                       "«وهو يحفظهم من أمر الله».",
         }[kind]
         # شخصية بصرية مميزة لكل نوع من المخزون — مش قالب واحد للجميع
         qs = {
@@ -686,6 +707,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                      "calm sea horizon", "night stars sky"],
             "ruqyah": ["soft light mosque", "golden dome light",
                        "olive branch light", "calm sky clouds"],
+            "tahseen": ["sunrise golden light", "fortress walls light",
+                        "calm desert dawn", "stars night sky"],
         }.get(kind, ["mosque night lights", "kaaba mecca", "quran book candle",
                      "praying hands sky", "dawn mountains peace"])
         n = 3
