@@ -142,7 +142,31 @@ def pixabay_media(query: str, video: bool = False) -> str | None:
 
 
 # ---------------------------------------------------------------- واجهات عامة
-IMAGE_SOURCES = (wikimedia_image, archive_image, nasa_image)
+def openverse_image(query: str) -> str | None:
+    """Openverse — ملايين الصور الحرة (CC) بلا مفتاح؛ مصدر إضافي مجاني."""
+    try:
+        r = requests.get(
+            "https://api.openverse.org/v1/images/",
+            params={"q": query, "page_size": 12, "mature": "false",
+                    "license_type": "all-cc"},
+            headers=UA, timeout=20)
+        if not r.ok:
+            return None
+        used = _used(query)
+        for it in r.json().get("results") or []:
+            u = it.get("url") or ""
+            w = it.get("width") or 0
+            if not u or u in used or u.lower().endswith(".svg"):
+                continue
+            if w and w < 900:
+                continue
+            return u
+    except Exception:
+        return None
+    return None
+
+
+IMAGE_SOURCES = (wikimedia_image, archive_image, nasa_image, openverse_image)
 
 
 def find_image(query: str) -> str | None:
