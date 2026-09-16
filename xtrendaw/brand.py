@@ -23,6 +23,11 @@ KIND_COVER = {
     "hadith": ("hadith_c", "#ffd166", "حديث نبوي"),
     "info": ("info_c", "#9fd88a", "معلومة تُضيء"),
     "qissa": ("qissa_c", "#e8c39a", "قصة من القصص"),
+    "seerah": ("seerah_c", "#d8b08a", "مِن السيرة النبوية"),
+    "asma": ("asma_c", "#ffe9b0", "مِن الأسماء الحسنى"),
+    "kawn": ("kawn_c", "#b09aff", "آية في الكون"),
+    "akhira": ("akhira_c", "#a8c8d8", "استعد للقاء"),
+    "akhlaq": ("akhlaq_c", "#e8a8a0", "خُلق حسن"),
 }
 
 

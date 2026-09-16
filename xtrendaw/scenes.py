@@ -32,10 +32,16 @@ PALETTES = {
     "hadith_c": {"bg": ("#140e02", "#2a1e08"), "neon": "#ffd166", "neon2": "#ff9a3a"},
     "info_c":   {"bg": ("#041204", "#0a2a0e"), "neon": "#9fd88a", "neon2": "#4ad860"},
     "qissa_c":  {"bg": ("#120c06", "#2a2014"), "neon": "#e8c39a", "neon2": "#c89a5a"},
+    "seerah_c": {"bg": ("#100a04", "#241808"), "neon": "#d8b08a", "neon2": "#a87a4a"},
+    "asma_c":   {"bg": ("#0e0a02", "#221c08"), "neon": "#ffe9b0", "neon2": "#d8b060"},
+    "kawn_c":   {"bg": ("#0a0618", "#1a1038"), "neon": "#b09aff", "neon2": "#7a5ad8"},
+    "akhira_c": {"bg": ("#080c10", "#14202a"), "neon": "#a8c8d8", "neon2": "#6898b8"},
+    "akhlaq_c": {"bg": ("#120808", "#281414"), "neon": "#e8a8a0", "neon2": "#c87870"},
 }
 
 # خلفيات بلا شبكة أرضية — السكون للهوادئ
-_NO_GRID = {"quiet", "quran_c", "tafsir_c", "dua_c", "adhkar_c"}
+_NO_GRID = {"quiet", "quran_c", "tafsir_c", "dua_c", "adhkar_c",
+            "asma_c", "seerah_c", "akhira_c", "akhlaq_c"}
 
 
 def _seeded(seed: str) -> np.random.Generator:

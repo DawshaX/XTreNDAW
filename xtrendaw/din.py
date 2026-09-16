@@ -512,7 +512,12 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                            .read_text(encoding="utf-8"))
         lists = {"dua": ("duas", "دعاء"), "hadith": ("hadiths", "قال رسول الله ﷺ"),
                  "adhkar": ("adhkar", "مِن أذكار المسلم"),
-                 "info": ("info", "معلومة تُضيء")}
+                 "info": ("info", "معلومة تُضيء"),
+                 "seerah": ("seerah", "مِن السيرة النبوية"),
+                 "asma": ("asma", "مِن الأسماء الحسنى"),
+                 "kawn": ("kawn", "آية في الكون"),
+                 "akhira": ("akhira", "استعد للقاء"),
+                 "akhlaq": ("akhlaq", "خُلق حسن")}
         lname, label = lists[kind]
         items = stock[lname]
         item = items[(spec or {}).get("idx", reciter_idx) % len(items)]
@@ -542,6 +547,11 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             "adhkar": "ذِكرُ الله تُطمئنّ به القلوب وتُحطّ به الخطايا — "
                       "لا يفارق لسانك.",
             "info": "التفكّر عبادة، والمعرفة نور — تدبَّر وشارك الخير.",
+            "seerah": "في رسول الله أسوة حسنة لمن كان يرجو الله واليوم الآخر.",
+            "asma": "لله الأسماء الحسنى فادعوه بها — وذوقوا ضياءها.",
+            "kawn": "في كل مخلوق آية تدل على الخالق — فتفكَّروا.",
+            "akhira": "من جعل الآخرة نصب عينيه جمع الله شمله وجعل غناه في قلبه.",
+            "akhlaq": "أثقل ما في الميزان خُلق حسن — فأحسنوا الخلق.",
         }[kind]
         # شخصية بصرية مميزة لكل نوع من المخزون — مش قالب واحد للجميع
         qs = {
@@ -553,6 +563,16 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                        "antique quran pages", "warm candlelight dark room"],
             "info": ["aerial desert dunes", "underwater sun rays",
                      "forest fog sunrise", "mountains clouds aerial"],
+            "seerah": ["old mecca street ancient", "camel caravan desert dawn",
+                       "ancient city medina walls", "desert migration path"],
+            "asma": ["light rays sky clouds", "golden sunrise glory",
+                     "stars night vast sky", "sunrise mountains light"],
+            "kawn": ["galaxy spiral space", "ocean deep waves aerial",
+                     "bees flowers macro", "mountains aerial clouds"],
+            "akhira": ["scales justice ancient", "bridge light darkness",
+                       "paradise garden rivers", "desert dawn vast"],
+            "akhlaq": ["helping hands kindness", "sharing bread table warm",
+                       "children playing joy", "smile friends warm"],
         }.get(kind, ["mosque night lights", "kaaba mecca", "quran book candle",
                      "praying hands sky", "dawn mountains peace"])
         n = 3

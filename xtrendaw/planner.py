@@ -21,7 +21,8 @@ QISSA = _dinmod.QISSA
 LEDGER = settings.STATE / "ledger.json"
 WINDOWS_CACHE = settings.STATE / "quran_windows.json"
 
-KIND_ROTATION = ["quran", "adhkar", "hadith", "qissa", "dua", "tafsir", "info"]
+KIND_ROTATION = ["quran", "adhkar", "hadith", "qissa", "dua",
+               "tafsir", "info", "seerah", "asma", "kawn", "akhira", "akhlaq"]
 
 
 def _read_ledger() -> dict:
@@ -72,7 +73,8 @@ def _series(kind: str) -> list[tuple[str, dict]]:
         return [(q["id"], q) for q in QISSA]
     st = _stock()
     lists = {"dua": "duas", "adhkar": "adhkar", "hadith": "hadiths",
-             "info": "info"}
+             "info": "info", "seerah": "seerah", "asma": "asma",
+             "kawn": "kawn", "akhira": "akhira", "akhlaq": "akhlaq"}
     items = st.get(lists[kind], [])
     return [(f"{i}", {"idx": i}) for i in range(len(items))]
 
