@@ -23,7 +23,8 @@ WINDOWS_CACHE = settings.STATE / "quran_windows.json"
 
 KIND_ROTATION = ["quran", "adhkar", "hadith", "qissa", "dua",
                "tafsir", "info", "seerah", "asma", "kawn", "akhira",
-               "akhlaq", "juz", "nawawi", "ruqyah", "hisn", "tahseen"]
+               "akhlaq", "juz", "nawawi", "ruqyah", "hisn", "tahseen",
+               "qudsi"]
 
 
 def _read_ledger() -> dict:
@@ -85,7 +86,7 @@ def _series(kind: str) -> list[tuple[str, dict]]:
     lists = {"dua": "duas", "adhkar": "adhkar", "hadith": "hadiths",
              "info": "info", "seerah": "seerah", "asma": "asma",
              "kawn": "kawn", "akhira": "akhira", "akhlaq": "akhlaq",
-             "nawawi": "nawawi", "hisn": "hisn"}
+             "nawawi": "nawawi", "hisn": "hisn", "qudsi": "qudsi"}
     items = st.get(lists[kind], [])
     return [(f"{i}", {"idx": i}) for i in range(len(items))]
 
@@ -255,7 +256,8 @@ def _topic(kind: str, key: str, spec: dict, rec: int, n: int) -> dict:
                  "kawn": ("kawn", "كون"), "akhira": ("akhira", "آخرة"),
                  "akhlaq": ("akhlaq", "خُلق"),
                  "nawawi": ("nawawi", "نووية"),
-                 "hisn": ("hisn", "حصن")}
+                 "hisn": ("hisn", "حصن"),
+                 "qudsi": ("qudsi", "قدسي")}
         lname, lab = lists[kind]
         item = st[lname][spec["idx"] % len(st[lname])]
         from . import din as _d

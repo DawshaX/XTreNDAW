@@ -33,6 +33,7 @@ KIND_COVER = {
     "ruqyah": ("ruqyah_c", "#7fe0b0", "الرقية الشرعية"),
     "hisn": ("hisn_c", "#8fd0d8", "حصن المسلم"),
     "tahseen": ("tahseen_c", "#e0c87f", "التحصين"),
+    "qudsi": ("qudsi_c", "#c0a0e0", "حديث قدسي"),
 }
 
 

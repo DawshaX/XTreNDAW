@@ -287,12 +287,14 @@ JUZ = [dict(id=f"juz{s}", surah=s, frm=1, to=999) for s in range(78, 115)]
 
 # سلاسل واعية مرقّمة: المصنع عارف إنه بينشر الجزء (س/ص) من سلسلة كاملة
 SERIES_KINDS = {"asma", "seerah", "kawn", "akhira", "akhlaq", "qissa",
-                "tafsir", "juz", "nawawi", "ruqyah", "hisn", "tahseen"}
+                "tafsir", "juz", "nawawi", "ruqyah", "hisn", "tahseen",
+                "qudsi"}
 SERIES_LABEL = {"asma": "سلسلة الأسماء الحسنى", "seerah": "سلسلة السيرة النبوية",
                 "kawn": "سلسلة آيات في الكون", "akhira": "سلسلة الاستعداد للآخرة",
                 "akhlaq": "سلسلة مكارم الأخلاق", "qissa": "سلسلة قصص الأنبياء",
                 "tafsir": "سلسلة التدبُّر", "juz": "سلسلة جزء عمّ",
                 "nawawi": "سلسلة الأربعين النووية",
+                "qudsi": "سلسلة الأحاديث القدسية",
                 "ruqyah": "سلسلة الرقية الشرعية",
                 "hisn": "سلسلة حصن المسلم",
                 "tahseen": "سلسلة التحصين"}
@@ -642,7 +644,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                  "akhira": ("akhira", "استعد للقاء"),
                  "akhlaq": ("akhlaq", "خُلق حسن"),
                  "nawawi": ("nawawi", "قال رسول الله ﷺ"),
-                 "hisn": ("hisn", "حصن المسلم")}
+                 "hisn": ("hisn", "حصن المسلم"),
+                 "qudsi": ("qudsi", "قال الله تعالى")}
         lname, label = lists[kind]
         items = stock[lname]
         _idx = (spec or {}).get("idx", reciter_idx) % len(items)
@@ -685,6 +688,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             "nawawi": "من حفظ الأربعين النوويّة حاز جوامع الكلم — "
                       "احفظها وعلّمها.",
             "hisn": "من لزم ذكر الله حُفظ — «ألا بذكر الله تطمئن القلوب».",
+            "qudsi": "كلام ربك لك مباشرة — اقرأه بقلبك وادعُ به.",
             "ruqyah": "الرقية الشرعية حصن المؤمن — اقرأها على نفسك "
                       "وأهلك كل يوم.",
             "tahseen": "من قالها صباحًا ومساءً حُفظ بإذن الله — "
@@ -714,6 +718,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                        "vintage room warm light", "scholar desk ancient"],
             "hisn": ["morning sunrise sky", "olive tree light",
                      "calm sea horizon", "night stars sky"],
+            "qudsi": ["golden light rays clouds", "night sky deep stars",
+                      "sunrise over mountains", "calm ocean light"],
             "ruqyah": ["soft light mosque", "golden dome light",
                        "olive branch light", "calm sky clouds"],
             "tahseen": ["sunrise golden light", "fortress walls light",

@@ -21,15 +21,16 @@ import requests
 from . import settings
 
 HADITH_SOURCES = [
+    # الأروع والأصفى أولًا: كلام الله ثم المختارات ثم الصحاح والسنن
+    ("ara-qudsi", "الأحاديث القدسية"),
+    ("ara-nawawi", "رياض الصالحين"),
     ("ara-bukhari", "صحيح البخاري"),
     ("ara-muslim", "صحيح مسلم"),
+    ("ara-malik", "موطأ مالك"),
+    ("ara-tirmidhi", "جامع الترمذي"),
+    ("ara-nasai", "سنن النسائي"),
     ("ara-abudawud", "سنن أبي داود"),
     ("ara-ibnmajah", "سنن ابن ماجه"),
-    ("ara-malik", "موطأ مالك"),
-    ("ara-nasai", "سنن النسائي"),
-    ("ara-tirmidhi", "جامع الترمذي"),
-    ("ara-nawawi", "رياض الصالحين"),
-    ("ara-qudsi", "الأحاديث القدسية"),
 ]
 HISN_URL = ("https://cdn.jsdelivr.net/gh/rn0x/hisn_almuslim_json@main/"
             "hisn_almuslim.json")
@@ -113,11 +114,13 @@ def _cache_editions() -> list[dict]:
             for h in r.json().get("hadiths", []):
                 a = _clean(h.get("text") or h.get("arabic") or "")
                 # استخلاص المتن: آخر مقطع بعد نهاية السند
-                if _bare(a)[:8].startswith(("حدثنا", "اخبرنا", "حدثني")):
+                _isnad = ("حدثنا", "اخبرنا", "حدثني", "عن")
+                if _bare(a)[:4].startswith(_isnad):
                     a = _clean(_matn(a))
-                    if _bare(a)[:8].startswith(("حدثنا", "اخبرنا", "حدثني")):
+                    if _bare(a)[:4].startswith(("حدثنا", "اخبرنا", "حدثني")):
                         continue  # السند ما اتفكش — مرفوض
-                if MIN_LEN <= len(a) <= MAX_LEN:
+                _cap = 600 if label == "الأحاديث القدسية" else MAX_LEN
+                if MIN_LEN <= len(a) <= _cap:
                     items.append({"text": a, "src": label})
         except Exception:
             continue
@@ -233,14 +236,19 @@ def hisn_batch() -> list[dict]:
 
 def run(hadith_limit: int = 120, tafsir_limit: int = 8) -> dict:
     """تنفيذ دورة تجديد — يعيد إحصائيات الإضافة."""
-    rep = {"hadiths": 0, "tafsir": 0, "hisn": 0}
+    rep = {"hadiths": 0, "tafsir": 0, "hisn": 0, "qudsi": 0}
     sp = settings.ROOT / "content" / "din_stock.json"
     stock = json.loads(sp.read_text(encoding="utf-8"))
     hs = hadith_batch(hadith_limit)
     hn = hisn_batch()
-    if hs or hn:
+    qd = [h for h in hs if h.get("src") == "الأحاديث القدسية"]
+    hs = [h for h in hs if h.get("src") != "الأحاديث القدسية"]
+    if hs or hn or qd:
         if hs:
             stock.setdefault("hadiths", []).extend(hs)
+        if qd:
+            stock.setdefault("qudsi", []).extend(qd)
+            rep["qudsi"] = len(qd)
         if hn:
             stock.setdefault("adhkar", []).extend(hn)
         sp.write_text(json.dumps(stock, ensure_ascii=False, indent=1),
