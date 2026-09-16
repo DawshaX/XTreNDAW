@@ -23,6 +23,7 @@ PALETTES = {
     "fact2": {"bg": ("#080208", "#1c0610"), "neon": "#ff2a5e", "neon2": "#ff7a1a"},
     "fact3": {"bg": ("#0a0302", "#200a04"), "neon": "#ff7a1a", "neon2": "#ff2a2a"},
     "outro": {"bg": ("#0a0202", "#1a0a04"), "neon": "#ff3b3b", "neon2": "#ffd166"},
+    "quiet": {"bg": ("#030304", "#0b0b0e"), "neon": "#8a8f98", "neon2": "#5a5f6a"},
 }
 
 
@@ -109,8 +110,9 @@ def render_bg(out_path: Path, kind: str, seed: str) -> Path:
         a = int(rng.integers(60, 200))
         draw.ellipse([x, y, x + s, y + s], fill=c + (a,))
 
-    # شبكة الأرضية
-    _grid(draw, neon)
+    # شبكة الأرضية — الخاتمة الهادئة بلا شبكة (نهاية سوداء ساكنة كالمرجع)
+    if kind != "quiet":
+        _grid(draw, neon)
 
     # فينييت مريح
     vig = Image.new("L", (W, H), 0)

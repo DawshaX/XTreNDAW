@@ -151,6 +151,9 @@ HOOKS = {
     "t-thara": "لماذا خُتمت السورة بمثقال الذرّة؟",
 }
 
+# الأنواع الجريئة تحتفظ بهوية النيون الكاملة؛ الهادئة تنزع الإطار والشبكة
+NEON_KINDS = {"hadith", "info", "qissa"}
+
 ASS_HEADER = """[Script Info]
 ScriptType: v4.00+
 PlayResX: 1080
@@ -264,23 +267,26 @@ def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
     return {"base": base, "overlays": [], "grade": "soft"}
 
 
-def _end_card(workdir: Path, fayda: str) -> dict:
-    """كرت الختام: خلفية البراند النيون + اللوجو + فائدة الآية/الدعاء."""
+def _end_card(workdir: Path, fayda: str, quiet: bool = False) -> dict:
+    """كرت الختام: نيون البراند للأنواع الجريئة، وسكون أسود للأنواع الهادئة."""
     from . import textrender
 
     d = workdir / "end"
-    ov = [scenes._brand_layer(d / "brand.png")]
+    ov = [] if quiet else [scenes._brand_layer(d / "brand.png")]
     ov.append(textrender.text_image(
         "﴿ فَائِدَةٌ وَنُور ﴾", d / "h.png", font_size=56, y_ratio=0.28,
-        fill="#ffd9a0", stroke_width=4,
+        fill="#ffd9a0" if not quiet else "#e8e2d5", stroke_width=4,
         font_path=settings.FONTS / "AmiriQuran-Regular.ttf"))
     ov.append(textrender.text_image(fayda, d / "f.png", font_size=48,
                                     y_ratio=0.52, fill="#f7ecd7",
                                     stroke_width=4))
     ov.append(textrender.text_image("انشر الخير — XDAW NOVA", d / "b.png",
                                     font_size=34, y_ratio=0.90,
-                                    fill="#ffd166", stroke_width=3))
-    return {"base": scenes.render_bg(d / "base.png", "outro", "noor-end"),
+                                    fill="#ffd166" if not quiet else "#9a938a",
+                                    stroke_width=3))
+    return {"base": scenes.render_bg(d / "base.png",
+                                     "quiet" if quiet else "outro",
+                                     "noor-end"),
             "overlays": ov}
 
 
@@ -511,7 +517,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     fr_ov = scenes.frame_overlay(workdir / "ov" / "frame.png")
     for sc in scene_list:
         sc["overlays"] = [bl] + (sc.get("overlays") or [])
-        if sc.get("frame"):
+        # الإطار الذهبي هوية الأنواع الجريئة فقط — الهادئة تتنفس بدونه
+        if sc.get("frame") and kind in NEON_KINDS:
             sc["overlays"].append(fr_ov)
     for ev in events:
         ev["start"] += INTRO
@@ -532,7 +539,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                          rate="-6%", pitch="-1Hz")
     wavs.append(fr["wav"])
     end_dur = fr["duration"] + 1.0
-    scene_list.append({**_end_card(workdir, fayda),
+    scene_list.append({**_end_card(workdir, fayda,
+                                   quiet=kind not in NEON_KINDS),
                        "start": off, "end": off + end_dur})
     total = off + end_dur
 
