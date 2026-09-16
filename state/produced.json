@@ -621,6 +621,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789524864.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789524864.png"
    }
+  },
+  "noor-adhkar-21-r3": {
+   "title": "مِن أذكار المسلم: بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا.…",
+   "fingerprint": "c7ec7da1fa4258d7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 24.37,
+   "at": "2026-09-16 03:16",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789528612.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789528612.png"
+   }
   }
  },
  "fingerprints": [
@@ -683,7 +694,8 @@
   "67bc2a5c9e7f91d1",
   "b91e5cdfe6e2cfc2",
   "607b77d9199dea4c",
-  "79ac123d133b0bde"
+  "79ac123d133b0bde",
+  "c7ec7da1fa4258d7"
  ],
- "last_kind": "qissa"
+ "last_kind": "adhkar"
 }
