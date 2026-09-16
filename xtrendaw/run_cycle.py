@@ -522,8 +522,28 @@ def main() -> int:
                 _log(f"⚠ إيچنت المكتبة: {str(_e)[:80]}")
 
             _yt_watchdog()
+            # 📊 إيچنت التحليل — المصنع بيتعلم من جمهوره كل أسبوع
+            try:
+                from . import stats_agent as _sa
+                if _sa.due():
+                    _srep = _sa.run()
+                    _log(f"📊 التحليل: {_srep.get('best_kind')} "
+                         f"{_srep.get('by_kind')}")
+            except Exception as _e:
+                _log(f"⚠ التحليل: {str(_e)[:60]}")
+
             topic = planner.next_episode()
             _log(f"🧭 المخطط: {topic['_din']} · {topic['title_ar']}")
+            # 🔔 إشعار للأدمن مع بدء الإنتاج (تأكيد قناة الإشعارات)
+            try:
+                from .publish import telegram as _tg
+                _adm = settings.TELEGRAM.get("admin_chat")
+                if _adm:
+                    _tg.send_text(
+                        f"🏭 المصنع بدأ إنتاج حلقة:\n{topic['title_ar'][:80]}",
+                        _adm)
+            except Exception:
+                pass
             rec = topic["_din_rec"]
             topic = {**topic, "_din_rec": rec}
             rc = _produce(topic, upload=not args.no_upload)

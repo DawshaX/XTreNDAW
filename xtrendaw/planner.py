@@ -148,9 +148,24 @@ def next_episode() -> dict:
 
     if _dt.datetime.now(_dt.timezone(
             _dt.timedelta(hours=2))).hour in range(16, 23):
-        order = [k for k in ("quran", "tafsir") if k in order] + \
-                [k for k in order if k not in ("quran", "tafsir")]
+        _gold = ("quran", "ruqyah", "tahseen", "tafsir", "juz")
+        order = [k for k in _gold if k in order] + \
+                [k for k in order if k not in _gold]
         start = 0
+    # 📊 المصنع بيتعلم: نوع الجمهور المفضل (من إيچنت التحليل) يتقدّم
+    try:
+        import json as _js
+        _rp = LEDGER.with_name("stats_report.json")
+        if _rp.exists():
+            import time as _tm
+            _r = _js.loads(_rp.read_text(encoding="utf-8"))
+            _bk = _r.get("best_kind")
+            if (_bk in order and _r.get("ts", 0)
+                    and _tm.time() - _r["ts"] < 8 * 86400):
+                order = [_bk] + [k for k in order if k != _bk]
+                start = 0
+    except Exception:
+        pass
     # 🎛 زر الأدمن: state/force_kind.json يقدّم نوعًا واحدًا لمرة واحدة (بلا تكرار)
     _fkp = LEDGER.with_name("force_kind.json")
     if _fkp.exists():
