@@ -689,7 +689,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                       "وأهلك كل يوم.",
             "tahseen": "من قالها صباحًا ومساءً حُفظ بإذن الله — "
                        "«وهو يحفظهم من أمر الله».",
-        }[kind]
+        }.get(kind, "نورٌ يُتدبَّر وعملٌ يُخلَص — شارِك الخير.")
         # شخصية بصرية مميزة لكل نوع من المخزون — مش قالب واحد للجميع
         qs = {
             "dua": ["sunset over calm sea", "doves flying sky",
