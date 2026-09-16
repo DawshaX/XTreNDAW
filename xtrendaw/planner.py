@@ -105,8 +105,15 @@ def _golden_keys(kind: str) -> set:
     return keys
 
 
+# أنواع السلاسل الواعية تُعرَّف في din (SERIES_KINDS / SERIES_LABEL)
+
+
 def _coverage_order(kind: str, keys: list) -> list[int]:
-    """الذهبي أولًا ثم تغطية 100% شبه عشوائية — بلا تكرار قبل استكمال الكل."""
+    """سلاسل واعية بالترتيب، والباقي ذهبي أولًا ثم تغطية شبه عشوائية."""
+    from . import din as _d
+
+    if kind in _d.SERIES_KINDS:
+        return list(range(len(keys)))
     import hashlib
     gold = _golden_keys(kind)
     return sorted(range(len(keys)), key=lambda i: (
@@ -209,7 +216,11 @@ def _topic(kind: str, key: str, spec: dict, rec: int, n: int) -> dict:
         title = f"{spec.get('name', '')} ﴿{spec['frm']}–{spec['to']}﴾ — {rec_name}"
     elif kind == "qissa":
         spec = dict(spec)
-        title = f"قصة: {spec.get('title', key)} — {rec_name}"
+        from . import din as _d
+
+        _qi = next((j for j, q in enumerate(_d.QISSA) if q["id"] == key), 0)
+        title = (f"سلسلة قصص الأنبياء ({_qi + 1}/{len(_d.QISSA)}): "
+                 f"{spec.get('title', key)}")
     else:
         st = _stock()
         lists = {"dua": ("duas", "دعاء"), "adhkar": ("adhkar", "ذِكر"),
@@ -219,7 +230,13 @@ def _topic(kind: str, key: str, spec: dict, rec: int, n: int) -> dict:
                  "akhlaq": ("akhlaq", "خُلق")}
         lname, lab = lists[kind]
         item = st[lname][spec["idx"] % len(st[lname])]
-        title = f"{lab}: {item['text'][:42]}…"
+        from . import din as _d
+
+        if kind in _d.SERIES_LABEL:
+            title = (f"{_d.SERIES_LABEL[kind]} ({spec['idx'] + 1}"
+                     f"/{len(st[lname])}): {item['text'][:34]}…")
+        else:
+            title = f"{lab}: {item['text'][:42]}…"
     return {"id": f"noor-{kind}-{key}-r{rec}",
             "title_ar": title, "tags": "نور,قرآن,دعوة,XDAWNOVA",
             "_din": kind, "_din_rec": rec, "_din_spec": spec, "_kind": kind}

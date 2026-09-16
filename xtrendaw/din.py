@@ -240,6 +240,13 @@ HOOKS = {
 # الأنواع الجريئة تحتفظ بهوية النيون الكاملة؛ الهادئة تنزع الإطار والشبكة
 NEON_KINDS = {"hadith", "info", "qissa"}
 
+# سلاسل واعية مرقّمة: المصنع عارف إنه بينشر الجزء (س/ص) من سلسلة كاملة
+SERIES_KINDS = {"asma", "seerah", "kawn", "akhira", "akhlaq", "qissa", "tafsir"}
+SERIES_LABEL = {"asma": "سلسلة الأسماء الحسنى", "seerah": "سلسلة السيرة النبوية",
+                "kawn": "سلسلة آيات في الكون", "akhira": "سلسلة الاستعداد للآخرة",
+                "akhlaq": "سلسلة مكارم الأخلاق", "qissa": "سلسلة قصص الأنبياء",
+                "tafsir": "سلسلة التدبُّر"}
+
 ASS_HEADER = """[Script Info]
 ScriptType: v4.00+
 PlayResX: 1080
@@ -421,6 +428,11 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         meta = _get_json(f"{APIQ}/surah/{spec['surah']}")
         rev = "مَكِّيَّة" if meta.get("revelationType") == "Meccan" else "مَدَنِيَّة"
         title = f"{sname} ﴿{spec['frm']}–{spec['to']}﴾ — {rec_name}"
+        if kind == "tafsir":
+            _ti = next((j for j, w in enumerate(TAFASEER)
+                        if w["id"] == spec["id"]), 0)
+            title = (f"{SERIES_LABEL['tafsir']} ({_ti + 1}/{len(TAFASEER)}): "
+                     f"{title}")
         t = _get_json(f"{APIQ}/surah/{spec['surah']}/ar.muyassar")["ayahs"]
         tafs = {a["numberInSurah"]: a["text"] for a in t}
         fayda = _trim_sent(tafs.get(spec["frm"], ""), 190)
@@ -550,8 +562,13 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                  "akhlaq": ("akhlaq", "خُلق حسن")}
         lname, label = lists[kind]
         items = stock[lname]
-        item = items[(spec or {}).get("idx", reciter_idx) % len(items)]
-        title = f"{label}: {item['text'][:40]}…"
+        _idx = (spec or {}).get("idx", reciter_idx) % len(items)
+        item = items[_idx]
+        if kind in SERIES_LABEL:
+            title = (f"{SERIES_LABEL[kind]} ({_idx + 1}/{len(items)}): "
+                     f"{item['text'][:34]}…")
+        else:
+            title = f"{label}: {item['text'][:40]}…"
         r = synthesize_line(item["text"], "ar", workdir / "vox", name="main",
                             rate="-8%", pitch="-2Hz")
         wavs.append(r["wav"])
