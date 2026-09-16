@@ -240,12 +240,17 @@ HOOKS = {
 # الأنواع الجريئة تحتفظ بهوية النيون الكاملة؛ الهادئة تنزع الإطار والشبكة
 NEON_KINDS = {"hadith", "info", "qissa"}
 
+# جزء عمّ: كل سورة سلسلة تلاوة مرقّمة (التقليم التلقائي يحافظ على ≤90ث)
+JUZ = [dict(id=f"juz{s}", surah=s, frm=1, to=999) for s in range(78, 115)]
+
 # سلاسل واعية مرقّمة: المصنع عارف إنه بينشر الجزء (س/ص) من سلسلة كاملة
-SERIES_KINDS = {"asma", "seerah", "kawn", "akhira", "akhlaq", "qissa", "tafsir"}
+SERIES_KINDS = {"asma", "seerah", "kawn", "akhira", "akhlaq", "qissa",
+                "tafsir", "juz", "nawawi"}
 SERIES_LABEL = {"asma": "سلسلة الأسماء الحسنى", "seerah": "سلسلة السيرة النبوية",
                 "kawn": "سلسلة آيات في الكون", "akhira": "سلسلة الاستعداد للآخرة",
                 "akhlaq": "سلسلة مكارم الأخلاق", "qissa": "سلسلة قصص الأنبياء",
-                "tafsir": "سلسلة التدبُّر"}
+                "tafsir": "سلسلة التدبُّر", "juz": "سلسلة جزء عمّ",
+                "nawawi": "سلسلة الأربعين النووية"}
 
 ASS_HEADER = """[Script Info]
 ScriptType: v4.00+
@@ -404,7 +409,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     title = ""
 
     if kind in ("quran", "qissa", "tafsir"):
-        pool = {"quran": QURAN, "qissa": QISSA, "tafsir": TAFASEER}[kind]
+        pool = {"quran": QURAN, "qissa": QISSA, "tafsir": TAFASEER,
+                "juz": JUZ}[kind]
         spec = spec or pool[reciter_idx % len(pool)]
         spec = {**spec, "style": "cinema" if kind == "qissa" else "cosmic"}
         ayahs = _get_json(f"{APIQ}/surah/{spec['surah']}/quran-uthmani")["ayahs"]
@@ -428,6 +434,14 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         meta = _get_json(f"{APIQ}/surah/{spec['surah']}")
         rev = "مَكِّيَّة" if meta.get("revelationType") == "Meccan" else "مَدَنِيَّة"
         title = f"{sname} ﴿{spec['frm']}–{spec['to']}﴾ — {rec_name}"
+        if kind == "juz":
+            from . import planner as _pl
+
+            _jw = [w for w in _pl.quran_windows() if w["surah"] >= 78]
+            _ji = next((j for j, w in enumerate(_jw)
+                        if w["surah"] == spec["surah"]
+                        and w["frm"] == spec["frm"]), 0)
+            title = f"{SERIES_LABEL['juz']} ({_ji + 1}/{len(_jw)}): {title}"
         if kind == "tafsir":
             _ti = next((j for j, w in enumerate(TAFASEER)
                         if w["id"] == spec["id"]), 0)
@@ -438,7 +452,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         fayda = _trim_sent(tafs.get(spec["frm"], ""), 190)
         fayda = f"نزلت {rev}. {fayda}"
         # لمسة المراجع الناجحة: مود بصري واحد موحّد للفيديو كله
-        if kind in ("quran", "tafsir"):
+        if kind in ("quran", "tafsir", "juz"):
             import hashlib as _h
             # لكل نوع شخصيته البصرية — القناة بتطوّر وبتنوِّع قوالبها
             if kind == "tafsir":
@@ -559,7 +573,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                  "asma": ("asma", "مِن الأسماء الحسنى"),
                  "kawn": ("kawn", "آية في الكون"),
                  "akhira": ("akhira", "استعد للقاء"),
-                 "akhlaq": ("akhlaq", "خُلق حسن")}
+                 "akhlaq": ("akhlaq", "خُلق حسن"),
+                 "nawawi": ("nawawi", "قال رسول الله ﷺ")}
         lname, label = lists[kind]
         items = stock[lname]
         _idx = (spec or {}).get("idx", reciter_idx) % len(items)
@@ -599,6 +614,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             "kawn": "في كل مخلوق آية تدل على الخالق — فتفكَّروا.",
             "akhira": "من جعل الآخرة نصب عينيه جمع الله شمله وجعل غناه في قلبه.",
             "akhlaq": "أثقل ما في الميزان خُلق حسن — فأحسنوا الخلق.",
+            "nawawi": "من حفظ الأربعين النوويّة حاز جوامع الكلم — "
+                      "احفظها وعلّمها.",
         }[kind]
         # شخصية بصرية مميزة لكل نوع من المخزون — مش قالب واحد للجميع
         qs = {
@@ -620,6 +637,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                        "paradise garden rivers", "desert dawn vast"],
             "akhlaq": ["helping hands kindness", "sharing bread table warm",
                        "children playing joy", "smile friends warm"],
+            "nawawi": ["old quran book candle", "lantern warm light night",
+                       "vintage room warm light", "scholar desk ancient"],
         }.get(kind, ["mosque night lights", "kaaba mecca", "quran book candle",
                      "praying hands sky", "dawn mountains peace"])
         n = 3

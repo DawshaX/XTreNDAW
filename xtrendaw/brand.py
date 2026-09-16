@@ -28,6 +28,8 @@ KIND_COVER = {
     "kawn": ("kawn_c", "#b09aff", "آية في الكون"),
     "akhira": ("akhira_c", "#a8c8d8", "استعد للقاء"),
     "akhlaq": ("akhlaq_c", "#e8a8a0", "خُلق حسن"),
+    "juz": ("quran_c", "#7fb4ff", "سلسلة جزء عمّ"),
+    "nawawi": ("nawawi_c", "#d8c8a0", "الأربعون النووية"),
 }
 
 

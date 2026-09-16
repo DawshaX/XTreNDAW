@@ -83,7 +83,6 @@ jobs:
       - name: سلسلة الساعة (لو الكرون نام — المصنع يصحي نفسه)
         if: always()
         run: |
-          [ -f /tmp/skipflag ] && { echo "دورة راحة — السلسلة بتستنى الكرون"; exit 0; }
           ts=$(python3 -c "import json; print(int(json.load(open('state/last_publish.json'))['ts']))" 2>/dev/null || echo 0)
           now=$(date +%s)
           delta=$((ts + 3600 - now))
