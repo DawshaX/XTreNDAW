@@ -599,6 +599,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789515460.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789515460.png"
    }
+  },
+  "noor-adhkar-2-r3": {
+   "title": "مِن أذكار المسلم: رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَا…",
+   "fingerprint": "607b77d9199dea4c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 29.17,
+   "at": "2026-09-16 00:40",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789519255.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789519255.png"
+   }
   }
  },
  "fingerprints": [
@@ -659,7 +670,8 @@
   "27d6fcdabb229fce",
   "76018090f4955d89",
   "67bc2a5c9e7f91d1",
-  "b91e5cdfe6e2cfc2"
+  "b91e5cdfe6e2cfc2",
+  "607b77d9199dea4c"
  ],
- "last_kind": "tafsir"
+ "last_kind": "adhkar"
 }
