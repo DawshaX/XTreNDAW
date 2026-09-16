@@ -24,7 +24,18 @@ PALETTES = {
     "fact3": {"bg": ("#0a0302", "#200a04"), "neon": "#ff7a1a", "neon2": "#ff2a2a"},
     "outro": {"bg": ("#0a0202", "#1a0a04"), "neon": "#ff3b3b", "neon2": "#ffd166"},
     "quiet": {"bg": ("#030304", "#0b0b0e"), "neon": "#8a8f98", "neon2": "#5a5f6a"},
+    # أغلفة الأنواع — لكل نوع لونه الخاص في شبكة القناة
+    "quran_c":  {"bg": ("#020614", "#0a1a3a"), "neon": "#7fb4ff", "neon2": "#3a6ad8"},
+    "tafsir_c": {"bg": ("#140a02", "#2a1608"), "neon": "#ffb37a", "neon2": "#d87a3a"},
+    "dua_c":    {"bg": ("#021210", "#0a2a26"), "neon": "#8fd8c8", "neon2": "#3ad8b0"},
+    "adhkar_c": {"bg": ("#060618", "#141438"), "neon": "#9aa7ff", "neon2": "#5a67d8"},
+    "hadith_c": {"bg": ("#140e02", "#2a1e08"), "neon": "#ffd166", "neon2": "#ff9a3a"},
+    "info_c":   {"bg": ("#041204", "#0a2a0e"), "neon": "#9fd88a", "neon2": "#4ad860"},
+    "qissa_c":  {"bg": ("#120c06", "#2a2014"), "neon": "#e8c39a", "neon2": "#c89a5a"},
 }
+
+# خلفيات بلا شبكة أرضية — السكون للهوادئ
+_NO_GRID = {"quiet", "quran_c", "tafsir_c", "dua_c", "adhkar_c"}
 
 
 def _seeded(seed: str) -> np.random.Generator:
@@ -111,7 +122,7 @@ def render_bg(out_path: Path, kind: str, seed: str) -> Path:
         draw.ellipse([x, y, x + s, y + s], fill=c + (a,))
 
     # شبكة الأرضية — الخاتمة الهادئة بلا شبكة (نهاية سوداء ساكنة كالمرجع)
-    if kind != "quiet":
+    if kind not in _NO_GRID:
         _grid(draw, neon)
 
     # فينييت مريح

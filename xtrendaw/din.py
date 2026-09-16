@@ -693,7 +693,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     video.assemble({"wav": vox, "total_duration": total}, scene_list, ass,
                    out, workdir, music=None)
     cover = settings.OUT / f"{ep_id}-cover.png"
-    brand.compose_cover({"id": ep_id, "title_ar": title,
+    brand.compose_cover({"id": ep_id, "title_ar": title, "_kind": kind,
                          "tags": "نور,قرآن,دعوة,XDAWNOVA"}, cover)
     return {"video": out, "cover": cover, "report": video.validate(out),
             "title": title, "id": ep_id, "reciter": reciter}
