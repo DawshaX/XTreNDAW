@@ -194,6 +194,7 @@ def pexels_video(query: str) -> str | None:
             for f in files:
                 u = f.get("link") or ""
                 if u and u not in used and (f.get("width") or 0) >= 720:
+                    _mark_used(query, u)
                     return u
     except Exception:
         return None

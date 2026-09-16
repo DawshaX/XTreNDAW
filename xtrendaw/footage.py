@@ -195,6 +195,20 @@ def _nasa_candidates(query: str) -> list:
         return []
 
 
+def _pexels_candidates(query: str) -> list:
+    """فيديو حي عمودي 1080×1920 من Pexels — أول وأقوى مصدر للمشاهد."""
+    try:
+        from . import library as _lb
+        seen = []
+        for _ in range(2):          # مرشحان لكل مشهد — تنويع حقيقي
+            u = _lb.pexels_video(query)
+            if u and u not in seen:
+                seen.append(u)
+        return [{"url": u} for u in seen]
+    except Exception:
+        return []
+
+
 def fetch_clip(query: str, seconds: float, workdir: Path, seed: str,
                source: str = "auto") -> Path | None:
     """لقطة حيّة مطابقة للمعنى → mp4 مظبوط بلا نص محروق، أو None."""
@@ -204,7 +218,7 @@ def fetch_clip(query: str, seconds: float, workdir: Path, seed: str,
     cached = LIB / f"{key}.mp4"
 
     if not cached.exists():
-        cands: list = []
+        cands: list = _pexels_candidates(query)
         if source in ("auto", "commons", "noia"):
             cands += _commons_candidates(query)
         if source in ("auto", "ia"):
