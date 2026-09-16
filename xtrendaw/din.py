@@ -394,6 +394,12 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 spec: dict | None = None,
                 tts_recite: bool = False) -> dict:
     """ينتج حلقة نور ويعيد {video, cover, report, title, id}."""
+    # تنويع الأصوات كل ساعة — المخزون النصي ×4 بلا حدود
+    from . import tts as _tt
+    import time as _tm
+    _tt.VOICE_OVERRIDE_AR = [
+        "ar-SA-HamedNeural", "ar-EG-ShakirNeural",
+        "ar-JO-TaimNeural", "ar-SY-LaithNeural"][int(_tm.time() / 3600) % 4]
     workdir.mkdir(parents=True, exist_ok=True)
     reciter, rec_name, kbps = RECITERS[reciter_idx % len(RECITERS)]
     from . import state as _state

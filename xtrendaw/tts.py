@@ -228,13 +228,18 @@ def _piper_line(text: str, out_dir: Path, name: str) -> dict | None:
     return None
 
 
+# تنويع الأصوات: din بيغيّرها كل حلقة (تنوع بلا حدود)
+VOICE_OVERRIDE_AR: str | None = None
+
+
 def synthesize_line(text: str, lang: str, out_dir: Path, name: str = "line",
                     rate: str | None = None, pitch: str | None = None) -> dict:
     """سطر واحد → {wav, duration, words, timing_source}.
 
     للعربي: صوت نيورال طبيعي (edge) + نبرة جملة-بجملة، وPiper احتياطي محلي.
     """
-    voice = settings.VOICE_EN if lang == "en" else settings.VOICE_AR
+    voice = settings.VOICE_EN if lang == "en" else (
+        VOICE_OVERRIDE_AR or settings.VOICE_AR)
     out_dir.mkdir(parents=True, exist_ok=True)
 
     if lang == "ar" and settings.TTS_ENGINE == "piper":
