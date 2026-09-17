@@ -135,7 +135,7 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
         else:          # تقريب عميق بطيء
             zp = f"z='1+0.16*on/{frames}':x='{cx}':y='{cy}'"
         parts = [
-            f"[0:v]scale={V['width'] * 3 // 2}:{V['height'] * 3 // 2},"
+            f"[0:v]scale={V['width'] * 5 // 4}:{V['height'] * 5 // 4},"
             # دفعة هوية حمراء سينمائية موحّدة فوق أي صورة مصدر
             f"{grade},{rich},"
             f"zoompan={zp}:d={frames}:s={V['width']}x{V['height']}:fps={V['fps']},"

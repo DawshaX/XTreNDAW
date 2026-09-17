@@ -762,7 +762,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 merged[-1] = (merged[-1][0], e)
             else:
                 merged.append((s, e))
-        merged = merged[:10]
+        merged = merged[:8]
         # آخر مشهد يبتلع الذيل/Dبلجة دائمًا — التغطية كاملة مهما طال النص
         if merged and off > merged[-1][1]:
             merged[-1] = (merged[-1][0], off)
@@ -980,14 +980,16 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     # نسخة 4K رئيسية (2160×3840) — إتقان إضافي مع بقاء 1080 للنشر
     v4k = settings.OUT / f"{ep_id}-4k.mp4"
     try:
-        subprocess.run(
-            [ffmpeg(), "-y", "-i", str(out), "-vf",
-             "scale=2160:3840:flags=lanczos,unsharp=7:7:0.55",
-             "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
-             "-x264-params", "rc-lookahead=10",
-             "-pix_fmt", "yuv420p", "-c:a", "copy",
-             "-movflags", "+faststart", str(v4k)],
-            capture_output=True, timeout=900)
+        if total <= 55:
+            subprocess.run(
+                [ffmpeg(), "-y", "-i", str(out), "-vf",
+                 "scale=2160:3840:flags=lanczos",
+                 "-c:v", "libx264", "-preset", "ultrafast", "-crf", "23",
+                 "-x264-params", "rc-lookahead=5:sync-lookahead=0",
+                 "-threads", "2",
+                 "-pix_fmt", "yuv420p", "-c:a", "copy",
+                 "-movflags", "+faststart", str(v4k)],
+                capture_output=True, timeout=420)
         if not v4k.exists():
             v4k = out
     except Exception:
