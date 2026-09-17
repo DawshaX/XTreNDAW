@@ -453,6 +453,9 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         "ar-EG-SalmaNeural", "ar-SA-ZariyahNeural",
         "ar-LB-LaylaNeural", "ar-AE-FatimaNeural"][int(_tm.time() / 3600) % 4]
     workdir.mkdir(parents=True, exist_ok=True)
+    import hashlib as _hl
+    _rhy_size = [3, 2, 4][int(_hl.sha256(f"{kind}:{title[:24]}".encode())
+                             .hexdigest(), 16) % 3]
     chip = ""
     reciter, rec_name, kbps = RECITERS[reciter_idx % len(RECITERS)]
     from . import state as _state
@@ -756,8 +759,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         spec["rgb"] = _mv0.style_dna(spec["seed"])["rgb"]
         # مونتاج يطارد الكلام: قصّة حية لكل عبارة منطوقة — الصور تصف الصوت
         segs = [(base_off + ch["start"] - 0.15, base_off + ch["end"] + 0.2)
-                for ch in captions.chunk_words(
-                    r["words"], size=[3, 2, 4][dna.get("rhythm", 0) % 3])]
+                for ch in captions.chunk_words(r["words"], size=_rhy_size)]
         merged: list[tuple[float, float]] = []
         for s, e in segs:
             if merged and e - s < 1.1:
