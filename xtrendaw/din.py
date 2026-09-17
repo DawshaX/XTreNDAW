@@ -661,8 +661,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         wavs.append(r["wav"])
         intro = synthesize_line(label, "ar", workdir / "vox", name="intro",
                                 rate="-6%", pitch="-3Hz")
-        wavs = [intro["wav"], _silence(workdir / "g0.wav", 0.15)] + wavs
-        base_off = intro["duration"] + 0.15
+        wavs = [intro["wav"], _silence(workdir / "g0.wav", 0.05)] + wavs
+        base_off = intro["duration"] + 0.05
         for ch in captions.chunk_words(intro["words"], size=3):
             events.append({"style": "Shr", "text": ch["text"],
                            "start": ch["start"], "end": ch["end"]})
@@ -677,8 +677,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         # 🌍 دبلجة للعالم: نفس النص بإنجليزي واضح + كابتشن كلمات
         _en = (item.get("en") or "").strip()
         if _en:
-            wavs.append(_silence(workdir / "g_en.wav", 0.4))
-            off += 0.4
+            wavs.append(_silence(workdir / "g_en.wav", 0.22))
+            off += 0.22
             er = synthesize_line(_en, "en", workdir / "vox", name="endub",
                                  rate="-4%")
             wavs.append(er["wav"])
@@ -744,11 +744,12 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                         "calm desert dawn", "stars night sky"],
         }.get(kind, ["mosque night lights", "kaaba mecca", "quran book candle",
                      "praying hands sky", "dawn mountains peace"])
-        n = 6  # مونتاج حي: قصات أسرع ومقاطع أكثر
+        n = 5 + _idx % 3  # مونتاج حي — عدد القصات يختلف كل حلقة
+        _gr = ["calm", "soft", "calm", "soft", "calm"][_idx % 5]
         for i in range(n):
             s = off * i / n
             e = off * (i + 1) / n
-            sc = _scene_media(i, {"scenes": qs, "grade": "calm"},
+            sc = _scene_media(i, {"scenes": qs, "grade": _gr},
                               workdir, kind, e - s)
             sc.update(start=s, end=e, frame=True)
             scene_list.append(sc)
@@ -854,7 +855,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                              "[0:a]afftdn=nf=-30,"
                              "equalizer=f=110:width_type=q:width=1:g=1,"
                              "equalizer=f=3400:width_type=q:width=1:g=1.5,"
-                             "aecho=0.2:0.25:30:0.07[a];"
+                             "acompressor=threshold=-18dB:ratio=2:attack=20:"
+                             "release=250[a];"
                              "[a][1:a]amix=inputs=2:normalize=0,"
                              "loudnorm=I=-14:TP=-1.2:LRA=11[out]",
                              "-map", "[out]", "-ar", "44100", "-ac", "2",

@@ -29,8 +29,11 @@ jobs:
       OPENVERSE_TOKEN: ${{ secrets.OPENVERSE_TOKEN }}
       FREESOUND_ID: ${{ secrets.FREESOUND_ID }}
       FREESOUND_SECRET: ${{ secrets.FREESOUND_SECRET }}
+      CURRENTS_API_KEY: ${{ secrets.CURRENTS_API_KEY }}
+      RESTCOUNTRIES_KEY: ${{ secrets.RESTCOUNTRIES_KEY }}
       LLM_API_BASE: ${{ secrets.LLM_API_BASE }}
       LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      LLM_MODEL: ${{ secrets.LLM_MODEL }}
       YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
       YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
       YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
