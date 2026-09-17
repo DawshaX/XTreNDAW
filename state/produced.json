@@ -830,6 +830,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789614224.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789614224.png"
    }
+  },
+  "noor-kawn-0-r3": {
+   "title": "سلسلة آيات في الكون (1/22): ﴿والشمس تجري لمستقر لها﴾ — الشمس ت…",
+   "fingerprint": "ec9cd9d8cf99831c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 22.33,
+   "at": "2026-09-17 04:07",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789618073.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789618073.png"
+   }
   }
  },
  "fingerprints": [
@@ -911,7 +922,8 @@
   "a0aae69aa73dbdcc",
   "d0dbdbe1b30120ea",
   "8d00ac069e6fc918",
-  "8a19f6ee0d9e473b"
+  "8a19f6ee0d9e473b",
+  "ec9cd9d8cf99831c"
  ],
- "last_kind": "qudsi"
+ "last_kind": "kawn"
 }
