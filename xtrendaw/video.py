@@ -17,6 +17,8 @@ V = settings.VIDEO
 
 
 def _run(cmd: list[str], what: str) -> None:
+    if cmd and "timeout" not in cmd[0]:
+        cmd = ["timeout", "-k", "10", "420", *cmd]
     r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode != 0:
         raise RuntimeError(f"{what} فشل (exit {r.returncode}):\n{(r.stderr or '')[-700:]}")
@@ -96,18 +98,13 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
             f"[df]scale=900:1600,{grade},{rich},{_fadebg}[dfs]"
         ]
     elif scene.get("video"):
-        # لقطة حية + زحف عمق بطيء (إحساس 3D مع بارالاكس الجسيمات)
-        _lz = ""
-        if dna.get("live_zoom"):
-            _lz = (f"zoompan=z='1+0.05*on/{frames}':"
-                   f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
-                   f"d=1:s={V['width']}x{V['height']}:fps={V['fps']},")
+        # لقطة حية — حركتها من نفسها + بارالاكس الجسيمات يعطي العمق
         _lb = ""
         if scene.get("layout") == "letterbox":
             # سينما سكوب: أشرطة سوداء فوق وتحت — لغة فيلم
             _lb = "crop=1080:1400:0:260,pad=1080:1920:0:260:color=black,"
         parts = [
-            f"[0:v]{_norm}{grade},{_lz}{rich},{_lb}"
+            f"[0:v]{_norm}{grade},{rich},{_lb}"
             f"{_fin}color=0x0a0603,"
             f"fade=t=out:st={_tdip:.2f}:d={_tdur:.2f}:color={_tcol}[base]"
         ]
