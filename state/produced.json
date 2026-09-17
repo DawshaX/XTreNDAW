@@ -937,6 +937,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789670835.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789670835.png"
    }
+  },
+  "noor-quran-s094-1-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الشَّرۡحِ ﴿1–8﴾ — أيمن سويد",
+   "fingerprint": "447b05a27fb8f03f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs094-1-aymanswoaid.mp4",
+   "duration": 74.99,
+   "at": "2026-09-17 20:01",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789675273.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789675273.png"
+   }
   }
  },
  "fingerprints": [
@@ -1028,7 +1039,8 @@
   "529a1ffabe0dda5d",
   "f127cf5bf9a4e193",
   "1b96afff0b6e7047",
-  "2bf746b539ed47e5"
+  "2bf746b539ed47e5",
+  "447b05a27fb8f03f"
  ],
  "last_kind": "quran"
 }
