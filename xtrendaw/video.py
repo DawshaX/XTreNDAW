@@ -187,6 +187,7 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
         "-filter_complex", ";".join(parts),
         "-map", prev, "-frames:v", str(frames), "-r", str(V["fps"]),
         "-c:v", V["vcodec"], "-preset", "fast", "-crf", "20",
+        "-x264-params", "rc-lookahead=8:sync-lookahead=0", "-threads", "2",
         "-pix_fmt", "yuv420p", "-an", str(out_mp4),
     ], f"clip {out_mp4.name}")
     return out_mp4
