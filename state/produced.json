@@ -926,6 +926,17 @@
    "duration": 47.23,
    "at": "2026-09-17 16:38",
    "urls": {}
+  },
+  "noor-quran-s020-25-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ طه ﴿25–28﴾ — أبو بكر الشاطري",
+   "fingerprint": "2bf746b539ed47e5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs020-25-shaatree.mp4",
+   "duration": 42.9,
+   "at": "2026-09-17 18:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789670835.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789670835.png"
+   }
   }
  },
  "fingerprints": [
@@ -1016,7 +1027,8 @@
   "2d8b925b7295f09e",
   "529a1ffabe0dda5d",
   "f127cf5bf9a4e193",
-  "1b96afff0b6e7047"
+  "1b96afff0b6e7047",
+  "2bf746b539ed47e5"
  ],
  "last_kind": "quran"
 }
