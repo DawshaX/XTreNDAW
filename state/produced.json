@@ -907,6 +907,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789642307.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789642307.png"
    }
+  },
+  "noor-quran-s002-285-r7": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ البَقَرَةِ ﴿285–285﴾ — أيمن سويد",
+   "fingerprint": "f127cf5bf9a4e193",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs002-285-aymanswoaid.mp4",
+   "duration": 75.53,
+   "at": "2026-09-17 14:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789656379.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789656379.png"
+   }
   }
  },
  "fingerprints": [
@@ -995,7 +1006,8 @@
   "9bfcc9e8e04ffef7",
   "a65830634d6be8fd",
   "2d8b925b7295f09e",
-  "529a1ffabe0dda5d"
+  "529a1ffabe0dda5d",
+  "f127cf5bf9a4e193"
  ],
- "last_kind": "akhira"
+ "last_kind": "quran"
 }
