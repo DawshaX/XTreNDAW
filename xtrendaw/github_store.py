@@ -183,11 +183,6 @@ def promote_next() -> dict | None:
                   key=lambda a: a["name"])
     if not vids:
         return None
-    ts = vids[0]["name"][1:-4]
-    all_v = _assets(tok, vrel)
-    cover_a = next((a for a in all_v if a["name"] == f"q{ts}.png"), None)
-    meta_a = next((a for a in all_v if a["name"] == f"q{ts}.json"), None)
-    meta = {}
     tmp = Path(tempfile.mkdtemp())
 
     def _dl(asset: dict, dst: Path) -> None:
@@ -195,8 +190,29 @@ def promote_next() -> dict | None:
         r.raise_for_status()
         dst.write_bytes(r.content)
 
+    # أصلأ الأقدم؛ لو أصل تالف (404) احذفه وعدّ للي بعده — النشر ما يقفش
     local_video = tmp / "video.mp4"
-    _dl(vids[0], local_video)
+    chosen = None
+    for v in vids:
+        try:
+            _dl(v, local_video)
+            chosen = v
+            break
+        except Exception:
+            try:
+                requests.delete(v["url"],
+                                headers={"Authorization": f"Bearer {tok}",
+                                         "Accept": "application/vnd.github+json"},
+                                timeout=30)
+            except Exception:
+                pass
+    if chosen is None:
+        return None
+    ts = chosen["name"][1:-4]
+    all_v = _assets(tok, vrel)
+    cover_a = next((a for a in all_v if a["name"] == f"q{ts}.png"), None)
+    meta_a = next((a for a in all_v if a["name"] == f"q{ts}.json"), None)
+    meta = {}
     local_cover: Path | None = None
     if cover_a:
         local_cover = tmp / "cover.png"
@@ -216,7 +232,7 @@ def promote_next() -> dict | None:
     if local_cover:
         urls["cover"] = upload_file(tok, erel, local_cover, f"ep{n}-cover.png")
 
-    for a in (vids[0], cover_a, meta_a):
+    for a in (chosen, cover_a, meta_a):
         if a:
             requests.delete(f"{API}/repos/{_repo()}/releases/assets/{a['id']}",
                             headers=_headers(tok), timeout=30)
