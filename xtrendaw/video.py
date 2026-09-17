@@ -94,8 +94,10 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
         parts = [
             f"[0:v]{_norm}split=2[db][df];"
             f"[db]scale={V['width']}:{V['height']},"
-            f"boxblur=34:2,eq=brightness=-0.22:saturation=1.15,{_fadebg}[dbg];"
-            f"[df]scale=900:1600,{grade},{rich},{_fadebg}[dfs]"
+            f"boxblur=34:2,eq=brightness=-0.22:saturation=1.15,"
+            f"tpad=stop_mode=clone:stop_duration={seconds:.2f},{_fadebg}[dbg];"
+            f"[df]scale=900:1600,{grade},{rich},"
+            f"tpad=stop_mode=clone:stop_duration={seconds:.2f},{_fadebg}[dfs]"
         ]
     elif scene.get("video"):
         # لقطة حية — حركتها من نفسها + بارالاكس الجسيمات يعطي العمق
@@ -105,6 +107,7 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
             _lb = "crop=1080:1400:0:260,pad=1080:1920:0:260:color=black,"
         parts = [
             f"[0:v]{_norm}{grade},{rich},{_lb}"
+            f"tpad=stop_mode=clone:stop_duration={seconds:.2f},"
             f"{_fin}color=0x0a0603,"
             f"fade=t=out:st={_tdip:.2f}:d={_tdur:.2f}:color={_tcol}[base]"
         ]
