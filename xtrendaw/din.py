@@ -783,6 +783,14 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     # بذرة الحرية: الحلقة تختار روحها — ويمكن للمخرج اختيار بذرة يدويًا
     _seed = (spec or {}).get("seed") or f"{ep_id}:{title[:24]}"
     dna = _mvx.style_dna(_seed)
+    # جسيمات بمعنى: الجو البصري بيتبع معنى الكلام (مطر/نور…)
+    import re as _re_sem
+    _alltx = "".join(ev.get("text", "") for ev in events)
+    _plain_sem = _re_sem.sub(r"[\u064B-\u0652\u0670\u0640]", "", _alltx)
+    if any(k in _plain_sem for k in ("مطر", "غيث", "ماء", "نهر", "بحر", "سيل")):
+        dna = {**dna, "particles": 3, "rise": False}
+    elif any(k in _plain_sem for k in ("نور", "ضياء", "فلق", "صبح", "شمس")):
+        dna = {**dna, "particles": 2}
     dust = _mvx.particles_png(dna, workdir / "dust")
     _ly = dna.get("layout", "depth" if dna["depth"] else "full")
     _mround = _mcirc = None
