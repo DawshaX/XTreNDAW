@@ -244,23 +244,32 @@ def assemble(plan: dict, scenes: list[dict], ass_path: Path, out_mp4: Path,
     join_clips(clip_paths, workdir, base_video, plan.get("xtrans"))
 
     ass = f"ass={ass_path.as_posix()}:fontsdir={settings.FONTS}"
+    # مرحلتان خفيفتان على الذاكرة بدل سلسلة فلاتر واحدة شرهة
+    sub_video = workdir / "subbed.mp4"
+    _xcap = ["-x264-params", "rc-lookahead=8:sync-lookahead=0", "-threads", "2"]
+    _run([ff, "-y", "-i", str(base_video), "-vf", ass,
+          "-c:v", V["vcodec"], "-preset", "fast", "-crf", "18",
+          *_xcap,
+          "-pix_fmt", "yuv420p", "-r", str(V["fps"]), "-an", str(sub_video)],
+         "الكابتشن")
     # لمسة فيلم: حبيبات خفيفة + فينييت مريح
-    grade = ",noise=alls=4:allf=t,vignette=a=0.3"
+    grade = "noise=alls=4:allf=t,vignette=a=0.3"
+    fc = f"[0:v]{grade}[v]"
     if music and Path(music).exists():
         # الموسيقى تتنفس: دخول/خروج + خفض تلقائي تحت الصوت (sidechain)
         duck = (f"[2:a]afade=t=in:d=0.8,afade=t=out:st={max(0, total - 1.4):.2f}:d=1.4[m0];"
                 f"[m0][1:a]sidechaincompress=threshold=0.08:ratio=5:attack=15:release=350[m];"
                 f"[1:a][m]amix=inputs=2:duration=first:normalize=0[a]")
-        fc = f"[0:v]{ass}{grade}[v];{duck}"
+        fc += ";" + duck
         audio_in = ["-i", str(plan["wav"]), "-i", str(music)]
         amap = "[a]"
     else:
-        fc = f"[0:v]{ass}{grade}[v]"
         audio_in = ["-i", str(plan["wav"])]
         amap = "1:a"
-    _run([ff, "-y", "-i", str(base_video), *audio_in,
+    _run([ff, "-y", "-i", str(sub_video), *audio_in,
           "-filter_complex", fc, "-map", "[v]", "-map", amap,
           "-c:v", V["vcodec"], "-preset", "fast", "-crf", "20",
+          *_xcap,
           "-pix_fmt", "yuv420p", "-r", str(V["fps"]),
           "-c:a", V["acodec"], "-b:a", "160k", "-ar", "44100",
           "-t", f"{total:.3f}", "-shortest", "-movflags", "+faststart",

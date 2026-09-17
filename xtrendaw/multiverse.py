@@ -77,6 +77,7 @@ def style_dna(seed: str) -> dict:
         # تخطيط هيكلي: كل حلقة بتتبنى بشكل مختلف مش بس بألوان
         "layout": ["full", "depth", "letterbox", "circle",
                    "depth"][(h >> 56) % 5],
+        "rhythm": (h >> 60) % 3,   # إيقاع المونتاج: cuts وسطى/سريع/طويل
     }
 
 

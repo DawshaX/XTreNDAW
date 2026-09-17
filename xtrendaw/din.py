@@ -755,7 +755,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         spec["rgb"] = _mv0.style_dna(spec["seed"])["rgb"]
         # مونتاج يطارد الكلام: قصّة حية لكل عبارة منطوقة — الصور تصف الصوت
         segs = [(base_off + ch["start"] - 0.15, base_off + ch["end"] + 0.2)
-                for ch in captions.chunk_words(r["words"], size=3)]
+                for ch in captions.chunk_words(
+                    r["words"], size=[3, 2, 4][dna.get("rhythm", 0) % 3])]
         merged: list[tuple[float, float]] = []
         for s, e in segs:
             if merged and e - s < 1.1:
@@ -810,7 +811,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 ev["style"] = "Big"
 
     # هوية البراند فوق كل المشاهد: لوجو + تدرّجات + إطار ذهبي للمشاهد
-    INTRO = 1.4
+    from . import intro_lab
+    _iclip, INTRO = intro_lab.render(dna, workdir / "intro.mp4")
     bl = scenes._brand_layer(workdir / "ov" / "brand.png")
     fr_ov = scenes.frame_overlay(workdir / "ov" / "frame.png",
                                  color=dna["rgb"])
@@ -831,9 +833,9 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         sc["start"] += INTRO
         sc["end"] += INTRO
     wavs.insert(0, _silence(workdir / "intro.wav", INTRO))
-    scene_list.insert(0, {"base": scenes.intro_base(workdir / "intro.png", title),
+    scene_list.insert(0, {"video": str(_iclip), "base": str(_iclip),
                           "overlays": [], "start": 0.0, "end": INTRO,
-                          "nofade_in": True})
+                          "nofade_in": True, "dna": dna})
     off += INTRO
     if dna["intro"] == "pop":
         # افتتاحية نبضية: أول كلمات العنوان تقفز ضخمة ثم تستقر
