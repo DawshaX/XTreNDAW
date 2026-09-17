@@ -232,15 +232,60 @@ def _piper_line(text: str, out_dir: Path, name: str) -> dict | None:
 VOICE_OVERRIDE_AR: str | None = None
 
 
+def _orpheus_ar(text: str, out_dir: Path, name: str) -> dict | None:
+    """صوت Orpheus العربي من Groq (أكثر دفئًا) — يرجع None لو مش متاح."""
+    key = (settings.LLM or {}).get("key") or ""
+    if not key.startswith("gsk"):
+        return None
+    import requests as _rq
+    out_wav = out_dir / f"{name}_orp.wav"
+    if out_wav.exists():
+        d = probe_duration(out_wav)
+        if d > 0:
+            return {"wav": out_wav, "duration": d,
+                    "words": _spread(text.strip(), 0, d),
+                    "timing_source": "orpheus"}
+    for v in ("lina", "amal", "hadeer", "nora"):
+        try:
+            r = _rq.post("https://api.groq.com/openai/v1/audio/speech",
+                         headers={"Authorization": f"Bearer {key}"},
+                         json={"model": "canopylabs/orpheus-arabic-saudi",
+                               "voice": v,
+                               "input": normalize_for_speech(text)},
+                         timeout=120)
+            if r.status_code != 200 or not r.content or r.content[:1] == b"{":
+                continue
+            mp3 = out_dir / f"{name}_orp.mp3"
+            mp3.write_bytes(r.content)
+            d = probe_duration(mp3)
+            if d <= 0:
+                continue
+            w = to_wav(mp3, out_wav)
+            return {"wav": w, "duration": d,
+                    "words": _spread(text.strip(), 0, d),
+                    "timing_source": "orpheus"}
+        except Exception:
+            continue
+    return None
+
+
 def synthesize_line(text: str, lang: str, out_dir: Path, name: str = "line",
                     rate: str | None = None, pitch: str | None = None) -> dict:
     """سطر واحد → {wav, duration, words, timing_source}.
 
-    للعربي: صوت نيورال طبيعي (edge) + نبرة جملة-بجملة، وPiper احتياطي محلي.
+    للعربي: Orpheus (Groq) أولًا، ثم نيورال طبيعي (edge) + نبرة جملة-بجملة،
+    وPiper احتياطي محلي.
     """
     voice = settings.VOICE_EN if lang == "en" else (
         VOICE_OVERRIDE_AR or settings.VOICE_AR)
     out_dir.mkdir(parents=True, exist_ok=True)
+    if lang == "ar":
+        try:
+            _o = _orpheus_ar(text, out_dir, name)
+            if _o:
+                return _o
+        except Exception:
+            pass
 
     if lang == "ar" and settings.TTS_ENGINE == "piper":
         _r = _piper_line(text, out_dir, name)
