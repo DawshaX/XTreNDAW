@@ -486,7 +486,7 @@ def sticker_overlay(out_path: Path, chip: str = "",
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
     f = _tr._font(34)
-    txt = f"@XTreNDAW 🤍 {chip}" if chip else "@XTreNDAW 🤍"
+    txt = f"@XTreNDAW — {chip}" if chip else "@XTreNDAW"
     shaped = _tr.shape_ar(txt)
     try:
         tw = d.textlength(shaped, font=f)
@@ -505,7 +505,10 @@ def sticker_overlay(out_path: Path, chip: str = "",
     d.rounded_rectangle([x0, y0, x0 + tw + pad * 2, y0 + th + pad],
                         radius=26, fill=(10, 12, 20, 168),
                         outline=_edge, width=3)
-    d.text((x0 + pad, y0 + pad - 8), shaped, font=f, fill=_txt)
+    # نقطة نبضية بلون روح الحلقة (بدل إيموجي القلب اللي مش بيظهر)
+    _cy = y0 + (th + pad) // 2
+    d.ellipse([x0 + pad, _cy - 8, x0 + pad + 16, _cy + 8], fill=_edge)
+    d.text((x0 + pad + 26, y0 + pad - 8), shaped, font=f, fill=_txt)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     layer.save(out_path)
     return out_path

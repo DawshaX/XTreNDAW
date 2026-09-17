@@ -385,8 +385,10 @@ def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
     # تنويع حقيقي: كل مشهد بزاوية/إضاءة مختلفة — بلا تكرار بين الحلقات
     q = f"{q}, {['cinematic wide shot', 'golden hour light', 'aerial view', 'close-up detail', 'dramatic side light'][i % 5]}"
     scdir = workdir / f"sc{i:02d}"
-    # الأنواع الهادئة: طبيعة وسماء فقط — بلا أرشيف وثائقيات (أشخاص/أناشيد)
-    _src = "noia" if spec.get("grade") == "calm" else "auto"
+    # الهادئ: طبيعة بلا أشخاص — واللقطة الحيّة من Pexels الأول دائمًا
+    if spec.get("grade") == "calm":
+        q = f"{q}, nature landscape, no people"
+    _src = "auto"
     clip = footage.fetch_clip(q, max(1.0, seconds), scdir, f"{seed}:{i}",
                               source=_src)
     if not clip:

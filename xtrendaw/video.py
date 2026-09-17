@@ -62,7 +62,8 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
     if dna:
         # تدرّج الحلقة من محرك الأنماط (6 تدرجات × بصمة لون اللوحة)
         from . import multiverse as _mv
-        grade = f"{_mv.GRADES[dna['grade']]},colorbalance={dna['cb']}"
+        grade = (f"{_mv.GRADES[dna['grade']]},eq=saturation=1.22,"
+                 f"colorbalance={dna['cb']}")
     else:
         grade_soft = "eq=contrast=1.05:saturation=1.08:brightness=0.01"
         grade_calm = ("eq=contrast=1.06:saturation=1.07,"

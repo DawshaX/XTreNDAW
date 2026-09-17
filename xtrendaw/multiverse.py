@@ -81,8 +81,8 @@ def particles_png(dna: dict, out_dir: Path,
         int(hashlib.sha256(("p" + dna["seed"]).encode()).hexdigest()[:8], 16))
     paths: list[Path] = []
     for layer, (n, r_max, a_max) in enumerate([
-            (55, 3, 46),    # بعيد: صغير خفيف بطيء
-            (26, 7, 90)]):  # قريب: أكبر أوضح
+            (110, 4, 120),   # بعيد: غبار واسع خفيف
+            (45, 9, 215)]):  # قريب: واضح لامع
         img = Image.new("RGBA", (width, height * 2), (0, 0, 0, 0))
         d = ImageDraw.Draw(img)
         for _ in range(n):
