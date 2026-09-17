@@ -841,6 +841,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789618073.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789618073.png"
    }
+  },
+  "noor-ruqyah-r001-1-r3": {
+   "title": "سلسلة الرقية الشرعية (1/10): سُورَةُ ٱلْفَاتِحَةِ ﴿1–7﴾ — عبدالرحمن السديس",
+   "fingerprint": "fd9de347a2d67267",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-rr001-1-abdurrahmaansudais.mp4",
+   "duration": 60.43,
+   "at": "2026-09-17 05:23",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789622631.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789622631.png"
+   }
   }
  },
  "fingerprints": [
@@ -923,7 +934,8 @@
   "d0dbdbe1b30120ea",
   "8d00ac069e6fc918",
   "8a19f6ee0d9e473b",
-  "ec9cd9d8cf99831c"
+  "ec9cd9d8cf99831c",
+  "fd9de347a2d67267"
  ],
- "last_kind": "kawn"
+ "last_kind": "ruqyah"
 }
