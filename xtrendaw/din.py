@@ -308,14 +308,14 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Ayah,Amiri,92,&H0039C8FF,&H00F2F2F2,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,4,2,5,70,70,0,1
+Style: Ayah,Amiri,110,&H0039C8FF,&H00F2F2F2,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,4,2,5,70,70,0,1
 Style: Trj,Tajawal,46,&H00B6FFB6,&H000000FF,&H00000000,&H8A000000,0,0,0,0,100,100,0,0,1,3,1,2,60,60,150,1
-Style: Shr,Amiri,56,&H00D6C9A6,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,220,1
+Style: Shr,Amiri,66,&H00D6C9A6,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,1,2,70,70,220,1
 Style: Calm,Amiri,60,&H00FFFFFF,&H00000000,&H00101010,&H8A000000,0,0,0,0,100,100,0,0,1,2,2,2,70,70,300,1
 Style: CalmL,Amiri,60,&H00FFFFFF,&H00000000,&H00101010,&H8A000000,0,0,0,0,100,100,0,0,1,2,2,1,90,70,300,1
 Style: Hook,Amiri,47,&H0086C8F4,&H00000000,&H00101010,&H8A000000,0,0,0,0,100,100,0,0,1,2,2,8,70,70,820,1
 Style: Hdr,Amiri Quran,60,&H009AD8FF,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,2,8,60,60,90,1
-Style: Big,Tajawal,96,&H00FFFFFF,&H000000FF,&H00141414,&H96000000,-1,0,0,0,100,100,0,0,1,5,3,2,60,60,260,1
+Style: Big,Tajawal,112,&H00FFFFFF,&H000000FF,&H00141414,&H96000000,-1,0,0,0,100,100,0,0,1,5,3,2,60,60,260,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -424,13 +424,14 @@ def _end_card(workdir: Path, fayda: str, quiet: bool = False) -> dict:
 
     d = workdir / "end"
     ov = [] if quiet else [scenes._brand_layer(d / "brand.png")]
+    ov.append(scenes.frame_overlay(d / "frame.png", color="#ffd166"))
     ov.append(textrender.text_image(
-        "﴿ فَائِدَةٌ وَنُور ﴾", d / "h.png", font_size=56, y_ratio=0.28,
+        "﴿ فَائِدَةٌ وَنُور ﴾", d / "h.png", font_size=64, y_ratio=0.21,
         fill="#ffd9a0" if not quiet else "#e8e2d5", stroke_width=4,
         font_path=settings.FONTS / "AmiriQuran-Regular.ttf"))
-    ov.append(textrender.text_image(fayda, d / "f.png", font_size=48,
-                                    y_ratio=0.52, fill="#f7ecd7",
-                                    stroke_width=4))
+    ov.append(textrender.text_image(fayda, d / "f.png", font_size=54,
+                                    y_ratio=0.50, fill="#f7ecd7",
+                                    stroke_width=4, max_width_ratio=0.76))
     ov.append(textrender.text_image("انشر الخير — XDAW NOVA", d / "b.png",
                                     font_size=34, y_ratio=0.90,
                                     fill="#ffd166" if not quiet else "#9a938a",
@@ -812,7 +813,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
 
     # هوية البراند فوق كل المشاهد: لوجو + تدرّجات + إطار ذهبي للمشاهد
     from . import intro_lab
-    _iclip, INTRO = intro_lab.render(dna, workdir / "intro.mp4")
+    _sq, INTRO = intro_lab.render(dna, workdir / "intro.mp4", square=True)
     bl = scenes._brand_layer(workdir / "ov" / "brand.png")
     fr_ov = scenes.frame_overlay(workdir / "ov" / "frame.png",
                                  color=dna["rgb"])
@@ -826,17 +827,40 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         # الإطار الذهبي هوية الأنواع الجريئة فقط — الهادئة تتنفس بدونه
         if sc.get("frame") and kind in NEON_KINDS:
             sc["overlays"].append(fr_ov)
+    # الدخلة مربع صغير فوق أول مشهد + غلاف العنوان — المحتوى يبدأ فورًا
+    from . import textrender as _tr
+    _Wd = settings.VIDEO["width"]
+    _title_ov = _tr.text_image(title, workdir / "ov" / "title.png",
+                               font_size=66, y_ratio=0.80, fill="#ffd166",
+                               stroke_width=5)
+    _first = scene_list[0]
+    _first.setdefault("vover", []).extend([
+        {"path": _sq, "x": (_Wd - 430) // 2, "y": 170,
+         "st": 0.0, "en": INTRO + 0.2, "fade": 0.3},
+        {"path": _title_ov, "x": 0, "y": 0, "st": 0.5, "en": 4.8, "fade": 0.45},
+    ])
+    # استيكرات دلالية: أيقونة متوهجة توصّف كلمات كلام الله لحظة نطقها
+    from . import stickers as _stkmod
+    _rgb = dna["rgb"].lstrip("#")
+    _side, _flip = 210, 0
     for ev in events:
-        ev["start"] += INTRO
-        ev["end"] += INTRO
-    for sc in scene_list:
-        sc["start"] += INTRO
-        sc["end"] += INTRO
-    wavs.insert(0, _silence(workdir / "intro.wav", INTRO))
-    scene_list.insert(0, {"video": str(_iclip), "base": str(_iclip),
-                          "overlays": [], "start": 0.0, "end": INTRO,
-                          "nofade_in": True, "dna": dna})
-    off += INTRO
+        if ev["style"] != "Ayah":
+            continue
+        icon = _stkmod.sticker_for(ev["text"], _rgb)
+        if not icon:
+            continue
+        sc = next((x for x in scene_list
+                   if x["start"] <= ev["start"] < x["end"]), None)
+        if not sc:
+            continue
+        png = _stkmod.sticker_png(icon, _rgb, workdir / "ov")
+        _x = _Wd - _side - 46 if _flip % 2 else 46
+        _flip += 1
+        sc.setdefault("vover", []).append({
+            "path": png, "x": _x, "y": 300,
+            "st": max(0.0, ev["start"] - sc["start"] - 0.1),
+            "en": min(ev["end"] + 0.5, sc["end"]) - sc["start"],
+            "fade": 0.25})
     if dna["intro"] == "pop":
         # افتتاحية نبضية: أول كلمات العنوان تقفز ضخمة ثم تستقر
         _pw = " ".join(title.replace("…", "").split()[:3])

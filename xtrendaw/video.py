@@ -185,6 +185,26 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
             parts.append(f"{prev}[{i}:v]overlay=0:0{nxt}")
         prev = nxt
 
+    # طبقات فيديو صغيرة مؤقّتة (دخلة اللوجو المربعة، استيكرات متحركة…)
+    _vv = scene.get("vover") or []
+    for vo in _vv:
+        if str(vo["path"]).lower().endswith((".png", ".jpg", ".jpeg")):
+            # صورة ثابتة + fade = إطار واحد شفاف — لازم loop عشان الـ fade يعيش
+            inputs += ["-loop", "1", "-t", f"{seconds:.2f}", "-i", str(vo["path"])]
+        else:
+            inputs += ["-i", str(vo["path"])]
+    for j, vo in enumerate(_vv):
+        idx = n_in + j
+        st, en = float(vo.get("st", 0)), min(float(vo.get("en", seconds)), seconds)
+        f = float(vo.get("fade", 0.3))
+        pre = ""
+        if f > 0:
+            pre = (f"format=rgba,fade=t=in:st={st}:d={f}:alpha=1,"
+                   f"fade=t=out:st={max(st, en - f)}:d={f}:alpha=1")
+        parts.append(f"[{idx}:v]{pre}[vo{j}]")
+        parts.append(f"{prev}[vo{j}]overlay=x={vo.get('x', 0)}:y={vo.get('y', 0)}:"
+                     f"enable='between(t,{st},{en})'[vv{j}]")
+        prev = f"[vv{j}]"
     _run([
         ffmpeg(), "-y", *inputs,
         "-filter_complex", ";".join(parts),

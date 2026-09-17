@@ -270,8 +270,10 @@ _FILES = {
 
 # ---------- الدخول العام ----------
 
-def render(dna: dict, out: Path) -> tuple[Path, float]:
-    """ينتج افتتاحية ديناميكية حسب DNA الحلقة ويرجع (المسار، المدة)."""
+def render(dna: dict, out: Path, square: bool = False) -> tuple[Path, float]:
+    """ينتج افتتاحية ديناميكية حسب DNA الحلقة ويرجع (المسار، المدة).
+
+    square=True: مربع صغير (دخلة لوجو فوق المشهد) بدل شاشة كاملة."""
     seed = dna["seed"]
     rgb = dna["rgb"].lstrip("#")
     h = _h(seed, "intro")
@@ -309,4 +311,13 @@ def render(dna: dict, out: Path) -> tuple[Path, float]:
             "-pix_fmt", "yuv420p", "-t", f"{dur:.2f}", str(out)]
     from .video import _run
     _run(cmd, "افتتاحية")
+    if square:
+        sq = out.with_name(out.stem + "_sq.mp4")
+        side = 430
+        _run([ffmpeg(), "-y", "-i", str(out),
+              "-vf", (f"crop={W}:{W}:0:{(H - W) // 2},scale={side}:{side},"
+                      f"drawbox=x=0:y=0:w={side}:h={side}:color=0xff2a2a@0.9:t=6"),
+              "-c:v", "libx264", "-preset", "ultrafast", "-crf", "20",
+              "-pix_fmt", "yuv420p", str(sq)], "مربع الدخلة")
+        return sq, dur
     return out, dur
