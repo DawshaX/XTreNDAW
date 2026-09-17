@@ -808,6 +808,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789602237.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789602237.png"
    }
+  },
+  "noor-akhira-0-r3": {
+   "title": "سلسلة الاستعداد للآخرة (1/16): كل نفس ذائقة الموت وإنما توفون أجو…",
+   "fingerprint": "8d00ac069e6fc918",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhira-3.mp4",
+   "duration": 26.7,
+   "at": "2026-09-17 00:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789606073.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789606073.png"
+   }
   }
  },
  "fingerprints": [
@@ -887,7 +898,8 @@
   "2130f038b77f1075",
   "159960ee14a6e19c",
   "a0aae69aa73dbdcc",
-  "d0dbdbe1b30120ea"
+  "d0dbdbe1b30120ea",
+  "8d00ac069e6fc918"
  ],
- "last_kind": "nawawi"
+ "last_kind": "akhira"
 }
