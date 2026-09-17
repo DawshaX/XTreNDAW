@@ -466,7 +466,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     scene_list: list[dict] = []
     title = ""
 
-    if kind in ("quran", "qissa", "tafsir"):
+    if kind in ("quran", "qissa", "tafsir", "juz", "ruqyah", "tahseen"):
         pool = {"quran": QURAN, "qissa": QISSA, "tafsir": TAFASEER,
                 "juz": JUZ, "ruqyah": RUQYAH, "tahseen": TAHSEEN}[kind]
         spec = spec or pool[reciter_idx % len(pool)]
