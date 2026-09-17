@@ -885,6 +885,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789634480.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789634480.png"
    }
+  },
+  "noor-quran-s112-1-r8": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الإِخۡلَاصِ ﴿1–4﴾ — علي الحذيفي",
+   "fingerprint": "2d8b925b7295f09e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs112-1-hudhaify.mp4",
+   "duration": 37.99,
+   "at": "2026-09-17 09:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789638484.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789638484.png"
+   }
   }
  },
  "fingerprints": [
@@ -971,7 +982,8 @@
   "fd9de347a2d67267",
   "5557f32654ccfa9e",
   "9bfcc9e8e04ffef7",
-  "a65830634d6be8fd"
+  "a65830634d6be8fd",
+  "2d8b925b7295f09e"
  ],
- "last_kind": "nawawi"
+ "last_kind": "quran"
 }
