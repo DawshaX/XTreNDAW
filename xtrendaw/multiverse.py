@@ -40,8 +40,11 @@ GRADES: dict[str, str] = {
               "colorbalance=bs=0.09:bm=0.06:rs=-0.04"),
 }
 
-# 4 انتقالات
+# 4 انتقالات لقطة
 TRANSITIONS = ["black", "white", "palette", "quick"]
+# 10 انتقالات مزج احترافية (xfade) — مونتاج استوديو
+XFADES = ["fade", "wipeleft", "slideup", "circleopen", "radial",
+          "dissolve", "smoothleft", "squeezev", "hblur", "zoomin"]
 
 
 def _hex(rgb: str) -> tuple[int, int, int]:
@@ -66,7 +69,23 @@ def style_dna(seed: str) -> dict:
         "vig": ["PI/6", "PI/5", "PI/4"][(h >> 30) % 3],
         "p_speed": 14 + (h >> 34) % 18,   # سرعة الجسيمات
         "live_zoom": ((h >> 38) & 1) == 1,  # تقريب بطيء على اللقطة الحية (عمق)
+        "xtrans": XFADES[(h >> 42) % len(XFADES)],
+        "depth": bool((h >> 46) & 1),        # طبقة عمق: خلفية ضبابية + نافذة حادة
+        "typo": ["poetic", "bold"][(h >> 48) % 2],  # خط صغير شاعري / تايبوغرافيا ضخمة
+        "ramp": bool((h >> 50) & 1),          # نبض سرعة بين المشاهد
+        "intro": ["logo", "pop", "logo"][(h >> 52) % 3],
     }
+
+
+def rounded_mask(out_path: Path, width: int = 900, height: int = 1600,
+                  radius: int = 64) -> Path:
+    """قناع نافذة مستديرة الزوايا لطبقة العمق."""
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    img = Image.new("L", (width, height), 0)
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle([0, 0, width - 1, height - 1], radius=radius, fill=255)
+    out_path.write_bytes(img.tobytes()) if False else img.save(out_path)
+    return out_path
 
 
 def particles_png(dna: dict, out_dir: Path,

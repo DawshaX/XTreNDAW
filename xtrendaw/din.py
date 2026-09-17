@@ -315,6 +315,7 @@ Style: Calm,Amiri,60,&H00FFFFFF,&H00000000,&H00101010,&H8A000000,0,0,0,0,100,100
 Style: CalmL,Amiri,60,&H00FFFFFF,&H00000000,&H00101010,&H8A000000,0,0,0,0,100,100,0,0,1,2,2,1,90,70,300,1
 Style: Hook,Amiri,47,&H0086C8F4,&H00000000,&H00101010,&H8A000000,0,0,0,0,100,100,0,0,1,2,2,8,70,70,820,1
 Style: Hdr,Amiri Quran,60,&H009AD8FF,&H000000FF,&H00000000,&H8A000000,-1,0,0,0,100,100,0,0,1,3,2,8,60,60,90,1
+Style: Big,Tajawal,96,&H00FFFFFF,&H000000FF,&H00141414,&H96000000,-1,0,0,0,100,100,0,0,1,5,3,2,60,60,260,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -760,12 +761,30 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     # محرك الأنماط (Multiverse): DNA بصري فريد لكل حلقة —
     # لوحة لون × تدرّج × حركة × جسيمات بعمقين × انتقال × حبيبة
     from . import multiverse as _mvx
-    dna = _mvx.style_dna(f"{ep_id}:{title[:24]}")
+    # بذرة الحرية: الحلقة تختار روحها — ويمكن للمخرج اختيار بذرة يدويًا
+    _seed = (spec or {}).get("seed") or f"{ep_id}:{title[:24]}"
+    dna = _mvx.style_dna(_seed)
     dust = _mvx.particles_png(dna, workdir / "dust")
-    for sc in scene_list:
+    _mask = (_mvx.rounded_mask(workdir / "ov" / "mask.png")
+             if dna["depth"] else None)
+    for i, sc in enumerate(scene_list):
         sc.setdefault("glint", True)
         sc["dna"] = dna
         sc["dust"] = dust
+        if _mask and sc.get("video"):
+            sc["mask"] = _mask
+        if dna["ramp"]:
+            sc["ramp"] = (i % 2 == 0)
+    # مزج استوديو بين المشاهد (0.5s) + تعويض المدة عل الصوت يفضل مظبوط
+    _XD = 0.5
+    for sc in scene_list[:-1]:
+        sc["end"] += _XD
+    off += _XD * max(0, len(scene_list) - 1)
+    # تايبوغرافيا ضخمة بدل الذهبي الشاعري — حسب روح الحلقة
+    if dna["typo"] == "bold":
+        for ev in events:
+            if ev["style"] == "Ayah":
+                ev["style"] = "Big"
 
     # هوية البراند فوق كل المشاهد: لوجو + تدرّجات + إطار ذهبي للمشاهد
     INTRO = 1.4
@@ -793,6 +812,13 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                           "overlays": [], "start": 0.0, "end": INTRO,
                           "nofade_in": True})
     off += INTRO
+    if dna["intro"] == "pop":
+        # افتتاحية نبضية: أول كلمات العنوان تقفز ضخمة ثم تستقر
+        _pw = " ".join(title.replace("…", "").split()[:3])
+        events.append({"style": "Hdr",
+                       "text": ("{\\fscx210\\fscy210"
+                                "\\t(90,620,\\fscx100\\fscy100)}" + _pw),
+                       "start": 0.12, "end": INTRO - 0.1})
 
     # كرت الختام: فائدة مسموعة فوق خلفية البراند
     voice_fayda = (f"وقف ثانية يا صديقي… {fayda} "
@@ -922,7 +948,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     ass.write_text("".join(lines), encoding="utf-8")
 
     out = settings.OUT / f"{ep_id}.mp4"
-    video.assemble({"wav": vox, "total_duration": total}, scene_list, ass,
+    video.assemble({"wav": vox, "total_duration": total,
+                    "xtrans": dna.get("xtrans")}, scene_list, ass,
                    out, workdir, music=None)
     cover = settings.OUT / f"{ep_id}-cover.png"
     brand.compose_cover({"id": ep_id, "title_ar": title, "_kind": kind,

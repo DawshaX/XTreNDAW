@@ -79,7 +79,17 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
     _tdur = 0.10 if dna.get("transition") == "quick" else 0.20
     _tdip = max(0.0, seconds - _tdur)
     _fin = "" if scene.get("nofade_in") else "fade=t=in:st=0:d=0.24:"
-    if scene.get("video"):
+    if scene.get("video") and scene.get("mask"):
+        # عمق 3D: خلفية ضبابية معتمة + نافذة حادة مستديرة (مودرن إديتنج)
+        _fadebg = (f"{_fin}color=0x0a0603,"
+                   f"fade=t=out:st={_tdip:.2f}:d={_tdur:.2f}:color={_tcol}")
+        parts = [
+            "[0:v]split=2[db][df];"
+            f"[db]scale={V['width']}:{V['height']},"
+            f"boxblur=28:2,eq=brightness=-0.14:saturation=1.1,{_fadebg}[dbg];"
+            f"[df]scale=900:1600,{grade},{rich},{_fadebg}[dfs]"
+        ]
+    elif scene.get("video"):
         # لقطة حية + زحف عمق بطيء (إحساس 3D مع بارالاكس الجسيمات)
         _lz = ""
         if dna.get("live_zoom"):
@@ -126,14 +136,27 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
     if scene.get("glint"):
         from . import scenes as _sc
         inputs += ["-i", str(_sc.render_glint(out_mp4.parent / "glint.png"))]
+    # نبض سرعة: مشهد أسرع/أبطأ قليلًا — إيقاع حي
+    if scene.get("ramp"):
+        parts[0] = parts[0].replace("[0:v]", "[0:v]setpts=0.86*PTS,", 1)
+    _mask = scene.get("mask")
+    if _mask and scene.get("video"):
+        inputs += ["-i", str(_mask)]
     _dust = scene.get("dust") or []
     for _dp in _dust:
         inputs += ["-i", str(_dp)]
+    _mi = -1
+    if scene.get("video") and scene.get("mask"):
+        _mi = len(inputs) // 2 - 1 - len(_dust)  # فهرس القناع (قبل الجسيمات)
+        parts.append(f"[dfs][{_mi}:v]alphamerge[dwm];"
+                     f"[dbg][dwm]overlay=(W-w)/2:(H-h)/2[base]")
     n_in = len(inputs) // 2
     dust_i0 = n_in - len(_dust)  # أول فهرس لجسيمات
     prev = "[base]"
     for i in range(1, n_in):
         nxt = f"[v{i}]"
+        if i == _mi:  # القناع يُستهلك في alphamerge — لا يُركَّب كطبقة
+            continue
         if _dust and i >= dust_i0:
             # بارالاكس: البعيد أبطأ من القريب — عمق حقيقي
             _near = (i - dust_i0) == len(_dust) - 1
@@ -158,6 +181,38 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
     return out_mp4
 
 
+def join_clips(clip_paths: list[Path], workdir: Path, out: Path,
+               xtrans: str | None = None) -> Path:
+    """دمج المشاهد: concat بسيط أو مزج xfade استوديو (10 أنماط)."""
+    if not xtrans or len(clip_paths) < 2:
+        cl = workdir / "clips.txt"
+        cl.write_text("".join(f"file '{p.name}'\n" for p in clip_paths),
+                      encoding="utf-8")
+        _run([ffmpeg(), "-y", "-f", "concat", "-safe", "0", "-i", str(cl),
+              "-c:v", V["vcodec"], "-preset", "fast", "-crf", "20",
+              "-pix_fmt", "yuv420p", "-r", str(V["fps"]), "-an", str(out)],
+             "دمج")
+        return out
+    _D = 0.5
+    # مزج تتابعي زوجي — خفيف على الذاكرة مهما زاد عدد المشاهد
+    acc = clip_paths[0]
+    for i in range(1, len(clip_paths)):
+        nxt = workdir / f"xf{i:02d}.mp4"
+        off = max(0.0, probe(acc)["duration"] - _D)
+        _run([ffmpeg(), "-y", "-i", str(acc), "-i", str(clip_paths[i]),
+              "-filter_complex",
+              f"[0:v][1:v]xfade=transition={xtrans}:duration={_D}:"
+              f"offset={off:.3f}[v]",
+              "-map", "[v]", "-c:v", V["vcodec"], "-preset", "fast",
+              "-crf", "20", "-pix_fmt", "yuv420p", "-r", str(V["fps"]),
+              "-an", str(nxt)], f"مزج{i}")
+        acc = nxt
+    if acc != out:
+        import shutil
+        shutil.copyfile(acc, out)
+    return out
+
+
 def assemble(plan: dict, scenes: list[dict], ass_path: Path, out_mp4: Path,
              workdir: Path, music: Path | None = None) -> Path:
     workdir.mkdir(parents=True, exist_ok=True)
@@ -170,12 +225,8 @@ def assemble(plan: dict, scenes: list[dict], ass_path: Path, out_mp4: Path,
         make_clip(sc, max(0.4, sc["end"] - sc["start"]), cp)
         clip_paths.append(cp)
 
-    concat_list = workdir / "clips.txt"
-    concat_list.write_text("".join(f"file '{p.name}'\n" for p in clip_paths), encoding="utf-8")
     base_video = workdir / "base.mp4"
-    _run([ff, "-y", "-f", "concat", "-safe", "0", "-i", str(concat_list),
-          "-c:v", V["vcodec"], "-preset", "fast", "-crf", "20",
-          "-pix_fmt", "yuv420p", "-r", str(V["fps"]), "-an", str(base_video)], "دمج")
+    join_clips(clip_paths, workdir, base_video, plan.get("xtrans"))
 
     ass = f"ass={ass_path.as_posix()}:fontsdir={settings.FONTS}"
     # لمسة فيلم: حبيبات خفيفة + فينييت مريح
