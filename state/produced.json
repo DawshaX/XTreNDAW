@@ -863,6 +863,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789626425.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789626425.png"
    }
+  },
+  "noor-dua-60-r3": {
+   "title": "دعاء: ربِّ أوزعني أن أشكر نعمتك التي أنعمت علي…",
+   "fingerprint": "9bfcc9e8e04ffef7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.77,
+   "at": "2026-09-17 07:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789630485.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789630485.png"
+   }
   }
  },
  "fingerprints": [
@@ -947,7 +958,8 @@
   "8a19f6ee0d9e473b",
   "ec9cd9d8cf99831c",
   "fd9de347a2d67267",
-  "5557f32654ccfa9e"
+  "5557f32654ccfa9e",
+  "9bfcc9e8e04ffef7"
  ],
- "last_kind": "akhlaq"
+ "last_kind": "dua"
 }
