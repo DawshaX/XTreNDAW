@@ -158,6 +158,32 @@ STYLE = {
 }
 
 
+def render_ambient(out_path: Path, rgb: str, seed: str) -> Path:
+    """خلفية احتياط بروح الحلقة: تدرّج لوني داكن + هالات ناعمة — بلا شبكات."""
+    import numpy as _np
+
+    rng = _np.random.default_rng(abs(hash(seed)) % (2 ** 31))
+    r, g, b = (int(rgb[1:3], 16), int(rgb[3:5], 16), int(rgb[5:7], 16))
+    img = Image.new("RGB", (W, H), (8, 6, 10))
+    d = ImageDraw.Draw(img)
+    for y in range(0, H, 8):
+        f = 0.16 + 0.10 * (y / H)
+        d.line([0, y, W, y], fill=(int(r * f * 0.35), int(g * f * 0.35),
+                                   int(b * f * 0.35)))
+    for _ in range(7):  # هالات نور ناعمة بلون الروح
+        cx, cy = int(rng.uniform(0, W)), int(rng.uniform(0, H))
+        rad = int(rng.uniform(220, 560))
+        halo = Image.new("RGBA", (rad * 2, rad * 2), (0, 0, 0, 0))
+        hd = ImageDraw.Draw(halo)
+        hd.ellipse([0, 0, rad * 2 - 1, rad * 2 - 1],
+                   fill=(r, g, b, 26))
+        halo = halo.filter(ImageFilter.GaussianBlur(rad // 3))
+        img.paste(halo, (cx - rad, cy - rad), halo)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    img.save(out_path)
+    return out_path
+
+
 def _watermark(base: Image.Image, size: int = 150, alpha: int = 210) -> None:
     """لوجو XDAW NOVA شفاف فوق-يمين — قالب ثابت لكل فيديو."""
     logo_path = settings.LOGO

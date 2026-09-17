@@ -74,6 +74,9 @@ def style_dna(seed: str) -> dict:
         "typo": ["poetic", "bold"][(h >> 48) % 2],  # خط صغير شاعري / تايبوغرافيا ضخمة
         "ramp": bool((h >> 50) & 1),          # نبض سرعة بين المشاهد
         "intro": ["logo", "pop", "logo"][(h >> 52) % 3],
+        # تخطيط هيكلي: كل حلقة بتتبنى بشكل مختلف مش بس بألوان
+        "layout": ["full", "depth", "letterbox", "circle",
+                   "depth"][(h >> 56) % 5],
     }
 
 
@@ -84,7 +87,21 @@ def rounded_mask(out_path: Path, width: int = 900, height: int = 1600,
     img = Image.new("L", (width, height), 0)
     d = ImageDraw.Draw(img)
     d.rounded_rectangle([0, 0, width - 1, height - 1], radius=radius, fill=255)
-    out_path.write_bytes(img.tobytes()) if False else img.save(out_path)
+    # حلقة فاصل شفافة قرب الحافة — الحدود تُرى دائمًا فوق أي لقطة
+    d.rounded_rectangle([10, 10, width - 11, height - 11],
+                        radius=max(10, radius - 10), outline=0, width=8)
+    img.save(out_path)
+    return out_path
+
+
+def circle_mask(out_path: Path, width: int = 900, height: int = 1600) -> Path:
+    """قناع كوة دائرية فوق/وسط النافذة — بنفس أبعاد الطبقة الحادة."""
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    img = Image.new("L", (width, height), 0)
+    d = ImageDraw.Draw(img)
+    d.ellipse([0, 300, width - 1, 300 + width - 1], fill=255)
+    d.ellipse([10, 310, width - 11, 290 + width - 1], outline=0, width=8)
+    img.save(out_path)
     return out_path
 
 

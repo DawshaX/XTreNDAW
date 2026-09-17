@@ -408,12 +408,13 @@ def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
         if not scenes.fetch_ai_visual(prompt, base, hash(seed) % 10_000_000):
             (scenes.fetch_real_visual(q, base)
              or scenes.fetch_library_visual(q, base)
-             or scenes.render_bg(base, "fact1", seed))
+             or scenes.render_ambient(base, spec.get("rgb", "#e8b64c"), seed))
     else:
         if not (scenes.fetch_real_visual(q, base) or scenes.fetch_library_visual(q, base)):
             scenes.fetch_ai_visual(
                 f"{q}, majestic cosmic cinematic scene, 9:16 vertical, no text",
-                base, hash(seed) % 10_000_000) or scenes.render_bg(base, "hook", seed)
+                base, hash(seed) % 10_000_000) or scenes.render_ambient(
+                base, spec.get("rgb", "#e8b64c"), seed)
     return {"base": base, "overlays": [], "grade": "soft"}
 
 
@@ -747,13 +748,28 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                         "calm desert dawn", "stars night sky"],
         }.get(kind, ["mosque night lights", "kaaba mecca", "quran book candle",
                      "praying hands sky", "dawn mountains peace"])
-        n = 5 + _idx % 3  # مونتاج حي — عدد القصات يختلف كل حلقة
         _gr = ["calm", "soft", "calm", "soft", "calm"][_idx % 5]
-        for i in range(n):
-            s = off * i / n
-            e = off * (i + 1) / n
+        from . import multiverse as _mv0
+        spec = dict(spec or {})
+        spec.setdefault("seed", f"noor-{kind}-{_idx}:{item['text'][:24]}")
+        spec["rgb"] = _mv0.style_dna(spec["seed"])["rgb"]
+        # مونتاج يطارد الكلام: قصّة حية لكل عبارة منطوقة — الصور تصف الصوت
+        segs = [(base_off + ch["start"] - 0.15, base_off + ch["end"] + 0.2)
+                for ch in captions.chunk_words(r["words"], size=3)]
+        merged: list[tuple[float, float]] = []
+        for s, e in segs:
+            if merged and e - s < 1.1:
+                merged[-1] = (merged[-1][0], e)
+            else:
+                merged.append((s, e))
+        if merged and off > merged[-1][1] + 0.3:
+            merged.append((merged[-1][1], off))  # غطاء الدبلجة/الذيل
+        merged = merged[:10]
+        if not merged:
+            merged = [(0.0, off)]
+        for i, (s, e) in enumerate(merged):
             sc = _scene_media(i, {"scenes": qs, "grade": _gr},
-                              workdir, kind, e - s)
+                              workdir, f"{kind}-{_idx}", max(1.0, e - s))
             sc.update(start=s, end=e, frame=True)
             scene_list.append(sc)
         ep_id = f"noor-{kind}-{reciter_idx % len(items)}"
@@ -765,14 +781,20 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     _seed = (spec or {}).get("seed") or f"{ep_id}:{title[:24]}"
     dna = _mvx.style_dna(_seed)
     dust = _mvx.particles_png(dna, workdir / "dust")
-    _mask = (_mvx.rounded_mask(workdir / "ov" / "mask.png")
-             if dna["depth"] else None)
+    _ly = dna.get("layout", "depth" if dna["depth"] else "full")
+    _mround = _mcirc = None
     for i, sc in enumerate(scene_list):
         sc.setdefault("glint", True)
         sc["dna"] = dna
         sc["dust"] = dust
-        if _mask and sc.get("video"):
-            sc["mask"] = _mask
+        sc["layout"] = _ly
+        if sc.get("video"):
+            if _ly == "depth":
+                _mround = _mround or _mvx.rounded_mask(workdir / "ov" / "mask.png")
+                sc["mask"] = _mround
+            elif _ly == "circle":
+                _mcirc = _mcirc or _mvx.circle_mask(workdir / "ov" / "maskc.png")
+                sc["mask"] = _mcirc
         if dna["ramp"]:
             sc["ramp"] = (i % 2 == 0)
     # مزج استوديو بين المشاهد (0.5s) + تعويض المدة عل الصوت يفضل مظبوط
