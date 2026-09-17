@@ -896,6 +896,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789638484.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789638484.png"
    }
+  },
+  "noor-akhira-1-r3": {
+   "title": "سلسلة الاستعداد للآخرة (2/16): القبر أول منازل الآخرة: روضة أو حف…",
+   "fingerprint": "529a1ffabe0dda5d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhira-3.mp4",
+   "duration": 23.17,
+   "at": "2026-09-17 10:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789642307.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789642307.png"
+   }
   }
  },
  "fingerprints": [
@@ -983,7 +994,8 @@
   "5557f32654ccfa9e",
   "9bfcc9e8e04ffef7",
   "a65830634d6be8fd",
-  "2d8b925b7295f09e"
+  "2d8b925b7295f09e",
+  "529a1ffabe0dda5d"
  ],
- "last_kind": "quran"
+ "last_kind": "akhira"
 }
