@@ -874,6 +874,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789630485.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789630485.png"
    }
+  },
+  "noor-nawawi-1-r3": {
+   "title": "سلسلة الأربعين النووية (2/30): الإسلام: أن تشهد أن لا إله إلا الل…",
+   "fingerprint": "a65830634d6be8fd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 29.43,
+   "at": "2026-09-17 08:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789634480.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789634480.png"
+   }
   }
  },
  "fingerprints": [
@@ -959,7 +970,8 @@
   "ec9cd9d8cf99831c",
   "fd9de347a2d67267",
   "5557f32654ccfa9e",
-  "9bfcc9e8e04ffef7"
+  "9bfcc9e8e04ffef7",
+  "a65830634d6be8fd"
  ],
- "last_kind": "dua"
+ "last_kind": "nawawi"
 }
