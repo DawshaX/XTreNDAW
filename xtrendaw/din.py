@@ -762,9 +762,10 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 merged[-1] = (merged[-1][0], e)
             else:
                 merged.append((s, e))
-        if merged and off > merged[-1][1] + 0.3:
-            merged.append((merged[-1][1], off))  # غطاء الدبلجة/الذيل
         merged = merged[:10]
+        # آخر مشهد يبتلع الذيل/Dبلجة دائمًا — التغطية كاملة مهما طال النص
+        if merged and off > merged[-1][1]:
+            merged[-1] = (merged[-1][0], off)
         if not merged:
             merged = [(0.0, off)]
         for i, (s, e) in enumerate(merged):
