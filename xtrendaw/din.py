@@ -931,7 +931,8 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         subprocess.run(
             [ffmpeg(), "-y", "-i", str(out), "-vf",
              "scale=2160:3840:flags=lanczos,unsharp=7:7:0.55",
-             "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+             "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+             "-x264-params", "rc-lookahead=10",
              "-pix_fmt", "yuv420p", "-c:a", "copy",
              "-movflags", "+faststart", str(v4k)],
             capture_output=True, timeout=900)
