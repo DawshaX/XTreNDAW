@@ -755,15 +755,23 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             scene_list.append(sc)
         ep_id = f"noor-{kind}-{reciter_idx % len(items)}"
 
-    # جاذبية بصرية: لمعة ضوء تجوب كل مشهد
+    # محرك الأنماط (Multiverse): DNA بصري فريد لكل حلقة —
+    # لوحة لون × تدرّج × حركة × جسيمات بعمقين × انتقال × حبيبة
+    from . import multiverse as _mvx
+    dna = _mvx.style_dna(f"{ep_id}:{title[:24]}")
+    dust = _mvx.particles_png(dna, workdir / "dust")
     for sc in scene_list:
         sc.setdefault("glint", True)
+        sc["dna"] = dna
+        sc["dust"] = dust
 
     # هوية البراند فوق كل المشاهد: لوجو + تدرّجات + إطار ذهبي للمشاهد
     INTRO = 1.4
     bl = scenes._brand_layer(workdir / "ov" / "brand.png")
-    fr_ov = scenes.frame_overlay(workdir / "ov" / "frame.png")
-    _stk = (scenes.sticker_overlay(workdir / "ov" / "sticker.png", chip)
+    fr_ov = scenes.frame_overlay(workdir / "ov" / "frame.png",
+                                 color=dna["rgb"])
+    _stk = (scenes.sticker_overlay(workdir / "ov" / "sticker.png", chip,
+                                   color=dna["rgb"])
             if chip else None)
     for sc in scene_list:
         sc["overlays"] = [bl] + (sc.get("overlays") or [])
@@ -917,7 +925,22 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     cover = settings.OUT / f"{ep_id}-cover.png"
     brand.compose_cover({"id": ep_id, "title_ar": title, "_kind": kind,
                          "tags": "نور,قرآن,دعوة,XDAWNOVA"}, cover)
-    return {"video": out, "cover": cover, "report": video.validate(out),
+    # نسخة 4K رئيسية (2160×3840) — إتقان إضافي مع بقاء 1080 للنشر
+    v4k = settings.OUT / f"{ep_id}-4k.mp4"
+    try:
+        subprocess.run(
+            [ffmpeg(), "-y", "-i", str(out), "-vf",
+             "scale=2160:3840:flags=lanczos,unsharp=7:7:0.55",
+             "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+             "-pix_fmt", "yuv420p", "-c:a", "copy",
+             "-movflags", "+faststart", str(v4k)],
+            capture_output=True, timeout=900)
+        if not v4k.exists():
+            v4k = out
+    except Exception:
+        v4k = out
+    return {"video": out, "video_4k": v4k, "cover": cover,
+            "report": video.validate(out), "style": dna,
             "title": title, "id": ep_id, "reciter": reciter}
 
 

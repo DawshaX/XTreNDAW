@@ -367,16 +367,22 @@ def load_logo(size: int, alpha: int = 255) -> Image.Image:
     return logo
 
 
-def frame_overlay(out_path: Path) -> Path:
-    """إطار ذهبي هندسي هادي: خطّان + نجمة ثمانية في الزوايا (روح إسلامية)."""
-    cache = settings.ASSETS / "ornaments" / "frame.png"
+def frame_overlay(out_path: Path, color: str | None = None) -> Path:
+    """إطار هندسي هادي بلون روح الحلقة: خطّان + نجمة ثمانية (روح إسلامية)."""
+    _tag = (color or "gold").lstrip("#")
+    cache = settings.ASSETS / "ornaments" / f"frame-{_tag}.png"
     if not cache.exists():
         import math
 
         layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         d = ImageDraw.Draw(layer)
-        gold = (216, 180, 110, 150)
-        gold2 = (216, 180, 110, 80)
+        if color:
+            _r, _g, _b = (int(color[1:3], 16), int(color[3:5], 16),
+                          int(color[5:7], 16))
+        else:
+            _r, _g, _b = 216, 180, 110
+        gold = (_r, _g, _b, 150)
+        gold2 = (_r, _g, _b, 80)
         m = 46
         d.rectangle([m, m, W - m, H - m], outline=gold, width=3)
         d.rectangle([m + 14, m + 14, W - m - 14, H - m - 14],
@@ -473,8 +479,9 @@ def render_glint(out_path: Path) -> Path:
     return out_path
 
 
-def sticker_overlay(out_path: Path, chip: str = "") -> Path:
-    """ملصق أنيق فوق يسار: شيب النوع + الهاندل — هوية جديدة لكل مشهد."""
+def sticker_overlay(out_path: Path, chip: str = "",
+                    color: str | None = None) -> Path:
+    """ملصق أنيق فوق يسار بلون روح الحلقة — هوية جديدة لكل مشهد."""
     from . import textrender as _tr
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
@@ -485,13 +492,20 @@ def sticker_overlay(out_path: Path, chip: str = "") -> Path:
         tw = d.textlength(shaped, font=f)
     except Exception:
         tw = 380
+    if color:
+        _r, _g, _b = (int(color[1:3], 16), int(color[3:5], 16),
+                      int(color[5:7], 16))
+        _edge = (_r, _g, _b, 225)
+        _txt = (min(255, _r + 60), min(255, _g + 60), min(255, _b + 60), 255)
+    else:
+        _edge = (230, 190, 110, 225)
+        _txt = (245, 225, 180, 255)
     pad, th = 20, 46
     x0, y0 = 40, 224
     d.rounded_rectangle([x0, y0, x0 + tw + pad * 2, y0 + th + pad],
                         radius=26, fill=(10, 12, 20, 168),
-                        outline=(230, 190, 110, 225), width=3)
-    d.text((x0 + pad, y0 + pad - 8), shaped, font=f,
-           fill=(245, 225, 180, 255))
+                        outline=_edge, width=3)
+    d.text((x0 + pad, y0 + pad - 8), shaped, font=f, fill=_txt)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     layer.save(out_path)
     return out_path

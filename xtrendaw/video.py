@@ -56,52 +56,91 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
         inputs += ["-i", str(ov)]
 
     dip_out = max(0.0, seconds - 0.20)
+    dna = scene.get("dna") or {}
     grade_red = (f"eq=contrast=1.08:saturation=1.22:brightness=0.01,"
                  f"colorbalance=rs=0.14:rm=0.14:rh=0.08:gm=-0.05:bm=-0.14")
-    grade_soft = "eq=contrast=1.05:saturation=1.08:brightness=0.01"
-    grade_calm = ("eq=contrast=1.06:saturation=1.07,"
-                  "colorbalance=rs=0.07:rm=0.05:rh=0.02:bs=0.03:bm=0.07")
-    grade = {"soft": grade_soft, "calm": grade_calm}.get(
-        scene.get("grade"), grade_red)
-    # لمسة سينمائية: فينييت + حبيبة فيلم خفيفة + وضوح
-    rich = "vignette=PI/5,noise=alls=2:allf=t,unsharp=5:5:0.5"
+    if dna:
+        # تدرّج الحلقة من محرك الأنماط (6 تدرجات × بصمة لون اللوحة)
+        from . import multiverse as _mv
+        grade = f"{_mv.GRADES[dna['grade']]},colorbalance={dna['cb']}"
+    else:
+        grade_soft = "eq=contrast=1.05:saturation=1.08:brightness=0.01"
+        grade_calm = ("eq=contrast=1.06:saturation=1.07,"
+                      "colorbalance=rs=0.07:rm=0.05:rh=0.02:bs=0.03:bm=0.07")
+        grade = {"soft": grade_soft, "calm": grade_calm}.get(
+            scene.get("grade"), grade_red)
+    # لمسة سينمائية حية: فينييت وحبيبة من DNA الحلقة
+    rich = (f"vignette={dna.get('vig', 'PI/5')},"
+            f"noise=alls={dna.get('grain', 2)}:allf=t,unsharp=5:5:0.5")
+    _tcol = {"black": "black", "white": "white",
+             "palette": "0x" + dna.get("rgb", "#000000").lstrip("#"),
+             "quick": "black"}.get(dna.get("transition", "black"), "black")
+    _tdur = 0.10 if dna.get("transition") == "quick" else 0.20
+    _tdip = max(0.0, seconds - _tdur)
     _fin = "" if scene.get("nofade_in") else "fade=t=in:st=0:d=0.24:"
     if scene.get("video"):
-        # قاعدة فيديو حيّ متحرك — مفيش zoompan، الحركة من اللقطة نفسها
+        # لقطة حية + زحف عمق بطيء (إحساس 3D مع بارالاكس الجسيمات)
+        _lz = ""
+        if dna.get("live_zoom"):
+            _lz = (f"zoompan=z='1+0.05*on/{frames}':"
+                   f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
+                   f"d=1:s={V['width']}x{V['height']}:fps={V['fps']},")
         parts = [
-            f"[0:v]{grade},{rich},"
+            f"[0:v]{grade},{_lz}{rich},"
             f"{_fin}color=0x0a0603,"
-            f"fade=t=out:st={dip_out:.2f}:d=0.20:color=black[base]"
+            f"fade=t=out:st={_tdip:.2f}:d={_tdur:.2f}:color={_tcol}[base]"
         ]
     else:
         # حركة مختلفة لكل مشهد: تقريب / إبعاد / بان يمين / بان شمال
         cx = "iw/2-(iw/zoom/2)"
         cy = "ih/2-(ih/zoom/2)"
-        mv = _move_variant(out_mp4.name)
+        mv = dna.get("motion", _move_variant(out_mp4.name)) if dna \
+            else _move_variant(out_mp4.name)
         if mv == 0:
             zp = f"z='1+0.11*on/{frames}':x='{cx}':y='{cy}'"
         elif mv == 1:
             zp = f"z='1.11-0.11*on/{frames}':x='{cx}':y='{cy}'"
         elif mv == 2:
             zp = f"z='1.08':x='(iw-iw/zoom)*(0.12+0.76*on/{frames})':y='{cy}'"
-        else:
+        elif mv == 3:
             zp = f"z='1.08':x='(iw-iw/zoom)*(0.88-0.76*on/{frames})':y='{cy}'"
+        elif mv == 4:  # انزلاق قطري
+            zp = (f"z='1.09':x='(iw-iw/zoom)*(0.1+0.8*on/{frames})':"
+                  f"y='(ih-ih/zoom)*(0.8-0.7*on/{frames})'")
+        elif mv == 5:  # تنفّس ناعم
+            zp = f"z='1.06+0.05*sin(2*PI*on/{frames})':x='{cx}':y='{cy}'"
+        elif mv == 6:  # بان رأسي
+            zp = f"z='1.09':x='{cx}':y='(ih-ih/zoom)*(0.1+0.8*on/{frames})'"
+        else:          # تقريب عميق بطيء
+            zp = f"z='1+0.16*on/{frames}':x='{cx}':y='{cy}'"
         parts = [
             f"[0:v]scale={V['width'] * 3 // 2}:{V['height'] * 3 // 2},"
             # دفعة هوية حمراء سينمائية موحّدة فوق أي صورة مصدر
             f"{grade},{rich},"
             f"zoompan={zp}:d={frames}:s={V['width']}x{V['height']}:fps={V['fps']},"
-            # انتقال ناعم: خروج لأسود — والدخول مشرّق لأول مشهد (غلاف إنستجرام)
+            # انتقال ناعم بلون روح الحلقة — والدخول مشرّق لأول مشهد
             f"{_fin}color=0x140404,"
-            f"fade=t=out:st={dip_out:.2f}:d=0.20:color=black[base]"
+            f"fade=t=out:st={_tdip:.2f}:d={_tdur:.2f}:color={_tcol}[base]"
         ]
     if scene.get("glint"):
         from . import scenes as _sc
         inputs += ["-i", str(_sc.render_glint(out_mp4.parent / "glint.png"))]
+    _dust = scene.get("dust") or []
+    for _dp in _dust:
+        inputs += ["-i", str(_dp)]
+    n_in = len(inputs) // 2
+    dust_i0 = n_in - len(_dust)  # أول فهرس لجسيمات
     prev = "[base]"
-    for i in range(1, len(inputs) // 2):
+    for i in range(1, n_in):
         nxt = f"[v{i}]"
-        if scene.get("glint") and i == len(inputs) // 2 - 1:
+        if _dust and i >= dust_i0:
+            # بارالاكس: البعيد أبطأ من القريب — عمق حقيقي
+            _near = (i - dust_i0) == len(_dust) - 1
+            _v = (dna.get("p_speed", 20) * (1.9 if _near else 1.0))
+            _y = (f"-mod(t*{_v:.0f},H)" if dna.get("rise")
+                  else f"mod(t*{_v:.0f},H)")
+            parts.append(f"{prev}[{i}:v]overlay=x=0:y='{_y}'{nxt}")
+        elif scene.get("glint") and i == dust_i0 - 1:
             parts.append(f"{prev}[{i}:v]overlay="
                          f"x='mod(t*230,W+900)-900':y=-200{nxt}")
         else:
