@@ -831,7 +831,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     from . import textrender as _tr
     _Wd = settings.VIDEO["width"]
     _title_ov = _tr.text_image(title, workdir / "ov" / "title.png",
-                               font_size=66, y_ratio=0.80, fill="#ffd166",
+                               font_size=60, y_ratio=0.375, fill="#ffd166",
                                stroke_width=5)
     _first = scene_list[0]
     _first.setdefault("vover", []).extend([
@@ -844,7 +844,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     _rgb = dna["rgb"].lstrip("#")
     _side, _flip = 210, 0
     for ev in events:
-        if ev["style"] != "Ayah":
+        if ev["style"] not in ("Ayah", "Big"):
             continue
         icon = _stkmod.sticker_for(ev["text"], _rgb)
         if not icon:
