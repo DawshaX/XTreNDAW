@@ -852,6 +852,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789622631.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789622631.png"
    }
+  },
+  "noor-akhlaq-0-r3": {
+   "title": "سلسلة مكارم الأخلاق (1/16): إنما بعثت لأتمم مكارم الأخلاق.…",
+   "fingerprint": "5557f32654ccfa9e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhlaq-3.mp4",
+   "duration": 21.27,
+   "at": "2026-09-17 06:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789626425.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789626425.png"
+   }
   }
  },
  "fingerprints": [
@@ -935,7 +946,8 @@
   "8d00ac069e6fc918",
   "8a19f6ee0d9e473b",
   "ec9cd9d8cf99831c",
-  "fd9de347a2d67267"
+  "fd9de347a2d67267",
+  "5557f32654ccfa9e"
  ],
- "last_kind": "ruqyah"
+ "last_kind": "akhlaq"
 }
