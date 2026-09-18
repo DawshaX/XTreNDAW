@@ -236,9 +236,11 @@ def fetch_clip(query: str, seconds: float, workdir: Path, seed: str,
         providers = [_pexels_candidates]
         if source in ("auto", "commons", "noia"):
             providers.append(_commons_candidates)
-        if source in ("auto", "nasa", "noia"):
+        # المسار الآلي سريع: Pexels ثم Commons فقط. أرشيف IA/NASA
+        # يظل متاحًا عند طلبه صراحة، لكن لا يسمح بتعليق كل مشهد بدقائق.
+        if source in ("nasa", "noia"):
             providers.append(_nasa_candidates)
-        if source in ("auto", "ia"):
+        if source == "ia":
             providers.append(_ia_candidates)
         accepted = False
         for provider in providers:
