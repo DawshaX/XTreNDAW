@@ -34,7 +34,11 @@ def probe_duration(path: Path) -> float:
     """مدة ملف بالثواني — عن طريق ffmpeg (من غير ffprobe)."""
     import re
 
-    r = subprocess.run([ffmpeg(), "-i", str(path)], capture_output=True, text=True)
+    try:
+        r = subprocess.run([ffmpeg(), "-i", str(path)], capture_output=True,
+                           text=True, timeout=30)
+    except Exception:
+        return 0.0
     m = re.search(r"Duration: (\d+):(\d+):(\d+\.?\d*)", r.stderr)
     if not m:
         return 0.0
@@ -69,7 +73,7 @@ def to_wav(src: Path, dst: Path, rate: int = 44100) -> Path:
     subprocess.run(
         [ffmpeg(), "-y", "-i", str(src), "-ar", str(rate), "-ac", "2",
          "-c:a", "pcm_s16le", str(dst)],
-        capture_output=True, check=True,
+        capture_output=True, check=True, timeout=90,
     )
     return dst
 

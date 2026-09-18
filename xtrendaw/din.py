@@ -797,6 +797,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                               workdir, f"{kind}-{_idx}", max(1.0, e - s))
             sc.update(start=s, end=e, frame=True)
             scene_list.append(sc)
+        print("[din] visual-scenes-done", flush=True)
         ep_id = f"noor-{kind}-{reciter_idx % len(items)}"
 
     # محرك الأنماط (Multiverse): DNA بصري فريد لكل حلقة —
@@ -903,6 +904,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     # هوية البراند فوق كل المشاهد: لوجو + تدرّجات + إطار ذهبي للمشاهد
     from . import intro_lab
     _sq, INTRO = intro_lab.render(dna, workdir / "intro.mp4", square=True)
+    print(f"[din] intro-done arch={intro_lab._h(dna.get('seed', ''), 'intro') % 7}", flush=True)
     bl = scenes._brand_layer(workdir / "ov" / "brand.png")
     fr_ov = scenes.frame_overlay(workdir / "ov" / "frame.png",
                                  color=dna["rgb"])
@@ -961,8 +963,10 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     # كرت الختام: فائدة مسموعة فوق خلفية البراند
     voice_fayda = (f"وقف ثانية يا صديقي… {fayda} "
                    "انشر الخير، لعلها تكون صدقة جارية ليك وليّا.")
+    print("[din] fayda-start", flush=True)
     fr = synthesize_line(voice_fayda, "ar", workdir / "end", name="fayda",
                          rate="-6%", pitch="-1Hz")
+    print("[din] fayda-done", flush=True)
     wavs.append(fr["wav"])
     end_dur = fr["duration"] + 1.0
     scene_list.append({**_end_card(workdir, fayda,
@@ -1038,6 +1042,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                             capture_output=True)
     if pr.returncode == 0 and processed.exists():
         vox = processed
+    print("[din] audio-done", flush=True)
 
     if kind in ("quran", "tafsir"):
         # ختام ساكن: شاشة سوداء + سطر واحد (لمسة المراجع)
@@ -1084,6 +1089,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         lines.append(f"Dialogue: 0,{_t(ev['start'])},{_t(ev['end'])},{st},"
                      f",0,0,0,,{fx}{txt}\n")
     ass.write_text("".join(lines), encoding="utf-8")
+    print("[din] ass-done", flush=True)
 
     out = settings.OUT / f"{ep_id}.mp4"
     print("[din] assemble-start", flush=True)
