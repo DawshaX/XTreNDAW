@@ -1069,6 +1069,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789768148.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789768148.png"
    }
+  },
+  "noor-qissa-naqat-r7": {
+   "title": "سُورَةُ هُودٍ ﴿64–65﴾ — أيمن سويد",
+   "fingerprint": "4c25a6ab94b771d2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-naqat-aymanswoaid.mp4",
+   "duration": 82.14,
+   "at": "2026-09-18 22:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789771996.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789771996.png"
+   }
   }
  },
  "fingerprints": [
@@ -1172,7 +1183,8 @@
   "a73a0328c0761c86",
   "f57d3580d0927434",
   "47531077004ce7d3",
-  "d4da470013f8ac92"
+  "d4da470013f8ac92",
+  "4c25a6ab94b771d2"
  ],
- "last_kind": "akhira"
+ "last_kind": "qissa"
 }
