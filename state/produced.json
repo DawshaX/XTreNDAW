@@ -1014,6 +1014,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789741944.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789741944.png"
    }
+  },
+  "noor-quran-s055-25-r8": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الرَّحۡمَٰن ﴿25–28﴾ — علي الحذيفي",
+   "fingerprint": "2ee4acde0e9eb01b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs055-25-hudhaify.mp4",
+   "duration": 50.87,
+   "at": "2026-09-18 15:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789745713.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789745713.png"
+   }
   }
  },
  "fingerprints": [
@@ -1112,7 +1123,8 @@
   "6cb07cc09853ce5a",
   "0a52e6ad01c7851e",
   "7ad27ec702d733d2",
-  "d232add9ce4976c0"
+  "d232add9ce4976c0",
+  "2ee4acde0e9eb01b"
  ],
- "last_kind": "qudsi"
+ "last_kind": "info"
 }
