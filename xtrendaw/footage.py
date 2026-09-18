@@ -16,6 +16,7 @@ from __future__ import annotations
 import hashlib
 import re
 import subprocess
+import time
 from pathlib import Path
 
 import numpy as np
@@ -43,7 +44,7 @@ def _dl(url: str, dst: Path) -> bool:
         if not url:
             return False
         dst.parent.mkdir(parents=True, exist_ok=True)
-        r = requests.get(url, headers=UA, timeout=240, stream=True)
+        r = requests.get(url, headers=UA, timeout=(10, 45), stream=True)
         if not r.ok:
             return False
         n = 0
@@ -60,8 +61,11 @@ def _dl(url: str, dst: Path) -> bool:
 
 
 def _probe_dur(path: Path) -> float:
-    r = subprocess.run([ffmpeg(), "-i", str(path)], capture_output=True,
-                       text=True)
+    try:
+        r = subprocess.run([ffmpeg(), "-i", str(path)], capture_output=True,
+                           text=True, timeout=20)
+    except Exception:
+        return 0.0
     m = re.search(r"Duration: (\d+):(\d+):(\d+\.?\d*)", r.stderr)
     if not m:
         return 0.0
@@ -77,7 +81,10 @@ def _prep(src: str, seconds: float, out: Path, offset: float = 0.0) -> bool:
            "crop=1080:1920,fps=30",
            "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
            "-pix_fmt", "yuv420p", "-an", str(out)]
-    r = subprocess.run(cmd, capture_output=True, text=True)
+    try:
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=45)
+    except Exception:
+        return False
     return r.returncode == 0 and out.exists() and out.stat().st_size > 30_000
 
 
@@ -200,7 +207,7 @@ def _pexels_candidates(query: str) -> list:
     try:
         from . import library as _lb
         seen = []
-        for _ in range(2):          # مرشحان لكل مشهد — تنويع حقيقي
+        for _ in range(1):          # مرشح واحد سريع؛ الفشل ينتقل فورًا للمصدر التالي
             u = _lb.pexels_video(query)
             if u and u not in seen:
                 seen.append(u)
@@ -211,37 +218,56 @@ def _pexels_candidates(query: str) -> list:
 
 def fetch_clip(query: str, seconds: float, workdir: Path, seed: str,
                source: str = "auto") -> Path | None:
-    """لقطة حيّة مطابقة للمعنى → mp4 مظبوط بلا نص محروق، أو None."""
+    """لقطة حيّة مطابقة للمعنى → mp4 مظبوط بلا نص محروق، أو None.
+
+    كل مشهد له ميزانية زمنية مستقلة وسلسلة مصادر كسولة: Pexels أولًا،
+    ثم البدائل فقط عند فشل التحميل. ده يمنع تعليق دورة المصنع 55 دقيقة
+    بسبب مرشحين بطيئين من كل مزود في نفس الوقت.
+    """
     LIB.mkdir(parents=True, exist_ok=True)
     workdir.mkdir(parents=True, exist_ok=True)
     key = hashlib.sha256(f"{source}:{query}".encode()).hexdigest()[:12]
     cached = LIB / f"{key}.mp4"
 
     if not cached.exists():
-        cands: list = _pexels_candidates(query)
-        if source in ("auto", "commons", "noia"):
-            cands += _commons_candidates(query)
-        if source in ("auto", "ia"):
-            cands += _ia_candidates(query)
-        if source in ("auto", "nasa", "noia"):
-            cands += _nasa_candidates(query)
-        raw = workdir / f"raw_{key}.bin"
+        deadline = time.monotonic() + 105.0
         bad = _badlist()
-        for c in cands:
-            url = c.get("url", "")
-            if url in bad or not _dl(url, raw):
-                continue
-            dur = _probe_dur(raw)
-            if dur < max(3.0, seconds):
-                raw.unlink(missing_ok=True)
-                continue
-            ok = _prep(str(raw), min(seconds + 1, 12), cached,
-                       offset=dur * 0.25)
-            if ok and not _has_captions(cached):
-                break  # قبلناها
-            if ok:
-                _mark_bad(url)  # لقطة عليها نص محروق — لن تعود أبدًا
-            cached.unlink(missing_ok=True)
+        raw = workdir / f"raw_{key}.bin"
+        providers = [_pexels_candidates]
+        if source in ("auto", "commons", "noia"):
+            providers.append(_commons_candidates)
+        if source in ("auto", "nasa", "noia"):
+            providers.append(_nasa_candidates)
+        if source in ("auto", "ia"):
+            providers.append(_ia_candidates)
+        accepted = False
+        for provider in providers:
+            if time.monotonic() >= deadline:
+                break
+            try:
+                cands = provider(query)
+            except Exception:
+                cands = []
+            for c in cands:
+                if time.monotonic() >= deadline:
+                    break
+                url = c.get("url", "")
+                if url in bad or not _dl(url, raw):
+                    continue
+                dur = _probe_dur(raw)
+                if dur < max(3.0, seconds):
+                    raw.unlink(missing_ok=True)
+                    continue
+                ok = _prep(str(raw), min(seconds + 1, 12), cached,
+                           offset=dur * 0.25)
+                if ok and not _has_captions(cached):
+                    accepted = True
+                    break
+                if ok:
+                    _mark_bad(url)  # لقطة عليها نص محروق — لن تعود أبدًا
+                cached.unlink(missing_ok=True)
+            if accepted:
+                break
         raw.unlink(missing_ok=True)
         _trim_cache()
 
@@ -249,6 +275,8 @@ def fetch_clip(query: str, seconds: float, workdir: Path, seed: str,
         return None
     out = workdir / f"clip_{key}.mp4"
     dur = _probe_dur(cached)
+    if dur <= 0:
+        return None
     room = max(1, int(max(0, dur - seconds)))
     off = int(hashlib.sha256(seed.encode()).hexdigest()[:6], 16) % room
     if not _prep(str(cached), seconds, out, offset=off):
