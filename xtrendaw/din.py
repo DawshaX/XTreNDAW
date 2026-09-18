@@ -992,7 +992,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                              "equalizer=f=3200:width_type=q:width=1.2:g=1.5,"
                              "loudnorm=I=-14:TP=-1.2:LRA=11",
                              "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le",
-                             str(processed)], capture_output=True)
+                             str(processed)], capture_output=True, timeout=120)
     else:
         # الأدعية/الأحاديث/المعلومات: هوية XDAW — دفء ووضوح بلا تشويه
         amb = workdir / "amb.wav"
@@ -1017,7 +1017,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                              "-af", f"volume=0.05,afade=t=out:"
                              f"st={max(total - 2.0, 0.0):.2f}:d=2",
                              "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le",
-                             str(amb)], capture_output=True)
+                             str(amb)], capture_output=True, timeout=90)
                         _amb_ok = amb.exists()
             except Exception:
                 _amb_ok = False
@@ -1027,7 +1027,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                             "-af", "lowpass=f=300,volume=0.018",
                             "-t", f"{total:.2f}",
                             "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le",
-                            str(amb)], capture_output=True)
+                            str(amb)], capture_output=True, timeout=60)
         pr = subprocess.run([ffmpeg(), "-y", "-i", str(vox), "-i", str(amb),
                              "-filter_complex",
                              "[0:a]afftdn=nf=-30,"
@@ -1039,7 +1039,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                              "loudnorm=I=-14:TP=-1.2:LRA=11[out]",
                              "-map", "[out]", "-ar", "44100", "-ac", "2",
                              "-c:a", "pcm_s16le", str(processed)],
-                            capture_output=True)
+                            capture_output=True, timeout=120)
     if pr.returncode == 0 and processed.exists():
         vox = processed
     print("[din] audio-done", flush=True)
