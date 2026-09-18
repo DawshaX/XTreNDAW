@@ -384,6 +384,7 @@ def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
     import re as _qre
 
     q = spec["scenes"][i % len(spec["scenes"])]
+    print(f"[din] scene {i} query-start", flush=True)
     # حارس أخير: أي كلمة قد تستدعي بشرًا تتحول قبل وصولها لأي مزود.
     # ده يضمن الصفر حتى لو أضاف إيچنت المكتبة استعلامًا بشريًا مستقبلًا.
     _people_words = {
@@ -406,6 +407,7 @@ def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
     _src = "auto"
     clip = footage.fetch_clip(q, max(1.0, seconds), scdir, f"{seed}:{i}",
                               source=_src)
+    print(f"[din] scene {i} clip={'yes' if clip else 'no'}", flush=True)
     if not clip:
         # محاولة ثانية باستعلام أبسط — اللقطة الحيّة أولى من الصورة
         _q2 = f"{' '.join(q.split(',')[0].split()[:3])}, empty landscape, no people"
@@ -416,6 +418,7 @@ def _scene_media(i: int, spec: dict, workdir: Path, seed: str,
         return {"video": clip, "overlays": [],
                 "grade": spec.get("grade", "soft")}
     base = scdir / "base.png"
+    print(f"[din] scene {i} fallback-start", flush=True)
     if spec.get("style") == "cinema":
         prompt = (f"{q}, ancient middle-east historical scene, cinematic film still, "
                   "realistic, dramatic natural light, 9:16 vertical, no text")
@@ -788,6 +791,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             merged[-1] = (merged[-1][0], off)
         if not merged:
             merged = [(0.0, off)]
+        print(f"[din] stock scenes={len(merged)}", flush=True)
         for i, (s, e) in enumerate(merged):
             sc = _scene_media(i, {"scenes": qs, "grade": _gr},
                               workdir, f"{kind}-{_idx}", max(1.0, e - s))
@@ -1082,9 +1086,11 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     ass.write_text("".join(lines), encoding="utf-8")
 
     out = settings.OUT / f"{ep_id}.mp4"
+    print("[din] assemble-start", flush=True)
     video.assemble({"wav": vox, "total_duration": total,
                     "xtrans": dna.get("xtrans")}, scene_list, ass,
                    out, workdir, music=None)
+    print(f"[din] assemble-done bytes={out.stat().st_size if out.exists() else 0}", flush=True)
     cover = settings.OUT / f"{ep_id}-cover.png"
     brand.compose_cover({"id": ep_id, "title_ar": title, "_kind": kind,
                          "tags": "نور,قرآن,دعوة,XDAWNOVA"}, cover)

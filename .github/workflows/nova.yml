@@ -72,7 +72,7 @@ jobs:
           Path("state/last_attempt.json").write_text(
               json.dumps({"ts": time.time()}), encoding="utf-8")
           PY
-          timeout 3300 python -u -m xtrendaw.run_cycle --next
+          timeout 1800 python -u -m xtrendaw.run_cycle --next
           rc=$?
           [ $rc -eq 42 ] && exit 0
           exit $rc
