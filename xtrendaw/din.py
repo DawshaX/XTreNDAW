@@ -1088,23 +1088,25 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     cover = settings.OUT / f"{ep_id}-cover.png"
     brand.compose_cover({"id": ep_id, "title_ar": title, "_kind": kind,
                          "tags": "نور,قرآن,دعوة,XDAWNOVA"}, cover)
-    # نسخة 4K رئيسية (2160×3840) — إتقان إضافي مع بقاء 1080 للنشر
-    v4k = settings.OUT / f"{ep_id}-4k.mp4"
-    try:
-        if total <= 55:
+    # 4K اختياري خارج دورة الساعة؛ ملف النشر 1080 هو المعتمد (4K feel من
+    # العمق/الحركة والجسيمات). تفعيله يدويًا لا يعرقل النشر الساعي.
+    v4k = out
+    if settings.get_bool("XT_MAKE_4K", False) and total <= 55:
+        v4k = settings.OUT / f"{ep_id}-4k.mp4"
+        try:
             subprocess.run(
                 [ffmpeg(), "-y", "-i", str(out), "-vf",
                  "scale=2160:3840:flags=lanczos",
-                 "-c:v", "libx264", "-preset", "ultrafast", "-crf", "23",
+                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
                  "-x264-params", "rc-lookahead=5:sync-lookahead=0",
                  "-threads", "2",
                  "-pix_fmt", "yuv420p", "-c:a", "copy",
                  "-movflags", "+faststart", str(v4k)],
                 capture_output=True, timeout=420)
-        if not v4k.exists():
+            if not v4k.exists():
+                v4k = out
+        except Exception:
             v4k = out
-    except Exception:
-        v4k = out
     try:
         import json as _jl2
         if dna.get("_sig"):
