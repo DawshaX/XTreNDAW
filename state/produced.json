@@ -1058,6 +1058,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789764433.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789764433.png"
    }
+  },
+  "noor-akhira-3-r3": {
+   "title": "سلسلة الاستعداد للآخرة (4/16): النفخ في الصور فيصعق من في السماوا…",
+   "fingerprint": "d4da470013f8ac92",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhira-3.mp4",
+   "duration": 24.33,
+   "at": "2026-09-18 21:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789768148.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789768148.png"
+   }
   }
  },
  "fingerprints": [
@@ -1160,7 +1171,8 @@
   "2ee4acde0e9eb01b",
   "a73a0328c0761c86",
   "f57d3580d0927434",
-  "47531077004ce7d3"
+  "47531077004ce7d3",
+  "d4da470013f8ac92"
  ],
- "last_kind": "quran"
+ "last_kind": "akhira"
 }
