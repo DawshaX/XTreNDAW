@@ -785,6 +785,22 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     # بذرة الحرية: الحلقة تختار روحها — ويمكن للمخرج اختيار بذرة يدويًا
     _seed = (spec or {}).get("seed") or f"{ep_id}:{title[:24]}"
     dna = _mvx.style_dna(_seed)
+    # ضمانة الاختلاف: لو بصمة الشكل طابقت الحلقة السابقة — أعد البذرة
+    try:
+        import json as _jl
+        _sigf = settings.STATE / "dna_last.json"
+        _prev = _jl.loads(_sigf.read_text(encoding="utf-8")) if _sigf.exists() else {}
+        for _salt in range(1, 6):
+            from . import intro_lab as _il0
+            _sig = [dna["palette"], dna["layout"], dna["grade"], dna["xtrans"],
+                    _il0._h(_seed, "intro") % 7]
+            if _sig != _prev.get("sig"):
+                break
+            _seed = _seed + f":v{_salt}"
+            dna = _mvx.style_dna(_seed)
+        dna["_sig"] = _sig
+    except Exception:
+        pass
     # جسيمات بمعنى: الجو البصري بيتبع معنى الكلام (مطر/نور…)
     import re as _re_sem
     _alltx = "".join(ev.get("text", "") for ev in events)
@@ -1030,6 +1046,13 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             v4k = out
     except Exception:
         v4k = out
+    try:
+        import json as _jl2
+        if dna.get("_sig"):
+            (settings.STATE / "dna_last.json").write_text(
+                _jl2.dumps({"sig": dna["_sig"]}), encoding="utf-8")
+    except Exception:
+        pass
     return {"video": out, "video_4k": v4k, "cover": cover,
             "report": video.validate(out), "style": dna,
             "title": title, "id": ep_id, "reciter": reciter}
