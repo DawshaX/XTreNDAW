@@ -970,6 +970,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789726734.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789726734.png"
    }
+  },
+  "noor-hadith-7678-r3": {
+   "title": "قال رسول الله ﷺ: أَخْبَرَنَا إِسْحَاقُ بْنُ إِبْرَاهِيمَ،…",
+   "fingerprint": "6cb07cc09853ce5a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 38.27,
+   "at": "2026-09-18 11:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789730459.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789730459.png"
+   }
   }
  },
  "fingerprints": [
@@ -1064,7 +1075,8 @@
   "2bf746b539ed47e5",
   "447b05a27fb8f03f",
   "de32028fdca3f961",
-  "d24cb422a7025ab2"
+  "d24cb422a7025ab2",
+  "6cb07cc09853ce5a"
  ],
- "last_kind": "quran"
+ "last_kind": "akhira"
 }
