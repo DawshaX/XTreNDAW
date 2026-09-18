@@ -979,9 +979,11 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     list_f.write_text("".join(f"file '{p.as_posix()}'\n" for p in wavs),
                       encoding="utf-8")
     vox = workdir / "vox.wav"
+    print("[din] concat-audio-start", flush=True)
     subprocess.run([ffmpeg(), "-y", "-f", "concat", "-safe", "0", "-i", str(list_f),
                     "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le", str(vox)],
-                   capture_output=True, check=True)
+                   capture_output=True, check=True, timeout=90)
+    print("[din] concat-audio-done", flush=True)
     # معالجة الصوت — لكل محتوى ما يناسبه:
     processed = workdir / "vox_p.wav"
     if kind in ("quran", "tafsir", "qissa"):
