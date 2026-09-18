@@ -62,12 +62,19 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: إنتاج الحلقة التالية + رفعها Releases
-        continue-on-error: true
+        # الأخطاء لا تتخفّاش كنجاح؛ الخطوة التالية دائمًا تحفظ الحالة وتعيد المحاولة.
         run: |
           set +e
+          python3 - <<'PY'
+          import json, time
+          from pathlib import Path
+          Path("state").mkdir(exist_ok=True)
+          Path("state/last_attempt.json").write_text(
+              json.dumps({"ts": time.time()}), encoding="utf-8")
+          PY
           timeout 3300 python -u -m xtrendaw.run_cycle --next
           rc=$?
-          [ $rc -eq 42 ] && touch /tmp/skipflag
+          [ $rc -eq 42 ] && exit 0
           exit $rc
 
       - name: تحديث الذاكرة في git (عشان الحلقة الجاية تكمل مش تعيد)
@@ -93,6 +100,8 @@ jobs:
         if: always()
         run: |
           ts=$(python3 -c "import json; print(int(json.load(open('state/last_publish.json'))['ts']))" 2>/dev/null || echo 0)
+          at=$(python3 -c "import json; print(int(json.load(open('state/last_attempt.json'))['ts']))" 2>/dev/null || echo 0)
+          [ "$at" -gt "$ts" ] && ts="$at"
           now=$(date +%s)
           delta=$((ts + 3600 - now))
           [ "$delta" -lt 60 ] && delta=60
