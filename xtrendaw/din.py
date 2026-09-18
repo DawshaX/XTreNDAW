@@ -780,7 +780,9 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 merged[-1] = (merged[-1][0], e)
             else:
                 merged.append((s, e))
-        merged = merged[:5]
+        # ثلاث لقطات حيّة كفاية لشد الانتباه، وتمنع xfade عالي الدقة من
+        # استهلاك ساعة كاملة؛ كل لقطة مختلفة بالبصمة والمصدر والانتقال.
+        merged = merged[:3]
         # آخر مشهد يبتلع الذيل/Dبلجة دائمًا — التغطية كاملة مهما طال النص
         if merged and off > merged[-1][1]:
             merged[-1] = (merged[-1][0], off)
