@@ -18,14 +18,20 @@ V = settings.VIDEO
 
 def _run(cmd: list[str], what: str) -> None:
     if cmd and "timeout" not in cmd[0]:
-        cmd = ["timeout", "-k", "10", "420", *cmd]
+        cmd = ["timeout", "-k", "10", "180", *cmd]
     r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode != 0:
         raise RuntimeError(f"{what} فشل (exit {r.returncode}):\n{(r.stderr or '')[-700:]}")
 
 
 def probe(path: Path) -> dict:
-    r = subprocess.run([ffmpeg(), "-i", str(path)], capture_output=True, text=True)
+    try:
+        r = subprocess.run([ffmpeg(), "-i", str(path)], capture_output=True,
+                           text=True, timeout=30)
+    except Exception:
+        return {"duration": 0.0, "width": 0, "height": 0,
+                "vcodec": "", "acodec": "",
+                "bytes": path.stat().st_size if path.exists() else 0}
     err = r.stderr
     dur = 0.0
     m = re.search(r"Duration: (\d+):(\d+):(\d+\.?\d*)", err)
@@ -209,7 +215,7 @@ def make_clip(scene: dict, seconds: float, out_mp4: Path) -> Path:
         ffmpeg(), "-y", *inputs,
         "-filter_complex", ";".join(parts),
         "-map", prev, "-frames:v", str(frames), "-r", str(V["fps"]),
-        "-c:v", V["vcodec"], "-preset", "fast", "-crf", "20",
+        "-c:v", V["vcodec"], "-preset", "ultrafast", "-crf", "20",
         "-x264-params", "rc-lookahead=8:sync-lookahead=0", "-threads", "2",
         "-pix_fmt", "yuv420p", "-an", str(out_mp4),
     ], f"clip {out_mp4.name}")
@@ -224,7 +230,7 @@ def join_clips(clip_paths: list[Path], workdir: Path, out: Path,
         cl.write_text("".join(f"file '{p.name}'\n" for p in clip_paths),
                       encoding="utf-8")
         _run([ffmpeg(), "-y", "-f", "concat", "-safe", "0", "-i", str(cl),
-              "-c:v", V["vcodec"], "-preset", "fast", "-crf", "20",
+              "-c:v", V["vcodec"], "-preset", "ultrafast", "-crf", "20",
               "-pix_fmt", "yuv420p", "-r", str(V["fps"]), "-an", str(out)],
              "دمج")
         return out
@@ -238,7 +244,7 @@ def join_clips(clip_paths: list[Path], workdir: Path, out: Path,
               "-filter_complex",
               f"[0:v][1:v]xfade=transition={xtrans}:duration={_D}:"
               f"offset={off:.3f}[v]",
-              "-map", "[v]", "-c:v", V["vcodec"], "-preset", "fast",
+              "-map", "[v]", "-c:v", V["vcodec"], "-preset", "ultrafast",
               "-crf", "20", "-pix_fmt", "yuv420p", "-r", str(V["fps"]),
               "-an", str(nxt)], f"مزج{i}")
         acc = nxt
@@ -268,7 +274,7 @@ def assemble(plan: dict, scenes: list[dict], ass_path: Path, out_mp4: Path,
     sub_video = workdir / "subbed.mp4"
     _xcap = ["-x264-params", "rc-lookahead=8:sync-lookahead=0", "-threads", "2"]
     _run([ff, "-y", "-i", str(base_video), "-vf", ass,
-          "-c:v", V["vcodec"], "-preset", "fast", "-crf", "18",
+          "-c:v", V["vcodec"], "-preset", "ultrafast", "-crf", "18",
           *_xcap,
           "-pix_fmt", "yuv420p", "-r", str(V["fps"]), "-an", str(sub_video)],
          "الكابتشن")
@@ -288,7 +294,7 @@ def assemble(plan: dict, scenes: list[dict], ass_path: Path, out_mp4: Path,
         amap = "1:a"
     _run([ff, "-y", "-i", str(sub_video), *audio_in,
           "-filter_complex", fc, "-map", "[v]", "-map", amap,
-          "-c:v", V["vcodec"], "-preset", "fast", "-crf", "20",
+          "-c:v", V["vcodec"], "-preset", "ultrafast", "-crf", "20",
           *_xcap,
           "-pix_fmt", "yuv420p", "-r", str(V["fps"]),
           "-c:a", V["acodec"], "-b:a", "160k", "-ar", "44100",
