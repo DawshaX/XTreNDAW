@@ -981,6 +981,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789730459.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789730459.png"
    }
+  },
+  "noor-qudsi-1-r3": {
+   "title": "سلسلة الأحاديث القدسية (2/30): اللَّهُ تَعَالَى: كَذَّبَنِي ابْنُ…",
+   "fingerprint": "0a52e6ad01c7851e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 47.23,
+   "at": "2026-09-18 12:23",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789734225.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789734225.png"
+   }
   }
  },
  "fingerprints": [
@@ -1076,7 +1087,8 @@
   "447b05a27fb8f03f",
   "de32028fdca3f961",
   "d24cb422a7025ab2",
-  "6cb07cc09853ce5a"
+  "6cb07cc09853ce5a",
+  "0a52e6ad01c7851e"
  ],
- "last_kind": "akhira"
+ "last_kind": "adhkar"
 }
