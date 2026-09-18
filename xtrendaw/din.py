@@ -780,7 +780,7 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                 merged[-1] = (merged[-1][0], e)
             else:
                 merged.append((s, e))
-        merged = merged[:8]
+        merged = merged[:5]
         # آخر مشهد يبتلع الذيل/Dبلجة دائمًا — التغطية كاملة مهما طال النص
         if merged and off > merged[-1][1]:
             merged[-1] = (merged[-1][0], off)

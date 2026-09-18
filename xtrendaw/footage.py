@@ -44,7 +44,7 @@ def _dl(url: str, dst: Path) -> bool:
         if not url:
             return False
         dst.parent.mkdir(parents=True, exist_ok=True)
-        r = requests.get(url, headers=UA, timeout=(10, 45), stream=True)
+        r = requests.get(url, headers=UA, timeout=(8, 20), stream=True)
         if not r.ok:
             return False
         n = 0
@@ -82,7 +82,7 @@ def _prep(src: str, seconds: float, out: Path, offset: float = 0.0) -> bool:
            "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
            "-pix_fmt", "yuv420p", "-an", str(out)]
     try:
-        r = subprocess.run(cmd, capture_output=True, text=True, timeout=45)
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
     except Exception:
         return False
     return r.returncode == 0 and out.exists() and out.stat().st_size > 30_000
@@ -96,7 +96,7 @@ def _has_captions(path: Path) -> bool:
         for t in (0.4, dur * 0.4, dur * 0.8):
             subprocess.run([ffmpeg(), "-y", "-ss", f"{t:.1f}", "-i", str(path),
                             "-frames:v", "1", str(tmp)],
-                           capture_output=True, timeout=30)
+                           capture_output=True, timeout=15)
             if not tmp.exists():
                 continue
             a = np.asarray(Image.open(tmp).convert("RGB"), dtype=int)
@@ -135,7 +135,7 @@ def _commons_candidates(query: str) -> list:
                     "gsrsearch": f"{query} filetype:video", "gsrnamespace": 6,
                     "gsrlimit": 15, "prop": "imageinfo",
                     "iiprop": "url|mime|size", "format": "json"},
-            headers=UA, timeout=20).json()
+            headers=UA, timeout=12).json()
         pages = (r.get("query") or {}).get("pages") or {}
         out = []
         for p in pages.values():
@@ -230,7 +230,7 @@ def fetch_clip(query: str, seconds: float, workdir: Path, seed: str,
     cached = LIB / f"{key}.mp4"
 
     if not cached.exists():
-        deadline = time.monotonic() + 105.0
+        deadline = time.monotonic() + 55.0
         bad = _badlist()
         raw = workdir / f"raw_{key}.bin"
         providers = [_pexels_candidates]

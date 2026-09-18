@@ -183,7 +183,7 @@ def pexels_video(query: str) -> str | None:
         r = requests.get(
             "https://api.pexels.com/videos/search",
             params={"query": query, "per_page": 6, "orientation": "portrait"},
-            headers={"Authorization": key}, timeout=25)
+            headers={"Authorization": key}, timeout=15)
         if not r.ok:
             return None
         used = _used(query)
