@@ -959,6 +959,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789682507.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789682507.png"
    }
+  },
+  "noor-adhkar-122-r3": {
+   "title": "مِن أذكار المسلم: ....ملء السموات وملء الأرض وما بينهما ، …",
+   "fingerprint": "d24cb422a7025ab2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 38.77,
+   "at": "2026-09-18 10:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789726734.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789726734.png"
+   }
   }
  },
  "fingerprints": [
@@ -1052,7 +1063,8 @@
   "1b96afff0b6e7047",
   "2bf746b539ed47e5",
   "447b05a27fb8f03f",
-  "de32028fdca3f961"
+  "de32028fdca3f961",
+  "d24cb422a7025ab2"
  ],
  "last_kind": "quran"
 }
