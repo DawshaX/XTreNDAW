@@ -187,7 +187,7 @@ def _piper_model() -> Path | None:
             m.parent.mkdir(parents=True, exist_ok=True)
             base = (f"https://github.com/DawshaX/XTreNDAW/releases/download/"
                     f"{settings.PIPER_RELEASE}")
-            r = _rq.get(f"{base}/ar-kareem.onnx", timeout=600, stream=True)
+            r = _rq.get(f"{base}/ar-kareem.onnx", timeout=(10, 90), stream=True)
             if not r.ok:
                 return None
             with open(m, "wb") as f:
@@ -245,14 +245,15 @@ def _orpheus_ar(text: str, out_dir: Path, name: str) -> dict | None:
             return {"wav": out_wav, "duration": d,
                     "words": _spread(text.strip(), 0, d),
                     "timing_source": "orpheus"}
-    for v in ("lina", "amal", "hadeer", "nora"):
+    # تجربة واحدة فقط بمهلة قصيرة؛ لو الخدمة مش متاحة ننتقل فورًا لـedge/Piper.
+    for v in ("lina",):
         try:
             r = _rq.post("https://api.groq.com/openai/v1/audio/speech",
                          headers={"Authorization": f"Bearer {key}"},
                          json={"model": "canopylabs/orpheus-arabic-saudi",
                                "voice": v,
                                "input": normalize_for_speech(text)},
-                         timeout=120)
+                         timeout=25)
             if r.status_code != 200 or not r.content or r.content[:1] == b"{":
                 continue
             mp3 = out_dir / f"{name}_orp.mp3"
@@ -303,6 +304,15 @@ def synthesize_line(text: str, lang: str, out_dir: Path, name: str = "line",
     return _edge_single(text, out_dir, name, rate, pitch, voice)
 
 
+async def _bounded_synth(text: str, voice: str, out_mp3: Path,
+                          rate: str | None = None, pitch: str | None = None,
+                          volume: str | None = None) -> dict:
+    """edge-tts بمهلة: الخدمة المجانية لا توقف دورة المصنع للأبد."""
+    return await asyncio.wait_for(
+        _synth_line(text, voice, out_mp3, rate=rate, pitch=pitch,
+                    volume=volume), timeout=45)
+
+
 def _edge_ar(text: str, out_dir: Path, name: str, rate, pitch, voice) -> dict:
     if True:
         text = normalize_for_speech(text)
@@ -315,8 +325,8 @@ def _edge_ar(text: str, out_dir: Path, name: str, rate, pitch, voice) -> dict:
             for i, sent in enumerate(parts):
                 rr, pp, vv = _sent_prosody(sent, rate)
                 mp3 = out_dir / f"{name}_s{i}.mp3"
-                asyncio.run(_synth_line(sent, voice, mp3, rate=rr, pitch=pp,
-                                        volume=vv))
+                asyncio.run(_bounded_synth(sent, voice, mp3, rate=rr, pitch=pp,
+                                           volume=vv))
                 d = probe_duration(mp3)
                 if d <= 0:
                     continue
@@ -336,7 +346,7 @@ def _edge_ar(text: str, out_dir: Path, name: str, rate, pitch, voice) -> dict:
 
 def _edge_single(text: str, out_dir: Path, name: str, rate, pitch, voice) -> dict:
     mp3 = out_dir / f"{name}.mp3"
-    r = asyncio.run(_synth_line(text, voice, mp3, rate=rate, pitch=pitch))
+    r = asyncio.run(_bounded_synth(text, voice, mp3, rate=rate, pitch=pitch))
     duration = probe_duration(mp3)
     if duration <= 0:
         raise RuntimeError(f"مدة الصوت صفر لـ{name} — edge-tts فشل")
