@@ -1047,6 +1047,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789760624.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789760624.png"
    }
+  },
+  "noor-quran-s113-1-r8": {
+   "title": "دقيقة نور 🌙 سُورَةُ الفَلَقِ ﴿1–5﴾ — علي الحذيفي",
+   "fingerprint": "47531077004ce7d3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs113-1-hudhaify.mp4",
+   "duration": 43.06,
+   "at": "2026-09-18 20:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789764433.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789764433.png"
+   }
   }
  },
  "fingerprints": [
@@ -1148,7 +1159,8 @@
   "d232add9ce4976c0",
   "2ee4acde0e9eb01b",
   "a73a0328c0761c86",
-  "f57d3580d0927434"
+  "f57d3580d0927434",
+  "47531077004ce7d3"
  ],
  "last_kind": "quran"
 }
