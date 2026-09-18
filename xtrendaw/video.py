@@ -280,25 +280,24 @@ def assemble(plan: dict, scenes: list[dict], ass_path: Path, out_mp4: Path,
           *_xcap,
           "-pix_fmt", "yuv420p", "-r", str(V["fps"]), "-an", str(sub_video)],
          "الكابتشن")
-    # لمسة فيلم: حبيبات خفيفة + فينييت مريح
-    grade = "noise=alls=4:allf=t,vignette=a=0.3"
-    fc = f"[0:v]{grade}[v]"
+    # الماستر النهائي بلا فلتر إضافي شره: الحبيبة/الفينييت موجودان داخل
+    # الـclips، وإعادة فلترة إطار 1080×1920 كامل هنا كانت تقتل الذاكرة.
     if music and Path(music).exists():
         # الموسيقى تتنفس: دخول/خروج + خفض تلقائي تحت الصوت (sidechain)
-        duck = (f"[2:a]afade=t=in:d=0.8,afade=t=out:st={max(0, total - 1.4):.2f}:d=1.4[m0];"
-                f"[m0][1:a]sidechaincompress=threshold=0.08:ratio=5:attack=15:release=350[m];"
-                f"[1:a][m]amix=inputs=2:duration=first:normalize=0[a]")
-        fc += ";" + duck
+        fc = (f"[0:v]null[v];"
+              f"[2:a]afade=t=in:d=0.8,afade=t=out:st={max(0, total - 1.4):.2f}:d=1.4[m0];"
+              f"[m0][1:a]sidechaincompress=threshold=0.08:ratio=5:attack=15:release=350[m];"
+              f"[1:a][m]amix=inputs=2:duration=first:normalize=0[a]")
         audio_in = ["-i", str(plan["wav"]), "-i", str(music)]
-        amap = "[a]"
+        maps = ["-filter_complex", fc, "-map", "[v]", "-map", "[a]"]
     else:
         audio_in = ["-i", str(plan["wav"])]
-        amap = "1:a"
-    _run([ff, "-y", "-i", str(sub_video), *audio_in,
-          "-filter_complex", fc, "-map", "[v]", "-map", amap,
+        # نسخ مسار الفيديو المسبوب مباشرة يقلل الذاكرة ويحافظ على الجودة.
+        maps = ["-map", "0:v:0", "-map", "1:a:0"]
+    _run([ff, "-y", "-i", str(sub_video), *audio_in, *maps,
           "-c:v", V["vcodec"], "-preset", "ultrafast", "-crf", "25",
           "-maxrate", "3.8M", "-bufsize", "7.6M",
-          *_xcap,
+          "-threads", "1", "-x264-params", "rc-lookahead=0:sync-lookahead=0",
           "-pix_fmt", "yuv420p", "-r", str(V["fps"]),
           "-c:a", V["acodec"], "-b:a", "160k", "-ar", "44100",
           "-t", f"{total:.3f}", "-shortest", "-movflags", "+faststart",
