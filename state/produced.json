@@ -1080,6 +1080,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789771996.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789771996.png"
    }
+  },
+  "noor-juz-j078-1-r3": {
+   "title": "سلسلة جزء عمّ (1/142): سُورَةُ النَّبَإِ ﴿1–4﴾ — عبدالرحمن السديس",
+   "fingerprint": "d70cb108e4ca146c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-jj078-1-abdurrahmaansudais.mp4",
+   "duration": 40.83,
+   "at": "2026-09-18 23:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789775745.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789775745.png"
+   }
   }
  },
  "fingerprints": [
@@ -1184,7 +1195,8 @@
   "f57d3580d0927434",
   "47531077004ce7d3",
   "d4da470013f8ac92",
-  "4c25a6ab94b771d2"
+  "4c25a6ab94b771d2",
+  "d70cb108e4ca146c"
  ],
- "last_kind": "qissa"
+ "last_kind": "juz"
 }
