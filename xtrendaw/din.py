@@ -1001,7 +1001,10 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
         # أجواء طبيعة حقيقية CC0 من Freesound (بلا موسيقى) — للصوت البشري فقط،
         # التلاوة تفضل صافية 100%. ولو المصدر فشل → ضوضاء بنية زي الأول.
         _amb_ok = False
-        if kind in ("dua", "adhkar", "hisn"):
+        if kind in ("dua", "adhkar", "hisn") and settings.get_bool(
+                "XT_FREESOUND_AMBIENCE", False):
+            # Freesound مسموح هنا فقط وباختيار صريح؛ الافتراضي المحلي أسرع
+            # وأكثر ثباتًا، فلا تتعطل ساعة النشر بسبب مصدر خارجي.
             try:
                 from . import library as _lb
                 import requests as _rq
