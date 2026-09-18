@@ -1003,6 +1003,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789738019.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789738019.png"
    }
+  },
+  "noor-quran-s009-37-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ التَّوۡبَةِ ﴿37–37﴾ — أيمن سويد",
+   "fingerprint": "d232add9ce4976c0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs009-37-aymanswoaid.mp4",
+   "duration": 76.72,
+   "at": "2026-09-18 14:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789741944.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789741944.png"
+   }
   }
  },
  "fingerprints": [
@@ -1100,7 +1111,8 @@
   "d24cb422a7025ab2",
   "6cb07cc09853ce5a",
   "0a52e6ad01c7851e",
-  "7ad27ec702d733d2"
+  "7ad27ec702d733d2",
+  "d232add9ce4976c0"
  ],
- "last_kind": "hadith"
+ "last_kind": "qudsi"
 }
