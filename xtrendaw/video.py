@@ -267,7 +267,9 @@ def assemble(plan: dict, scenes: list[dict], ass_path: Path, out_mp4: Path,
         clip_paths.append(cp)
 
     base_video = workdir / "base.mp4"
-    join_clips(clip_paths, workdir, base_video, plan.get("xtrans"))
+    # concat واحد سريع للـvertical master؛ كل clip يحتفظ بحركته/فينييتِه
+    # وانتقاله الداخلي، بينما xfade عالي الدقة كان يستهلك عدة دقائق لكل زوج.
+    join_clips(clip_paths, workdir, base_video, None)
 
     ass = f"ass={ass_path.as_posix()}:fontsdir={settings.FONTS}"
     # مرحلتان خفيفتان على الذاكرة بدل سلسلة فلاتر واحدة شرهة
