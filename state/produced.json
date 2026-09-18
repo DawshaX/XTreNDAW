@@ -992,6 +992,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789734225.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789734225.png"
    }
+  },
+  "noor-info-125-r3": {
+   "title": "معلومة تُضيء: ابن تيمية: سُجن سبع مرات وما ترك القلم، …",
+   "fingerprint": "7ad27ec702d733d2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.8,
+   "at": "2026-09-18 13:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789738019.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789738019.png"
+   }
   }
  },
  "fingerprints": [
@@ -1088,7 +1099,8 @@
   "de32028fdca3f961",
   "d24cb422a7025ab2",
   "6cb07cc09853ce5a",
-  "0a52e6ad01c7851e"
+  "0a52e6ad01c7851e",
+  "7ad27ec702d733d2"
  ],
- "last_kind": "adhkar"
+ "last_kind": "hadith"
 }
