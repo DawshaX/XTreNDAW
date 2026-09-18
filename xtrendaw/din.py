@@ -785,22 +785,65 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     # بذرة الحرية: الحلقة تختار روحها — ويمكن للمخرج اختيار بذرة يدويًا
     _seed = (spec or {}).get("seed") or f"{ep_id}:{title[:24]}"
     dna = _mvx.style_dna(_seed)
-    # ضمانة الاختلاف: لو بصمة الشكل طابقت الحلقة السابقة — أعد البذرة
+    # ضمانة الاختلاف الحقيقية: لا نكرر البصمة الكاملة في آخر 12 حلقة،
+    # ولا نعيد نفس التخطيط أو افتتاحية الـ7 هياكل خلال آخر حلقتين.
+    # كده التنوع محفوظ حتى لو المخطّط رجّع نوعًا واحدًا عدة ساعات.
     try:
         import json as _jl
-        _sigf = settings.STATE / "dna_last.json"
-        _prev = _jl.loads(_sigf.read_text(encoding="utf-8")) if _sigf.exists() else {}
-        for _salt in range(1, 6):
-            from . import intro_lab as _il0
-            _sig = [dna["palette"], dna["layout"], dna["grade"], dna["xtrans"],
-                    _il0._h(_seed, "intro") % 7]
-            if _sig != _prev.get("sig"):
+        from . import intro_lab as _il0
+
+        _histf = settings.STATE / "dna_history.json"
+        _hist = []
+        if _histf.exists():
+            _raw = _jl.loads(_histf.read_text(encoding="utf-8"))
+            if isinstance(_raw, list):
+                _hist = [x.get("sig", x) if isinstance(x, dict) else x
+                         for x in _raw]
+        # ترقية ذاكرة الإصدار السابق ذات العنصر الواحد بدون كسرها.
+        if not _hist:
+            _lastf = settings.STATE / "dna_last.json"
+            if _lastf.exists():
+                _last = _jl.loads(_lastf.read_text(encoding="utf-8"))
+                if isinstance(_last, dict) and _last.get("sig"):
+                    _hist = [_last["sig"]]
+
+        def _visual_sig(_d, _s):
+            _ih = _il0._h(_s, "intro")
+            return [
+                _d["palette"], _d["layout"], _d["grade"], _d["motion"],
+                _d["particles"], _d["rise"], _d["transition"], _d["grain"],
+                _d["vig"], _d["p_speed"], _d["live_zoom"], _d["xtrans"],
+                _d["depth"], _d["typo"], _d["ramp"], _d["intro"],
+                _d["rhythm"], _ih % 7, (_ih >> 3) & 1,
+            ]
+
+        _recent = _hist[-12:]
+        _picked = None
+        # 128 بذرة بديلة تكفي لتفادي أي تشابه عمليًا، مع الحفاظ على حتمية الحلقة.
+        for _salt in range(128):
+            _try_seed = _seed if _salt == 0 else f"{_seed}:visual-v{_salt}"
+            _try_dna = _mvx.style_dna(_try_seed)
+            _try_sig = _visual_sig(_try_dna, _try_seed)
+            _layouts = [x[1] for x in _recent[-2:] if isinstance(x, list) and len(x) > 17]
+            _arches = [x[17] for x in _recent[-2:] if isinstance(x, list) and len(x) > 17]
+            _strict = (_try_sig not in _recent and
+                       (not _recent or _try_sig[:3] != _recent[-1][:3]) and
+                       _try_sig[1] not in _layouts and _try_sig[17] not in _arches)
+            _loose = (_try_sig not in _recent and
+                      (not _recent or _try_sig != _recent[-1]))
+            if _strict or (_salt >= 64 and _loose):
+                _seed, dna, _sig = _try_seed, _try_dna, _try_sig
+                _picked = True
                 break
-            _seed = _seed + f":v{_salt}"
-            dna = _mvx.style_dna(_seed)
+        if not _picked:
+            _sig = _visual_sig(dna, _seed)
         dna["_sig"] = _sig
+        dna["_history_file"] = str(_histf)
+        dna["_history"] = _hist
     except Exception:
-        pass
+        # اختلاف الألوان الأساسي يظل فعالًا حتى لو كانت ذاكرة الحالة تالفة.
+        dna["_sig"] = [dna.get("palette"), dna.get("layout"), dna.get("grade"),
+                        dna.get("xtrans")]
     # جسيمات بمعنى: الجو البصري بيتبع معنى الكلام (مطر/نور…)
     import re as _re_sem
     _alltx = "".join(ev.get("text", "") for ev in events)
@@ -1049,8 +1092,15 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
     try:
         import json as _jl2
         if dna.get("_sig"):
+            _hist2 = list(dna.get("_history") or [])
+            _hist2.append({"sig": dna["_sig"], "seed": dna.get("seed"),
+                           "kind": kind, "title": title[:80]})
+            _hist2 = _hist2[-12:]
+            (settings.STATE / "dna_history.json").write_text(
+                _jl2.dumps(_hist2, ensure_ascii=False), encoding="utf-8")
             (settings.STATE / "dna_last.json").write_text(
-                _jl2.dumps({"sig": dna["_sig"]}), encoding="utf-8")
+                _jl2.dumps({"sig": dna["_sig"], "seed": dna.get("seed")},
+                           ensure_ascii=False), encoding="utf-8")
     except Exception:
         pass
     return {"video": out, "video_4k": v4k, "cover": cover,
