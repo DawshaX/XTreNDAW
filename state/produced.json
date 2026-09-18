@@ -1036,6 +1036,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789749478.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789749478.png"
    }
+  },
+  "noor-quran-s003-157-r7": {
+   "title": "دقيقة نور 🌙 سُورَةُ آلِ عِمۡرَانَ ﴿157–158﴾ — أيمن سويد",
+   "fingerprint": "f57d3580d0927434",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs003-157-aymanswoaid.mp4",
+   "duration": 77.66,
+   "at": "2026-09-18 19:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789760624.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789760624.png"
+   }
   }
  },
  "fingerprints": [
@@ -1136,7 +1147,8 @@
   "7ad27ec702d733d2",
   "d232add9ce4976c0",
   "2ee4acde0e9eb01b",
-  "a73a0328c0761c86"
+  "a73a0328c0761c86",
+  "f57d3580d0927434"
  ],
  "last_kind": "quran"
 }
