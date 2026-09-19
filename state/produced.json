@@ -1289,6 +1289,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789843819.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789843819.png"
    }
+  },
+  "noor-quran-s014-5-r9": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ إِبۡرَاهِيمَ ﴿5–6﴾ — أبو بكر الشاطري",
+   "fingerprint": "1ccf6e32a115373b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs014-5-shaatree.mp4",
+   "duration": 81.57,
+   "at": "2026-09-19 19:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789847698.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789847698.png"
+   }
   }
  },
  "fingerprints": [
@@ -1412,7 +1423,8 @@
   "6e9f35c711d9bc0c",
   "59ed2969fc2ee0ec",
   "e575b8da84af3a5c",
-  "0ee2a1b11220c6ea"
+  "0ee2a1b11220c6ea",
+  "1ccf6e32a115373b"
  ],
  "last_kind": "quran"
 }
