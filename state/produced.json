@@ -1190,6 +1190,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789809593.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789809593.png"
    }
+  },
+  "noor-ruqyah-r002-255-r3": {
+   "title": "سلسلة الرقية الشرعية (2/10): سُورَةُ البَقَرَةِ ﴿255–255﴾ — عبدالرحمن السديس",
+   "fingerprint": "fc0fbf5da2e1f78c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-rr002-255-abdurrahmaansudais.mp4",
+   "duration": 66.0,
+   "at": "2026-09-19 10:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789813445.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789813445.png"
+   }
   }
  },
  "fingerprints": [
@@ -1304,7 +1315,8 @@
   "b884b7a5a2457d25",
   "b108ddd7b8a0f3c1",
   "58e1ed862fe65843",
-  "a95235629574af31"
+  "a95235629574af31",
+  "fc0fbf5da2e1f78c"
  ],
- "last_kind": "tafsir"
+ "last_kind": "ruqyah"
 }
