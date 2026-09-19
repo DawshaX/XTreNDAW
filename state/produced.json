@@ -1234,6 +1234,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789824707.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789824707.png"
    }
+  },
+  "noor-quran-s025-73-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الفُرۡقَانِ ﴿73–74﴾ — أيمن سويد",
+   "fingerprint": "acdaf972262df78e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs025-73-aymanswoaid.mp4",
+   "duration": 80.61,
+   "at": "2026-09-19 14:36",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789828584.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789828584.png"
+   }
   }
  },
  "fingerprints": [
@@ -1352,7 +1363,8 @@
   "fc0fbf5da2e1f78c",
   "c20fc773bd65007c",
   "dd07f8ce4af80dd3",
-  "86078e6c3ae3cd0a"
+  "86078e6c3ae3cd0a",
+  "acdaf972262df78e"
  ],
- "last_kind": "adhkar"
+ "last_kind": "quran"
 }
