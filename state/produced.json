@@ -1256,6 +1256,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789832426.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789832426.png"
    }
+  },
+  "noor-quran-s057-21-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الحَدِيدِ ﴿21–23﴾ — أبو بكر الشاطري",
+   "fingerprint": "59ed2969fc2ee0ec",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs057-21-shaatree.mp4",
+   "duration": 81.64,
+   "at": "2026-09-19 16:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789836330.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789836330.png"
+   }
   }
  },
  "fingerprints": [
@@ -1376,7 +1387,8 @@
   "dd07f8ce4af80dd3",
   "86078e6c3ae3cd0a",
   "acdaf972262df78e",
-  "6e9f35c711d9bc0c"
+  "6e9f35c711d9bc0c",
+  "59ed2969fc2ee0ec"
  ],
  "last_kind": "quran"
 }
