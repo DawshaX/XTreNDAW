@@ -1322,6 +1322,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789855230.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789855230.png"
    }
+  },
+  "noor-hisn-0-r3": {
+   "title": "سلسلة حصن المسلم (1/60): أصبحنا وأصبح الملك لله، والحمد لله…",
+   "fingerprint": "e187c39688ee0d61",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 25.97,
+   "at": "2026-09-19 23:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789858949.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789858949.png"
+   }
   }
  },
  "fingerprints": [
@@ -1448,7 +1459,8 @@
   "0ee2a1b11220c6ea",
   "1ccf6e32a115373b",
   "97719de37c308d59",
-  "842739e8b81a0c9b"
+  "842739e8b81a0c9b",
+  "e187c39688ee0d61"
  ],
- "last_kind": "asma"
+ "last_kind": "hisn"
 }
