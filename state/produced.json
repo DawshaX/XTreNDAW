@@ -1300,6 +1300,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789847698.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789847698.png"
    }
+  },
+  "noor-quran-s055-45-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الرَّحۡمَٰن ﴿45–48﴾ — أيمن سويد",
+   "fingerprint": "97719de37c308d59",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs055-45-aymanswoaid.mp4",
+   "duration": 55.5,
+   "at": "2026-09-19 20:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789851516.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789851516.png"
+   }
   }
  },
  "fingerprints": [
@@ -1424,7 +1435,8 @@
   "59ed2969fc2ee0ec",
   "e575b8da84af3a5c",
   "0ee2a1b11220c6ea",
-  "1ccf6e32a115373b"
+  "1ccf6e32a115373b",
+  "97719de37c308d59"
  ],
  "last_kind": "quran"
 }
