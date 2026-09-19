@@ -1223,6 +1223,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789820997.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789820997.png"
    }
+  },
+  "noor-adhkar-246-r3": {
+   "title": "مِن أذكار المسلم: اللهم أغثنا ، اللهم أغثنا ، اللهم أغثنا…",
+   "fingerprint": "86078e6c3ae3cd0a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 24.1,
+   "at": "2026-09-19 13:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789824707.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789824707.png"
+   }
   }
  },
  "fingerprints": [
@@ -1340,7 +1351,8 @@
   "a95235629574af31",
   "fc0fbf5da2e1f78c",
   "c20fc773bd65007c",
-  "dd07f8ce4af80dd3"
+  "dd07f8ce4af80dd3",
+  "86078e6c3ae3cd0a"
  ],
- "last_kind": "qudsi"
+ "last_kind": "adhkar"
 }
