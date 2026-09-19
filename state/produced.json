@@ -1124,6 +1124,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789787050.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789787050.png"
    }
+  },
+  "noor-akhlaq-1-r3": {
+   "title": "سلسلة مكارم الأخلاق (2/16): أكمل المؤمنين إيمانًا أحسنهم خلقًا…",
+   "fingerprint": "94019fab47855b9f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhlaq-3.mp4",
+   "duration": 20.57,
+   "at": "2026-09-19 04:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789790757.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789790757.png"
+   }
   }
  },
  "fingerprints": [
@@ -1232,7 +1243,8 @@
   "d70cb108e4ca146c",
   "3f577beb720e2d0d",
   "8bdc068d14f9b5b2",
-  "307d6c67b7483fa9"
+  "307d6c67b7483fa9",
+  "94019fab47855b9f"
  ],
- "last_kind": "quran"
+ "last_kind": "akhlaq"
 }
