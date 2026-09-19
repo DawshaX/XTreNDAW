@@ -1157,6 +1157,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789798148.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789798148.png"
    }
+  },
+  "noor-kawn-1-r3": {
+   "title": "سلسلة آيات في الكون (2/22): ﴿وإنا لموسعون﴾ — الكون يتمدد فعلًا…",
+   "fingerprint": "b108ddd7b8a0f3c1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 25.0,
+   "at": "2026-09-19 07:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789801880.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789801880.png"
+   }
   }
  },
  "fingerprints": [
@@ -1268,7 +1279,8 @@
   "307d6c67b7483fa9",
   "94019fab47855b9f",
   "b9a1a4f7d5d7dea1",
-  "b884b7a5a2457d25"
+  "b884b7a5a2457d25",
+  "b108ddd7b8a0f3c1"
  ],
- "last_kind": "dua"
+ "last_kind": "kawn"
 }
