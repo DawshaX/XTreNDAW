@@ -1212,6 +1212,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789817268.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789817268.png"
    }
+  },
+  "noor-qudsi-2-r3": {
+   "title": "سلسلة الأحاديث القدسية (3/30): اللَّهُ: يَسُبُّ بَنُو آدَمَ الدَّ…",
+   "fingerprint": "dd07f8ce4af80dd3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 26.83,
+   "at": "2026-09-19 12:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789820997.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789820997.png"
+   }
   }
  },
  "fingerprints": [
@@ -1328,7 +1339,8 @@
   "58e1ed862fe65843",
   "a95235629574af31",
   "fc0fbf5da2e1f78c",
-  "c20fc773bd65007c"
+  "c20fc773bd65007c",
+  "dd07f8ce4af80dd3"
  ],
- "last_kind": "tahseen"
+ "last_kind": "qudsi"
 }
