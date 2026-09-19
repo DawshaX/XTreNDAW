@@ -1091,6 +1091,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789775745.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789775745.png"
    }
+  },
+  "noor-seerah-0-r3": {
+   "title": "سلسلة السيرة النبوية (1/47): وُلد النبي ﷺ عام الفيل يتيم الأب، …",
+   "fingerprint": "3f577beb720e2d0d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 27.9,
+   "at": "2026-09-19 00:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789779503.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789779503.png"
+   }
   }
  },
  "fingerprints": [
@@ -1196,7 +1207,8 @@
   "47531077004ce7d3",
   "d4da470013f8ac92",
   "4c25a6ab94b771d2",
-  "d70cb108e4ca146c"
+  "d70cb108e4ca146c",
+  "3f577beb720e2d0d"
  ],
- "last_kind": "juz"
+ "last_kind": "seerah"
 }
