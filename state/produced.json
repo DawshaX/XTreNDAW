@@ -1168,6 +1168,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789801880.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789801880.png"
    }
+  },
+  "noor-info-100-r3": {
+   "title": "معلومة تُضيء: «ماء زمزم لما شُرب له» — رواه أحمد.…",
+   "fingerprint": "58e1ed862fe65843",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 22.73,
+   "at": "2026-09-19 08:14",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789805668.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789805668.png"
+   }
   }
  },
  "fingerprints": [
@@ -1280,7 +1291,8 @@
   "94019fab47855b9f",
   "b9a1a4f7d5d7dea1",
   "b884b7a5a2457d25",
-  "b108ddd7b8a0f3c1"
+  "b108ddd7b8a0f3c1",
+  "58e1ed862fe65843"
  ],
- "last_kind": "kawn"
+ "last_kind": "info"
 }
