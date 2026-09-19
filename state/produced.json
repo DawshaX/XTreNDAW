@@ -1113,6 +1113,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789783209.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789783209.png"
    }
+  },
+  "noor-quran-s011-85-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ هُودٍ ﴿85–86﴾ — علي الحذيفي",
+   "fingerprint": "307d6c67b7483fa9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs011-85-hudhaify.mp4",
+   "duration": 59.4,
+   "at": "2026-09-19 03:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789787050.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789787050.png"
+   }
   }
  },
  "fingerprints": [
@@ -1220,7 +1231,8 @@
   "4c25a6ab94b771d2",
   "d70cb108e4ca146c",
   "3f577beb720e2d0d",
-  "8bdc068d14f9b5b2"
+  "8bdc068d14f9b5b2",
+  "307d6c67b7483fa9"
  ],
- "last_kind": "nawawi"
+ "last_kind": "quran"
 }
