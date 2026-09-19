@@ -1135,6 +1135,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789790757.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789790757.png"
    }
+  },
+  "noor-asma-0-r3": {
+   "title": "سلسلة الأسماء الحسنى (1/64): الله — الجامع لأسماء الحسن كلها، ل…",
+   "fingerprint": "b9a1a4f7d5d7dea1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.67,
+   "at": "2026-09-19 05:07",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789794455.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789794455.png"
+   }
   }
  },
  "fingerprints": [
@@ -1244,7 +1255,8 @@
   "3f577beb720e2d0d",
   "8bdc068d14f9b5b2",
   "307d6c67b7483fa9",
-  "94019fab47855b9f"
+  "94019fab47855b9f",
+  "b9a1a4f7d5d7dea1"
  ],
- "last_kind": "akhlaq"
+ "last_kind": "asma"
 }
