@@ -1311,6 +1311,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789851516.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789851516.png"
    }
+  },
+  "noor-asma-1-r3": {
+   "title": "سلسلة الأسماء الحسنى (2/64): الرحمن — ذو الرحمة الواسعة التي وس…",
+   "fingerprint": "842739e8b81a0c9b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.93,
+   "at": "2026-09-19 22:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789855230.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789855230.png"
+   }
   }
  },
  "fingerprints": [
@@ -1436,7 +1447,8 @@
   "e575b8da84af3a5c",
   "0ee2a1b11220c6ea",
   "1ccf6e32a115373b",
-  "97719de37c308d59"
+  "97719de37c308d59",
+  "842739e8b81a0c9b"
  ],
- "last_kind": "quran"
+ "last_kind": "asma"
 }
