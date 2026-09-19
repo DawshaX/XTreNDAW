@@ -1102,6 +1102,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789779503.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789779503.png"
    }
+  },
+  "noor-nawawi-2-r3": {
+   "title": "سلسلة الأربعين النووية (3/30): الإحسان أن تعبد الله كأنك تراه، فإ…",
+   "fingerprint": "8bdc068d14f9b5b2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 24.93,
+   "at": "2026-09-19 02:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789783209.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789783209.png"
+   }
   }
  },
  "fingerprints": [
@@ -1208,7 +1219,8 @@
   "d4da470013f8ac92",
   "4c25a6ab94b771d2",
   "d70cb108e4ca146c",
-  "3f577beb720e2d0d"
+  "3f577beb720e2d0d",
+  "8bdc068d14f9b5b2"
  ],
- "last_kind": "seerah"
+ "last_kind": "nawawi"
 }
