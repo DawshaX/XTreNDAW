@@ -1531,6 +1531,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789934340.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789934340.png"
    }
+  },
+  "noor-quran-s018-25-r7": {
+   "title": "دقيقة نور 🌙 سُورَةُ الكَهۡفِ ﴿25–26﴾ — أيمن سويد",
+   "fingerprint": "674cfd147a6ec8d6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs018-25-aymanswoaid.mp4",
+   "duration": 68.03,
+   "at": "2026-09-20 21:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789938258.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789938258.png"
+   }
   }
  },
  "fingerprints": [
@@ -1676,7 +1687,8 @@
   "560dd8244cd7f5a7",
   "31f560d61ffa6293",
   "1d97e980bf5f0ab6",
-  "51abe0144500b27e"
+  "51abe0144500b27e",
+  "674cfd147a6ec8d6"
  ],
  "last_kind": "quran"
 }
