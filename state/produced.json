@@ -1553,6 +1553,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789942007.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789942007.png"
    }
+  },
+  "noor-juz-j078-9-r3": {
+   "title": "سلسلة جزء عمّ (3/142): سُورَةُ النَّبَإِ ﴿9–12﴾ — عبدالرحمن السديس",
+   "fingerprint": "fa488276931ba829",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-jj078-9-abdurrahmaansudais.mp4",
+   "duration": 35.96,
+   "at": "2026-09-20 23:09",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789945757.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789945757.png"
+   }
   }
  },
  "fingerprints": [
@@ -1700,7 +1711,8 @@
   "1d97e980bf5f0ab6",
   "51abe0144500b27e",
   "674cfd147a6ec8d6",
-  "afac98529f5da9b2"
+  "afac98529f5da9b2",
+  "fa488276931ba829"
  ],
- "last_kind": "qudsi"
+ "last_kind": "juz"
 }
