@@ -1443,6 +1443,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789896575.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789896575.png"
    }
+  },
+  "noor-seerah-1-r3": {
+   "title": "سلسلة السيرة النبوية (2/47): نشأ ﷺ صادقًا أمينًا ولُقّب قبل الب…",
+   "fingerprint": "e45b5544587d4a62",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 26.17,
+   "at": "2026-09-20 10:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789900302.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789900302.png"
+   }
   }
  },
  "fingerprints": [
@@ -1580,7 +1591,8 @@
   "895b67c932746446",
   "55e0d01127422bb5",
   "ba8f51cdd2ad59cd",
-  "dd52a47ad7c3b9c6"
+  "dd52a47ad7c3b9c6",
+  "e45b5544587d4a62"
  ],
- "last_kind": "tafsir"
+ "last_kind": "seerah"
 }
