@@ -1487,6 +1487,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789911672.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789911672.png"
    }
+  },
+  "noor-quran-s021-105-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الأَنبِيَاءِ ﴿105–108﴾ — أبو بكر الشاطري",
+   "fingerprint": "560dd8244cd7f5a7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs021-105-shaatree.mp4",
+   "duration": 70.43,
+   "at": "2026-09-20 14:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789915516.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789915516.png"
+   }
   }
  },
  "fingerprints": [
@@ -1628,7 +1639,8 @@
   "e45b5544587d4a62",
   "bdb80773b75a7555",
   "77a0fd7710581558",
-  "39cb97dea9896abe"
+  "39cb97dea9896abe",
+  "560dd8244cd7f5a7"
  ],
- "last_kind": "seerah"
+ "last_kind": "quran"
 }
