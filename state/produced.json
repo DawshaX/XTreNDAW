@@ -1399,6 +1399,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789881397.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789881397.png"
    }
+  },
+  "noor-nawawi-3-r3": {
+   "title": "سلسلة الأربعين النووية (4/30): من حسن إسلام المرء تركه ما لا يعني…",
+   "fingerprint": "895b67c932746446",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 23.07,
+   "at": "2026-09-20 06:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789885094.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789885094.png"
+   }
   }
  },
  "fingerprints": [
@@ -1532,7 +1543,8 @@
   "06ea6bab4f77da9a",
   "404f36d87d355073",
   "d754314326db2ad0",
-  "074e397aa5614e1a"
+  "074e397aa5614e1a",
+  "895b67c932746446"
  ],
- "last_kind": "juz"
+ "last_kind": "nawawi"
 }
