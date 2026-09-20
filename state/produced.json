@@ -1498,6 +1498,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789915516.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789915516.png"
    }
+  },
+  "noor-quran-s020-45-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ طه ﴿45–46﴾ — أيمن سويد",
+   "fingerprint": "31f560d61ffa6293",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs020-45-aymanswoaid.mp4",
+   "duration": 50.37,
+   "at": "2026-09-20 15:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789919302.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789919302.png"
+   }
   }
  },
  "fingerprints": [
@@ -1640,7 +1651,8 @@
   "bdb80773b75a7555",
   "77a0fd7710581558",
   "39cb97dea9896abe",
-  "560dd8244cd7f5a7"
+  "560dd8244cd7f5a7",
+  "31f560d61ffa6293"
  ],
  "last_kind": "quran"
 }
