@@ -1333,6 +1333,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789858949.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789858949.png"
    }
+  },
+  "noor-hadith-9185-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا أَحْمَدُ بْنُ حَنْبَلٍ، وَمُس…",
+   "fingerprint": "2c239014a8cbbbab",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 37.27,
+   "at": "2026-09-20 00:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789862679.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789862679.png"
+   }
   }
  },
  "fingerprints": [
@@ -1460,7 +1471,8 @@
   "1ccf6e32a115373b",
   "97719de37c308d59",
   "842739e8b81a0c9b",
-  "e187c39688ee0d61"
+  "e187c39688ee0d61",
+  "2c239014a8cbbbab"
  ],
- "last_kind": "hisn"
+ "last_kind": "hadith"
 }
