@@ -1344,6 +1344,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789862679.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789862679.png"
    }
+  },
+  "noor-dua-41-r3": {
+   "title": "دعاء: يا حي يا قيوم برحمتك أستغيث، أصلح لي شأن…",
+   "fingerprint": "afa01f3627be7609",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 27.17,
+   "at": "2026-09-20 01:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789866386.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789866386.png"
+   }
   }
  },
  "fingerprints": [
@@ -1472,7 +1483,8 @@
   "97719de37c308d59",
   "842739e8b81a0c9b",
   "e187c39688ee0d61",
-  "2c239014a8cbbbab"
+  "2c239014a8cbbbab",
+  "afa01f3627be7609"
  ],
- "last_kind": "hadith"
+ "last_kind": "dua"
 }
