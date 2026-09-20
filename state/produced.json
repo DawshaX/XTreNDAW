@@ -1410,6 +1410,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789885094.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789885094.png"
    }
+  },
+  "noor-info-111-r3": {
+   "title": "معلومة تُضيء: قال عمر بن الخطاب: «حاسبوا أنفسكم قبل أن…",
+   "fingerprint": "55e0d01127422bb5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.07,
+   "at": "2026-09-20 07:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789888868.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789888868.png"
+   }
   }
  },
  "fingerprints": [
@@ -1544,7 +1555,8 @@
   "404f36d87d355073",
   "d754314326db2ad0",
   "074e397aa5614e1a",
-  "895b67c932746446"
+  "895b67c932746446",
+  "55e0d01127422bb5"
  ],
- "last_kind": "nawawi"
+ "last_kind": "info"
 }
