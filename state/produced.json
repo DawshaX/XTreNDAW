@@ -1366,6 +1366,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789870099.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789870099.png"
    }
+  },
+  "noor-akhlaq-2-r3": {
+   "title": "سلسلة مكارم الأخلاق (3/16): الحياء لا يأتي إلا بخير.…",
+   "fingerprint": "404f36d87d355073",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhlaq-3.mp4",
+   "duration": 21.37,
+   "at": "2026-09-20 03:10",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789873802.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789873802.png"
+   }
   }
  },
  "fingerprints": [
@@ -1496,7 +1507,8 @@
   "e187c39688ee0d61",
   "2c239014a8cbbbab",
   "afa01f3627be7609",
-  "06ea6bab4f77da9a"
+  "06ea6bab4f77da9a",
+  "404f36d87d355073"
  ],
- "last_kind": "adhkar"
+ "last_kind": "akhlaq"
 }
