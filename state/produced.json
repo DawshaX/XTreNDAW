@@ -1509,6 +1509,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789919302.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789919302.png"
    }
+  },
+  "noor-quran-s034-17-r8": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ سَبَإٍ ﴿17–19﴾ — علي الحذيفي",
+   "fingerprint": "1d97e980bf5f0ab6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs034-17-hudhaify.mp4",
+   "duration": 89.55,
+   "at": "2026-09-20 16:54",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789923276.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789923276.png"
+   }
   }
  },
  "fingerprints": [
@@ -1652,7 +1663,8 @@
   "77a0fd7710581558",
   "39cb97dea9896abe",
   "560dd8244cd7f5a7",
-  "31f560d61ffa6293"
+  "31f560d61ffa6293",
+  "1d97e980bf5f0ab6"
  ],
  "last_kind": "quran"
 }
