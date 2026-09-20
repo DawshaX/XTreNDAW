@@ -1520,6 +1520,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789923276.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789923276.png"
    }
+  },
+  "noor-quran-s041-45-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ فُصِّلَتۡ ﴿45–46﴾ — أبو بكر الشاطري",
+   "fingerprint": "51abe0144500b27e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs041-45-shaatree.mp4",
+   "duration": 55.1,
+   "at": "2026-09-20 19:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789934340.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789934340.png"
+   }
   }
  },
  "fingerprints": [
@@ -1664,7 +1675,8 @@
   "39cb97dea9896abe",
   "560dd8244cd7f5a7",
   "31f560d61ffa6293",
-  "1d97e980bf5f0ab6"
+  "1d97e980bf5f0ab6",
+  "51abe0144500b27e"
  ],
  "last_kind": "quran"
 }
