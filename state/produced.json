@@ -1454,6 +1454,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789900302.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789900302.png"
    }
+  },
+  "noor-kawn-2-r3": {
+   "title": "سلسلة آيات في الكون (3/22): ﴿والجبال أوتادًا﴾ — للجبال جذور تم…",
+   "fingerprint": "bdb80773b75a7555",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 24.23,
+   "at": "2026-09-20 11:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789904036.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789904036.png"
+   }
   }
  },
  "fingerprints": [
@@ -1592,7 +1603,8 @@
   "55e0d01127422bb5",
   "ba8f51cdd2ad59cd",
   "dd52a47ad7c3b9c6",
-  "e45b5544587d4a62"
+  "e45b5544587d4a62",
+  "bdb80773b75a7555"
  ],
- "last_kind": "seerah"
+ "last_kind": "kawn"
 }
