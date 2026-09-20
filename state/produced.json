@@ -1377,6 +1377,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789873802.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789873802.png"
    }
+  },
+  "noor-qissa-yusuf-dream-r8": {
+   "title": "سُورَةُ يُوسُفَ ﴿4–5﴾ — علي الحذيفي",
+   "fingerprint": "d754314326db2ad0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-yusuf-dream-hudhaify.mp4",
+   "duration": 66.91,
+   "at": "2026-09-20 04:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789877577.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789877577.png"
+   }
   }
  },
  "fingerprints": [
@@ -1508,7 +1519,8 @@
   "2c239014a8cbbbab",
   "afa01f3627be7609",
   "06ea6bab4f77da9a",
-  "404f36d87d355073"
+  "404f36d87d355073",
+  "d754314326db2ad0"
  ],
- "last_kind": "akhlaq"
+ "last_kind": "qissa"
 }
