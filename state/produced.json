@@ -1355,6 +1355,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789866386.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789866386.png"
    }
+  },
+  "noor-adhkar-121-r3": {
+   "title": "مِن أذكار المسلم: ربنا ولك الحمد ، حمداً كثيراً طيباً مبار…",
+   "fingerprint": "06ea6bab4f77da9a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 25.77,
+   "at": "2026-09-20 02:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789870099.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789870099.png"
+   }
   }
  },
  "fingerprints": [
@@ -1484,7 +1495,8 @@
   "842739e8b81a0c9b",
   "e187c39688ee0d61",
   "2c239014a8cbbbab",
-  "afa01f3627be7609"
+  "afa01f3627be7609",
+  "06ea6bab4f77da9a"
  ],
- "last_kind": "dua"
+ "last_kind": "adhkar"
 }
