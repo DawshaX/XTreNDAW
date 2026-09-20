@@ -1421,6 +1421,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789888868.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789888868.png"
    }
+  },
+  "noor-tahseen-t002-285-r3": {
+   "title": "سلسلة التحصين (2/8): سُورَةُ البَقَرَةِ ﴿285–285﴾ — عبدالرحمن السديس",
+   "fingerprint": "ba8f51cdd2ad59cd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-tt002-285-abdurrahmaansudais.mp4",
+   "duration": 50.77,
+   "at": "2026-09-20 08:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789892681.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789892681.png"
+   }
   }
  },
  "fingerprints": [
@@ -1556,7 +1567,8 @@
   "d754314326db2ad0",
   "074e397aa5614e1a",
   "895b67c932746446",
-  "55e0d01127422bb5"
+  "55e0d01127422bb5",
+  "ba8f51cdd2ad59cd"
  ],
- "last_kind": "info"
+ "last_kind": "tahseen"
 }
