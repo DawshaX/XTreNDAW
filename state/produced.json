@@ -1432,6 +1432,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789892681.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789892681.png"
    }
+  },
+  "noor-tafsir-s002-1-r7": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ البَقَرَةِ ﴿1–2﴾ — أيمن سويد",
+   "fingerprint": "dd52a47ad7c3b9c6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts002-1-aymanswoaid.mp4",
+   "duration": 72.21,
+   "at": "2026-09-20 09:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789896575.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789896575.png"
+   }
   }
  },
  "fingerprints": [
@@ -1568,7 +1579,8 @@
   "074e397aa5614e1a",
   "895b67c932746446",
   "55e0d01127422bb5",
-  "ba8f51cdd2ad59cd"
+  "ba8f51cdd2ad59cd",
+  "dd52a47ad7c3b9c6"
  ],
- "last_kind": "tahseen"
+ "last_kind": "tafsir"
 }
