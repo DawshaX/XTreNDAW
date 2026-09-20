@@ -1476,6 +1476,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789907937.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789907937.png"
    }
+  },
+  "noor-seerah-2-r3": {
+   "title": "سلسلة السيرة النبوية (3/47): تزوج خديجة رضي الله عنها وعمره خمس…",
+   "fingerprint": "39cb97dea9896abe",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 25.87,
+   "at": "2026-09-20 13:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789911672.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789911672.png"
+   }
   }
  },
  "fingerprints": [
@@ -1616,7 +1627,8 @@
   "dd52a47ad7c3b9c6",
   "e45b5544587d4a62",
   "bdb80773b75a7555",
-  "77a0fd7710581558"
+  "77a0fd7710581558",
+  "39cb97dea9896abe"
  ],
- "last_kind": "tahseen"
+ "last_kind": "seerah"
 }

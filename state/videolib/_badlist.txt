@@ -91,3 +91,6 @@ https://videos.pexels.com/video-files/35198274/14912069_1080_1920_24fps.mp4
 https://videos.pexels.com/video-files/15238832/15238832-hd_1080_1920_30fps.mp4
 https://videos.pexels.com/video-files/4536563/4536563-hd_1080_1920_30fps.mp4
 https://videos.pexels.com/video-files/37444393/15858927_1440_2560_30fps.mp4
+https://videos.pexels.com/video-files/34883117/14779332_1440_2560_60fps.mp4
+https://videos.pexels.com/video-files/37444393/15858926_1080_1920_30fps.mp4
+https://videos.pexels.com/video-files/15159393/15159393-hd_720_1280_30fps.mp4
