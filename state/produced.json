@@ -1663,6 +1663,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789979251.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789979251.png"
    }
+  },
+  "noor-seerah-4-r3": {
+   "title": "سلسلة السيرة النبوية (5/47): دعا إلى التوحيد سرًا ثلاثًا ثم جهر…",
+   "fingerprint": "3cb759dc5488148b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 24.8,
+   "at": "2026-09-21 09:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789983015.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789983015.png"
+   }
   }
  },
  "fingerprints": [
@@ -1820,7 +1831,8 @@
   "19ac54b0ebd80556",
   "42594e0645d367ca",
   "406892f0469cadff",
-  "0cabb1f43dafe2c0"
+  "0cabb1f43dafe2c0",
+  "3cb759dc5488148b"
  ],
- "last_kind": "akhlaq"
+ "last_kind": "seerah"
 }
