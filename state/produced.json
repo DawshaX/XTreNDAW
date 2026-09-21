@@ -1575,6 +1575,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789949461.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789949461.png"
    }
+  },
+  "noor-akhira-4-r3": {
+   "title": "سلسلة الاستعداد للآخرة (5/16): ﴿ونضع الموازين القسط ليوم القيامة …",
+   "fingerprint": "4df70442638c6ba3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhira-3.mp4",
+   "duration": 23.87,
+   "at": "2026-09-21 01:12",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789953158.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789953158.png"
+   }
   }
  },
  "fingerprints": [
@@ -1724,7 +1735,8 @@
   "674cfd147a6ec8d6",
   "afac98529f5da9b2",
   "fa488276931ba829",
-  "2c5a2c5007651829"
+  "2c5a2c5007651829",
+  "4df70442638c6ba3"
  ],
- "last_kind": "dua"
+ "last_kind": "akhira"
 }
