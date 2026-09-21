@@ -1685,6 +1685,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789986713.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789986713.png"
    }
+  },
+  "noor-kawn-4-r3": {
+   "title": "سلسلة آيات في الكون (5/22): ﴿وجعلنا من الماء كل شيء حي﴾ — الما…",
+   "fingerprint": "d7b707018ac1db3c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 24.8,
+   "at": "2026-09-21 11:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789990432.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789990432.png"
+   }
   }
  },
  "fingerprints": [
@@ -1844,7 +1855,8 @@
   "406892f0469cadff",
   "0cabb1f43dafe2c0",
   "3cb759dc5488148b",
-  "bdc1c7e7007df079"
+  "bdc1c7e7007df079",
+  "d7b707018ac1db3c"
  ],
- "last_kind": "dua"
+ "last_kind": "kawn"
 }
