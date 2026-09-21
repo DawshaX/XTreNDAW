@@ -1586,6 +1586,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789953158.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789953158.png"
    }
+  },
+  "noor-ruqyah-r002-285-r3": {
+   "title": "سلسلة الرقية الشرعية (3/10): سُورَةُ البَقَرَةِ ﴿285–285﴾ — عبدالرحمن السديس",
+   "fingerprint": "290192ed50755c32",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-rr002-285-abdurrahmaansudais.mp4",
+   "duration": 51.5,
+   "at": "2026-09-21 02:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789956924.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789956924.png"
+   }
   }
  },
  "fingerprints": [
@@ -1736,7 +1747,8 @@
   "afac98529f5da9b2",
   "fa488276931ba829",
   "2c5a2c5007651829",
-  "4df70442638c6ba3"
+  "4df70442638c6ba3",
+  "290192ed50755c32"
  ],
- "last_kind": "akhira"
+ "last_kind": "ruqyah"
 }
