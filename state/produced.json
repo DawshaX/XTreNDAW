@@ -1784,6 +1784,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790028107.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790028107.png"
    }
+  },
+  "noor-qissa-adam-r9": {
+   "title": "سُورَةُ البَقَرَةِ ﴿30–32﴾ — أبو بكر الشاطري",
+   "fingerprint": "8e7fd466eca7d73e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adam-shaatree.mp4",
+   "duration": 85.99,
+   "at": "2026-09-21 23:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790031995.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790031995.png"
+   }
   }
  },
  "fingerprints": [
@@ -1952,7 +1963,8 @@
   "547a8603f03d8350",
   "3db418835224af79",
   "0cc4698d0abd4dbf",
-  "0314b3facdf829bd"
+  "0314b3facdf829bd",
+  "8e7fd466eca7d73e"
  ],
- "last_kind": "tahseen"
+ "last_kind": "qissa"
 }
