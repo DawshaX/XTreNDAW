@@ -1630,6 +1630,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789968073.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789968073.png"
    }
+  },
+  "noor-seerah-3-r3": {
+   "title": "سلسلة السيرة النبوية (4/47): أول ما نزل الوحي بغار حراء وعمره ﷺ…",
+   "fingerprint": "42594e0645d367ca",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 26.17,
+   "at": "2026-09-21 06:23",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789971817.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789971817.png"
+   }
   }
  },
  "fingerprints": [
@@ -1784,7 +1795,8 @@
   "290192ed50755c32",
   "8a3d490671547218",
   "43a39d8043c6f1eb",
-  "19ac54b0ebd80556"
+  "19ac54b0ebd80556",
+  "42594e0645d367ca"
  ],
- "last_kind": "tahseen"
+ "last_kind": "seerah"
 }
