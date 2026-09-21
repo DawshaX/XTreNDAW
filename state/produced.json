@@ -1707,6 +1707,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789994140.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789994140.png"
    }
+  },
+  "noor-info-67-r3": {
+   "title": "معلومة تُضيء: وحّد عثمان رضي الله عنه الأمة على مصحف و…",
+   "fingerprint": "a79d1f242bb79380",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.9,
+   "at": "2026-09-21 13:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789997870.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789997870.png"
+   }
   }
  },
  "fingerprints": [
@@ -1868,7 +1879,8 @@
   "3cb759dc5488148b",
   "bdc1c7e7007df079",
   "d7b707018ac1db3c",
-  "1cfad1dfca4cade0"
+  "1cfad1dfca4cade0",
+  "a79d1f242bb79380"
  ],
- "last_kind": "akhira"
+ "last_kind": "info"
 }
