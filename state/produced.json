@@ -1641,6 +1641,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789971817.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789971817.png"
    }
+  },
+  "noor-info-70-r3": {
+   "title": "معلومة تُضيء: للفاتحة أكثر من عشرة أسماء، أشهرها أم ال…",
+   "fingerprint": "406892f0469cadff",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.67,
+   "at": "2026-09-21 07:25",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789975535.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789975535.png"
+   }
   }
  },
  "fingerprints": [
@@ -1796,7 +1807,8 @@
   "8a3d490671547218",
   "43a39d8043c6f1eb",
   "19ac54b0ebd80556",
-  "42594e0645d367ca"
+  "42594e0645d367ca",
+  "406892f0469cadff"
  ],
- "last_kind": "seerah"
+ "last_kind": "info"
 }
