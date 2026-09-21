@@ -1608,6 +1608,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789960634.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789960634.png"
    }
+  },
+  "noor-kawn-3-r3": {
+   "title": "سلسلة آيات في الكون (4/22): ﴿مرج البحرين بينهما برزخ﴾ — مياه ا…",
+   "fingerprint": "43a39d8043c6f1eb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 24.6,
+   "at": "2026-09-21 04:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789964333.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789964333.png"
+   }
   }
  },
  "fingerprints": [
@@ -1760,7 +1771,8 @@
   "2c5a2c5007651829",
   "4df70442638c6ba3",
   "290192ed50755c32",
-  "8a3d490671547218"
+  "8a3d490671547218",
+  "43a39d8043c6f1eb"
  ],
- "last_kind": "hadith"
+ "last_kind": "kawn"
 }
