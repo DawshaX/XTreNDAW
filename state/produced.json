@@ -1597,6 +1597,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789956924.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789956924.png"
    }
+  },
+  "noor-hadith-4184-r3": {
+   "title": "قال رسول الله ﷺ: وَحَدَّثَنَا عُثْمَانُ بْنُ أَبِي شَيْبَ…",
+   "fingerprint": "8a3d490671547218",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 43.0,
+   "at": "2026-09-21 03:17",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789960634.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789960634.png"
+   }
   }
  },
  "fingerprints": [
@@ -1748,7 +1759,8 @@
   "fa488276931ba829",
   "2c5a2c5007651829",
   "4df70442638c6ba3",
-  "290192ed50755c32"
+  "290192ed50755c32",
+  "8a3d490671547218"
  ],
- "last_kind": "ruqyah"
+ "last_kind": "hadith"
 }
