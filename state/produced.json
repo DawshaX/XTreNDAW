@@ -1740,6 +1740,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790005646.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790005646.png"
    }
+  },
+  "noor-quran-s044-1-r8": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الدُّخَانِ ﴿1–4﴾ — علي الحذيفي",
+   "fingerprint": "547a8603f03d8350",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs044-1-hudhaify.mp4",
+   "duration": 50.53,
+   "at": "2026-09-21 16:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790009495.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790009495.png"
+   }
   }
  },
  "fingerprints": [
@@ -1904,7 +1915,8 @@
   "1cfad1dfca4cade0",
   "a79d1f242bb79380",
   "8a0328c7946611ae",
-  "ee1c4b8754c6a1dd"
+  "ee1c4b8754c6a1dd",
+  "547a8603f03d8350"
  ],
  "last_kind": "quran"
 }
