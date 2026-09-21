@@ -1674,6 +1674,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789983015.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789983015.png"
    }
+  },
+  "noor-dua-178-r3": {
+   "title": "دعاء: أَفْطَرَ عِنْدَكُمُ الصَّائِمُونَ وَأَكَ…",
+   "fingerprint": "bdc1c7e7007df079",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 27.23,
+   "at": "2026-09-21 10:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789986713.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789986713.png"
+   }
   }
  },
  "fingerprints": [
@@ -1832,7 +1843,8 @@
   "42594e0645d367ca",
   "406892f0469cadff",
   "0cabb1f43dafe2c0",
-  "3cb759dc5488148b"
+  "3cb759dc5488148b",
+  "bdc1c7e7007df079"
  ],
- "last_kind": "seerah"
+ "last_kind": "dua"
 }
