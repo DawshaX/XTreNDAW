@@ -1619,6 +1619,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789964333.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789964333.png"
    }
+  },
+  "noor-tahseen-t017-45-r3": {
+   "title": "سلسلة التحصين (4/8): سُورَةُ الإِسۡرَاءِ ﴿45–46﴾ — عبدالرحمن السديس",
+   "fingerprint": "19ac54b0ebd80556",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-tt017-45-abdurrahmaansudais.mp4",
+   "duration": 55.88,
+   "at": "2026-09-21 05:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789968073.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789968073.png"
+   }
   }
  },
  "fingerprints": [
@@ -1772,7 +1783,8 @@
   "4df70442638c6ba3",
   "290192ed50755c32",
   "8a3d490671547218",
-  "43a39d8043c6f1eb"
+  "43a39d8043c6f1eb",
+  "19ac54b0ebd80556"
  ],
- "last_kind": "kawn"
+ "last_kind": "tahseen"
 }
