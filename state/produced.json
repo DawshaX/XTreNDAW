@@ -1751,6 +1751,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790009495.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790009495.png"
    }
+  },
+  "noor-quran-s011-113-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ هُودٍ ﴿113–115﴾ — أبو بكر الشاطري",
+   "fingerprint": "3db418835224af79",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs011-113-shaatree.mp4",
+   "duration": 64.26,
+   "at": "2026-09-21 17:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790013305.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790013305.png"
+   }
   }
  },
  "fingerprints": [
@@ -1916,7 +1927,8 @@
   "a79d1f242bb79380",
   "8a0328c7946611ae",
   "ee1c4b8754c6a1dd",
-  "547a8603f03d8350"
+  "547a8603f03d8350",
+  "3db418835224af79"
  ],
  "last_kind": "quran"
 }
