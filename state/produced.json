@@ -1773,6 +1773,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790024367.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790024367.png"
    }
+  },
+  "noor-tahseen-t112-1-r3": {
+   "title": "سلسلة التحصين (5/8): سُورَةُ الإِخۡلَاصِ ﴿1–4﴾ — عبدالرحمن السديس",
+   "fingerprint": "0314b3facdf829bd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-tt112-1-abdurrahmaansudais.mp4",
+   "duration": 37.97,
+   "at": "2026-09-21 22:01",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790028107.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790028107.png"
+   }
   }
  },
  "fingerprints": [
@@ -1940,7 +1951,8 @@
   "ee1c4b8754c6a1dd",
   "547a8603f03d8350",
   "3db418835224af79",
-  "0cc4698d0abd4dbf"
+  "0cc4698d0abd4dbf",
+  "0314b3facdf829bd"
  ],
- "last_kind": "quran"
+ "last_kind": "tahseen"
 }
