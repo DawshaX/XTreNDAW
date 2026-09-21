@@ -1652,6 +1652,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789975535.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789975535.png"
    }
+  },
+  "noor-akhlaq-3-r3": {
+   "title": "سلسلة مكارم الأخلاق (4/16): من كظم غيظًا وهو قادر دعاه الله عل…",
+   "fingerprint": "0cabb1f43dafe2c0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhlaq-3.mp4",
+   "duration": 24.07,
+   "at": "2026-09-21 08:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789979251.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789979251.png"
+   }
   }
  },
  "fingerprints": [
@@ -1808,7 +1819,8 @@
   "43a39d8043c6f1eb",
   "19ac54b0ebd80556",
   "42594e0645d367ca",
-  "406892f0469cadff"
+  "406892f0469cadff",
+  "0cabb1f43dafe2c0"
  ],
- "last_kind": "info"
+ "last_kind": "akhlaq"
 }
