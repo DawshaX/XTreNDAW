@@ -1696,6 +1696,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789990432.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789990432.png"
    }
+  },
+  "noor-akhira-5-r3": {
+   "title": "سلسلة الاستعداد للآخرة (6/16): المرور على الصراط على قدر الأعمال.…",
+   "fingerprint": "1cfad1dfca4cade0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhira-3.mp4",
+   "duration": 22.6,
+   "at": "2026-09-21 12:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789994140.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789994140.png"
+   }
   }
  },
  "fingerprints": [
@@ -1856,7 +1867,8 @@
   "0cabb1f43dafe2c0",
   "3cb759dc5488148b",
   "bdc1c7e7007df079",
-  "d7b707018ac1db3c"
+  "d7b707018ac1db3c",
+  "1cfad1dfca4cade0"
  ],
- "last_kind": "kawn"
+ "last_kind": "akhira"
 }
