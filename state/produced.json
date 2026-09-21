@@ -1718,6 +1718,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789997870.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1789997870.png"
    }
+  },
+  "noor-quran-s002-9-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ البَقَرَةِ ﴿9–12﴾ — أبو بكر الشاطري",
+   "fingerprint": "8a0328c7946611ae",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs002-9-shaatree.mp4",
+   "duration": 82.36,
+   "at": "2026-09-21 14:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790001772.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790001772.png"
+   }
   }
  },
  "fingerprints": [
@@ -1880,7 +1891,8 @@
   "bdc1c7e7007df079",
   "d7b707018ac1db3c",
   "1cfad1dfca4cade0",
-  "a79d1f242bb79380"
+  "a79d1f242bb79380",
+  "8a0328c7946611ae"
  ],
  "last_kind": "info"
 }
