@@ -1872,6 +1872,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790058132.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790058132.png"
    }
+  },
+  "noor-tahseen-t113-1-r3": {
+   "title": "سلسلة التحصين (6/8): سُورَةُ الفَلَقِ ﴿1–5﴾ — عبدالرحمن السديس",
+   "fingerprint": "1ac27a4e73d304ed",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-tt113-1-abdurrahmaansudais.mp4",
+   "duration": 41.53,
+   "at": "2026-09-22 07:25",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790061915.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790061915.png"
+   }
   }
  },
  "fingerprints": [
@@ -2048,7 +2059,8 @@
   "ad6aa7e2de7b2914",
   "2b5024ac32d730fa",
   "7ee395e7d47fc0a3",
-  "4a48b83ced0aea7f"
+  "4a48b83ced0aea7f",
+  "1ac27a4e73d304ed"
  ],
- "last_kind": "info"
+ "last_kind": "tahseen"
 }
