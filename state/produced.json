@@ -1993,6 +1993,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790099689.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790099689.png"
    }
+  },
+  "noor-quran-s105-1-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الفِيلِ ﴿1–5﴾ — أيمن سويد",
+   "fingerprint": "7ad33f8748b0581e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs105-1-aymanswoaid.mp4",
+   "duration": 67.98,
+   "at": "2026-09-22 18:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790103587.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790103587.png"
+   }
   }
  },
  "fingerprints": [
@@ -2180,7 +2191,8 @@
   "61e8d4711a09a731",
   "2349dd1dcde96e7c",
   "c7a3156f6446c902",
-  "4f1f835f72e00f95"
+  "4f1f835f72e00f95",
+  "7ad33f8748b0581e"
  ],
  "last_kind": "quran"
 }
