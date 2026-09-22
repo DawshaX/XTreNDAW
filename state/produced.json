@@ -1982,6 +1982,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790095770.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790095770.png"
    }
+  },
+  "noor-quran-s009-89-r9": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ التَّوۡبَةِ ﴿89–91﴾ — أبو بكر الشاطري",
+   "fingerprint": "4f1f835f72e00f95",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs009-89-shaatree.mp4",
+   "duration": 78.71,
+   "at": "2026-09-22 17:54",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790099689.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790099689.png"
+   }
   }
  },
  "fingerprints": [
@@ -2168,7 +2179,8 @@
   "dc6bda20c77182df",
   "61e8d4711a09a731",
   "2349dd1dcde96e7c",
-  "c7a3156f6446c902"
+  "c7a3156f6446c902",
+  "4f1f835f72e00f95"
  ],
  "last_kind": "quran"
 }
