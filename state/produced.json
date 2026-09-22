@@ -1795,6 +1795,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790031995.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790031995.png"
    }
+  },
+  "noor-hadith-5818-r3": {
+   "title": "قال رسول الله ﷺ: وَحَدَّثَنِي مَالِكٌ، عَنْ زَيْدِ بْنِ أ…",
+   "fingerprint": "a8413511f19c9685",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 33.93,
+   "at": "2026-09-22 00:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790035705.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790035705.png"
+   }
   }
  },
  "fingerprints": [
@@ -1964,7 +1975,8 @@
   "3db418835224af79",
   "0cc4698d0abd4dbf",
   "0314b3facdf829bd",
-  "8e7fd466eca7d73e"
+  "8e7fd466eca7d73e",
+  "a8413511f19c9685"
  ],
- "last_kind": "qissa"
+ "last_kind": "hadith"
 }
