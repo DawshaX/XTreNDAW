@@ -1817,6 +1817,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790039483.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790039483.png"
    }
+  },
+  "noor-akhlaq-4-r3": {
+   "title": "سلسلة مكارم الأخلاق (5/16): لا تثريب عليكم — العفو عند المقدرة…",
+   "fingerprint": "74ce31729dbe74ea",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhlaq-3.mp4",
+   "duration": 23.77,
+   "at": "2026-09-22 02:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790043206.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790043206.png"
+   }
   }
  },
  "fingerprints": [
@@ -1988,7 +1999,8 @@
   "0314b3facdf829bd",
   "8e7fd466eca7d73e",
   "a8413511f19c9685",
-  "c987b28471a74691"
+  "c987b28471a74691",
+  "74ce31729dbe74ea"
  ],
- "last_kind": "juz"
+ "last_kind": "akhlaq"
 }
