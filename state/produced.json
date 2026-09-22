@@ -1927,6 +1927,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790076866.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790076866.png"
    }
+  },
+  "noor-seerah-6-r3": {
+   "title": "سلسلة السيرة النبوية (7/47): عام الحزن: ماتت خديجة وأبو طالب، ف…",
+   "fingerprint": "ebf496bb54cf9103",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 25.73,
+   "at": "2026-09-22 12:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790080618.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790080618.png"
+   }
   }
  },
  "fingerprints": [
@@ -2108,7 +2119,8 @@
   "8ab881b2924201b8",
   "80d68afbd988e7c3",
   "522741dd2e94d32e",
-  "2f7790d91f550d73"
+  "2f7790d91f550d73",
+  "ebf496bb54cf9103"
  ],
- "last_kind": "adhkar"
+ "last_kind": "seerah"
 }
