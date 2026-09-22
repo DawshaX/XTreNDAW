@@ -1806,6 +1806,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790035705.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790035705.png"
    }
+  },
+  "noor-juz-j078-13-r3": {
+   "title": "سلسلة جزء عمّ (4/142): سُورَةُ النَّبَإِ ﴿13–16﴾ — عبدالرحمن السديس",
+   "fingerprint": "c987b28471a74691",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-jj078-13-abdurrahmaansudais.mp4",
+   "duration": 36.53,
+   "at": "2026-09-22 01:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790039483.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790039483.png"
+   }
   }
  },
  "fingerprints": [
@@ -1976,7 +1987,8 @@
   "0cc4698d0abd4dbf",
   "0314b3facdf829bd",
   "8e7fd466eca7d73e",
-  "a8413511f19c9685"
+  "a8413511f19c9685",
+  "c987b28471a74691"
  ],
- "last_kind": "hadith"
+ "last_kind": "juz"
 }
