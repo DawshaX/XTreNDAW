@@ -1839,6 +1839,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790046951.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790046951.png"
    }
+  },
+  "noor-dua-55-r3": {
+   "title": "دعاء: ربنا لا تُزغ قلوبنا بعد إذ هديتنا وهب لن…",
+   "fingerprint": "2b5024ac32d730fa",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.57,
+   "at": "2026-09-22 04:17",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790050670.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790050670.png"
+   }
   }
  },
  "fingerprints": [
@@ -2012,7 +2023,8 @@
   "a8413511f19c9685",
   "c987b28471a74691",
   "74ce31729dbe74ea",
-  "ad6aa7e2de7b2914"
+  "ad6aa7e2de7b2914",
+  "2b5024ac32d730fa"
  ],
- "last_kind": "seerah"
+ "last_kind": "dua"
 }
