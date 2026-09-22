@@ -1916,6 +1916,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790073130.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790073130.png"
    }
+  },
+  "noor-adhkar-270-r3": {
+   "title": "مِن أذكار المسلم: سبحانك اللهم وبحمدك ، أشهد أن لا إله إلا…",
+   "fingerprint": "2f7790d91f550d73",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 27.67,
+   "at": "2026-09-22 11:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790076866.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790076866.png"
+   }
   }
  },
  "fingerprints": [
@@ -2096,7 +2107,8 @@
   "1ac27a4e73d304ed",
   "8ab881b2924201b8",
   "80d68afbd988e7c3",
-  "522741dd2e94d32e"
+  "522741dd2e94d32e",
+  "2f7790d91f550d73"
  ],
- "last_kind": "nawawi"
+ "last_kind": "adhkar"
 }
