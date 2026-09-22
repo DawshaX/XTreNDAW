@@ -1949,6 +1949,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790084350.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790084350.png"
    }
+  },
+  "noor-quran-s107-1-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ المَاعُونِ ﴿1–7﴾ — أبو بكر الشاطري",
+   "fingerprint": "61e8d4711a09a731",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs107-1-shaatree.mp4",
+   "duration": 43.41,
+   "at": "2026-09-22 14:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790088170.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790088170.png"
+   }
   }
  },
  "fingerprints": [
@@ -2132,7 +2143,8 @@
   "522741dd2e94d32e",
   "2f7790d91f550d73",
   "ebf496bb54cf9103",
-  "dc6bda20c77182df"
+  "dc6bda20c77182df",
+  "61e8d4711a09a731"
  ],
- "last_kind": "hisn"
+ "last_kind": "quran"
 }
