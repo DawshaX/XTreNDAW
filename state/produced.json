@@ -1861,6 +1861,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790054387.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790054387.png"
    }
+  },
+  "noor-info-93-r3": {
+   "title": "معلومة تُضيء: «في الجمعة ساعة لا يوافقها عبد مسلم يسأل…",
+   "fingerprint": "4a48b83ced0aea7f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 28.1,
+   "at": "2026-09-22 06:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790058132.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790058132.png"
+   }
   }
  },
  "fingerprints": [
@@ -2036,7 +2047,8 @@
   "74ce31729dbe74ea",
   "ad6aa7e2de7b2914",
   "2b5024ac32d730fa",
-  "7ee395e7d47fc0a3"
+  "7ee395e7d47fc0a3",
+  "4a48b83ced0aea7f"
  ],
- "last_kind": "kawn"
+ "last_kind": "info"
 }
