@@ -1850,6 +1850,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790050670.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790050670.png"
    }
+  },
+  "noor-kawn-5-r3": {
+   "title": "سلسلة آيات في الكون (6/22): النحل يبني بيوته سداسية: أكفأ هندس…",
+   "fingerprint": "7ee395e7d47fc0a3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 22.9,
+   "at": "2026-09-22 05:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790054387.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790054387.png"
+   }
   }
  },
  "fingerprints": [
@@ -2024,7 +2035,8 @@
   "c987b28471a74691",
   "74ce31729dbe74ea",
   "ad6aa7e2de7b2914",
-  "2b5024ac32d730fa"
+  "2b5024ac32d730fa",
+  "7ee395e7d47fc0a3"
  ],
- "last_kind": "dua"
+ "last_kind": "kawn"
 }
