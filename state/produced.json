@@ -1828,6 +1828,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790043206.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790043206.png"
    }
+  },
+  "noor-seerah-5-r3": {
+   "title": "سلسلة السيرة النبوية (6/47): هجرة الحبشة: فرّ المسلمون بدينهم إ…",
+   "fingerprint": "ad6aa7e2de7b2914",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 27.1,
+   "at": "2026-09-22 03:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790046951.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790046951.png"
+   }
   }
  },
  "fingerprints": [
@@ -2000,7 +2011,8 @@
   "8e7fd466eca7d73e",
   "a8413511f19c9685",
   "c987b28471a74691",
-  "74ce31729dbe74ea"
+  "74ce31729dbe74ea",
+  "ad6aa7e2de7b2914"
  ],
- "last_kind": "akhlaq"
+ "last_kind": "seerah"
 }
