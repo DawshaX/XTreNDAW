@@ -1938,6 +1938,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790080618.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790080618.png"
    }
+  },
+  "noor-hisn-1-r3": {
+   "title": "سلسلة حصن المسلم (2/60): أمسينا وأمسى الملك لله، والحمد لله…",
+   "fingerprint": "dc6bda20c77182df",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 25.2,
+   "at": "2026-09-22 13:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790084350.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790084350.png"
+   }
   }
  },
  "fingerprints": [
@@ -2120,7 +2131,8 @@
   "80d68afbd988e7c3",
   "522741dd2e94d32e",
   "2f7790d91f550d73",
-  "ebf496bb54cf9103"
+  "ebf496bb54cf9103",
+  "dc6bda20c77182df"
  ],
- "last_kind": "seerah"
+ "last_kind": "hisn"
 }
