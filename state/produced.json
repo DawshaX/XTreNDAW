@@ -2037,6 +2037,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790114992.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790114992.png"
    }
+  },
+  "noor-hadith-9152-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا مُوسَى بْنُ إِسْمَاعِيلَ، حَد…",
+   "fingerprint": "8de1026e195e9b78",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 34.67,
+   "at": "2026-09-22 23:12",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790118735.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790118735.png"
+   }
   }
  },
  "fingerprints": [
@@ -2228,7 +2239,8 @@
   "7ad33f8748b0581e",
   "1b4417faffd9ed14",
   "6c960078293e0faf",
-  "ace13fae72ce7586"
+  "ace13fae72ce7586",
+  "8de1026e195e9b78"
  ],
- "last_kind": "qudsi"
+ "last_kind": "hadith"
 }
