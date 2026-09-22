@@ -1971,6 +1971,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790092021.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790092021.png"
    }
+  },
+  "noor-quran-s092-13-r8": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ اللَّيۡلِ ﴿13–16﴾ — علي الحذيفي",
+   "fingerprint": "c7a3156f6446c902",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs092-13-hudhaify.mp4",
+   "duration": 44.39,
+   "at": "2026-09-22 16:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790095770.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790095770.png"
+   }
   }
  },
  "fingerprints": [
@@ -2156,7 +2167,8 @@
   "ebf496bb54cf9103",
   "dc6bda20c77182df",
   "61e8d4711a09a731",
-  "2349dd1dcde96e7c"
+  "2349dd1dcde96e7c",
+  "c7a3156f6446c902"
  ],
  "last_kind": "quran"
 }
