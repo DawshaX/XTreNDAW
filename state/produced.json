@@ -1905,6 +1905,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790069411.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790069411.png"
    }
+  },
+  "noor-nawawi-4-r3": {
+   "title": "سلسلة الأربعين النووية (5/30): لا يؤمن أحدكم حتى يحب لأخيه ما يحب…",
+   "fingerprint": "522741dd2e94d32e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 24.17,
+   "at": "2026-09-22 10:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790073130.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790073130.png"
+   }
   }
  },
  "fingerprints": [
@@ -2084,7 +2095,8 @@
   "4a48b83ced0aea7f",
   "1ac27a4e73d304ed",
   "8ab881b2924201b8",
-  "80d68afbd988e7c3"
+  "80d68afbd988e7c3",
+  "522741dd2e94d32e"
  ],
- "last_kind": "dua"
+ "last_kind": "nawawi"
 }
