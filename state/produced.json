@@ -2235,6 +2235,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790182980.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790182980.png"
    }
+  },
+  "noor-quran-s049-9-r8": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الحُجُرَاتِ ﴿9–10﴾ — علي الحذيفي",
+   "fingerprint": "cd50670580060fe1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs049-9-hudhaify.mp4",
+   "duration": 89.52,
+   "at": "2026-09-23 18:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790186935.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790186935.png"
+   }
   }
  },
  "fingerprints": [
@@ -2444,7 +2455,8 @@
   "513ba2b31583e4f1",
   "213191158cf2d4ee",
   "a06bcb1e2456b56d",
-  "b533793d9ec4782a"
+  "b533793d9ec4782a",
+  "cd50670580060fe1"
  ],
  "last_kind": "quran"
 }
