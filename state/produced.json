@@ -2191,6 +2191,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790167532.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790167532.png"
    }
+  },
+  "noor-adhkar-302-r3": {
+   "title": "مِن أذكار المسلم: لبيك اللهم لبيك ، لبيك لا شريك لك لبيك ،…",
+   "fingerprint": "513ba2b31583e4f1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 28.37,
+   "at": "2026-09-23 13:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790171266.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790171266.png"
+   }
   }
  },
  "fingerprints": [
@@ -2396,7 +2407,8 @@
   "923af1c3b13e3e2a",
   "a4a45c85cd9bfdce",
   "e1cd3acbb3ee292d",
-  "b78de1bb3fb6dfa2"
+  "b78de1bb3fb6dfa2",
+  "513ba2b31583e4f1"
  ],
- "last_kind": "nawawi"
+ "last_kind": "adhkar"
 }
