@@ -2202,6 +2202,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790171266.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790171266.png"
    }
+  },
+  "noor-quran-s004-37-r8": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ النِّسَاءِ ﴿37–39﴾ — علي الحذيفي",
+   "fingerprint": "213191158cf2d4ee",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs004-37-hudhaify.mp4",
+   "duration": 87.64,
+   "at": "2026-09-23 14:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790175149.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790175149.png"
+   }
   }
  },
  "fingerprints": [
@@ -2408,7 +2419,8 @@
   "a4a45c85cd9bfdce",
   "e1cd3acbb3ee292d",
   "b78de1bb3fb6dfa2",
-  "513ba2b31583e4f1"
+  "513ba2b31583e4f1",
+  "213191158cf2d4ee"
  ],
- "last_kind": "adhkar"
+ "last_kind": "quran"
 }
