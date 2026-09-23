@@ -1,0 +1,42 @@
+name: tg-bridge
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  b:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: نقل مفاتيح تليجرام لمستودع نور
+        env:
+          TG: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ADMIN: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+          BRIDGE: ${{ secrets.BRIDGE_TOKEN }}
+        run: |
+          pip install -q requests pynacl
+          python - <<'PYEOF'
+          import os, base64, requests
+          from nacl import encoding as enc, public as pub
+          tok=os.environ.get("BRIDGE",""); TGT="DawshaX/youtube"
+          if not tok: raise SystemExit("مفيش بريدج")
+          H={"Authorization":f"Bearer {tok}","Accept":"application/vnd.github+json"}
+          key=requests.get(f"https://api.github.com/repos/{TGT}/actions/secrets/public-key",headers=H,timeout=30).json()
+          box=pub.SealedBox(pub.PublicKey(key["key"].encode(), enc.Base64Encoder()))
+          def put(name,val):
+              if not val:
+                  print(f"  {name}: فاضي - تخطي"); return
+              v=base64.b64encode(box.encrypt(val.encode())).decode()
+              r=requests.put(f"https://api.github.com/repos/{TGT}/actions/secrets/{name}",headers=H,
+                             json={"encrypted_value":v,"key_id":key["key_id"]},timeout=30)
+              print(f"  {name}: {r.status_code}")
+          put("TELEGRAM_BOT_TOKEN", os.environ.get("TG",""))
+          put("TELEGRAM_CHAT_ID", os.environ.get("CHAT",""))
+          put("TELEGRAM_ADMIN_CHAT_ID", os.environ.get("ADMIN",""))
+          tg=os.environ.get("TG",""); chat=(os.environ.get("ADMIN") or os.environ.get("CHAT") or "").strip()
+          if tg and chat:
+              r=requests.post(f"https://api.telegram.org/bot{tg}/sendMessage",
+                data={"chat_id":chat,"text":"✅ مصنع نور: قناة التنبيه اتوصلت — إنذارات النشر هتوصلك هنا. ولما تجدّد التوكن ابعت الكود هنا وهيتلقط لوحده."},timeout=30)
+              print("اختبار الإرسال:", r.status_code, r.text[:140])
+          PYEOF
