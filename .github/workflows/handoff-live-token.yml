@@ -1,0 +1,50 @@
+name: handoff-live-token
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  b:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: نقل توكن قناة XTreNDAW لمصنع نور (كحساب رفع إضافي)
+        env:
+          C: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          S: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          R: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          BRIDGE: ${{ secrets.BRIDGE_TOKEN }}
+        run: |
+          pip install -q requests pynacl
+          python - <<'PYEOF'
+          import os, base64, requests
+          from nacl import encoding as enc, public as pub
+          tok = os.environ.get("BRIDGE", "")
+          c, s, r = (os.environ.get("C", ""), os.environ.get("S", ""),
+                     os.environ.get("R", ""))
+          print("المفاتيح موجودة:", bool(c), bool(s), bool(r))
+          if not (tok and c and s and r):
+              raise SystemExit("ناقص بيانات")
+          TGT = "DawshaX/youtube"
+          H = {"Authorization": f"Bearer {tok}",
+               "Accept": "application/vnd.github+json"}
+          key = requests.get(
+              f"https://api.github.com/repos/{TGT}/actions/secrets/public-key",
+              headers=H, timeout=30).json()
+          box = pub.SealedBox(pub.PublicKey(key["key"].encode(),
+                                            enc.Base64Encoder()))
+
+          def put(name, val):
+              v = base64.b64encode(box.encrypt(val.encode())).decode()
+              res = requests.put(
+                  f"https://api.github.com/repos/{TGT}/actions/secrets/{name}",
+                  headers=H,
+                  json={"encrypted_value": v, "key_id": key["key_id"]},
+                  timeout=30)
+              print(f"  {name}: {res.status_code}")
+
+          put("YOUTUBE_CLIENT_ID_2", c)
+          put("YOUTUBE_CLIENT_SECRET_2", s)
+          put("YOUTUBE_REFRESH_TOKEN_2", r)
+          print("تم ✅")
+          PYEOF
