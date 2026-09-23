@@ -2147,6 +2147,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790152588.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790152588.png"
    }
+  },
+  "noor-quran-s092-1-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ اللَّيۡلِ ﴿1–4﴾ — أبو بكر الشاطري",
+   "fingerprint": "923af1c3b13e3e2a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs092-1-shaatree.mp4",
+   "duration": 43.65,
+   "at": "2026-09-23 09:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790156352.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790156352.png"
+   }
   }
  },
  "fingerprints": [
@@ -2348,7 +2359,8 @@
   "e4db3486d0cc3a09",
   "e06f9ff5cb890dd9",
   "47c38d5b2966ec47",
-  "16f9448fd558d6f9"
+  "16f9448fd558d6f9",
+  "923af1c3b13e3e2a"
  ],
- "last_kind": "qissa"
+ "last_kind": "quran"
 }
