@@ -2158,6 +2158,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790156352.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790156352.png"
    }
+  },
+  "noor-kawn-6-r3": {
+   "title": "سلسلة آيات في الكون (7/22): ﴿والطير فوقهم صافات﴾ — الطير يبسط …",
+   "fingerprint": "a4a45c85cd9bfdce",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 24.87,
+   "at": "2026-09-23 10:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790160076.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790160076.png"
+   }
   }
  },
  "fingerprints": [
@@ -2360,7 +2371,8 @@
   "e06f9ff5cb890dd9",
   "47c38d5b2966ec47",
   "16f9448fd558d6f9",
-  "923af1c3b13e3e2a"
+  "923af1c3b13e3e2a",
+  "a4a45c85cd9bfdce"
  ],
- "last_kind": "quran"
+ "last_kind": "kawn"
 }
