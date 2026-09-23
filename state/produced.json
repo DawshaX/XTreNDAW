@@ -2070,6 +2070,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790126203.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790126203.png"
    }
+  },
+  "noor-ruqyah-r002-163-r3": {
+   "title": "سلسلة الرقية الشرعية (4/10): سُورَةُ البَقَرَةِ ﴿163–164﴾ — عبدالرحمن السديس",
+   "fingerprint": "e9003367c881150a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-rr002-163-abdurrahmaansudais.mp4",
+   "duration": 81.0,
+   "at": "2026-09-23 02:20",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790130046.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790130046.png"
+   }
   }
  },
  "fingerprints": [
@@ -2264,7 +2275,8 @@
   "ace13fae72ce7586",
   "8de1026e195e9b78",
   "4326d084781b60eb",
-  "66fa0740d9142962"
+  "66fa0740d9142962",
+  "e9003367c881150a"
  ],
- "last_kind": "juz"
+ "last_kind": "ruqyah"
 }
