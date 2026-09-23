@@ -2180,6 +2180,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790163801.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790163801.png"
    }
+  },
+  "noor-nawawi-5-r3": {
+   "title": "سلسلة الأربعين النووية (6/30): من كان يؤمن بالله واليوم الآخر فلي…",
+   "fingerprint": "b78de1bb3fb6dfa2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 24.23,
+   "at": "2026-09-23 12:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790167532.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790167532.png"
+   }
   }
  },
  "fingerprints": [
@@ -2384,7 +2395,8 @@
   "16f9448fd558d6f9",
   "923af1c3b13e3e2a",
   "a4a45c85cd9bfdce",
-  "e1cd3acbb3ee292d"
+  "e1cd3acbb3ee292d",
+  "b78de1bb3fb6dfa2"
  ],
- "last_kind": "hisn"
+ "last_kind": "nawawi"
 }
