@@ -2356,6 +2356,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790224333.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790224333.png"
    }
+  },
+  "noor-akhlaq-13-r3": {
+   "title": "سلسلة مكارم الأخلاق (14/16): إماطة الأذى عن الطريق صدقة.…",
+   "fingerprint": "66827f54e2df8a4f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhlaq-3.mp4",
+   "duration": 19.83,
+   "at": "2026-09-24 05:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790228016.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790228016.png"
+   }
   }
  },
  "fingerprints": [
@@ -2576,7 +2587,8 @@
   "fb33f55a5dec231d",
   "7e13a7fe15088e17",
   "e01dac85960a2b39",
-  "263d89b9f4491c93"
+  "263d89b9f4491c93",
+  "66827f54e2df8a4f"
  ],
  "last_kind": "akhlaq"
 }
