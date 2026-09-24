@@ -2543,6 +2543,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790289032.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790289032.png"
    }
+  },
+  "noor-qudsi-7-r3": {
+   "title": "سلسلة الأحاديث القدسية (8/30): اللَّهُ: أَنْفِقْ يَا ابْنَ آدَمَ،…",
+   "fingerprint": "54a2756524e16468",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 22.4,
+   "at": "2026-09-24 23:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790292725.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790292725.png"
+   }
   }
  },
  "fingerprints": [
@@ -2780,7 +2791,8 @@
   "03c634c90f012f84",
   "c45e99263948a6cc",
   "28267fe9132270cd",
-  "21726702463d1453"
+  "21726702463d1453",
+  "54a2756524e16468"
  ],
  "last_kind": "qudsi"
 }
