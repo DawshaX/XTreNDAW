@@ -2323,6 +2323,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790213170.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790213170.png"
    }
+  },
+  "noor-akhlaq-10-r3": {
+   "title": "سلسلة مكارم الأخلاق (11/16): ليس منا من لم يرحم صغيرنا ويوقر كب…",
+   "fingerprint": "7e13a7fe15088e17",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhlaq-3.mp4",
+   "duration": 22.03,
+   "at": "2026-09-24 02:28",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790216888.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790216888.png"
+   }
   }
  },
  "fingerprints": [
@@ -2540,7 +2551,8 @@
   "0dbdd58ec941fa11",
   "a1ebea6adcc46387",
   "73e14dc686c09616",
-  "fb33f55a5dec231d"
+  "fb33f55a5dec231d",
+  "7e13a7fe15088e17"
  ],
  "last_kind": "akhlaq"
 }
