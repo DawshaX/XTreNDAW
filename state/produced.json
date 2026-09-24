@@ -2466,6 +2466,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790262300.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790262300.png"
    }
+  },
+  "noor-quran-s037-73-r8": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الصَّافَّاتِ ﴿73–76﴾ — علي الحذيفي",
+   "fingerprint": "62ab91fc4d32791f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs037-73-hudhaify.mp4",
+   "duration": 51.14,
+   "at": "2026-09-24 16:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790266108.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790266108.png"
+   }
   }
  },
  "fingerprints": [
@@ -2696,7 +2707,8 @@
   "234a6af7bb82fcc5",
   "23b4ee2046da6bff",
   "11636a7e1d2e89bd",
-  "3842886a0efafb5c"
+  "3842886a0efafb5c",
+  "62ab91fc4d32791f"
  ],
  "last_kind": "quran"
 }
