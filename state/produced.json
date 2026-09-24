@@ -2334,6 +2334,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790216888.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790216888.png"
    }
+  },
+  "noor-akhlaq-11-r3": {
+   "title": "سلسلة مكارم الأخلاق (12/16): أفشوا السلام تحابوا — إفشاؤه يطرد …",
+   "fingerprint": "e01dac85960a2b39",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhlaq-3.mp4",
+   "duration": 22.47,
+   "at": "2026-09-24 03:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790220620.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790220620.png"
+   }
   }
  },
  "fingerprints": [
@@ -2552,7 +2563,8 @@
   "a1ebea6adcc46387",
   "73e14dc686c09616",
   "fb33f55a5dec231d",
-  "7e13a7fe15088e17"
+  "7e13a7fe15088e17",
+  "e01dac85960a2b39"
  ],
  "last_kind": "akhlaq"
 }
