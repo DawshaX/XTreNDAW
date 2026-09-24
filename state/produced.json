@@ -2521,6 +2521,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790281530.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790281530.png"
    }
+  },
+  "noor-qudsi-5-r3": {
+   "title": "سلسلة الأحاديث القدسية (6/30): عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ…",
+   "fingerprint": "28267fe9132270cd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 56.1,
+   "at": "2026-09-24 21:28",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790285279.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790285279.png"
+   }
   }
  },
  "fingerprints": [
@@ -2756,7 +2767,8 @@
   "da9ff62118d41443",
   "ae167e6ce3550eca",
   "03c634c90f012f84",
-  "c45e99263948a6cc"
+  "c45e99263948a6cc",
+  "28267fe9132270cd"
  ],
- "last_kind": "quran"
+ "last_kind": "qudsi"
 }
