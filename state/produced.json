@@ -2532,6 +2532,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790285279.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790285279.png"
    }
+  },
+  "noor-qudsi-6-r3": {
+   "title": "سلسلة الأحاديث القدسية (7/30): يَقُولُ اللَّهُ عَزَّ وَجَلَّ: الص…",
+   "fingerprint": "21726702463d1453",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 49.77,
+   "at": "2026-09-24 22:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790289032.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790289032.png"
+   }
   }
  },
  "fingerprints": [
@@ -2768,7 +2779,8 @@
   "ae167e6ce3550eca",
   "03c634c90f012f84",
   "c45e99263948a6cc",
-  "28267fe9132270cd"
+  "28267fe9132270cd",
+  "21726702463d1453"
  ],
  "last_kind": "qudsi"
 }
