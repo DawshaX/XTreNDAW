@@ -2345,6 +2345,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790220620.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790220620.png"
    }
+  },
+  "noor-akhlaq-12-r3": {
+   "title": "سلسلة مكارم الأخلاق (13/16): لا يزال الرجل يصدق حتى يُكتب عند ا…",
+   "fingerprint": "263d89b9f4491c93",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhlaq-3.mp4",
+   "duration": 22.43,
+   "at": "2026-09-24 04:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790224333.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790224333.png"
+   }
   }
  },
  "fingerprints": [
@@ -2564,7 +2575,8 @@
   "73e14dc686c09616",
   "fb33f55a5dec231d",
   "7e13a7fe15088e17",
-  "e01dac85960a2b39"
+  "e01dac85960a2b39",
+  "263d89b9f4491c93"
  ],
  "last_kind": "akhlaq"
 }
