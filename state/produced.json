@@ -2301,6 +2301,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790205760.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790205760.png"
    }
+  },
+  "noor-akhlaq-8-r3": {
+   "title": "سلسلة مكارم الأخلاق (9/16): أدِّ الأمانة إلى من ائتمنك ولا تخن…",
+   "fingerprint": "73e14dc686c09616",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhlaq-3.mp4",
+   "duration": 21.83,
+   "at": "2026-09-24 00:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790209467.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790209467.png"
+   }
   }
  },
  "fingerprints": [
@@ -2516,7 +2527,8 @@
   "df972161bbf1ee1e",
   "ba4fac40bfef59f3",
   "0dbdd58ec941fa11",
-  "a1ebea6adcc46387"
+  "a1ebea6adcc46387",
+  "73e14dc686c09616"
  ],
  "last_kind": "akhlaq"
 }
