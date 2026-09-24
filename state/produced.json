@@ -2499,6 +2499,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790273761.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790273761.png"
    }
+  },
+  "noor-quran-s020-57-r8": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ طه ﴿57–60﴾ — علي الحذيفي",
+   "fingerprint": "03c634c90f012f84",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs020-57-hudhaify.mp4",
+   "duration": 63.32,
+   "at": "2026-09-24 19:20",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790277597.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790277597.png"
+   }
   }
  },
  "fingerprints": [
@@ -2732,7 +2743,8 @@
   "3842886a0efafb5c",
   "62ab91fc4d32791f",
   "da9ff62118d41443",
-  "ae167e6ce3550eca"
+  "ae167e6ce3550eca",
+  "03c634c90f012f84"
  ],
  "last_kind": "quran"
 }
