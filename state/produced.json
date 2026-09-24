@@ -2312,6 +2312,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790209467.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790209467.png"
    }
+  },
+  "noor-akhlaq-9-r3": {
+   "title": "سلسلة مكارم الأخلاق (10/16): ما تواضع أحد لله إلا رفعه الله.…",
+   "fingerprint": "fb33f55a5dec231d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhlaq-3.mp4",
+   "duration": 20.4,
+   "at": "2026-09-24 01:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790213170.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790213170.png"
+   }
   }
  },
  "fingerprints": [
@@ -2528,7 +2539,8 @@
   "ba4fac40bfef59f3",
   "0dbdd58ec941fa11",
   "a1ebea6adcc46387",
-  "73e14dc686c09616"
+  "73e14dc686c09616",
+  "fb33f55a5dec231d"
  ],
  "last_kind": "akhlaq"
 }
