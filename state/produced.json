@@ -2708,6 +2708,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790345094.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790345094.png"
    }
+  },
+  "noor-quran-s025-65-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الفُرۡقَانِ ﴿65–68﴾ — أبو بكر الشاطري",
+   "fingerprint": "afd6969e725841e3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs025-65-shaatree.mp4",
+   "duration": 88.42,
+   "at": "2026-09-25 15:09",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790348981.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790348981.png"
+   }
   }
  },
  "fingerprints": [
@@ -2960,7 +2971,8 @@
   "5d336d71346285ac",
   "5ac88ebf08e040b5",
   "732fa2d15294c341",
-  "f346fe8ad54cc195"
+  "f346fe8ad54cc195",
+  "afd6969e725841e3"
  ],
  "last_kind": "quran"
 }
