@@ -2554,6 +2554,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790292725.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790292725.png"
    }
+  },
+  "noor-qudsi-8-r3": {
+   "title": "سلسلة الأحاديث القدسية (9/30): عَنْ أَبِي مَسْعُودٍ الْأَنْصَارِي…",
+   "fingerprint": "52a26f0995f9c6f5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 51.2,
+   "at": "2026-09-25 00:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790296466.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790296466.png"
+   }
   }
  },
  "fingerprints": [
@@ -2792,7 +2803,8 @@
   "c45e99263948a6cc",
   "28267fe9132270cd",
   "21726702463d1453",
-  "54a2756524e16468"
+  "54a2756524e16468",
+  "52a26f0995f9c6f5"
  ],
  "last_kind": "qudsi"
 }
