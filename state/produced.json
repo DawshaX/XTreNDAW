@@ -2609,6 +2609,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790311447.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790311447.png"
    }
+  },
+  "noor-qudsi-13-r3": {
+   "title": "سلسلة الأحاديث القدسية (14/30): تُفْتَحُ أَبْوَابُ الْجَنَّةِ يَوْ…",
+   "fingerprint": "a7aaec19bb3fb184",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 44.03,
+   "at": "2026-09-25 05:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790315210.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790315210.png"
+   }
   }
  },
  "fingerprints": [
@@ -2852,7 +2863,8 @@
   "607b268b8f6ffbdb",
   "73f2baa253dcd14c",
   "209a665eb9b6f2f8",
-  "bc3ffa90078c2ee3"
+  "bc3ffa90078c2ee3",
+  "a7aaec19bb3fb184"
  ],
  "last_kind": "qudsi"
 }
