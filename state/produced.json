@@ -2774,6 +2774,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790367976.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790367976.png"
    }
+  },
+  "noor-info-88-r3": {
+   "title": "معلومة تُضيء: «من صلى عليّ صلاة صلى الله عليه بها عشرً…",
+   "fingerprint": "3932f52ad3450da5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.07,
+   "at": "2026-09-25 21:28",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790371694.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790371694.png"
+   }
   }
  },
  "fingerprints": [
@@ -3032,7 +3043,8 @@
   "ea9a3d05a957f79c",
   "97e4dd00a0a95a31",
   "d646da1fb8fc2bf0",
-  "8b92a8d284600402"
+  "8b92a8d284600402",
+  "3932f52ad3450da5"
  ],
- "last_kind": "quran"
+ "last_kind": "info"
 }
