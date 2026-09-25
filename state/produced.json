@@ -2565,6 +2565,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790296466.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790296466.png"
    }
+  },
+  "noor-qudsi-9-r3": {
+   "title": "سلسلة الأحاديث القدسية (10/30): قَالَ(1): فَيَقُولُ: وَلَهُ غَفَرْ…",
+   "fingerprint": "607b268b8f6ffbdb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 29.67,
+   "at": "2026-09-25 01:36",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790300183.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790300183.png"
+   }
   }
  },
  "fingerprints": [
@@ -2804,7 +2815,8 @@
   "28267fe9132270cd",
   "21726702463d1453",
   "54a2756524e16468",
-  "52a26f0995f9c6f5"
+  "52a26f0995f9c6f5",
+  "607b268b8f6ffbdb"
  ],
  "last_kind": "qudsi"
 }
