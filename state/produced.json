@@ -2587,6 +2587,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790303970.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790303970.png"
    }
+  },
+  "noor-qudsi-11-r3": {
+   "title": "سلسلة الأحاديث القدسية (12/30): اسْتَسْقَاكَ عَبْدِي فُلَانٌ فَلَم…",
+   "fingerprint": "209a665eb9b6f2f8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 26.93,
+   "at": "2026-09-25 03:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790307688.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790307688.png"
+   }
   }
  },
  "fingerprints": [
@@ -2828,7 +2839,8 @@
   "54a2756524e16468",
   "52a26f0995f9c6f5",
   "607b268b8f6ffbdb",
-  "73f2baa253dcd14c"
+  "73f2baa253dcd14c",
+  "209a665eb9b6f2f8"
  ],
  "last_kind": "qudsi"
 }
