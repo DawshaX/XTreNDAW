@@ -2675,6 +2675,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790333858.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790333858.png"
    }
+  },
+  "noor-info-33-r3": {
+   "title": "معلومة تُضيء: قال تعالى: ﴿وَالسَّمَاءَ بَنَيْنَاهَا بِ…",
+   "fingerprint": "5ac88ebf08e040b5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 27.57,
+   "at": "2026-09-25 11:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790337567.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790337567.png"
+   }
   }
  },
  "fingerprints": [
@@ -2924,7 +2935,8 @@
   "d6274e1440489abe",
   "dbb3eda554ea2bc4",
   "9b569088c01df138",
-  "5d336d71346285ac"
+  "5d336d71346285ac",
+  "5ac88ebf08e040b5"
  ],
  "last_kind": "info"
 }
