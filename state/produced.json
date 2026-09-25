@@ -2796,6 +2796,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790375477.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790375477.png"
    }
+  },
+  "noor-info-110-r3": {
+   "title": "معلومة تُضيء: قال ابن عطاء الله: «لا يكن تأخر أمد العط…",
+   "fingerprint": "e8b34c1cd2fd8063",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.83,
+   "at": "2026-09-25 23:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790379228.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790379228.png"
+   }
   }
  },
  "fingerprints": [
@@ -3056,7 +3067,8 @@
   "d646da1fb8fc2bf0",
   "8b92a8d284600402",
   "3932f52ad3450da5",
-  "367267fbdc5126a8"
+  "367267fbdc5126a8",
+  "e8b34c1cd2fd8063"
  ],
  "last_kind": "info"
 }
