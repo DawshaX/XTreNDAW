@@ -2653,6 +2653,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790326429.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790326429.png"
    }
+  },
+  "noor-info-114-r3": {
+   "title": "معلومة تُضيء: قال الشافعي: «ضاقت فلما استحكمت حلقاتها …",
+   "fingerprint": "9b569088c01df138",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.67,
+   "at": "2026-09-25 09:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790330148.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790330148.png"
+   }
   }
  },
  "fingerprints": [
@@ -2900,7 +2911,8 @@
   "a7aaec19bb3fb184",
   "3bf7586f55c46614",
   "d6274e1440489abe",
-  "dbb3eda554ea2bc4"
+  "dbb3eda554ea2bc4",
+  "9b569088c01df138"
  ],
- "last_kind": "qudsi"
+ "last_kind": "info"
 }
