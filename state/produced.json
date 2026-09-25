@@ -2785,6 +2785,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790371694.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790371694.png"
    }
+  },
+  "noor-info-112-r3": {
+   "title": "معلومة تُضيء: قال ابن القيم: «القلب يمرض كما يمرض البد…",
+   "fingerprint": "367267fbdc5126a8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.27,
+   "at": "2026-09-25 22:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790375477.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790375477.png"
+   }
   }
  },
  "fingerprints": [
@@ -3044,7 +3055,8 @@
   "97e4dd00a0a95a31",
   "d646da1fb8fc2bf0",
   "8b92a8d284600402",
-  "3932f52ad3450da5"
+  "3932f52ad3450da5",
+  "367267fbdc5126a8"
  ],
  "last_kind": "info"
 }
