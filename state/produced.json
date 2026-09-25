@@ -2741,6 +2741,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790356596.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790356596.png"
    }
+  },
+  "noor-quran-s015-93-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الحِجۡرِ ﴿93–96﴾ — أبو بكر الشاطري",
+   "fingerprint": "97e4dd00a0a95a31",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs015-93-shaatree.mp4",
+   "duration": 56.67,
+   "at": "2026-09-25 18:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790360347.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790360347.png"
+   }
   }
  },
  "fingerprints": [
@@ -2996,7 +3007,8 @@
   "f346fe8ad54cc195",
   "afd6969e725841e3",
   "c7697beb7c5ec6ac",
-  "ea9a3d05a957f79c"
+  "ea9a3d05a957f79c",
+  "97e4dd00a0a95a31"
  ],
  "last_kind": "quran"
 }
