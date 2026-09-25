@@ -2686,6 +2686,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790337567.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790337567.png"
    }
+  },
+  "noor-info-89-r3": {
+   "title": "معلومة تُضيء: «أولى الناس بي يوم القيامة أكثرهم عليّ ص…",
+   "fingerprint": "732fa2d15294c341",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.07,
+   "at": "2026-09-25 13:01",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790341283.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790341283.png"
+   }
   }
  },
  "fingerprints": [
@@ -2936,7 +2947,8 @@
   "dbb3eda554ea2bc4",
   "9b569088c01df138",
   "5d336d71346285ac",
-  "5ac88ebf08e040b5"
+  "5ac88ebf08e040b5",
+  "732fa2d15294c341"
  ],
  "last_kind": "info"
 }
