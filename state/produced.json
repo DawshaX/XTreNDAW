@@ -2664,6 +2664,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790330148.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790330148.png"
    }
+  },
+  "noor-info-3-r3": {
+   "title": "معلومة تُضيء: القرآن ذكر 25 نبيًّا ورسولًا بأسمائهم.…",
+   "fingerprint": "5d336d71346285ac",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.2,
+   "at": "2026-09-25 10:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790333858.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790333858.png"
+   }
   }
  },
  "fingerprints": [
@@ -2912,7 +2923,8 @@
   "3bf7586f55c46614",
   "d6274e1440489abe",
   "dbb3eda554ea2bc4",
-  "9b569088c01df138"
+  "9b569088c01df138",
+  "5d336d71346285ac"
  ],
  "last_kind": "info"
 }
