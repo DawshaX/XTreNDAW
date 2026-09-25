@@ -2642,6 +2642,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790322676.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790322676.png"
    }
+  },
+  "noor-qudsi-16-r3": {
+   "title": "سلسلة الأحاديث القدسية (17/30): رَسُولُ اللَّهِ صَلَّى اللَّهُ عَل…",
+   "fingerprint": "dbb3eda554ea2bc4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 34.5,
+   "at": "2026-09-25 08:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790326429.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790326429.png"
+   }
   }
  },
  "fingerprints": [
@@ -2888,7 +2899,8 @@
   "bc3ffa90078c2ee3",
   "a7aaec19bb3fb184",
   "3bf7586f55c46614",
-  "d6274e1440489abe"
+  "d6274e1440489abe",
+  "dbb3eda554ea2bc4"
  ],
  "last_kind": "qudsi"
 }
