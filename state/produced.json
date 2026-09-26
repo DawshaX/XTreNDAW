@@ -2917,6 +2917,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790416541.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790416541.png"
    }
+  },
+  "noor-hadith-6615-r3": {
+   "title": "قال رسول الله ﷺ: أَخْبَرَنَا قُتَيْبَةُ، قَالَ حَدَّثَنَا…",
+   "fingerprint": "3665ae7e768f67aa",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 32.87,
+   "at": "2026-09-26 10:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790420262.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790420262.png"
+   }
   }
  },
  "fingerprints": [
@@ -3188,7 +3199,8 @@
   "d080ecccfb1d1547",
   "4dab01638730f6c6",
   "97acd1e04ee3e531",
-  "3018b6fd9dcdb4d4"
+  "3018b6fd9dcdb4d4",
+  "3665ae7e768f67aa"
  ],
  "last_kind": "hadith"
 }
