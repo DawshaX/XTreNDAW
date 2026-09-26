@@ -2895,6 +2895,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790409099.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790409099.png"
    }
+  },
+  "noor-hadith-2328-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا حَفْصُ بْنُ عُمَرَ، حَدَّثَنَ…",
+   "fingerprint": "97acd1e04ee3e531",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 36.37,
+   "at": "2026-09-26 08:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790412832.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790412832.png"
+   }
   }
  },
  "fingerprints": [
@@ -3164,7 +3175,8 @@
   "46d67219c659bcd1",
   "f30722163dd6ff2e",
   "d080ecccfb1d1547",
-  "4dab01638730f6c6"
+  "4dab01638730f6c6",
+  "97acd1e04ee3e531"
  ],
  "last_kind": "hadith"
 }
