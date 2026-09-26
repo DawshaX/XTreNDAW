@@ -2884,6 +2884,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790405330.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790405330.png"
    }
+  },
+  "noor-hadith-9980-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا مُحَمَّدُ بْنُ خَالِدِ بْنِ ع…",
+   "fingerprint": "4dab01638730f6c6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 37.6,
+   "at": "2026-09-26 07:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790409099.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790409099.png"
+   }
   }
  },
  "fingerprints": [
@@ -3152,7 +3163,8 @@
   "6d226b9454efb207",
   "46d67219c659bcd1",
   "f30722163dd6ff2e",
-  "d080ecccfb1d1547"
+  "d080ecccfb1d1547",
+  "4dab01638730f6c6"
  ],
  "last_kind": "hadith"
 }
