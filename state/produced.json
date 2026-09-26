@@ -2829,6 +2829,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790386652.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790386652.png"
    }
+  },
+  "noor-info-37-r3": {
+   "title": "معلومة تُضيء: وصف القرآن مراحل خلق الجنين بدقة توافق ع…",
+   "fingerprint": "2f675e57ccf13a92",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.73,
+   "at": "2026-09-26 02:40",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790390431.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790390431.png"
+   }
   }
  },
  "fingerprints": [
@@ -3092,7 +3103,8 @@
   "367267fbdc5126a8",
   "e8b34c1cd2fd8063",
   "f7b3a183f5b58f74",
-  "761b32423950097d"
+  "761b32423950097d",
+  "2f675e57ccf13a92"
  ],
  "last_kind": "info"
 }
