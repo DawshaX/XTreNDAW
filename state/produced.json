@@ -2851,6 +2851,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790394165.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790394165.png"
    }
+  },
+  "noor-hadith-8323-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا مُسْلِمُ بْنُ إِبْرَاهِيمَ، ح…",
+   "fingerprint": "46d67219c659bcd1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 37.27,
+   "at": "2026-09-26 04:44",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790397879.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790397879.png"
+   }
   }
  },
  "fingerprints": [
@@ -3116,7 +3127,8 @@
   "f7b3a183f5b58f74",
   "761b32423950097d",
   "2f675e57ccf13a92",
-  "6d226b9454efb207"
+  "6d226b9454efb207",
+  "46d67219c659bcd1"
  ],
- "last_kind": "info"
+ "last_kind": "hadith"
 }
