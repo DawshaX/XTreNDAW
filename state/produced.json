@@ -2807,6 +2807,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790379228.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790379228.png"
    }
+  },
+  "noor-info-96-r3": {
+   "title": "معلومة تُضيء: «من صلى عليّ حين يصبح عشرًا وحين يمسي عش…",
+   "fingerprint": "f7b3a183f5b58f74",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.93,
+   "at": "2026-09-26 00:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790382948.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790382948.png"
+   }
   }
  },
  "fingerprints": [
@@ -3068,7 +3079,8 @@
   "8b92a8d284600402",
   "3932f52ad3450da5",
   "367267fbdc5126a8",
-  "e8b34c1cd2fd8063"
+  "e8b34c1cd2fd8063",
+  "f7b3a183f5b58f74"
  ],
  "last_kind": "info"
 }
