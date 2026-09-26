@@ -2961,6 +2961,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790431668.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790431668.png"
    }
+  },
+  "noor-quran-s041-33-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ فُصِّلَتۡ ﴿33–35﴾ — علي الحذيفي",
+   "fingerprint": "da6020cd97479440",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs041-33-hudhaify.mp4",
+   "duration": 75.72,
+   "at": "2026-09-26 15:12",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790435526.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790435526.png"
+   }
   }
  },
  "fingerprints": [
@@ -3236,7 +3247,8 @@
   "3665ae7e768f67aa",
   "00be7347a4838afe",
   "ac2bb00da110eb4c",
-  "23f638b6f485f8e4"
+  "23f638b6f485f8e4",
+  "da6020cd97479440"
  ],
  "last_kind": "quran"
 }
