@@ -3038,6 +3038,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790458390.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790458390.png"
    }
+  },
+  "noor-hadith-3758-r3": {
+   "title": "قال رسول الله ﷺ: وَحَدَّثَنَاهُ أَبُو بَكْرِ بْنُ أَبِي ش…",
+   "fingerprint": "1fd3de1fbac96350",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 35.17,
+   "at": "2026-09-26 22:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790462155.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790462155.png"
+   }
   }
  },
  "fingerprints": [
@@ -3320,7 +3331,8 @@
   "98f57988b9fad0c6",
   "268f91015f5017d2",
   "04adaed41ec4d2bc",
-  "d5bde8b39722efc2"
+  "d5bde8b39722efc2",
+  "1fd3de1fbac96350"
  ],
  "last_kind": "hadith"
 }
