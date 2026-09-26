@@ -2873,6 +2873,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790401611.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790401611.png"
    }
+  },
+  "noor-hadith-8030-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا مُحَمَّدُ بْنُ يَحْيَى بْنِ ف…",
+   "fingerprint": "d080ecccfb1d1547",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 32.43,
+   "at": "2026-09-26 06:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790405330.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790405330.png"
+   }
   }
  },
  "fingerprints": [
@@ -3140,7 +3151,8 @@
   "2f675e57ccf13a92",
   "6d226b9454efb207",
   "46d67219c659bcd1",
-  "f30722163dd6ff2e"
+  "f30722163dd6ff2e",
+  "d080ecccfb1d1547"
  ],
  "last_kind": "hadith"
 }
