@@ -2928,6 +2928,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790420262.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790420262.png"
    }
+  },
+  "noor-hadith-9749-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ عَبْد…",
+   "fingerprint": "00be7347a4838afe",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 40.9,
+   "at": "2026-09-26 12:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790424035.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790424035.png"
+   }
   }
  },
  "fingerprints": [
@@ -3200,7 +3211,8 @@
   "4dab01638730f6c6",
   "97acd1e04ee3e531",
   "3018b6fd9dcdb4d4",
-  "3665ae7e768f67aa"
+  "3665ae7e768f67aa",
+  "00be7347a4838afe"
  ],
  "last_kind": "hadith"
 }
