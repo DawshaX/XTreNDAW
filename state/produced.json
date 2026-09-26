@@ -3016,6 +3016,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790450776.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790450776.png"
    }
+  },
+  "noor-quran-s006-9-r7": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الأَنۡعَامِ ﴿9–11﴾ — أيمن سويد",
+   "fingerprint": "04adaed41ec4d2bc",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs006-9-aymanswoaid.mp4",
+   "duration": 72.5,
+   "at": "2026-09-26 20:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790454611.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790454611.png"
+   }
   }
  },
  "fingerprints": [
@@ -3296,7 +3307,8 @@
   "0edfd31e892d3ff4",
   "f4c28edb5a565226",
   "98f57988b9fad0c6",
-  "268f91015f5017d2"
+  "268f91015f5017d2",
+  "04adaed41ec4d2bc"
  ],
  "last_kind": "quran"
 }
