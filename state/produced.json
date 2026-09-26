@@ -2840,6 +2840,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790390431.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790390431.png"
    }
+  },
+  "noor-info-66-r3": {
+   "title": "معلومة تُضيء: جُمع القرآن في مصحف واحد أول مرة في خلاف…",
+   "fingerprint": "6d226b9454efb207",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 27.3,
+   "at": "2026-09-26 03:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790394165.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790394165.png"
+   }
   }
  },
  "fingerprints": [
@@ -3104,7 +3115,8 @@
   "e8b34c1cd2fd8063",
   "f7b3a183f5b58f74",
   "761b32423950097d",
-  "2f675e57ccf13a92"
+  "2f675e57ccf13a92",
+  "6d226b9454efb207"
  ],
  "last_kind": "info"
 }
