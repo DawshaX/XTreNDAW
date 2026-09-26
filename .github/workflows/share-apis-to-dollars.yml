@@ -1,0 +1,30 @@
+name: 🧰 نقل مفاتيح الـAPIs لمصنع Dollars
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  share:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: نقل المفاتيح
+        env:
+          CROSS_PAT: ${{ secrets.CROSS_PAT }}
+          NAMES: PIXABAY_KEY,PEXELS_API_KEY,OPENVERSE_TOKEN,NASA_API_KEY,GROQ_API_KEY,FREESOUND_ID,FREESOUND_SECRET,RESTCOUNTRIES_KEY,CURRENTS_API_KEY,LLM_API_BASE,LLM_API_KEY,LLM_MODEL
+          PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          OPENVERSE_TOKEN: ${{ secrets.OPENVERSE_TOKEN }}
+          NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          FREESOUND_ID: ${{ secrets.FREESOUND_ID }}
+          FREESOUND_SECRET: ${{ secrets.FREESOUND_SECRET }}
+          RESTCOUNTRIES_KEY: ${{ secrets.RESTCOUNTRIES_KEY }}
+          CURRENTS_API_KEY: ${{ secrets.CURRENTS_API_KEY }}
+          LLM_API_BASE: ${{ secrets.LLM_API_BASE }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+        run: |
+          pip install -q pynacl
+          python3 share_apis.py
