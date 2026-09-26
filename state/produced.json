@@ -2983,6 +2983,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790439337.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790439337.png"
    }
+  },
+  "noor-quran-s077-29-r7": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ المُرۡسَلَاتِ ﴿29–32﴾ — أيمن سويد",
+   "fingerprint": "f4c28edb5a565226",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs077-29-aymanswoaid.mp4",
+   "duration": 69.69,
+   "at": "2026-09-26 17:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790443153.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790443153.png"
+   }
   }
  },
  "fingerprints": [
@@ -3260,7 +3271,8 @@
   "ac2bb00da110eb4c",
   "23f638b6f485f8e4",
   "da6020cd97479440",
-  "0edfd31e892d3ff4"
+  "0edfd31e892d3ff4",
+  "f4c28edb5a565226"
  ],
  "last_kind": "quran"
 }
