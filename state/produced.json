@@ -3027,6 +3027,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790454611.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790454611.png"
    }
+  },
+  "noor-hadith-6609-r3": {
+   "title": "قال رسول الله ﷺ: أَخْبَرَنَا عَلِيُّ بْنُ حُجْرٍ، أَنْبَأ…",
+   "fingerprint": "d5bde8b39722efc2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 39.83,
+   "at": "2026-09-26 21:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790458390.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790458390.png"
+   }
   }
  },
  "fingerprints": [
@@ -3308,7 +3319,8 @@
   "f4c28edb5a565226",
   "98f57988b9fad0c6",
   "268f91015f5017d2",
-  "04adaed41ec4d2bc"
+  "04adaed41ec4d2bc",
+  "d5bde8b39722efc2"
  ],
- "last_kind": "quran"
+ "last_kind": "hadith"
 }
