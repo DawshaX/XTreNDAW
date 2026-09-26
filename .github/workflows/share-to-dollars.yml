@@ -1,0 +1,23 @@
+name: 🔗 مشاركة اعتماد XTreNDAW مع Dollars
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  share:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: قراءة الاعتماد · التأكد من القناة · النسخ
+        env:
+          CID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          CSEC: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          RT: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          CROSS_PAT: ${{ secrets.CROSS_PAT }}
+          TARGET: DawshaX/Dollars
+          PREFIX: '4'
+          EXPECT_CHANNEL: UCG9g_26H65D3FahqyiYPHAw
+        run: |
+          pip install -q pynacl
+          python3 share_yt_creds.py
