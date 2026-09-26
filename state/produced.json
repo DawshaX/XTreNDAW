@@ -2862,6 +2862,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790397879.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790397879.png"
    }
+  },
+  "noor-hadith-8382-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَ…",
+   "fingerprint": "f30722163dd6ff2e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 38.73,
+   "at": "2026-09-26 05:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790401611.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790401611.png"
+   }
   }
  },
  "fingerprints": [
@@ -3128,7 +3139,8 @@
   "761b32423950097d",
   "2f675e57ccf13a92",
   "6d226b9454efb207",
-  "46d67219c659bcd1"
+  "46d67219c659bcd1",
+  "f30722163dd6ff2e"
  ],
  "last_kind": "hadith"
 }
