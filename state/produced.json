@@ -2939,6 +2939,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790424035.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790424035.png"
    }
+  },
+  "noor-hadith-3819-r3": {
+   "title": "قال رسول الله ﷺ: وَحَدَّثَنَاهُ إِسْحَاقُ بْنُ إِبْرَاهِي…",
+   "fingerprint": "ac2bb00da110eb4c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 32.23,
+   "at": "2026-09-26 13:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790427788.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790427788.png"
+   }
   }
  },
  "fingerprints": [
@@ -3212,7 +3223,8 @@
   "97acd1e04ee3e531",
   "3018b6fd9dcdb4d4",
   "3665ae7e768f67aa",
-  "00be7347a4838afe"
+  "00be7347a4838afe",
+  "ac2bb00da110eb4c"
  ],
  "last_kind": "hadith"
 }
