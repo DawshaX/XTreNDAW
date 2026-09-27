@@ -3071,6 +3071,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790469563.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790469563.png"
    }
+  },
+  "noor-qudsi-19-r3": {
+   "title": "سلسلة الأحاديث القدسية (20/30): قَالُوا : يَا رَبِّ ، نُرِيْدُ أَن…",
+   "fingerprint": "b2b050783e2ab60c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 35.4,
+   "at": "2026-09-27 01:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790473269.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790473269.png"
+   }
   }
  },
  "fingerprints": [
@@ -3356,7 +3367,8 @@
   "d5bde8b39722efc2",
   "1fd3de1fbac96350",
   "bbfeeb7faf4abe05",
-  "3c722fb220e4a84c"
+  "3c722fb220e4a84c",
+  "b2b050783e2ab60c"
  ],
  "last_kind": "qudsi"
 }
