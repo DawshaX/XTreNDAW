@@ -3302,6 +3302,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790548837.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790548837.png"
    }
+  },
+  "noor-asma-5-r3": {
+   "title": "سلسلة الأسماء الحسنى (6/64): السلام — السالم من النقائص، ومنه ا…",
+   "fingerprint": "fe8b3b0e4a8f4b39",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 24.13,
+   "at": "2026-09-27 23:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790552548.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790552548.png"
+   }
   }
  },
  "fingerprints": [
@@ -3608,7 +3619,8 @@
   "86b7f983fb75d71b",
   "54d6efa063d1293e",
   "419c4cf6da850290",
-  "b5bf7b911db16321"
+  "b5bf7b911db16321",
+  "fe8b3b0e4a8f4b39"
  ],
  "last_kind": "asma"
 }
