@@ -3236,6 +3236,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790525891.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790525891.png"
    }
+  },
+  "noor-quran-s020-41-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ طه ﴿41–44﴾ — أبو بكر الشاطري",
+   "fingerprint": "25ad54cb1910f020",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs020-41-shaatree.mp4",
+   "duration": 49.27,
+   "at": "2026-09-27 17:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790529717.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790529717.png"
+   }
   }
  },
  "fingerprints": [
@@ -3536,7 +3547,8 @@
   "f41254ff9139cc4d",
   "27cb1da98f838961",
   "02f1f0b7148dc86b",
-  "c4c0fea9680b8851"
+  "c4c0fea9680b8851",
+  "25ad54cb1910f020"
  ],
  "last_kind": "quran"
 }
