@@ -3258,6 +3258,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790533549.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790533549.png"
    }
+  },
+  "noor-quran-s004-129-r8": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ النِّسَاءِ ﴿129–130﴾ — علي الحذيفي",
+   "fingerprint": "86b7f983fb75d71b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs004-129-hudhaify.mp4",
+   "duration": 68.13,
+   "at": "2026-09-27 19:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790537458.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790537458.png"
+   }
   }
  },
  "fingerprints": [
@@ -3560,7 +3571,8 @@
   "02f1f0b7148dc86b",
   "c4c0fea9680b8851",
   "25ad54cb1910f020",
-  "1c7cd34d011162a6"
+  "1c7cd34d011162a6",
+  "86b7f983fb75d71b"
  ],
  "last_kind": "quran"
 }
