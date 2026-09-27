@@ -3203,6 +3203,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790514278.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790514278.png"
    }
+  },
+  "noor-quran-s101-9-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ القَارِعَةِ ﴿9–11﴾ — أبو بكر الشاطري",
+   "fingerprint": "27cb1da98f838961",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs101-9-shaatree.mp4",
+   "duration": 30.65,
+   "at": "2026-09-27 14:07",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790518035.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790518035.png"
+   }
   }
  },
  "fingerprints": [
@@ -3500,7 +3511,8 @@
   "8de7ae5ed99ad644",
   "15699aa42c0ff759",
   "57248afd23c221f3",
-  "f41254ff9139cc4d"
+  "f41254ff9139cc4d",
+  "27cb1da98f838961"
  ],
- "last_kind": "dua"
+ "last_kind": "quran"
 }
