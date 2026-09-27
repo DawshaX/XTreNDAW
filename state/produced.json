@@ -3291,6 +3291,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790545127.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790545127.png"
    }
+  },
+  "noor-asma-4-r3": {
+   "title": "سلسلة الأسماء الحسنى (5/64): القدوس — المنزه عن كل نقص.…",
+   "fingerprint": "b5bf7b911db16321",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.97,
+   "at": "2026-09-27 22:40",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790548837.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790548837.png"
+   }
   }
  },
  "fingerprints": [
@@ -3596,7 +3607,8 @@
   "1c7cd34d011162a6",
   "86b7f983fb75d71b",
   "54d6efa063d1293e",
-  "419c4cf6da850290"
+  "419c4cf6da850290",
+  "b5bf7b911db16321"
  ],
  "last_kind": "asma"
 }
