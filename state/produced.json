@@ -3280,6 +3280,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790541343.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790541343.png"
    }
+  },
+  "noor-asma-3-r3": {
+   "title": "سلسلة الأسماء الحسنى (4/64): الملك — المتصرف في ملكه بلا ممانعة…",
+   "fingerprint": "419c4cf6da850290",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.47,
+   "at": "2026-09-27 21:38",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790545127.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790545127.png"
+   }
   }
  },
  "fingerprints": [
@@ -3584,7 +3595,8 @@
   "25ad54cb1910f020",
   "1c7cd34d011162a6",
   "86b7f983fb75d71b",
-  "54d6efa063d1293e"
+  "54d6efa063d1293e",
+  "419c4cf6da850290"
  ],
- "last_kind": "quran"
+ "last_kind": "asma"
 }
