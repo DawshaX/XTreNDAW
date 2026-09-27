@@ -3137,6 +3137,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790491896.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790491896.png"
    }
+  },
+  "noor-qudsi-25-r3": {
+   "title": "سلسلة الأحاديث القدسية (26/30): يَتنزَّلُ رَبُّنَا ، تَبَارَكَ وَت…",
+   "fingerprint": "9dee94ea4b2869af",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 51.63,
+   "at": "2026-09-27 07:54",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790495655.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790495655.png"
+   }
   }
  },
  "fingerprints": [
@@ -3428,7 +3439,8 @@
   "8ee0cbcc280379cc",
   "b06b06867974eaab",
   "0a599f5a68d57ea8",
-  "25ffc25a165f1751"
+  "25ffc25a165f1751",
+  "9dee94ea4b2869af"
  ],
  "last_kind": "qudsi"
 }
