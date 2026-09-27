@@ -3181,6 +3181,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790506842.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790506842.png"
    }
+  },
+  "noor-qudsi-29-r3": {
+   "title": "سلسلة الأحاديث القدسية (30/30): النَّبِىُّ صَلَّى اللهُ عَلَيْهِ و…",
+   "fingerprint": "57248afd23c221f3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 64.73,
+   "at": "2026-09-27 12:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790510573.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790510573.png"
+   }
   }
  },
  "fingerprints": [
@@ -3476,7 +3487,8 @@
   "9dee94ea4b2869af",
   "73157b7c6065b8f1",
   "8de7ae5ed99ad644",
-  "15699aa42c0ff759"
+  "15699aa42c0ff759",
+  "57248afd23c221f3"
  ],
  "last_kind": "qudsi"
 }
