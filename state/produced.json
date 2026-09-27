@@ -3192,6 +3192,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790510573.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790510573.png"
    }
+  },
+  "noor-dua-158-r3": {
+   "title": "دعاء: الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا…",
+   "fingerprint": "f41254ff9139cc4d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.7,
+   "at": "2026-09-27 13:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790514278.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790514278.png"
+   }
   }
  },
  "fingerprints": [
@@ -3488,7 +3499,8 @@
   "73157b7c6065b8f1",
   "8de7ae5ed99ad644",
   "15699aa42c0ff759",
-  "57248afd23c221f3"
+  "57248afd23c221f3",
+  "f41254ff9139cc4d"
  ],
- "last_kind": "qudsi"
+ "last_kind": "dua"
 }
