@@ -3093,6 +3093,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790476986.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790476986.png"
    }
+  },
+  "noor-qudsi-21-r3": {
+   "title": "سلسلة الأحاديث القدسية (22/30): يَقُولُ اللهُ تَعَالَى : مَا لِعَب…",
+   "fingerprint": "8ee0cbcc280379cc",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qudsi-3.mp4",
+   "duration": 31.7,
+   "at": "2026-09-27 03:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790480725.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790480725.png"
+   }
   }
  },
  "fingerprints": [
@@ -3380,7 +3391,8 @@
   "bbfeeb7faf4abe05",
   "3c722fb220e4a84c",
   "b2b050783e2ab60c",
-  "06c73e45284581c2"
+  "06c73e45284581c2",
+  "8ee0cbcc280379cc"
  ],
  "last_kind": "qudsi"
 }
