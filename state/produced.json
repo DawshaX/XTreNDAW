@@ -3357,6 +3357,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790567346.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790567346.png"
    }
+  },
+  "noor-asma-11-r3": {
+   "title": "سلسلة الأسماء الحسنى (12/64): الخالق — الموجد للأشياء بعد عدم.…",
+   "fingerprint": "55df032a5d97881c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.83,
+   "at": "2026-09-28 04:50",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790571040.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790571040.png"
+   }
   }
  },
  "fingerprints": [
@@ -3668,7 +3679,8 @@
   "d9ec5fd07a821249",
   "fde5c3fdb9d18f0a",
   "6c6a5b09d094d01b",
-  "84529073e8ca4af9"
+  "84529073e8ca4af9",
+  "55df032a5d97881c"
  ],
  "last_kind": "asma"
 }
