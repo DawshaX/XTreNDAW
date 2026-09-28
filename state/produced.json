@@ -3390,6 +3390,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790578476.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790578476.png"
    }
+  },
+  "noor-asma-14-r3": {
+   "title": "سلسلة الأسماء الحسنى (15/64): الغفار — الستير للذنوب يغطيها ويتج…",
+   "fingerprint": "5e8c39b99eeca29b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.1,
+   "at": "2026-09-28 07:56",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790582202.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790582202.png"
+   }
   }
  },
  "fingerprints": [
@@ -3704,7 +3715,8 @@
   "84529073e8ca4af9",
   "55df032a5d97881c",
   "c364b3d051836229",
-  "e033d6385607f16a"
+  "e033d6385607f16a",
+  "5e8c39b99eeca29b"
  ],
  "last_kind": "asma"
 }
