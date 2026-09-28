@@ -3379,6 +3379,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790574773.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790574773.png"
    }
+  },
+  "noor-asma-13-r3": {
+   "title": "سلسلة الأسماء الحسنى (14/64): المصور — مرتب الصور على أحسن ترتيب…",
+   "fingerprint": "e033d6385607f16a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.37,
+   "at": "2026-09-28 06:54",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790578476.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790578476.png"
+   }
   }
  },
  "fingerprints": [
@@ -3692,7 +3703,8 @@
   "6c6a5b09d094d01b",
   "84529073e8ca4af9",
   "55df032a5d97881c",
-  "c364b3d051836229"
+  "c364b3d051836229",
+  "e033d6385607f16a"
  ],
  "last_kind": "asma"
 }
