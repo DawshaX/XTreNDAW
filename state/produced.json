@@ -3467,6 +3467,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790604669.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790604669.png"
    }
+  },
+  "noor-quran-s040-1-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ غَافِرٍ ﴿1–4﴾ — أبو بكر الشاطري",
+   "fingerprint": "da282bdfd0569fde",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs040-1-shaatree.mp4",
+   "duration": 59.8,
+   "at": "2026-09-28 15:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790608529.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790608529.png"
+   }
   }
  },
  "fingerprints": [
@@ -3788,7 +3799,8 @@
   "83f3683665954508",
   "4d93e4e97da857b0",
   "e90e440f8bbfc918",
-  "39792cf9e26f345f"
+  "39792cf9e26f345f",
+  "da282bdfd0569fde"
  ],
  "last_kind": "quran"
 }
