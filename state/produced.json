@@ -3555,6 +3555,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790635033.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790635033.png"
    }
+  },
+  "noor-seerah-11-r3": {
+   "title": "سلسلة السيرة النبوية (12/47): بدر: ثلاثمائة وبضعة عشر ينصرهم الل…",
+   "fingerprint": "4468fbd13c8dcfaf",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 25.53,
+   "at": "2026-09-28 23:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790638738.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790638738.png"
+   }
   }
  },
  "fingerprints": [
@@ -3884,7 +3895,8 @@
   "04af7b593ed308b4",
   "8402f09b4aa625bb",
   "c5859bd8c7fcb6fb",
-  "afe0baa9ecd581bf"
+  "afe0baa9ecd581bf",
+  "4468fbd13c8dcfaf"
  ],
  "last_kind": "seerah"
 }
