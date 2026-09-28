@@ -3434,6 +3434,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790593319.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790593319.png"
    }
+  },
+  "noor-asma-18-r3": {
+   "title": "سلسلة الأسماء الحسنى (19/64): الفتاح — الحاكم بين عباده، فاتح ال…",
+   "fingerprint": "4d93e4e97da857b0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.93,
+   "at": "2026-09-28 12:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790597005.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790597005.png"
+   }
   }
  },
  "fingerprints": [
@@ -3752,7 +3763,8 @@
   "5e8c39b99eeca29b",
   "cdd901118a126e1f",
   "5d2cfcf8d7302947",
-  "83f3683665954508"
+  "83f3683665954508",
+  "4d93e4e97da857b0"
  ],
  "last_kind": "asma"
 }
