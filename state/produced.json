@@ -3423,6 +3423,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790589607.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790589607.png"
    }
+  },
+  "noor-asma-17-r3": {
+   "title": "سلسلة الأسماء الحسنى (18/64): الرزاق — المتكفل بأرزاق الخلائق كل…",
+   "fingerprint": "83f3683665954508",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.53,
+   "at": "2026-09-28 11:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790593319.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790593319.png"
+   }
   }
  },
  "fingerprints": [
@@ -3740,7 +3751,8 @@
   "e033d6385607f16a",
   "5e8c39b99eeca29b",
   "cdd901118a126e1f",
-  "5d2cfcf8d7302947"
+  "5d2cfcf8d7302947",
+  "83f3683665954508"
  ],
  "last_kind": "asma"
 }
