@@ -3412,6 +3412,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790585904.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790585904.png"
    }
+  },
+  "noor-asma-16-r3": {
+   "title": "سلسلة الأسماء الحسنى (17/64): الوهاب — كثير العطاء بلا عوض.…",
+   "fingerprint": "5d2cfcf8d7302947",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.47,
+   "at": "2026-09-28 10:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790589607.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790589607.png"
+   }
   }
  },
  "fingerprints": [
@@ -3728,7 +3739,8 @@
   "c364b3d051836229",
   "e033d6385607f16a",
   "5e8c39b99eeca29b",
-  "cdd901118a126e1f"
+  "cdd901118a126e1f",
+  "5d2cfcf8d7302947"
  ],
  "last_kind": "asma"
 }
