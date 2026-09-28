@@ -3401,6 +3401,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790582202.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790582202.png"
    }
+  },
+  "noor-asma-15-r3": {
+   "title": "سلسلة الأسماء الحسنى (16/64): القهار — الذي قهر الجبابرة ودانت ل…",
+   "fingerprint": "cdd901118a126e1f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.2,
+   "at": "2026-09-28 08:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790585904.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790585904.png"
+   }
   }
  },
  "fingerprints": [
@@ -3716,7 +3727,8 @@
   "55df032a5d97881c",
   "c364b3d051836229",
   "e033d6385607f16a",
-  "5e8c39b99eeca29b"
+  "5e8c39b99eeca29b",
+  "cdd901118a126e1f"
  ],
  "last_kind": "asma"
 }
