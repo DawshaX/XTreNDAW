@@ -3456,6 +3456,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790600799.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790600799.png"
    }
+  },
+  "noor-quran-s002-161-r8": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ البَقَرَةِ ﴿161–163﴾ — علي الحذيفي",
+   "fingerprint": "39792cf9e26f345f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs002-161-hudhaify.mp4",
+   "duration": 65.34,
+   "at": "2026-09-28 14:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790604669.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790604669.png"
+   }
   }
  },
  "fingerprints": [
@@ -3776,7 +3787,8 @@
   "5d2cfcf8d7302947",
   "83f3683665954508",
   "4d93e4e97da857b0",
-  "e90e440f8bbfc918"
+  "e90e440f8bbfc918",
+  "39792cf9e26f345f"
  ],
- "last_kind": "seerah"
+ "last_kind": "quran"
 }
