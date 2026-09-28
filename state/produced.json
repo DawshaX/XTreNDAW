@@ -3478,6 +3478,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790608529.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790608529.png"
    }
+  },
+  "noor-quran-s059-13-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الحَشۡرِ ﴿13–13﴾ — أيمن سويد",
+   "fingerprint": "4c734a84dd420699",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs059-13-aymanswoaid.mp4",
+   "duration": 52.46,
+   "at": "2026-09-28 16:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790612348.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790612348.png"
+   }
   }
  },
  "fingerprints": [
@@ -3800,7 +3811,8 @@
   "4d93e4e97da857b0",
   "e90e440f8bbfc918",
   "39792cf9e26f345f",
-  "da282bdfd0569fde"
+  "da282bdfd0569fde",
+  "4c734a84dd420699"
  ],
  "last_kind": "quran"
 }
