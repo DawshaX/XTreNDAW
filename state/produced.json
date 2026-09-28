@@ -3324,6 +3324,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790556248.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790556248.png"
    }
+  },
+  "noor-asma-7-r3": {
+   "title": "سلسلة الأسماء الحسنى (8/64): المهيمن — الرقيب على كل شيء، الحاف…",
+   "fingerprint": "fde5c3fdb9d18f0a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.77,
+   "at": "2026-09-28 01:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790559960.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790559960.png"
+   }
   }
  },
  "fingerprints": [
@@ -3632,7 +3643,8 @@
   "419c4cf6da850290",
   "b5bf7b911db16321",
   "fe8b3b0e4a8f4b39",
-  "d9ec5fd07a821249"
+  "d9ec5fd07a821249",
+  "fde5c3fdb9d18f0a"
  ],
  "last_kind": "asma"
 }
