@@ -3522,6 +3522,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790623701.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790623701.png"
    }
+  },
+  "noor-quran-s025-33-r8": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الفُرۡقَانِ ﴿33–36﴾ — علي الحذيفي",
+   "fingerprint": "8402f09b4aa625bb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs025-33-hudhaify.mp4",
+   "duration": 67.97,
+   "at": "2026-09-28 20:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790627599.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790627599.png"
+   }
   }
  },
  "fingerprints": [
@@ -3848,7 +3859,8 @@
   "4c734a84dd420699",
   "e40fb3a4d4ea6bed",
   "6837364c58871840",
-  "04af7b593ed308b4"
+  "04af7b593ed308b4",
+  "8402f09b4aa625bb"
  ],
  "last_kind": "quran"
 }
