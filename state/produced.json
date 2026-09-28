@@ -3511,6 +3511,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790619913.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790619913.png"
    }
+  },
+  "noor-quran-s079-29-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ النَّازِعَاتِ ﴿29–32﴾ — أيمن سويد",
+   "fingerprint": "04af7b593ed308b4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs079-29-aymanswoaid.mp4",
+   "duration": 58.98,
+   "at": "2026-09-28 19:28",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790623701.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790623701.png"
+   }
   }
  },
  "fingerprints": [
@@ -3836,7 +3847,8 @@
   "da282bdfd0569fde",
   "4c734a84dd420699",
   "e40fb3a4d4ea6bed",
-  "6837364c58871840"
+  "6837364c58871840",
+  "04af7b593ed308b4"
  ],
  "last_kind": "quran"
 }
