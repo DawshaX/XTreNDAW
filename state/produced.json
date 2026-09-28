@@ -3544,6 +3544,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790631319.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790631319.png"
    }
+  },
+  "noor-seerah-10-r3": {
+   "title": "سلسلة السيرة النبوية (11/47): آخى بين المهاجرين والأنصار فصاروا …",
+   "fingerprint": "afe0baa9ecd581bf",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 23.83,
+   "at": "2026-09-28 22:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790635033.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790635033.png"
+   }
   }
  },
  "fingerprints": [
@@ -3872,7 +3883,8 @@
   "6837364c58871840",
   "04af7b593ed308b4",
   "8402f09b4aa625bb",
-  "c5859bd8c7fcb6fb"
+  "c5859bd8c7fcb6fb",
+  "afe0baa9ecd581bf"
  ],
  "last_kind": "seerah"
 }
