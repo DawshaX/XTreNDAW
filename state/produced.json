@@ -3489,6 +3489,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790612348.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790612348.png"
    }
+  },
+  "noor-quran-s078-5-r8": {
+   "title": "دقيقة نور 🌙 سُورَةُ النَّبَإِ ﴿5–8﴾ — علي الحذيفي",
+   "fingerprint": "e40fb3a4d4ea6bed",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs078-5-hudhaify.mp4",
+   "duration": 47.51,
+   "at": "2026-09-28 17:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790616131.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790616131.png"
+   }
   }
  },
  "fingerprints": [
@@ -3812,7 +3823,8 @@
   "e90e440f8bbfc918",
   "39792cf9e26f345f",
   "da282bdfd0569fde",
-  "4c734a84dd420699"
+  "4c734a84dd420699",
+  "e40fb3a4d4ea6bed"
  ],
  "last_kind": "quran"
 }
