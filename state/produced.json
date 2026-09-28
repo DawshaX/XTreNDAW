@@ -3335,6 +3335,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790559960.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790559960.png"
    }
+  },
+  "noor-asma-8-r3": {
+   "title": "سلسلة الأسماء الحسنى (9/64): العزيز — الغالب الذي لا يغلب.…",
+   "fingerprint": "6c6a5b09d094d01b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.73,
+   "at": "2026-09-28 02:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790563664.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790563664.png"
+   }
   }
  },
  "fingerprints": [
@@ -3644,7 +3655,8 @@
   "b5bf7b911db16321",
   "fe8b3b0e4a8f4b39",
   "d9ec5fd07a821249",
-  "fde5c3fdb9d18f0a"
+  "fde5c3fdb9d18f0a",
+  "6c6a5b09d094d01b"
  ],
  "last_kind": "asma"
 }
