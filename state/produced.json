@@ -3445,6 +3445,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790597005.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790597005.png"
    }
+  },
+  "noor-seerah-8-r3": {
+   "title": "سلسلة السيرة النبوية (9/47): بيعة العقبة: الأنصار بايعوا على ال…",
+   "fingerprint": "e90e440f8bbfc918",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 25.27,
+   "at": "2026-09-28 13:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790600799.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790600799.png"
+   }
   }
  },
  "fingerprints": [
@@ -3764,7 +3775,8 @@
   "cdd901118a126e1f",
   "5d2cfcf8d7302947",
   "83f3683665954508",
-  "4d93e4e97da857b0"
+  "4d93e4e97da857b0",
+  "e90e440f8bbfc918"
  ],
- "last_kind": "asma"
+ "last_kind": "seerah"
 }
