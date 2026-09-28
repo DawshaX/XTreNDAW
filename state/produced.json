@@ -3368,6 +3368,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790571040.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790571040.png"
    }
+  },
+  "noor-asma-12-r3": {
+   "title": "سلسلة الأسماء الحسنى (13/64): البارئ — المميز للمخلوقات بلا مثال…",
+   "fingerprint": "c364b3d051836229",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.17,
+   "at": "2026-09-28 05:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790574773.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790574773.png"
+   }
   }
  },
  "fingerprints": [
@@ -3680,7 +3691,8 @@
   "fde5c3fdb9d18f0a",
   "6c6a5b09d094d01b",
   "84529073e8ca4af9",
-  "55df032a5d97881c"
+  "55df032a5d97881c",
+  "c364b3d051836229"
  ],
  "last_kind": "asma"
 }
