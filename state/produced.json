@@ -3500,6 +3500,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790616131.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790616131.png"
    }
+  },
+  "noor-quran-s037-65-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الصَّافَّاتِ ﴿65–65﴾ — أبو بكر الشاطري",
+   "fingerprint": "6837364c58871840",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs037-65-shaatree.mp4",
+   "duration": 45.83,
+   "at": "2026-09-28 18:25",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790619913.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790619913.png"
+   }
   }
  },
  "fingerprints": [
@@ -3824,7 +3835,8 @@
   "39792cf9e26f345f",
   "da282bdfd0569fde",
   "4c734a84dd420699",
-  "e40fb3a4d4ea6bed"
+  "e40fb3a4d4ea6bed",
+  "6837364c58871840"
  ],
  "last_kind": "quran"
 }
