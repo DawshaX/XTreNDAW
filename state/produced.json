@@ -3533,6 +3533,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790627599.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790627599.png"
    }
+  },
+  "noor-seerah-9-r3": {
+   "title": "سلسلة السيرة النبوية (10/47): هاجر ﷺ مع أبي بكر وقال له: لا تحزن…",
+   "fingerprint": "c5859bd8c7fcb6fb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 25.43,
+   "at": "2026-09-28 21:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790631319.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790631319.png"
+   }
   }
  },
  "fingerprints": [
@@ -3860,7 +3871,8 @@
   "e40fb3a4d4ea6bed",
   "6837364c58871840",
   "04af7b593ed308b4",
-  "8402f09b4aa625bb"
+  "8402f09b4aa625bb",
+  "c5859bd8c7fcb6fb"
  ],
- "last_kind": "quran"
+ "last_kind": "seerah"
 }
