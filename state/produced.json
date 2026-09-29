@@ -3786,6 +3786,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790720947.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790720947.png"
    }
+  },
+  "noor-dua-207-r3": {
+   "title": "دعاء: اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَهَا و…",
+   "fingerprint": "cba52cd635a93107",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 29.43,
+   "at": "2026-09-29 23:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790724684.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790724684.png"
+   }
   }
  },
  "fingerprints": [
@@ -4135,7 +4146,8 @@
   "0468dc21baa4c2f0",
   "06127447bdc4b9f8",
   "03e5b7f890a0df5a",
-  "70155a3c285d0607"
+  "70155a3c285d0607",
+  "cba52cd635a93107"
  ],
  "last_kind": "dua"
 }
