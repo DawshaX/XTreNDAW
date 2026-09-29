@@ -3775,6 +3775,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790717243.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790717243.png"
    }
+  },
+  "noor-dua-107-r3": {
+   "title": "دعاء: رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَ…",
+   "fingerprint": "70155a3c285d0607",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 31.2,
+   "at": "2026-09-29 22:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790720947.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790720947.png"
+   }
   }
  },
  "fingerprints": [
@@ -4123,7 +4134,8 @@
   "d4dbf4ee6a35bfaf",
   "0468dc21baa4c2f0",
   "06127447bdc4b9f8",
-  "03e5b7f890a0df5a"
+  "03e5b7f890a0df5a",
+  "70155a3c285d0607"
  ],
  "last_kind": "dua"
 }
