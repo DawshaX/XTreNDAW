@@ -3654,6 +3654,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790668429.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790668429.png"
    }
+  },
+  "noor-dua-136-r3": {
+   "title": "دعاء: اللَّهُمَّ رَبَّ السَّمَوَاتِ السَّبْعِ …",
+   "fingerprint": "4cb5dd8364a33e87",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 38.6,
+   "at": "2026-09-29 08:56",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790672169.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790672169.png"
+   }
   }
  },
  "fingerprints": [
@@ -3992,7 +4003,8 @@
   "d6dc7a02520a6088",
   "d64f2ce0a1afa3aa",
   "7021f5a10434122f",
-  "c155edb65dee415d"
+  "c155edb65dee415d",
+  "4cb5dd8364a33e87"
  ],
  "last_kind": "dua"
 }
