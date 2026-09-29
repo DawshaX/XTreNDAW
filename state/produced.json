@@ -3742,6 +3742,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790705857.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790705857.png"
    }
+  },
+  "noor-quran-s056-45-r7": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الوَاقِعَةِ ﴿45–48﴾ — أيمن سويد",
+   "fingerprint": "0468dc21baa4c2f0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs056-45-aymanswoaid.mp4",
+   "duration": 62.51,
+   "at": "2026-09-29 19:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790709661.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790709661.png"
+   }
   }
  },
  "fingerprints": [
@@ -4087,7 +4098,8 @@
   "cb372d7dccd00735",
   "ae50c18febf49aa0",
   "583506ba5a50cc37",
-  "d4dbf4ee6a35bfaf"
+  "d4dbf4ee6a35bfaf",
+  "0468dc21baa4c2f0"
  ],
  "last_kind": "quran"
 }
