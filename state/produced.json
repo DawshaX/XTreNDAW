@@ -3566,6 +3566,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790638738.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790638738.png"
    }
+  },
+  "noor-seerah-12-r3": {
+   "title": "سلسلة السيرة النبوية (13/47): أحد: درس في الطاعة، وفيها استشهاد …",
+   "fingerprint": "bf516a7d52a09741",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 26.57,
+   "at": "2026-09-29 00:40",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790642450.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790642450.png"
+   }
   }
  },
  "fingerprints": [
@@ -3896,7 +3907,8 @@
   "8402f09b4aa625bb",
   "c5859bd8c7fcb6fb",
   "afe0baa9ecd581bf",
-  "4468fbd13c8dcfaf"
+  "4468fbd13c8dcfaf",
+  "bf516a7d52a09741"
  ],
  "last_kind": "seerah"
 }
