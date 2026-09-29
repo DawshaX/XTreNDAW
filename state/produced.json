@@ -3665,6 +3665,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790672169.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790672169.png"
    }
+  },
+  "noor-dua-225-r3": {
+   "title": "دعاء: لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا ش…",
+   "fingerprint": "c7b8fb378b970d1f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 30.87,
+   "at": "2026-09-29 09:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790675888.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790675888.png"
+   }
   }
  },
  "fingerprints": [
@@ -4004,7 +4015,8 @@
   "d64f2ce0a1afa3aa",
   "7021f5a10434122f",
   "c155edb65dee415d",
-  "4cb5dd8364a33e87"
+  "4cb5dd8364a33e87",
+  "c7b8fb378b970d1f"
  ],
  "last_kind": "dua"
 }
