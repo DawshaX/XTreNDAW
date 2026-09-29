@@ -3632,6 +3632,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790661039.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790661039.png"
    }
+  },
+  "noor-seerah-18-r3": {
+   "title": "سلسلة السيرة النبوية (19/47): ما ضرب خادمًا ولا امرأة ولا شيئًا …",
+   "fingerprint": "7021f5a10434122f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 23.5,
+   "at": "2026-09-29 06:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790664726.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790664726.png"
+   }
   }
  },
  "fingerprints": [
@@ -3968,7 +3979,8 @@
   "e35900c61439efae",
   "bc52ef0715936b6d",
   "d6dc7a02520a6088",
-  "d64f2ce0a1afa3aa"
+  "d64f2ce0a1afa3aa",
+  "7021f5a10434122f"
  ],
  "last_kind": "seerah"
 }
