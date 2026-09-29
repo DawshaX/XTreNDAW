@@ -3709,6 +3709,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790687063.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790687063.png"
    }
+  },
+  "noor-quran-s009-129-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ التَّوۡبَةِ ﴿129–129﴾ — أيمن سويد",
+   "fingerprint": "ae50c18febf49aa0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs009-129-aymanswoaid.mp4",
+   "duration": 56.63,
+   "at": "2026-09-29 16:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790698123.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790698123.png"
+   }
   }
  },
  "fingerprints": [
@@ -4051,7 +4062,8 @@
   "4cb5dd8364a33e87",
   "c7b8fb378b970d1f",
   "127490c7ad5b039a",
-  "cb372d7dccd00735"
+  "cb372d7dccd00735",
+  "ae50c18febf49aa0"
  ],
- "last_kind": "dua"
+ "last_kind": "quran"
 }
