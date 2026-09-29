@@ -3621,6 +3621,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790657349.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790657349.png"
    }
+  },
+  "noor-seerah-17-r3": {
+   "title": "سلسلة السيرة النبوية (18/47): كان يخدم في مهنة أهله ويخصف نعله و…",
+   "fingerprint": "d64f2ce0a1afa3aa",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 24.3,
+   "at": "2026-09-29 05:50",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790661039.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790661039.png"
+   }
   }
  },
  "fingerprints": [
@@ -3956,7 +3967,8 @@
   "e4bc6d8fd6909091",
   "e35900c61439efae",
   "bc52ef0715936b6d",
-  "d6dc7a02520a6088"
+  "d6dc7a02520a6088",
+  "d64f2ce0a1afa3aa"
  ],
  "last_kind": "seerah"
 }
