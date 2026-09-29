@@ -3643,6 +3643,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790664726.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790664726.png"
    }
+  },
+  "noor-dua-183-r3": {
+   "title": "دعاء: اللَّهُمَّ اغْفِرْ لِي ذُنُوبِي وَافْتَح…",
+   "fingerprint": "c155edb65dee415d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 24.53,
+   "at": "2026-09-29 07:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790668429.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790668429.png"
+   }
   }
  },
  "fingerprints": [
@@ -3980,7 +3991,8 @@
   "bc52ef0715936b6d",
   "d6dc7a02520a6088",
   "d64f2ce0a1afa3aa",
-  "7021f5a10434122f"
+  "7021f5a10434122f",
+  "c155edb65dee415d"
  ],
- "last_kind": "seerah"
+ "last_kind": "dua"
 }
