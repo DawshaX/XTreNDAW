@@ -3687,6 +3687,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790679602.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790679602.png"
    }
+  },
+  "noor-dua-121-r3": {
+   "title": "دعاء: أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ …",
+   "fingerprint": "cb372d7dccd00735",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 30.93,
+   "at": "2026-09-29 12:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790683326.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790683326.png"
+   }
   }
  },
  "fingerprints": [
@@ -4028,7 +4039,8 @@
   "c155edb65dee415d",
   "4cb5dd8364a33e87",
   "c7b8fb378b970d1f",
-  "127490c7ad5b039a"
+  "127490c7ad5b039a",
+  "cb372d7dccd00735"
  ],
  "last_kind": "dua"
 }
