@@ -3731,6 +3731,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790702084.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790702084.png"
    }
+  },
+  "noor-quran-s075-33-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ القِيَامَةِ ﴿33–36﴾ — أبو بكر الشاطري",
+   "fingerprint": "d4dbf4ee6a35bfaf",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs075-33-shaatree.mp4",
+   "duration": 49.1,
+   "at": "2026-09-29 18:17",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790705857.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790705857.png"
+   }
   }
  },
  "fingerprints": [
@@ -4075,7 +4086,8 @@
   "127490c7ad5b039a",
   "cb372d7dccd00735",
   "ae50c18febf49aa0",
-  "583506ba5a50cc37"
+  "583506ba5a50cc37",
+  "d4dbf4ee6a35bfaf"
  ],
  "last_kind": "quran"
 }
