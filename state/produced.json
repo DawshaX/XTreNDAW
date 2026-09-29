@@ -3599,6 +3599,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790649911.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790649911.png"
    }
+  },
+  "noor-seerah-15-r3": {
+   "title": "سلسلة السيرة النبوية (16/47): فتح مكة: دخلها ﷺ متواضعًا وقال: اذ…",
+   "fingerprint": "bc52ef0715936b6d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 27.03,
+   "at": "2026-09-29 03:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790653639.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790653639.png"
+   }
   }
  },
  "fingerprints": [
@@ -3932,7 +3943,8 @@
   "4468fbd13c8dcfaf",
   "bf516a7d52a09741",
   "e4bc6d8fd6909091",
-  "e35900c61439efae"
+  "e35900c61439efae",
+  "bc52ef0715936b6d"
  ],
  "last_kind": "seerah"
 }
