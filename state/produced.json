@@ -3577,6 +3577,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790642450.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790642450.png"
    }
+  },
+  "noor-seerah-13-r3": {
+   "title": "سلسلة السيرة النبوية (14/47): الخندق: حفر المسلمون بمشورة سلمان …",
+   "fingerprint": "e4bc6d8fd6909091",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 24.97,
+   "at": "2026-09-29 01:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790646181.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790646181.png"
+   }
   }
  },
  "fingerprints": [
@@ -3908,7 +3919,8 @@
   "c5859bd8c7fcb6fb",
   "afe0baa9ecd581bf",
   "4468fbd13c8dcfaf",
-  "bf516a7d52a09741"
+  "bf516a7d52a09741",
+  "e4bc6d8fd6909091"
  ],
  "last_kind": "seerah"
 }
