@@ -3764,6 +3764,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790713527.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790713527.png"
    }
+  },
+  "noor-dua-161-r3": {
+   "title": "دعاء: اللَّهُمَّ بِكَ أَصْبَحْنَا وَبِكَ أَمْس…",
+   "fingerprint": "03e5b7f890a0df5a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.53,
+   "at": "2026-09-29 21:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790717243.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790717243.png"
+   }
   }
  },
  "fingerprints": [
@@ -4111,7 +4122,8 @@
   "583506ba5a50cc37",
   "d4dbf4ee6a35bfaf",
   "0468dc21baa4c2f0",
-  "06127447bdc4b9f8"
+  "06127447bdc4b9f8",
+  "03e5b7f890a0df5a"
  ],
- "last_kind": "quran"
+ "last_kind": "dua"
 }
