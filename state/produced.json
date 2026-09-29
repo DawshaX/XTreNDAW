@@ -3588,6 +3588,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790646181.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790646181.png"
    }
+  },
+  "noor-seerah-14-r3": {
+   "title": "سلسلة السيرة النبوية (15/47): الحديبية: صلح سمّاه الله فتحًا مبي…",
+   "fingerprint": "e35900c61439efae",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 25.5,
+   "at": "2026-09-29 02:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790649911.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790649911.png"
+   }
   }
  },
  "fingerprints": [
@@ -3920,7 +3931,8 @@
   "afe0baa9ecd581bf",
   "4468fbd13c8dcfaf",
   "bf516a7d52a09741",
-  "e4bc6d8fd6909091"
+  "e4bc6d8fd6909091",
+  "e35900c61439efae"
  ],
  "last_kind": "seerah"
 }
