@@ -4028,6 +4028,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790803539.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790803539.png"
    }
+  },
+  "noor-seerah-30-r3": {
+   "title": "سلسلة السيرة النبوية (31/47): سلمان الفارسي: باحث عن الحقيقة عبر…",
+   "fingerprint": "ffa45cf6e685c561",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 30.5,
+   "at": "2026-09-30 22:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790807339.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790807339.png"
+   }
   }
  },
  "fingerprints": [
@@ -4398,7 +4409,8 @@
   "d3f8e9e0282ddef5",
   "00a7cb619aeea64c",
   "d7f08e58b3b718f1",
-  "354e6517749b1949"
+  "354e6517749b1949",
+  "ffa45cf6e685c561"
  ],
  "last_kind": "seerah"
 }
