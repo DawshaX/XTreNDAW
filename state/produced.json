@@ -3863,6 +3863,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790746936.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790746936.png"
    }
+  },
+  "noor-seerah-21-r3": {
+   "title": "سلسلة السيرة النبوية (22/47): كان يحمل أمامة بنت زينب في الصلاة …",
+   "fingerprint": "4446508db307ed28",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 25.03,
+   "at": "2026-09-30 06:44",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790750656.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790750656.png"
+   }
   }
  },
  "fingerprints": [
@@ -4218,7 +4229,8 @@
   "acb971321c17b617",
   "bcefdbb8eda7edb0",
   "6312492db8969030",
-  "124ea8352a482f3c"
+  "124ea8352a482f3c",
+  "4446508db307ed28"
  ],
  "last_kind": "seerah"
 }
