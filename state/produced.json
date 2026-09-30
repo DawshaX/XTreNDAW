@@ -3874,6 +3874,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790750656.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790750656.png"
    }
+  },
+  "noor-seerah-22-r3": {
+   "title": "سلسلة السيرة النبوية (23/47): نهى عن التحريش وأخبر أن بغيًا سقت …",
+   "fingerprint": "947ddad281b37fe0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 24.83,
+   "at": "2026-09-30 07:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790754379.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790754379.png"
+   }
   }
  },
  "fingerprints": [
@@ -4230,7 +4241,8 @@
   "bcefdbb8eda7edb0",
   "6312492db8969030",
   "124ea8352a482f3c",
-  "4446508db307ed28"
+  "4446508db307ed28",
+  "947ddad281b37fe0"
  ],
  "last_kind": "seerah"
 }
