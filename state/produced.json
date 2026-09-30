@@ -4039,6 +4039,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790807339.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790807339.png"
    }
+  },
+  "noor-seerah-31-r3": {
+   "title": "سلسلة السيرة النبوية (32/47): صهيب الرومي: ترك ماله كله بمكة ليه…",
+   "fingerprint": "20cffcd50bd7aa7d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 29.33,
+   "at": "2026-09-30 23:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790811068.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790811068.png"
+   }
   }
  },
  "fingerprints": [
@@ -4410,7 +4421,8 @@
   "00a7cb619aeea64c",
   "d7f08e58b3b718f1",
   "354e6517749b1949",
-  "ffa45cf6e685c561"
+  "ffa45cf6e685c561",
+  "20cffcd50bd7aa7d"
  ],
  "last_kind": "seerah"
 }
