@@ -3797,6 +3797,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790724684.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790724684.png"
    }
+  },
+  "noor-dua-89-r3": {
+   "title": "دعاء: اللَّهُمَّ فَرِّجْ هَمَّ ٱلْمَهْمُومِينَ…",
+   "fingerprint": "c10a248b5e081776",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 24.6,
+   "at": "2026-09-30 00:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790728387.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790728387.png"
+   }
   }
  },
  "fingerprints": [
@@ -4147,7 +4158,8 @@
   "06127447bdc4b9f8",
   "03e5b7f890a0df5a",
   "70155a3c285d0607",
-  "cba52cd635a93107"
+  "cba52cd635a93107",
+  "c10a248b5e081776"
  ],
  "last_kind": "dua"
 }
