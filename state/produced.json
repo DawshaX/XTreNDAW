@@ -3995,6 +3995,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790792176.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790792176.png"
    }
+  },
+  "noor-quran-s083-33-r9": {
+   "title": "دقيقة نور 🌙 سُورَةُ المُطَفِّفِينَ ﴿33–36﴾ — أبو بكر الشاطري",
+   "fingerprint": "00a7cb619aeea64c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs083-33-shaatree.mp4",
+   "duration": 51.66,
+   "at": "2026-09-30 19:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790795977.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790795977.png"
+   }
   }
  },
  "fingerprints": [
@@ -4362,7 +4373,8 @@
   "b5dca531a7184a87",
   "5748b16d5408021f",
   "6ffe3628475f1c87",
-  "d3f8e9e0282ddef5"
+  "d3f8e9e0282ddef5",
+  "00a7cb619aeea64c"
  ],
  "last_kind": "quran"
 }
