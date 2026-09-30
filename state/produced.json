@@ -3852,6 +3852,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790743242.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790743242.png"
    }
+  },
+  "noor-seerah-20-r3": {
+   "title": "سلسلة السيرة النبوية (21/47): كان يقوم الليل حتى تتورم قدماه ويق…",
+   "fingerprint": "124ea8352a482f3c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 25.17,
+   "at": "2026-09-30 05:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790746936.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790746936.png"
+   }
   }
  },
  "fingerprints": [
@@ -4206,7 +4217,8 @@
   "c10a248b5e081776",
   "acb971321c17b617",
   "bcefdbb8eda7edb0",
-  "6312492db8969030"
+  "6312492db8969030",
+  "124ea8352a482f3c"
  ],
  "last_kind": "seerah"
 }
