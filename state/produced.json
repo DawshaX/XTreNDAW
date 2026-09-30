@@ -3951,6 +3951,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790776711.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790776711.png"
    }
+  },
+  "noor-quran-s045-21-r8": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الجَاثِيَةِ ﴿21–22﴾ — علي الحذيفي",
+   "fingerprint": "b5dca531a7184a87",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs045-21-hudhaify.mp4",
+   "duration": 67.11,
+   "at": "2026-09-30 15:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790780587.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790780587.png"
+   }
   }
  },
  "fingerprints": [
@@ -4314,7 +4325,8 @@
   "27c46490ab941d54",
   "dd08335497ef0dd5",
   "553e6609467bde67",
-  "b0dbf4fffa920e1a"
+  "b0dbf4fffa920e1a",
+  "b5dca531a7184a87"
  ],
- "last_kind": "seerah"
+ "last_kind": "quran"
 }
