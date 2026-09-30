@@ -3973,6 +3973,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790784488.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790784488.png"
    }
+  },
+  "noor-quran-s021-77-r7": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الأَنبِيَاءِ ﴿77–78﴾ — أيمن سويد",
+   "fingerprint": "6ffe3628475f1c87",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs021-77-aymanswoaid.mp4",
+   "duration": 68.46,
+   "at": "2026-09-30 17:12",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790788329.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790788329.png"
+   }
   }
  },
  "fingerprints": [
@@ -4338,7 +4349,8 @@
   "553e6609467bde67",
   "b0dbf4fffa920e1a",
   "b5dca531a7184a87",
-  "5748b16d5408021f"
+  "5748b16d5408021f",
+  "6ffe3628475f1c87"
  ],
  "last_kind": "quran"
 }
