@@ -3929,6 +3929,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790769260.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790769260.png"
    }
+  },
+  "noor-seerah-27-r3": {
+   "title": "سلسلة السيرة النبوية (28/47): خالد بن الوليد: سيف الله المسلول —…",
+   "fingerprint": "553e6609467bde67",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 28.2,
+   "at": "2026-09-30 12:56",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790772967.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790772967.png"
+   }
   }
  },
  "fingerprints": [
@@ -4290,7 +4301,8 @@
   "76ab6931c1f2cc33",
   "4f35c87f5eb91c6a",
   "27c46490ab941d54",
-  "dd08335497ef0dd5"
+  "dd08335497ef0dd5",
+  "553e6609467bde67"
  ],
  "last_kind": "seerah"
 }
