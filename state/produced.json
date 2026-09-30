@@ -3841,6 +3841,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790739520.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790739520.png"
    }
+  },
+  "noor-seerah-19-r3": {
+   "title": "سلسلة السيرة النبوية (20/47): كان أجود الناس وأجود ما يكون في رم…",
+   "fingerprint": "6312492db8969030",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 22.67,
+   "at": "2026-09-30 04:40",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790743242.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790743242.png"
+   }
   }
  },
  "fingerprints": [
@@ -4194,7 +4205,8 @@
   "cba52cd635a93107",
   "c10a248b5e081776",
   "acb971321c17b617",
-  "bcefdbb8eda7edb0"
+  "bcefdbb8eda7edb0",
+  "6312492db8969030"
  ],
- "last_kind": "dua"
+ "last_kind": "seerah"
 }
