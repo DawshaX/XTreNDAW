@@ -3830,6 +3830,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790735817.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790735817.png"
    }
+  },
+  "noor-dua-174-r3": {
+   "title": "دعاء: أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَ…",
+   "fingerprint": "bcefdbb8eda7edb0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 24.0,
+   "at": "2026-09-30 03:38",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790739520.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790739520.png"
+   }
   }
  },
  "fingerprints": [
@@ -4182,7 +4193,8 @@
   "70155a3c285d0607",
   "cba52cd635a93107",
   "c10a248b5e081776",
-  "acb971321c17b617"
+  "acb971321c17b617",
+  "bcefdbb8eda7edb0"
  ],
  "last_kind": "dua"
 }
