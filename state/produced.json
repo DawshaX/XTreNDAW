@@ -3984,6 +3984,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790788329.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790788329.png"
    }
+  },
+  "noor-quran-s007-89-r8": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الأَعۡرَافِ ﴿89–90﴾ — علي الحذيفي",
+   "fingerprint": "d3f8e9e0282ddef5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs007-89-hudhaify.mp4",
+   "duration": 86.72,
+   "at": "2026-09-30 18:16",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790792176.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790792176.png"
+   }
   }
  },
  "fingerprints": [
@@ -4350,7 +4361,8 @@
   "b0dbf4fffa920e1a",
   "b5dca531a7184a87",
   "5748b16d5408021f",
-  "6ffe3628475f1c87"
+  "6ffe3628475f1c87",
+  "d3f8e9e0282ddef5"
  ],
  "last_kind": "quran"
 }
