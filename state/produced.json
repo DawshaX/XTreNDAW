@@ -3940,6 +3940,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790772967.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790772967.png"
    }
+  },
+  "noor-seerah-28-r3": {
+   "title": "سلسلة السيرة النبوية (29/47): عمر بن الخطاب: كان من أشد الناس عل…",
+   "fingerprint": "b0dbf4fffa920e1a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 29.5,
+   "at": "2026-09-30 13:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790776711.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790776711.png"
+   }
   }
  },
  "fingerprints": [
@@ -4302,7 +4313,8 @@
   "4f35c87f5eb91c6a",
   "27c46490ab941d54",
   "dd08335497ef0dd5",
-  "553e6609467bde67"
+  "553e6609467bde67",
+  "b0dbf4fffa920e1a"
  ],
  "last_kind": "seerah"
 }
