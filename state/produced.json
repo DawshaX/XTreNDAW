@@ -3918,6 +3918,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790765535.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790765535.png"
    }
+  },
+  "noor-seerah-26-r3": {
+   "title": "سلسلة السيرة النبوية (27/47): سمية بنت خياط: أول شهيدة في الإسلا…",
+   "fingerprint": "dd08335497ef0dd5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 28.17,
+   "at": "2026-09-30 11:54",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790769260.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790769260.png"
+   }
   }
  },
  "fingerprints": [
@@ -4278,7 +4289,8 @@
   "947ddad281b37fe0",
   "76ab6931c1f2cc33",
   "4f35c87f5eb91c6a",
-  "27c46490ab941d54"
+  "27c46490ab941d54",
+  "dd08335497ef0dd5"
  ],
  "last_kind": "seerah"
 }
