@@ -234,3 +234,7 @@ https://videos.pexels.com/video-files/6047752/6047752-hd_720_1280_30fps.mp4
 https://videos.pexels.com/video-files/39747233/16952452_720_1280_50fps.mp4
 https://videos.pexels.com/video-files/37994822/16123446_1440_2560_30fps.mp4
 https://videos.pexels.com/video-files/37994822/16123445_1080_1920_30fps.mp4
+https://videos.pexels.com/video-files/39145684/16657951_1440_2560_60fps.mp4
+https://videos.pexels.com/video-files/39145679/16657960_2160_3840_60fps.mp4
+https://videos.pexels.com/video-files/19168219/19168219-hd_1080_1920_60fps.mp4
+https://videos.pexels.com/video-files/37994822/16123444_720_1280_30fps.mp4

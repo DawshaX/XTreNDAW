@@ -3885,6 +3885,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790754379.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790754379.png"
    }
+  },
+  "noor-seerah-23-r3": {
+   "title": "سلسلة السيرة النبوية (24/47): مات ﷺ سنة إحدى عشرة وقد ترك فينا ك…",
+   "fingerprint": "76ab6931c1f2cc33",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 25.43,
+   "at": "2026-09-30 08:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790758114.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790758114.png"
+   }
   }
  },
  "fingerprints": [
@@ -4242,7 +4253,8 @@
   "6312492db8969030",
   "124ea8352a482f3c",
   "4446508db307ed28",
-  "947ddad281b37fe0"
+  "947ddad281b37fe0",
+  "76ab6931c1f2cc33"
  ],
  "last_kind": "seerah"
 }
