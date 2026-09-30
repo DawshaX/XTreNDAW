@@ -3907,6 +3907,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790761810.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790761810.png"
    }
+  },
+  "noor-seerah-25-r3": {
+   "title": "سلسلة السيرة النبوية (26/47): مصعب بن عمير: أغنى شباب مكة وأجمله…",
+   "fingerprint": "27c46490ab941d54",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 31.87,
+   "at": "2026-09-30 10:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790765535.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790765535.png"
+   }
   }
  },
  "fingerprints": [
@@ -4266,7 +4277,8 @@
   "4446508db307ed28",
   "947ddad281b37fe0",
   "76ab6931c1f2cc33",
-  "4f35c87f5eb91c6a"
+  "4f35c87f5eb91c6a",
+  "27c46490ab941d54"
  ],
  "last_kind": "seerah"
 }
