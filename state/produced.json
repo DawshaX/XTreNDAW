@@ -3896,6 +3896,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790758114.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790758114.png"
    }
+  },
+  "noor-seerah-24-r3": {
+   "title": "سلسلة السيرة النبوية (25/47): بلال بن رباح: كان يُعذَّب تحت صخرة…",
+   "fingerprint": "4f35c87f5eb91c6a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 31.2,
+   "at": "2026-09-30 09:50",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790761810.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790761810.png"
+   }
   }
  },
  "fingerprints": [
@@ -4254,7 +4265,8 @@
   "124ea8352a482f3c",
   "4446508db307ed28",
   "947ddad281b37fe0",
-  "76ab6931c1f2cc33"
+  "76ab6931c1f2cc33",
+  "4f35c87f5eb91c6a"
  ],
  "last_kind": "seerah"
 }
