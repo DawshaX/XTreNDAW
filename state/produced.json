@@ -4204,6 +4204,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790863137.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790863137.png"
    }
+  },
+  "noor-seerah-46-r3": {
+   "title": "سلسلة السيرة النبوية (47/47): حفصة بنت عمر: أم المؤمنين التي حُف…",
+   "fingerprint": "35dcb5ddc91ff9b0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 25.57,
+   "at": "2026-10-01 15:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790866844.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790866844.png"
+   }
   }
  },
  "fingerprints": [
@@ -4590,7 +4601,8 @@
   "8d49ed0a94aa8a9b",
   "50f23850aa2913f7",
   "8bb92c78b68e7c7b",
-  "264d2820dcee2956"
+  "264d2820dcee2956",
+  "35dcb5ddc91ff9b0"
  ],
  "last_kind": "seerah"
 }
