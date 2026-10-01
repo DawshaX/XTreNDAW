@@ -4105,6 +4105,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790829565.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790829565.png"
    }
+  },
+  "noor-seerah-37-r3": {
+   "title": "سلسلة السيرة النبوية (38/47): نسيبة بنت كعب: يوم أحد كانت تقي ال…",
+   "fingerprint": "f5e38d02dbad5a37",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 28.03,
+   "at": "2026-10-01 05:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790833276.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790833276.png"
+   }
   }
  },
  "fingerprints": [
@@ -4482,7 +4493,8 @@
   "0237757b3ed20624",
   "d8cb309550d9ead5",
   "cf16228de601ac5b",
-  "317b3258361b98ea"
+  "317b3258361b98ea",
+  "f5e38d02dbad5a37"
  ],
  "last_kind": "seerah"
 }
