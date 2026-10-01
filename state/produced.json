@@ -4116,6 +4116,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790833276.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790833276.png"
    }
+  },
+  "noor-seerah-38-r3": {
+   "title": "سلسلة السيرة النبوية (39/47): أسامة بن زيد: قاد جيش المسلمين وعم…",
+   "fingerprint": "7d46526bfbbe0b88",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 25.9,
+   "at": "2026-10-01 06:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790836979.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790836979.png"
+   }
   }
  },
  "fingerprints": [
@@ -4494,7 +4505,8 @@
   "d8cb309550d9ead5",
   "cf16228de601ac5b",
   "317b3258361b98ea",
-  "f5e38d02dbad5a37"
+  "f5e38d02dbad5a37",
+  "7d46526bfbbe0b88"
  ],
  "last_kind": "seerah"
 }
