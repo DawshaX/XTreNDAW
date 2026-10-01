@@ -4215,6 +4215,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790866844.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790866844.png"
    }
+  },
+  "noor-quran-s076-29-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الإِنسَانِ ﴿29–31﴾ — علي الحذيفي",
+   "fingerprint": "617fa7bf2d1deec6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs076-29-hudhaify.mp4",
+   "duration": 74.3,
+   "at": "2026-10-01 16:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790870669.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790870669.png"
+   }
   }
  },
  "fingerprints": [
@@ -4602,7 +4613,8 @@
   "50f23850aa2913f7",
   "8bb92c78b68e7c7b",
   "264d2820dcee2956",
-  "35dcb5ddc91ff9b0"
+  "35dcb5ddc91ff9b0",
+  "617fa7bf2d1deec6"
  ],
- "last_kind": "seerah"
+ "last_kind": "quran"
 }
