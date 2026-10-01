@@ -4061,6 +4061,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790814767.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790814767.png"
    }
+  },
+  "noor-seerah-33-r3": {
+   "title": "سلسلة السيرة النبوية (34/47): أنس بن مالك: خدم النبي ﷺ عشر سنين …",
+   "fingerprint": "0237757b3ed20624",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 25.97,
+   "at": "2026-10-01 01:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790818479.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790818479.png"
+   }
   }
  },
  "fingerprints": [
@@ -4434,7 +4445,8 @@
   "354e6517749b1949",
   "ffa45cf6e685c561",
   "20cffcd50bd7aa7d",
-  "d356d893e784105d"
+  "d356d893e784105d",
+  "0237757b3ed20624"
  ],
  "last_kind": "seerah"
 }
