@@ -4083,6 +4083,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790822181.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790822181.png"
    }
+  },
+  "noor-seerah-35-r3": {
+   "title": "سلسلة السيرة النبوية (36/47): جعفر بن أبي طالب: قُطعت يداه في مؤ…",
+   "fingerprint": "cf16228de601ac5b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 29.03,
+   "at": "2026-10-01 03:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790825869.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790825869.png"
+   }
   }
  },
  "fingerprints": [
@@ -4458,7 +4469,8 @@
   "20cffcd50bd7aa7d",
   "d356d893e784105d",
   "0237757b3ed20624",
-  "d8cb309550d9ead5"
+  "d8cb309550d9ead5",
+  "cf16228de601ac5b"
  ],
  "last_kind": "seerah"
 }
