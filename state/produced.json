@@ -4193,6 +4193,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790859439.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790859439.png"
    }
+  },
+  "noor-seerah-45-r3": {
+   "title": "سلسلة السيرة النبوية (46/47): أسماء بنت أبي بكر: ذات النطاقين، ح…",
+   "fingerprint": "264d2820dcee2956",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 27.2,
+   "at": "2026-10-01 13:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790863137.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790863137.png"
+   }
   }
  },
  "fingerprints": [
@@ -4578,7 +4589,8 @@
   "713f1b8cfd248dcd",
   "8d49ed0a94aa8a9b",
   "50f23850aa2913f7",
-  "8bb92c78b68e7c7b"
+  "8bb92c78b68e7c7b",
+  "264d2820dcee2956"
  ],
  "last_kind": "seerah"
 }
