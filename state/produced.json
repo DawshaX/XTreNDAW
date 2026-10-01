@@ -4050,6 +4050,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790811068.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790811068.png"
    }
+  },
+  "noor-seerah-32-r3": {
+   "title": "سلسلة السيرة النبوية (33/47): عمار بن ياسر: عُذّب هو وأبوه وأمه،…",
+   "fingerprint": "d356d893e784105d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 29.83,
+   "at": "2026-10-01 00:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790814767.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790814767.png"
+   }
   }
  },
  "fingerprints": [
@@ -4422,7 +4433,8 @@
   "d7f08e58b3b718f1",
   "354e6517749b1949",
   "ffa45cf6e685c561",
-  "20cffcd50bd7aa7d"
+  "20cffcd50bd7aa7d",
+  "d356d893e784105d"
  ],
  "last_kind": "seerah"
 }
