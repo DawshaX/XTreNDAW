@@ -4094,6 +4094,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790825869.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790825869.png"
    }
+  },
+  "noor-seerah-36-r3": {
+   "title": "سلسلة السيرة النبوية (37/47): أم سليم: خطبها أبو طلحة وهو كافر ف…",
+   "fingerprint": "317b3258361b98ea",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 32.1,
+   "at": "2026-10-01 04:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790829565.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790829565.png"
+   }
   }
  },
  "fingerprints": [
@@ -4470,7 +4481,8 @@
   "d356d893e784105d",
   "0237757b3ed20624",
   "d8cb309550d9ead5",
-  "cf16228de601ac5b"
+  "cf16228de601ac5b",
+  "317b3258361b98ea"
  ],
  "last_kind": "seerah"
 }
