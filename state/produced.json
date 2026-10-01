@@ -4171,6 +4171,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790852027.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790852027.png"
    }
+  },
+  "noor-seerah-43-r3": {
+   "title": "سلسلة السيرة النبوية (44/47): عائشة الصديقة: أفقه نساء الأمة، نز…",
+   "fingerprint": "50f23850aa2913f7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 26.33,
+   "at": "2026-10-01 11:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790855732.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790855732.png"
+   }
   }
  },
  "fingerprints": [
@@ -4554,7 +4565,8 @@
   "64614ce8858a145a",
   "745fc9a9cd59b63b",
   "713f1b8cfd248dcd",
-  "8d49ed0a94aa8a9b"
+  "8d49ed0a94aa8a9b",
+  "50f23850aa2913f7"
  ],
  "last_kind": "seerah"
 }
