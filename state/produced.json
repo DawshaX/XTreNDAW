@@ -4270,6 +4270,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790886247.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790886247.png"
    }
+  },
+  "noor-hisn-3-r3": {
+   "title": "سلسلة حصن المسلم (4/60): اللهم أنت ربي لا إله إلا أنت، خلقت…",
+   "fingerprint": "c2949c25827123a9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 25.7,
+   "at": "2026-10-01 21:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790889963.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790889963.png"
+   }
   }
  },
  "fingerprints": [
@@ -4662,7 +4673,8 @@
   "2a5d7b0f6d193250",
   "db76b90394194655",
   "4f9b6447314c133f",
-  "9712d4c14ada6525"
+  "9712d4c14ada6525",
+  "c2949c25827123a9"
  ],
- "last_kind": "quran"
+ "last_kind": "hisn"
 }
