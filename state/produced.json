@@ -4072,6 +4072,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790818479.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790818479.png"
    }
+  },
+  "noor-seerah-34-r3": {
+   "title": "سلسلة السيرة النبوية (35/47): زيد بن حارثة: الصحابي الوحيد الذي …",
+   "fingerprint": "d8cb309550d9ead5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 29.0,
+   "at": "2026-10-01 02:36",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790822181.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790822181.png"
+   }
   }
  },
  "fingerprints": [
@@ -4446,7 +4457,8 @@
   "ffa45cf6e685c561",
   "20cffcd50bd7aa7d",
   "d356d893e784105d",
-  "0237757b3ed20624"
+  "0237757b3ed20624",
+  "d8cb309550d9ead5"
  ],
  "last_kind": "seerah"
 }
