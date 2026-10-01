@@ -4138,6 +4138,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790840777.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790840777.png"
    }
+  },
+  "noor-seerah-40-r3": {
+   "title": "سلسلة السيرة النبوية (41/47): فاطمة الزهراء: بضعة النبي ﷺ، سيدة …",
+   "fingerprint": "745fc9a9cd59b63b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 25.97,
+   "at": "2026-10-01 08:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790844569.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790844569.png"
+   }
   }
  },
  "fingerprints": [
@@ -4518,7 +4529,8 @@
   "317b3258361b98ea",
   "f5e38d02dbad5a37",
   "7d46526bfbbe0b88",
-  "64614ce8858a145a"
+  "64614ce8858a145a",
+  "745fc9a9cd59b63b"
  ],
  "last_kind": "seerah"
 }
