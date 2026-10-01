@@ -4281,6 +4281,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790889963.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790889963.png"
    }
+  },
+  "noor-hisn-4-r3": {
+   "title": "سلسلة حصن المسلم (5/60): رضيت بالله ربًا، وبالإسلام دينًا، …",
+   "fingerprint": "49b98ebdeab4d2c6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 26.2,
+   "at": "2026-10-01 22:28",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790893694.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790893694.png"
+   }
   }
  },
  "fingerprints": [
@@ -4674,7 +4685,8 @@
   "db76b90394194655",
   "4f9b6447314c133f",
   "9712d4c14ada6525",
-  "c2949c25827123a9"
+  "c2949c25827123a9",
+  "49b98ebdeab4d2c6"
  ],
  "last_kind": "hisn"
 }
