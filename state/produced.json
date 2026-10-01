@@ -4149,6 +4149,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790844569.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790844569.png"
    }
+  },
+  "noor-seerah-41-r3": {
+   "title": "سلسلة السيرة النبوية (42/47): مريم بنت عمران: «وصدّقت بكلمات ربه…",
+   "fingerprint": "713f1b8cfd248dcd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-seerah-3.mp4",
+   "duration": 26.5,
+   "at": "2026-10-01 09:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790848299.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790848299.png"
+   }
   }
  },
  "fingerprints": [
@@ -4530,7 +4541,8 @@
   "f5e38d02dbad5a37",
   "7d46526bfbbe0b88",
   "64614ce8858a145a",
-  "745fc9a9cd59b63b"
+  "745fc9a9cd59b63b",
+  "713f1b8cfd248dcd"
  ],
  "last_kind": "seerah"
 }
