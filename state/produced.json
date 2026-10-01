@@ -4292,6 +4292,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790893694.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790893694.png"
    }
+  },
+  "noor-hisn-5-r3": {
+   "title": "سلسلة حصن المسلم (6/60): اللهم إني أصبحت أشهدك وأشهد حملة ع…",
+   "fingerprint": "a74eed0c8a613d59",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 28.7,
+   "at": "2026-10-01 23:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790897430.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790897430.png"
+   }
   }
  },
  "fingerprints": [
@@ -4686,7 +4697,8 @@
   "4f9b6447314c133f",
   "9712d4c14ada6525",
   "c2949c25827123a9",
-  "49b98ebdeab4d2c6"
+  "49b98ebdeab4d2c6",
+  "a74eed0c8a613d59"
  ],
  "last_kind": "hisn"
 }
