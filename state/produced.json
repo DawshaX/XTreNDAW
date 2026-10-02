@@ -4424,6 +4424,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790938263.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790938263.png"
    }
+  },
+  "noor-hisn-17-r3": {
+   "title": "سلسلة حصن المسلم (18/60): اللهم إني أسألك علمًا نافعًا ورزقً…",
+   "fingerprint": "8e04a0c98b09dedc",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 25.2,
+   "at": "2026-10-02 11:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790941955.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790941955.png"
+   }
   }
  },
  "fingerprints": [
@@ -4830,7 +4841,8 @@
   "13a10a7d4b660ecd",
   "4fbdc78c6bb6be2e",
   "0e72d89ac4a04267",
-  "440e412f37dfee8d"
+  "440e412f37dfee8d",
+  "8e04a0c98b09dedc"
  ],
  "last_kind": "hisn"
 }
