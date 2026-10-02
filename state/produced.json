@@ -4380,6 +4380,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790923432.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790923432.png"
    }
+  },
+  "noor-hisn-13-r3": {
+   "title": "سلسلة حصن المسلم (14/60): لا إله إلا الله وحده لا شريك له، ل…",
+   "fingerprint": "13a10a7d4b660ecd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 26.73,
+   "at": "2026-10-02 07:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790927162.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790927162.png"
+   }
   }
  },
  "fingerprints": [
@@ -4782,7 +4793,8 @@
   "6146e4b37da589ff",
   "c62c420171b9d616",
   "915955914c8a9f5a",
-  "f02830989326b924"
+  "f02830989326b924",
+  "13a10a7d4b660ecd"
  ],
  "last_kind": "hisn"
 }
