@@ -4325,6 +4325,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790904849.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790904849.png"
    }
+  },
+  "noor-hisn-8-r3": {
+   "title": "سلسلة حصن المسلم (9/60): بسم الله الذي لا يضر مع اسمه شيء ف…",
+   "fingerprint": "6854a890c72018c9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 25.77,
+   "at": "2026-10-02 02:36",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790908595.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790908595.png"
+   }
   }
  },
  "fingerprints": [
@@ -4722,7 +4733,8 @@
   "49b98ebdeab4d2c6",
   "a74eed0c8a613d59",
   "332174c25d40c425",
-  "015cfbd9a2124d11"
+  "015cfbd9a2124d11",
+  "6854a890c72018c9"
  ],
  "last_kind": "hisn"
 }
