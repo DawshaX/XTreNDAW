@@ -4490,6 +4490,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790968109.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790968109.png"
    }
+  },
+  "noor-quran-s005-9-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ المَائـِدَةِ ﴿9–11﴾ — أبو بكر الشاطري",
+   "fingerprint": "f7d04edfa3660c2b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs005-9-shaatree.mp4",
+   "duration": 71.25,
+   "at": "2026-10-02 20:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790971879.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790971879.png"
+   }
   }
  },
  "fingerprints": [
@@ -4902,7 +4913,8 @@
   "b860c72a52d7f97b",
   "a361fb1e8ca30297",
   "70244c1c8752bddc",
-  "8b1f596df45bb67b"
+  "8b1f596df45bb67b",
+  "f7d04edfa3660c2b"
  ],
  "last_kind": "quran"
 }
