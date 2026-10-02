@@ -4523,6 +4523,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790979363.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790979363.png"
    }
+  },
+  "noor-ruqyah-r114-1-r3": {
+   "title": "سلسلة الرقية الشرعية (9/10): سُورَةُ النَّاسِ ﴿1–6﴾ — عبدالرحمن السديس",
+   "fingerprint": "105f803b2ec35732",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-rr114-1-abdurrahmaansudais.mp4",
+   "duration": 50.7,
+   "at": "2026-10-02 23:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790983118.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790983118.png"
+   }
   }
  },
  "fingerprints": [
@@ -4938,7 +4949,8 @@
   "8b1f596df45bb67b",
   "f7d04edfa3660c2b",
   "1a80706ffb67d9ce",
-  "db5806b8d71f6d26"
+  "db5806b8d71f6d26",
+  "105f803b2ec35732"
  ],
  "last_kind": "ruqyah"
 }
