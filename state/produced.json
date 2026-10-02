@@ -4468,6 +4468,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790960542.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790960542.png"
    }
+  },
+  "noor-quran-s079-13-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ النَّازِعَاتِ ﴿13–16﴾ — أيمن سويد",
+   "fingerprint": "70244c1c8752bddc",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs079-13-aymanswoaid.mp4",
+   "duration": 48.54,
+   "at": "2026-10-02 18:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790964292.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790964292.png"
+   }
   }
  },
  "fingerprints": [
@@ -4878,7 +4889,8 @@
   "8e04a0c98b09dedc",
   "94b29c7d30cb54c4",
   "b860c72a52d7f97b",
-  "a361fb1e8ca30297"
+  "a361fb1e8ca30297",
+  "70244c1c8752bddc"
  ],
  "last_kind": "quran"
 }
