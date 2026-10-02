@@ -4457,6 +4457,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790949526.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790949526.png"
    }
+  },
+  "noor-quran-s015-37-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الحِجۡرِ ﴿37–40﴾ — أبو بكر الشاطري",
+   "fingerprint": "a361fb1e8ca30297",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs015-37-shaatree.mp4",
+   "duration": 60.47,
+   "at": "2026-10-02 17:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790960542.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790960542.png"
+   }
   }
  },
  "fingerprints": [
@@ -4866,7 +4877,8 @@
   "440e412f37dfee8d",
   "8e04a0c98b09dedc",
   "94b29c7d30cb54c4",
-  "b860c72a52d7f97b"
+  "b860c72a52d7f97b",
+  "a361fb1e8ca30297"
  ],
- "last_kind": "ruqyah"
+ "last_kind": "quran"
 }
