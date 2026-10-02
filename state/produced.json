@@ -4347,6 +4347,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790912281.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790912281.png"
    }
+  },
+  "noor-hisn-10-r3": {
+   "title": "سلسلة حصن المسلم (11/60): يا حي يا قيوم برحمتك أستغيث، أصلح …",
+   "fingerprint": "c62c420171b9d616",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 25.43,
+   "at": "2026-10-02 04:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790915992.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790915992.png"
+   }
   }
  },
  "fingerprints": [
@@ -4746,7 +4757,8 @@
   "332174c25d40c425",
   "015cfbd9a2124d11",
   "6854a890c72018c9",
-  "6146e4b37da589ff"
+  "6146e4b37da589ff",
+  "c62c420171b9d616"
  ],
  "last_kind": "hisn"
 }
