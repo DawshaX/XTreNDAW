@@ -4413,6 +4413,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790934550.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790934550.png"
    }
+  },
+  "noor-hisn-16-r3": {
+   "title": "سلسلة حصن المسلم (17/60): أعوذ بكلمات الله التامات من شر ما …",
+   "fingerprint": "440e412f37dfee8d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 22.93,
+   "at": "2026-10-02 10:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790938263.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790938263.png"
+   }
   }
  },
  "fingerprints": [
@@ -4818,7 +4829,8 @@
   "f02830989326b924",
   "13a10a7d4b660ecd",
   "4fbdc78c6bb6be2e",
-  "0e72d89ac4a04267"
+  "0e72d89ac4a04267",
+  "440e412f37dfee8d"
  ],
  "last_kind": "hisn"
 }
