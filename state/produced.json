@@ -4501,6 +4501,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790971879.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790971879.png"
    }
+  },
+  "noor-ruqyah-r112-1-r3": {
+   "title": "سلسلة الرقية الشرعية (7/10): سُورَةُ الإِخۡلَاصِ ﴿1–4﴾ — عبدالرحمن السديس",
+   "fingerprint": "1a80706ffb67d9ce",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-rr112-1-abdurrahmaansudais.mp4",
+   "duration": 36.83,
+   "at": "2026-10-02 21:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790975600.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790975600.png"
+   }
   }
  },
  "fingerprints": [
@@ -4914,7 +4925,8 @@
   "a361fb1e8ca30297",
   "70244c1c8752bddc",
   "8b1f596df45bb67b",
-  "f7d04edfa3660c2b"
+  "f7d04edfa3660c2b",
+  "1a80706ffb67d9ce"
  ],
- "last_kind": "quran"
+ "last_kind": "ruqyah"
 }
