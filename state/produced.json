@@ -4479,6 +4479,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790964292.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790964292.png"
    }
+  },
+  "noor-quran-s006-145-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الأَنۡعَامِ ﴿145–145﴾ — علي الحذيفي",
+   "fingerprint": "8b1f596df45bb67b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs006-145-hudhaify.mp4",
+   "duration": 85.34,
+   "at": "2026-10-02 19:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790968109.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790968109.png"
+   }
   }
  },
  "fingerprints": [
@@ -4890,7 +4901,8 @@
   "94b29c7d30cb54c4",
   "b860c72a52d7f97b",
   "a361fb1e8ca30297",
-  "70244c1c8752bddc"
+  "70244c1c8752bddc",
+  "8b1f596df45bb67b"
  ],
  "last_kind": "quran"
 }
