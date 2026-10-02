@@ -4435,6 +4435,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790941955.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790941955.png"
    }
+  },
+  "noor-ruqyah-r017-82-r3": {
+   "title": "سلسلة الرقية الشرعية (5/10): سُورَةُ الإِسۡرَاءِ ﴿82–82﴾ — عبدالرحمن السديس",
+   "fingerprint": "94b29c7d30cb54c4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-rr017-82-abdurrahmaansudais.mp4",
+   "duration": 39.47,
+   "at": "2026-10-02 12:54",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790945659.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790945659.png"
+   }
   }
  },
  "fingerprints": [
@@ -4842,7 +4853,8 @@
   "4fbdc78c6bb6be2e",
   "0e72d89ac4a04267",
   "440e412f37dfee8d",
-  "8e04a0c98b09dedc"
+  "8e04a0c98b09dedc",
+  "94b29c7d30cb54c4"
  ],
- "last_kind": "hisn"
+ "last_kind": "ruqyah"
 }
