@@ -4303,6 +4303,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790897430.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790897430.png"
    }
+  },
+  "noor-hisn-6-r3": {
+   "title": "سلسلة حصن المسلم (7/60): اللهم عافني في بدني، اللهم عافني ف…",
+   "fingerprint": "332174c25d40c425",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 24.7,
+   "at": "2026-10-02 00:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790901138.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790901138.png"
+   }
   }
  },
  "fingerprints": [
@@ -4698,7 +4709,8 @@
   "9712d4c14ada6525",
   "c2949c25827123a9",
   "49b98ebdeab4d2c6",
-  "a74eed0c8a613d59"
+  "a74eed0c8a613d59",
+  "332174c25d40c425"
  ],
  "last_kind": "hisn"
 }
