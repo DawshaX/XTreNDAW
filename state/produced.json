@@ -4358,6 +4358,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790915992.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790915992.png"
    }
+  },
+  "noor-hisn-11-r3": {
+   "title": "سلسلة حصن المسلم (12/60): سبحان الله وبحمده، عدد خلقه ورضا ن…",
+   "fingerprint": "915955914c8a9f5a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 25.07,
+   "at": "2026-10-02 05:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790919693.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790919693.png"
+   }
   }
  },
  "fingerprints": [
@@ -4758,7 +4769,8 @@
   "015cfbd9a2124d11",
   "6854a890c72018c9",
   "6146e4b37da589ff",
-  "c62c420171b9d616"
+  "c62c420171b9d616",
+  "915955914c8a9f5a"
  ],
  "last_kind": "hisn"
 }
