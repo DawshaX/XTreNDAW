@@ -4446,6 +4446,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790945659.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790945659.png"
    }
+  },
+  "noor-ruqyah-r059-21-r3": {
+   "title": "سلسلة الرقية الشرعية (6/10): سُورَةُ الحَشۡرِ ﴿21–23﴾ — عبدالرحمن السديس",
+   "fingerprint": "b860c72a52d7f97b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-rr059-21-abdurrahmaansudais.mp4",
+   "duration": 79.7,
+   "at": "2026-10-02 13:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790949526.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790949526.png"
+   }
   }
  },
  "fingerprints": [
@@ -4854,7 +4865,8 @@
   "0e72d89ac4a04267",
   "440e412f37dfee8d",
   "8e04a0c98b09dedc",
-  "94b29c7d30cb54c4"
+  "94b29c7d30cb54c4",
+  "b860c72a52d7f97b"
  ],
  "last_kind": "ruqyah"
 }
