@@ -4314,6 +4314,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790901138.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790901138.png"
    }
+  },
+  "noor-hisn-7-r3": {
+   "title": "سلسلة حصن المسلم (8/60): حسبي الله لا إله إلا هو، عليه توكل…",
+   "fingerprint": "015cfbd9a2124d11",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 24.1,
+   "at": "2026-10-02 01:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790904849.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790904849.png"
+   }
   }
  },
  "fingerprints": [
@@ -4710,7 +4721,8 @@
   "c2949c25827123a9",
   "49b98ebdeab4d2c6",
   "a74eed0c8a613d59",
-  "332174c25d40c425"
+  "332174c25d40c425",
+  "015cfbd9a2124d11"
  ],
  "last_kind": "hisn"
 }
