@@ -4369,6 +4369,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790919693.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790919693.png"
    }
+  },
+  "noor-hisn-12-r3": {
+   "title": "سلسلة حصن المسلم (13/60): اللهم إني أعوذ بك من الهم والحزن، …",
+   "fingerprint": "f02830989326b924",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 26.07,
+   "at": "2026-10-02 06:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790923432.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790923432.png"
+   }
   }
  },
  "fingerprints": [
@@ -4770,7 +4781,8 @@
   "6854a890c72018c9",
   "6146e4b37da589ff",
   "c62c420171b9d616",
-  "915955914c8a9f5a"
+  "915955914c8a9f5a",
+  "f02830989326b924"
  ],
  "last_kind": "hisn"
 }
