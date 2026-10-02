@@ -4391,6 +4391,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790927162.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790927162.png"
    }
+  },
+  "noor-hisn-14-r3": {
+   "title": "سلسلة حصن المسلم (15/60): أستغفر الله وأتوب إليه.…",
+   "fingerprint": "4fbdc78c6bb6be2e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 20.1,
+   "at": "2026-10-02 08:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790930861.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790930861.png"
+   }
   }
  },
  "fingerprints": [
@@ -4794,7 +4805,8 @@
   "c62c420171b9d616",
   "915955914c8a9f5a",
   "f02830989326b924",
-  "13a10a7d4b660ecd"
+  "13a10a7d4b660ecd",
+  "4fbdc78c6bb6be2e"
  ],
  "last_kind": "hisn"
 }
