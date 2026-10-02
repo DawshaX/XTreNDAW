@@ -4402,6 +4402,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790930861.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790930861.png"
    }
+  },
+  "noor-hisn-15-r3": {
+   "title": "سلسلة حصن المسلم (16/60): اللهم صل وسلم على نبينا محمد.…",
+   "fingerprint": "0e72d89ac4a04267",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 20.97,
+   "at": "2026-10-02 09:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790934550.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790934550.png"
+   }
   }
  },
  "fingerprints": [
@@ -4806,7 +4817,8 @@
   "915955914c8a9f5a",
   "f02830989326b924",
   "13a10a7d4b660ecd",
-  "4fbdc78c6bb6be2e"
+  "4fbdc78c6bb6be2e",
+  "0e72d89ac4a04267"
  ],
  "last_kind": "hisn"
 }
