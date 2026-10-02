@@ -4336,6 +4336,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790908595.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790908595.png"
    }
+  },
+  "noor-hisn-9-r3": {
+   "title": "سلسلة حصن المسلم (10/60): اللهم إني أسألك العفو والعافية في …",
+   "fingerprint": "6146e4b37da589ff",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 23.17,
+   "at": "2026-10-02 03:38",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790912281.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790912281.png"
+   }
   }
  },
  "fingerprints": [
@@ -4734,7 +4745,8 @@
   "a74eed0c8a613d59",
   "332174c25d40c425",
   "015cfbd9a2124d11",
-  "6854a890c72018c9"
+  "6854a890c72018c9",
+  "6146e4b37da589ff"
  ],
  "last_kind": "hisn"
 }
