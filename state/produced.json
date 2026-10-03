@@ -4721,6 +4721,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791046116.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791046116.png"
    }
+  },
+  "noor-quran-s102-1-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ التَّكَاثُرِ ﴿1–8﴾ — أبو بكر الشاطري",
+   "fingerprint": "bbf0a6487236a134",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs102-1-shaatree.mp4",
+   "duration": 48.73,
+   "at": "2026-10-03 17:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791049873.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791049873.png"
+   }
   }
  },
  "fingerprints": [
@@ -5154,7 +5165,8 @@
   "3f687a3f458f451b",
   "95dd4247f732162a",
   "32dda24eb753f920",
-  "7d96eeaa845361a0"
+  "7d96eeaa845361a0",
+  "bbf0a6487236a134"
  ],
  "last_kind": "quran"
 }
