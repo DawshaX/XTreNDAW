@@ -4611,6 +4611,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791009035.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791009035.png"
    }
+  },
+  "noor-nawawi-12-r3": {
+   "title": "سلسلة الأربعين النووية (13/30): إن الله لا ينظر إلى صوركم وأموالكم…",
+   "fingerprint": "f25d966f5c799cbf",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 27.37,
+   "at": "2026-10-03 07:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791012751.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791012751.png"
+   }
   }
  },
  "fingerprints": [
@@ -5034,7 +5045,8 @@
   "41939f01f0c5a0da",
   "6da053988490473f",
   "98543d0c9d5289f4",
-  "5a90cd83118c2974"
+  "5a90cd83118c2974",
+  "f25d966f5c799cbf"
  ],
  "last_kind": "nawawi"
 }
