@@ -4567,6 +4567,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790994284.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790994284.png"
    }
+  },
+  "noor-nawawi-8-r3": {
+   "title": "سلسلة الأربعين النووية (9/30): الطهور شطر الإيمان، والحمد لله تمل…",
+   "fingerprint": "41939f01f0c5a0da",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 24.8,
+   "at": "2026-10-03 03:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790997972.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790997972.png"
+   }
   }
  },
  "fingerprints": [
@@ -4986,7 +4997,8 @@
   "105f803b2ec35732",
   "5b8e65be6e2d7755",
   "7694bbf95de79003",
-  "bb01e6c6417606d6"
+  "bb01e6c6417606d6",
+  "41939f01f0c5a0da"
  ],
  "last_kind": "nawawi"
 }
