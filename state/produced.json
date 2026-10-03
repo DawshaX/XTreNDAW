@@ -4666,6 +4666,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791027514.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791027514.png"
    }
+  },
+  "noor-nawawi-17-r3": {
+   "title": "سلسلة الأربعين النووية (18/30): لا ضرر ولا ضرار.…",
+   "fingerprint": "4ba685befbe5635f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 20.33,
+   "at": "2026-10-03 12:40",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791031199.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791031199.png"
+   }
   }
  },
  "fingerprints": [
@@ -5094,7 +5105,8 @@
   "bd1f958ca04e7569",
   "c4ba5529da2522d7",
   "4b01ca1a42bfcf89",
-  "fa4032b3c57eeb5f"
+  "fa4032b3c57eeb5f",
+  "4ba685befbe5635f"
  ],
  "last_kind": "nawawi"
 }
