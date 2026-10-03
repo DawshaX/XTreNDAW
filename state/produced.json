@@ -4688,6 +4688,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791034879.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791034879.png"
    }
+  },
+  "noor-quran-s007-117-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الأَعۡرَافِ ﴿117–120﴾ — أبو بكر الشاطري",
+   "fingerprint": "95dd4247f732162a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs007-117-shaatree.mp4",
+   "duration": 53.12,
+   "at": "2026-10-03 14:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791038624.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791038624.png"
+   }
   }
  },
  "fingerprints": [
@@ -5118,7 +5129,8 @@
   "4b01ca1a42bfcf89",
   "fa4032b3c57eeb5f",
   "4ba685befbe5635f",
-  "3f687a3f458f451b"
+  "3f687a3f458f451b",
+  "95dd4247f732162a"
  ],
- "last_kind": "nawawi"
+ "last_kind": "quran"
 }
