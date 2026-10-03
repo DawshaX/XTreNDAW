@@ -4545,6 +4545,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790986848.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790986848.png"
    }
+  },
+  "noor-nawawi-6-r3": {
+   "title": "سلسلة الأربعين النووية (7/30): لا تغضب — قالها ﷺ ثلاثًا لمن استوص…",
+   "fingerprint": "7694bbf95de79003",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 24.23,
+   "at": "2026-10-03 01:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790990547.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790990547.png"
+   }
   }
  },
  "fingerprints": [
@@ -4962,7 +4973,8 @@
   "1a80706ffb67d9ce",
   "db5806b8d71f6d26",
   "105f803b2ec35732",
-  "5b8e65be6e2d7755"
+  "5b8e65be6e2d7755",
+  "7694bbf95de79003"
  ],
- "last_kind": "ruqyah"
+ "last_kind": "nawawi"
 }
