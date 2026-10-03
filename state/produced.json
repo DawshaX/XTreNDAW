@@ -4644,6 +4644,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791020118.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791020118.png"
    }
+  },
+  "noor-nawawi-15-r3": {
+   "title": "سلسلة الأربعين النووية (16/30): كلمتان خفيفتان على اللسان ثقيلتان …",
+   "fingerprint": "4b01ca1a42bfcf89",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 26.03,
+   "at": "2026-10-03 10:36",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791023801.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791023801.png"
+   }
   }
  },
  "fingerprints": [
@@ -5070,7 +5081,8 @@
   "5a90cd83118c2974",
   "f25d966f5c799cbf",
   "bd1f958ca04e7569",
-  "c4ba5529da2522d7"
+  "c4ba5529da2522d7",
+  "4b01ca1a42bfcf89"
  ],
  "last_kind": "nawawi"
 }
