@@ -4677,6 +4677,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791031199.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791031199.png"
    }
+  },
+  "noor-nawawi-18-r3": {
+   "title": "سلسلة الأربعين النووية (19/30): الدين النصيحة — لله ولكتابه ولرسول…",
+   "fingerprint": "3f687a3f458f451b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 25.7,
+   "at": "2026-10-03 13:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791034879.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791034879.png"
+   }
   }
  },
  "fingerprints": [
@@ -5106,7 +5117,8 @@
   "c4ba5529da2522d7",
   "4b01ca1a42bfcf89",
   "fa4032b3c57eeb5f",
-  "4ba685befbe5635f"
+  "4ba685befbe5635f",
+  "3f687a3f458f451b"
  ],
  "last_kind": "nawawi"
 }
