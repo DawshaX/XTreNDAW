@@ -4589,6 +4589,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791001659.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791001659.png"
    }
+  },
+  "noor-nawawi-10-r3": {
+   "title": "سلسلة الأربعين النووية (11/30): لا يدخل الجنة من لا يأمن جارُه بوا…",
+   "fingerprint": "98543d0c9d5289f4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 22.7,
+   "at": "2026-10-03 05:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791005340.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791005340.png"
+   }
   }
  },
  "fingerprints": [
@@ -5010,7 +5021,8 @@
   "7694bbf95de79003",
   "bb01e6c6417606d6",
   "41939f01f0c5a0da",
-  "6da053988490473f"
+  "6da053988490473f",
+  "98543d0c9d5289f4"
  ],
  "last_kind": "nawawi"
 }
