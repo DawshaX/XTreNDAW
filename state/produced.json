@@ -4710,6 +4710,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791042349.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791042349.png"
    }
+  },
+  "noor-quran-s040-53-r8": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ غَافِرٍ ﴿53–55﴾ — علي الحذيفي",
+   "fingerprint": "7d96eeaa845361a0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs040-53-hudhaify.mp4",
+   "duration": 64.23,
+   "at": "2026-10-03 16:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791046116.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791046116.png"
+   }
   }
  },
  "fingerprints": [
@@ -5142,7 +5153,8 @@
   "4ba685befbe5635f",
   "3f687a3f458f451b",
   "95dd4247f732162a",
-  "32dda24eb753f920"
+  "32dda24eb753f920",
+  "7d96eeaa845361a0"
  ],
  "last_kind": "quran"
 }
