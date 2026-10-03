@@ -4633,6 +4633,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791016429.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791016429.png"
    }
+  },
+  "noor-nawawi-14-r3": {
+   "title": "سلسلة الأربعين النووية (15/30): من دعا إلى هدى كان له من الأجر مثل…",
+   "fingerprint": "c4ba5529da2522d7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 25.63,
+   "at": "2026-10-03 09:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791020118.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791020118.png"
+   }
   }
  },
  "fingerprints": [
@@ -5058,7 +5069,8 @@
   "98543d0c9d5289f4",
   "5a90cd83118c2974",
   "f25d966f5c799cbf",
-  "bd1f958ca04e7569"
+  "bd1f958ca04e7569",
+  "c4ba5529da2522d7"
  ],
  "last_kind": "nawawi"
 }
