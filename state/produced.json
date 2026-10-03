@@ -4655,6 +4655,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791023801.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791023801.png"
    }
+  },
+  "noor-nawawi-16-r3": {
+   "title": "سلسلة الأربعين النووية (17/30): العجماء جرحها جبار، والبئر جبار، و…",
+   "fingerprint": "fa4032b3c57eeb5f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 27.3,
+   "at": "2026-10-03 11:38",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791027514.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791027514.png"
+   }
   }
  },
  "fingerprints": [
@@ -5082,7 +5093,8 @@
   "f25d966f5c799cbf",
   "bd1f958ca04e7569",
   "c4ba5529da2522d7",
-  "4b01ca1a42bfcf89"
+  "4b01ca1a42bfcf89",
+  "fa4032b3c57eeb5f"
  ],
  "last_kind": "nawawi"
 }
