@@ -4600,6 +4600,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791005340.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791005340.png"
    }
+  },
+  "noor-nawawi-11-r3": {
+   "title": "سلسلة الأربعين النووية (12/30): من سلك طريقًا يلتمس فيه علمًا سهل …",
+   "fingerprint": "5a90cd83118c2974",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 25.67,
+   "at": "2026-10-03 06:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791009035.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791009035.png"
+   }
   }
  },
  "fingerprints": [
@@ -5022,7 +5033,8 @@
   "bb01e6c6417606d6",
   "41939f01f0c5a0da",
   "6da053988490473f",
-  "98543d0c9d5289f4"
+  "98543d0c9d5289f4",
+  "5a90cd83118c2974"
  ],
  "last_kind": "nawawi"
 }
