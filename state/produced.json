@@ -4534,6 +4534,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790983118.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790983118.png"
    }
+  },
+  "noor-ruqyah-r010-57-r3": {
+   "title": "سلسلة الرقية الشرعية (10/10): سُورَةُ يُونُسَ ﴿57–57﴾ — عبدالرحمن السديس",
+   "fingerprint": "5b8e65be6e2d7755",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-rr010-57-abdurrahmaansudais.mp4",
+   "duration": 43.37,
+   "at": "2026-10-03 00:20",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790986848.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790986848.png"
+   }
   }
  },
  "fingerprints": [
@@ -4950,7 +4961,8 @@
   "f7d04edfa3660c2b",
   "1a80706ffb67d9ce",
   "db5806b8d71f6d26",
-  "105f803b2ec35732"
+  "105f803b2ec35732",
+  "5b8e65be6e2d7755"
  ],
  "last_kind": "ruqyah"
 }
