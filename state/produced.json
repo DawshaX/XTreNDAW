@@ -4743,6 +4743,14 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791053655.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791053655.png"
    }
+  },
+  "noor-nawawi-19-r3": {
+   "title": "سلسلة الأربعين النووية (20/30): من أحدث في أمرنا هذا ما ليس منه فه…",
+   "fingerprint": "461586e1e37380d4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 22.87,
+   "at": "2026-10-03 21:57",
+   "urls": {}
   }
  },
  "fingerprints": [
@@ -5178,7 +5186,8 @@
   "32dda24eb753f920",
   "7d96eeaa845361a0",
   "bbf0a6487236a134",
-  "79dbfeea9b9bd87c"
+  "79dbfeea9b9bd87c",
+  "461586e1e37380d4"
  ],
  "last_kind": "quran"
 }
