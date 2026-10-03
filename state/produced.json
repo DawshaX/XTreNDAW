@@ -4556,6 +4556,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790990547.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790990547.png"
    }
+  },
+  "noor-nawawi-7-r3": {
+   "title": "سلسلة الأربعين النووية (8/30): اتق الله حيثما كنت، وأتبع السيئة ا…",
+   "fingerprint": "bb01e6c6417606d6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 27.93,
+   "at": "2026-10-03 02:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790994284.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790994284.png"
+   }
   }
  },
  "fingerprints": [
@@ -4974,7 +4985,8 @@
   "db5806b8d71f6d26",
   "105f803b2ec35732",
   "5b8e65be6e2d7755",
-  "7694bbf95de79003"
+  "7694bbf95de79003",
+  "bb01e6c6417606d6"
  ],
  "last_kind": "nawawi"
 }
