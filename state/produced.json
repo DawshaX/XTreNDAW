@@ -4578,6 +4578,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790997972.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1790997972.png"
    }
+  },
+  "noor-nawawi-9-r3": {
+   "title": "سلسلة الأربعين النووية (10/30): المسلم من سلم المسلمون من لسانه وي…",
+   "fingerprint": "6da053988490473f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 23.03,
+   "at": "2026-10-03 04:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791001659.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791001659.png"
+   }
   }
  },
  "fingerprints": [
@@ -4998,7 +5009,8 @@
   "5b8e65be6e2d7755",
   "7694bbf95de79003",
   "bb01e6c6417606d6",
-  "41939f01f0c5a0da"
+  "41939f01f0c5a0da",
+  "6da053988490473f"
  ],
  "last_kind": "nawawi"
 }
