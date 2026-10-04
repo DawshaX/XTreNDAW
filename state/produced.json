@@ -4850,6 +4850,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791097928.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791097928.png"
    }
+  },
+  "noor-kawn-9-r3": {
+   "title": "سلسلة آيات في الكون (10/22): ﴿والسماء ذات الحبك﴾ — للسماء نسج و…",
+   "fingerprint": "d082ae11876b075a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 22.23,
+   "at": "2026-10-04 08:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791101632.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791101632.png"
+   }
   }
  },
  "fingerprints": [
@@ -5295,7 +5306,8 @@
   "d6a7153c1ed8b30b",
   "8d095eb111d0db81",
   "5ee07e31653fd5ef",
-  "c5fceb0aae53709b"
+  "c5fceb0aae53709b",
+  "d082ae11876b075a"
  ],
  "last_kind": "kawn"
 }
