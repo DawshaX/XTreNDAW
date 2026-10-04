@@ -4784,6 +4784,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791075742.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791075742.png"
    }
+  },
+  "noor-nawawi-23-r3": {
+   "title": "سلسلة الأربعين النووية (24/30): من ستَر مسلمًا ستره الله في الدنيا…",
+   "fingerprint": "11693edce993b14b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 23.93,
+   "at": "2026-10-04 02:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791079440.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791079440.png"
+   }
   }
  },
  "fingerprints": [
@@ -5223,7 +5234,8 @@
   "461586e1e37380d4",
   "333ec762e7bab589",
   "b89ffe0346b0dd9e",
-  "404bef99ea2de5ac"
+  "404bef99ea2de5ac",
+  "11693edce993b14b"
  ],
  "last_kind": "nawawi"
 }
