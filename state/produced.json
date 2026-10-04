@@ -4817,6 +4817,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791086814.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791086814.png"
    }
+  },
+  "noor-nawawi-26-r3": {
+   "title": "سلسلة الأربعين النووية (27/30): تبسمك في وجه أخيك لك صدقة، وأمرك ب…",
+   "fingerprint": "8d095eb111d0db81",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 26.07,
+   "at": "2026-10-04 05:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791090518.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791090518.png"
+   }
   }
  },
  "fingerprints": [
@@ -5259,7 +5270,8 @@
   "404bef99ea2de5ac",
   "11693edce993b14b",
   "718a430df0077898",
-  "d6a7153c1ed8b30b"
+  "d6a7153c1ed8b30b",
+  "8d095eb111d0db81"
  ],
  "last_kind": "nawawi"
 }
