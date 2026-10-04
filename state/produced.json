@@ -4839,6 +4839,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791094230.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791094230.png"
    }
+  },
+  "noor-kawn-8-r3": {
+   "title": "سلسلة آيات في الكون (9/22): ﴿والنجم إذا هوى﴾ — النجوم تنتهي بأ…",
+   "fingerprint": "c5fceb0aae53709b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 24.53,
+   "at": "2026-10-04 07:12",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791097928.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791097928.png"
+   }
   }
  },
  "fingerprints": [
@@ -5283,7 +5294,8 @@
   "718a430df0077898",
   "d6a7153c1ed8b30b",
   "8d095eb111d0db81",
-  "5ee07e31653fd5ef"
+  "5ee07e31653fd5ef",
+  "c5fceb0aae53709b"
  ],
- "last_kind": "nawawi"
+ "last_kind": "kawn"
 }
