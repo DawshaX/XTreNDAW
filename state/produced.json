@@ -4938,6 +4938,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791127621.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791127621.png"
    }
+  },
+  "noor-quran-s051-5-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الذَّارِيَاتِ ﴿5–8﴾ — علي الحذيفي",
+   "fingerprint": "0610ce8380f30295",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs051-5-hudhaify.mp4",
+   "duration": 47.8,
+   "at": "2026-10-04 16:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791131374.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791131374.png"
+   }
   }
  },
  "fingerprints": [
@@ -5391,7 +5402,8 @@
   "0f8a98fc30a007a4",
   "5a8cbb8212fbdae7",
   "424d6509cd237c4d",
-  "e7360eff409254d9"
+  "e7360eff409254d9",
+  "0610ce8380f30295"
  ],
  "last_kind": "quran"
 }
