@@ -4971,6 +4971,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791138894.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791138894.png"
    }
+  },
+  "noor-quran-s015-81-r8": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الحِجۡرِ ﴿81–84﴾ — علي الحذيفي",
+   "fingerprint": "ccbb62afa286ee8f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs015-81-hudhaify.mp4",
+   "duration": 56.64,
+   "at": "2026-10-04 19:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791142644.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791142644.png"
+   }
   }
  },
  "fingerprints": [
@@ -5427,7 +5438,8 @@
   "e7360eff409254d9",
   "0610ce8380f30295",
   "a9add1b77c2c46b6",
-  "dcf509ffe8a32903"
+  "dcf509ffe8a32903",
+  "ccbb62afa286ee8f"
  ],
  "last_kind": "quran"
 }
