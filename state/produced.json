@@ -4927,6 +4927,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791123845.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791123845.png"
    }
+  },
+  "noor-quran-s021-45-r7": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الأَنبِيَاءِ ﴿45–46﴾ — أيمن سويد",
+   "fingerprint": "e7360eff409254d9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs021-45-aymanswoaid.mp4",
+   "duration": 79.14,
+   "at": "2026-10-04 15:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791127621.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791127621.png"
+   }
   }
  },
  "fingerprints": [
@@ -5379,7 +5390,8 @@
   "449c713936906c77",
   "0f8a98fc30a007a4",
   "5a8cbb8212fbdae7",
-  "424d6509cd237c4d"
+  "424d6509cd237c4d",
+  "e7360eff409254d9"
  ],
- "last_kind": "kawn"
+ "last_kind": "quran"
 }
