@@ -4795,6 +4795,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791079440.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791079440.png"
    }
+  },
+  "noor-nawawi-24-r3": {
+   "title": "سلسلة الأربعين النووية (25/30): لا تحاسدوا ولا تناجشوا ولا تباغضوا…",
+   "fingerprint": "718a430df0077898",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 26.97,
+   "at": "2026-10-04 03:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791083124.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791083124.png"
+   }
   }
  },
  "fingerprints": [
@@ -5235,7 +5246,8 @@
   "333ec762e7bab589",
   "b89ffe0346b0dd9e",
   "404bef99ea2de5ac",
-  "11693edce993b14b"
+  "11693edce993b14b",
+  "718a430df0077898"
  ],
  "last_kind": "nawawi"
 }
