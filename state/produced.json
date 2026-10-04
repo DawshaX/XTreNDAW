@@ -4960,6 +4960,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791135086.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791135086.png"
    }
+  },
+  "noor-quran-s004-153-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ النِّسَاءِ ﴿153–153﴾ — أيمن سويد",
+   "fingerprint": "dcf509ffe8a32903",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs004-153-aymanswoaid.mp4",
+   "duration": 87.66,
+   "at": "2026-10-04 18:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791138894.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791138894.png"
+   }
   }
  },
  "fingerprints": [
@@ -5415,7 +5426,8 @@
   "424d6509cd237c4d",
   "e7360eff409254d9",
   "0610ce8380f30295",
-  "a9add1b77c2c46b6"
+  "a9add1b77c2c46b6",
+  "dcf509ffe8a32903"
  ],
  "last_kind": "quran"
 }
