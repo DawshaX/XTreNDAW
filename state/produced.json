@@ -4773,6 +4773,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791072040.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791072040.png"
    }
+  },
+  "noor-nawawi-22-r3": {
+   "title": "سلسلة الأربعين النووية (23/30): والله في عون العبد ما كان العبد في…",
+   "fingerprint": "404bef99ea2de5ac",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 22.8,
+   "at": "2026-10-04 01:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791075742.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791075742.png"
+   }
   }
  },
  "fingerprints": [
@@ -5211,7 +5222,8 @@
   "79dbfeea9b9bd87c",
   "461586e1e37380d4",
   "333ec762e7bab589",
-  "b89ffe0346b0dd9e"
+  "b89ffe0346b0dd9e",
+  "404bef99ea2de5ac"
  ],
  "last_kind": "nawawi"
 }
