@@ -4993,6 +4993,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791146419.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791146419.png"
    }
+  },
+  "noor-kawn-15-r3": {
+   "title": "سلسلة آيات في الكون (16/22): ﴿والشمس والقمر بحسبان﴾ — الأفلاك ت…",
+   "fingerprint": "9580d24192bca7bc",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 22.67,
+   "at": "2026-10-04 21:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791150120.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791150120.png"
+   }
   }
  },
  "fingerprints": [
@@ -5451,7 +5462,8 @@
   "a9add1b77c2c46b6",
   "dcf509ffe8a32903",
   "ccbb62afa286ee8f",
-  "c4ff79e0752f2189"
+  "c4ff79e0752f2189",
+  "9580d24192bca7bc"
  ],
  "last_kind": "quran"
 }
