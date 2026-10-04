@@ -4828,6 +4828,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791090518.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791090518.png"
    }
+  },
+  "noor-kawn-7-r3": {
+   "title": "سلسلة آيات في الكون (8/22): ﴿أفلا ينظرون إلى الإبل كيف خُلقت﴾ …",
+   "fingerprint": "5ee07e31653fd5ef",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 25.57,
+   "at": "2026-10-04 06:10",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791094230.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791094230.png"
+   }
   }
  },
  "fingerprints": [
@@ -5271,7 +5282,8 @@
   "11693edce993b14b",
   "718a430df0077898",
   "d6a7153c1ed8b30b",
-  "8d095eb111d0db81"
+  "8d095eb111d0db81",
+  "5ee07e31653fd5ef"
  ],
  "last_kind": "nawawi"
 }
