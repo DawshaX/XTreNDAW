@@ -4861,6 +4861,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791101632.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791101632.png"
    }
+  },
+  "noor-kawn-10-r3": {
+   "title": "سلسلة آيات في الكون (11/22): ﴿فلينظر الإنسان إلى طعامه﴾ — من بذ…",
+   "fingerprint": "58e20b81e0506aaa",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 23.73,
+   "at": "2026-10-04 09:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791105316.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791105316.png"
+   }
   }
  },
  "fingerprints": [
@@ -5307,7 +5318,8 @@
   "8d095eb111d0db81",
   "5ee07e31653fd5ef",
   "c5fceb0aae53709b",
-  "d082ae11876b075a"
+  "d082ae11876b075a",
+  "58e20b81e0506aaa"
  ],
  "last_kind": "kawn"
 }
