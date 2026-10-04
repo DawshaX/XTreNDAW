@@ -5004,6 +5004,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791150120.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791150120.png"
    }
+  },
+  "noor-kawn-16-r3": {
+   "title": "سلسلة آيات في الكون (17/22): ﴿ثم استوى إلى السماء وهي دخان﴾ — ا…",
+   "fingerprint": "f637ec97b9624ed8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 24.57,
+   "at": "2026-10-04 22:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791153833.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791153833.png"
+   }
   }
  },
  "fingerprints": [
@@ -5463,7 +5474,8 @@
   "dcf509ffe8a32903",
   "ccbb62afa286ee8f",
   "c4ff79e0752f2189",
-  "9580d24192bca7bc"
+  "9580d24192bca7bc",
+  "f637ec97b9624ed8"
  ],
- "last_kind": "quran"
+ "last_kind": "kawn"
 }
