@@ -4982,6 +4982,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791142644.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791142644.png"
    }
+  },
+  "noor-quran-s034-41-r9": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ سَبَإٍ ﴿41–42﴾ — أبو بكر الشاطري",
+   "fingerprint": "c4ff79e0752f2189",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs034-41-shaatree.mp4",
+   "duration": 65.01,
+   "at": "2026-10-04 20:40",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791146419.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791146419.png"
+   }
   }
  },
  "fingerprints": [
@@ -5439,7 +5450,8 @@
   "0610ce8380f30295",
   "a9add1b77c2c46b6",
   "dcf509ffe8a32903",
-  "ccbb62afa286ee8f"
+  "ccbb62afa286ee8f",
+  "c4ff79e0752f2189"
  ],
  "last_kind": "quran"
 }
