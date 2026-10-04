@@ -4806,6 +4806,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791083124.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791083124.png"
    }
+  },
+  "noor-nawawi-25-r3": {
+   "title": "سلسلة الأربعين النووية (26/30): كل سلامى من الناس عليه صدقة، كل يو…",
+   "fingerprint": "d6a7153c1ed8b30b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 24.47,
+   "at": "2026-10-04 04:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791086814.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791086814.png"
+   }
   }
  },
  "fingerprints": [
@@ -5247,7 +5258,8 @@
   "b89ffe0346b0dd9e",
   "404bef99ea2de5ac",
   "11693edce993b14b",
-  "718a430df0077898"
+  "718a430df0077898",
+  "d6a7153c1ed8b30b"
  ],
  "last_kind": "nawawi"
 }
