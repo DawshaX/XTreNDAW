@@ -4762,6 +4762,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791068331.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791068331.png"
    }
+  },
+  "noor-nawawi-21-r3": {
+   "title": "سلسلة الأربعين النووية (22/30): من نفس عن مؤمن كربة من كرب الدنيا …",
+   "fingerprint": "b89ffe0346b0dd9e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 26.97,
+   "at": "2026-10-04 00:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791072040.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791072040.png"
+   }
   }
  },
  "fingerprints": [
@@ -5199,7 +5210,8 @@
   "bbf0a6487236a134",
   "79dbfeea9b9bd87c",
   "461586e1e37380d4",
-  "333ec762e7bab589"
+  "333ec762e7bab589",
+  "b89ffe0346b0dd9e"
  ],
- "last_kind": "know"
+ "last_kind": "nawawi"
 }
