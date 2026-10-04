@@ -5015,6 +5015,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791153833.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791153833.png"
    }
+  },
+  "noor-kawn-17-r3": {
+   "title": "سلسلة آيات في الكون (18/22): ﴿والنخل باسقات لها طلع نضيد﴾ — رزق…",
+   "fingerprint": "3523ecfda0a6a4bd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 25.03,
+   "at": "2026-10-04 23:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791157547.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791157547.png"
+   }
   }
  },
  "fingerprints": [
@@ -5475,7 +5486,8 @@
   "ccbb62afa286ee8f",
   "c4ff79e0752f2189",
   "9580d24192bca7bc",
-  "f637ec97b9624ed8"
+  "f637ec97b9624ed8",
+  "3523ecfda0a6a4bd"
  ],
  "last_kind": "kawn"
 }
