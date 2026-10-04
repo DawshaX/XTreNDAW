@@ -4894,6 +4894,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791112675.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791112675.png"
    }
+  },
+  "noor-kawn-13-r3": {
+   "title": "سلسلة آيات في الكون (14/22): ﴿وأنزلنا الحديد﴾ — أصل الحديد نياز…",
+   "fingerprint": "0f8a98fc30a007a4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 22.53,
+   "at": "2026-10-04 12:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791116367.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791116367.png"
+   }
   }
  },
  "fingerprints": [
@@ -5343,7 +5354,8 @@
   "d082ae11876b075a",
   "58e20b81e0506aaa",
   "4192ca828edc4ad5",
-  "449c713936906c77"
+  "449c713936906c77",
+  "0f8a98fc30a007a4"
  ],
  "last_kind": "kawn"
 }
