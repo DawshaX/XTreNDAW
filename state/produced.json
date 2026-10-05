@@ -5158,6 +5158,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791201898.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791201898.png"
    }
+  },
+  "noor-adhkar-268-r3": {
+   "title": "مِن أذكار المسلم: الحمد لله الذي عافاني مما ابتلاك به ، وف…",
+   "fingerprint": "3bc168ee2ffb3f88",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 26.83,
+   "at": "2026-10-05 13:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791205592.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791205592.png"
+   }
   }
  },
  "fingerprints": [
@@ -5631,7 +5642,8 @@
   "264b413a8c9e3f7c",
   "63dc6f891ef0a3d1",
   "b65e24cfc0bd7f60",
-  "4ac33d8850938a4b"
+  "4ac33d8850938a4b",
+  "3bc168ee2ffb3f88"
  ],
  "last_kind": "adhkar"
 }
