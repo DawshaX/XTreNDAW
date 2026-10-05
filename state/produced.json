@@ -5147,6 +5147,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791198192.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791198192.png"
    }
+  },
+  "noor-adhkar-47-r3": {
+   "title": "مِن أذكار المسلم: حسبي الله ونعم الوكيل — سبعين مرة.…",
+   "fingerprint": "4ac33d8850938a4b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 23.47,
+   "at": "2026-10-05 12:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791201898.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791201898.png"
+   }
   }
  },
  "fingerprints": [
@@ -5619,7 +5630,8 @@
   "4e1c817b4a814bb1",
   "264b413a8c9e3f7c",
   "63dc6f891ef0a3d1",
-  "b65e24cfc0bd7f60"
+  "b65e24cfc0bd7f60",
+  "4ac33d8850938a4b"
  ],
  "last_kind": "adhkar"
 }
