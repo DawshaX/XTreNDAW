@@ -5213,6 +5213,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791220640.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791220640.png"
    }
+  },
+  "noor-quran-s023-29-r9": {
+   "title": "دقيقة نور 🌙 سُورَةُ المُؤۡمِنُونَ ﴿29–32﴾ — أبو بكر الشاطري",
+   "fingerprint": "201de2c555c0bc2b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs023-29-shaatree.mp4",
+   "duration": 63.91,
+   "at": "2026-10-05 18:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791224380.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791224380.png"
+   }
   }
  },
  "fingerprints": [
@@ -5691,7 +5702,8 @@
   "2801b2490b970946",
   "478d6edf52a94dcd",
   "b0be2990639e230d",
-  "cfb37a15a3a35cbf"
+  "cfb37a15a3a35cbf",
+  "201de2c555c0bc2b"
  ],
  "last_kind": "quran"
 }
