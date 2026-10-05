@@ -5059,6 +5059,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791168629.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791168629.png"
    }
+  },
+  "noor-adhkar-45-r3": {
+   "title": "مِن أذكار المسلم: يا رب لك الحمد كما ينبغي لجلال وجهك وعظي…",
+   "fingerprint": "211a92d5a9d293f3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 25.87,
+   "at": "2026-10-05 03:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791172306.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791172306.png"
+   }
   }
  },
  "fingerprints": [
@@ -5523,7 +5534,8 @@
   "3523ecfda0a6a4bd",
   "584ba24a4dad5149",
   "bade276e1d505b3d",
-  "66dff40361bf72ef"
+  "66dff40361bf72ef",
+  "211a92d5a9d293f3"
  ],
  "last_kind": "adhkar"
 }
