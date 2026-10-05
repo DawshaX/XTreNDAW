@@ -5026,6 +5026,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791157547.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791157547.png"
    }
+  },
+  "noor-adhkar-50-r3": {
+   "title": "مِن أذكار المسلم: عند الاستيقاظ: الحمد لله الذي أحيانا بعد…",
+   "fingerprint": "584ba24a4dad5149",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 26.0,
+   "at": "2026-10-05 00:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791161249.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791161249.png"
+   }
   }
  },
  "fingerprints": [
@@ -5487,7 +5498,8 @@
   "c4ff79e0752f2189",
   "9580d24192bca7bc",
   "f637ec97b9624ed8",
-  "3523ecfda0a6a4bd"
+  "3523ecfda0a6a4bd",
+  "584ba24a4dad5149"
  ],
  "last_kind": "kawn"
 }
