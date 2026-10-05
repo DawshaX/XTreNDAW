@@ -5070,6 +5070,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791172306.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791172306.png"
    }
+  },
+  "noor-adhkar-73-r3": {
+   "title": "مِن أذكار المسلم: قال الله تعالى:{ فَاذْكُرُونِي أَذْكُرْك…",
+   "fingerprint": "7d8b08fecb218f75",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 25.3,
+   "at": "2026-10-05 04:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791176008.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791176008.png"
+   }
   }
  },
  "fingerprints": [
@@ -5535,7 +5546,8 @@
   "584ba24a4dad5149",
   "bade276e1d505b3d",
   "66dff40361bf72ef",
-  "211a92d5a9d293f3"
+  "211a92d5a9d293f3",
+  "7d8b08fecb218f75"
  ],
  "last_kind": "adhkar"
 }
