@@ -5246,6 +5246,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791239587.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791239587.png"
    }
+  },
+  "noor-dua-131-r3": {
+   "title": "دعاء: بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا…",
+   "fingerprint": "c29e790796ee48dd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 22.77,
+   "at": "2026-10-05 23:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791243276.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791243276.png"
+   }
   }
  },
  "fingerprints": [
@@ -5727,7 +5738,8 @@
   "cfb37a15a3a35cbf",
   "201de2c555c0bc2b",
   "ad187500cc42211a",
-  "4812b618cca653e1"
+  "4812b618cca653e1",
+  "c29e790796ee48dd"
  ],
- "last_kind": "quran"
+ "last_kind": "dua"
 }
