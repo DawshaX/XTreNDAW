@@ -5092,6 +5092,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791179702.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791179702.png"
    }
+  },
+  "noor-adhkar-176-r3": {
+   "title": "مِن أذكار المسلم: باسمك ربي وضعت جنبي وبك أرفعه إن أمسكت ن…",
+   "fingerprint": "0d50d48fe7fe423d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 30.8,
+   "at": "2026-10-05 06:56",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791183399.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791183399.png"
+   }
   }
  },
  "fingerprints": [
@@ -5559,7 +5570,8 @@
   "66dff40361bf72ef",
   "211a92d5a9d293f3",
   "7d8b08fecb218f75",
-  "52a6d308f27ec332"
+  "52a6d308f27ec332",
+  "0d50d48fe7fe423d"
  ],
  "last_kind": "adhkar"
 }
