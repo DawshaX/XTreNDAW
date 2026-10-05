@@ -5191,6 +5191,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791213156.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791213156.png"
    }
+  },
+  "noor-quran-s080-25-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ عَبَسَ ﴿25–28﴾ — أيمن سويد",
+   "fingerprint": "b0be2990639e230d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs080-25-aymanswoaid.mp4",
+   "duration": 56.1,
+   "at": "2026-10-05 16:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791216906.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791216906.png"
+   }
   }
  },
  "fingerprints": [
@@ -5667,7 +5678,8 @@
   "4ac33d8850938a4b",
   "3bc168ee2ffb3f88",
   "2801b2490b970946",
-  "478d6edf52a94dcd"
+  "478d6edf52a94dcd",
+  "b0be2990639e230d"
  ],
  "last_kind": "quran"
 }
