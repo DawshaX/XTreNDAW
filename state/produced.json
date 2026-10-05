@@ -5037,6 +5037,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791161249.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791161249.png"
    }
+  },
+  "noor-adhkar-125-r3": {
+   "title": "مِن أذكار المسلم: سبحان ذي الجبروت والملكوت ، والكبرياء وا…",
+   "fingerprint": "bade276e1d505b3d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 24.57,
+   "at": "2026-10-05 01:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791164936.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791164936.png"
+   }
   }
  },
  "fingerprints": [
@@ -5499,7 +5510,8 @@
   "9580d24192bca7bc",
   "f637ec97b9624ed8",
   "3523ecfda0a6a4bd",
-  "584ba24a4dad5149"
+  "584ba24a4dad5149",
+  "bade276e1d505b3d"
  ],
- "last_kind": "kawn"
+ "last_kind": "adhkar"
 }
