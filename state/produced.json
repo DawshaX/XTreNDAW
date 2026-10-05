@@ -5136,6 +5136,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791194488.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791194488.png"
    }
+  },
+  "noor-adhkar-165-r3": {
+   "title": "مِن أذكار المسلم: أصبحنا وأصبح الملك لله رب العالمين ، الل…",
+   "fingerprint": "b65e24cfc0bd7f60",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 36.93,
+   "at": "2026-10-05 11:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791198192.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791198192.png"
+   }
   }
  },
  "fingerprints": [
@@ -5607,7 +5618,8 @@
   "0d50d48fe7fe423d",
   "4e1c817b4a814bb1",
   "264b413a8c9e3f7c",
-  "63dc6f891ef0a3d1"
+  "63dc6f891ef0a3d1",
+  "b65e24cfc0bd7f60"
  ],
  "last_kind": "adhkar"
 }
