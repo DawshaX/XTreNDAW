@@ -5235,6 +5235,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791228177.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791228177.png"
    }
+  },
+  "noor-dua-98-r3": {
+   "title": "دعاء: رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِ…",
+   "fingerprint": "4812b618cca653e1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.63,
+   "at": "2026-10-05 22:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791239587.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791239587.png"
+   }
   }
  },
  "fingerprints": [
@@ -5715,7 +5726,8 @@
   "b0be2990639e230d",
   "cfb37a15a3a35cbf",
   "201de2c555c0bc2b",
-  "ad187500cc42211a"
+  "ad187500cc42211a",
+  "4812b618cca653e1"
  ],
  "last_kind": "quran"
 }
