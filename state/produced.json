@@ -5169,6 +5169,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791205592.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791205592.png"
    }
+  },
+  "noor-quran-s072-21-r8": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الجِنِّ ﴿21–24﴾ — علي الحذيفي",
+   "fingerprint": "2801b2490b970946",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs072-21-hudhaify.mp4",
+   "duration": 83.32,
+   "at": "2026-10-05 14:09",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791209367.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791209367.png"
+   }
   }
  },
  "fingerprints": [
@@ -5643,7 +5654,8 @@
   "63dc6f891ef0a3d1",
   "b65e24cfc0bd7f60",
   "4ac33d8850938a4b",
-  "3bc168ee2ffb3f88"
+  "3bc168ee2ffb3f88",
+  "2801b2490b970946"
  ],
  "last_kind": "adhkar"
 }
