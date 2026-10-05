@@ -5081,6 +5081,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791176008.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791176008.png"
    }
+  },
+  "noor-adhkar-288-r3": {
+   "title": "مِن أذكار المسلم: قال صلى الله عليه وسلم من صلى علي صلاة ص…",
+   "fingerprint": "52a6d308f27ec332",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 25.47,
+   "at": "2026-10-05 05:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791179702.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791179702.png"
+   }
   }
  },
  "fingerprints": [
@@ -5547,7 +5558,8 @@
   "bade276e1d505b3d",
   "66dff40361bf72ef",
   "211a92d5a9d293f3",
-  "7d8b08fecb218f75"
+  "7d8b08fecb218f75",
+  "52a6d308f27ec332"
  ],
  "last_kind": "adhkar"
 }
