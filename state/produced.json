@@ -5455,6 +5455,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791317728.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791317728.png"
    }
+  },
+  "noor-hadith-2434-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا أَبُو الْوَلِيدِ، حَدَّثَنَا …",
+   "fingerprint": "2b2132dcea2013c2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 38.7,
+   "at": "2026-10-06 21:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791321483.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791321483.png"
+   }
   }
  },
  "fingerprints": [
@@ -5955,7 +5966,8 @@
   "34dac9062f3421f8",
   "f9f4492ac0d35fc9",
   "cd0aa03e2f870580",
-  "332916644fac54e3"
+  "332916644fac54e3",
+  "2b2132dcea2013c2"
  ],
- "last_kind": "quran"
+ "last_kind": "hadith"
 }
