@@ -5477,6 +5477,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791325213.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791325213.png"
    }
+  },
+  "noor-hadith-3570-r3": {
+   "title": "قال رسول الله ﷺ: وَحَدَّثَنِي حَرْمَلَةُ بْنُ يَحْيَى، أَ…",
+   "fingerprint": "dc1844f74c1aa3b2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 41.5,
+   "at": "2026-10-06 23:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791328915.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791328915.png"
+   }
   }
  },
  "fingerprints": [
@@ -5979,7 +5990,8 @@
   "cd0aa03e2f870580",
   "332916644fac54e3",
   "2b2132dcea2013c2",
-  "61de14bb09601d32"
+  "61de14bb09601d32",
+  "dc1844f74c1aa3b2"
  ],
  "last_kind": "hadith"
 }
