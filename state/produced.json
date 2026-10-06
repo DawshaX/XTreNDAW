@@ -5279,6 +5279,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791250995.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791250995.png"
    }
+  },
+  "noor-dua-148-r3": {
+   "title": "دعاء: اللَّهُمَّ صَيِّبًا نَافِعًا…",
+   "fingerprint": "dd8b5fed70bf984b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 21.57,
+   "at": "2026-10-06 02:44",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791254678.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791254678.png"
+   }
   }
  },
  "fingerprints": [
@@ -5763,7 +5774,8 @@
   "4812b618cca653e1",
   "c29e790796ee48dd",
   "25f051b04a6ffcd6",
-  "8b1ff825e459bb96"
+  "8b1ff825e459bb96",
+  "dd8b5fed70bf984b"
  ],
  "last_kind": "dua"
 }
