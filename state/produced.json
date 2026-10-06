@@ -5257,6 +5257,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791243276.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791243276.png"
    }
+  },
+  "noor-dua-222-r3": {
+   "title": "دعاء: بَارَكَ اللَّهُ لَكَ فِي الْمَوْهُوبِ لَ…",
+   "fingerprint": "25f051b04a6ffcd6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.77,
+   "at": "2026-10-06 00:36",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791247003.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791247003.png"
+   }
   }
  },
  "fingerprints": [
@@ -5739,7 +5750,8 @@
   "201de2c555c0bc2b",
   "ad187500cc42211a",
   "4812b618cca653e1",
-  "c29e790796ee48dd"
+  "c29e790796ee48dd",
+  "25f051b04a6ffcd6"
  ],
  "last_kind": "dua"
 }
