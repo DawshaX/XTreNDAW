@@ -5466,6 +5466,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791321483.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791321483.png"
    }
+  },
+  "noor-hadith-10430-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْب…",
+   "fingerprint": "61de14bb09601d32",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 41.13,
+   "at": "2026-10-06 22:20",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791325213.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791325213.png"
+   }
   }
  },
  "fingerprints": [
@@ -5967,7 +5978,8 @@
   "f9f4492ac0d35fc9",
   "cd0aa03e2f870580",
   "332916644fac54e3",
-  "2b2132dcea2013c2"
+  "2b2132dcea2013c2",
+  "61de14bb09601d32"
  ],
  "last_kind": "hadith"
 }
