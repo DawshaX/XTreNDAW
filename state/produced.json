@@ -5433,6 +5433,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791302944.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791302944.png"
    }
+  },
+  "noor-quran-s007-141-r8": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الأَعۡرَافِ ﴿141–142﴾ — علي الحذيفي",
+   "fingerprint": "cd0aa03e2f870580",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs007-141-hudhaify.mp4",
+   "duration": 86.09,
+   "at": "2026-10-06 19:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791313981.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791313981.png"
+   }
   }
  },
  "fingerprints": [
@@ -5931,7 +5942,8 @@
   "e31ef112f6f98a10",
   "1b7fc190aec87846",
   "34dac9062f3421f8",
-  "f9f4492ac0d35fc9"
+  "f9f4492ac0d35fc9",
+  "cd0aa03e2f870580"
  ],
  "last_kind": "quran"
 }
