@@ -5411,6 +5411,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791295398.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791295398.png"
    }
+  },
+  "noor-quran-s037-1-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الصَّافَّاتِ ﴿1–4﴾ — أبو بكر الشاطري",
+   "fingerprint": "34dac9062f3421f8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs037-1-shaatree.mp4",
+   "duration": 43.26,
+   "at": "2026-10-06 15:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791299184.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791299184.png"
+   }
   }
  },
  "fingerprints": [
@@ -5907,7 +5918,8 @@
   "1dd835954e433316",
   "36d61cf46569c177",
   "e31ef112f6f98a10",
-  "1b7fc190aec87846"
+  "1b7fc190aec87846",
+  "34dac9062f3421f8"
  ],
- "last_kind": "dua"
+ "last_kind": "quran"
 }
