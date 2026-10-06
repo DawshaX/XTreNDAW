@@ -5422,6 +5422,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791299184.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791299184.png"
    }
+  },
+  "noor-quran-s014-29-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ إِبۡرَاهِيمَ ﴿29–30﴾ — أيمن سويد",
+   "fingerprint": "f9f4492ac0d35fc9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs014-29-aymanswoaid.mp4",
+   "duration": 64.5,
+   "at": "2026-10-06 16:09",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791302944.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791302944.png"
+   }
   }
  },
  "fingerprints": [
@@ -5919,7 +5930,8 @@
   "36d61cf46569c177",
   "e31ef112f6f98a10",
   "1b7fc190aec87846",
-  "34dac9062f3421f8"
+  "34dac9062f3421f8",
+  "f9f4492ac0d35fc9"
  ],
  "last_kind": "quran"
 }
