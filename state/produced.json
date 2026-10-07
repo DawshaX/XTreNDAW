@@ -5587,6 +5587,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791362446.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791362446.png"
    }
+  },
+  "noor-hadith-567-r3": {
+   "title": "قال رسول الله ﷺ: خَرَجَ النَّبِيُّ صلى الله عليه وسلم يَو…",
+   "fingerprint": "5a03f334ca20665f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 35.93,
+   "at": "2026-10-07 09:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791366176.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791366176.png"
+   }
   }
  },
  "fingerprints": [
@@ -6099,7 +6110,8 @@
   "fbe0216d338a3a46",
   "860dc3d5766d6dd8",
   "409be4360d2d8e9c",
-  "871eb6f05bda97d6"
+  "871eb6f05bda97d6",
+  "5a03f334ca20665f"
  ],
  "last_kind": "hadith"
 }
