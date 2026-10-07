@@ -5565,6 +5565,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791355028.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791355028.png"
    }
+  },
+  "noor-hadith-8906-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا مُسَدَّدٌ، حَدَّثَنَا حَمَّاد…",
+   "fingerprint": "409be4360d2d8e9c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 37.73,
+   "at": "2026-10-07 07:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791358737.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791358737.png"
+   }
   }
  },
  "fingerprints": [
@@ -6075,7 +6086,8 @@
   "a9245dffbf6be09c",
   "ffe930683d47c2a9",
   "fbe0216d338a3a46",
-  "860dc3d5766d6dd8"
+  "860dc3d5766d6dd8",
+  "409be4360d2d8e9c"
  ],
  "last_kind": "hadith"
 }
