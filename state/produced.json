@@ -5609,6 +5609,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791369926.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791369926.png"
    }
+  },
+  "noor-hadith-1911-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا مُسْلِمٌ، حَدَّثَنَا شُعْبَةُ…",
+   "fingerprint": "95872d0f6a6a3e01",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 41.7,
+   "at": "2026-10-07 11:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791373660.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791373660.png"
+   }
   }
  },
  "fingerprints": [
@@ -6123,7 +6134,8 @@
   "409be4360d2d8e9c",
   "871eb6f05bda97d6",
   "5a03f334ca20665f",
-  "82333a2d5129dcc8"
+  "82333a2d5129dcc8",
+  "95872d0f6a6a3e01"
  ],
  "last_kind": "hadith"
 }
