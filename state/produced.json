@@ -5532,6 +5532,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791343893.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791343893.png"
    }
+  },
+  "noor-hadith-1958-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا إِبْرَاهِيمُ بْنُ الْمُنْذِرِ…",
+   "fingerprint": "ffe930683d47c2a9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 37.7,
+   "at": "2026-10-07 04:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791347618.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791347618.png"
+   }
   }
  },
  "fingerprints": [
@@ -6039,7 +6050,8 @@
   "5318efe7644ca623",
   "762ee42d9ea15f19",
   "65867cf995e5f47c",
-  "a9245dffbf6be09c"
+  "a9245dffbf6be09c",
+  "ffe930683d47c2a9"
  ],
  "last_kind": "hadith"
 }
