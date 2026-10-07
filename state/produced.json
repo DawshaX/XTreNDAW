@@ -5488,6 +5488,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791328915.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791328915.png"
    }
+  },
+  "noor-hadith-2726-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا إِسْمَاعِيلُ، قَالَ حَدَّثَنِ…",
+   "fingerprint": "5318efe7644ca623",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 38.3,
+   "at": "2026-10-07 00:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791332640.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791332640.png"
+   }
   }
  },
  "fingerprints": [
@@ -5991,7 +6002,8 @@
   "332916644fac54e3",
   "2b2132dcea2013c2",
   "61de14bb09601d32",
-  "dc1844f74c1aa3b2"
+  "dc1844f74c1aa3b2",
+  "5318efe7644ca623"
  ],
  "last_kind": "hadith"
 }
