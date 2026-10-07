@@ -5521,6 +5521,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791340060.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791340060.png"
    }
+  },
+  "noor-hadith-10738-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا عَلِيُّ بْنُ مُحَمَّدٍ، حَدَّ…",
+   "fingerprint": "a9245dffbf6be09c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 38.93,
+   "at": "2026-10-07 03:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791343893.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791343893.png"
+   }
   }
  },
  "fingerprints": [
@@ -6027,7 +6038,8 @@
   "dc1844f74c1aa3b2",
   "5318efe7644ca623",
   "762ee42d9ea15f19",
-  "65867cf995e5f47c"
+  "65867cf995e5f47c",
+  "a9245dffbf6be09c"
  ],
  "last_kind": "hadith"
 }
