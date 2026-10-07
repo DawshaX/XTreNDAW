@@ -5675,6 +5675,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791410270.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791410270.png"
    }
+  },
+  "noor-info-160-r3": {
+   "title": "معلومة تُضيء: مواقيت اليوم في الإسكندرية — الفجر 05:30…",
+   "fingerprint": "e23e54e1da81e3f6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 49.3,
+   "at": "2026-10-07 23:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791414008.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791414008.png"
+   }
   }
  },
  "fingerprints": [
@@ -6195,7 +6206,8 @@
   "48117bee19c4c48e",
   "fdc084f645bfe14e",
   "bafd29d3ac0690bb",
-  "9409af3e902f24aa"
+  "9409af3e902f24aa",
+  "e23e54e1da81e3f6"
  ],
- "last_kind": "juz"
+ "last_kind": "info"
 }
