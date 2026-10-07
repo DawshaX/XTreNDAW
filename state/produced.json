@@ -5631,6 +5631,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791377404.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791377404.png"
    }
+  },
+  "noor-juz-j078-29-r3": {
+   "title": "سلسلة جزء عمّ (8/142): سُورَةُ النَّبَإِ ﴿29–32﴾ — عبدالرحمن السديس",
+   "fingerprint": "48117bee19c4c48e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-jj078-29-abdurrahmaansudais.mp4",
+   "duration": 45.77,
+   "at": "2026-10-07 13:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791381130.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791381130.png"
+   }
   }
  },
  "fingerprints": [
@@ -6147,7 +6158,8 @@
   "5a03f334ca20665f",
   "82333a2d5129dcc8",
   "95872d0f6a6a3e01",
-  "ad4b013a4d11f480"
+  "ad4b013a4d11f480",
+  "48117bee19c4c48e"
  ],
  "last_kind": "juz"
 }
