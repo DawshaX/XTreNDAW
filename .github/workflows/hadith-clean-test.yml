@@ -1,0 +1,22 @@
+name: 🧼 فحص تنقية الحديث (بلا نشر)
+# يتحقق إن بنك الحديث في NOVA مابيبدأش بسلسلة رواة، وإن البليّة النظيفة كافية.
+# إضافة فقط (2026-10-07) — لا يلمس أي مصنع قائم.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "xtrendaw/din.py"
+      - "tools/hadith_clean_check.py"
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: فحص التنقية
+        run: python tools/hadith_clean_check.py
