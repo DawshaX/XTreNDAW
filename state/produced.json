@@ -5620,6 +5620,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791373660.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791373660.png"
    }
+  },
+  "noor-juz-j078-25-r3": {
+   "title": "سلسلة جزء عمّ (7/142): سُورَةُ النَّبَإِ ﴿25–28﴾ — عبدالرحمن السديس",
+   "fingerprint": "ad4b013a4d11f480",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-jj078-25-abdurrahmaansudais.mp4",
+   "duration": 47.63,
+   "at": "2026-10-07 12:50",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791377404.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791377404.png"
+   }
   }
  },
  "fingerprints": [
@@ -6135,7 +6146,8 @@
   "871eb6f05bda97d6",
   "5a03f334ca20665f",
   "82333a2d5129dcc8",
-  "95872d0f6a6a3e01"
+  "95872d0f6a6a3e01",
+  "ad4b013a4d11f480"
  ],
- "last_kind": "hadith"
+ "last_kind": "juz"
 }
