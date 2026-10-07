@@ -299,6 +299,125 @@ SERIES_LABEL = {"asma": "سلسلة الأسماء الحسنى", "seerah": "س�
                 "hisn": "سلسلة حصن المسلم",
                 "tahseen": "سلسلة التحصين"}
 
+
+# ────────────────────── تنقية بنك الحديث (2026-10-07) ──────────────────────
+import re
+import unicodedata
+
+"""البلوك النهائي اللي هيتحط في din.py — اختبار محلّي على البنك الحقيقي قبل الإدخال."""
+import json, re, random, unicodedata
+
+# ── تنقية بنك الحديث: بلا سلسلة رواة (2026-10-07) ───────────────────
+# البنك الأصلي 10801 حديث، 88% منها بالنص الخام (سلسلة رواة كاملة) فالعنوان
+# والصوت كانوا بيبدأوا بـ«حَدَّثَنَا مُسَدَّدٌ…» — مش لائق بمحتوى مميز.
+# الحل: قصّ عند آخر «صيغة نسبة» للنبي ﷺ (بداية المتن عادةً) والاحتفاظ بيها…
+_PROP_JUNK = ("\u200f", "\u200e", "\u00ab", "\u00bb", '"', "'", "\u201c", "\u201d",
+              "\u2018", "\u2019", "{", "}", "\u0640", "\u00b7")
+_MATN_KEEP = ("قال رسول الله", "قال النبي", "عن رسول الله", "عن النبي",
+              "أن رسول الله", "أن النبي", "أنه قال رسول الله", "قال ﷺ",
+              "رسول الله صلى الله عليه وسلم قال", "النبي صلى الله عليه وسلم قال")
+_MATN_REFERRAL = ("بهذا الإسناد", "بهذا الاسناد", "بهذه الإسناد", "بهذه الاسناد",
+                  "بهذا الحديث", "بهذه الأحاديث", "بهذه الاحاديث", "بإسناد",
+                  "باسناد", "بنحوه", "بنحو", "نحوه", "بمثله", "بمعناه", "مختصرا",
+                  "باختصار", "مثله", "بمثل هذا")
+_MATN_ISNAD_START = ("حدثنا", "حدثني", "أخبرنا", "أخبرني", "وحدثنا", "وحدثني",
+                     "سمعت عبد", "قال القطان", "عن مالك", "عن ابن شهاب")
+_MATN_KINDS = {"hadith", "nawawi", "qudsi"}
+# 🛡️ ملاءمة عالميّة: مفيش حلقة تقصّ من سياقها تبان عنيفة/عقابيّة (2026-10-07)
+_MATN_BLOCK = ("اقتل", "يقتل", "قتله", "القتل", "رجم", "يرجم", "الرجم", "جلدة",
+               "سبي", "السبي", "سبايا", "الرقاب", "أرقاء", "الرقيق", "جهاد",
+               "الجهاد", "القتال", "يغزو", "الغزو", "بالسيف", "لعنهم", "لعنه",
+               "يلعن", "العنوا", "مهر البغي", "الزاني", "يزني", "الزنا",
+               "السارق", "يسرق", "اغتسلوا من الجنابة ?لا", "نكاح", "وطء")
+
+
+def _bare_ar(text: str) -> str:
+    """يشيل التشكيل والعلامات (للمقارنة/العناوين بس — النص الأصلي بيفضل زي ما هو)."""
+    out = []
+    for ch in text or "":
+        if unicodedata.category(ch) == "Mn" or ch in ("\u0670\u06d6\u06dc\u06df\u06e0\u06e2\u06e3\u06e5\u06e6\u06e7\u06e8\u06ea\u06eb\u06ec\u06ed",):
+            continue
+        out.append(ch)
+    return "".join(out)
+
+
+def _clean_marks(text: str) -> str:
+    t = text or ""
+    for ch in _PROP_JUNK:
+        t = t.replace(ch, " ")
+    t = t.replace("\u2014", "،").replace("\u2013", "،")
+    return " ".join(t.split()).strip(" ،.")
+
+
+def _matn(text: str, min_len: int = 6) -> str:
+    """متن الحديث بلا سلسلة الرواة. يرجّع "" للإحالات اللي بلا محتوى."""
+    t = _clean_marks(re.sub(r"\s+", " ", (text or "").strip()))
+    if not t:
+        return ""
+    b, idx = _strip_map(t)
+    cut = -1
+    for ph in _MATN_KEEP:
+        j = b.rfind(ph)
+        if j > 0:
+            cut = max(cut, j)
+    out = t[idx[cut]:] if cut > 0 else t
+    out = re.sub(r"^(?:قال|فقال)\s+قال\s+", "قال ", out)
+    out = re.sub(r"^(?:و?هو\s+)?يقول\s*[:،]?\s*", "", out)
+    out = " ".join(out.split()).strip(" ،.:؛-")
+    # ذيل: سلسلة ملحقة («وقال فلان حدثنا…») أو تعليق المصنّف — مش من كلام النبي ﷺ
+    for pat in (r"\s(?:و?قال|وحدثنا|وأخبرنا)\s+\S{2,18}\s+(?:حدثنا|أخبرنا|عن)\s",
+                r"\sقال أبو عبد ?الله\s", r"\sوقال (?:بعض|أبو|ابن) \S+\s"):
+        m2 = re.search(pat, _bare_ar(out))
+        if m2 and m2.start() > 40:
+            out = out[:m2.start()].strip(" ،.:؛-")
+    low = _bare_ar(out).strip()
+    low2 = re.sub(r"^(?:قال|فقال|يقول|عن|أنه|أن)\s+", "", low)
+    if (len(low) < min_len
+            or any(low.startswith(w) for w in _MATN_REFERRAL)
+            or any(low2.startswith(w) for w in _MATN_REFERRAL)):
+        return ""
+    return out
+
+
+def _strip_map(text: str):
+    out, idx = [], []
+    for i, ch in enumerate(text):
+        if unicodedata.category(ch) == "Mn" or ch in ("\u0670\u06d6\u06dc\u06df\u06e0\u06e2\u06e3\u06e5\u06e6\u06e7\u06e8\u06ea\u06eb\u06ec\u06ed",):
+            continue
+        out.append(ch)
+        idx.append(i)
+    return "".join(out), idx
+
+
+def _title_ar(text: str, n: int = 40) -> str:
+    """نص العنوان: بلا تشكيل، وبلا تكرار «قال رسول الله ﷺ» (اللي في اللافتة)."""
+    t = _bare_ar(_clean_marks(re.sub(r"\s+", " ", (text or "").strip())))
+    t = t.replace("صلى الله عليه وسلم", " ﷺ ").replace("صلعم", " ﷺ ")
+    m = re.match(r"^(?:و|ثم)?\s*(?:قال|فقال|قالت|أن|أنه|عن|لما|إن)?\s*"
+                 r"(?:رسول الله|النبي|ﷺ)\s*(?:ﷺ)?\s*(?:قال|يقول|فقال)?\s*[:،,]?\s*", t)
+    body = t[m.end():].strip(" ،.:") if (m and len(t) - m.end() > 10) else t
+    body = " ".join(body.split())
+    if len(body) <= n:
+        return body
+    cut = body[:n + 1].rsplit(" ", 1)[0]
+    return cut.strip(" ،.:") + "…"
+
+
+def _clean_pool(items: list) -> list:
+    """بليّة نظيفة: كل عنصر بمتنه بلا إسناد، واللي لسه بادي بسند بيتشال."""
+    out = []
+    for it in items:
+        t = _matn(it.get("text") or "")
+        if not t:
+            continue
+        b = _bare_ar(t).strip()
+        if any(b.startswith(w) for w in _MATN_ISNAD_START):
+            continue
+        if any(w in b for w in _MATN_BLOCK):
+            continue
+        out.append(dict(it, _matn=t))
+    return out
+
 ASS_HEADER = """[Script Info]
 ScriptType: v4.00+
 PlayResX: 1080
@@ -671,13 +790,19 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                  "qudsi": ("qudsi", "قال الله تعالى")}
         lname, label = lists[kind]
         items = stock[lname]
+        if kind in _MATN_KINDS:            # 🧼 متن بلا سلسلة رواة ولا محتوى عقابي
+            _pool = _clean_pool(items)
+            if _pool:
+                items = _pool
         _idx = (spec or {}).get("idx", reciter_idx) % len(items)
         item = items[_idx]
+        if kind in _MATN_KINDS and item.get("_matn"):
+            item = dict(item, text=item["_matn"])
         if kind in SERIES_LABEL:
             title = (f"{SERIES_LABEL[kind]} ({_idx + 1}/{len(items)}): "
-                     f"{item['text'][:34]}…")
+                     f"{_title_ar(item['text'], 34)}")
         else:
-            title = f"{label}: {item['text'][:40]}…"
+            title = f"{label}: {_title_ar(item['text'], 40)}"
         r = synthesize_line(item["text"], "ar", workdir / "vox", name="main",
                             rate="-8%", pitch="-2Hz")
         wavs.append(r["wav"])
