@@ -5499,6 +5499,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791332640.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791332640.png"
    }
+  },
+  "noor-hadith-6256-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا قُتَيْبَةُ، حَدَّثَنَا ابْنُ …",
+   "fingerprint": "762ee42d9ea15f19",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 40.63,
+   "at": "2026-10-07 01:25",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791336331.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791336331.png"
+   }
   }
  },
  "fingerprints": [
@@ -6003,7 +6014,8 @@
   "2b2132dcea2013c2",
   "61de14bb09601d32",
   "dc1844f74c1aa3b2",
-  "5318efe7644ca623"
+  "5318efe7644ca623",
+  "762ee42d9ea15f19"
  ],
  "last_kind": "hadith"
 }
