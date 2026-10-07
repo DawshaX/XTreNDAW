@@ -5664,6 +5664,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791388592.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791388592.png"
    }
+  },
+  "noor-juz-j078-33-r3": {
+   "title": "سلسلة جزء عمّ (9/142): سُورَةُ النَّبَإِ ﴿33–36﴾ — عبدالرحمن السديس",
+   "fingerprint": "9409af3e902f24aa",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-jj078-33-abdurrahmaansudais.mp4",
+   "duration": 49.73,
+   "at": "2026-10-07 21:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791410270.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791410270.png"
+   }
   }
  },
  "fingerprints": [
@@ -6183,7 +6194,8 @@
   "ad4b013a4d11f480",
   "48117bee19c4c48e",
   "fdc084f645bfe14e",
-  "bafd29d3ac0690bb"
+  "bafd29d3ac0690bb",
+  "9409af3e902f24aa"
  ],
- "last_kind": "quran"
+ "last_kind": "juz"
 }
