@@ -5543,6 +5543,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791347618.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791347618.png"
    }
+  },
+  "noor-hadith-7347-r3": {
+   "title": "قال رسول الله ﷺ: أَخْبَرَنَا عَمْرُو بْنُ عَلِيٍّ، قَالَ …",
+   "fingerprint": "fbe0216d338a3a46",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 37.73,
+   "at": "2026-10-07 05:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791351332.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791351332.png"
+   }
   }
  },
  "fingerprints": [
@@ -6051,7 +6062,8 @@
   "762ee42d9ea15f19",
   "65867cf995e5f47c",
   "a9245dffbf6be09c",
-  "ffe930683d47c2a9"
+  "ffe930683d47c2a9",
+  "fbe0216d338a3a46"
  ],
  "last_kind": "hadith"
 }
