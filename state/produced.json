@@ -5554,6 +5554,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791351332.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791351332.png"
    }
+  },
+  "noor-hadith-9674-r3": {
+   "title": "قال رسول الله ﷺ: حَدَّثَنَا أَبُو كُرَيْبٍ، حَدَّثَنَا أَ…",
+   "fingerprint": "860dc3d5766d6dd8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 36.8,
+   "at": "2026-10-07 06:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791355028.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791355028.png"
+   }
   }
  },
  "fingerprints": [
@@ -6063,7 +6074,8 @@
   "65867cf995e5f47c",
   "a9245dffbf6be09c",
   "ffe930683d47c2a9",
-  "fbe0216d338a3a46"
+  "fbe0216d338a3a46",
+  "860dc3d5766d6dd8"
  ],
  "last_kind": "hadith"
 }
