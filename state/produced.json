@@ -5895,6 +5895,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791484564.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791484564.png"
    }
+  },
+  "noor-info-113-r3": {
+   "title": "معلومة تُضيء: قال الحسن البصري: ابن آدم، إنما أنت…",
+   "fingerprint": "054bf85fd3cbe4f0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 27.33,
+   "at": "2026-10-08 19:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791488273.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791488273.png"
+   }
   }
  },
  "fingerprints": [
@@ -6431,7 +6442,8 @@
   "147931bdc7c1ea32",
   "a8c2c795bdedcab1",
   "930d3a199153b64b",
-  "b298afd0de941b6f"
+  "b298afd0de941b6f",
+  "054bf85fd3cbe4f0"
  ],
  "last_kind": "info"
 }
