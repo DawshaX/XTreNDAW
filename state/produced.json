@@ -5928,6 +5928,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791495816.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791495816.png"
    }
+  },
+  "noor-info-46-r3": {
+   "title": "معلومة تُضيء: اسم محمد ﷺ ورد في القرآن 4 مرات، و أحمد…",
+   "fingerprint": "c02e5137233c68a8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 28.13,
+   "at": "2026-10-08 22:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791499510.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791499510.png"
+   }
   }
  },
  "fingerprints": [
@@ -6467,7 +6478,8 @@
   "b298afd0de941b6f",
   "054bf85fd3cbe4f0",
   "1904fc43bfada576",
-  "d1c0a9a0e789a3bb"
+  "d1c0a9a0e789a3bb",
+  "c02e5137233c68a8"
  ],
  "last_kind": "info"
 }
