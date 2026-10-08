@@ -5906,6 +5906,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791488273.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791488273.png"
    }
+  },
+  "noor-info-43-r3": {
+   "title": "معلومة تُضيء: زيد بن ثابت من أشهر كتبة الوحي",
+   "fingerprint": "1904fc43bfada576",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 21.97,
+   "at": "2026-10-08 20:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791492118.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791492118.png"
+   }
   }
  },
  "fingerprints": [
@@ -6443,7 +6454,8 @@
   "a8c2c795bdedcab1",
   "930d3a199153b64b",
   "b298afd0de941b6f",
-  "054bf85fd3cbe4f0"
+  "054bf85fd3cbe4f0",
+  "1904fc43bfada576"
  ],
  "last_kind": "info"
 }
