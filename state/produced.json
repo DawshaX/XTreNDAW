@@ -5807,6 +5807,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791454822.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791454822.png"
    }
+  },
+  "noor-info-99-r3": {
+   "title": "معلومة تُضيء: من تصبح بسبع تمرات عجوة لم يضره سم ولا…",
+   "fingerprint": "01be31513de9ad6a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.23,
+   "at": "2026-10-08 11:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791458517.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791458517.png"
+   }
   }
  },
  "fingerprints": [
@@ -6337,7 +6348,8 @@
   "c3fa4d95296b0a43",
   "53532fc80825f565",
   "d5707e7e7051f78b",
-  "ce11a8c7a8dfe42d"
+  "ce11a8c7a8dfe42d",
+  "01be31513de9ad6a"
  ],
  "last_kind": "info"
 }
