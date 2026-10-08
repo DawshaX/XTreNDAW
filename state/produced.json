@@ -5785,6 +5785,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791447433.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791447433.png"
    }
+  },
+  "noor-info-51-r3": {
+   "title": "معلومة تُضيء: القرآن مقسم إلى 30 جزءا و60 حزبا",
+   "fingerprint": "d5707e7e7051f78b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 23.3,
+   "at": "2026-10-08 09:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791451120.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791451120.png"
+   }
   }
  },
  "fingerprints": [
@@ -6313,7 +6324,8 @@
   "4f4da8ab6a5b959d",
   "91dd6f38455429b5",
   "c3fa4d95296b0a43",
-  "53532fc80825f565"
+  "53532fc80825f565",
+  "d5707e7e7051f78b"
  ],
  "last_kind": "info"
 }
