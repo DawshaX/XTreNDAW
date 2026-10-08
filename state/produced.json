@@ -5774,6 +5774,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791443710.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791443710.png"
    }
+  },
+  "noor-info-32-r3": {
+   "title": "معلومة تُضيء: أصحاب الكهف لبثوا في كهفهم 309 سنين",
+   "fingerprint": "53532fc80825f565",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 23.3,
+   "at": "2026-10-08 08:17",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791447433.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791447433.png"
+   }
   }
  },
  "fingerprints": [
@@ -6301,7 +6312,8 @@
   "0e7b9c60eb169870",
   "4f4da8ab6a5b959d",
   "91dd6f38455429b5",
-  "c3fa4d95296b0a43"
+  "c3fa4d95296b0a43",
+  "53532fc80825f565"
  ],
  "last_kind": "info"
 }
