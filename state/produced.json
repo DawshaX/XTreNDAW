@@ -5741,6 +5741,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791432617.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791432617.png"
    }
+  },
+  "noor-info-92-r3": {
+   "title": "معلومة تُضيء: خير يوم طلعت عليه الشمس يوم الجمعة؛ فيه…",
+   "fingerprint": "4f4da8ab6a5b959d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.5,
+   "at": "2026-10-08 05:12",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791436317.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791436317.png"
+   }
   }
  },
  "fingerprints": [
@@ -6265,7 +6276,8 @@
   "e23e54e1da81e3f6",
   "050c32ab48dac11c",
   "cb99ab668e543fec",
-  "0e7b9c60eb169870"
+  "0e7b9c60eb169870",
+  "4f4da8ab6a5b959d"
  ],
  "last_kind": "info"
 }
