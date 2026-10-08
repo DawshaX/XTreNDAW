@@ -5939,6 +5939,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791499510.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791499510.png"
    }
+  },
+  "noor-info-19-r3": {
+   "title": "معلومة تُضيء: المرأة الوحيدة المذكورة باسمها في…",
+   "fingerprint": "6f5290e7b5c9195f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.9,
+   "at": "2026-10-08 23:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791503219.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791503219.png"
+   }
   }
  },
  "fingerprints": [
@@ -6479,7 +6490,8 @@
   "054bf85fd3cbe4f0",
   "1904fc43bfada576",
   "d1c0a9a0e789a3bb",
-  "c02e5137233c68a8"
+  "c02e5137233c68a8",
+  "6f5290e7b5c9195f"
  ],
  "last_kind": "info"
 }
