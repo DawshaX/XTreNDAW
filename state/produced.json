@@ -5884,6 +5884,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791480835.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791480835.png"
    }
+  },
+  "noor-info-120-r3": {
+   "title": "معلومة تُضيء: أبو حنيفة النعمان: إمام الرأي، رفض…",
+   "fingerprint": "b298afd0de941b6f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 30.57,
+   "at": "2026-10-08 18:36",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791484564.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791484564.png"
+   }
   }
  },
  "fingerprints": [
@@ -6419,7 +6430,8 @@
   "df674024f7857779",
   "147931bdc7c1ea32",
   "a8c2c795bdedcab1",
-  "930d3a199153b64b"
+  "930d3a199153b64b",
+  "b298afd0de941b6f"
  ],
  "last_kind": "info"
 }
