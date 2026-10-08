@@ -5840,6 +5840,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791465981.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791465981.png"
    }
+  },
+  "noor-info-29-r3": {
+   "title": "معلومة تُضيء: أطول آية في القرآن هي آية الدين (البقرة…",
+   "fingerprint": "147931bdc7c1ea32",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.43,
+   "at": "2026-10-08 14:28",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791469688.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791469688.png"
+   }
   }
  },
  "fingerprints": [
@@ -6372,7 +6383,8 @@
   "d5707e7e7051f78b",
   "ce11a8c7a8dfe42d",
   "01be31513de9ad6a",
-  "df674024f7857779"
+  "df674024f7857779",
+  "147931bdc7c1ea32"
  ],
  "last_kind": "info"
 }
