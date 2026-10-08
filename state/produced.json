@@ -5763,6 +5763,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791439994.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791439994.png"
    }
+  },
+  "noor-info-58-r3": {
+   "title": "معلومة تُضيء: سورة الملك تشفع لصاحبها وتمنع عنه عذاب…",
+   "fingerprint": "c3fa4d95296b0a43",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.73,
+   "at": "2026-10-08 07:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791443710.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791443710.png"
+   }
   }
  },
  "fingerprints": [
@@ -6289,7 +6300,8 @@
   "cb99ab668e543fec",
   "0e7b9c60eb169870",
   "4f4da8ab6a5b959d",
-  "91dd6f38455429b5"
+  "91dd6f38455429b5",
+  "c3fa4d95296b0a43"
  ],
  "last_kind": "info"
 }
