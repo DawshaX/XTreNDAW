@@ -5796,6 +5796,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791451120.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791451120.png"
    }
+  },
+  "noor-info-84-r3": {
+   "title": "معلومة تُضيء: إذ يقول لصحبهۦ لا تحزن إن ٱلله معنا…",
+   "fingerprint": "ce11a8c7a8dfe42d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 27.67,
+   "at": "2026-10-08 10:20",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791454822.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791454822.png"
+   }
   }
  },
  "fingerprints": [
@@ -6325,7 +6336,8 @@
   "91dd6f38455429b5",
   "c3fa4d95296b0a43",
   "53532fc80825f565",
-  "d5707e7e7051f78b"
+  "d5707e7e7051f78b",
+  "ce11a8c7a8dfe42d"
  ],
  "last_kind": "info"
 }
