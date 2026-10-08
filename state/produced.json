@@ -5752,6 +5752,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791436317.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791436317.png"
    }
+  },
+  "noor-info-106-r3": {
+   "title": "معلومة تُضيء: لا تغضب ، الوقاية النفسية في ثلاث كلمات",
+   "fingerprint": "91dd6f38455429b5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 23.63,
+   "at": "2026-10-08 06:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791439994.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791439994.png"
+   }
   }
  },
  "fingerprints": [
@@ -6277,7 +6288,8 @@
   "050c32ab48dac11c",
   "cb99ab668e543fec",
   "0e7b9c60eb169870",
-  "4f4da8ab6a5b959d"
+  "4f4da8ab6a5b959d",
+  "91dd6f38455429b5"
  ],
  "last_kind": "info"
 }
