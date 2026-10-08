@@ -5862,6 +5862,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791473438.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791473438.png"
    }
+  },
+  "noor-info-90-r3": {
+   "title": "معلومة تُضيء: أكثروا الصلاة علي يوم الجمعة وليلة…",
+   "fingerprint": "a8c2c795bdedcab1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.13,
+   "at": "2026-10-08 16:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791477144.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791477144.png"
+   }
   }
  },
  "fingerprints": [
@@ -6395,7 +6406,8 @@
   "ce11a8c7a8dfe42d",
   "01be31513de9ad6a",
   "df674024f7857779",
-  "147931bdc7c1ea32"
+  "147931bdc7c1ea32",
+  "a8c2c795bdedcab1"
  ],
  "last_kind": "info"
 }
