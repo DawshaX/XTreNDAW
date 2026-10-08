@@ -5917,6 +5917,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791492118.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791492118.png"
    }
+  },
+  "noor-info-38-r3": {
+   "title": "معلومة تُضيء: قال تعالى: ﴿بينهما برزخ لا يبغيان﴾…",
+   "fingerprint": "d1c0a9a0e789a3bb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.13,
+   "at": "2026-10-08 21:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791495816.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791495816.png"
+   }
   }
  },
  "fingerprints": [
@@ -6455,7 +6466,8 @@
   "930d3a199153b64b",
   "b298afd0de941b6f",
   "054bf85fd3cbe4f0",
-  "1904fc43bfada576"
+  "1904fc43bfada576",
+  "d1c0a9a0e789a3bb"
  ],
  "last_kind": "info"
 }
