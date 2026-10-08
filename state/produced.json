@@ -5818,6 +5818,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791458517.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791458517.png"
    }
+  },
+  "noor-info-132-r3": {
+   "title": "معلومة تُضيء: رمضان: من صام رمضان إيمانا واحتسابا غفر…",
+   "fingerprint": "df674024f7857779",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.67,
+   "at": "2026-10-08 12:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791462236.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791462236.png"
+   }
   }
  },
  "fingerprints": [
@@ -6349,7 +6360,8 @@
   "53532fc80825f565",
   "d5707e7e7051f78b",
   "ce11a8c7a8dfe42d",
-  "01be31513de9ad6a"
+  "01be31513de9ad6a",
+  "df674024f7857779"
  ],
  "last_kind": "info"
 }
