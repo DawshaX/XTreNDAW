@@ -6049,6 +6049,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791536594.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791536594.png"
    }
+  },
+  "noor-info-108-r3": {
+   "title": "معلومة تُضيء: اغتنم خمسا قبل خمس: شبابك قبل هرمك…",
+   "fingerprint": "8aed185cf3f24025",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 29.6,
+   "at": "2026-10-09 10:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791540298.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791540298.png"
+   }
   }
  },
  "fingerprints": [
@@ -6598,7 +6609,8 @@
   "8395106cf88d9246",
   "f717bda31b8947e3",
   "5a91653679278029",
-  "9672d6cab73a0f1f"
+  "9672d6cab73a0f1f",
+  "8aed185cf3f24025"
  ],
  "last_kind": "info"
 }
