@@ -6093,6 +6093,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791551411.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791551411.png"
    }
+  },
+  "noor-info-68-r3": {
+   "title": "معلومة تُضيء: عدد آيات القرآن 6236 آية على العد الكوفي",
+   "fingerprint": "3f1c85aa2c763a26",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.43,
+   "at": "2026-10-09 14:12",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791555128.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791555128.png"
+   }
   }
  },
  "fingerprints": [
@@ -6645,7 +6656,8 @@
   "9672d6cab73a0f1f",
   "8aed185cf3f24025",
   "7996d60b72fdabd5",
-  "46dbc6548a3bbe88"
+  "46dbc6548a3bbe88",
+  "3f1c85aa2c763a26"
  ],
  "last_kind": "info"
 }
