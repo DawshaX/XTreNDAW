@@ -6027,6 +6027,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791529167.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791529167.png"
    }
+  },
+  "noor-info-119-r3": {
+   "title": "معلومة تُضيء: قال ابن عطاء الله: العلم النافع هو الذي…",
+   "fingerprint": "5a91653679278029",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.0,
+   "at": "2026-10-09 08:01",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791532862.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791532862.png"
+   }
   }
  },
  "fingerprints": [
@@ -6574,7 +6585,8 @@
   "e3deb53c49db49e8",
   "4df4be4fba4d4c08",
   "8395106cf88d9246",
-  "f717bda31b8947e3"
+  "f717bda31b8947e3",
+  "5a91653679278029"
  ],
  "last_kind": "info"
 }
