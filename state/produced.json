@@ -6115,6 +6115,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791558819.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791558819.png"
    }
+  },
+  "noor-info-137-r3": {
+   "title": "معلومة تُضيء: يوم عرفة: ما من يوم أكثر من أن يعتق الله…",
+   "fingerprint": "a458d30243035c78",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.1,
+   "at": "2026-10-09 16:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791562511.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791562511.png"
+   }
   }
  },
  "fingerprints": [
@@ -6669,7 +6680,8 @@
   "7996d60b72fdabd5",
   "46dbc6548a3bbe88",
   "3f1c85aa2c763a26",
-  "84dc057b7292ff5a"
+  "84dc057b7292ff5a",
+  "a458d30243035c78"
  ],
  "last_kind": "info"
 }
