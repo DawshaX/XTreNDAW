@@ -6016,6 +6016,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791525456.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791525456.png"
    }
+  },
+  "noor-info-10-r3": {
+   "title": "معلومة تُضيء: بيت الحكمة في بغداد كان أعظم مركز علمي…",
+   "fingerprint": "f717bda31b8947e3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.03,
+   "at": "2026-10-09 06:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791529167.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791529167.png"
+   }
   }
  },
  "fingerprints": [
@@ -6562,7 +6573,8 @@
   "bbabf859517066d5",
   "e3deb53c49db49e8",
   "4df4be4fba4d4c08",
-  "8395106cf88d9246"
+  "8395106cf88d9246",
+  "f717bda31b8947e3"
  ],
  "last_kind": "info"
 }
