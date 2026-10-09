@@ -5994,6 +5994,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791518061.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791518061.png"
    }
+  },
+  "noor-info-30-r3": {
+   "title": "معلومة تُضيء: نزل القرآن الكريم على مدى 23 عاما تقريبا",
+   "fingerprint": "4df4be4fba4d4c08",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 23.03,
+   "at": "2026-10-09 04:56",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791521758.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791521758.png"
+   }
   }
  },
  "fingerprints": [
@@ -6538,7 +6549,8 @@
   "6f5290e7b5c9195f",
   "01c8b5a13b2e4cd6",
   "bbabf859517066d5",
-  "e3deb53c49db49e8"
+  "e3deb53c49db49e8",
+  "4df4be4fba4d4c08"
  ],
  "last_kind": "info"
 }
