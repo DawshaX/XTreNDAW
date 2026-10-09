@@ -6104,6 +6104,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791555128.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791555128.png"
    }
+  },
+  "noor-info-81-r3": {
+   "title": "معلومة تُضيء: التجويد علم تلقيا: أفواه القراء عن النبي…",
+   "fingerprint": "84dc057b7292ff5a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 27.73,
+   "at": "2026-10-09 15:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791558819.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791558819.png"
+   }
   }
  },
  "fingerprints": [
@@ -6657,7 +6668,8 @@
   "8aed185cf3f24025",
   "7996d60b72fdabd5",
   "46dbc6548a3bbe88",
-  "3f1c85aa2c763a26"
+  "3f1c85aa2c763a26",
+  "84dc057b7292ff5a"
  ],
  "last_kind": "info"
 }
