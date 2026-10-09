@@ -6170,6 +6170,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791577354.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791577354.png"
    }
+  },
+  "noor-info-1-r3": {
+   "title": "معلومة تُضيء: أطول آية في القرآن آية الدين: البقرة 282",
+   "fingerprint": "05cc985e6fc1cf39",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.97,
+   "at": "2026-10-09 21:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791581063.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791581063.png"
+   }
   }
  },
  "fingerprints": [
@@ -6729,7 +6740,8 @@
   "98cb0fa6210c999f",
   "00f9fec9a990c32f",
   "f388b110d6452aba",
-  "4ccb7f76d9f8977f"
+  "4ccb7f76d9f8977f",
+  "05cc985e6fc1cf39"
  ],
  "last_kind": "info"
 }
