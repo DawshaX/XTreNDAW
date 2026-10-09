@@ -6159,6 +6159,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791573638.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791573638.png"
    }
+  },
+  "noor-info-26-r3": {
+   "title": "معلومة تُضيء: أطول سورة في القرآن هي البقرة (286 آية)…",
+   "fingerprint": "4ccb7f76d9f8977f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 27.77,
+   "at": "2026-10-09 20:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791577354.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791577354.png"
+   }
   }
  },
  "fingerprints": [
@@ -6717,7 +6728,8 @@
   "a458d30243035c78",
   "98cb0fa6210c999f",
   "00f9fec9a990c32f",
-  "f388b110d6452aba"
+  "f388b110d6452aba",
+  "4ccb7f76d9f8977f"
  ],
  "last_kind": "info"
 }
