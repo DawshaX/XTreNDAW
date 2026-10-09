@@ -6060,6 +6060,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791540298.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791540298.png"
    }
+  },
+  "noor-info-87-r3": {
+   "title": "معلومة تُضيء: ٱلله لطيف بعباده يرزق من يشآء ، الشورى…",
+   "fingerprint": "7996d60b72fdabd5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.0,
+   "at": "2026-10-09 11:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791543997.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791543997.png"
+   }
   }
  },
  "fingerprints": [
@@ -6610,7 +6621,8 @@
   "f717bda31b8947e3",
   "5a91653679278029",
   "9672d6cab73a0f1f",
-  "8aed185cf3f24025"
+  "8aed185cf3f24025",
+  "7996d60b72fdabd5"
  ],
  "last_kind": "info"
 }
