@@ -6005,6 +6005,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791521758.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791521758.png"
    }
+  },
+  "noor-info-0-r3": {
+   "title": "معلومة تُضيء: القرآن الكريم 114 سورة: 86 مكية و28…",
+   "fingerprint": "8395106cf88d9246",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 27.77,
+   "at": "2026-10-09 05:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791525456.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791525456.png"
+   }
   }
  },
  "fingerprints": [
@@ -6550,7 +6561,8 @@
   "01c8b5a13b2e4cd6",
   "bbabf859517066d5",
   "e3deb53c49db49e8",
-  "4df4be4fba4d4c08"
+  "4df4be4fba4d4c08",
+  "8395106cf88d9246"
  ],
  "last_kind": "info"
 }
