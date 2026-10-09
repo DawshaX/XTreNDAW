@@ -5961,6 +5961,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791506960.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791506960.png"
    }
+  },
+  "noor-info-127-r3": {
+   "title": "معلومة تُضيء: النووي: مات وعمره 45 سنة وترك كتبا تقرأ…",
+   "fingerprint": "01c8b5a13b2e4cd6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.27,
+   "at": "2026-10-09 01:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791510679.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791510679.png"
+   }
   }
  },
  "fingerprints": [
@@ -6502,7 +6513,8 @@
   "1904fc43bfada576",
   "d1c0a9a0e789a3bb",
   "c02e5137233c68a8",
-  "6f5290e7b5c9195f"
+  "6f5290e7b5c9195f",
+  "01c8b5a13b2e4cd6"
  ],
  "last_kind": "info"
 }
