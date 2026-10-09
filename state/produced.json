@@ -6137,6 +6137,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791566221.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791566221.png"
    }
+  },
+  "noor-info-28-r3": {
+   "title": "معلومة تُضيء: سورة النمل وردت فيها البسملة مرتين",
+   "fingerprint": "00f9fec9a990c32f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 23.73,
+   "at": "2026-10-09 18:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791569927.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791569927.png"
+   }
   }
  },
  "fingerprints": [
@@ -6693,7 +6704,8 @@
   "3f1c85aa2c763a26",
   "84dc057b7292ff5a",
   "a458d30243035c78",
-  "98cb0fa6210c999f"
+  "98cb0fa6210c999f",
+  "00f9fec9a990c32f"
  ],
  "last_kind": "info"
 }
