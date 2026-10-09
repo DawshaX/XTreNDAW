@@ -5983,6 +5983,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791514362.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791514362.png"
    }
+  },
+  "noor-info-79-r3": {
+   "title": "معلومة تُضيء: سورة الملك شفيعة لصاحبها من عذاب القبر…",
+   "fingerprint": "e3deb53c49db49e8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.23,
+   "at": "2026-10-09 03:54",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791518061.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791518061.png"
+   }
   }
  },
  "fingerprints": [
@@ -6526,7 +6537,8 @@
   "c02e5137233c68a8",
   "6f5290e7b5c9195f",
   "01c8b5a13b2e4cd6",
-  "bbabf859517066d5"
+  "bbabf859517066d5",
+  "e3deb53c49db49e8"
  ],
  "last_kind": "info"
 }
