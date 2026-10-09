@@ -6181,6 +6181,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791581063.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791581063.png"
    }
+  },
+  "noor-info-85-r3": {
+   "title": "معلومة تُضيء: هو ٱلذي أنزل ٱلسكينة في قلوب ٱلمؤمنين…",
+   "fingerprint": "d5224acb6bca0c1f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.43,
+   "at": "2026-10-09 22:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791584774.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791584774.png"
+   }
   }
  },
  "fingerprints": [
@@ -6741,7 +6752,8 @@
   "00f9fec9a990c32f",
   "f388b110d6452aba",
   "4ccb7f76d9f8977f",
-  "05cc985e6fc1cf39"
+  "05cc985e6fc1cf39",
+  "d5224acb6bca0c1f"
  ],
  "last_kind": "info"
 }
