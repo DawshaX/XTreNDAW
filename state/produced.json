@@ -6038,6 +6038,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791532862.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791532862.png"
    }
+  },
+  "noor-info-73-r3": {
+   "title": "معلومة تُضيء: سورة يوسف لقبت بأحسن القصص ونزلت جملة…",
+   "fingerprint": "9672d6cab73a0f1f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.71,
+   "at": "2026-10-09 09:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791536594.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791536594.png"
+   }
   }
  },
  "fingerprints": [
@@ -6586,7 +6597,8 @@
   "4df4be4fba4d4c08",
   "8395106cf88d9246",
   "f717bda31b8947e3",
-  "5a91653679278029"
+  "5a91653679278029",
+  "9672d6cab73a0f1f"
  ],
  "last_kind": "info"
 }
