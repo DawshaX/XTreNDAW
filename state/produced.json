@@ -6148,6 +6148,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791569927.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791569927.png"
    }
+  },
+  "noor-info-91-r3": {
+   "title": "معلومة تُضيء: من قرأ سورة الكهف يوم الجمعة أضاء له من…",
+   "fingerprint": "f388b110d6452aba",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 27.17,
+   "at": "2026-10-09 19:20",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791573638.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791573638.png"
+   }
   }
  },
  "fingerprints": [
@@ -6705,7 +6716,8 @@
   "84dc057b7292ff5a",
   "a458d30243035c78",
   "98cb0fa6210c999f",
-  "00f9fec9a990c32f"
+  "00f9fec9a990c32f",
+  "f388b110d6452aba"
  ],
  "last_kind": "info"
 }
