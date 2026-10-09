@@ -6126,6 +6126,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791562511.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791562511.png"
    }
+  },
+  "noor-info-101-r3": {
+   "title": "معلومة تُضيء: كلوا الزيت وادهنوا به فإنه من شجرة…",
+   "fingerprint": "98cb0fa6210c999f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.37,
+   "at": "2026-10-09 17:17",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791566221.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791566221.png"
+   }
   }
  },
  "fingerprints": [
@@ -6681,7 +6692,8 @@
   "46dbc6548a3bbe88",
   "3f1c85aa2c763a26",
   "84dc057b7292ff5a",
-  "a458d30243035c78"
+  "a458d30243035c78",
+  "98cb0fa6210c999f"
  ],
  "last_kind": "info"
 }
