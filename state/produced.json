@@ -5972,6 +5972,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791510679.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791510679.png"
    }
+  },
+  "noor-info-76-r3": {
+   "title": "معلومة تُضيء: أقصر سورة في القرآن الكوثر: ثلاث آيات",
+   "fingerprint": "bbabf859517066d5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 23.4,
+   "at": "2026-10-09 02:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791514362.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791514362.png"
+   }
   }
  },
  "fingerprints": [
@@ -6514,7 +6525,8 @@
   "d1c0a9a0e789a3bb",
   "c02e5137233c68a8",
   "6f5290e7b5c9195f",
-  "01c8b5a13b2e4cd6"
+  "01c8b5a13b2e4cd6",
+  "bbabf859517066d5"
  ],
  "last_kind": "info"
 }
