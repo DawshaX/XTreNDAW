@@ -6082,6 +6082,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791547727.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791547727.png"
    }
+  },
+  "noor-info-41-r3": {
+   "title": "معلومة تُضيء: مسجد قباء أول مسجد بني في الإسلام",
+   "fingerprint": "46dbc6548a3bbe88",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 22.43,
+   "at": "2026-10-09 13:10",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791551411.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791551411.png"
+   }
   }
  },
  "fingerprints": [
@@ -6633,7 +6644,8 @@
   "5a91653679278029",
   "9672d6cab73a0f1f",
   "8aed185cf3f24025",
-  "7996d60b72fdabd5"
+  "7996d60b72fdabd5",
+  "46dbc6548a3bbe88"
  ],
  "last_kind": "info"
 }
