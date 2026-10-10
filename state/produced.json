@@ -6357,6 +6357,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791640420.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791640420.png"
    }
+  },
+  "noor-info-44-r3": {
+   "title": "معلومة تُضيء: جمع القرآن في مصحف واحد في عهد أبي بكر…",
+   "fingerprint": "8ef17dc121114967",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.0,
+   "at": "2026-10-10 14:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791644116.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791644116.png"
+   }
   }
  },
  "fingerprints": [
@@ -6928,7 +6939,8 @@
   "d1a684a8667619f7",
   "b5b575271aa9df78",
   "f77df1247636a21f",
-  "1616d6012702e95d"
+  "1616d6012702e95d",
+  "8ef17dc121114967"
  ],
  "last_kind": "info"
 }
