@@ -6346,6 +6346,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791636692.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791636692.png"
    }
+  },
+  "noor-info-86-r3": {
+   "title": "معلومة تُضيء: ألا بذكر ٱلله تطمئن ٱلقلوب ، الرعد 28",
+   "fingerprint": "1616d6012702e95d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 23.67,
+   "at": "2026-10-10 13:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791640420.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791640420.png"
+   }
   }
  },
  "fingerprints": [
@@ -6916,7 +6927,8 @@
   "d19f68d187cd8a39",
   "d1a684a8667619f7",
   "b5b575271aa9df78",
-  "f77df1247636a21f"
+  "f77df1247636a21f",
+  "1616d6012702e95d"
  ],
  "last_kind": "info"
 }
