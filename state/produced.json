@@ -6379,6 +6379,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791647824.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791647824.png"
    }
+  },
+  "noor-info-16-r3": {
+   "title": "معلومة تُضيء: سورة الفاتحة تسمى السبع المثاني وأم…",
+   "fingerprint": "c3add31668fddf87",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 22.27,
+   "at": "2026-10-10 16:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791651517.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791651517.png"
+   }
   }
  },
  "fingerprints": [
@@ -6952,7 +6963,8 @@
   "f77df1247636a21f",
   "1616d6012702e95d",
   "8ef17dc121114967",
-  "e5daf4cd1b816d47"
+  "e5daf4cd1b816d47",
+  "c3add31668fddf87"
  ],
  "last_kind": "info"
 }
