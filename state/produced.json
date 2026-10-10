@@ -6412,6 +6412,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791658907.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791658907.png"
    }
+  },
+  "noor-info-61-r3": {
+   "title": "معلومة تُضيء: غزوة بدر وقعت في رمضان سنة 2 هجرية ، يوم…",
+   "fingerprint": "5b3b5dd81aedf793",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.47,
+   "at": "2026-10-10 20:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791662607.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791662607.png"
+   }
   }
  },
  "fingerprints": [
@@ -6988,7 +6999,8 @@
   "e5daf4cd1b816d47",
   "c3add31668fddf87",
   "65910ffed8edbfd5",
-  "7cec05ab5e00b385"
+  "7cec05ab5e00b385",
+  "5b3b5dd81aedf793"
  ],
  "last_kind": "info"
 }
