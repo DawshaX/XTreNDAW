@@ -6335,6 +6335,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791633013.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791633013.png"
    }
+  },
+  "noor-info-31-r3": {
+   "title": "معلومة تُضيء: في القرآن 15 موضع سجدة تلاوة",
+   "fingerprint": "f77df1247636a21f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 21.87,
+   "at": "2026-10-10 12:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791636692.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791636692.png"
+   }
   }
  },
  "fingerprints": [
@@ -6904,7 +6915,8 @@
   "63f9d1e68a82374c",
   "d19f68d187cd8a39",
   "d1a684a8667619f7",
-  "b5b575271aa9df78"
+  "b5b575271aa9df78",
+  "f77df1247636a21f"
  ],
  "last_kind": "info"
 }
