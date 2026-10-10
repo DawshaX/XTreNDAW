@@ -6225,6 +6225,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791595938.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791595938.png"
    }
+  },
+  "noor-info-123-r3": {
+   "title": "معلومة تُضيء: أحمد بن حنبل: ثبت في المحنة حتى كاد…",
+   "fingerprint": "d4bd151f9269eca7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.6,
+   "at": "2026-10-10 02:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791599631.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791599631.png"
+   }
   }
  },
  "fingerprints": [
@@ -6786,7 +6797,8 @@
   "f388b110d6452aba",
   "4ccb7f76d9f8977f",
   "05cc985e6fc1cf39",
-  "d5224acb6bca0c1f"
+  "d5224acb6bca0c1f",
+  "d4bd151f9269eca7"
  ],
  "last_kind": "info"
 }
