@@ -6445,6 +6445,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791670063.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791670063.png"
    }
+  },
+  "noor-info-56-r3": {
+   "title": "معلومة تُضيء: يقال لصاحب القرآن: اقرأ وارتق ورتل كما…",
+   "fingerprint": "15947bc00e6e5f39",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 28.13,
+   "at": "2026-10-10 23:09",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791673772.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791673772.png"
+   }
   }
  },
  "fingerprints": [
@@ -7023,7 +7034,8 @@
   "65910ffed8edbfd5",
   "7cec05ab5e00b385",
   "5b3b5dd81aedf793",
-  "4a94a5248b02d4a3"
+  "4a94a5248b02d4a3",
+  "15947bc00e6e5f39"
  ],
  "last_kind": "info"
 }
