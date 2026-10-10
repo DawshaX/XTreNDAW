@@ -6423,6 +6423,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791662607.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791662607.png"
    }
+  },
+  "noor-info-95-r3": {
+   "title": "معلومة تُضيء: رغم أنف رجل ذكرت عنده فلم يصل علي ، رواه…",
+   "fingerprint": "4a94a5248b02d4a3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.53,
+   "at": "2026-10-10 21:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791666309.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791666309.png"
+   }
   }
  },
  "fingerprints": [
@@ -7000,7 +7011,8 @@
   "c3add31668fddf87",
   "65910ffed8edbfd5",
   "7cec05ab5e00b385",
-  "5b3b5dd81aedf793"
+  "5b3b5dd81aedf793",
+  "4a94a5248b02d4a3"
  ],
  "last_kind": "info"
 }
