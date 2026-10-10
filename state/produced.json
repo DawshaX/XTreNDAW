@@ -6368,6 +6368,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791644116.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791644116.png"
    }
+  },
+  "noor-info-17-r3": {
+   "title": "معلومة تُضيء: نزل القرآن على النبي ﷺ في نحو 23 سنة",
+   "fingerprint": "e5daf4cd1b816d47",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.13,
+   "at": "2026-10-10 15:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791647824.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791647824.png"
+   }
   }
  },
  "fingerprints": [
@@ -6940,7 +6951,8 @@
   "b5b575271aa9df78",
   "f77df1247636a21f",
   "1616d6012702e95d",
-  "8ef17dc121114967"
+  "8ef17dc121114967",
+  "e5daf4cd1b816d47"
  ],
  "last_kind": "info"
 }
