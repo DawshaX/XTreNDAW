@@ -6258,6 +6258,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791607055.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791607055.png"
    }
+  },
+  "noor-info-9-r3": {
+   "title": "معلومة تُضيء: غزوة بدر سنة 2ه وتسمى يوم الفرقان",
+   "fingerprint": "f926de85e3d2aca7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 23.47,
+   "at": "2026-10-10 05:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791610781.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791610781.png"
+   }
   }
  },
  "fingerprints": [
@@ -6821,7 +6832,8 @@
   "05cc985e6fc1cf39",
   "d5224acb6bca0c1f",
   "d4bd151f9269eca7",
-  "6be947c35847b3bb"
+  "6be947c35847b3bb",
+  "f926de85e3d2aca7"
  ],
  "last_kind": "info"
 }
