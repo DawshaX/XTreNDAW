@@ -6269,6 +6269,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791610781.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791610781.png"
    }
+  },
+  "noor-info-140-r3": {
+   "title": "معلومة تُضيء: المولد النبوي: وما أرسلناك إلا رحمة…",
+   "fingerprint": "7a4f8d6cded086fe",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 28.33,
+   "at": "2026-10-10 06:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791614471.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791614471.png"
+   }
   }
  },
  "fingerprints": [
@@ -6833,7 +6844,8 @@
   "d5224acb6bca0c1f",
   "d4bd151f9269eca7",
   "6be947c35847b3bb",
-  "f926de85e3d2aca7"
+  "f926de85e3d2aca7",
+  "7a4f8d6cded086fe"
  ],
  "last_kind": "info"
 }
