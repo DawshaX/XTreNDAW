@@ -6313,6 +6313,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791625572.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791625572.png"
    }
+  },
+  "noor-info-118-r3": {
+   "title": "معلومة تُضيء: قال سفيان الثوري: ما عالجت شيئا أشد علي…",
+   "fingerprint": "b5b575271aa9df78",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.87,
+   "at": "2026-10-10 10:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791629283.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791629283.png"
+   }
   }
  },
  "fingerprints": [
@@ -6881,7 +6892,8 @@
   "7a4f8d6cded086fe",
   "63f9d1e68a82374c",
   "d19f68d187cd8a39",
-  "d1a684a8667619f7"
+  "d1a684a8667619f7",
+  "b5b575271aa9df78"
  ],
  "last_kind": "info"
 }
