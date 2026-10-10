@@ -6390,6 +6390,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791651517.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791651517.png"
    }
+  },
+  "noor-info-71-r3": {
+   "title": "معلومة تُضيء: جزء عم يضم 37 سورة تبدأ بالنبأ وتنتهي…",
+   "fingerprint": "65910ffed8edbfd5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.0,
+   "at": "2026-10-10 18:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791655202.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791655202.png"
+   }
   }
  },
  "fingerprints": [
@@ -6964,7 +6975,8 @@
   "1616d6012702e95d",
   "8ef17dc121114967",
   "e5daf4cd1b816d47",
-  "c3add31668fddf87"
+  "c3add31668fddf87",
+  "65910ffed8edbfd5"
  ],
  "last_kind": "info"
 }
