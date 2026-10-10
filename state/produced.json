@@ -6280,6 +6280,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791614471.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791614471.png"
    }
+  },
+  "noor-info-122-r3": {
+   "title": "معلومة تُضيء: الشافعي: ما ناظرت أحدا إلا وددت أن يظهر…",
+   "fingerprint": "63f9d1e68a82374c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.87,
+   "at": "2026-10-10 07:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791618178.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791618178.png"
+   }
   }
  },
  "fingerprints": [
@@ -6845,7 +6856,8 @@
   "d4bd151f9269eca7",
   "6be947c35847b3bb",
   "f926de85e3d2aca7",
-  "7a4f8d6cded086fe"
+  "7a4f8d6cded086fe",
+  "63f9d1e68a82374c"
  ],
  "last_kind": "info"
 }
