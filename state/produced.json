@@ -6302,6 +6302,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791621873.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791621873.png"
    }
+  },
+  "noor-info-39-r3": {
+   "title": "معلومة تُضيء: قال تعالى: ﴿بلى قادرين على أن نسوي…",
+   "fingerprint": "d1a684a8667619f7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.2,
+   "at": "2026-10-10 09:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791625572.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791625572.png"
+   }
   }
  },
  "fingerprints": [
@@ -6869,7 +6880,8 @@
   "f926de85e3d2aca7",
   "7a4f8d6cded086fe",
   "63f9d1e68a82374c",
-  "d19f68d187cd8a39"
+  "d19f68d187cd8a39",
+  "d1a684a8667619f7"
  ],
  "last_kind": "info"
 }
