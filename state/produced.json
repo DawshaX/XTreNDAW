@@ -6247,6 +6247,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791603367.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791603367.png"
    }
+  },
+  "noor-info-131-r3": {
+   "title": "معلومة تُضيء: إبراهيم بن أدهم: ملك ترك ملكه لله وصار…",
+   "fingerprint": "6be947c35847b3bb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.47,
+   "at": "2026-10-10 04:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791607055.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791607055.png"
+   }
   }
  },
  "fingerprints": [
@@ -6809,7 +6820,8 @@
   "4ccb7f76d9f8977f",
   "05cc985e6fc1cf39",
   "d5224acb6bca0c1f",
-  "d4bd151f9269eca7"
+  "d4bd151f9269eca7",
+  "6be947c35847b3bb"
  ],
  "last_kind": "info"
 }
