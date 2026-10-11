@@ -6643,6 +6643,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791736702.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791736702.png"
    }
+  },
+  "noor-info-24-r3": {
+   "title": "معلومة تُضيء: آية الكرسي أعظم آية في كتاب الله",
+   "fingerprint": "39e67c537810b733",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 22.33,
+   "at": "2026-10-11 17:40",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791740403.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791740403.png"
+   }
   }
  },
  "fingerprints": [
@@ -7235,7 +7246,8 @@
   "f27f0ae655dbcc79",
   "21484019190345c4",
   "42d314df29921056",
-  "532301f172b462a1"
+  "532301f172b462a1",
+  "39e67c537810b733"
  ],
  "last_kind": "info"
 }
