@@ -6698,6 +6698,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791755186.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791755186.png"
    }
+  },
+  "noor-info-97-r3": {
+   "title": "معلومة تُضيء: عليكم بالشفاءين: العسل والقرآن ، رواه…",
+   "fingerprint": "f289f5486c16fa2d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.47,
+   "at": "2026-10-11 22:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791758891.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791758891.png"
+   }
   }
  },
  "fingerprints": [
@@ -7295,7 +7306,8 @@
   "e468619827ba2e8f",
   "35890458dd99bcf2",
   "a8225053de69d26c",
-  "90a18dea6ad7fe11"
+  "90a18dea6ad7fe11",
+  "f289f5486c16fa2d"
  ],
  "last_kind": "info"
 }
