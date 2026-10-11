@@ -6687,6 +6687,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791751475.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791751475.png"
    }
+  },
+  "noor-info-121-r3": {
+   "title": "معلومة تُضيء: مالك بن أنس: إمام دار الهجرة، جلد في…",
+   "fingerprint": "90a18dea6ad7fe11",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 29.93,
+   "at": "2026-10-11 21:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791755186.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791755186.png"
+   }
   }
  },
  "fingerprints": [
@@ -7283,7 +7294,8 @@
   "39e67c537810b733",
   "e468619827ba2e8f",
   "35890458dd99bcf2",
-  "a8225053de69d26c"
+  "a8225053de69d26c",
+  "90a18dea6ad7fe11"
  ],
  "last_kind": "info"
 }
