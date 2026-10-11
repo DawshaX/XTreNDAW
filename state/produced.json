@@ -6610,6 +6610,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791725618.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791725618.png"
    }
+  },
+  "noor-info-103-r3": {
+   "title": "معلومة تُضيء: لولا أن أشق على أمتي لأمرتهم بالسواك عند…",
+   "fingerprint": "21484019190345c4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.13,
+   "at": "2026-10-11 14:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791729320.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791729320.png"
+   }
   }
  },
  "fingerprints": [
@@ -7199,7 +7210,8 @@
   "83414131a533df94",
   "f0b37ee8120faf12",
   "cabaa43a5dfc872a",
-  "f27f0ae655dbcc79"
+  "f27f0ae655dbcc79",
+  "21484019190345c4"
  ],
  "last_kind": "info"
 }
