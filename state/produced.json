@@ -6588,6 +6588,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791718206.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791718206.png"
    }
+  },
+  "noor-info-83-r3": {
+   "title": "معلومة تُضيء: فأنزل ٱلله سكينتهۥ على رسولهۦ وعلى…",
+   "fingerprint": "cabaa43a5dfc872a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.33,
+   "at": "2026-10-11 12:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791721922.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791721922.png"
+   }
   }
  },
  "fingerprints": [
@@ -7175,7 +7186,8 @@
   "b0bccd74b085b5b9",
   "150e274d36be5186",
   "83414131a533df94",
-  "f0b37ee8120faf12"
+  "f0b37ee8120faf12",
+  "cabaa43a5dfc872a"
  ],
  "last_kind": "info"
 }
