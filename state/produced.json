@@ -6544,6 +6544,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791703417.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791703417.png"
    }
+  },
+  "noor-info-47-r3": {
+   "title": "معلومة تُضيء: ذكر القرآن 25 نبيا باسمه",
+   "fingerprint": "b0bccd74b085b5b9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 21.7,
+   "at": "2026-10-11 08:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791707089.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791707089.png"
+   }
   }
  },
  "fingerprints": [
@@ -7127,7 +7138,8 @@
   "31721a23ac397186",
   "7d40f3d5ab3c0700",
   "30966283b9cb397f",
-  "192c71c3508fdc70"
+  "192c71c3508fdc70",
+  "b0bccd74b085b5b9"
  ],
  "last_kind": "info"
 }
