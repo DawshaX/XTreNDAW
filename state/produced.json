@@ -6566,6 +6566,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791710790.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791710790.png"
    }
+  },
+  "noor-info-14-r3": {
+   "title": "معلومة تُضيء: أقدم جامعة في العالم: القرويين بفاس…",
+   "fingerprint": "83414131a533df94",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.23,
+   "at": "2026-10-11 10:28",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791714504.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791714504.png"
+   }
   }
  },
  "fingerprints": [
@@ -7151,7 +7162,8 @@
   "30966283b9cb397f",
   "192c71c3508fdc70",
   "b0bccd74b085b5b9",
-  "150e274d36be5186"
+  "150e274d36be5186",
+  "83414131a533df94"
  ],
  "last_kind": "info"
 }
