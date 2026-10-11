@@ -6500,6 +6500,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791688615.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791688615.png"
    }
+  },
+  "noor-info-8-r3": {
+   "title": "معلومة تُضيء: التقويم الهجري يبدأ من هجرة النبي ﷺ سنة…",
+   "fingerprint": "7d40f3d5ab3c0700",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 27.17,
+   "at": "2026-10-11 04:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791692321.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791692321.png"
+   }
   }
  },
  "fingerprints": [
@@ -7080,7 +7091,8 @@
   "5b3b5dd81aedf793",
   "4a94a5248b02d4a3",
   "15947bc00e6e5f39",
-  "31721a23ac397186"
+  "31721a23ac397186",
+  "7d40f3d5ab3c0700"
  ],
  "last_kind": "info"
 }
