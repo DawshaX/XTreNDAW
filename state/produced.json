@@ -6577,6 +6577,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791714504.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791714504.png"
    }
+  },
+  "noor-info-20-r3": {
+   "title": "معلومة تُضيء: سورة لقمان سميت على رجل حكيم أوتي الحكمة",
+   "fingerprint": "f0b37ee8120faf12",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.1,
+   "at": "2026-10-11 11:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791718206.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791718206.png"
+   }
   }
  },
  "fingerprints": [
@@ -7163,7 +7174,8 @@
   "192c71c3508fdc70",
   "b0bccd74b085b5b9",
   "150e274d36be5186",
-  "83414131a533df94"
+  "83414131a533df94",
+  "f0b37ee8120faf12"
  ],
  "last_kind": "info"
 }
