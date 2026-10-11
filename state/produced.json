@@ -6489,6 +6489,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791684924.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791684924.png"
    }
+  },
+  "noor-info-23-r3": {
+   "title": "معلومة تُضيء: الجنة تحت أقدام الأمهات",
+   "fingerprint": "31721a23ac397186",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 20.93,
+   "at": "2026-10-11 03:16",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791688615.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791688615.png"
+   }
   }
  },
  "fingerprints": [
@@ -7068,7 +7079,8 @@
   "7cec05ab5e00b385",
   "5b3b5dd81aedf793",
   "4a94a5248b02d4a3",
-  "15947bc00e6e5f39"
+  "15947bc00e6e5f39",
+  "31721a23ac397186"
  ],
  "last_kind": "info"
 }
