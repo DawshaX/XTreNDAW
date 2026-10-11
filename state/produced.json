@@ -6599,6 +6599,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791721922.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791721922.png"
    }
+  },
+  "noor-info-42-r3": {
+   "title": "معلومة تُضيء: بلال بن رباح أول مؤذن في الإسلام",
+   "fingerprint": "f27f0ae655dbcc79",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 22.13,
+   "at": "2026-10-11 13:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791725618.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791725618.png"
+   }
   }
  },
  "fingerprints": [
@@ -7187,7 +7198,8 @@
   "150e274d36be5186",
   "83414131a533df94",
   "f0b37ee8120faf12",
-  "cabaa43a5dfc872a"
+  "cabaa43a5dfc872a",
+  "f27f0ae655dbcc79"
  ],
  "last_kind": "info"
 }
