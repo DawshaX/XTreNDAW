@@ -6511,6 +6511,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791692321.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791692321.png"
    }
+  },
+  "noor-info-59-r3": {
+   "title": "معلومة تُضيء: خواتيم سورة البقرة من قرأهما في ليلة…",
+   "fingerprint": "30966283b9cb397f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 22.6,
+   "at": "2026-10-11 05:20",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791696006.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791696006.png"
+   }
   }
  },
  "fingerprints": [
@@ -7092,7 +7103,8 @@
   "4a94a5248b02d4a3",
   "15947bc00e6e5f39",
   "31721a23ac397186",
-  "7d40f3d5ab3c0700"
+  "7d40f3d5ab3c0700",
+  "30966283b9cb397f"
  ],
  "last_kind": "info"
 }
