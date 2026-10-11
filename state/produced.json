@@ -6676,6 +6676,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791747774.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791747774.png"
    }
+  },
+  "noor-info-72-r3": {
+   "title": "معلومة تُضيء: سورة الرحمن يتكرر فيها ﴿فبأي آلاء ربكما…",
+   "fingerprint": "a8225053de69d26c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.7,
+   "at": "2026-10-11 20:44",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791751475.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791751475.png"
+   }
   }
  },
  "fingerprints": [
@@ -7271,7 +7282,8 @@
   "532301f172b462a1",
   "39e67c537810b733",
   "e468619827ba2e8f",
-  "35890458dd99bcf2"
+  "35890458dd99bcf2",
+  "a8225053de69d26c"
  ],
  "last_kind": "info"
 }
