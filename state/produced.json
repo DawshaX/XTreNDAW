@@ -6555,6 +6555,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791707089.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791707089.png"
    }
+  },
+  "noor-info-82-r3": {
+   "title": "معلومة تُضيء: آيات السكينة الست: أنزل ٱلسكينة في قلوب…",
+   "fingerprint": "150e274d36be5186",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.27,
+   "at": "2026-10-11 09:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791710790.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791710790.png"
+   }
   }
  },
  "fingerprints": [
@@ -7139,7 +7150,8 @@
   "7d40f3d5ab3c0700",
   "30966283b9cb397f",
   "192c71c3508fdc70",
-  "b0bccd74b085b5b9"
+  "b0bccd74b085b5b9",
+  "150e274d36be5186"
  ],
  "last_kind": "info"
 }
