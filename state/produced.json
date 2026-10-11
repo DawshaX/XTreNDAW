@@ -6522,6 +6522,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791696006.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791696006.png"
    }
+  },
+  "noor-info-136-r3": {
+   "title": "معلومة تُضيء: عاشوراء: صيام يوم عاشوراء يكفر السنة…",
+   "fingerprint": "192c71c3508fdc70",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.13,
+   "at": "2026-10-11 06:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791699719.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791699719.png"
+   }
   }
  },
  "fingerprints": [
@@ -7104,7 +7115,8 @@
   "15947bc00e6e5f39",
   "31721a23ac397186",
   "7d40f3d5ab3c0700",
-  "30966283b9cb397f"
+  "30966283b9cb397f",
+  "192c71c3508fdc70"
  ],
  "last_kind": "info"
 }
