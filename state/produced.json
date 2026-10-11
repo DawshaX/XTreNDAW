@@ -6632,6 +6632,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791733008.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791733008.png"
    }
+  },
+  "noor-info-60-r3": {
+   "title": "معلومة تُضيء: المعوذتان كان النبي ﷺ يتعوذ بهما كل ليلة…",
+   "fingerprint": "532301f172b462a1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.7,
+   "at": "2026-10-11 16:38",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791736702.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791736702.png"
+   }
   }
  },
  "fingerprints": [
@@ -7223,7 +7234,8 @@
   "cabaa43a5dfc872a",
   "f27f0ae655dbcc79",
   "21484019190345c4",
-  "42d314df29921056"
+  "42d314df29921056",
+  "532301f172b462a1"
  ],
  "last_kind": "info"
 }
