@@ -6709,6 +6709,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791758891.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791758891.png"
    }
+  },
+  "noor-info-55-r3": {
+   "title": "معلومة تُضيء: الماهر بالقرآن مع السفرة الكرام البررة",
+   "fingerprint": "7909496d4d57b934",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.0,
+   "at": "2026-10-11 23:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791762576.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791762576.png"
+   }
   }
  },
  "fingerprints": [
@@ -7307,7 +7318,8 @@
   "35890458dd99bcf2",
   "a8225053de69d26c",
   "90a18dea6ad7fe11",
-  "f289f5486c16fa2d"
+  "f289f5486c16fa2d",
+  "7909496d4d57b934"
  ],
  "last_kind": "info"
 }
