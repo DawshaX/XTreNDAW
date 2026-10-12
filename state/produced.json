@@ -6753,6 +6753,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791773715.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791773715.png"
    }
+  },
+  "noor-info-139-r3": {
+   "title": "معلومة تُضيء: الإسراء والمعراج: سبحان الذي أسرى بعبده…",
+   "fingerprint": "26d8b6e013d45253",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 27.7,
+   "at": "2026-10-12 03:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791777433.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791777433.png"
+   }
   }
  },
  "fingerprints": [
@@ -7354,7 +7365,8 @@
   "f289f5486c16fa2d",
   "7909496d4d57b934",
   "e10c31f03dc406a4",
-  "a6402d72eec2149f"
+  "a6402d72eec2149f",
+  "26d8b6e013d45253"
  ],
  "last_kind": "info"
 }
