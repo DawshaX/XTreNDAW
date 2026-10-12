@@ -6808,6 +6808,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791792243.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791792243.png"
    }
+  },
+  "noor-info-40-r3": {
+   "title": "معلومة تُضيء: الكعبة المشرفة أول بيت وضع للناس",
+   "fingerprint": "44bdb17e472d4ae6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 22.9,
+   "at": "2026-10-12 09:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791795927.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791795927.png"
+   }
   }
  },
  "fingerprints": [
@@ -7414,7 +7425,8 @@
   "e266624e161bc028",
   "e65f9d646681e9dd",
   "0d553e26740eb718",
-  "d51c579a3a2c2ef0"
+  "d51c579a3a2c2ef0",
+  "44bdb17e472d4ae6"
  ],
  "last_kind": "info"
 }
