@@ -6907,6 +6907,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791825693.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791825693.png"
    }
+  },
+  "noor-info-115-r3": {
+   "title": "معلومة تُضيء: قال ابن عطاء الله: ادفن وجودك في أرض…",
+   "fingerprint": "4ee57b36553a2a28",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 28.43,
+   "at": "2026-10-12 18:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791829436.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791829436.png"
+   }
   }
  },
  "fingerprints": [
@@ -7521,7 +7532,8 @@
   "154933bca5e179ed",
   "f124d7b02c92a04d",
   "d4234e4bea77c073",
-  "6cebba05077256c1"
+  "6cebba05077256c1",
+  "4ee57b36553a2a28"
  ],
  "last_kind": "info"
 }
