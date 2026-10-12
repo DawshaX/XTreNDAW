@@ -6874,6 +6874,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791814522.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791814522.png"
    }
+  },
+  "noor-info-63-r3": {
+   "title": "معلومة تُضيء: نزل القرآن على رسول الله ﷺ متفرقا خلال…",
+   "fingerprint": "f124d7b02c92a04d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 30.53,
+   "at": "2026-10-12 15:17",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791818247.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791818247.png"
+   }
   }
  },
  "fingerprints": [
@@ -7485,7 +7496,8 @@
   "b88f11028779be76",
   "75513df42016176f",
   "67dc915a55b2c3d5",
-  "154933bca5e179ed"
+  "154933bca5e179ed",
+  "f124d7b02c92a04d"
  ],
  "last_kind": "info"
 }
