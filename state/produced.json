@@ -6852,6 +6852,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791807084.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791807084.png"
    }
+  },
+  "noor-info-77-r3": {
+   "title": "معلومة تُضيء: نزل القرآن على سبعة أحرف تيسيرا على…",
+   "fingerprint": "67dc915a55b2c3d5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 22.97,
+   "at": "2026-10-12 13:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791810795.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791810795.png"
+   }
   }
  },
  "fingerprints": [
@@ -7461,7 +7472,8 @@
   "d51c579a3a2c2ef0",
   "44bdb17e472d4ae6",
   "b88f11028779be76",
-  "75513df42016176f"
+  "75513df42016176f",
+  "67dc915a55b2c3d5"
  ],
  "last_kind": "info"
 }
