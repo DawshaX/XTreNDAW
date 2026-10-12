@@ -6962,6 +6962,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791844313.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791844313.png"
    }
+  },
+  "noor-info-109-r3": {
+   "title": "معلومة تُضيء: قال ابن عطاء الله: ربما أعطاك فمنعك…",
+   "fingerprint": "dbddf4f4f31facc0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.47,
+   "at": "2026-10-12 23:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791848017.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791848017.png"
+   }
   }
  },
  "fingerprints": [
@@ -7580,7 +7591,8 @@
   "4ee57b36553a2a28",
   "d558f8abc82ee953",
   "7f7a3f323420624c",
-  "f90c1533e1e05c07"
+  "f90c1533e1e05c07",
+  "dbddf4f4f31facc0"
  ],
  "last_kind": "info"
 }
