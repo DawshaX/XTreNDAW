@@ -6764,6 +6764,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791777433.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791777433.png"
    }
+  },
+  "noor-info-7-r3": {
+   "title": "معلومة تُضيء: أول مسجد وضع في الأرض المسجد الحرام ثم…",
+   "fingerprint": "e266624e161bc028",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.23,
+   "at": "2026-10-12 04:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791781150.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791781150.png"
+   }
   }
  },
  "fingerprints": [
@@ -7366,7 +7377,8 @@
   "7909496d4d57b934",
   "e10c31f03dc406a4",
   "a6402d72eec2149f",
-  "26d8b6e013d45253"
+  "26d8b6e013d45253",
+  "e266624e161bc028"
  ],
  "last_kind": "info"
 }
