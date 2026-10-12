@@ -6830,6 +6830,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791799675.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791799675.png"
    }
+  },
+  "noor-info-78-r3": {
+   "title": "معلومة تُضيء: الحروف المقطعة جاءت في أوائل 29 سورة",
+   "fingerprint": "b88f11028779be76",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.57,
+   "at": "2026-10-12 11:09",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791803376.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791803376.png"
+   }
   }
  },
  "fingerprints": [
@@ -7437,7 +7448,8 @@
   "e65f9d646681e9dd",
   "0d553e26740eb718",
   "d51c579a3a2c2ef0",
-  "44bdb17e472d4ae6"
+  "44bdb17e472d4ae6",
+  "b88f11028779be76"
  ],
  "last_kind": "info"
 }
