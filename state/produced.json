@@ -6797,6 +6797,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791788540.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791788540.png"
    }
+  },
+  "noor-info-57-r3": {
+   "title": "معلومة تُضيء: سورة الإخلاص تعدل ثلث القرآن في الأجر",
+   "fingerprint": "d51c579a3a2c2ef0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 22.83,
+   "at": "2026-10-12 08:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791792243.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791792243.png"
+   }
   }
  },
  "fingerprints": [
@@ -7402,7 +7413,8 @@
   "26d8b6e013d45253",
   "e266624e161bc028",
   "e65f9d646681e9dd",
-  "0d553e26740eb718"
+  "0d553e26740eb718",
+  "d51c579a3a2c2ef0"
  ],
  "last_kind": "info"
 }
