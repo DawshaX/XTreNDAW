@@ -6775,6 +6775,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791781150.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791781150.png"
    }
+  },
+  "noor-info-65-r3": {
+   "title": "معلومة تُضيء: بلغ عدد كتاب الوحي أكثر من أربعين كاتبا…",
+   "fingerprint": "e65f9d646681e9dd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 27.43,
+   "at": "2026-10-12 06:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791784845.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791784845.png"
+   }
   }
  },
  "fingerprints": [
@@ -7378,7 +7389,8 @@
   "e10c31f03dc406a4",
   "a6402d72eec2149f",
   "26d8b6e013d45253",
-  "e266624e161bc028"
+  "e266624e161bc028",
+  "e65f9d646681e9dd"
  ],
  "last_kind": "info"
 }
