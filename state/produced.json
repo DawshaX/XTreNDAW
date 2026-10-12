@@ -6940,6 +6940,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791836886.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791836886.png"
    }
+  },
+  "noor-info-135-r3": {
+   "title": "معلومة تُضيء: العيد: يوم عرفة ويوم النحر وأيام التشريق…",
+   "fingerprint": "7f7a3f323420624c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 28.2,
+   "at": "2026-10-12 21:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791840604.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791840604.png"
+   }
   }
  },
  "fingerprints": [
@@ -7556,7 +7567,8 @@
   "d4234e4bea77c073",
   "6cebba05077256c1",
   "4ee57b36553a2a28",
-  "d558f8abc82ee953"
+  "d558f8abc82ee953",
+  "7f7a3f323420624c"
  ],
  "last_kind": "info"
 }
