@@ -6786,6 +6786,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791784845.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791784845.png"
    }
+  },
+  "noor-info-21-r3": {
+   "title": "معلومة تُضيء: الإسراء والمعراج كانتا قبل الهجرة بنحو…",
+   "fingerprint": "0d553e26740eb718",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 23.87,
+   "at": "2026-10-12 07:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791788540.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791788540.png"
+   }
   }
  },
  "fingerprints": [
@@ -7390,7 +7401,8 @@
   "a6402d72eec2149f",
   "26d8b6e013d45253",
   "e266624e161bc028",
-  "e65f9d646681e9dd"
+  "e65f9d646681e9dd",
+  "0d553e26740eb718"
  ],
  "last_kind": "info"
 }
