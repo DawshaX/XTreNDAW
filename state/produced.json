@@ -6841,6 +6841,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791803376.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791803376.png"
    }
+  },
+  "noor-info-104-r3": {
+   "title": "معلومة تُضيء: كان إذا اشتكى رأسه احتجم ، الحجامة سنة…",
+   "fingerprint": "75513df42016176f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.33,
+   "at": "2026-10-12 12:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791807084.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791807084.png"
+   }
   }
  },
  "fingerprints": [
@@ -7449,7 +7460,8 @@
   "0d553e26740eb718",
   "d51c579a3a2c2ef0",
   "44bdb17e472d4ae6",
-  "b88f11028779be76"
+  "b88f11028779be76",
+  "75513df42016176f"
  ],
  "last_kind": "info"
 }
