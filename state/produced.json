@@ -6731,6 +6731,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791766305.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791766305.png"
    }
+  },
+  "noor-info-116-r3": {
+   "title": "معلومة تُضيء: قال عمر بن عبد العزيز: إن هذه القلوب…",
+   "fingerprint": "e10c31f03dc406a4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.97,
+   "at": "2026-10-12 01:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791770018.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791770018.png"
+   }
   }
  },
  "fingerprints": [
@@ -7330,7 +7341,8 @@
   "a8225053de69d26c",
   "90a18dea6ad7fe11",
   "f289f5486c16fa2d",
-  "7909496d4d57b934"
+  "7909496d4d57b934",
+  "e10c31f03dc406a4"
  ],
  "last_kind": "info"
 }
