@@ -6929,6 +6929,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791833191.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791833191.png"
    }
+  },
+  "noor-info-22-r3": {
+   "title": "معلومة تُضيء: أول ما يقضى بين الناس يوم القيامة في…",
+   "fingerprint": "d558f8abc82ee953",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.17,
+   "at": "2026-10-12 20:28",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791836886.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791836886.png"
+   }
   }
  },
  "fingerprints": [
@@ -7544,7 +7555,8 @@
   "f124d7b02c92a04d",
   "d4234e4bea77c073",
   "6cebba05077256c1",
-  "4ee57b36553a2a28"
+  "4ee57b36553a2a28",
+  "d558f8abc82ee953"
  ],
  "last_kind": "info"
 }
