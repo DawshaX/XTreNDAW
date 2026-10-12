@@ -6863,6 +6863,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791810795.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791810795.png"
    }
+  },
+  "noor-info-64-r3": {
+   "title": "معلومة تُضيء: أول ما نزل ﴿اقرأ باسم ربك﴾ وآخر ما نزل…",
+   "fingerprint": "154933bca5e179ed",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 28.83,
+   "at": "2026-10-12 14:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791814522.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791814522.png"
+   }
   }
  },
  "fingerprints": [
@@ -7473,7 +7484,8 @@
   "44bdb17e472d4ae6",
   "b88f11028779be76",
   "75513df42016176f",
-  "67dc915a55b2c3d5"
+  "67dc915a55b2c3d5",
+  "154933bca5e179ed"
  ],
  "last_kind": "info"
 }
