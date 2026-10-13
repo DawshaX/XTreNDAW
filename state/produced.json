@@ -6973,6 +6973,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791848017.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791848017.png"
    }
+  },
+  "noor-info-50-r3": {
+   "title": "معلومة تُضيء: شهر رمضان هو الشهر الذي أنزل فيه القرآن",
+   "fingerprint": "faa970cb52897d76",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 23.27,
+   "at": "2026-10-13 00:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791851727.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791851727.png"
+   }
   }
  },
  "fingerprints": [
@@ -7592,7 +7603,8 @@
   "d558f8abc82ee953",
   "7f7a3f323420624c",
   "f90c1533e1e05c07",
-  "dbddf4f4f31facc0"
+  "dbddf4f4f31facc0",
+  "faa970cb52897d76"
  ],
  "last_kind": "info"
 }
