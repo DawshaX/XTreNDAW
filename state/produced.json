@@ -7105,6 +7105,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791892598.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791892598.png"
    }
+  },
+  "noor-info-134-r3": {
+   "title": "معلومة تُضيء: رمضان: ليلة القدر خير من ألف شهر ، من…",
+   "fingerprint": "bcd9c0c00fb5200d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 27.9,
+   "at": "2026-10-13 12:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791896323.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791896323.png"
+   }
   }
  },
  "fingerprints": [
@@ -7732,7 +7743,8 @@
   "57e676dc118f6792",
   "4266427ccc4c9ade",
   "c198342a3e2b5155",
-  "761337e7da96bd28"
+  "761337e7da96bd28",
+  "bcd9c0c00fb5200d"
  ],
  "last_kind": "info"
 }
