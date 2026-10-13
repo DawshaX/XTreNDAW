@@ -7094,6 +7094,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791888895.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791888895.png"
    }
+  },
+  "noor-info-102-r3": {
+   "title": "معلومة تُضيء: التلبينة: التلبينة مجمة لفؤاد المريض…",
+   "fingerprint": "761337e7da96bd28",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.67,
+   "at": "2026-10-13 11:56",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791892598.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791892598.png"
+   }
   }
  },
  "fingerprints": [
@@ -7720,7 +7731,8 @@
   "273b1994877ff214",
   "57e676dc118f6792",
   "4266427ccc4c9ade",
-  "c198342a3e2b5155"
+  "c198342a3e2b5155",
+  "761337e7da96bd28"
  ],
  "last_kind": "info"
 }
