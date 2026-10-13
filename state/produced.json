@@ -7193,6 +7193,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791922330.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791922330.png"
    }
+  },
+  "noor-info-128-r3": {
+   "title": "معلومة تُضيء: ابن القيم: تلميذ ابن تيمية، صاحب مدارج…",
+   "fingerprint": "3f6e02226a3f5e01",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.63,
+   "at": "2026-10-13 21:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791926032.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791926032.png"
+   }
   }
  },
  "fingerprints": [
@@ -7826,7 +7837,8 @@
   "e69e8616924b6011",
   "9b27bade334eae61",
   "677760f3020c880d",
-  "1121ab95d142c349"
+  "1121ab95d142c349",
+  "3f6e02226a3f5e01"
  ],
  "last_kind": "info"
 }
