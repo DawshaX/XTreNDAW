@@ -7160,6 +7160,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791911181.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791911181.png"
    }
+  },
+  "noor-info-94-r3": {
+   "title": "معلومة تُضيء: الصلوات الخمس والجمعة إلى الجمعة كفارة…",
+   "fingerprint": "9b27bade334eae61",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.17,
+   "at": "2026-10-13 18:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791914903.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791914903.png"
+   }
   }
  },
  "fingerprints": [
@@ -7790,7 +7801,8 @@
   "761337e7da96bd28",
   "bcd9c0c00fb5200d",
   "4ab9768d005f3062",
-  "e69e8616924b6011"
+  "e69e8616924b6011",
+  "9b27bade334eae61"
  ],
  "last_kind": "info"
 }
