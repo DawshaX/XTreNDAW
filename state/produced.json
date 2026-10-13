@@ -7116,6 +7116,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791896323.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791896323.png"
    }
+  },
+  "noor-info-80-r3": {
+   "title": "معلومة تُضيء: قراءة سورة الإخلاص تعدل ثلث القرآن",
+   "fingerprint": "4ab9768d005f3062",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 23.37,
+   "at": "2026-10-13 14:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791900026.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791900026.png"
+   }
   }
  },
  "fingerprints": [
@@ -7744,7 +7755,8 @@
   "4266427ccc4c9ade",
   "c198342a3e2b5155",
   "761337e7da96bd28",
-  "bcd9c0c00fb5200d"
+  "bcd9c0c00fb5200d",
+  "4ab9768d005f3062"
  ],
  "last_kind": "info"
 }
