@@ -7061,6 +7061,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791877738.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791877738.png"
    }
+  },
+  "noor-info-105-r3": {
+   "title": "معلومة تُضيء: نام على شقك الأيمن ، هديه ﷺ في النوم",
+   "fingerprint": "4266427ccc4c9ade",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.1,
+   "at": "2026-10-13 08:50",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791881450.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791881450.png"
+   }
   }
  },
  "fingerprints": [
@@ -7685,7 +7696,8 @@
   "fa145171eaafa5fd",
   "7a58826ce757bc7b",
   "273b1994877ff214",
-  "57e676dc118f6792"
+  "57e676dc118f6792",
+  "4266427ccc4c9ade"
  ],
  "last_kind": "info"
 }
