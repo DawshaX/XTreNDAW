@@ -7050,6 +7050,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791874031.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791874031.png"
    }
+  },
+  "noor-info-5-r3": {
+   "title": "معلومة تُضيء: الكعبة بناها إبراهيم وإسماعيل عليهما…",
+   "fingerprint": "57e676dc118f6792",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 23.87,
+   "at": "2026-10-13 07:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791877738.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791877738.png"
+   }
   }
  },
  "fingerprints": [
@@ -7673,7 +7684,8 @@
   "faa970cb52897d76",
   "fa145171eaafa5fd",
   "7a58826ce757bc7b",
-  "273b1994877ff214"
+  "273b1994877ff214",
+  "57e676dc118f6792"
  ],
  "last_kind": "info"
 }
