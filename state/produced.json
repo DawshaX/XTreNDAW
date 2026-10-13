@@ -7039,6 +7039,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791870345.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791870345.png"
    }
+  },
+  "noor-info-124-r3": {
+   "title": "معلومة تُضيء: البخاري: جمع صحيحه من 600 ألف حديث في 16…",
+   "fingerprint": "273b1994877ff214",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 29.23,
+   "at": "2026-10-13 06:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791874031.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791874031.png"
+   }
   }
  },
  "fingerprints": [
@@ -7661,7 +7672,8 @@
   "dbddf4f4f31facc0",
   "faa970cb52897d76",
   "fa145171eaafa5fd",
-  "7a58826ce757bc7b"
+  "7a58826ce757bc7b",
+  "273b1994877ff214"
  ],
  "last_kind": "info"
 }
