@@ -6984,6 +6984,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791851727.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791851727.png"
    }
+  },
+  "noor-info-129-r3": {
+   "title": "معلومة تُضيء: عمر بن عبد العزيز: خامس الخلفاء…",
+   "fingerprint": "fa145171eaafa5fd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 29.47,
+   "at": "2026-10-13 01:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791855446.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791855446.png"
+   }
   }
  },
  "fingerprints": [
@@ -7604,7 +7615,8 @@
   "7f7a3f323420624c",
   "f90c1533e1e05c07",
   "dbddf4f4f31facc0",
-  "faa970cb52897d76"
+  "faa970cb52897d76",
+  "fa145171eaafa5fd"
  ],
  "last_kind": "info"
 }
