@@ -7215,6 +7215,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791929752.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791929752.png"
    }
+  },
+  "noor-info-54-r3": {
+   "title": "معلومة تُضيء: من قرأ حرفا من كتاب الله فله به حسنة…",
+   "fingerprint": "cc8011849a14147b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 28.7,
+   "at": "2026-10-13 23:17",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791933450.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791933450.png"
+   }
   }
  },
  "fingerprints": [
@@ -7850,7 +7861,8 @@
   "677760f3020c880d",
   "1121ab95d142c349",
   "3f6e02226a3f5e01",
-  "5691778592b7efe6"
+  "5691778592b7efe6",
+  "cc8011849a14147b"
  ],
  "last_kind": "info"
 }
