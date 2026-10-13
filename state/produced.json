@@ -7204,6 +7204,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791926032.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791926032.png"
    }
+  },
+  "noor-info-74-r3": {
+   "title": "معلومة تُضيء: في الكهف أربع قصص: الفتية، والجنتان…",
+   "fingerprint": "5691778592b7efe6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 27.57,
+   "at": "2026-10-13 22:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791929752.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791929752.png"
+   }
   }
  },
  "fingerprints": [
@@ -7838,7 +7849,8 @@
   "9b27bade334eae61",
   "677760f3020c880d",
   "1121ab95d142c349",
-  "3f6e02226a3f5e01"
+  "3f6e02226a3f5e01",
+  "5691778592b7efe6"
  ],
  "last_kind": "info"
 }
