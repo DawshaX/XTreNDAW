@@ -7182,6 +7182,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791918621.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791918621.png"
    }
+  },
+  "noor-info-62-r3": {
+   "title": "معلومة تُضيء: القرآن ترجمت معانيه لأكثر من 40 لغة حول…",
+   "fingerprint": "1121ab95d142c349",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.07,
+   "at": "2026-10-13 20:12",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791922330.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791922330.png"
+   }
   }
  },
  "fingerprints": [
@@ -7814,7 +7825,8 @@
   "4ab9768d005f3062",
   "e69e8616924b6011",
   "9b27bade334eae61",
-  "677760f3020c880d"
+  "677760f3020c880d",
+  "1121ab95d142c349"
  ],
  "last_kind": "info"
 }
