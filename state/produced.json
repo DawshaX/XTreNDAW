@@ -7017,6 +7017,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791862881.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791862881.png"
    }
+  },
+  "noor-info-98-r3": {
+   "title": "معلومة تُضيء: في الحبة السوداء شفاء من كل داء إلا…",
+   "fingerprint": "7a58826ce757bc7b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 26.83,
+   "at": "2026-10-13 04:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791866588.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791866588.png"
+   }
   }
  },
  "fingerprints": [
@@ -7638,7 +7649,8 @@
   "f90c1533e1e05c07",
   "dbddf4f4f31facc0",
   "faa970cb52897d76",
-  "fa145171eaafa5fd"
+  "fa145171eaafa5fd",
+  "7a58826ce757bc7b"
  ],
  "last_kind": "info"
 }
