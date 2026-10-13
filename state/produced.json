@@ -7138,6 +7138,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791903765.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791903765.png"
    }
+  },
+  "noor-info-6-r3": {
+   "title": "معلومة تُضيء: ماء زمزم لما شرب له",
+   "fingerprint": "e69e8616924b6011",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 20.37,
+   "at": "2026-10-13 16:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791907457.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791907457.png"
+   }
   }
  },
  "fingerprints": [
@@ -7767,7 +7778,8 @@
   "c198342a3e2b5155",
   "761337e7da96bd28",
   "bcd9c0c00fb5200d",
-  "4ab9768d005f3062"
+  "4ab9768d005f3062",
+  "e69e8616924b6011"
  ],
  "last_kind": "info"
 }
