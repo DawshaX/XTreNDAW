@@ -7237,6 +7237,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791937178.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791937178.png"
    }
+  },
+  "noor-info-12-r3": {
+   "title": "معلومة تُضيء: الخوارزمي مؤسس علم الجبر، ومن اسمه جاءت…",
+   "fingerprint": "5261b2e0454808b2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 24.57,
+   "at": "2026-10-14 01:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791940865.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791940865.png"
+   }
   }
  },
  "fingerprints": [
@@ -7873,7 +7884,8 @@
   "1121ab95d142c349",
   "3f6e02226a3f5e01",
   "5691778592b7efe6",
-  "cc8011849a14147b"
+  "cc8011849a14147b",
+  "5261b2e0454808b2"
  ],
  "last_kind": "info"
 }
