@@ -7259,6 +7259,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791944562.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791944562.png"
    }
+  },
+  "noor-info-130-r3": {
+   "title": "معلومة تُضيء: الحسن البصري: سيد التابعين، بكى من خشية…",
+   "fingerprint": "d9346c2054baabb2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.97,
+   "at": "2026-10-14 03:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791948268.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791948268.png"
+   }
   }
  },
  "fingerprints": [
@@ -7897,7 +7908,8 @@
   "5691778592b7efe6",
   "cc8011849a14147b",
   "5261b2e0454808b2",
-  "057f93045956c738"
+  "057f93045956c738",
+  "d9346c2054baabb2"
  ],
  "last_kind": "info"
 }
