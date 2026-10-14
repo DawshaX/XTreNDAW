@@ -7402,6 +7402,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792000708.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792000708.png"
    }
+  },
+  "noor-quran-s002-93-r7": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ البَقَرَةِ ﴿93–93﴾ — أيمن سويد",
+   "fingerprint": "45868008c3577eb6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs002-93-aymanswoaid.mp4",
+   "duration": 86.97,
+   "at": "2026-10-14 19:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792004622.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792004622.png"
+   }
   }
  },
  "fingerprints": [
@@ -8053,7 +8064,8 @@
   "56a8a4e4b707026e",
   "d95715a2406cbb4e",
   "94ed6446dbf9cda3",
-  "10ad87ff4ddc4215"
+  "10ad87ff4ddc4215",
+  "45868008c3577eb6"
  ],
  "last_kind": "quran"
 }
