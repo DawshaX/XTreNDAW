@@ -7248,6 +7248,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791940865.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791940865.png"
    }
+  },
+  "noor-info-133-r3": {
+   "title": "معلومة تُضيء: رمضان: العمرة في رمضان تعدل حجة ، متفق…",
+   "fingerprint": "057f93045956c738",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-info-3.mp4",
+   "duration": 25.7,
+   "at": "2026-10-14 02:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791944562.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791944562.png"
+   }
   }
  },
  "fingerprints": [
@@ -7885,7 +7896,8 @@
   "3f6e02226a3f5e01",
   "5691778592b7efe6",
   "cc8011849a14147b",
-  "5261b2e0454808b2"
+  "5261b2e0454808b2",
+  "057f93045956c738"
  ],
  "last_kind": "info"
 }
