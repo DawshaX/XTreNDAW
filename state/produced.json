@@ -7281,6 +7281,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791951975.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791951975.png"
    }
+  },
+  "noor-nawawi-28-r3": {
+   "title": "سلسلة الأربعين النووية (29/30): إن الله يحب إذا عمل أحدكم عملا أن…",
+   "fingerprint": "c14dc45af7c41640",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 23.0,
+   "at": "2026-10-14 05:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791955673.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791955673.png"
+   }
   }
  },
  "fingerprints": [
@@ -7921,7 +7932,8 @@
   "5261b2e0454808b2",
   "057f93045956c738",
   "d9346c2054baabb2",
-  "df735b01b6002457"
+  "df735b01b6002457",
+  "c14dc45af7c41640"
  ],
  "last_kind": "nawawi"
 }
