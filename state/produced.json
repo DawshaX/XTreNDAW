@@ -7391,6 +7391,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791996893.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791996893.png"
    }
+  },
+  "noor-quran-s010-57-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ يُونُسَ ﴿57–58﴾ — أبو بكر الشاطري",
+   "fingerprint": "10ad87ff4ddc4215",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs010-57-shaatree.mp4",
+   "duration": 63.34,
+   "at": "2026-10-14 17:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792000708.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792000708.png"
+   }
   }
  },
  "fingerprints": [
@@ -8041,7 +8052,8 @@
   "a0627d7f4123182f",
   "56a8a4e4b707026e",
   "d95715a2406cbb4e",
-  "94ed6446dbf9cda3"
+  "94ed6446dbf9cda3",
+  "10ad87ff4ddc4215"
  ],
  "last_kind": "quran"
 }
