@@ -7314,6 +7314,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791970377.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791970377.png"
    }
+  },
+  "noor-tafsir-s002-45-r8": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ البَقَرَةِ ﴿45–46﴾ — علي الحذيفي",
+   "fingerprint": "f50a09150ae423ae",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts002-45-hudhaify.mp4",
+   "duration": 79.08,
+   "at": "2026-10-14 10:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791974147.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791974147.png"
+   }
   }
  },
  "fingerprints": [
@@ -7957,7 +7968,8 @@
   "df735b01b6002457",
   "c14dc45af7c41640",
   "45b17f7873078a77",
-  "c595e496e0ac8a01"
+  "c595e496e0ac8a01",
+  "f50a09150ae423ae"
  ],
  "last_kind": "tafsir"
 }
