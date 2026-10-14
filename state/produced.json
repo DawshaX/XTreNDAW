@@ -7380,6 +7380,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791993099.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791993099.png"
    }
+  },
+  "noor-quran-s006-117-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الأَنۡعَامِ ﴿117–118﴾ — علي الحذيفي",
+   "fingerprint": "94ed6446dbf9cda3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs006-117-hudhaify.mp4",
+   "duration": 47.63,
+   "at": "2026-10-14 16:54",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791996893.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791996893.png"
+   }
   }
  },
  "fingerprints": [
@@ -8029,7 +8040,8 @@
   "85fc50a309884435",
   "a0627d7f4123182f",
   "56a8a4e4b707026e",
-  "d95715a2406cbb4e"
+  "d95715a2406cbb4e",
+  "94ed6446dbf9cda3"
  ],
  "last_kind": "quran"
 }
