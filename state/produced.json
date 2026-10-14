@@ -7292,6 +7292,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791955673.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791955673.png"
    }
+  },
+  "noor-nawawi-29-r3": {
+   "title": "سلسلة الأربعين النووية (30/30): اطلبوا الخير دهركم كله، واهربوا من…",
+   "fingerprint": "45b17f7873078a77",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-nawawi-3.mp4",
+   "duration": 25.13,
+   "at": "2026-10-14 06:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791959370.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791959370.png"
+   }
   }
  },
  "fingerprints": [
@@ -7933,7 +7944,8 @@
   "057f93045956c738",
   "d9346c2054baabb2",
   "df735b01b6002457",
-  "c14dc45af7c41640"
+  "c14dc45af7c41640",
+  "45b17f7873078a77"
  ],
  "last_kind": "nawawi"
 }
