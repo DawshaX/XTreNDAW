@@ -7358,6 +7358,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791985422.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791985422.png"
    }
+  },
+  "noor-quran-s054-21-r9": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ القَمَرِ ﴿21–24﴾ — أبو بكر الشاطري",
+   "fingerprint": "56a8a4e4b707026e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs054-21-shaatree.mp4",
+   "duration": 49.97,
+   "at": "2026-10-14 14:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791989174.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791989174.png"
+   }
   }
  },
  "fingerprints": [
@@ -8005,7 +8016,8 @@
   "f50a09150ae423ae",
   "e663c0c94ccead71",
   "85fc50a309884435",
-  "a0627d7f4123182f"
+  "a0627d7f4123182f",
+  "56a8a4e4b707026e"
  ],
- "last_kind": "tafsir"
+ "last_kind": "quran"
 }
