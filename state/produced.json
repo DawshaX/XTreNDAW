@@ -7347,6 +7347,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791981656.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791981656.png"
    }
+  },
+  "noor-tafsir-s002-57-r8": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ البَقَرَةِ ﴿57–57﴾ — علي الحذيفي",
+   "fingerprint": "a0627d7f4123182f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts002-57-hudhaify.mp4",
+   "duration": 69.37,
+   "at": "2026-10-14 13:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791985422.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1791985422.png"
+   }
   }
  },
  "fingerprints": [
@@ -7993,7 +8004,8 @@
   "c595e496e0ac8a01",
   "f50a09150ae423ae",
   "e663c0c94ccead71",
-  "85fc50a309884435"
+  "85fc50a309884435",
+  "a0627d7f4123182f"
  ],
  "last_kind": "tafsir"
 }
