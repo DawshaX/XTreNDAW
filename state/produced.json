@@ -7666,6 +7666,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792124681.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792124681.png"
    }
+  },
+  "noor-tafsir-s002-157-r7": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ البَقَرَةِ ﴿157–157﴾ — أيمن سويد",
+   "fingerprint": "cfc95b5764d9f30e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts002-157-aymanswoaid.mp4",
+   "duration": 50.13,
+   "at": "2026-10-16 05:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792128436.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792128436.png"
+   }
   }
  },
  "fingerprints": [
@@ -8341,7 +8352,8 @@
   "5b16574303efb1bb",
   "b5623736e153b9cd",
   "14fe444cf06659cd",
-  "a9a07e7f2619edaa"
+  "a9a07e7f2619edaa",
+  "cfc95b5764d9f30e"
  ],
  "last_kind": "tafsir"
 }
