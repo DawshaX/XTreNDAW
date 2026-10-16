@@ -7688,6 +7688,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792132220.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792132220.png"
    }
+  },
+  "noor-tafsir-s002-165-r9": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ البَقَرَةِ ﴿165–165﴾ — أبو بكر الشاطري",
+   "fingerprint": "6ba694b8277655e1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts002-165-shaatree.mp4",
+   "duration": 79.77,
+   "at": "2026-10-16 07:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792136018.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792136018.png"
+   }
   }
  },
  "fingerprints": [
@@ -8365,7 +8376,8 @@
   "14fe444cf06659cd",
   "a9a07e7f2619edaa",
   "cfc95b5764d9f30e",
-  "a1bec618c49641ef"
+  "a1bec618c49641ef",
+  "6ba694b8277655e1"
  ],
  "last_kind": "tafsir"
 }
