@@ -7886,6 +7886,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792273330.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792273330.png"
    }
+  },
+  "noor-tafsir-s002-277-r9": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ البَقَرَةِ ﴿277–277﴾ — أبو بكر الشاطري",
+   "fingerprint": "d769db223829344a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts002-277-shaatree.mp4",
+   "duration": 64.64,
+   "at": "2026-10-17 22:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792277143.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792277143.png"
+   }
   }
  },
  "fingerprints": [
@@ -8581,7 +8592,8 @@
   "0463269025dff059",
   "33532f86c51707c3",
   "9d22202b0f6fb9f9",
-  "ecd53d5dde5f541f"
+  "ecd53d5dde5f541f",
+  "d769db223829344a"
  ],
  "last_kind": "tafsir"
 }
