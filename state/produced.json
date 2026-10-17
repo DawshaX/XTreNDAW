@@ -7809,6 +7809,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792210396.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792210396.png"
    }
+  },
+  "noor-tafsir-s002-241-r8": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ البَقَرَةِ ﴿241–242﴾ — علي الحذيفي",
+   "fingerprint": "71a47b21af107b48",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts002-241-hudhaify.mp4",
+   "duration": 69.73,
+   "at": "2026-10-17 11:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792235959.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792235959.png"
+   }
   }
  },
  "fingerprints": [
@@ -8497,7 +8508,8 @@
   "ad0ded538cda486c",
   "cf2cb5da974f2ab8",
   "404cd22be33de11b",
-  "8a61ad493dd357a9"
+  "8a61ad493dd357a9",
+  "71a47b21af107b48"
  ],
  "last_kind": "tafsir"
 }
