@@ -7831,6 +7831,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792239749.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792239749.png"
    }
+  },
+  "noor-tafsir-s002-257-r7": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ البَقَرَةِ ﴿257–257﴾ — أيمن سويد",
+   "fingerprint": "7cedd39aa363021d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts002-257-aymanswoaid.mp4",
+   "duration": 85.58,
+   "at": "2026-10-17 17:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792258052.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792258052.png"
+   }
   }
  },
  "fingerprints": [
@@ -8521,7 +8532,8 @@
   "404cd22be33de11b",
   "8a61ad493dd357a9",
   "71a47b21af107b48",
-  "19408e2e4d801a8a"
+  "19408e2e4d801a8a",
+  "7cedd39aa363021d"
  ],
  "last_kind": "tafsir"
 }
