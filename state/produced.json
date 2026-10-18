@@ -8073,6 +8073,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792346614.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792346614.png"
    }
+  },
+  "noor-tafsir-s003-57-r8": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ آلِ عِمۡرَانَ ﴿57–58﴾ — علي الحذيفي",
+   "fingerprint": "4656d325fac507eb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-57-hudhaify.mp4",
+   "duration": 75.28,
+   "at": "2026-10-18 19:07",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792350459.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792350459.png"
+   }
   }
  },
  "fingerprints": [
@@ -8785,7 +8796,8 @@
   "7712104158774cc1",
   "ae0d0607b2c1b091",
   "b18d893114f17c81",
-  "213057790f556d00"
+  "213057790f556d00",
+  "4656d325fac507eb"
  ],
  "last_kind": "tafsir"
 }
