@@ -7996,6 +7996,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792310962.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792310962.png"
    }
+  },
+  "noor-tafsir-s003-29-r7": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ آلِ عِمۡرَانَ ﴿29–29﴾ — أيمن سويد",
+   "fingerprint": "fd1e4c0412b68a85",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-29-aymanswoaid.mp4",
+   "duration": 72.47,
+   "at": "2026-10-18 09:12",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792314739.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792314739.png"
+   }
   }
  },
  "fingerprints": [
@@ -8701,7 +8712,8 @@
   "7f0f09c2fa3e37ea",
   "cb24552aeb5720cb",
   "a9115416f69984e5",
-  "38677de662325a9c"
+  "38677de662325a9c",
+  "fd1e4c0412b68a85"
  ],
  "last_kind": "tafsir"
 }
