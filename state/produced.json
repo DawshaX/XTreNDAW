@@ -7985,6 +7985,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792307197.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792307197.png"
    }
+  },
+  "noor-tafsir-s003-25-r9": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ آلِ عِمۡرَانَ ﴿25–25﴾ — أبو بكر الشاطري",
+   "fingerprint": "38677de662325a9c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-25-shaatree.mp4",
+   "duration": 54.51,
+   "at": "2026-10-18 08:09",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792310962.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792310962.png"
+   }
   }
  },
  "fingerprints": [
@@ -8689,7 +8700,8 @@
   "a8cff064a2d1eb7a",
   "7f0f09c2fa3e37ea",
   "cb24552aeb5720cb",
-  "a9115416f69984e5"
+  "a9115416f69984e5",
+  "38677de662325a9c"
  ],
  "last_kind": "tafsir"
 }
