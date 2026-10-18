@@ -280,3 +280,5 @@ https://videos.pexels.com/video-files/39988659/17064514_720_1280_50fps.mp4
 https://videos.pexels.com/video-files/36207171/15354159_720_1280_60fps.mp4
 https://videos.pexels.com/video-files/7681534/7681534-hd_720_1280_24fps.mp4
 https://videos.pexels.com/video-files/8549582/8549582-hd_1080_1920_25fps.mp4
+https://videos.pexels.com/video-files/11487519/11487519-hd_1080_1920_60fps.mp4
+https://videos.pexels.com/video-files/8549582/8549582-hd_720_1280_25fps.mp4
