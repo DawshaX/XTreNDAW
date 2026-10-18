@@ -8040,6 +8040,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792326371.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792326371.png"
    }
+  },
+  "noor-tafsir-s003-45-r8": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ آلِ عِمۡرَانَ ﴿45–45﴾ — علي الحذيفي",
+   "fingerprint": "ae0d0607b2c1b091",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-45-hudhaify.mp4",
+   "duration": 65.37,
+   "at": "2026-10-18 13:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792330229.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792330229.png"
+   }
   }
  },
  "fingerprints": [
@@ -8749,7 +8760,8 @@
   "fd1e4c0412b68a85",
   "5ba1002d59d9101c",
   "dae2ae8443ed2f4e",
-  "7712104158774cc1"
+  "7712104158774cc1",
+  "ae0d0607b2c1b091"
  ],
  "last_kind": "tafsir"
 }
