@@ -8106,6 +8106,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792358173.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792358173.png"
    }
+  },
+  "noor-tafsir-s003-69-r8": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ آلِ عِمۡرَانَ ﴿69–70﴾ — علي الحذيفي",
+   "fingerprint": "c1579ead3dac8617",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-69-hudhaify.mp4",
+   "duration": 87.53,
+   "at": "2026-10-18 22:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792362126.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792362126.png"
+   }
   }
  },
  "fingerprints": [
@@ -8821,7 +8832,8 @@
   "213057790f556d00",
   "4656d325fac507eb",
   "6e8c1de61e0ae6d6",
-  "8fa4f6fc6a402a96"
+  "8fa4f6fc6a402a96",
+  "c1579ead3dac8617"
  ],
  "last_kind": "tafsir"
 }
