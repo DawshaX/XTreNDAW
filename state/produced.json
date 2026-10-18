@@ -7974,6 +7974,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792303423.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792303423.png"
    }
+  },
+  "noor-tafsir-s003-21-r8": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ آلِ عِمۡرَانَ ﴿21–21﴾ — علي الحذيفي",
+   "fingerprint": "a9115416f69984e5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-21-hudhaify.mp4",
+   "duration": 67.13,
+   "at": "2026-10-18 07:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792307197.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792307197.png"
+   }
   }
  },
  "fingerprints": [
@@ -8677,7 +8688,8 @@
   "a81e4f036697b909",
   "a8cff064a2d1eb7a",
   "7f0f09c2fa3e37ea",
-  "cb24552aeb5720cb"
+  "cb24552aeb5720cb",
+  "a9115416f69984e5"
  ],
  "last_kind": "tafsir"
 }
