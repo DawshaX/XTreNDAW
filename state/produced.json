@@ -7908,6 +7908,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792280905.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792280905.png"
    }
+  },
+  "noor-tafsir-s002-285-r8": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ البَقَرَةِ ﴿285–285﴾ — علي الحذيفي",
+   "fingerprint": "75b471d66cc406ae",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts002-285-hudhaify.mp4",
+   "duration": 72.09,
+   "at": "2026-10-18 00:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792284678.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792284678.png"
+   }
   }
  },
  "fingerprints": [
@@ -8605,7 +8616,8 @@
   "9d22202b0f6fb9f9",
   "ecd53d5dde5f541f",
   "d769db223829344a",
-  "f2bc2eec8b8c4393"
+  "f2bc2eec8b8c4393",
+  "75b471d66cc406ae"
  ],
  "last_kind": "tafsir"
 }
