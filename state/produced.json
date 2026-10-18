@@ -8117,6 +8117,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792362126.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792362126.png"
    }
+  },
+  "noor-tafsir-s003-73-r9": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ آلِ عِمۡرَانَ ﴿73–73﴾ — أبو بكر الشاطري",
+   "fingerprint": "db6253758bf0a9ee",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-73-shaatree.mp4",
+   "duration": 74.6,
+   "at": "2026-10-18 23:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792365966.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792365966.png"
+   }
   }
  },
  "fingerprints": [
@@ -8833,7 +8844,8 @@
   "4656d325fac507eb",
   "6e8c1de61e0ae6d6",
   "8fa4f6fc6a402a96",
-  "c1579ead3dac8617"
+  "c1579ead3dac8617",
+  "db6253758bf0a9ee"
  ],
  "last_kind": "tafsir"
 }
