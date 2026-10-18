@@ -7941,6 +7941,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792292142.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792292142.png"
    }
+  },
+  "noor-tafsir-s003-9-r8": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ آلِ عِمۡرَانَ ﴿9–9﴾ — علي الحذيفي",
+   "fingerprint": "a8cff064a2d1eb7a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-9-hudhaify.mp4",
+   "duration": 53.9,
+   "at": "2026-10-18 03:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792295894.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792295894.png"
+   }
   }
  },
  "fingerprints": [
@@ -8641,7 +8652,8 @@
   "f2bc2eec8b8c4393",
   "75b471d66cc406ae",
   "887d238750954286",
-  "a81e4f036697b909"
+  "a81e4f036697b909",
+  "a8cff064a2d1eb7a"
  ],
  "last_kind": "tafsir"
 }
