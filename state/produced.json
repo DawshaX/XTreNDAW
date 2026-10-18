@@ -8007,6 +8007,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792314739.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792314739.png"
    }
+  },
+  "noor-tafsir-s003-33-r8": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ آلِ عِمۡرَانَ ﴿33–34﴾ — علي الحذيفي",
+   "fingerprint": "5ba1002d59d9101c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-33-hudhaify.mp4",
+   "duration": 65.94,
+   "at": "2026-10-18 10:17",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792318642.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792318642.png"
+   }
   }
  },
  "fingerprints": [
@@ -8713,7 +8724,8 @@
   "cb24552aeb5720cb",
   "a9115416f69984e5",
   "38677de662325a9c",
-  "fd1e4c0412b68a85"
+  "fd1e4c0412b68a85",
+  "5ba1002d59d9101c"
  ],
  "last_kind": "tafsir"
 }
