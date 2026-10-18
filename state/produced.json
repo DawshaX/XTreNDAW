@@ -8029,6 +8029,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792322509.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792322509.png"
    }
+  },
+  "noor-tafsir-s003-41-r7": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ آلِ عِمۡرَانَ ﴿41–41﴾ — أيمن سويد",
+   "fingerprint": "7712104158774cc1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-41-aymanswoaid.mp4",
+   "duration": 72.28,
+   "at": "2026-10-18 12:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792326371.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792326371.png"
+   }
   }
  },
  "fingerprints": [
@@ -8737,7 +8748,8 @@
   "38677de662325a9c",
   "fd1e4c0412b68a85",
   "5ba1002d59d9101c",
-  "dae2ae8443ed2f4e"
+  "dae2ae8443ed2f4e",
+  "7712104158774cc1"
  ],
  "last_kind": "tafsir"
 }
