@@ -8282,6 +8282,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792434185.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792434185.png"
    }
+  },
+  "noor-tafsir-s003-141-r9": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ آلِ عِمۡرَانَ ﴿141–142﴾ — أبو بكر الشاطري",
+   "fingerprint": "e994b7b5151ad45a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-141-shaatree.mp4",
+   "duration": 77.64,
+   "at": "2026-10-19 19:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792437996.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792437996.png"
+   }
   }
  },
  "fingerprints": [
@@ -9013,7 +9024,8 @@
   "e077624d201a6245",
   "97a541a9ce5ea207",
   "07b8534b981610e4",
-  "d481bf7f3bc547b9"
+  "d481bf7f3bc547b9",
+  "e994b7b5151ad45a"
  ],
  "last_kind": "tafsir"
 }
