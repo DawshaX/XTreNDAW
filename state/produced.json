@@ -8238,6 +8238,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792418793.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792418793.png"
    }
+  },
+  "noor-tafsir-s003-125-r8": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ آلِ عِمۡرَانَ ﴿125–125﴾ — علي الحذيفي",
+   "fingerprint": "e077624d201a6245",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-125-hudhaify.mp4",
+   "duration": 72.86,
+   "at": "2026-10-19 15:10",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792422610.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792422610.png"
+   }
   }
  },
  "fingerprints": [
@@ -8965,7 +8976,8 @@
   "074598fa4084c0c1",
   "553bcfb9645667ce",
   "064e4ae6be50e218",
-  "e27c564fe99a7300"
+  "e27c564fe99a7300",
+  "e077624d201a6245"
  ],
  "last_kind": "tafsir"
 }
