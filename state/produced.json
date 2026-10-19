@@ -8249,6 +8249,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792422610.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792422610.png"
    }
+  },
+  "noor-tafsir-s003-129-r9": {
+   "title": "سلسلة التدبُّر (1/42): سُورَةُ آلِ عِمۡرَانَ ﴿129–129﴾ — أبو بكر الشاطري",
+   "fingerprint": "97a541a9ce5ea207",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-129-shaatree.mp4",
+   "duration": 60.38,
+   "at": "2026-10-19 16:14",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792426457.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792426457.png"
+   }
   }
  },
  "fingerprints": [
@@ -8977,7 +8988,8 @@
   "553bcfb9645667ce",
   "064e4ae6be50e218",
   "e27c564fe99a7300",
-  "e077624d201a6245"
+  "e077624d201a6245",
+  "97a541a9ce5ea207"
  ],
  "last_kind": "tafsir"
 }
