@@ -8337,6 +8337,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792453385.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792453385.png"
    }
+  },
+  "noor-tafsir-s003-161-r8": {
+   "title": "تدبّر: ﴿وما كان لنبى أن يغل ومن يغلل يأت…﴾ | سورة آل عمران ﴿161﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (41/50)",
+   "fingerprint": "56bda0164d0d1ae7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-161-hudhaify.mp4",
+   "duration": 57.05,
+   "at": "2026-10-20 00:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792457221.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792457221.png"
+   }
   }
  },
  "fingerprints": [
@@ -9073,7 +9084,8 @@
   "40bc1db9de56a132",
   "a1675302cbefe0f7",
   "8ef99ba4172597fb",
-  "f1d21519f4fd59c1"
+  "f1d21519f4fd59c1",
+  "56bda0164d0d1ae7"
  ],
  "last_kind": "tafsir"
 }
