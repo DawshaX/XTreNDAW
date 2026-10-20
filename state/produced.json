@@ -8348,6 +8348,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792457221.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792457221.png"
    }
+  },
+  "noor-tafsir-s003-165-r9": {
+   "title": "تدبّر: ﴿أولما أصبتكم مصيبة قد أصبتم…﴾ | سورة آل عمران ﴿165﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (42/50)",
+   "fingerprint": "59cb6dc3768116ac",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-165-shaatree.mp4",
+   "duration": 60.26,
+   "at": "2026-10-20 01:50",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792461034.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792461034.png"
+   }
   }
  },
  "fingerprints": [
@@ -9085,7 +9096,8 @@
   "a1675302cbefe0f7",
   "8ef99ba4172597fb",
   "f1d21519f4fd59c1",
-  "56bda0164d0d1ae7"
+  "56bda0164d0d1ae7",
+  "59cb6dc3768116ac"
  ],
  "last_kind": "tafsir"
 }
