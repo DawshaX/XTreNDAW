@@ -8513,6 +8513,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792514958.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792514958.png"
    }
+  },
+  "noor-tafsir-s004-29-r9": {
+   "title": "تدبّر: ﴿يأيها ٱلذين ءامنوا لا تأكلوا…﴾ | سورة النساء ﴿29﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (8/44)",
+   "fingerprint": "b3426a3bb4c7df7f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-29-shaatree.mp4",
+   "duration": 64.02,
+   "at": "2026-10-20 19:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792526139.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792526139.png"
+   }
   }
  },
  "fingerprints": [
@@ -9265,7 +9276,8 @@
   "8e9140d81d9a7471",
   "2b9f0f07456fb5f9",
   "5565e127c969bdb1",
-  "439547b11eed0dbf"
+  "439547b11eed0dbf",
+  "b3426a3bb4c7df7f"
  ],
  "last_kind": "tafsir"
 }
