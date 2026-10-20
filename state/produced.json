@@ -8359,6 +8359,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792461034.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792461034.png"
    }
+  },
+  "noor-tafsir-s003-169-r7": {
+   "title": "تدبّر: ﴿ولا تحسبن ٱلذين قتلوا فى سبيل…﴾ | سورة آل عمران ﴿169﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (43/50)",
+   "fingerprint": "d5e5be0c58fd0950",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-169-aymanswoaid.mp4",
+   "duration": 70.6,
+   "at": "2026-10-20 02:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792464906.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792464906.png"
+   }
   }
  },
  "fingerprints": [
@@ -9097,7 +9108,8 @@
   "8ef99ba4172597fb",
   "f1d21519f4fd59c1",
   "56bda0164d0d1ae7",
-  "59cb6dc3768116ac"
+  "59cb6dc3768116ac",
+  "d5e5be0c58fd0950"
  ],
  "last_kind": "tafsir"
 }
