@@ -8491,6 +8491,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792507320.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792507320.png"
    }
+  },
+  "noor-tafsir-s004-17-r7": {
+   "title": "تدبّر: ﴿إنما ٱلتوبة على ٱلله للذين يعملون…﴾ | سورة النساء ﴿17﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (5/44)",
+   "fingerprint": "5565e127c969bdb1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-17-aymanswoaid.mp4",
+   "duration": 75.54,
+   "at": "2026-10-20 15:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792511195.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792511195.png"
+   }
   }
  },
  "fingerprints": [
@@ -9241,7 +9252,8 @@
   "6a2c33010b5e1555",
   "f3e4a4795072ddfd",
   "8e9140d81d9a7471",
-  "2b9f0f07456fb5f9"
+  "2b9f0f07456fb5f9",
+  "5565e127c969bdb1"
  ],
  "last_kind": "tafsir"
 }
