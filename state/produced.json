@@ -8535,6 +8535,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792529965.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792529965.png"
    }
+  },
+  "noor-tafsir-s004-37-r8": {
+   "title": "تدبّر: ﴿ٱلذين يبخلون ويأمرون ٱلناس بٱلبخل…﴾ | سورة النساء ﴿37﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (10/44)",
+   "fingerprint": "872cad3817e01914",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-37-hudhaify.mp4",
+   "duration": 63.64,
+   "at": "2026-10-20 22:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792533882.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792533882.png"
+   }
   }
  },
  "fingerprints": [
@@ -9289,7 +9300,8 @@
   "5565e127c969bdb1",
   "439547b11eed0dbf",
   "b3426a3bb4c7df7f",
-  "d584977bea123781"
+  "d584977bea123781",
+  "872cad3817e01914"
  ],
  "last_kind": "tafsir"
 }
