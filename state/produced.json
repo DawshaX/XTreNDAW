@@ -8425,6 +8425,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792484081.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792484081.png"
    }
+  },
+  "noor-tafsir-s003-193-r7": {
+   "title": "تدبّر: ﴿ربنا إننا سمعنا مناديا ينادى…﴾ | سورة آل عمران ﴿193﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (49/50)",
+   "fingerprint": "93f0342a8e0bef4e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-193-aymanswoaid.mp4",
+   "duration": 85.65,
+   "at": "2026-10-20 09:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792487944.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792487944.png"
+   }
   }
  },
  "fingerprints": [
@@ -9169,7 +9180,8 @@
   "0e38c2284a235090",
   "0f5849f505b2d7d7",
   "2c1fad6bf4e967de",
-  "8fe1a79c9f9ceca4"
+  "8fe1a79c9f9ceca4",
+  "93f0342a8e0bef4e"
  ],
  "last_kind": "tafsir"
 }
