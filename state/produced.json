@@ -8447,6 +8447,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792491715.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792491715.png"
    }
+  },
+  "noor-tafsir-s004-1-r9": {
+   "title": "تدبّر: ﴿بسم ٱلله ٱلرحمن ٱلرحيم يأيها…﴾ | سورة النساء ﴿1﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (1/44)",
+   "fingerprint": "6a2c33010b5e1555",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-1-shaatree.mp4",
+   "duration": 79.25,
+   "at": "2026-10-20 11:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792495593.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792495593.png"
+   }
   }
  },
  "fingerprints": [
@@ -9193,7 +9204,8 @@
   "2c1fad6bf4e967de",
   "8fe1a79c9f9ceca4",
   "93f0342a8e0bef4e",
-  "b93274ca53e2b228"
+  "b93274ca53e2b228",
+  "6a2c33010b5e1555"
  ],
  "last_kind": "tafsir"
 }
