@@ -8469,6 +8469,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792499605.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792499605.png"
    }
+  },
+  "noor-tafsir-s004-9-r8": {
+   "title": "تدبّر: ﴿وليخش ٱلذين لو تركوا من خلفهم…﴾ | سورة النساء ﴿9﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (3/44)",
+   "fingerprint": "8e9140d81d9a7471",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-9-hudhaify.mp4",
+   "duration": 57.56,
+   "at": "2026-10-20 13:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792503473.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792503473.png"
+   }
   }
  },
  "fingerprints": [
@@ -9217,7 +9228,8 @@
   "93f0342a8e0bef4e",
   "b93274ca53e2b228",
   "6a2c33010b5e1555",
-  "f3e4a4795072ddfd"
+  "f3e4a4795072ddfd",
+  "8e9140d81d9a7471"
  ],
  "last_kind": "tafsir"
 }
