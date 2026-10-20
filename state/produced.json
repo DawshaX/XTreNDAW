@@ -8502,6 +8502,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792511195.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792511195.png"
    }
+  },
+  "noor-tafsir-s004-21-r8": {
+   "title": "تدبّر: ﴿وكيف تأخذونهۥ وقد أفضى بعضكم إلى…﴾ | سورة النساء ﴿21﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (6/44)",
+   "fingerprint": "439547b11eed0dbf",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-21-hudhaify.mp4",
+   "duration": 50.21,
+   "at": "2026-10-20 16:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792514958.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792514958.png"
+   }
   }
  },
  "fingerprints": [
@@ -9253,7 +9264,8 @@
   "f3e4a4795072ddfd",
   "8e9140d81d9a7471",
   "2b9f0f07456fb5f9",
-  "5565e127c969bdb1"
+  "5565e127c969bdb1",
+  "439547b11eed0dbf"
  ],
  "last_kind": "tafsir"
 }
