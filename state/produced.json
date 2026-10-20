@@ -8381,6 +8381,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792468767.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792468767.png"
    }
+  },
+  "noor-tafsir-s003-177-r9": {
+   "title": "تدبّر: ﴿إن ٱلذين ٱشتروا ٱلكفر بٱلإيمن لن…﴾ | سورة آل عمران ﴿177﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (45/50)",
+   "fingerprint": "0e38c2284a235090",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-177-shaatree.mp4",
+   "duration": 47.74,
+   "at": "2026-10-20 05:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792472561.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792472561.png"
+   }
   }
  },
  "fingerprints": [
@@ -9121,7 +9132,8 @@
   "56bda0164d0d1ae7",
   "59cb6dc3768116ac",
   "d5e5be0c58fd0950",
-  "781d53b7b897a47c"
+  "781d53b7b897a47c",
+  "0e38c2284a235090"
  ],
  "last_kind": "tafsir"
 }
