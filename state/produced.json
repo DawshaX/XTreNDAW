@@ -8403,6 +8403,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792476330.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792476330.png"
    }
+  },
+  "noor-tafsir-s003-185-r8": {
+   "title": "تدبّر: ﴿كل نفس ذائقة ٱلموت وإنما توفون…﴾ | سورة آل عمران ﴿185﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (47/50)",
+   "fingerprint": "2c1fad6bf4e967de",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-185-hudhaify.mp4",
+   "duration": 69.22,
+   "at": "2026-10-20 07:10",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792480242.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792480242.png"
+   }
   }
  },
  "fingerprints": [
@@ -9145,7 +9156,8 @@
   "d5e5be0c58fd0950",
   "781d53b7b897a47c",
   "0e38c2284a235090",
-  "0f5849f505b2d7d7"
+  "0f5849f505b2d7d7",
+  "2c1fad6bf4e967de"
  ],
  "last_kind": "tafsir"
 }
