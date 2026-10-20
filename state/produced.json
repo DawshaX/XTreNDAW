@@ -8480,6 +8480,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792503473.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792503473.png"
    }
+  },
+  "noor-tafsir-s004-13-r9": {
+   "title": "تدبّر: ﴿تلك حدود ٱلله ومن يطع ٱلله…﴾ | سورة النساء ﴿13﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (4/44)",
+   "fingerprint": "2b9f0f07456fb5f9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-13-shaatree.mp4",
+   "duration": 56.75,
+   "at": "2026-10-20 14:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792507320.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792507320.png"
+   }
   }
  },
  "fingerprints": [
@@ -9229,7 +9240,8 @@
   "b93274ca53e2b228",
   "6a2c33010b5e1555",
   "f3e4a4795072ddfd",
-  "8e9140d81d9a7471"
+  "8e9140d81d9a7471",
+  "2b9f0f07456fb5f9"
  ],
  "last_kind": "tafsir"
 }
