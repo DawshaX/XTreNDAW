@@ -8546,6 +8546,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792533882.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792533882.png"
    }
+  },
+  "noor-tafsir-s004-41-r9": {
+   "title": "تدبّر: ﴿فكيف إذا جئنا من كل أمة بشهيد…﴾ | سورة النساء ﴿41﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (11/44)",
+   "fingerprint": "8a50ed524af74075",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-41-shaatree.mp4",
+   "duration": 57.01,
+   "at": "2026-10-20 23:07",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792537648.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792537648.png"
+   }
   }
  },
  "fingerprints": [
@@ -9301,7 +9312,8 @@
   "439547b11eed0dbf",
   "b3426a3bb4c7df7f",
   "d584977bea123781",
-  "872cad3817e01914"
+  "872cad3817e01914",
+  "8a50ed524af74075"
  ],
  "last_kind": "tafsir"
 }
