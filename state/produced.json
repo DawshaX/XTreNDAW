@@ -8392,6 +8392,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792472561.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792472561.png"
    }
+  },
+  "noor-tafsir-s003-181-r7": {
+   "title": "تدبّر: ﴿لقد سمع ٱلله قول ٱلذين قالوا إن…﴾ | سورة آل عمران ﴿181﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (46/50)",
+   "fingerprint": "0f5849f505b2d7d7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-181-aymanswoaid.mp4",
+   "duration": 72.98,
+   "at": "2026-10-20 06:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792476330.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792476330.png"
+   }
   }
  },
  "fingerprints": [
@@ -9133,7 +9144,8 @@
   "59cb6dc3768116ac",
   "d5e5be0c58fd0950",
   "781d53b7b897a47c",
-  "0e38c2284a235090"
+  "0e38c2284a235090",
+  "0f5849f505b2d7d7"
  ],
  "last_kind": "tafsir"
 }
