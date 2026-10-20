@@ -8370,6 +8370,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792464906.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792464906.png"
    }
+  },
+  "noor-tafsir-s003-173-r8": {
+   "title": "تدبّر: ﴿ٱلذين قال لهم ٱلناس إن ٱلناس قد…﴾ | سورة آل عمران ﴿173﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (44/50)",
+   "fingerprint": "781d53b7b897a47c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-173-hudhaify.mp4",
+   "duration": 62.8,
+   "at": "2026-10-20 03:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792468767.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792468767.png"
+   }
   }
  },
  "fingerprints": [
@@ -9109,7 +9120,8 @@
   "f1d21519f4fd59c1",
   "56bda0164d0d1ae7",
   "59cb6dc3768116ac",
-  "d5e5be0c58fd0950"
+  "d5e5be0c58fd0950",
+  "781d53b7b897a47c"
  ],
  "last_kind": "tafsir"
 }
