@@ -455,6 +455,62 @@ def _ar_num(n: int) -> str:
     return "".join(_AR[int(c)] for c in str(n))
 
 
+# أسماء السور بصيغة نظيفة للبحث (بلا تشكيل) — «آل عمران» لا «ال عمران»
+_SURAH_CLEAN = (
+    "الفاتحة", "البقرة", "آل عمران", "النساء", "المائدة", "الأنعام",
+    "الأعراف", "الأنفال", "التوبة", "يونس", "هود", "يوسف", "الرعد",
+    "إبراهيم", "الحجر", "النحل", "الإسراء", "الكهف", "مريم", "طه",
+    "الأنبياء", "الحج", "المؤمنون", "النور", "الفرقان", "الشعراء",
+    "النمل", "القصص", "العنكبوت", "الروم", "لقمان", "السجدة",
+    "الأحزاب", "سبأ", "فاطر", "يس", "الصافات", "ص", "الزمر", "غافر",
+    "فصلت", "الشورى", "الزخرف", "الدخان", "الجاثية", "الأحقاف",
+    "محمد", "الفتح", "الحجرات", "ق", "الذاريات", "الطور", "النجم",
+    "القمر", "الرحمن", "الواقعة", "الحديد", "المجادلة", "الحشر",
+    "الممتحنة", "الصف", "الجمعة", "المنافقون", "التغابن", "الطلاق",
+    "التحريم", "الملك", "القلم", "الحاقة", "المعارج", "نوح", "الجن",
+    "المزمل", "المدثر", "القيامة", "الإنسان", "المرسلات", "النبأ",
+    "النازعات", "عبس", "التكوير", "الانفطار", "المطففين", "الانشقاق",
+    "البروج", "الطارق", "الأعلى", "الغاشية", "الفجر", "البلد", "الشمس",
+    "الليل", "الضحى", "الشرح", "التين", "العلق", "القدر", "البينة",
+    "الزلزلة", "العاديات", "القارعة", "التكاثر", "العصر", "الهمزة",
+    "الفيل", "قريش", "الماعون", "الكوثر", "الكافرون", "النصر",
+    "المسد", "الإخلاص", "الفلق", "الناس",
+)
+
+
+def _tafsir_window_title(spec: dict, sname: str, rec_name: str,
+                        first_ayah: str = "",
+                        surah_windows: list | None = None) -> str:
+    """⭐ عنوان بحثي (خطّاف-أولًا) لنوافذ التدبُّر القادمة من مخطط التغطية.
+
+    النوافذ ليها فانطبّع بالقديم: مواصفاتها (id زي ``ts003-145``) مش صفوفًا
+    في :data:`TAFASEER`، فالتعداد ``next(..., 0)`` كان بيجمّد كل عناوينها
+    على «(1/42)». هنا العنوان بيبدأ بالآية نفسها (أقوى كلمة بحث)، اسم السورة
+    بلا تشكيل («سورة آل عمران» بدل التشكيل الثقيل اللي بتقص عليه النتائج)،
+    والسلسلة برقم حقيقي داخل خواتم السورة («37/50») أو بلا رقم لو ما اتعرفش.
+    """
+    frm = int(spec.get("frm", 1) or 1)
+    to = int(spec.get("to", frm) or frm)
+    rng = f"{frm}–{to}" if to > frm else f"{frm}"
+    snum = int(spec.get("surah", 0) or 0)
+    plain = (f"سورة {_SURAH_CLEAN[snum - 1]}" if 1 <= snum <= 114
+             else " ".join(_bare_ar(_clean_marks(str(sname or ""))).split())
+             or str(sname or ""))
+    _s = " ".join(_bare_ar(_clean_marks(str(first_ayah or ""))).split())
+    _s = re.sub(r"\s*[٠-٩\d]+\s*$", "", _s).strip(" ،.؛؟")
+    snip = _trim_sent(_s, 34)
+    head = (f"تدبّر: ﴿{snip}…﴾" if len(snip) >= 8
+            else f"تدبّر {plain} ﴿{rng}﴾")
+    seq = ""
+    if surah_windows:
+        wi = next((j for j, w in enumerate(surah_windows)
+                   if w.get("surah") == spec.get("surah")
+                   and w.get("frm") == frm), None)
+        if wi is not None:
+            seq = f" | {SERIES_LABEL['tafsir']} ({wi + 1}/{len(surah_windows)})"
+    return f"{head} | {plain} ﴿{rng}﴾ · تفسير ميسّر بصوت {rec_name}{seq}"
+
+
 def _trim_sent(text: str, limit: int = 200) -> str:
     """قصّ على حد جملة حتى تفضل الفائدة مقروءة."""
     t = text.strip().replace("\n", " ")
@@ -655,9 +711,24 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
             title = f"{SERIES_LABEL['juz']} ({_ji + 1}/{len(_jw)}): {title}"
         if kind == "tafsir":
             _ti = next((j for j, w in enumerate(TAFASEER)
-                        if w["id"] == spec["id"]), 0)
-            title = (f"{SERIES_LABEL['tafsir']} ({_ti + 1}/{len(TAFASEER)}): "
-                     f"{title}")
+                        if w["id"] == spec["id"]), None)
+            if _ti is not None:
+                # صف من بنك التفسير — ترقيمه القديم حقيقي ويستمر
+                title = (f"{SERIES_LABEL['tafsir']} ({_ti + 1}/{len(TAFASEER)}): "
+                         f"{title}")
+            else:
+                # ⭐ نافذة من مخطط التغطية: العنوان القديم كان بيجمّد على
+                #   «(1/42)» لكل حلقة. العنوان الجديد خطّاف من الآية نفسها
+                #   + رقم حلقة حقيقي داخل نوافذ السورة.
+                _sw: list | None = None
+                try:
+                    from . import planner as _plw
+                    _sw = [w for w in _plw.quran_windows()
+                           if w["surah"] == spec["surah"]]
+                except Exception:
+                    _sw = None
+                _fy = sel[0].get("text", "") if sel else ""
+                title = _tafsir_window_title(spec, sname, rec_name, _fy, _sw)
         t = _get_json(f"{APIQ}/surah/{spec['surah']}/ar.muyassar")["ayahs"]
         tafs = {a["numberInSurah"]: a["text"] for a in t}
         fayda = _trim_sent(tafs.get(spec["frm"], ""), 190)
@@ -700,9 +771,20 @@ def produce_din(kind: str, workdir: Path, reciter_idx: int = 0,
                        "start": 0.0, "end": 1.35})
         if kind == "tafsir":
             # خطّاف تدبُّري يفتح الحلقة بسؤال — بصمة قالب التفسير
+            # ⭐ تدوير بدائل النوافذ: نفس الشاشة الافتتاحية مئات المرات
+            #    كانت بتخلي الحلقات نسخة من بعض في عين المشاهد والخوارزمية
+            _hk = HOOKS.get(spec.get("id", ""))
+            if _hk is None:
+                _rot = [
+                    f"وقفة تدبُّر في {sname} 🤍",
+                    "هتفهم معنى الآية دي على مهل 🤍",
+                    f"من {sname}… آية تستاهل الوقفة 📖",
+                    "اسمع الآية وبعدين فهمها معانا 🎧",
+                ]
+                _hk = _rot[(int(spec.get("surah", 0)) * 131
+                            + int(spec.get("frm", 0))) % len(_rot)]
             events.append({"style": "Hook",
-                           "text": HOOKS.get(spec["id"],
-                                             f"وقفة تدبُّر في {sname} 🤍"),
+                           "text": _hk,
                            "start": 1.4, "end": 4.8})
 
         if tts_recite:

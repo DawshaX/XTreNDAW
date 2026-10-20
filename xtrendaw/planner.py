@@ -241,6 +241,23 @@ def _topic(kind: str, key: str, spec: dict, rec: int, n: int) -> dict:
         scenes = pool[n % len(pool)]
         spec = {**spec, "id": f"{kind[:1]}{key}", "scenes": scenes}
         title = f"{spec.get('name', '')} ﴿{spec['frm']}–{spec['to']}﴾ — {rec_name}"
+        if kind == "tafsir":
+            # ⭐ عنوان بحثي متماشي مع اللي بينشره din.produce_din
+            #   (القديم: بادئة «سلسلة التدبُّر (1/42)» المجمّدة حذفت خلاص)
+            _rng = (f"{spec['frm']}–{spec['to']}"
+                    if spec["to"] > spec["frm"] else f"{spec['frm']}")
+            _w3 = [w for w in quran_windows() if w["surah"] == spec["surah"]]
+            _i3 = next((j for j, w in enumerate(_w3)
+                        if w["frm"] == spec["frm"]), None)
+            _sq = (f" | سلسلة التدبُّر ({_i3 + 1}/{len(_w3)})"
+                   if _i3 is not None else "")
+            _sn = int(spec.get("surah", 0) or 0)
+            _nm = (f"سورة {_dinmod._SURAH_CLEAN[_sn - 1]}"
+                   if 1 <= _sn <= 114
+                   else (_dinmod._bare_ar(spec.get("name") or "")
+                         or spec.get("name", "")))
+            title = (f"تدبّر {_nm} ﴿{_rng}﴾ · التفسير الميسّر بصوت {rec_name}"
+                     f"{_sq}")
     elif kind == "qissa":
         spec = dict(spec)
         from . import din as _d
