@@ -8524,6 +8524,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792526139.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792526139.png"
    }
+  },
+  "noor-tafsir-s004-33-r7": {
+   "title": "تدبّر: ﴿ولكل جعلنا مولى مما ترك ٱلولدان…﴾ | سورة النساء ﴿33﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (9/44)",
+   "fingerprint": "d584977bea123781",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-33-aymanswoaid.mp4",
+   "duration": 78.57,
+   "at": "2026-10-20 20:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792529965.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792529965.png"
+   }
   }
  },
  "fingerprints": [
@@ -9277,7 +9288,8 @@
   "2b9f0f07456fb5f9",
   "5565e127c969bdb1",
   "439547b11eed0dbf",
-  "b3426a3bb4c7df7f"
+  "b3426a3bb4c7df7f",
+  "d584977bea123781"
  ],
  "last_kind": "tafsir"
 }
