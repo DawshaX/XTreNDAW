@@ -8414,6 +8414,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792480242.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792480242.png"
    }
+  },
+  "noor-tafsir-s003-189-r9": {
+   "title": "تدبّر: ﴿ولله ملك ٱلسموت وٱلأرض وٱلله على…﴾ | سورة آل عمران ﴿189–190﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (48/50)",
+   "fingerprint": "8fe1a79c9f9ceca4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts003-189-shaatree.mp4",
+   "duration": 61.29,
+   "at": "2026-10-20 08:14",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792484081.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792484081.png"
+   }
   }
  },
  "fingerprints": [
@@ -9157,7 +9168,8 @@
   "781d53b7b897a47c",
   "0e38c2284a235090",
   "0f5849f505b2d7d7",
-  "2c1fad6bf4e967de"
+  "2c1fad6bf4e967de",
+  "8fe1a79c9f9ceca4"
  ],
  "last_kind": "tafsir"
 }
