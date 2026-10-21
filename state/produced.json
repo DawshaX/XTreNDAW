@@ -8733,6 +8733,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792621095.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792621095.png"
    }
+  },
+  "noor-tafsir-s004-121-r8": {
+   "title": "تدبّر: ﴿أولئك مأوىهم جهنم ولا يجدون عنها…﴾ | سورة النساء ﴿121﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (31/44)",
+   "fingerprint": "aea80af3dcc41a6d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-121-hudhaify.mp4",
+   "duration": 36.49,
+   "at": "2026-10-21 23:20",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792624828.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792624828.png"
+   }
   }
  },
  "fingerprints": [
@@ -9505,7 +9516,8 @@
   "ff50254e6c7000aa",
   "748ef33d0aec8084",
   "703ec5ba7f121f3e",
-  "93d01be8eb1e4a33"
+  "93d01be8eb1e4a33",
+  "aea80af3dcc41a6d"
  ],
  "last_kind": "tafsir"
 }
