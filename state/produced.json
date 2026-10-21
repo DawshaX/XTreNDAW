@@ -8568,6 +8568,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792541480.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792541480.png"
    }
+  },
+  "noor-tafsir-s004-49-r8": {
+   "title": "تدبّر: ﴿ألم تر إلى ٱلذين يزكون أنفسهم بل…﴾ | سورة النساء ﴿49–50﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (13/44)",
+   "fingerprint": "2e489e1c619ed9f0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-49-hudhaify.mp4",
+   "duration": 83.62,
+   "at": "2026-10-21 01:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792545318.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792545318.png"
+   }
   }
  },
  "fingerprints": [
@@ -9325,7 +9336,8 @@
   "d584977bea123781",
   "872cad3817e01914",
   "8a50ed524af74075",
-  "87bdeec25f344fe0"
+  "87bdeec25f344fe0",
+  "2e489e1c619ed9f0"
  ],
  "last_kind": "tafsir"
 }
