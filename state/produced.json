@@ -8579,6 +8579,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792545318.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792545318.png"
    }
+  },
+  "noor-tafsir-s004-53-r9": {
+   "title": "تدبّر: ﴿أم لهم نصيب من ٱلملك فإذا لا…﴾ | سورة النساء ﴿53–54﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (14/44)",
+   "fingerprint": "70e766c8db5db4f3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-53-shaatree.mp4",
+   "duration": 78.59,
+   "at": "2026-10-21 02:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792549187.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792549187.png"
+   }
   }
  },
  "fingerprints": [
@@ -9337,7 +9348,8 @@
   "872cad3817e01914",
   "8a50ed524af74075",
   "87bdeec25f344fe0",
-  "2e489e1c619ed9f0"
+  "2e489e1c619ed9f0",
+  "70e766c8db5db4f3"
  ],
  "last_kind": "tafsir"
 }
