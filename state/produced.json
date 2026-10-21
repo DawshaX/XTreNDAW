@@ -8645,6 +8645,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792582840.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792582840.png"
    }
+  },
+  "noor-tafsir-s004-85-r9": {
+   "title": "تدبّر: ﴿من يشفع شفعة حسنة يكن لهۥ نصيب…﴾ | سورة النساء ﴿85﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (22/44)",
+   "fingerprint": "6ec4f222daf54785",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-85-shaatree.mp4",
+   "duration": 63.1,
+   "at": "2026-10-21 12:44",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792586688.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792586688.png"
+   }
   }
  },
  "fingerprints": [
@@ -9409,7 +9420,8 @@
   "a7d031495d000149",
   "0f58adba7e94336c",
   "e8d0c653cda86130",
-  "24cbbd922c63fe07"
+  "24cbbd922c63fe07",
+  "6ec4f222daf54785"
  ],
  "last_kind": "tafsir"
 }
