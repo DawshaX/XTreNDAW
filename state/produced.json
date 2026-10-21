@@ -8689,6 +8689,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792605702.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792605702.png"
    }
+  },
+  "noor-tafsir-s004-105-r7": {
+   "title": "تدبّر: ﴿إنا أنزلنا إليك ٱلكتب بٱلحق لتحكم…﴾ | سورة النساء ﴿105﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (27/44)",
+   "fingerprint": "ff50254e6c7000aa",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-105-aymanswoaid.mp4",
+   "duration": 74.61,
+   "at": "2026-10-21 19:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792609589.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792609589.png"
+   }
   }
  },
  "fingerprints": [
@@ -9457,7 +9468,8 @@
   "6ec4f222daf54785",
   "6c739c7de3bb280e",
   "2b66d7ac5740c5fd",
-  "4c3c3178adb1e5b8"
+  "4c3c3178adb1e5b8",
+  "ff50254e6c7000aa"
  ],
  "last_kind": "tafsir"
 }
