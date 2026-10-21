@@ -8557,6 +8557,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792537648.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792537648.png"
    }
+  },
+  "noor-tafsir-s004-45-r7": {
+   "title": "تدبّر: ﴿وٱلله أعلم بأعدائكم وكفى بٱلله…﴾ | سورة النساء ﴿45﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (12/44)",
+   "fingerprint": "87bdeec25f344fe0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-45-aymanswoaid.mp4",
+   "duration": 54.4,
+   "at": "2026-10-21 00:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792541480.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792541480.png"
+   }
   }
  },
  "fingerprints": [
@@ -9313,7 +9324,8 @@
   "b3426a3bb4c7df7f",
   "d584977bea123781",
   "872cad3817e01914",
-  "8a50ed524af74075"
+  "8a50ed524af74075",
+  "87bdeec25f344fe0"
  ],
  "last_kind": "tafsir"
 }
