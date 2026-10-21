@@ -8656,6 +8656,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792586688.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792586688.png"
    }
+  },
+  "noor-tafsir-s004-93-r7": {
+   "title": "تدبّر: ﴿ومن يقتل مؤمنا متعمدا فجزاؤهۥ…﴾ | سورة النساء ﴿93﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (24/44)",
+   "fingerprint": "6c739c7de3bb280e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-93-aymanswoaid.mp4",
+   "duration": 80.61,
+   "at": "2026-10-21 15:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792597914.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792597914.png"
+   }
   }
  },
  "fingerprints": [
@@ -9421,7 +9432,8 @@
   "0f58adba7e94336c",
   "e8d0c653cda86130",
   "24cbbd922c63fe07",
-  "6ec4f222daf54785"
+  "6ec4f222daf54785",
+  "6c739c7de3bb280e"
  ],
  "last_kind": "tafsir"
 }
