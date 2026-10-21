@@ -8612,6 +8612,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792564202.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792564202.png"
    }
+  },
+  "noor-tafsir-s004-69-r9": {
+   "title": "تدبّر: ﴿ومن يطع ٱلله وٱلرسول فأولئك مع…﴾ | سورة النساء ﴿69﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (18/44)",
+   "fingerprint": "0f58adba7e94336c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-69-shaatree.mp4",
+   "duration": 66.73,
+   "at": "2026-10-21 07:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792568009.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792568009.png"
+   }
   }
  },
  "fingerprints": [
@@ -9373,7 +9384,8 @@
   "2e489e1c619ed9f0",
   "70e766c8db5db4f3",
   "bad7a91448f11620",
-  "a7d031495d000149"
+  "a7d031495d000149",
+  "0f58adba7e94336c"
  ],
  "last_kind": "tafsir"
 }
