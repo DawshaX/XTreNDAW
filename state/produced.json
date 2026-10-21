@@ -8634,6 +8634,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792571829.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792571829.png"
    }
+  },
+  "noor-tafsir-s004-81-r8": {
+   "title": "تدبّر: ﴿ويقولون طاعة فإذا برزوا من عندك…﴾ | سورة النساء ﴿81﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (21/44)",
+   "fingerprint": "24cbbd922c63fe07",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-81-hudhaify.mp4",
+   "duration": 71.87,
+   "at": "2026-10-21 11:40",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792582840.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792582840.png"
+   }
   }
  },
  "fingerprints": [
@@ -9397,7 +9408,8 @@
   "bad7a91448f11620",
   "a7d031495d000149",
   "0f58adba7e94336c",
-  "e8d0c653cda86130"
+  "e8d0c653cda86130",
+  "24cbbd922c63fe07"
  ],
  "last_kind": "tafsir"
 }
