@@ -8601,6 +8601,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792560329.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792560329.png"
    }
+  },
+  "noor-tafsir-s004-65-r8": {
+   "title": "تدبّر: ﴿فلا وربك لا يؤمنون حتى يحكموك…﴾ | سورة النساء ﴿65﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (17/44)",
+   "fingerprint": "a7d031495d000149",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-65-hudhaify.mp4",
+   "duration": 72.19,
+   "at": "2026-10-21 06:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792564202.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792564202.png"
+   }
   }
  },
  "fingerprints": [
@@ -9361,7 +9372,8 @@
   "87bdeec25f344fe0",
   "2e489e1c619ed9f0",
   "70e766c8db5db4f3",
-  "bad7a91448f11620"
+  "bad7a91448f11620",
+  "a7d031495d000149"
  ],
  "last_kind": "tafsir"
 }
