@@ -8667,6 +8667,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792597914.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792597914.png"
    }
+  },
+  "noor-tafsir-s004-97-r8": {
+   "title": "تدبّر: ﴿إن ٱلذين توفىهم ٱلملئكة ظالمى…﴾ | سورة النساء ﴿97﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (25/44)",
+   "fingerprint": "2b66d7ac5740c5fd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-97-hudhaify.mp4",
+   "duration": 78.79,
+   "at": "2026-10-21 16:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792601873.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792601873.png"
+   }
   }
  },
  "fingerprints": [
@@ -9433,7 +9444,8 @@
   "e8d0c653cda86130",
   "24cbbd922c63fe07",
   "6ec4f222daf54785",
-  "6c739c7de3bb280e"
+  "6c739c7de3bb280e",
+  "2b66d7ac5740c5fd"
  ],
  "last_kind": "tafsir"
 }
