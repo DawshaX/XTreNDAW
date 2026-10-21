@@ -8678,6 +8678,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792601873.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792601873.png"
    }
+  },
+  "noor-tafsir-s004-101-r9": {
+   "title": "تدبّر: ﴿وإذا ضربتم فى ٱلأرض فليس عليكم…﴾ | سورة النساء ﴿101﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (26/44)",
+   "fingerprint": "4c3c3178adb1e5b8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-101-shaatree.mp4",
+   "duration": 63.31,
+   "at": "2026-10-21 18:01",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792605702.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792605702.png"
+   }
   }
  },
  "fingerprints": [
@@ -9445,7 +9456,8 @@
   "24cbbd922c63fe07",
   "6ec4f222daf54785",
   "6c739c7de3bb280e",
-  "2b66d7ac5740c5fd"
+  "2b66d7ac5740c5fd",
+  "4c3c3178adb1e5b8"
  ],
  "last_kind": "tafsir"
 }
