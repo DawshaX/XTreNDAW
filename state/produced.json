@@ -8623,6 +8623,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792568009.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792568009.png"
    }
+  },
+  "noor-tafsir-s004-73-r7": {
+   "title": "تدبّر: ﴿ولئن أصبكم فضل من ٱلله ليقولن كأن…﴾ | سورة النساء ﴿73﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (19/44)",
+   "fingerprint": "e8d0c653cda86130",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-73-aymanswoaid.mp4",
+   "duration": 85.94,
+   "at": "2026-10-21 08:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792571829.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792571829.png"
+   }
   }
  },
  "fingerprints": [
@@ -9385,7 +9396,8 @@
   "70e766c8db5db4f3",
   "bad7a91448f11620",
   "a7d031495d000149",
-  "0f58adba7e94336c"
+  "0f58adba7e94336c",
+  "e8d0c653cda86130"
  ],
  "last_kind": "tafsir"
 }
