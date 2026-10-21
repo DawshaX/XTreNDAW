@@ -8590,6 +8590,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792549187.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792549187.png"
    }
+  },
+  "noor-tafsir-s004-61-r7": {
+   "title": "تدبّر: ﴿وإذا قيل لهم تعالوا إلى ما أنزل…﴾ | سورة النساء ﴿61﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (16/44)",
+   "fingerprint": "bad7a91448f11620",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-61-aymanswoaid.mp4",
+   "duration": 61.1,
+   "at": "2026-10-21 05:25",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792560329.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792560329.png"
+   }
   }
  },
  "fingerprints": [
@@ -9349,7 +9360,8 @@
   "8a50ed524af74075",
   "87bdeec25f344fe0",
   "2e489e1c619ed9f0",
-  "70e766c8db5db4f3"
+  "70e766c8db5db4f3",
+  "bad7a91448f11620"
  ],
  "last_kind": "tafsir"
 }
