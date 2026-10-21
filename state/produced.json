@@ -8700,6 +8700,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792609589.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792609589.png"
    }
+  },
+  "noor-tafsir-s004-109-r8": {
+   "title": "تدبّر: ﴿هأنتم هؤلاء جدلتم عنهم فى ٱلحيوة…﴾ | سورة النساء ﴿109﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (28/44)",
+   "fingerprint": "748ef33d0aec8084",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-109-hudhaify.mp4",
+   "duration": 67.61,
+   "at": "2026-10-21 20:09",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792613392.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792613392.png"
+   }
   }
  },
  "fingerprints": [
@@ -9469,7 +9480,8 @@
   "6c739c7de3bb280e",
   "2b66d7ac5740c5fd",
   "4c3c3178adb1e5b8",
-  "ff50254e6c7000aa"
+  "ff50254e6c7000aa",
+  "748ef33d0aec8084"
  ],
  "last_kind": "tafsir"
 }
