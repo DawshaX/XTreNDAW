@@ -8942,6 +8942,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792700745.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792700745.png"
    }
+  },
+  "noor-tafsir-s004-149-r9": {
+   "title": "تدبّر: ﴿إن تبدوا خيرا أو تخفوه أو تعفوا…﴾ | سورة النساء ﴿149﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (38/44)",
+   "fingerprint": "510e0a04a55d0fe4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-149-shaatree.mp4",
+   "duration": 52.64,
+   "at": "2026-10-22 21:28",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792704522.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792704522.png"
+   }
   }
  },
  "fingerprints": [
@@ -9725,7 +9736,8 @@
   "c6980b5006b8a6d2",
   "e025681ed041da34",
   "e460d1a195141cbf",
-  "f1d201230383cdf1"
+  "f1d201230383cdf1",
+  "510e0a04a55d0fe4"
  ],
- "last_kind": "quran"
+ "last_kind": "tafsir"
 }
