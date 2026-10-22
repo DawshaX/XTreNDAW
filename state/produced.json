@@ -8744,6 +8744,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792624828.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792624828.png"
    }
+  },
+  "noor-tafsir-s004-125-r9": {
+   "title": "تدبّر: ﴿ومن أحسن دينا ممن أسلم وجههۥ لله…﴾ | سورة النساء ﴿125–126﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (32/44)",
+   "fingerprint": "ef01907abed8010d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-125-shaatree.mp4",
+   "duration": 81.15,
+   "at": "2026-10-22 00:25",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792628743.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792628743.png"
+   }
   }
  },
  "fingerprints": [
@@ -9517,7 +9528,8 @@
   "748ef33d0aec8084",
   "703ec5ba7f121f3e",
   "93d01be8eb1e4a33",
-  "aea80af3dcc41a6d"
+  "aea80af3dcc41a6d",
+  "ef01907abed8010d"
  ],
  "last_kind": "tafsir"
 }
