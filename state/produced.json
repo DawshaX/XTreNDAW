@@ -8909,6 +8909,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792689185.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792689185.png"
    }
+  },
+  "noor-quran-s003-49-r9": {
+   "title": "دقيقة نور 🌙 سُورَةُ آلِ عِمۡرَانَ ﴿49–49﴾ — أبو بكر الشاطري",
+   "fingerprint": "e025681ed041da34",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs003-49-shaatree.mp4",
+   "duration": 78.43,
+   "at": "2026-10-22 18:17",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792693072.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792693072.png"
+   }
   }
  },
  "fingerprints": [
@@ -9689,7 +9700,8 @@
   "f7db3d6fb7e111f5",
   "ae86fc662068cb5e",
   "d5672ee15d4e9d86",
-  "c6980b5006b8a6d2"
+  "c6980b5006b8a6d2",
+  "e025681ed041da34"
  ],
  "last_kind": "quran"
 }
