@@ -8788,6 +8788,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792640187.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792640187.png"
    }
+  },
+  "noor-tafsir-s004-145-r7": {
+   "title": "تدبّر: ﴿إن ٱلمنفقين فى ٱلدرك ٱلأسفل من…﴾ | سورة النساء ﴿145﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (37/44)",
+   "fingerprint": "ae86fc662068cb5e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-145-aymanswoaid.mp4",
+   "duration": 54.14,
+   "at": "2026-10-22 06:40",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792651207.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792651207.png"
+   }
   }
  },
  "fingerprints": [
@@ -9565,7 +9576,8 @@
   "ef01907abed8010d",
   "a04d5b36fe3f34c8",
   "5d1c88bbc9bcf245",
-  "f7db3d6fb7e111f5"
+  "f7db3d6fb7e111f5",
+  "ae86fc662068cb5e"
  ],
  "last_kind": "tafsir"
 }
