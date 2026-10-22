@@ -8766,6 +8766,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792632606.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792632606.png"
    }
+  },
+  "noor-tafsir-s004-133-r8": {
+   "title": "تدبّر: ﴿إن يشأ يذهبكم أيها ٱلناس ويأت ب…﴾ | سورة النساء ﴿133–134﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (34/44)",
+   "fingerprint": "5d1c88bbc9bcf245",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-133-hudhaify.mp4",
+   "duration": 76.88,
+   "at": "2026-10-22 02:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792636381.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792636381.png"
+   }
   }
  },
  "fingerprints": [
@@ -9541,7 +9552,8 @@
   "93d01be8eb1e4a33",
   "aea80af3dcc41a6d",
   "ef01907abed8010d",
-  "a04d5b36fe3f34c8"
+  "a04d5b36fe3f34c8",
+  "5d1c88bbc9bcf245"
  ],
  "last_kind": "tafsir"
 }
