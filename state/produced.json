@@ -8777,6 +8777,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792636381.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792636381.png"
    }
+  },
+  "noor-tafsir-s004-137-r9": {
+   "title": "تدبّر: ﴿إن ٱلذين ءامنوا ثم كفروا ثم…﴾ | سورة النساء ﴿137–138﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (35/44)",
+   "fingerprint": "f7db3d6fb7e111f5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-137-shaatree.mp4",
+   "duration": 81.53,
+   "at": "2026-10-22 03:36",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792640187.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792640187.png"
+   }
   }
  },
  "fingerprints": [
@@ -9553,7 +9564,8 @@
   "aea80af3dcc41a6d",
   "ef01907abed8010d",
   "a04d5b36fe3f34c8",
-  "5d1c88bbc9bcf245"
+  "5d1c88bbc9bcf245",
+  "f7db3d6fb7e111f5"
  ],
  "last_kind": "tafsir"
 }
