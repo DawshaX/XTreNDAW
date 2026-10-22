@@ -8755,6 +8755,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792628743.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792628743.png"
    }
+  },
+  "noor-tafsir-s004-129-r7": {
+   "title": "تدبّر: ﴿ولن تستطيعوا أن تعدلوا بين ٱلنساء…﴾ | سورة النساء ﴿129﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (33/44)",
+   "fingerprint": "a04d5b36fe3f34c8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-129-aymanswoaid.mp4",
+   "duration": 75.11,
+   "at": "2026-10-22 01:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792632606.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792632606.png"
+   }
   }
  },
  "fingerprints": [
@@ -9529,7 +9540,8 @@
   "703ec5ba7f121f3e",
   "93d01be8eb1e4a33",
   "aea80af3dcc41a6d",
-  "ef01907abed8010d"
+  "ef01907abed8010d",
+  "a04d5b36fe3f34c8"
  ],
  "last_kind": "tafsir"
 }
