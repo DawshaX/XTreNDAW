@@ -8898,6 +8898,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792685377.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792685377.png"
    }
+  },
+  "noor-quran-s002-277-r8": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ البَقَرَةِ ﴿277–279﴾ — علي الحذيفي",
+   "fingerprint": "c6980b5006b8a6d2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs002-277-hudhaify.mp4",
+   "duration": 86.03,
+   "at": "2026-10-22 17:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792689185.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792689185.png"
+   }
   }
  },
  "fingerprints": [
@@ -9677,7 +9688,8 @@
   "5d1c88bbc9bcf245",
   "f7db3d6fb7e111f5",
   "ae86fc662068cb5e",
-  "d5672ee15d4e9d86"
+  "d5672ee15d4e9d86",
+  "c6980b5006b8a6d2"
  ],
  "last_kind": "quran"
 }
