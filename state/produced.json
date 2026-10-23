@@ -8964,6 +8964,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792715565.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792715565.png"
    }
+  },
+  "noor-tafsir-s004-157-r8": {
+   "title": "تدبّر: ﴿وقولهم إنا قتلنا ٱلمسيح عيسى ٱبن…﴾ | سورة النساء ﴿157﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (40/44)",
+   "fingerprint": "f36107927296302c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-157-hudhaify.mp4",
+   "duration": 75.35,
+   "at": "2026-10-23 01:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792719337.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792719337.png"
+   }
   }
  },
  "fingerprints": [
@@ -9748,7 +9759,8 @@
   "e025681ed041da34",
   "e460d1a195141cbf",
   "f1d201230383cdf1",
-  "510e0a04a55d0fe4"
+  "510e0a04a55d0fe4",
+  "f36107927296302c"
  ],
- "last_kind": "info"
+ "last_kind": "tafsir"
 }
