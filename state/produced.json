@@ -9140,6 +9140,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792783856.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792783856.png"
    }
+  },
+  "noor-quran-s035-17-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ فَاطِرٍ ﴿17–20﴾ — أبو بكر الشاطري",
+   "fingerprint": "75b6ed2e9c04767e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs035-17-shaatree.mp4",
+   "duration": 65.8,
+   "at": "2026-10-23 20:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792787657.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792787657.png"
+   }
   }
  },
  "fingerprints": [
@@ -9940,7 +9951,8 @@
   "461f55c5cf874f4b",
   "6f132a617c266b5d",
   "3502d9875bcfac94",
-  "a70da17ed330df4c"
+  "a70da17ed330df4c",
+  "75b6ed2e9c04767e"
  ],
  "last_kind": "quran"
 }
