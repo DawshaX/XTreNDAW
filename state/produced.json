@@ -9030,6 +9030,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792738136.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792738136.png"
    }
+  },
+  "noor-juz-j079-1-r3": {
+   "title": "سلسلة جزء عمّ (11/142): سُورَةُ النَّازِعَاتِ ﴿1–4﴾ — عبدالرحمن السديس",
+   "fingerprint": "799b905de43314af",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-jj079-1-abdurrahmaansudais.mp4",
+   "duration": 38.83,
+   "at": "2026-10-23 09:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792749160.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792749160.png"
+   }
   }
  },
  "fingerprints": [
@@ -9820,7 +9831,8 @@
   "6766eaea50f09f18",
   "c506896a0608257f",
   "a74a2b714875a0dd",
-  "b145e25b9381a876"
+  "b145e25b9381a876",
+  "799b905de43314af"
  ],
- "last_kind": "kawn"
+ "last_kind": "juz"
 }
