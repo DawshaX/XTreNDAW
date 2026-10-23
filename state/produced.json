@@ -9107,6 +9107,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792772248.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792772248.png"
    }
+  },
+  "noor-quran-s029-53-r9": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ العَنكَبُوتِ ﴿53–55﴾ — أبو بكر الشاطري",
+   "fingerprint": "6f132a617c266b5d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs029-53-shaatree.mp4",
+   "duration": 81.2,
+   "at": "2026-10-23 17:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792776153.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792776153.png"
+   }
   }
  },
  "fingerprints": [
@@ -9904,7 +9915,8 @@
   "da852f82905f6acc",
   "33de8f163dcc6660",
   "67436f1a5d28cdbd",
-  "461f55c5cf874f4b"
+  "461f55c5cf874f4b",
+  "6f132a617c266b5d"
  ],
  "last_kind": "quran"
 }
