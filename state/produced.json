@@ -9129,6 +9129,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792780017.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792780017.png"
    }
+  },
+  "noor-quran-s025-41-r8": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الفُرۡقَانِ ﴿41–44﴾ — علي الحذيفي",
+   "fingerprint": "a70da17ed330df4c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs025-41-hudhaify.mp4",
+   "duration": 85.5,
+   "at": "2026-10-23 19:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792783856.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792783856.png"
+   }
   }
  },
  "fingerprints": [
@@ -9928,7 +9939,8 @@
   "67436f1a5d28cdbd",
   "461f55c5cf874f4b",
   "6f132a617c266b5d",
-  "3502d9875bcfac94"
+  "3502d9875bcfac94",
+  "a70da17ed330df4c"
  ],
  "last_kind": "quran"
 }
