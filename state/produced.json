@@ -8986,6 +8986,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792723122.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792723122.png"
    }
+  },
+  "noor-kawn-18-r3": {
+   "title": "سلسلة آيات في الكون (19/22): ﴿وما يبث من دابة آيات﴾ ، في كل…",
+   "fingerprint": "6766eaea50f09f18",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 24.5,
+   "at": "2026-10-23 03:40",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792726829.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792726829.png"
+   }
   }
  },
  "fingerprints": [
@@ -9772,7 +9783,8 @@
   "f1d201230383cdf1",
   "510e0a04a55d0fe4",
   "f36107927296302c",
-  "e9b696fd5a0659e2"
+  "e9b696fd5a0659e2",
+  "6766eaea50f09f18"
  ],
- "last_kind": "tafsir"
+ "last_kind": "kawn"
 }
