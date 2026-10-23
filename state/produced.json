@@ -9008,6 +9008,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792730640.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792730640.png"
    }
+  },
+  "noor-kawn-20-r3": {
+   "title": "سلسلة آيات في الكون (21/22): ﴿والكواكب منتثرة﴾ ، يوم تبدل…",
+   "fingerprint": "a74a2b714875a0dd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 21.43,
+   "at": "2026-10-23 05:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792734415.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792734415.png"
+   }
   }
  },
  "fingerprints": [
@@ -9796,7 +9807,8 @@
   "f36107927296302c",
   "e9b696fd5a0659e2",
   "6766eaea50f09f18",
-  "c506896a0608257f"
+  "c506896a0608257f",
+  "a74a2b714875a0dd"
  ],
  "last_kind": "kawn"
 }
