@@ -8975,6 +8975,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792719337.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792719337.png"
    }
+  },
+  "noor-tafsir-s004-161-r9": {
+   "title": "تدبّر: ﴿وأخذهم ٱلربوا وقد نهوا عنه وأكلهم…﴾ | سورة النساء ﴿161﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (41/44)",
+   "fingerprint": "e9b696fd5a0659e2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-161-shaatree.mp4",
+   "duration": 50.27,
+   "at": "2026-10-23 02:38",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792723122.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792723122.png"
+   }
   }
  },
  "fingerprints": [
@@ -9760,7 +9771,8 @@
   "e460d1a195141cbf",
   "f1d201230383cdf1",
   "510e0a04a55d0fe4",
-  "f36107927296302c"
+  "f36107927296302c",
+  "e9b696fd5a0659e2"
  ],
  "last_kind": "tafsir"
 }
