@@ -9063,6 +9063,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792756851.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792756851.png"
    }
+  },
+  "noor-juz-j079-13-r3": {
+   "title": "سلسلة جزء عمّ (14/142): سُورَةُ النَّازِعَاتِ ﴿13–16﴾ — عبدالرحمن السديس",
+   "fingerprint": "da852f82905f6acc",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-jj079-13-abdurrahmaansudais.mp4",
+   "duration": 35.87,
+   "at": "2026-10-23 13:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792760598.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792760598.png"
+   }
   }
  },
  "fingerprints": [
@@ -9856,7 +9867,8 @@
   "b145e25b9381a876",
   "799b905de43314af",
   "bdbf7f9275068cba",
-  "bcbab28975b2db33"
+  "bcbab28975b2db33",
+  "da852f82905f6acc"
  ],
  "last_kind": "juz"
 }
