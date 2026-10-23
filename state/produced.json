@@ -9019,6 +9019,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792734415.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792734415.png"
    }
+  },
+  "noor-kawn-21-r3": {
+   "title": "سلسلة آيات في الكون (22/22): ﴿في خلقكم﴾ ، جسدك نفسه آية: قلب…",
+   "fingerprint": "b145e25b9381a876",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-kawn-3.mp4",
+   "duration": 24.77,
+   "at": "2026-10-23 06:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792738136.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792738136.png"
+   }
   }
  },
  "fingerprints": [
@@ -9808,7 +9819,8 @@
   "e9b696fd5a0659e2",
   "6766eaea50f09f18",
   "c506896a0608257f",
-  "a74a2b714875a0dd"
+  "a74a2b714875a0dd",
+  "b145e25b9381a876"
  ],
  "last_kind": "kawn"
 }
