@@ -9195,6 +9195,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792802733.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792802733.png"
    }
+  },
+  "noor-hisn-18-r3": {
+   "title": "سلسلة حصن المسلم (19/60): اللهم اغفر لي وارحمني واهدني…",
+   "fingerprint": "8481b2fb6d69925f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 21.97,
+   "at": "2026-10-24 01:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792806439.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792806439.png"
+   }
   }
  },
  "fingerprints": [
@@ -9999,7 +10010,8 @@
   "75b6ed2e9c04767e",
   "f88534778cd6714e",
   "4e36fa1ea2d4e732",
-  "2daeaaf3188b9eff"
+  "2daeaaf3188b9eff",
+  "8481b2fb6d69925f"
  ],
- "last_kind": "info"
+ "last_kind": "hisn"
 }
