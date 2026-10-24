@@ -9393,6 +9393,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792877333.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792877333.png"
    }
+  },
+  "noor-adhkar-284-r3": {
+   "title": "مِن أذكار المسلم: سمع سامع بحمد الله وحسن بلائه علينا…",
+   "fingerprint": "676eda3b4e55a00b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 30.07,
+   "at": "2026-10-24 22:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792881037.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792881037.png"
+   }
   }
  },
  "fingerprints": [
@@ -10215,7 +10226,8 @@
   "f3f443ffdc8bd653",
   "6c8c55f1100e4426",
   "96e6828d20496b31",
-  "9901cd9cefdd13a6"
+  "9901cd9cefdd13a6",
+  "676eda3b4e55a00b"
  ],
  "last_kind": "adhkar"
 }
