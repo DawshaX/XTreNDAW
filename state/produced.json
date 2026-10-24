@@ -9371,6 +9371,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792869849.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792869849.png"
    }
+  },
+  "noor-quran-s077-13-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ المُرۡسَلَاتِ ﴿13–16﴾ — أبو بكر الشاطري",
+   "fingerprint": "96e6828d20496b31",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs077-13-shaatree.mp4",
+   "duration": 38.91,
+   "at": "2026-10-24 20:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792873629.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792873629.png"
+   }
   }
  },
  "fingerprints": [
@@ -10191,7 +10202,8 @@
   "37cfa7b87f7068d3",
   "7de5870f0d00b26c",
   "f3f443ffdc8bd653",
-  "6c8c55f1100e4426"
+  "6c8c55f1100e4426",
+  "96e6828d20496b31"
  ],
  "last_kind": "quran"
 }
