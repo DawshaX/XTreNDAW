@@ -9404,6 +9404,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792881037.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792881037.png"
    }
+  },
+  "noor-adhkar-34-r3": {
+   "title": "مِن أذكار المسلم: اللهم بك أصبحنا وبك أمسينا وبك نحيا وبك…",
+   "fingerprint": "a9939b6c765c0444",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 26.1,
+   "at": "2026-10-24 23:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792884762.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792884762.png"
+   }
   }
  },
  "fingerprints": [
@@ -10227,7 +10238,8 @@
   "6c8c55f1100e4426",
   "96e6828d20496b31",
   "9901cd9cefdd13a6",
-  "676eda3b4e55a00b"
+  "676eda3b4e55a00b",
+  "a9939b6c765c0444"
  ],
  "last_kind": "adhkar"
 }
