@@ -9294,6 +9294,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792836081.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792836081.png"
    }
+  },
+  "noor-hisn-27-r3": {
+   "title": "سلسلة حصن المسلم (28/60): اللهم ما أصبح بي من نعمة أو بأحد…",
+   "fingerprint": "c7531535cae49d86",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 25.73,
+   "at": "2026-10-24 11:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792839812.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792839812.png"
+   }
   }
  },
  "fingerprints": [
@@ -10107,7 +10118,8 @@
   "e8569106730ef8e4",
   "730ab1f5fa70d364",
   "aaa808f8cb0c6dd6",
-  "d7f2f70619402516"
+  "d7f2f70619402516",
+  "c7531535cae49d86"
  ],
  "last_kind": "hisn"
 }
