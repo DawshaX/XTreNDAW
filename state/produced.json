@@ -9283,6 +9283,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792832370.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792832370.png"
    }
+  },
+  "noor-hisn-26-r3": {
+   "title": "سلسلة حصن المسلم (27/60): اللهم فاطر السماوات والأرض، عالم…",
+   "fingerprint": "d7f2f70619402516",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 28.9,
+   "at": "2026-10-24 10:01",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792836081.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792836081.png"
+   }
   }
  },
  "fingerprints": [
@@ -10095,7 +10106,8 @@
   "36859c66947cf3e8",
   "e8569106730ef8e4",
   "730ab1f5fa70d364",
-  "aaa808f8cb0c6dd6"
+  "aaa808f8cb0c6dd6",
+  "d7f2f70619402516"
  ],
  "last_kind": "hisn"
 }
