@@ -9272,6 +9272,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792828667.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792828667.png"
    }
+  },
+  "noor-hisn-25-r3": {
+   "title": "سلسلة حصن المسلم (26/60): اللهم إني أعوذ بك من علم لا ينفع…",
+   "fingerprint": "aaa808f8cb0c6dd6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 26.3,
+   "at": "2026-10-24 08:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792832370.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792832370.png"
+   }
   }
  },
  "fingerprints": [
@@ -10083,7 +10094,8 @@
   "a842d6413bcab200",
   "36859c66947cf3e8",
   "e8569106730ef8e4",
-  "730ab1f5fa70d364"
+  "730ab1f5fa70d364",
+  "aaa808f8cb0c6dd6"
  ],
  "last_kind": "hisn"
 }
