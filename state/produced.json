@@ -9382,6 +9382,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792873629.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792873629.png"
    }
+  },
+  "noor-adhkar-211-r3": {
+   "title": "مِن أذكار المسلم: اللهم اكفني بحلالك عن حرامك ، وأغنني…",
+   "fingerprint": "9901cd9cefdd13a6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 25.47,
+   "at": "2026-10-24 21:28",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792877333.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792877333.png"
+   }
   }
  },
  "fingerprints": [
@@ -10203,7 +10214,8 @@
   "7de5870f0d00b26c",
   "f3f443ffdc8bd653",
   "6c8c55f1100e4426",
-  "96e6828d20496b31"
+  "96e6828d20496b31",
+  "9901cd9cefdd13a6"
  ],
- "last_kind": "quran"
+ "last_kind": "adhkar"
 }
