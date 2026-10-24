@@ -9360,6 +9360,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792865942.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792865942.png"
    }
+  },
+  "noor-quran-s008-49-r8": {
+   "title": "دقيقة نور 🌙 سُورَةُ الأَنفَالِ ﴿49–51﴾ — علي الحذيفي",
+   "fingerprint": "6c8c55f1100e4426",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs008-49-hudhaify.mp4",
+   "duration": 82.89,
+   "at": "2026-10-24 19:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792869849.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792869849.png"
+   }
   }
  },
  "fingerprints": [
@@ -10179,7 +10190,8 @@
   "0e12b7387ef4b37f",
   "37cfa7b87f7068d3",
   "7de5870f0d00b26c",
-  "f3f443ffdc8bd653"
+  "f3f443ffdc8bd653",
+  "6c8c55f1100e4426"
  ],
  "last_kind": "quran"
 }
