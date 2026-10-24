@@ -9217,6 +9217,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792810156.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792810156.png"
    }
+  },
+  "noor-hisn-20-r3": {
+   "title": "سلسلة حصن المسلم (21/60): اللهم مصرف القلوب صرف قلوبنا على…",
+   "fingerprint": "99311dca395e8730",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 22.73,
+   "at": "2026-10-24 03:50",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792813849.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792813849.png"
+   }
   }
  },
  "fingerprints": [
@@ -10023,7 +10034,8 @@
   "4e36fa1ea2d4e732",
   "2daeaaf3188b9eff",
   "8481b2fb6d69925f",
-  "a97bb78f21c0c1e3"
+  "a97bb78f21c0c1e3",
+  "99311dca395e8730"
  ],
  "last_kind": "hisn"
 }
