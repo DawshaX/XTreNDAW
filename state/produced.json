@@ -9206,6 +9206,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792806439.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792806439.png"
    }
+  },
+  "noor-hisn-19-r3": {
+   "title": "سلسلة حصن المسلم (20/60): اللهم إني أعوذ بك من زوال نعمتك…",
+   "fingerprint": "a97bb78f21c0c1e3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 25.8,
+   "at": "2026-10-24 02:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792810156.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792810156.png"
+   }
   }
  },
  "fingerprints": [
@@ -10011,7 +10022,8 @@
   "f88534778cd6714e",
   "4e36fa1ea2d4e732",
   "2daeaaf3188b9eff",
-  "8481b2fb6d69925f"
+  "8481b2fb6d69925f",
+  "a97bb78f21c0c1e3"
  ],
  "last_kind": "hisn"
 }
