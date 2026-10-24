@@ -9316,6 +9316,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792843546.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792843546.png"
    }
+  },
+  "noor-hisn-29-r3": {
+   "title": "سلسلة حصن المسلم (30/60): من قال: سبحان الله وبحمده، غرست له…",
+   "fingerprint": "0e12b7387ef4b37f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 23.8,
+   "at": "2026-10-24 13:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792847295.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792847295.png"
+   }
   }
  },
  "fingerprints": [
@@ -10131,7 +10142,8 @@
   "aaa808f8cb0c6dd6",
   "d7f2f70619402516",
   "c7531535cae49d86",
-  "7cf34d0b6af86267"
+  "7cf34d0b6af86267",
+  "0e12b7387ef4b37f"
  ],
  "last_kind": "hisn"
 }
