@@ -9239,6 +9239,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792817554.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792817554.png"
    }
+  },
+  "noor-hisn-22-r3": {
+   "title": "سلسلة حصن المسلم (23/60): اللهم اجعل في قلبي نورا وفي لساني…",
+   "fingerprint": "36859c66947cf3e8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hisn-3.mp4",
+   "duration": 24.83,
+   "at": "2026-10-24 05:54",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792821241.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792821241.png"
+   }
   }
  },
  "fingerprints": [
@@ -10047,7 +10058,8 @@
   "8481b2fb6d69925f",
   "a97bb78f21c0c1e3",
   "99311dca395e8730",
-  "a842d6413bcab200"
+  "a842d6413bcab200",
+  "36859c66947cf3e8"
  ],
  "last_kind": "hisn"
 }
