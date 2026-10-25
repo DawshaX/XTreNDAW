@@ -9635,6 +9635,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792959638.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792959638.png"
    }
+  },
+  "noor-tahseen-t020-111-r3": {
+   "title": "سلسلة التحصين (8/8): سُورَةُ طه ﴿111–112﴾ — عبدالرحمن السديس",
+   "fingerprint": "895f74108a1f9b2d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-tt020-111-abdurrahmaansudais.mp4",
+   "duration": 47.5,
+   "at": "2026-10-25 21:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792963368.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792963368.png"
+   }
   }
  },
  "fingerprints": [
@@ -10478,7 +10489,8 @@
   "be347a2b5cac08e3",
   "5bc55e2232c7bc2f",
   "b2e05f707719a06b",
-  "41648a23e322582b"
+  "41648a23e322582b",
+  "895f74108a1f9b2d"
  ],
- "last_kind": "quran"
+ "last_kind": "tahseen"
 }
