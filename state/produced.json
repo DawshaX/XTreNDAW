@@ -9646,6 +9646,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792963368.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792963368.png"
    }
+  },
+  "noor-quran-s084-13-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الانشِقَاقِ ﴿13–16﴾ — أيمن سويد",
+   "fingerprint": "c082ec72027a70e9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs084-13-aymanswoaid.mp4",
+   "duration": 59.75,
+   "at": "2026-10-25 22:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792967248.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792967248.png"
+   }
   }
  },
  "fingerprints": [
@@ -10490,7 +10501,8 @@
   "5bc55e2232c7bc2f",
   "b2e05f707719a06b",
   "41648a23e322582b",
-  "895f74108a1f9b2d"
+  "895f74108a1f9b2d",
+  "c082ec72027a70e9"
  ],
- "last_kind": "tahseen"
+ "last_kind": "quran"
 }
