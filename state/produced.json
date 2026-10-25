@@ -9547,6 +9547,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792929417.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792929417.png"
    }
+  },
+  "noor-adhkar-210-r3": {
+   "title": "مِن أذكار المسلم: يقرأ قوله تعالى هو الأول والآخر والظاهر…",
+   "fingerprint": "3d3b5ea52c6f601b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 26.47,
+   "at": "2026-10-25 12:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792933122.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792933122.png"
+   }
   }
  },
  "fingerprints": [
@@ -10382,7 +10393,8 @@
   "ef34433b68773af3",
   "ba32525c0c6f5a08",
   "68b5bad678a1142a",
-  "20e4c44e57ec6c67"
+  "20e4c44e57ec6c67",
+  "3d3b5ea52c6f601b"
  ],
  "last_kind": "adhkar"
 }
