@@ -9536,6 +9536,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792925722.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792925722.png"
    }
+  },
+  "noor-adhkar-76-r3": {
+   "title": "مِن أذكار المسلم: واذكر ربك في نفسك تضرعا وخيفة ودون الجهر…",
+   "fingerprint": "20e4c44e57ec6c67",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 28.73,
+   "at": "2026-10-25 11:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792929417.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792929417.png"
+   }
   }
  },
  "fingerprints": [
@@ -10370,7 +10381,8 @@
   "6075ea40ea0b63a5",
   "ef34433b68773af3",
   "ba32525c0c6f5a08",
-  "68b5bad678a1142a"
+  "68b5bad678a1142a",
+  "20e4c44e57ec6c67"
  ],
  "last_kind": "adhkar"
 }
