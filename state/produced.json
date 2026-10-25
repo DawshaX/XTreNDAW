@@ -9657,6 +9657,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792967248.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792967248.png"
    }
+  },
+  "noor-quran-s021-37-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الأَنبِيَاءِ ﴿37–40﴾ — علي الحذيفي",
+   "fingerprint": "234cef1ab9e5203f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs021-37-hudhaify.mp4",
+   "duration": 78.26,
+   "at": "2026-10-25 23:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792971147.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792971147.png"
+   }
   }
  },
  "fingerprints": [
@@ -10502,7 +10513,8 @@
   "b2e05f707719a06b",
   "41648a23e322582b",
   "895f74108a1f9b2d",
-  "c082ec72027a70e9"
+  "c082ec72027a70e9",
+  "234cef1ab9e5203f"
  ],
  "last_kind": "quran"
 }
