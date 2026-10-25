@@ -9492,6 +9492,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792910842.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792910842.png"
    }
+  },
+  "noor-adhkar-56-r3": {
+   "title": "مِن أذكار المسلم: بعد الصلاة: أستغفر الله ثلاثا، اللهم أنت…",
+   "fingerprint": "6075ea40ea0b63a5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 29.23,
+   "at": "2026-10-25 07:50",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792914597.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792914597.png"
+   }
   }
  },
  "fingerprints": [
@@ -10322,7 +10333,8 @@
   "7491b743406462f9",
   "f7d995fe46ab0ac8",
   "002acb2df909a358",
-  "dd9519c2cbc8b055"
+  "dd9519c2cbc8b055",
+  "6075ea40ea0b63a5"
  ],
  "last_kind": "adhkar"
 }
