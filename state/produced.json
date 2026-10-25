@@ -9470,6 +9470,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792903380.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792903380.png"
    }
+  },
+  "noor-adhkar-233-r3": {
+   "title": "مِن أذكار المسلم: اللهم عبدك وابن عبدك وابن أمتك احتاج إلى…",
+   "fingerprint": "002acb2df909a358",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 32.17,
+   "at": "2026-10-25 05:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792907097.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792907097.png"
+   }
   }
  },
  "fingerprints": [
@@ -10298,7 +10309,8 @@
   "9cf9db1dbb5efe3c",
   "c70ac8364a9526c8",
   "7491b743406462f9",
-  "f7d995fe46ab0ac8"
+  "f7d995fe46ab0ac8",
+  "002acb2df909a358"
  ],
  "last_kind": "adhkar"
 }
