@@ -9514,6 +9514,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792918336.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792918336.png"
    }
+  },
+  "noor-adhkar-239-r3": {
+   "title": "مِن أذكار المسلم: بسم الله وعلى سنة رسول الله",
+   "fingerprint": "ba32525c0c6f5a08",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 21.93,
+   "at": "2026-10-25 09:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792922010.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792922010.png"
+   }
   }
  },
  "fingerprints": [
@@ -10346,7 +10357,8 @@
   "002acb2df909a358",
   "dd9519c2cbc8b055",
   "6075ea40ea0b63a5",
-  "ef34433b68773af3"
+  "ef34433b68773af3",
+  "ba32525c0c6f5a08"
  ],
  "last_kind": "adhkar"
 }
