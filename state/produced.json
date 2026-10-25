@@ -9459,6 +9459,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792899674.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792899674.png"
    }
+  },
+  "noor-adhkar-193-r3": {
+   "title": "مِن أذكار المسلم: اللهم إني أعوذ برضاك من سخطك وأعوذ…",
+   "fingerprint": "f7d995fe46ab0ac8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 31.1,
+   "at": "2026-10-25 04:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792903380.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792903380.png"
+   }
   }
  },
  "fingerprints": [
@@ -10286,7 +10297,8 @@
   "a9939b6c765c0444",
   "9cf9db1dbb5efe3c",
   "c70ac8364a9526c8",
-  "7491b743406462f9"
+  "7491b743406462f9",
+  "f7d995fe46ab0ac8"
  ],
  "last_kind": "adhkar"
 }
