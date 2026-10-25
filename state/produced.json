@@ -9602,6 +9602,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792948235.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792948235.png"
    }
+  },
+  "noor-quran-s055-21-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الرَّحۡمَٰن ﴿21–24﴾ — أبو بكر الشاطري",
+   "fingerprint": "5bc55e2232c7bc2f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs055-21-shaatree.mp4",
+   "duration": 43.85,
+   "at": "2026-10-25 18:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792951982.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792951982.png"
+   }
   }
  },
  "fingerprints": [
@@ -10442,7 +10453,8 @@
   "a4487581fbef3768",
   "17a04c655ece7995",
   "2f15b2c19b6339aa",
-  "be347a2b5cac08e3"
+  "be347a2b5cac08e3",
+  "5bc55e2232c7bc2f"
  ],
  "last_kind": "quran"
 }
