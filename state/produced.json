@@ -9624,6 +9624,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792955861.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792955861.png"
    }
+  },
+  "noor-quran-s052-37-r8": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الطُّورِ ﴿37–40﴾ — علي الحذيفي",
+   "fingerprint": "41648a23e322582b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs052-37-hudhaify.mp4",
+   "duration": 66.21,
+   "at": "2026-10-25 20:20",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792959638.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792959638.png"
+   }
   }
  },
  "fingerprints": [
@@ -10466,7 +10477,8 @@
   "2f15b2c19b6339aa",
   "be347a2b5cac08e3",
   "5bc55e2232c7bc2f",
-  "b2e05f707719a06b"
+  "b2e05f707719a06b",
+  "41648a23e322582b"
  ],
  "last_kind": "quran"
 }
