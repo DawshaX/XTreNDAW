@@ -9580,6 +9580,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792940686.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792940686.png"
    }
+  },
+  "noor-quran-s029-21-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ العَنكَبُوتِ ﴿21–22﴾ — أيمن سويد",
+   "fingerprint": "2f15b2c19b6339aa",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs029-21-aymanswoaid.mp4",
+   "duration": 69.52,
+   "at": "2026-10-25 16:07",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792944462.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792944462.png"
+   }
   }
  },
  "fingerprints": [
@@ -10418,7 +10429,8 @@
   "20e4c44e57ec6c67",
   "3d3b5ea52c6f601b",
   "a4487581fbef3768",
-  "17a04c655ece7995"
+  "17a04c655ece7995",
+  "2f15b2c19b6339aa"
  ],
  "last_kind": "quran"
 }
