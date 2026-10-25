@@ -9503,6 +9503,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792914597.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792914597.png"
    }
+  },
+  "noor-adhkar-70-r3": {
+   "title": "مِن أذكار المسلم: فهذا مختصر اختصرته من كتابي (( الذكر…",
+   "fingerprint": "ef34433b68773af3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 32.1,
+   "at": "2026-10-25 08:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792918336.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792918336.png"
+   }
   }
  },
  "fingerprints": [
@@ -10334,7 +10345,8 @@
   "f7d995fe46ab0ac8",
   "002acb2df909a358",
   "dd9519c2cbc8b055",
-  "6075ea40ea0b63a5"
+  "6075ea40ea0b63a5",
+  "ef34433b68773af3"
  ],
  "last_kind": "adhkar"
 }
