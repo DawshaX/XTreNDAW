@@ -9437,6 +9437,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792892251.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792892251.png"
    }
+  },
+  "noor-adhkar-38-r3": {
+   "title": "مِن أذكار المسلم: أصبحنا على فطرة الإسلام، وعلى كلمة…",
+   "fingerprint": "c70ac8364a9526c8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 29.5,
+   "at": "2026-10-25 02:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792895970.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792895970.png"
+   }
   }
  },
  "fingerprints": [
@@ -10262,7 +10273,8 @@
   "9901cd9cefdd13a6",
   "676eda3b4e55a00b",
   "a9939b6c765c0444",
-  "9cf9db1dbb5efe3c"
+  "9cf9db1dbb5efe3c",
+  "c70ac8364a9526c8"
  ],
  "last_kind": "adhkar"
 }
