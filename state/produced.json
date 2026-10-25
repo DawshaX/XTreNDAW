@@ -9481,6 +9481,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792907097.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792907097.png"
    }
+  },
+  "noor-adhkar-112-r3": {
+   "title": "مِن أذكار المسلم: اللهم باعد بيني وبين خطاياي كما باعدت…",
+   "fingerprint": "dd9519c2cbc8b055",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-adhkar-3.mp4",
+   "duration": 35.63,
+   "at": "2026-10-25 06:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792910842.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792910842.png"
+   }
   }
  },
  "fingerprints": [
@@ -10310,7 +10321,8 @@
   "c70ac8364a9526c8",
   "7491b743406462f9",
   "f7d995fe46ab0ac8",
-  "002acb2df909a358"
+  "002acb2df909a358",
+  "dd9519c2cbc8b055"
  ],
  "last_kind": "adhkar"
 }
