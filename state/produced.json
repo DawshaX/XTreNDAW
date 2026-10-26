@@ -9679,6 +9679,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792974947.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792974947.png"
    }
+  },
+  "noor-quran-s082-1-r7": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الانفِطَارِ ﴿1–4﴾ — أيمن سويد",
+   "fingerprint": "0f1b69f1703489a5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs082-1-aymanswoaid.mp4",
+   "duration": 47.01,
+   "at": "2026-10-26 01:38",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792978701.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792978701.png"
+   }
   }
  },
  "fingerprints": [
@@ -10525,7 +10536,8 @@
   "41648a23e322582b",
   "895f74108a1f9b2d",
   "c082ec72027a70e9",
-  "234cef1ab9e5203f"
+  "234cef1ab9e5203f",
+  "0f1b69f1703489a5"
  ],
- "last_kind": "info"
+ "last_kind": "quran"
 }
