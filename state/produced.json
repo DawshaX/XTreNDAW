@@ -9756,6 +9756,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793001687.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793001687.png"
    }
+  },
+  "noor-quran-s067-29-r8": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ المُلۡكِ ﴿29–30﴾ — علي الحذيفي",
+   "fingerprint": "2f9e76e9c7e431f9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs067-29-hudhaify.mp4",
+   "duration": 65.35,
+   "at": "2026-10-26 09:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793005479.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793005479.png"
+   }
   }
  },
  "fingerprints": [
@@ -10609,7 +10620,8 @@
   "3c14839397b0eec1",
   "994ffcb8320c876c",
   "feb42c0ffcc98327",
-  "81ee0a595706f309"
+  "81ee0a595706f309",
+  "2f9e76e9c7e431f9"
  ],
  "last_kind": "quran"
 }
