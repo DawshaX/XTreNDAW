@@ -9844,6 +9844,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793032110.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793032110.png"
    }
+  },
+  "noor-quran-s036-13-r7": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ يسٓ ﴿13–14﴾ — أيمن سويد",
+   "fingerprint": "df2969ce2151cf2e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs036-13-aymanswoaid.mp4",
+   "duration": 70.79,
+   "at": "2026-10-26 17:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793035917.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793035917.png"
+   }
   }
  },
  "fingerprints": [
@@ -10705,7 +10716,8 @@
   "4bd8cc46203fd9ce",
   "86cf26ad487eda7f",
   "d9306e03478dcd6c",
-  "0ff12dd931436181"
+  "0ff12dd931436181",
+  "df2969ce2151cf2e"
  ],
  "last_kind": "quran"
 }
