@@ -9767,6 +9767,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793005479.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793005479.png"
    }
+  },
+  "noor-quran-s080-29-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ عَبَسَ ﴿29–32﴾ — أبو بكر الشاطري",
+   "fingerprint": "42d7c472b8179062",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs080-29-shaatree.mp4",
+   "duration": 44.7,
+   "at": "2026-10-26 10:07",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793009221.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793009221.png"
+   }
   }
  },
  "fingerprints": [
@@ -10621,7 +10632,8 @@
   "994ffcb8320c876c",
   "feb42c0ffcc98327",
   "81ee0a595706f309",
-  "2f9e76e9c7e431f9"
+  "2f9e76e9c7e431f9",
+  "42d7c472b8179062"
  ],
  "last_kind": "quran"
 }
