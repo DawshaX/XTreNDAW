@@ -9811,6 +9811,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793020574.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793020574.png"
    }
+  },
+  "noor-quran-s086-1-r7": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الطَّارِقِ ﴿1–4﴾ — أيمن سويد",
+   "fingerprint": "86cf26ad487eda7f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs086-1-aymanswoaid.mp4",
+   "duration": 58.14,
+   "at": "2026-10-26 14:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793024378.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793024378.png"
+   }
   }
  },
  "fingerprints": [
@@ -10669,7 +10680,8 @@
   "42d7c472b8179062",
   "602761b038cf18fd",
   "fe410be2f6a20355",
-  "4bd8cc46203fd9ce"
+  "4bd8cc46203fd9ce",
+  "86cf26ad487eda7f"
  ],
- "last_kind": "juz"
+ "last_kind": "quran"
 }
