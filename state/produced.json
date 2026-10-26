@@ -9866,6 +9866,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793039817.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793039817.png"
    }
+  },
+  "noor-quran-s051-53-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الذَّارِيَاتِ ﴿53–56﴾ — أبو بكر الشاطري",
+   "fingerprint": "f5d66d4bf93d55d1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs051-53-shaatree.mp4",
+   "duration": 51.73,
+   "at": "2026-10-26 19:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793043660.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793043660.png"
+   }
   }
  },
  "fingerprints": [
@@ -10729,7 +10740,8 @@
   "d9306e03478dcd6c",
   "0ff12dd931436181",
   "df2969ce2151cf2e",
-  "3db29b759b35eb08"
+  "3db29b759b35eb08",
+  "f5d66d4bf93d55d1"
  ],
  "last_kind": "quran"
 }
