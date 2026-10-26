@@ -9800,6 +9800,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793016817.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793016817.png"
    }
+  },
+  "noor-juz-j079-37-r3": {
+   "title": "سلسلة جزء عمّ (20/142): سُورَةُ النَّازِعَاتِ ﴿37–40﴾ — عبدالرحمن السديس",
+   "fingerprint": "4bd8cc46203fd9ce",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-jj079-37-abdurrahmaansudais.mp4",
+   "duration": 37.27,
+   "at": "2026-10-26 13:16",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793020574.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793020574.png"
+   }
   }
  },
  "fingerprints": [
@@ -10657,7 +10668,8 @@
   "2f9e76e9c7e431f9",
   "42d7c472b8179062",
   "602761b038cf18fd",
-  "fe410be2f6a20355"
+  "fe410be2f6a20355",
+  "4bd8cc46203fd9ce"
  ],
  "last_kind": "juz"
 }
