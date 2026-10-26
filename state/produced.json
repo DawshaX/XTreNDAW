@@ -9745,6 +9745,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792997705.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792997705.png"
    }
+  },
+  "noor-quran-s070-29-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ المَعَارِجِ ﴿29–32﴾ — أيمن سويد",
+   "fingerprint": "81ee0a595706f309",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs070-29-aymanswoaid.mp4",
+   "duration": 73.0,
+   "at": "2026-10-26 08:01",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793001687.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793001687.png"
+   }
   }
  },
  "fingerprints": [
@@ -10597,7 +10608,8 @@
   "570668b71f3bc161",
   "3c14839397b0eec1",
   "994ffcb8320c876c",
-  "feb42c0ffcc98327"
+  "feb42c0ffcc98327",
+  "81ee0a595706f309"
  ],
  "last_kind": "quran"
 }
