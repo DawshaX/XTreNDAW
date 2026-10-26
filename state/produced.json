@@ -9690,6 +9690,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792978701.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792978701.png"
    }
+  },
+  "noor-quran-s010-29-r8": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ يُونُسَ ﴿29–30﴾ — علي الحذيفي",
+   "fingerprint": "2de39104811694ec",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs010-29-hudhaify.mp4",
+   "duration": 60.85,
+   "at": "2026-10-26 02:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792982562.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792982562.png"
+   }
   }
  },
  "fingerprints": [
@@ -10537,7 +10548,8 @@
   "895f74108a1f9b2d",
   "c082ec72027a70e9",
   "234cef1ab9e5203f",
-  "0f1b69f1703489a5"
+  "0f1b69f1703489a5",
+  "2de39104811694ec"
  ],
  "last_kind": "quran"
 }
