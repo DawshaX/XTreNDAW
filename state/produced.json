@@ -9712,6 +9712,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792986305.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792986305.png"
    }
+  },
+  "noor-quran-s009-105-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ التَّوۡبَةِ ﴿105–106﴾ — أيمن سويد",
+   "fingerprint": "3c14839397b0eec1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs009-105-aymanswoaid.mp4",
+   "duration": 85.29,
+   "at": "2026-10-26 04:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792990076.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792990076.png"
+   }
   }
  },
  "fingerprints": [
@@ -10561,7 +10572,8 @@
   "234cef1ab9e5203f",
   "0f1b69f1703489a5",
   "2de39104811694ec",
-  "570668b71f3bc161"
+  "570668b71f3bc161",
+  "3c14839397b0eec1"
  ],
  "last_kind": "quran"
 }
