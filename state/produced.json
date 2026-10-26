@@ -9822,6 +9822,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793024378.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793024378.png"
    }
+  },
+  "noor-quran-s069-29-r8": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الحَاقَّةِ ﴿29–32﴾ — علي الحذيفي",
+   "fingerprint": "d9306e03478dcd6c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs069-29-hudhaify.mp4",
+   "duration": 57.91,
+   "at": "2026-10-26 15:23",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793028207.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793028207.png"
+   }
   }
  },
  "fingerprints": [
@@ -10681,7 +10692,8 @@
   "602761b038cf18fd",
   "fe410be2f6a20355",
   "4bd8cc46203fd9ce",
-  "86cf26ad487eda7f"
+  "86cf26ad487eda7f",
+  "d9306e03478dcd6c"
  ],
  "last_kind": "quran"
 }
