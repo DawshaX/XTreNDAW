@@ -9734,6 +9734,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792993958.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792993958.png"
    }
+  },
+  "noor-quran-s026-169-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الشُّعَرَاءِ ﴿169–172﴾ — أبو بكر الشاطري",
+   "fingerprint": "feb42c0ffcc98327",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs026-169-shaatree.mp4",
+   "duration": 48.57,
+   "at": "2026-10-26 06:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792997705.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1792997705.png"
+   }
   }
  },
  "fingerprints": [
@@ -10585,7 +10596,8 @@
   "2de39104811694ec",
   "570668b71f3bc161",
   "3c14839397b0eec1",
-  "994ffcb8320c876c"
+  "994ffcb8320c876c",
+  "feb42c0ffcc98327"
  ],
  "last_kind": "quran"
 }
