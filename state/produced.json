@@ -9855,6 +9855,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793035917.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793035917.png"
    }
+  },
+  "noor-quran-s075-37-r8": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ القِيَامَةِ ﴿37–40﴾ — علي الحذيفي",
+   "fingerprint": "3db29b759b35eb08",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs075-37-hudhaify.mp4",
+   "duration": 61.58,
+   "at": "2026-10-26 18:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793039817.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793039817.png"
+   }
   }
  },
  "fingerprints": [
@@ -10717,7 +10728,8 @@
   "86cf26ad487eda7f",
   "d9306e03478dcd6c",
   "0ff12dd931436181",
-  "df2969ce2151cf2e"
+  "df2969ce2151cf2e",
+  "3db29b759b35eb08"
  ],
  "last_kind": "quran"
 }
