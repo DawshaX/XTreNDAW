@@ -10064,6 +10064,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793107360.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793107360.png"
    }
+  },
+  "noor-quran-s003-161-r9": {
+   "title": "دقيقة نور 🌙 سُورَةُ آلِ عِمۡرَانَ ﴿161–163﴾ — أبو بكر الشاطري",
+   "fingerprint": "5cf7b86a5cfae661",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs003-161-shaatree.mp4",
+   "duration": 71.44,
+   "at": "2026-10-27 14:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793111229.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793111229.png"
+   }
   }
  },
  "fingerprints": [
@@ -10944,7 +10955,8 @@
   "995883d075fbb9a2",
   "190c12ad4f2fcd48",
   "13cefc44ed0b6ddd",
-  "86363664a9eb35fe"
+  "86363664a9eb35fe",
+  "5cf7b86a5cfae661"
  ],
- "last_kind": "hadith"
+ "last_kind": "quran"
 }
