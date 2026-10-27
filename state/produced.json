@@ -10042,6 +10042,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793099933.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793099933.png"
    }
+  },
+  "noor-hadith-994-r3": {
+   "title": "قال رسول الله ﷺ: إذا مرض العبد أو سافر، كتب له مثل ما كان…",
+   "fingerprint": "13cefc44ed0b6ddd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 28.93,
+   "at": "2026-10-27 12:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793103656.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793103656.png"
+   }
   }
  },
  "fingerprints": [
@@ -10920,7 +10931,8 @@
   "26dba8c0a2cdf6dc",
   "5de3d7ebdf7d5e3c",
   "995883d075fbb9a2",
-  "190c12ad4f2fcd48"
+  "190c12ad4f2fcd48",
+  "13cefc44ed0b6ddd"
  ],
  "last_kind": "hadith"
 }
