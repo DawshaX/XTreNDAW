@@ -10009,6 +10009,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793088721.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793088721.png"
    }
+  },
+  "noor-hadith-8399-r3": {
+   "title": "قال رسول الله ﷺ: كفن في ثلاثة أثواب بيض سحولية",
+   "fingerprint": "5de3d7ebdf7d5e3c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 26.37,
+   "at": "2026-10-27 09:14",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793092437.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793092437.png"
+   }
   }
  },
  "fingerprints": [
@@ -10884,7 +10895,8 @@
   "4c4bfcffbf13bf17",
   "2fd45d37165570d0",
   "ab7950b06f30e25e",
-  "26dba8c0a2cdf6dc"
+  "26dba8c0a2cdf6dc",
+  "5de3d7ebdf7d5e3c"
  ],
  "last_kind": "hadith"
 }
