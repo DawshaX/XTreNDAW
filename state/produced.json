@@ -9987,6 +9987,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793081279.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793081279.png"
    }
+  },
+  "noor-hadith-4147-r3": {
+   "title": "قال رسول الله ﷺ: من ترك ثلاث جمع تهاونا بها طبع الله على…",
+   "fingerprint": "ab7950b06f30e25e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 28.83,
+   "at": "2026-10-27 07:10",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793085007.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793085007.png"
+   }
   }
  },
  "fingerprints": [
@@ -10860,7 +10871,8 @@
   "3e7de4a285f5216e",
   "0d051dce2ea898fe",
   "4c4bfcffbf13bf17",
-  "2fd45d37165570d0"
+  "2fd45d37165570d0",
+  "ab7950b06f30e25e"
  ],
  "last_kind": "hadith"
 }
