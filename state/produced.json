@@ -10031,6 +10031,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793096183.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793096183.png"
    }
+  },
+  "noor-hadith-5074-r3": {
+   "title": "قال رسول الله ﷺ: من جعل قاضيا بين الناس فقد ذبح بغير سكين",
+   "fingerprint": "190c12ad4f2fcd48",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 28.2,
+   "at": "2026-10-27 11:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793099933.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793099933.png"
+   }
   }
  },
  "fingerprints": [
@@ -10908,7 +10919,8 @@
   "ab7950b06f30e25e",
   "26dba8c0a2cdf6dc",
   "5de3d7ebdf7d5e3c",
-  "995883d075fbb9a2"
+  "995883d075fbb9a2",
+  "190c12ad4f2fcd48"
  ],
  "last_kind": "hadith"
 }
