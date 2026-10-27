@@ -9965,6 +9965,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793073820.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793073820.png"
    }
+  },
+  "noor-juz-j080-17-r3": {
+   "title": "سلسلة جزء عمّ (27/142): سُورَةُ عَبَسَ ﴿17–20﴾ — عبدالرحمن السديس",
+   "fingerprint": "4c4bfcffbf13bf17",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-jj080-17-abdurrahmaansudais.mp4",
+   "duration": 48.53,
+   "at": "2026-10-27 05:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793077576.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793077576.png"
+   }
   }
  },
  "fingerprints": [
@@ -10836,7 +10847,8 @@
   "0c5bc86e96e6c462",
   "aca2690341147e1f",
   "3e7de4a285f5216e",
-  "0d051dce2ea898fe"
+  "0d051dce2ea898fe",
+  "4c4bfcffbf13bf17"
  ],
  "last_kind": "juz"
 }
