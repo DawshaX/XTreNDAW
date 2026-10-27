@@ -9954,6 +9954,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793070063.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793070063.png"
    }
+  },
+  "noor-juz-j080-13-r3": {
+   "title": "سلسلة جزء عمّ (26/142): سُورَةُ عَبَسَ ﴿13–16﴾ — عبدالرحمن السديس",
+   "fingerprint": "0d051dce2ea898fe",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-jj080-13-abdurrahmaansudais.mp4",
+   "duration": 40.33,
+   "at": "2026-10-27 04:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793073820.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793073820.png"
+   }
   }
  },
  "fingerprints": [
@@ -10824,7 +10835,8 @@
   "7301ac38f693dc82",
   "0c5bc86e96e6c462",
   "aca2690341147e1f",
-  "3e7de4a285f5216e"
+  "3e7de4a285f5216e",
+  "0d051dce2ea898fe"
  ],
  "last_kind": "juz"
 }
