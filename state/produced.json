@@ -10141,6 +10141,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793134286.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793134286.png"
    }
+  },
+  "noor-hadith-404-r3": {
+   "title": "قال رسول الله ﷺ: كان النبي ﷺ إذا كان يوم عيد خالف الطريق…",
+   "fingerprint": "7de00d5041a7d356",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 31.9,
+   "at": "2026-10-27 21:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793138026.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793138026.png"
+   }
   }
  },
  "fingerprints": [
@@ -11028,7 +11039,8 @@
   "802e46150e0b467c",
   "90d2d1aa631c397d",
   "9916907c89fcbb9a",
-  "76a371103abd4e4d"
+  "76a371103abd4e4d",
+  "7de00d5041a7d356"
  ],
- "last_kind": "quran"
+ "last_kind": "hadith"
 }
