@@ -10163,6 +10163,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793141737.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793141737.png"
    }
+  },
+  "noor-hadith-1406-r3": {
+   "title": "قال رسول الله ﷺ: لا تكذبوا على، فإنه من كذب على فليلج…",
+   "fingerprint": "4bf101933bd69a97",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 28.6,
+   "at": "2026-10-27 23:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793145465.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793145465.png"
+   }
   }
  },
  "fingerprints": [
@@ -11052,7 +11063,8 @@
   "9916907c89fcbb9a",
   "76a371103abd4e4d",
   "7de00d5041a7d356",
-  "769f9b4c3bc34ab7"
+  "769f9b4c3bc34ab7",
+  "4bf101933bd69a97"
  ],
  "last_kind": "hadith"
 }
