@@ -9976,6 +9976,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793077576.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793077576.png"
    }
+  },
+  "noor-hadith-5541-r3": {
+   "title": "قال رسول الله ﷺ: اتقوا النار ولو بشق تمرة",
+   "fingerprint": "2fd45d37165570d0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 23.13,
+   "at": "2026-10-27 06:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793081279.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793081279.png"
+   }
   }
  },
  "fingerprints": [
@@ -10848,7 +10859,8 @@
   "aca2690341147e1f",
   "3e7de4a285f5216e",
   "0d051dce2ea898fe",
-  "4c4bfcffbf13bf17"
+  "4c4bfcffbf13bf17",
+  "2fd45d37165570d0"
  ],
- "last_kind": "juz"
+ "last_kind": "hadith"
 }
