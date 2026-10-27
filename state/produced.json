@@ -10053,6 +10053,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793103656.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793103656.png"
    }
+  },
+  "noor-hadith-10363-r3": {
+   "title": "قال رسول الله ﷺ: صلاة في مسجدي هذا أفضل من ألف صلاة فيما…",
+   "fingerprint": "86363664a9eb35fe",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 30.13,
+   "at": "2026-10-27 13:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793107360.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793107360.png"
+   }
   }
  },
  "fingerprints": [
@@ -10932,7 +10943,8 @@
   "5de3d7ebdf7d5e3c",
   "995883d075fbb9a2",
   "190c12ad4f2fcd48",
-  "13cefc44ed0b6ddd"
+  "13cefc44ed0b6ddd",
+  "86363664a9eb35fe"
  ],
  "last_kind": "hadith"
 }
