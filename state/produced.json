@@ -9932,6 +9932,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793062570.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793062570.png"
    }
+  },
+  "noor-juz-j080-5-r3": {
+   "title": "سلسلة جزء عمّ (24/142): سُورَةُ عَبَسَ ﴿5–8﴾ — عبدالرحمن السديس",
+   "fingerprint": "aca2690341147e1f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-jj080-5-abdurrahmaansudais.mp4",
+   "duration": 35.77,
+   "at": "2026-10-27 01:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793066331.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793066331.png"
+   }
   }
  },
  "fingerprints": [
@@ -10800,7 +10811,8 @@
   "2ca73d70df50c99f",
   "b042e1ed7d862b4d",
   "7301ac38f693dc82",
-  "0c5bc86e96e6c462"
+  "0c5bc86e96e6c462",
+  "aca2690341147e1f"
  ],
- "last_kind": "info"
+ "last_kind": "juz"
 }
