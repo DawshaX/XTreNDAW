@@ -10152,6 +10152,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793138026.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793138026.png"
    }
+  },
+  "noor-hadith-8905-r3": {
+   "title": "قال رسول الله ﷺ: كان يذبح أو ينحر بالمصلى",
+   "fingerprint": "769f9b4c3bc34ab7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 27.03,
+   "at": "2026-10-27 22:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793141737.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793141737.png"
+   }
   }
  },
  "fingerprints": [
@@ -11040,7 +11051,8 @@
   "90d2d1aa631c397d",
   "9916907c89fcbb9a",
   "76a371103abd4e4d",
-  "7de00d5041a7d356"
+  "7de00d5041a7d356",
+  "769f9b4c3bc34ab7"
  ],
  "last_kind": "hadith"
 }
