@@ -10207,6 +10207,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793157000.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793157000.png"
    }
+  },
+  "noor-quran-s068-13-r7": {
+   "title": "دقيقة نور 🌙 سُورَةُ القَلَمِ ﴿13–16﴾ — أيمن سويد",
+   "fingerprint": "910052613c7e3a78",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs068-13-aymanswoaid.mp4",
+   "duration": 67.29,
+   "at": "2026-10-28 04:14",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793160875.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793160875.png"
+   }
   }
  },
  "fingerprints": [
@@ -11099,7 +11110,8 @@
   "769f9b4c3bc34ab7",
   "4bf101933bd69a97",
   "b93990f9e0072763",
-  "2f12471448524689"
+  "2f12471448524689",
+  "910052613c7e3a78"
  ],
  "last_kind": "quran"
 }
