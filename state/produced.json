@@ -10405,6 +10405,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793226425.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793226425.png"
    }
+  },
+  "noor-dua-219-r3": {
+   "title": "دعاء: أعيذك بكلمات الله التامة من كل شيطان…",
+   "fingerprint": "7c28816961cf8283",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.67,
+   "at": "2026-10-28 23:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793230150.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793230150.png"
+   }
   }
  },
  "fingerprints": [
@@ -11315,7 +11326,8 @@
   "6371fd5a078e1074",
   "f75626b0ac8377da",
   "d312189a16482271",
-  "ec0a0566a7b5faa1"
+  "ec0a0566a7b5faa1",
+  "7c28816961cf8283"
  ],
  "last_kind": "dua"
 }
