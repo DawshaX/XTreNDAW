@@ -10317,6 +10317,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793195670.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793195670.png"
    }
+  },
+  "noor-quran-s039-41-r8": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الزُّمَرِ ﴿41–41﴾ — علي الحذيفي",
+   "fingerprint": "92db7e7b2a2c2d75",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs039-41-hudhaify.mp4",
+   "duration": 63.4,
+   "at": "2026-10-28 14:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793199519.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793199519.png"
+   }
   }
  },
  "fingerprints": [
@@ -11219,7 +11230,8 @@
   "eb1ff48de251a9f6",
   "9307c49eb37fb1a5",
   "c4e7a5e764cd4a5d",
-  "89e251f1035152db"
+  "89e251f1035152db",
+  "92db7e7b2a2c2d75"
  ],
  "last_kind": "quran"
 }
