@@ -10372,6 +10372,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793215014.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793215014.png"
    }
+  },
+  "noor-quran-s020-113-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ طه ﴿113–114﴾ — أيمن سويد",
+   "fingerprint": "f75626b0ac8377da",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs020-113-aymanswoaid.mp4",
+   "duration": 87.88,
+   "at": "2026-10-28 20:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793218943.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793218943.png"
+   }
   }
  },
  "fingerprints": [
@@ -11279,7 +11290,8 @@
   "341f007002df028e",
   "9f3ab69aa806b220",
   "b5bc981199cc4a8e",
-  "6371fd5a078e1074"
+  "6371fd5a078e1074",
+  "f75626b0ac8377da"
  ],
  "last_kind": "quran"
 }
