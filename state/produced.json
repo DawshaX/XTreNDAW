@@ -10361,6 +10361,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793211095.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793211095.png"
    }
+  },
+  "noor-quran-s008-69-r9": {
+   "title": "دقيقة نور 🌙 سُورَةُ الأَنفَالِ ﴿69–70﴾ — أبو بكر الشاطري",
+   "fingerprint": "6371fd5a078e1074",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs008-69-shaatree.mp4",
+   "duration": 77.2,
+   "at": "2026-10-28 19:17",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793215014.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793215014.png"
+   }
   }
  },
  "fingerprints": [
@@ -11267,7 +11278,8 @@
   "92db7e7b2a2c2d75",
   "341f007002df028e",
   "9f3ab69aa806b220",
-  "b5bc981199cc4a8e"
+  "b5bc981199cc4a8e",
+  "6371fd5a078e1074"
  ],
  "last_kind": "quran"
 }
