@@ -10284,6 +10284,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793184160.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793184160.png"
    }
+  },
+  "noor-quran-s081-21-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ التَّكۡوِيرِ ﴿21–24﴾ — علي الحذيفي",
+   "fingerprint": "9307c49eb37fb1a5",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs081-21-hudhaify.mp4",
+   "duration": 53.4,
+   "at": "2026-10-28 11:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793187946.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793187946.png"
+   }
   }
  },
  "fingerprints": [
@@ -11183,7 +11194,8 @@
   "c075b2067c4c73f4",
   "86417112c3f29cab",
   "142cd91f938e7ea4",
-  "eb1ff48de251a9f6"
+  "eb1ff48de251a9f6",
+  "9307c49eb37fb1a5"
  ],
  "last_kind": "quran"
 }
