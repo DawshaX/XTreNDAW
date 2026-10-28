@@ -10273,6 +10273,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793180243.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793180243.png"
    }
+  },
+  "noor-quran-s030-49-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الرُّومِ ﴿49–51﴾ — أيمن سويد",
+   "fingerprint": "eb1ff48de251a9f6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs030-49-aymanswoaid.mp4",
+   "duration": 81.09,
+   "at": "2026-10-28 10:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793184160.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793184160.png"
+   }
   }
  },
  "fingerprints": [
@@ -11171,7 +11182,8 @@
   "0b0b86b206fb70c9",
   "c075b2067c4c73f4",
   "86417112c3f29cab",
-  "142cd91f938e7ea4"
+  "142cd91f938e7ea4",
+  "eb1ff48de251a9f6"
  ],
  "last_kind": "quran"
 }
