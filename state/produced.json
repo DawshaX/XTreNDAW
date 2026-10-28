@@ -10262,6 +10262,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793176413.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793176413.png"
    }
+  },
+  "noor-quran-s039-33-r9": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الزُّمَرِ ﴿33–36﴾ — أبو بكر الشاطري",
+   "fingerprint": "142cd91f938e7ea4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs039-33-shaatree.mp4",
+   "duration": 74.95,
+   "at": "2026-10-28 09:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793180243.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793180243.png"
+   }
   }
  },
  "fingerprints": [
@@ -11159,7 +11170,8 @@
   "cc8ad20ae02fe0c4",
   "0b0b86b206fb70c9",
   "c075b2067c4c73f4",
-  "86417112c3f29cab"
+  "86417112c3f29cab",
+  "142cd91f938e7ea4"
  ],
  "last_kind": "quran"
 }
