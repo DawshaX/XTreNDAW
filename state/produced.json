@@ -10328,6 +10328,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793199519.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793199519.png"
    }
+  },
+  "noor-quran-s073-1-r9": {
+   "title": "دقيقة نور 🌙 سُورَةُ المُزَّمِّلِ ﴿1–4﴾ — أبو بكر الشاطري",
+   "fingerprint": "341f007002df028e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs073-1-shaatree.mp4",
+   "duration": 43.67,
+   "at": "2026-10-28 16:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793203358.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793203358.png"
+   }
   }
  },
  "fingerprints": [
@@ -11231,7 +11242,8 @@
   "9307c49eb37fb1a5",
   "c4e7a5e764cd4a5d",
   "89e251f1035152db",
-  "92db7e7b2a2c2d75"
+  "92db7e7b2a2c2d75",
+  "341f007002df028e"
  ],
  "last_kind": "quran"
 }
