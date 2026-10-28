@@ -10218,6 +10218,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793160875.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793160875.png"
    }
+  },
+  "noor-quran-s009-121-r8": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ التَّوۡبَةِ ﴿121–122﴾ — علي الحذيفي",
+   "fingerprint": "cc8ad20ae02fe0c4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs009-121-hudhaify.mp4",
+   "duration": 79.24,
+   "at": "2026-10-28 05:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793164785.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793164785.png"
+   }
   }
  },
  "fingerprints": [
@@ -11111,7 +11122,8 @@
   "4bf101933bd69a97",
   "b93990f9e0072763",
   "2f12471448524689",
-  "910052613c7e3a78"
+  "910052613c7e3a78",
+  "cc8ad20ae02fe0c4"
  ],
  "last_kind": "quran"
 }
