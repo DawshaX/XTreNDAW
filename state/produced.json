@@ -10295,6 +10295,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793187946.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793187946.png"
    }
+  },
+  "noor-quran-s027-41-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ النَّمۡلِ ﴿41–43﴾ — أبو بكر الشاطري",
+   "fingerprint": "c4e7a5e764cd4a5d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs027-41-shaatree.mp4",
+   "duration": 62.78,
+   "at": "2026-10-28 12:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793191752.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793191752.png"
+   }
   }
  },
  "fingerprints": [
@@ -11195,7 +11206,8 @@
   "86417112c3f29cab",
   "142cd91f938e7ea4",
   "eb1ff48de251a9f6",
-  "9307c49eb37fb1a5"
+  "9307c49eb37fb1a5",
+  "c4e7a5e764cd4a5d"
  ],
  "last_kind": "quran"
 }
