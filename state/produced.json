@@ -10548,6 +10548,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793285987.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793285987.png"
    }
+  },
+  "noor-dua-198-r3": {
+   "title": "دعاء: اللهم أحسنت خلقي فأحسن خلقي",
+   "fingerprint": "dfaa7c063dc96f86",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 21.7,
+   "at": "2026-10-29 16:01",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793289705.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793289705.png"
+   }
   }
  },
  "fingerprints": [
@@ -11470,7 +11481,8 @@
   "b30ed6b3e626197c",
   "7df0079badcfc3d3",
   "8537110fc73e6217",
-  "f2c8e5c3b4df915e"
+  "f2c8e5c3b4df915e",
+  "dfaa7c063dc96f86"
  ],
  "last_kind": "dua"
 }
