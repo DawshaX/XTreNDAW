@@ -10592,6 +10592,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793301032.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793301032.png"
    }
+  },
+  "noor-dua-11-r3": {
+   "title": "دعاء: حسبي الله لا إله إلا هو، عليه توكلت وهو…",
+   "fingerprint": "20208d3fae3a61b7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.97,
+   "at": "2026-10-29 20:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793304789.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793304789.png"
+   }
   }
  },
  "fingerprints": [
@@ -11518,7 +11529,8 @@
   "dfaa7c063dc96f86",
   "f27f8d5db08c7caa",
   "93f60ad5b354c8cb",
-  "7109a108f164bec1"
+  "7109a108f164bec1",
+  "20208d3fae3a61b7"
  ],
  "last_kind": "dua"
 }
