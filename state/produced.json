@@ -10559,6 +10559,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793289705.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793289705.png"
    }
+  },
+  "noor-dua-62-r3": {
+   "title": "دعاء: ربنا اكشف عنا العذاب إنا مؤمنون",
+   "fingerprint": "f27f8d5db08c7caa",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 22.47,
+   "at": "2026-10-29 17:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793293412.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793293412.png"
+   }
   }
  },
  "fingerprints": [
@@ -11482,7 +11493,8 @@
   "7df0079badcfc3d3",
   "8537110fc73e6217",
   "f2c8e5c3b4df915e",
-  "dfaa7c063dc96f86"
+  "dfaa7c063dc96f86",
+  "f27f8d5db08c7caa"
  ],
  "last_kind": "dua"
 }
