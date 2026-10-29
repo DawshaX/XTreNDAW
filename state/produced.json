@@ -10504,6 +10504,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793271060.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793271060.png"
    }
+  },
+  "noor-dua-151-r3": {
+   "title": "دعاء: رب زدني علما",
+   "fingerprint": "b30ed6b3e626197c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 21.5,
+   "at": "2026-10-29 11:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793274761.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793274761.png"
+   }
   }
  },
  "fingerprints": [
@@ -11422,7 +11433,8 @@
   "baf13347d835e574",
   "2c644897b14dd95a",
   "c1a2cb10443b5364",
-  "a133e165aca89884"
+  "a133e165aca89884",
+  "b30ed6b3e626197c"
  ],
  "last_kind": "dua"
 }
