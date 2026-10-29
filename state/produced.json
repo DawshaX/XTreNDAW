@@ -10471,6 +10471,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793248796.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793248796.png"
    }
+  },
+  "noor-dua-196-r3": {
+   "title": "دعاء: رب اغفر لي ولوالدي ولمن دخل بيتي مؤمنا…",
+   "fingerprint": "2c644897b14dd95a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.53,
+   "at": "2026-10-29 05:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793252512.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793252512.png"
+   }
   }
  },
  "fingerprints": [
@@ -11386,7 +11397,8 @@
   "f57194bef53e4a55",
   "60d63fd4db8b0548",
   "54536e1821b8f884",
-  "baf13347d835e574"
+  "baf13347d835e574",
+  "2c644897b14dd95a"
  ],
  "last_kind": "dua"
 }
