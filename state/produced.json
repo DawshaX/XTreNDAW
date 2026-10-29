@@ -10438,6 +10438,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793237647.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793237647.png"
    }
+  },
+  "noor-dua-7-r3": {
+   "title": "دعاء: اللهم آت نفسي تقواها، وزكها أنت خير من…",
+   "fingerprint": "60d63fd4db8b0548",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 28.57,
+   "at": "2026-10-29 02:36",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793241392.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793241392.png"
+   }
   }
  },
  "fingerprints": [
@@ -11350,7 +11361,8 @@
   "d312189a16482271",
   "ec0a0566a7b5faa1",
   "7c28816961cf8283",
-  "f57194bef53e4a55"
+  "f57194bef53e4a55",
+  "60d63fd4db8b0548"
  ],
  "last_kind": "dua"
 }
