@@ -10614,6 +10614,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793308511.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793308511.png"
    }
+  },
+  "noor-dua-70-r3": {
+   "title": "دعاء: اللهم اقسم لنا من خشيتك ما تحول به بيننا…",
+   "fingerprint": "a9219b48254a9b88",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.97,
+   "at": "2026-10-29 22:17",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793312236.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793312236.png"
+   }
   }
  },
  "fingerprints": [
@@ -11542,7 +11553,8 @@
   "93f60ad5b354c8cb",
   "7109a108f164bec1",
   "20208d3fae3a61b7",
-  "663a4d2709ec6ba9"
+  "663a4d2709ec6ba9",
+  "a9219b48254a9b88"
  ],
  "last_kind": "dua"
 }
