@@ -10801,6 +10801,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793371871.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793371871.png"
    }
+  },
+  "noor-dua-122-r3": {
+   "title": "دعاء: أعوذ بكلمات الله التامات من شر ما خلق",
+   "fingerprint": "3bbd2e6455ea23cd",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 23.97,
+   "at": "2026-10-30 15:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793375591.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793375591.png"
+   }
   }
  },
  "fingerprints": [
@@ -11745,7 +11756,8 @@
   "76a6f304af95efec",
   "94f6015519efbf8e",
   "1b934d3bf03b53c1",
-  "cdc383b29bc276f7"
+  "cdc383b29bc276f7",
+  "3bbd2e6455ea23cd"
  ],
  "last_kind": "dua"
 }
