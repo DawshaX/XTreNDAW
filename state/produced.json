@@ -10647,6 +10647,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793319694.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793319694.png"
    }
+  },
+  "noor-dua-120-r3": {
+   "title": "دعاء: بسم الله الذي لا يضر مع اسمه شيء في…",
+   "fingerprint": "6fbe8aeedbbec596",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.3,
+   "at": "2026-10-30 01:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793323438.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793323438.png"
+   }
   }
  },
  "fingerprints": [
@@ -11578,7 +11589,8 @@
   "663a4d2709ec6ba9",
   "a9219b48254a9b88",
   "27ce64f9bd3c8a62",
-  "58cb558586445cc3"
+  "58cb558586445cc3",
+  "6fbe8aeedbbec596"
  ],
  "last_kind": "dua"
 }
