@@ -10680,6 +10680,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793330859.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793330859.png"
    }
+  },
+  "noor-dua-191-r3": {
+   "title": "دعاء: أسأل الله العظيم رب العرش العظيم أن…",
+   "fingerprint": "afbaf29d58ad4559",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 23.3,
+   "at": "2026-10-30 04:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793334587.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793334587.png"
+   }
   }
  },
  "fingerprints": [
@@ -11614,7 +11625,8 @@
   "58cb558586445cc3",
   "6fbe8aeedbbec596",
   "c41bef060a4515ab",
-  "b0853d0b7477853b"
+  "b0853d0b7477853b",
+  "afbaf29d58ad4559"
  ],
  "last_kind": "dua"
 }
