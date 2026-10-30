@@ -10702,6 +10702,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793338353.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793338353.png"
    }
+  },
+  "noor-dua-20-r3": {
+   "title": "دعاء: ربنا لا تجعلنا مع القوم الظالمين",
+   "fingerprint": "632bc4b58b80a238",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 23.43,
+   "at": "2026-10-30 06:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793342059.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793342059.png"
+   }
   }
  },
  "fingerprints": [
@@ -11638,7 +11649,8 @@
   "c41bef060a4515ab",
   "b0853d0b7477853b",
   "afbaf29d58ad4559",
-  "04cf2a65cfc107b0"
+  "04cf2a65cfc107b0",
+  "632bc4b58b80a238"
  ],
  "last_kind": "dua"
 }
