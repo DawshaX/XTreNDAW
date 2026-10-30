@@ -10713,6 +10713,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793342059.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793342059.png"
    }
+  },
+  "noor-dua-106-r3": {
+   "title": "دعاء: رب هب لي حكما وألحقني بالصالحين",
+   "fingerprint": "e1565be8a31c0b3b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 23.83,
+   "at": "2026-10-30 07:36",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793345775.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793345775.png"
+   }
   }
  },
  "fingerprints": [
@@ -11650,7 +11661,8 @@
   "b0853d0b7477853b",
   "afbaf29d58ad4559",
   "04cf2a65cfc107b0",
-  "632bc4b58b80a238"
+  "632bc4b58b80a238",
+  "e1565be8a31c0b3b"
  ],
  "last_kind": "dua"
 }
