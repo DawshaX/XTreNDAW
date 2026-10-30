@@ -10834,6 +10834,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793383082.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793383082.png"
    }
+  },
+  "noor-dua-113-r3": {
+   "title": "دعاء: عسى ربي أن يهديني سواء السبيل",
+   "fingerprint": "ffb14be8a7c0464b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 23.2,
+   "at": "2026-10-30 18:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793386795.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793386795.png"
+   }
   }
  },
  "fingerprints": [
@@ -11781,7 +11792,8 @@
   "cdc383b29bc276f7",
   "3bbd2e6455ea23cd",
   "5bff5c31b20e7f89",
-  "9165070c733ea4a4"
+  "9165070c733ea4a4",
+  "ffb14be8a7c0464b"
  ],
  "last_kind": "dua"
 }
