@@ -10790,6 +10790,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793368163.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793368163.png"
    }
+  },
+  "noor-dua-109-r3": {
+   "title": "دعاء: ربنا اصرف عنا عذاب جهنم إن عذابها كان…",
+   "fingerprint": "cdc383b29bc276f7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.1,
+   "at": "2026-10-30 14:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793371871.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793371871.png"
+   }
   }
  },
  "fingerprints": [
@@ -11733,7 +11744,8 @@
   "05b1dfd04b8d5bc8",
   "76a6f304af95efec",
   "94f6015519efbf8e",
-  "1b934d3bf03b53c1"
+  "1b934d3bf03b53c1",
+  "cdc383b29bc276f7"
  ],
  "last_kind": "dua"
 }
