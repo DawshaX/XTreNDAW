@@ -10856,6 +10856,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793390514.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793390514.png"
    }
+  },
+  "noor-dua-244-r3": {
+   "title": "دعاء: ذهب الظمأ وابتلت العروق وثبت الأجر إن…",
+   "fingerprint": "7bff78f533693659",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 24.63,
+   "at": "2026-10-30 21:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793394249.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793394249.png"
+   }
   }
  },
  "fingerprints": [
@@ -11805,7 +11816,8 @@
   "5bff5c31b20e7f89",
   "9165070c733ea4a4",
   "ffb14be8a7c0464b",
-  "1943034ba0993956"
+  "1943034ba0993956",
+  "7bff78f533693659"
  ],
  "last_kind": "dua"
 }
