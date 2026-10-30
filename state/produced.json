@@ -10779,6 +10779,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793364443.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793364443.png"
    }
+  },
+  "noor-dua-94-r3": {
+   "title": "دعاء: ربنا لا تؤاخذنا إن نسينا أو أخطأنا",
+   "fingerprint": "1b934d3bf03b53c1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 22.63,
+   "at": "2026-10-30 13:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793368163.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793368163.png"
+   }
   }
  },
  "fingerprints": [
@@ -11721,7 +11732,8 @@
   "5d66b5ff4159c7bd",
   "05b1dfd04b8d5bc8",
   "76a6f304af95efec",
-  "94f6015519efbf8e"
+  "94f6015519efbf8e",
+  "1b934d3bf03b53c1"
  ],
  "last_kind": "dua"
 }
