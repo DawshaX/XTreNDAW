@@ -10845,6 +10845,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793386795.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793386795.png"
    }
+  },
+  "noor-dua-163-r3": {
+   "title": "دعاء: اللهم بك أمسينا وبك أصبحنا وبك نحيا وبك…",
+   "fingerprint": "1943034ba0993956",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.27,
+   "at": "2026-10-30 20:01",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793390514.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793390514.png"
+   }
   }
  },
  "fingerprints": [
@@ -11793,7 +11804,8 @@
   "3bbd2e6455ea23cd",
   "5bff5c31b20e7f89",
   "9165070c733ea4a4",
-  "ffb14be8a7c0464b"
+  "ffb14be8a7c0464b",
+  "1943034ba0993956"
  ],
  "last_kind": "dua"
 }
