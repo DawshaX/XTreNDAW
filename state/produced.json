@@ -10768,6 +10768,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793360717.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793360717.png"
    }
+  },
+  "noor-dua-173-r3": {
+   "title": "دعاء: قل هو الله أحد",
+   "fingerprint": "94f6015519efbf8e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 20.64,
+   "at": "2026-10-30 12:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793364443.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793364443.png"
+   }
   }
  },
  "fingerprints": [
@@ -11709,7 +11720,8 @@
   "e1565be8a31c0b3b",
   "5d66b5ff4159c7bd",
   "05b1dfd04b8d5bc8",
-  "76a6f304af95efec"
+  "76a6f304af95efec",
+  "94f6015519efbf8e"
  ],
  "last_kind": "dua"
 }
