@@ -10691,6 +10691,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793334587.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793334587.png"
    }
+  },
+  "noor-dua-133-r3": {
+   "title": "دعاء: الحمد لله الذي أطعمني هذا ورزقنيه من غير…",
+   "fingerprint": "04cf2a65cfc107b0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.77,
+   "at": "2026-10-30 05:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793338353.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793338353.png"
+   }
   }
  },
  "fingerprints": [
@@ -11626,7 +11637,8 @@
   "6fbe8aeedbbec596",
   "c41bef060a4515ab",
   "b0853d0b7477853b",
-  "afbaf29d58ad4559"
+  "afbaf29d58ad4559",
+  "04cf2a65cfc107b0"
  ],
  "last_kind": "dua"
 }
