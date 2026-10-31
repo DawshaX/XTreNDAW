@@ -10889,6 +10889,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793401739.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793401739.png"
    }
+  },
+  "noor-dua-243-r3": {
+   "title": "دعاء: اللهم رب جبرائيل وميكائيل وإسرافيل فاطر…",
+   "fingerprint": "a57407039618aa02",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 38.37,
+   "at": "2026-10-31 00:12",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793405541.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793405541.png"
+   }
   }
  },
  "fingerprints": [
@@ -11840,7 +11851,8 @@
   "ffb14be8a7c0464b",
   "1943034ba0993956",
   "7bff78f533693659",
-  "6166e543344fd1a8"
+  "6166e543344fd1a8",
+  "a57407039618aa02"
  ],
  "last_kind": "dua"
 }
