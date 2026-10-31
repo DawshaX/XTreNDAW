@@ -11098,6 +11098,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793472809.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793472809.png"
    }
+  },
+  "noor-dua-212-r3": {
+   "title": "دعاء: اللهم زد هذا البيت تشريفا وتعظيما…",
+   "fingerprint": "714bf86f4bca9046",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 33.7,
+   "at": "2026-10-31 19:56",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793476609.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793476609.png"
+   }
   }
  },
  "fingerprints": [
@@ -12068,7 +12079,8 @@
   "bb763c6d3349a880",
   "8bef533ed383ea66",
   "9ce8c94c8662c1c1",
-  "a4f01b28654faab7"
+  "a4f01b28654faab7",
+  "714bf86f4bca9046"
  ],
  "last_kind": "dua"
 }
