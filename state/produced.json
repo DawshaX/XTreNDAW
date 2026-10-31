@@ -11076,6 +11076,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793465324.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793465324.png"
    }
+  },
+  "noor-dua-77-r3": {
+   "title": "دعاء: دعاء الاستخارة: اللهم إني أستخيرك بعلمك…",
+   "fingerprint": "9ce8c94c8662c1c1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 28.17,
+   "at": "2026-10-31 17:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793469058.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793469058.png"
+   }
   }
  },
  "fingerprints": [
@@ -12044,7 +12055,8 @@
   "7d5cef5777f5ea6d",
   "b75503f9e546d816",
   "bb763c6d3349a880",
-  "8bef533ed383ea66"
+  "8bef533ed383ea66",
+  "9ce8c94c8662c1c1"
  ],
  "last_kind": "dua"
 }
