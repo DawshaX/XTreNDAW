@@ -10933,6 +10933,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793416740.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793416740.png"
    }
+  },
+  "noor-dua-167-r3": {
+   "title": "دعاء: التحيات لله والصلوات والطيبات السلام…",
+   "fingerprint": "222d5e21d4748102",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 35.77,
+   "at": "2026-10-31 04:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793420503.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793420503.png"
+   }
   }
  },
  "fingerprints": [
@@ -11888,7 +11899,8 @@
   "a57407039618aa02",
   "e9cf179e8e4aece8",
   "9c9b07e75f3cad34",
-  "5ae792afcebbe93b"
+  "5ae792afcebbe93b",
+  "222d5e21d4748102"
  ],
  "last_kind": "dua"
 }
