@@ -11021,6 +11021,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793446577.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793446577.png"
    }
+  },
+  "noor-dua-201-r3": {
+   "title": "دعاء: آمن الرسول بما أنزل إليه من ربه…",
+   "fingerprint": "33a29df6ce74422a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 36.87,
+   "at": "2026-10-31 12:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793450371.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793450371.png"
+   }
   }
  },
  "fingerprints": [
@@ -11984,7 +11995,8 @@
   "789177a4f54e390e",
   "165c592bd2293897",
   "9436f5af1b45cbf3",
-  "3c2a19f3079fc3a4"
+  "3c2a19f3079fc3a4",
+  "33a29df6ce74422a"
  ],
  "last_kind": "dua"
 }
