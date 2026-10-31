@@ -11043,6 +11043,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793454130.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793454130.png"
    }
+  },
+  "noor-dua-64-r3": {
+   "title": "دعاء: اللهم أصلح لي ديني الذي هو عصمة أمري…",
+   "fingerprint": "b75503f9e546d816",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 28.23,
+   "at": "2026-10-31 14:44",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793457877.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793457877.png"
+   }
   }
  },
  "fingerprints": [
@@ -12008,7 +12019,8 @@
   "9436f5af1b45cbf3",
   "3c2a19f3079fc3a4",
   "33a29df6ce74422a",
-  "7d5cef5777f5ea6d"
+  "7d5cef5777f5ea6d",
+  "b75503f9e546d816"
  ],
  "last_kind": "dua"
 }
