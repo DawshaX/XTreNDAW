@@ -10988,6 +10988,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793435377.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793435377.png"
    }
+  },
+  "noor-dua-187-r3": {
+   "title": "دعاء: اللهم لا سهل إلا ما جعلته سهلا وأنت تجعل…",
+   "fingerprint": "165c592bd2293897",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.97,
+   "at": "2026-10-31 09:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793439104.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793439104.png"
+   }
   }
  },
  "fingerprints": [
@@ -11948,7 +11959,8 @@
   "6c5ad3834434042b",
   "ae477b7a067e3732",
   "ed95ba748be58737",
-  "789177a4f54e390e"
+  "789177a4f54e390e",
+  "165c592bd2293897"
  ],
  "last_kind": "dua"
 }
