@@ -11109,6 +11109,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793476609.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793476609.png"
    }
+  },
+  "noor-dua-132-r3": {
+   "title": "دعاء: الحمد لله الذي أحيانا بعد ما أماتنا…",
+   "fingerprint": "4b131f2247c545ca",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 24.8,
+   "at": "2026-10-31 20:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793480355.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793480355.png"
+   }
   }
  },
  "fingerprints": [
@@ -12080,7 +12091,8 @@
   "8bef533ed383ea66",
   "9ce8c94c8662c1c1",
   "a4f01b28654faab7",
-  "714bf86f4bca9046"
+  "714bf86f4bca9046",
+  "4b131f2247c545ca"
  ],
  "last_kind": "dua"
 }
