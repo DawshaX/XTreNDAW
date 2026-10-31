@@ -11065,6 +11065,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793461609.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793461609.png"
    }
+  },
+  "noor-dua-86-r3": {
+   "title": "دعاء: رب ٱشرح لي صدري ويسر لي أمري",
+   "fingerprint": "8bef533ed383ea66",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 23.33,
+   "at": "2026-10-31 16:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793465324.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793465324.png"
+   }
   }
  },
  "fingerprints": [
@@ -12032,7 +12043,8 @@
   "33a29df6ce74422a",
   "7d5cef5777f5ea6d",
   "b75503f9e546d816",
-  "bb763c6d3349a880"
+  "bb763c6d3349a880",
+  "8bef533ed383ea66"
  ],
  "last_kind": "dua"
 }
