@@ -10955,6 +10955,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793424206.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793424206.png"
    }
+  },
+  "noor-dua-129-r3": {
+   "title": "دعاء: الله أكبر",
+   "fingerprint": "ae477b7a067e3732",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 20.77,
+   "at": "2026-10-31 06:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793427892.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793427892.png"
+   }
   }
  },
  "fingerprints": [
@@ -11912,7 +11923,8 @@
   "9c9b07e75f3cad34",
   "5ae792afcebbe93b",
   "222d5e21d4748102",
-  "6c5ad3834434042b"
+  "6c5ad3834434042b",
+  "ae477b7a067e3732"
  ],
  "last_kind": "dua"
 }
