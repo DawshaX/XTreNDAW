@@ -10944,6 +10944,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793420503.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793420503.png"
    }
+  },
+  "noor-dua-235-r3": {
+   "title": "دعاء: اللهم أطعم من أطعمني وأسق من أسقاني",
+   "fingerprint": "6c5ad3834434042b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 23.0,
+   "at": "2026-10-31 05:23",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793424206.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793424206.png"
+   }
   }
  },
  "fingerprints": [
@@ -11900,7 +11911,8 @@
   "e9cf179e8e4aece8",
   "9c9b07e75f3cad34",
   "5ae792afcebbe93b",
-  "222d5e21d4748102"
+  "222d5e21d4748102",
+  "6c5ad3834434042b"
  ],
  "last_kind": "dua"
 }
