@@ -11054,6 +11054,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793457877.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793457877.png"
    }
+  },
+  "noor-dua-49-r3": {
+   "title": "دعاء: اللهم إني أسألك علما نافعا، ورزقا طيبا…",
+   "fingerprint": "bb763c6d3349a880",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 27.77,
+   "at": "2026-10-31 15:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793461609.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793461609.png"
+   }
   }
  },
  "fingerprints": [
@@ -12020,7 +12031,8 @@
   "3c2a19f3079fc3a4",
   "33a29df6ce74422a",
   "7d5cef5777f5ea6d",
-  "b75503f9e546d816"
+  "b75503f9e546d816",
+  "bb763c6d3349a880"
  ],
  "last_kind": "dua"
 }
