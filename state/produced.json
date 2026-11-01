@@ -11175,6 +11175,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793499087.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793499087.png"
    }
+  },
+  "noor-dua-88-r3": {
+   "title": "دعاء: لا حول ولا قوة إلا بٱلله ، كنز من كنوز…",
+   "fingerprint": "f9674b504a823587",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.07,
+   "at": "2026-11-01 03:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793502819.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793502819.png"
+   }
   }
  },
  "fingerprints": [
@@ -12152,7 +12163,8 @@
   "78498fb42e292659",
   "45aab5f19fd1d557",
   "42b2e6c663e7f378",
-  "0db93b7eec1ada5b"
+  "0db93b7eec1ada5b",
+  "f9674b504a823587"
  ],
  "last_kind": "dua"
 }
