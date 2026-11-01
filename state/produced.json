@@ -11230,6 +11230,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793517783.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793517783.png"
    }
+  },
+  "noor-dua-72-r3": {
+   "title": "دعاء: اللهم انفعني بما علمتني، وعلمني ما…",
+   "fingerprint": "964999be50021ac6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.53,
+   "at": "2026-11-01 08:25",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793521542.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793521542.png"
+   }
   }
  },
  "fingerprints": [
@@ -12212,7 +12223,8 @@
   "9055ea2fb8190618",
   "8ddffd3508f883a7",
   "1b8898948146cd2c",
-  "aa179afa8356343b"
+  "aa179afa8356343b",
+  "964999be50021ac6"
  ],
  "last_kind": "dua"
 }
