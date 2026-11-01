@@ -11373,6 +11373,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793566553.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793566553.png"
    }
+  },
+  "noor-dua-152-r3": {
+   "title": "دعاء: رب ارحمهما كما ربياني صغيرا",
+   "fingerprint": "486a0baada8eae1b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 22.4,
+   "at": "2026-11-01 21:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793570259.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793570259.png"
+   }
   }
  },
  "fingerprints": [
@@ -12365,7 +12376,8 @@
   "700234007f735c38",
   "eb6fb65ab318a0b5",
   "231966807180b8c7",
-  "81fa6053b7826018"
+  "81fa6053b7826018",
+  "486a0baada8eae1b"
  ],
  "last_kind": "dua"
 }
