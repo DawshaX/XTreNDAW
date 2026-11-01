@@ -11164,6 +11164,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793495353.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793495353.png"
    }
+  },
+  "noor-dua-117-r3": {
+   "title": "دعاء: ربنا عليك توكلنا وإليك أنبنا وإليك…",
+   "fingerprint": "0db93b7eec1ada5b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.03,
+   "at": "2026-11-01 02:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793499087.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793499087.png"
+   }
   }
  },
  "fingerprints": [
@@ -12140,7 +12151,8 @@
   "e4b26ac9fe91ed85",
   "78498fb42e292659",
   "45aab5f19fd1d557",
-  "42b2e6c663e7f378"
+  "42b2e6c663e7f378",
+  "0db93b7eec1ada5b"
  ],
  "last_kind": "dua"
 }
