@@ -11285,6 +11285,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793536499.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793536499.png"
    }
+  },
+  "noor-dua-66-r3": {
+   "title": "دعاء: اللهم مصرف القلوب صرف قلوبنا على طاعتك",
+   "fingerprint": "c48361d57372eb74",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 24.23,
+   "at": "2026-11-01 13:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793540250.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793540250.png"
+   }
   }
  },
  "fingerprints": [
@@ -12270,7 +12281,8 @@
   "aa179afa8356343b",
   "964999be50021ac6",
   "8b0f22d80f49bb73",
-  "cfa57d3246c35e07"
+  "cfa57d3246c35e07",
+  "c48361d57372eb74"
  ],
  "last_kind": "dua"
 }
