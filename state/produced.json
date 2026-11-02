@@ -11615,6 +11615,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793649129.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793649129.png"
    }
+  },
+  "noor-dua-150-r3": {
+   "title": "دعاء: سبحان الذي يسبح الرعد بحمده والملائكة من…",
+   "fingerprint": "2b40bea76d5f034f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.2,
+   "at": "2026-11-02 20:54",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793652880.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793652880.png"
+   }
   }
  },
  "fingerprints": [
@@ -12625,7 +12636,8 @@
   "2355815573947ade",
   "b505ac151467be28",
   "5bfde32545b11e59",
-  "cb74297c699f99b6"
+  "cb74297c699f99b6",
+  "2b40bea76d5f034f"
  ],
  "last_kind": "dua"
 }
