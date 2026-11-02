@@ -11560,6 +11560,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793630240.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793630240.png"
    }
+  },
+  "noor-dua-179-r3": {
+   "title": "دعاء: آيبون تائبون عابدون لربنا حامدون",
+   "fingerprint": "2355815573947ade",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 24.83,
+   "at": "2026-11-02 15:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793633984.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793633984.png"
+   }
   }
  },
  "fingerprints": [
@@ -12566,7 +12577,8 @@
   "da9fc21cf06e79ba",
   "84cd0e63a83fbf16",
   "bf8a03cd59a1a220",
-  "ab3c7a46ed771fd6"
+  "ab3c7a46ed771fd6",
+  "2355815573947ade"
  ],
  "last_kind": "dua"
 }
