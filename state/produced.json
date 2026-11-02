@@ -11549,6 +11549,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793626456.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793626456.png"
    }
+  },
+  "noor-dua-76-r3": {
+   "title": "دعاء: اللهم اجعل في قلبي نورا، وفي لساني نورا…",
+   "fingerprint": "ab3c7a46ed771fd6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 28.77,
+   "at": "2026-11-02 14:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793630240.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793630240.png"
+   }
   }
  },
  "fingerprints": [
@@ -12554,7 +12565,8 @@
   "e8fbfd84766b38c2",
   "da9fc21cf06e79ba",
   "84cd0e63a83fbf16",
-  "bf8a03cd59a1a220"
+  "bf8a03cd59a1a220",
+  "ab3c7a46ed771fd6"
  ],
  "last_kind": "dua"
 }
