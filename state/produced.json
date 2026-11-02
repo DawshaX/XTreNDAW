@@ -11604,6 +11604,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793645366.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793645366.png"
    }
+  },
+  "noor-dua-71-r3": {
+   "title": "دعاء: اللهم إني عبدك ابن عبدك ابن أمتك، ناصيتي…",
+   "fingerprint": "cb74297c699f99b6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 30.13,
+   "at": "2026-11-02 19:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793649129.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793649129.png"
+   }
   }
  },
  "fingerprints": [
@@ -12613,7 +12624,8 @@
   "ab3c7a46ed771fd6",
   "2355815573947ade",
   "b505ac151467be28",
-  "5bfde32545b11e59"
+  "5bfde32545b11e59",
+  "cb74297c699f99b6"
  ],
  "last_kind": "dua"
 }
