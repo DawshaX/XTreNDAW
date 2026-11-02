@@ -11582,6 +11582,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793637817.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793637817.png"
    }
+  },
+  "noor-dua-168-r3": {
+   "title": "دعاء: اللهم صل على محمد وعلى آل محمد كما صليت…",
+   "fingerprint": "b505ac151467be28",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 36.83,
+   "at": "2026-11-02 17:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793641605.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793641605.png"
+   }
   }
  },
  "fingerprints": [
@@ -12589,7 +12600,8 @@
   "84cd0e63a83fbf16",
   "bf8a03cd59a1a220",
   "ab3c7a46ed771fd6",
-  "2355815573947ade"
+  "2355815573947ade",
+  "b505ac151467be28"
  ],
  "last_kind": "dua"
 }
