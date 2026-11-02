@@ -11483,6 +11483,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793603943.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793603943.png"
    }
+  },
+  "noor-dua-186-r3": {
+   "title": "دعاء: لا حول ولا قوة إلا بالله",
+   "fingerprint": "9c0790dae51b6fb2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 22.07,
+   "at": "2026-11-02 08:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793607667.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793607667.png"
+   }
   }
  },
  "fingerprints": [
@@ -12483,7 +12494,8 @@
   "eeed9ee9f393029b",
   "cf48e38b6d779e81",
   "24b8be858ac8bff0",
-  "b95852cd13d3a6bb"
+  "b95852cd13d3a6bb",
+  "9c0790dae51b6fb2"
  ],
  "last_kind": "dua"
 }
