@@ -11494,6 +11494,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793607667.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793607667.png"
    }
+  },
+  "noor-dua-68-r3": {
+   "title": "دعاء: يا الله إني أسألك بأنك أنت الله الأحد…",
+   "fingerprint": "e8fbfd84766b38c2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 28.0,
+   "at": "2026-11-02 09:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793611444.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793611444.png"
+   }
   }
  },
  "fingerprints": [
@@ -12495,7 +12506,8 @@
   "cf48e38b6d779e81",
   "24b8be858ac8bff0",
   "b95852cd13d3a6bb",
-  "9c0790dae51b6fb2"
+  "9c0790dae51b6fb2",
+  "e8fbfd84766b38c2"
  ],
  "last_kind": "dua"
 }
