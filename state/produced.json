@@ -11472,6 +11472,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793600183.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793600183.png"
    }
+  },
+  "noor-dua-92-r3": {
+   "title": "دعاء: وحسبنا ٱلله ونعم ٱلوكيل ، فٱنقلبوا بنعمة…",
+   "fingerprint": "b95852cd13d3a6bb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.4,
+   "at": "2026-11-02 07:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793603943.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793603943.png"
+   }
   }
  },
  "fingerprints": [
@@ -12471,7 +12482,8 @@
   "15ac336b1f68ea27",
   "eeed9ee9f393029b",
   "cf48e38b6d779e81",
-  "24b8be858ac8bff0"
+  "24b8be858ac8bff0",
+  "b95852cd13d3a6bb"
  ],
  "last_kind": "dua"
 }
