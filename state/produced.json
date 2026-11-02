@@ -11417,6 +11417,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793581529.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793581529.png"
    }
+  },
+  "noor-dua-12-r3": {
+   "title": "دعاء: ربنا آتنا في الدنيا حسنة وفي الآخرة حسنة…",
+   "fingerprint": "15ac336b1f68ea27",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 33.9,
+   "at": "2026-11-02 02:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793585281.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793585281.png"
+   }
   }
  },
  "fingerprints": [
@@ -12412,7 +12423,8 @@
   "81fa6053b7826018",
   "486a0baada8eae1b",
   "8cce1550324d30a0",
-  "6fe948c6210e940a"
+  "6fe948c6210e940a",
+  "15ac336b1f68ea27"
  ],
  "last_kind": "dua"
 }
