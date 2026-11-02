@@ -11450,6 +11450,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793592720.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793592720.png"
    }
+  },
+  "noor-dua-24-r3": {
+   "title": "دعاء: رب أوزعني أن أشكر نعمتك التي أنعمت علي…",
+   "fingerprint": "24b8be858ac8bff0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.97,
+   "at": "2026-11-02 05:14",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793596452.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793596452.png"
+   }
   }
  },
  "fingerprints": [
@@ -12448,7 +12459,8 @@
   "6fe948c6210e940a",
   "15ac336b1f68ea27",
   "eeed9ee9f393029b",
-  "cf48e38b6d779e81"
+  "cf48e38b6d779e81",
+  "24b8be858ac8bff0"
  ],
  "last_kind": "dua"
 }
