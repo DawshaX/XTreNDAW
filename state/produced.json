@@ -11516,6 +11516,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793615214.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793615214.png"
    }
+  },
+  "noor-dua-102-r3": {
+   "title": "دعاء: لا إله إلا أنت سبحانك إني كنت من…",
+   "fingerprint": "da9fc21cf06e79ba",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.33,
+   "at": "2026-11-02 11:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793618950.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793618950.png"
+   }
   }
  },
  "fingerprints": [
@@ -12518,7 +12529,8 @@
   "24b8be858ac8bff0",
   "b95852cd13d3a6bb",
   "9c0790dae51b6fb2",
-  "e8fbfd84766b38c2"
+  "e8fbfd84766b38c2",
+  "da9fc21cf06e79ba"
  ],
  "last_kind": "dua"
 }
