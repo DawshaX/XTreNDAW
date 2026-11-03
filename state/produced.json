@@ -11692,6 +11692,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793675452.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793675452.png"
    }
+  },
+  "noor-dua-197-r3": {
+   "title": "دعاء: يا مقلب القلوب ثبت قلبي على دينك",
+   "fingerprint": "462ab6b51d0ce858",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 23.73,
+   "at": "2026-11-03 04:12",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793679161.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793679161.png"
+   }
   }
  },
  "fingerprints": [
@@ -12707,7 +12718,8 @@
   "8d37f1a06c882d3e",
   "3ac442d16b997e7d",
   "b542bdb7808ea07b",
-  "367f0bfc5ac79658"
+  "367f0bfc5ac79658",
+  "462ab6b51d0ce858"
  ],
  "last_kind": "dua"
 }
