@@ -11758,6 +11758,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793697751.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793697751.png"
    }
+  },
+  "noor-dua-83-r3": {
+   "title": "دعاء: يا حي يا قيوم برحمتك أستغيث، أصلح لي…",
+   "fingerprint": "15771d0173fc1c1a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.07,
+   "at": "2026-11-03 10:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793701455.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793701455.png"
+   }
   }
  },
  "fingerprints": [
@@ -12778,7 +12789,8 @@
   "d6ca06339e1af837",
   "9344d59bd89caa83",
   "0a4b9f6d28f7eb49",
-  "0aea35093dad8973"
+  "0aea35093dad8973",
+  "15771d0173fc1c1a"
  ],
  "last_kind": "dua"
 }
