@@ -11780,6 +11780,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793705155.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793705155.png"
    }
+  },
+  "noor-dua-139-r3": {
+   "title": "دعاء: اللهم افتح لي أبواب رحمتك",
+   "fingerprint": "4a9c1ac3c619cd03",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 22.13,
+   "at": "2026-11-03 12:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793708858.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793708858.png"
+   }
   }
  },
  "fingerprints": [
@@ -12802,7 +12813,8 @@
   "0a4b9f6d28f7eb49",
   "0aea35093dad8973",
   "15771d0173fc1c1a",
-  "e142c94f636fb7c1"
+  "e142c94f636fb7c1",
+  "4a9c1ac3c619cd03"
  ],
  "last_kind": "dua"
 }
