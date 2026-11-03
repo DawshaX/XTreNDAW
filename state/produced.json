@@ -11791,6 +11791,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793708858.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793708858.png"
    }
+  },
+  "noor-dua-147-r3": {
+   "title": "دعاء: اللهم رب الناس أذهب البأس اشف أنت الشافي…",
+   "fingerprint": "aad1b9527969912d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 27.17,
+   "at": "2026-11-03 13:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793712553.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793712553.png"
+   }
   }
  },
  "fingerprints": [
@@ -12814,7 +12825,8 @@
   "0aea35093dad8973",
   "15771d0173fc1c1a",
   "e142c94f636fb7c1",
-  "4a9c1ac3c619cd03"
+  "4a9c1ac3c619cd03",
+  "aad1b9527969912d"
  ],
  "last_kind": "dua"
 }
