@@ -11648,6 +11648,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793660396.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793660396.png"
    }
+  },
+  "noor-dua-40-r3": {
+   "title": "دعاء: رضيت بالله ربا، وبالإسلام دينا، وبمحمد ﷺ…",
+   "fingerprint": "3ac442d16b997e7d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 27.3,
+   "at": "2026-11-03 00:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793664171.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793664171.png"
+   }
   }
  },
  "fingerprints": [
@@ -12660,7 +12671,8 @@
   "5bfde32545b11e59",
   "cb74297c699f99b6",
   "2b40bea76d5f034f",
-  "8d37f1a06c882d3e"
+  "8d37f1a06c882d3e",
+  "3ac442d16b997e7d"
  ],
  "last_kind": "dua"
 }
