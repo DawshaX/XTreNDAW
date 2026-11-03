@@ -11670,6 +11670,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793667942.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793667942.png"
    }
+  },
+  "noor-dua-57-r3": {
+   "title": "دعاء: ربنا هب لنا من أزواجنا وذرياتنا قرة أعين…",
+   "fingerprint": "b542bdb7808ea07b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 27.97,
+   "at": "2026-11-03 02:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793671728.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793671728.png"
+   }
   }
  },
  "fingerprints": [
@@ -12683,7 +12694,8 @@
   "cb74297c699f99b6",
   "2b40bea76d5f034f",
   "8d37f1a06c882d3e",
-  "3ac442d16b997e7d"
+  "3ac442d16b997e7d",
+  "b542bdb7808ea07b"
  ],
  "last_kind": "dua"
 }
