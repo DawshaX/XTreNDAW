@@ -11813,6 +11813,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793716265.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793716265.png"
    }
+  },
+  "noor-dua-221-r3": {
+   "title": "دعاء: رب اجعلني مقيم الصلاة ومن ذريتي ربنا…",
+   "fingerprint": "7fe907ce60422118",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.63,
+   "at": "2026-11-03 15:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793719958.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793719958.png"
+   }
   }
  },
  "fingerprints": [
@@ -12837,7 +12848,8 @@
   "15771d0173fc1c1a",
   "e142c94f636fb7c1",
   "4a9c1ac3c619cd03",
-  "aad1b9527969912d"
+  "aad1b9527969912d",
+  "7fe907ce60422118"
  ],
  "last_kind": "dua"
 }
