@@ -11879,6 +11879,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793738495.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793738495.png"
    }
+  },
+  "noor-dua-37-r3": {
+   "title": "دعاء: اللهم باعد بيني وبين خطاياي كما باعدت…",
+   "fingerprint": "de2d5f73e5e6e6f3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.53,
+   "at": "2026-11-03 21:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793742215.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793742215.png"
+   }
   }
  },
  "fingerprints": [
@@ -12908,7 +12919,8 @@
   "5d4fb86251c530c4",
   "31e21af73436897c",
   "9cda9956a963cc8d",
-  "14a44c58f4f0ad0f"
+  "14a44c58f4f0ad0f",
+  "de2d5f73e5e6e6f3"
  ],
  "last_kind": "dua"
 }
