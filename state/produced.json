@@ -11857,6 +11857,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793731091.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793731091.png"
    }
+  },
+  "noor-dua-188-r3": {
+   "title": "دعاء: اللهم إنك عفو تحب العفو فاعف عني",
+   "fingerprint": "9cda9956a963cc8d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 24.2,
+   "at": "2026-11-03 19:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793734788.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793734788.png"
+   }
   }
  },
  "fingerprints": [
@@ -12884,7 +12895,8 @@
   "aad1b9527969912d",
   "7fe907ce60422118",
   "5d4fb86251c530c4",
-  "31e21af73436897c"
+  "31e21af73436897c",
+  "9cda9956a963cc8d"
  ],
  "last_kind": "dua"
 }
