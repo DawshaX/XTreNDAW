@@ -12154,6 +12154,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793831156.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793831156.png"
    }
+  },
+  "noor-dua-210-r3": {
+   "title": "دعاء: بارك الله لك وبارك عليك وجمع بينكما في…",
+   "fingerprint": "cac722d7f84a4005",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.17,
+   "at": "2026-11-04 23:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793834850.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793834850.png"
+   }
   }
  },
  "fingerprints": [
@@ -13197,7 +13208,8 @@
   "2c904a0889a43d8c",
   "904f2833e7bca889",
   "c73271d15a1017c4",
-  "58afede16e0d6a91"
+  "58afede16e0d6a91",
+  "cac722d7f84a4005"
  ],
  "last_kind": "dua"
 }
