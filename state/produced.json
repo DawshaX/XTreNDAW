@@ -12000,6 +12000,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793779251.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793779251.png"
    }
+  },
+  "noor-dua-176-r3": {
+   "title": "دعاء: اللهم لك صمت وعلى رزقك أفطرت",
+   "fingerprint": "9c1a638f15f2474a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 22.43,
+   "at": "2026-11-04 09:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793782934.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793782934.png"
+   }
   }
  },
  "fingerprints": [
@@ -13036,7 +13047,8 @@
   "3d25e462d615f924",
   "c9b1aa0569db2df3",
   "21c4282bd8aed3c5",
-  "3047db893bf0f452"
+  "3047db893bf0f452",
+  "9c1a638f15f2474a"
  ],
  "last_kind": "dua"
 }
