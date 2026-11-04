@@ -12055,6 +12055,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793797755.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793797755.png"
    }
+  },
+  "noor-dua-67-r3": {
+   "title": "دعاء: اللهم إني أسألك فعل الخيرات وترك…",
+   "fingerprint": "2c904a0889a43d8c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.83,
+   "at": "2026-11-04 14:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793801478.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793801478.png"
+   }
   }
  },
  "fingerprints": [
@@ -13094,7 +13105,8 @@
   "3047db893bf0f452",
   "9c1a638f15f2474a",
   "fcad8b63ce7f9f99",
-  "6ab2acd67035965e"
+  "6ab2acd67035965e",
+  "2c904a0889a43d8c"
  ],
  "last_kind": "dua"
 }
