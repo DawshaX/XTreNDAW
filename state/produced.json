@@ -12022,6 +12022,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793786644.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793786644.png"
    }
+  },
+  "noor-dua-208-r3": {
+   "title": "دعاء: بسم الله اللهم جنبنا الشيطان وجنب…",
+   "fingerprint": "fcad8b63ce7f9f99",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.07,
+   "at": "2026-11-04 11:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793790345.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793790345.png"
+   }
   }
  },
  "fingerprints": [
@@ -13059,7 +13070,8 @@
   "c9b1aa0569db2df3",
   "21c4282bd8aed3c5",
   "3047db893bf0f452",
-  "9c1a638f15f2474a"
+  "9c1a638f15f2474a",
+  "fcad8b63ce7f9f99"
  ],
  "last_kind": "dua"
 }
