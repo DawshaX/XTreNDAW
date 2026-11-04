@@ -11956,6 +11956,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793764440.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793764440.png"
    }
+  },
+  "noor-dua-145-r3": {
+   "title": "دعاء: ربنا ظلمنا أنفسنا وإن لم تغفر لنا…",
+   "fingerprint": "3047db893bf0f452",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.57,
+   "at": "2026-11-04 04:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793768150.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793768150.png"
+   }
   }
  },
  "fingerprints": [
@@ -12991,7 +13002,8 @@
   "9796baf7757a1a23",
   "3d25e462d615f924",
   "c9b1aa0569db2df3",
-  "21c4282bd8aed3c5"
+  "21c4282bd8aed3c5",
+  "3047db893bf0f452"
  ],
  "last_kind": "dua"
 }
