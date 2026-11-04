@@ -12033,6 +12033,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793790345.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793790345.png"
    }
+  },
+  "noor-dua-206-r3": {
+   "title": "دعاء: سبحان الله والحمد لله ولا إله إلا الله…",
+   "fingerprint": "6ab2acd67035965e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.5,
+   "at": "2026-11-04 12:07",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793794064.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793794064.png"
+   }
   }
  },
  "fingerprints": [
@@ -13071,7 +13082,8 @@
   "21c4282bd8aed3c5",
   "3047db893bf0f452",
   "9c1a638f15f2474a",
-  "fcad8b63ce7f9f99"
+  "fcad8b63ce7f9f99",
+  "6ab2acd67035965e"
  ],
  "last_kind": "dua"
 }
