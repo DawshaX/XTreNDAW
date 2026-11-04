@@ -12132,6 +12132,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793823753.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793823753.png"
    }
+  },
+  "noor-dua-180-r3": {
+   "title": "دعاء: أستودع الله دينك وأمانتك وخواتيم عملك",
+   "fingerprint": "c73271d15a1017c4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 24.2,
+   "at": "2026-11-04 21:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793827458.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793827458.png"
+   }
   }
  },
  "fingerprints": [
@@ -13173,7 +13184,8 @@
   "fcad8b63ce7f9f99",
   "6ab2acd67035965e",
   "2c904a0889a43d8c",
-  "904f2833e7bca889"
+  "904f2833e7bca889",
+  "c73271d15a1017c4"
  ],
  "last_kind": "dua"
 }
