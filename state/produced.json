@@ -12297,6 +12297,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793879194.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793879194.png"
    }
+  },
+  "noor-dua-213-r3": {
+   "title": "دعاء: إن الصفا والمروة من شعائر الله نبدأ بما…",
+   "fingerprint": "c7ac8a2a4ee18338",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 24.93,
+   "at": "2026-11-05 12:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793882899.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793882899.png"
+   }
   }
  },
  "fingerprints": [
@@ -13350,7 +13361,8 @@
   "248ab4a5234a7d04",
   "a94f6d6e28a094aa",
   "177b971806490fc8",
-  "53ce36adca0de293"
+  "53ce36adca0de293",
+  "c7ac8a2a4ee18338"
  ],
  "last_kind": "dua"
 }
