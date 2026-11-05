@@ -12242,6 +12242,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793860696.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793860696.png"
    }
+  },
+  "noor-dua-59-r3": {
+   "title": "دعاء: ربنا أفرغ علينا صبرا وتوفنا مسلمين",
+   "fingerprint": "248ab4a5234a7d04",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 24.3,
+   "at": "2026-11-05 07:40",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793864397.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793864397.png"
+   }
   }
  },
  "fingerprints": [
@@ -13291,7 +13302,8 @@
   "f092d89821dc5956",
   "c9d5b3a4dd08ebfc",
   "dee5c46fb53f41a5",
-  "4a6a24d216821ab5"
+  "4a6a24d216821ab5",
+  "248ab4a5234a7d04"
  ],
  "last_kind": "dua"
 }
