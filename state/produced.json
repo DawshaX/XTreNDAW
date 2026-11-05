@@ -12286,6 +12286,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793875505.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793875505.png"
    }
+  },
+  "noor-dua-26-r3": {
+   "title": "دعاء: رب إني لما أنزلت إلي من خير فقير",
+   "fingerprint": "53ce36adca0de293",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 24.67,
+   "at": "2026-11-05 11:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793879194.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793879194.png"
+   }
   }
  },
  "fingerprints": [
@@ -13338,7 +13349,8 @@
   "4a6a24d216821ab5",
   "248ab4a5234a7d04",
   "a94f6d6e28a094aa",
-  "177b971806490fc8"
+  "177b971806490fc8",
+  "53ce36adca0de293"
  ],
  "last_kind": "dua"
 }
