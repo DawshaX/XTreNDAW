@@ -12165,6 +12165,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793834850.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793834850.png"
    }
+  },
+  "noor-dua-114-r3": {
+   "title": "دعاء: رب لا تذرني فردا وأنت خير الوارثين",
+   "fingerprint": "56669f86b630f3bc",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 23.73,
+   "at": "2026-11-05 00:28",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793838535.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793838535.png"
+   }
   }
  },
  "fingerprints": [
@@ -13209,7 +13220,8 @@
   "904f2833e7bca889",
   "c73271d15a1017c4",
   "58afede16e0d6a91",
-  "cac722d7f84a4005"
+  "cac722d7f84a4005",
+  "56669f86b630f3bc"
  ],
  "last_kind": "dua"
 }
