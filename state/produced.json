@@ -12253,6 +12253,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793864397.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793864397.png"
    }
+  },
+  "noor-dua-218-r3": {
+   "title": "دعاء: السلام عليكم أهل الديار من المؤمنين…",
+   "fingerprint": "a94f6d6e28a094aa",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 30.97,
+   "at": "2026-11-05 08:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793868111.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793868111.png"
+   }
   }
  },
  "fingerprints": [
@@ -13303,7 +13314,8 @@
   "c9d5b3a4dd08ebfc",
   "dee5c46fb53f41a5",
   "4a6a24d216821ab5",
-  "248ab4a5234a7d04"
+  "248ab4a5234a7d04",
+  "a94f6d6e28a094aa"
  ],
  "last_kind": "dua"
 }
