@@ -12341,6 +12341,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793894014.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793894014.png"
    }
+  },
+  "noor-dua-226-r3": {
+   "title": "دعاء: اللهم لك الحمد أنت نور السموات والأرض…",
+   "fingerprint": "9a1f593299f13873",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 29.07,
+   "at": "2026-11-05 16:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793897730.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793897730.png"
+   }
   }
  },
  "fingerprints": [
@@ -13398,7 +13409,8 @@
   "c7ac8a2a4ee18338",
   "54a30993323f13f1",
   "f1823aea2e225672",
-  "8cf4eb1e036121b4"
+  "8cf4eb1e036121b4",
+  "9a1f593299f13873"
  ],
  "last_kind": "dua"
 }
