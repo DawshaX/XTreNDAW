@@ -12385,6 +12385,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793908829.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793908829.png"
    }
+  },
+  "noor-dua-118-r3": {
+   "title": "دعاء: أصبحنا وأصبح الملك لله والحمد لله لا إله…",
+   "fingerprint": "f19624a4fe43800f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 30.63,
+   "at": "2026-11-05 21:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793912529.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793912529.png"
+   }
   }
  },
  "fingerprints": [
@@ -13446,7 +13457,8 @@
   "9a1f593299f13873",
   "06acba64391b4bf3",
   "6fc14cebe4aa7c50",
-  "ff0b31148cf6c3bb"
+  "ff0b31148cf6c3bb",
+  "f19624a4fe43800f"
  ],
  "last_kind": "dua"
 }
