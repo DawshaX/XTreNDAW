@@ -12374,6 +12374,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793905122.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793905122.png"
    }
+  },
+  "noor-dua-38-r3": {
+   "title": "دعاء: رب تقبل توبتي، واغسل حوبتي، وأجب دعوتي",
+   "fingerprint": "ff0b31148cf6c3bb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 25.43,
+   "at": "2026-11-05 20:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793908829.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793908829.png"
+   }
   }
  },
  "fingerprints": [
@@ -13434,7 +13445,8 @@
   "8cf4eb1e036121b4",
   "9a1f593299f13873",
   "06acba64391b4bf3",
-  "6fc14cebe4aa7c50"
+  "6fc14cebe4aa7c50",
+  "ff0b31148cf6c3bb"
  ],
  "last_kind": "dua"
 }
