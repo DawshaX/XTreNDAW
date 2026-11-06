@@ -12638,6 +12638,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793994288.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793994288.png"
    }
+  },
+  "noor-quran-s100-1-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ العَادِيَاتِ ﴿1–4﴾ — أبو بكر الشاطري",
+   "fingerprint": "e83bbfbff86a3b36",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs100-1-shaatree.mp4",
+   "duration": 37.98,
+   "at": "2026-11-06 20:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793998013.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793998013.png"
+   }
   }
  },
  "fingerprints": [
@@ -13716,7 +13727,8 @@
   "deacf1e385aadac4",
   "d534bb4f4bda2d60",
   "b62920ca430d8a44",
-  "dffad1a6051b2f51"
+  "dffad1a6051b2f51",
+  "e83bbfbff86a3b36"
  ],
  "last_kind": "quran"
 }
