@@ -12649,6 +12649,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793998013.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793998013.png"
    }
+  },
+  "noor-qissa-sulayman-r7": {
+   "title": "سُورَةُ النَّمۡلِ ﴿17–18﴾ — أيمن سويد",
+   "fingerprint": "8da361cfe4002601",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-sulayman-aymanswoaid.mp4",
+   "duration": 82.24,
+   "at": "2026-11-06 21:50",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794001843.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794001843.png"
+   }
   }
  },
  "fingerprints": [
@@ -13728,7 +13739,8 @@
   "d534bb4f4bda2d60",
   "b62920ca430d8a44",
   "dffad1a6051b2f51",
-  "e83bbfbff86a3b36"
+  "e83bbfbff86a3b36",
+  "8da361cfe4002601"
  ],
- "last_kind": "quran"
+ "last_kind": "qissa"
 }
