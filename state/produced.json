@@ -12440,6 +12440,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793927395.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793927395.png"
    }
+  },
+  "noor-dua-137-r3": {
+   "title": "دعاء: بسم الله توكلت على الله ولا حول ولا قوة…",
+   "fingerprint": "dd10430633f8d553",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 26.27,
+   "at": "2026-11-06 02:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793931099.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793931099.png"
+   }
   }
  },
  "fingerprints": [
@@ -13505,7 +13516,8 @@
   "f19624a4fe43800f",
   "73d9f5786ecbc871",
   "b65d3f28baa8094d",
-  "9a985ac7795c7d86"
+  "9a985ac7795c7d86",
+  "dd10430633f8d553"
  ],
  "last_kind": "dua"
 }
