@@ -12495,6 +12495,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793945948.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793945948.png"
    }
+  },
+  "noor-dua-149-r3": {
+   "title": "دعاء: مطرنا بفضل الله ورحمته",
+   "fingerprint": "11f2181b9b8d1bb8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 23.1,
+   "at": "2026-11-06 07:20",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793949631.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793949631.png"
+   }
   }
  },
  "fingerprints": [
@@ -13562,7 +13573,8 @@
   "b65d3f28baa8094d",
   "9a985ac7795c7d86",
   "dd10430633f8d553",
-  "9245cd502669fc4c"
+  "9245cd502669fc4c",
+  "11f2181b9b8d1bb8"
  ],
  "last_kind": "dua"
 }
