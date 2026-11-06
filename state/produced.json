@@ -12583,6 +12583,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793975495.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793975495.png"
    }
+  },
+  "noor-dua-164-r3": {
+   "title": "دعاء: أستغفر الله وأتوب إليه",
+   "fingerprint": "e3b15e882a6223c9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dua-3.mp4",
+   "duration": 23.0,
+   "at": "2026-11-06 15:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793979197.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793979197.png"
+   }
   }
  },
  "fingerprints": [
@@ -13656,7 +13667,8 @@
   "6bfe928a8011d679",
   "91841f50902ced48",
   "341a4524ec148178",
-  "8616243543581e61"
+  "8616243543581e61",
+  "e3b15e882a6223c9"
  ],
  "last_kind": "dua"
 }
