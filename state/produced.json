@@ -12594,6 +12594,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793979197.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793979197.png"
    }
+  },
+  "noor-quran-s055-65-r8": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الرَّحۡمَٰن ﴿65–68﴾ — علي الحذيفي",
+   "fingerprint": "deacf1e385aadac4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs055-65-hudhaify.mp4",
+   "duration": 58.49,
+   "at": "2026-11-06 16:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793982945.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1793982945.png"
+   }
   }
  },
  "fingerprints": [
@@ -13668,7 +13679,8 @@
   "91841f50902ced48",
   "341a4524ec148178",
   "8616243543581e61",
-  "e3b15e882a6223c9"
+  "e3b15e882a6223c9",
+  "deacf1e385aadac4"
  ],
- "last_kind": "dua"
+ "last_kind": "quran"
 }
