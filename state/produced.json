@@ -12748,6 +12748,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794039825.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794039825.png"
    }
+  },
+  "noor-tafsir-s004-165-r7": {
+   "title": "تدبّر: ﴿رسلا مبشرين ومنذرين لئلا يكون…﴾ | سورة النساء ﴿165﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (42/44)",
+   "fingerprint": "648db67b9eb125a3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-165-aymanswoaid.mp4",
+   "duration": 67.24,
+   "at": "2026-11-07 09:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794043565.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794043565.png"
+   }
   }
  },
  "fingerprints": [
@@ -13836,7 +13847,8 @@
   "74b4de05b1e6166c",
   "43ba4d6885380958",
   "72c5416725598be2",
-  "64ea7f034bf3d624"
+  "64ea7f034bf3d624",
+  "648db67b9eb125a3"
  ],
- "last_kind": "qissa"
+ "last_kind": "tafsir"
 }
