@@ -12693,6 +12693,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794013318.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794013318.png"
    }
+  },
+  "noor-qissa-hijra-r8": {
+   "title": "سُورَةُ التَّوۡبَةِ ﴿40–40﴾ — علي الحذيفي",
+   "fingerprint": "5b9665c4bb696583",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hijra-hudhaify.mp4",
+   "duration": 73.06,
+   "at": "2026-11-07 02:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794017128.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794017128.png"
+   }
   }
  },
  "fingerprints": [
@@ -13776,7 +13787,8 @@
   "8da361cfe4002601",
   "90e5afdbfd53de79",
   "90da77228a094a80",
-  "5c43c843f9314838"
+  "5c43c843f9314838",
+  "5b9665c4bb696583"
  ],
  "last_kind": "qissa"
 }
