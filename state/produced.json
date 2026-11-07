@@ -12759,6 +12759,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794043565.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794043565.png"
    }
+  },
+  "noor-tafsir-s004-169-r8": {
+   "title": "تدبّر: ﴿إلا طريق جهنم خلدين فيها أبدا…﴾ | سورة النساء ﴿169﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (43/44)",
+   "fingerprint": "06c44a231950d628",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-169-hudhaify.mp4",
+   "duration": 44.48,
+   "at": "2026-11-07 10:28",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794047314.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794047314.png"
+   }
   }
  },
  "fingerprints": [
@@ -13848,7 +13859,8 @@
   "43ba4d6885380958",
   "72c5416725598be2",
   "64ea7f034bf3d624",
-  "648db67b9eb125a3"
+  "648db67b9eb125a3",
+  "06c44a231950d628"
  ],
  "last_kind": "tafsir"
 }
