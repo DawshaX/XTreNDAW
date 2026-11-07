@@ -12803,6 +12803,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794062373.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794062373.png"
    }
+  },
+  "noor-quran-s033-69-r9": {
+   "title": "دقيقة نور 🌙 سُورَةُ الأَحۡزَابِ ﴿69–71﴾ — أبو بكر الشاطري",
+   "fingerprint": "2532ff9412b9016a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs033-69-shaatree.mp4",
+   "duration": 69.8,
+   "at": "2026-11-07 15:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794066130.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794066130.png"
+   }
   }
  },
  "fingerprints": [
@@ -13896,7 +13907,8 @@
   "06c44a231950d628",
   "d10f5a2b2e4844b0",
   "88718607cc40cc86",
-  "3fdc47dba361f150"
+  "3fdc47dba361f150",
+  "2532ff9412b9016a"
  ],
  "last_kind": "quran"
 }
