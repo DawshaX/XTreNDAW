@@ -12869,6 +12869,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794085085.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794085085.png"
    }
+  },
+  "noor-tafsir-s005-5-r9": {
+   "title": "تدبّر: ﴿ٱليوم أحل لكم ٱلطيبت وطعام ٱلذين…﴾ | سورة المائدة ﴿5﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (2/30)",
+   "fingerprint": "f4c48c5a80c9d503",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-5-shaatree.mp4",
+   "duration": 81.74,
+   "at": "2026-11-07 22:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794088917.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794088917.png"
+   }
   }
  },
  "fingerprints": [
@@ -13968,7 +13979,8 @@
   "be911dc50c648ce4",
   "4bcd385647458485",
   "01451ab68ec2c684",
-  "e3d00fbe0e7f8b71"
+  "e3d00fbe0e7f8b71",
+  "f4c48c5a80c9d503"
  ],
- "last_kind": "quran"
+ "last_kind": "tafsir"
 }
