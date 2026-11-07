@@ -12726,6 +12726,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794024837.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794024837.png"
    }
+  },
+  "noor-qissa-khidr-r8": {
+   "title": "سُورَةُ الكَهۡفِ ﴿65–69﴾ — علي الحذيفي",
+   "fingerprint": "72c5416725598be2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-khidr-hudhaify.mp4",
+   "duration": 77.87,
+   "at": "2026-11-07 05:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794028721.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794028721.png"
+   }
   }
  },
  "fingerprints": [
@@ -13812,7 +13823,8 @@
   "5c43c843f9314838",
   "5b9665c4bb696583",
   "74b4de05b1e6166c",
-  "43ba4d6885380958"
+  "43ba4d6885380958",
+  "72c5416725598be2"
  ],
  "last_kind": "qissa"
 }
