@@ -12847,6 +12847,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794077477.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794077477.png"
    }
+  },
+  "noor-quran-s042-49-r7": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الشُّورَىٰ ﴿49–50﴾ — أيمن سويد",
+   "fingerprint": "01451ab68ec2c684",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs042-49-aymanswoaid.mp4",
+   "duration": 78.35,
+   "at": "2026-11-07 19:54",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794081260.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794081260.png"
+   }
   }
  },
  "fingerprints": [
@@ -13944,7 +13955,8 @@
   "2532ff9412b9016a",
   "b937769c2c038f5b",
   "be911dc50c648ce4",
-  "4bcd385647458485"
+  "4bcd385647458485",
+  "01451ab68ec2c684"
  ],
  "last_kind": "quran"
 }
