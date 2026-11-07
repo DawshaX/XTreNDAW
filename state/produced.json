@@ -12704,6 +12704,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794017128.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794017128.png"
    }
+  },
+  "noor-qissa-talut-r9": {
+   "title": "سُورَةُ البَقَرَةِ ﴿246–246﴾ — أبو بكر الشاطري",
+   "fingerprint": "74b4de05b1e6166c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-talut-shaatree.mp4",
+   "duration": 85.0,
+   "at": "2026-11-07 03:09",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794020984.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794020984.png"
+   }
   }
  },
  "fingerprints": [
@@ -13788,7 +13799,8 @@
   "90e5afdbfd53de79",
   "90da77228a094a80",
   "5c43c843f9314838",
-  "5b9665c4bb696583"
+  "5b9665c4bb696583",
+  "74b4de05b1e6166c"
  ],
  "last_kind": "qissa"
 }
