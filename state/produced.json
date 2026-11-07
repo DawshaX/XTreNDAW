@@ -12770,6 +12770,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794047314.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794047314.png"
    }
+  },
+  "noor-tafsir-s004-173-r9": {
+   "title": "تدبّر: ﴿فأما ٱلذين ءامنوا وعملوا ٱلصلحت…﴾ | سورة النساء ﴿173﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (44/44)",
+   "fingerprint": "d10f5a2b2e4844b0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts004-173-shaatree.mp4",
+   "duration": 75.12,
+   "at": "2026-11-07 11:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794051143.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794051143.png"
+   }
   }
  },
  "fingerprints": [
@@ -13860,7 +13871,8 @@
   "72c5416725598be2",
   "64ea7f034bf3d624",
   "648db67b9eb125a3",
-  "06c44a231950d628"
+  "06c44a231950d628",
+  "d10f5a2b2e4844b0"
  ],
  "last_kind": "tafsir"
 }
