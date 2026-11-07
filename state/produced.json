@@ -12682,6 +12682,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794009520.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794009520.png"
    }
+  },
+  "noor-qissa-dhaby-r7": {
+   "title": "سُورَةُ الصَّافَّاتِ ﴿102–104﴾ — أيمن سويد",
+   "fingerprint": "5c43c843f9314838",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-dhaby-aymanswoaid.mp4",
+   "duration": 86.0,
+   "at": "2026-11-07 01:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794013318.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794013318.png"
+   }
   }
  },
  "fingerprints": [
@@ -13764,7 +13775,8 @@
   "e83bbfbff86a3b36",
   "8da361cfe4002601",
   "90e5afdbfd53de79",
-  "90da77228a094a80"
+  "90da77228a094a80",
+  "5c43c843f9314838"
  ],
  "last_kind": "qissa"
 }
