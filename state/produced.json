@@ -12880,6 +12880,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794088917.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794088917.png"
    }
+  },
+  "noor-tafsir-s005-9-r7": {
+   "title": "تدبّر: ﴿وعد ٱلله ٱلذين ءامنوا وعملوا…﴾ | سورة المائدة ﴿9﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (3/30)",
+   "fingerprint": "0fdc4a10bce85d44",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-9-aymanswoaid.mp4",
+   "duration": 62.56,
+   "at": "2026-11-07 23:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794092680.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794092680.png"
+   }
   }
  },
  "fingerprints": [
@@ -13980,7 +13991,8 @@
   "4bcd385647458485",
   "01451ab68ec2c684",
   "e3d00fbe0e7f8b71",
-  "f4c48c5a80c9d503"
+  "f4c48c5a80c9d503",
+  "0fdc4a10bce85d44"
  ],
  "last_kind": "tafsir"
 }
