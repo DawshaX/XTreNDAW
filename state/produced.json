@@ -12715,6 +12715,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794020984.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794020984.png"
    }
+  },
+  "noor-qissa-baqara-q-r7": {
+   "title": "سُورَةُ البَقَرَةِ ﴿67–67﴾ — أيمن سويد",
+   "fingerprint": "43ba4d6885380958",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-baqara-q-aymanswoaid.mp4",
+   "duration": 58.38,
+   "at": "2026-11-07 04:14",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794024837.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794024837.png"
+   }
   }
  },
  "fingerprints": [
@@ -13800,7 +13811,8 @@
   "90da77228a094a80",
   "5c43c843f9314838",
   "5b9665c4bb696583",
-  "74b4de05b1e6166c"
+  "74b4de05b1e6166c",
+  "43ba4d6885380958"
  ],
  "last_kind": "qissa"
 }
