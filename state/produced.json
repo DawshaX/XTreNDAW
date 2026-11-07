@@ -12781,6 +12781,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794051143.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794051143.png"
    }
+  },
+  "noor-tafsir-s005-1-r7": {
+   "title": "تدبّر: ﴿بسم ٱلله ٱلرحمن ٱلرحيم يأيها…﴾ | سورة المائدة ﴿1﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (1/30)",
+   "fingerprint": "88718607cc40cc86",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-1-aymanswoaid.mp4",
+   "duration": 84.98,
+   "at": "2026-11-07 12:36",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794055001.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794055001.png"
+   }
   }
  },
  "fingerprints": [
@@ -13872,7 +13883,8 @@
   "64ea7f034bf3d624",
   "648db67b9eb125a3",
   "06c44a231950d628",
-  "d10f5a2b2e4844b0"
+  "d10f5a2b2e4844b0",
+  "88718607cc40cc86"
  ],
  "last_kind": "tafsir"
 }
