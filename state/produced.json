@@ -12737,6 +12737,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794028721.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794028721.png"
    }
+  },
+  "noor-qissa-hudhud-r9": {
+   "title": "سُورَةُ النَّمۡلِ ﴿20–23﴾ — أبو بكر الشاطري",
+   "fingerprint": "64ea7f034bf3d624",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hudhud-shaatree.mp4",
+   "duration": 86.6,
+   "at": "2026-11-07 08:23",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794039825.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794039825.png"
+   }
   }
  },
  "fingerprints": [
@@ -13824,7 +13835,8 @@
   "5b9665c4bb696583",
   "74b4de05b1e6166c",
   "43ba4d6885380958",
-  "72c5416725598be2"
+  "72c5416725598be2",
+  "64ea7f034bf3d624"
  ],
  "last_kind": "qissa"
 }
