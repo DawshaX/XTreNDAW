@@ -12836,6 +12836,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794073710.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794073710.png"
    }
+  },
+  "noor-quran-s069-25-r9": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الحَاقَّةِ ﴿25–28﴾ — أبو بكر الشاطري",
+   "fingerprint": "4bcd385647458485",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs069-25-shaatree.mp4",
+   "duration": 60.83,
+   "at": "2026-11-07 18:51",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794077477.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794077477.png"
+   }
   }
  },
  "fingerprints": [
@@ -13932,7 +13943,8 @@
   "3fdc47dba361f150",
   "2532ff9412b9016a",
   "b937769c2c038f5b",
-  "be911dc50c648ce4"
+  "be911dc50c648ce4",
+  "4bcd385647458485"
  ],
  "last_kind": "quran"
 }
