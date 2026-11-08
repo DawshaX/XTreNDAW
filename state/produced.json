@@ -12968,6 +12968,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794119150.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794119150.png"
    }
+  },
+  "noor-hadith-528-r3": {
+   "title": "قال رسول الله ﷺ: كناني عروة بن الزبير ولم يولد لي",
+   "fingerprint": "f1222b5d15cd284d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 24.83,
+   "at": "2026-11-08 07:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794122846.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794122846.png"
+   }
   }
  },
  "fingerprints": [
@@ -14076,7 +14087,8 @@
   "8641d6601e5cc25f",
   "9961fa982a8c9897",
   "ceeac48337ab5f0c",
-  "1fd222fdc3d16985"
+  "1fd222fdc3d16985",
+  "f1222b5d15cd284d"
  ],
  "last_kind": "hadith"
 }
