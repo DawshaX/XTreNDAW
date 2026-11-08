@@ -12979,6 +12979,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794122846.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794122846.png"
    }
+  },
+  "noor-hadith-2501-r3": {
+   "title": "قال رسول الله ﷺ: من اقتنى كلبا إلا كلب صيد أو ماشية نقص…",
+   "fingerprint": "f409732ee000ed7c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 29.57,
+   "at": "2026-11-08 08:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794126559.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794126559.png"
+   }
   }
  },
  "fingerprints": [
@@ -14088,7 +14099,8 @@
   "9961fa982a8c9897",
   "ceeac48337ab5f0c",
   "1fd222fdc3d16985",
-  "f1222b5d15cd284d"
+  "f1222b5d15cd284d",
+  "f409732ee000ed7c"
  ],
  "last_kind": "hadith"
 }
