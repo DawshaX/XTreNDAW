@@ -13023,6 +13023,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794137708.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794137708.png"
    }
+  },
+  "noor-hadith-7254-r3": {
+   "title": "قال رسول الله ﷺ: واقرءوا إن شئتم فهل عسيتم",
+   "fingerprint": "944f7641c8808644",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 25.57,
+   "at": "2026-11-08 12:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794141425.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794141425.png"
+   }
   }
  },
  "fingerprints": [
@@ -14136,7 +14147,8 @@
   "f409732ee000ed7c",
   "f5bc2c38de839494",
   "a6e3dbac296fbadf",
-  "14889244868724a3"
+  "14889244868724a3",
+  "944f7641c8808644"
  ],
- "last_kind": "know"
+ "last_kind": "hadith"
 }
