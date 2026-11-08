@@ -12891,6 +12891,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794092680.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794092680.png"
    }
+  },
+  "noor-tafsir-s005-13-r8": {
+   "title": "تدبّر: ﴿فبما نقضهم ميثقهم لعنهم وجعلنا…﴾ | سورة المائدة ﴿13﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (4/30)",
+   "fingerprint": "ec5c9f4fdfe34112",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-13-hudhaify.mp4",
+   "duration": 84.82,
+   "at": "2026-11-08 00:09",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794096546.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794096546.png"
+   }
   }
  },
  "fingerprints": [
@@ -13992,7 +14003,8 @@
   "01451ab68ec2c684",
   "e3d00fbe0e7f8b71",
   "f4c48c5a80c9d503",
-  "0fdc4a10bce85d44"
+  "0fdc4a10bce85d44",
+  "ec5c9f4fdfe34112"
  ],
  "last_kind": "tafsir"
 }
