@@ -12946,6 +12946,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794111665.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794111665.png"
    }
+  },
+  "noor-hadith-4217-r3": {
+   "title": "قال رسول الله ﷺ: للسائل حق وإن جاء على فرس",
+   "fingerprint": "ceeac48337ab5f0c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 25.73,
+   "at": "2026-11-08 05:23",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794115413.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794115413.png"
+   }
   }
  },
  "fingerprints": [
@@ -14052,7 +14063,8 @@
   "5859d5d18a74541b",
   "e1237e474ab01478",
   "8641d6601e5cc25f",
-  "9961fa982a8c9897"
+  "9961fa982a8c9897",
+  "ceeac48337ab5f0c"
  ],
- "last_kind": "tafsir"
+ "last_kind": "hadith"
 }
