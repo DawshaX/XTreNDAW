@@ -13067,6 +13067,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794152689.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794152689.png"
    }
+  },
+  "noor-quran-s006-97-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الأَنۡعَامِ ﴿97–98﴾ — أبو بكر الشاطري",
+   "fingerprint": "9b001a73fe03679c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs006-97-shaatree.mp4",
+   "duration": 63.13,
+   "at": "2026-11-08 16:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794156464.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794156464.png"
+   }
   }
  },
  "fingerprints": [
@@ -14184,7 +14195,8 @@
   "944f7641c8808644",
   "5b6612100901e95f",
   "37c319da22ae202e",
-  "3aebd4d973f6bd52"
+  "3aebd4d973f6bd52",
+  "9b001a73fe03679c"
  ],
  "last_kind": "quran"
 }
