@@ -13012,6 +13012,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794133998.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794133998.png"
    }
+  },
+  "noor-hadith-10412-r3": {
+   "title": "قال رسول الله ﷺ: من خير خصال الصائم السواك",
+   "fingerprint": "14889244868724a3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 26.43,
+   "at": "2026-11-08 11:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794137708.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794137708.png"
+   }
   }
  },
  "fingerprints": [
@@ -14124,7 +14135,8 @@
   "f1222b5d15cd284d",
   "f409732ee000ed7c",
   "f5bc2c38de839494",
-  "a6e3dbac296fbadf"
+  "a6e3dbac296fbadf",
+  "14889244868724a3"
  ],
  "last_kind": "know"
 }
