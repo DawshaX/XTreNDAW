@@ -12990,6 +12990,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794126559.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794126559.png"
    }
+  },
+  "noor-hadith-1216-r3": {
+   "title": "قال رسول الله ﷺ: لما بعث علي عمارا والحسن إلى الكوفة…",
+   "fingerprint": "f5bc2c38de839494",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 33.7,
+   "at": "2026-11-08 09:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794130307.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794130307.png"
+   }
   }
  },
  "fingerprints": [
@@ -14100,7 +14111,8 @@
   "ceeac48337ab5f0c",
   "1fd222fdc3d16985",
   "f1222b5d15cd284d",
-  "f409732ee000ed7c"
+  "f409732ee000ed7c",
+  "f5bc2c38de839494"
  ],
- "last_kind": "hadith"
+ "last_kind": "know"
 }
