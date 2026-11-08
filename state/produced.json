@@ -13133,6 +13133,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794175466.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794175466.png"
    }
+  },
+  "noor-hadith-114-r3": {
+   "title": "قال رسول الله ﷺ: كان رسول الله ﷺ أجود الناس، وكان أجود ما…",
+   "fingerprint": "af29d9e9666fb7eb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 40.63,
+   "at": "2026-11-08 23:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794179167.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794179167.png"
+   }
   }
  },
  "fingerprints": [
@@ -14256,7 +14267,8 @@
   "572c110de9f7c4e9",
   "8a2aeedc7cd588ab",
   "0202ca283a9442d3",
-  "747b6bfec8477d0c"
+  "747b6bfec8477d0c",
+  "af29d9e9666fb7eb"
  ],
  "last_kind": "hadith"
 }
