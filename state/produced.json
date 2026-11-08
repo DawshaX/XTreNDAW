@@ -12913,6 +12913,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794100424.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794100424.png"
    }
+  },
+  "noor-tafsir-s005-21-r7": {
+   "title": "تدبّر: ﴿يقوم ٱدخلوا ٱلأرض ٱلمقدسة ٱلتى…﴾ | سورة المائدة ﴿21﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (6/30)",
+   "fingerprint": "e1237e474ab01478",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-21-aymanswoaid.mp4",
+   "duration": 79.53,
+   "at": "2026-11-08 02:16",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794104209.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794104209.png"
+   }
   }
  },
  "fingerprints": [
@@ -14016,7 +14027,8 @@
   "f4c48c5a80c9d503",
   "0fdc4a10bce85d44",
   "ec5c9f4fdfe34112",
-  "5859d5d18a74541b"
+  "5859d5d18a74541b",
+  "e1237e474ab01478"
  ],
  "last_kind": "tafsir"
 }
