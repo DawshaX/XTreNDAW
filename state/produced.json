@@ -13100,6 +13100,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794163998.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794163998.png"
    }
+  },
+  "noor-quran-s040-33-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ غَافِرٍ ﴿33–34﴾ — أبو بكر الشاطري",
+   "fingerprint": "8a2aeedc7cd588ab",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs040-33-shaatree.mp4",
+   "duration": 74.3,
+   "at": "2026-11-08 19:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794167825.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794167825.png"
+   }
   }
  },
  "fingerprints": [
@@ -14220,7 +14231,8 @@
   "3aebd4d973f6bd52",
   "9b001a73fe03679c",
   "cf8274a793028699",
-  "572c110de9f7c4e9"
+  "572c110de9f7c4e9",
+  "8a2aeedc7cd588ab"
  ],
  "last_kind": "quran"
 }
