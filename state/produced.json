@@ -13045,6 +13045,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794145129.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794145129.png"
    }
+  },
+  "noor-quran-s015-45-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الحِجۡرِ ﴿45–48﴾ — أيمن سويد",
+   "fingerprint": "37c319da22ae202e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs015-45-aymanswoaid.mp4",
+   "duration": 75.9,
+   "at": "2026-11-08 14:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794148917.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794148917.png"
+   }
   }
  },
  "fingerprints": [
@@ -14160,7 +14171,8 @@
   "a6e3dbac296fbadf",
   "14889244868724a3",
   "944f7641c8808644",
-  "5b6612100901e95f"
+  "5b6612100901e95f",
+  "37c319da22ae202e"
  ],
- "last_kind": "hadith"
+ "last_kind": "quran"
 }
