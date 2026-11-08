@@ -13034,6 +13034,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794141425.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794141425.png"
    }
+  },
+  "noor-hadith-2768-r3": {
+   "title": "قال رسول الله ﷺ: من يحرم الرفق يحرم الخير",
+   "fingerprint": "5b6612100901e95f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-hadith-3.mp4",
+   "duration": 25.33,
+   "at": "2026-11-08 13:38",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794145129.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794145129.png"
+   }
   }
  },
  "fingerprints": [
@@ -14148,7 +14159,8 @@
   "f5bc2c38de839494",
   "a6e3dbac296fbadf",
   "14889244868724a3",
-  "944f7641c8808644"
+  "944f7641c8808644",
+  "5b6612100901e95f"
  ],
  "last_kind": "hadith"
 }
