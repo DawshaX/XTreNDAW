@@ -13089,6 +13089,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794160263.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794160263.png"
    }
+  },
+  "noor-quran-s019-33-r8": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ مَرۡيَمَ ﴿33–36﴾ — علي الحذيفي",
+   "fingerprint": "572c110de9f7c4e9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs019-33-hudhaify.mp4",
+   "duration": 68.81,
+   "at": "2026-11-08 18:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794163998.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794163998.png"
+   }
   }
  },
  "fingerprints": [
@@ -14208,7 +14219,8 @@
   "37c319da22ae202e",
   "3aebd4d973f6bd52",
   "9b001a73fe03679c",
-  "cf8274a793028699"
+  "cf8274a793028699",
+  "572c110de9f7c4e9"
  ],
  "last_kind": "quran"
 }
