@@ -12924,6 +12924,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794104209.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794104209.png"
    }
+  },
+  "noor-tafsir-s005-25-r8": {
+   "title": "تدبّر: ﴿قال رب إنى لا أملك إلا نفسى وأخى…﴾ | سورة المائدة ﴿25﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (7/30)",
+   "fingerprint": "8641d6601e5cc25f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-25-hudhaify.mp4",
+   "duration": 47.74,
+   "at": "2026-11-08 03:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794107931.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794107931.png"
+   }
   }
  },
  "fingerprints": [
@@ -14028,7 +14039,8 @@
   "0fdc4a10bce85d44",
   "ec5c9f4fdfe34112",
   "5859d5d18a74541b",
-  "e1237e474ab01478"
+  "e1237e474ab01478",
+  "8641d6601e5cc25f"
  ],
  "last_kind": "tafsir"
 }
