@@ -12935,6 +12935,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794107931.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794107931.png"
    }
+  },
+  "noor-tafsir-s005-29-r9": {
+   "title": "تدبّر: ﴿إنى أريد أن تبوأ بإثمى وإثمك…﴾ | سورة المائدة ﴿29–30﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (8/30)",
+   "fingerprint": "9961fa982a8c9897",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-29-shaatree.mp4",
+   "duration": 76.39,
+   "at": "2026-11-08 04:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794111665.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794111665.png"
+   }
   }
  },
  "fingerprints": [
@@ -14040,7 +14051,8 @@
   "ec5c9f4fdfe34112",
   "5859d5d18a74541b",
   "e1237e474ab01478",
-  "8641d6601e5cc25f"
+  "8641d6601e5cc25f",
+  "9961fa982a8c9897"
  ],
  "last_kind": "tafsir"
 }
