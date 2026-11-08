@@ -13111,6 +13111,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794167825.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794167825.png"
    }
+  },
+  "noor-quran-s069-5-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الحَاقَّةِ ﴿5–8﴾ — أيمن سويد",
+   "fingerprint": "0202ca283a9442d3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs069-5-aymanswoaid.mp4",
+   "duration": 84.4,
+   "at": "2026-11-08 21:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794171730.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794171730.png"
+   }
   }
  },
  "fingerprints": [
@@ -14232,7 +14243,8 @@
   "9b001a73fe03679c",
   "cf8274a793028699",
   "572c110de9f7c4e9",
-  "8a2aeedc7cd588ab"
+  "8a2aeedc7cd588ab",
+  "0202ca283a9442d3"
  ],
  "last_kind": "quran"
 }
