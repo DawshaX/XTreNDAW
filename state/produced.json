@@ -13166,6 +13166,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794193924.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794193924.png"
    }
+  },
+  "noor-quran-s015-21-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الحِجۡرِ ﴿21–24﴾ — أبو بكر الشاطري",
+   "fingerprint": "e5524d0b1318a753",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs015-21-shaatree.mp4",
+   "duration": 87.14,
+   "at": "2026-11-09 04:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794197708.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794197708.png"
+   }
   }
  },
  "fingerprints": [
@@ -14292,7 +14303,8 @@
   "747b6bfec8477d0c",
   "af29d9e9666fb7eb",
   "2f7492bc8a8f3b72",
-  "ae9cbd3d18d15d76"
+  "ae9cbd3d18d15d76",
+  "e5524d0b1318a753"
  ],
  "last_kind": "quran"
 }
