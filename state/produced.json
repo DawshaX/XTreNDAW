@@ -13353,6 +13353,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794258344.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794258344.png"
    }
+  },
+  "noor-asma-20-r3": {
+   "title": "سلسلة الأسماء الحسنى (21/64): السميع ، يسمع السر والنجوى",
+   "fingerprint": "8a92e32124ed0a60",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.47,
+   "at": "2026-11-09 22:07",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794262039.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794262039.png"
+   }
   }
  },
  "fingerprints": [
@@ -14496,7 +14507,8 @@
   "800f4cb556e01d32",
   "6addf614e225c2b9",
   "52aa7f7382e4e10c",
-  "b77f97391c085428"
+  "b77f97391c085428",
+  "8a92e32124ed0a60"
  ],
- "last_kind": "quran"
+ "last_kind": "asma"
 }
