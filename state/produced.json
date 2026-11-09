@@ -13298,6 +13298,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794239319.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794239319.png"
    }
+  },
+  "noor-quran-s046-29-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الأَحۡقَافِ ﴿29–30﴾ — أبو بكر الشاطري",
+   "fingerprint": "fdbe378c795497fc",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs046-29-shaatree.mp4",
+   "duration": 78.54,
+   "at": "2026-11-09 16:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794243120.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794243120.png"
+   }
   }
  },
  "fingerprints": [
@@ -14436,7 +14447,8 @@
   "de9f7d0a816aa227",
   "6146c77232132603",
   "367e7d21058626f6",
-  "a94d2bc58c0373b8"
+  "a94d2bc58c0373b8",
+  "fdbe378c795497fc"
  ],
  "last_kind": "quran"
 }
