@@ -13232,6 +13232,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794216630.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794216630.png"
    }
+  },
+  "noor-quran-s016-101-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ النَّحۡلِ ﴿101–103﴾ — أبو بكر الشاطري",
+   "fingerprint": "b6130ebf18302334",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs016-101-shaatree.mp4",
+   "duration": 84.13,
+   "at": "2026-11-09 10:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794220415.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794220415.png"
+   }
   }
  },
  "fingerprints": [
@@ -14364,7 +14375,8 @@
   "08b54e2a29aea28d",
   "ff751ed6a9eec4f6",
   "55c4cc61eb2ed2df",
-  "661eef63c1053690"
+  "661eef63c1053690",
+  "b6130ebf18302334"
  ],
  "last_kind": "quran"
 }
