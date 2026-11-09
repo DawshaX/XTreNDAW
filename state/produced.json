@@ -13199,6 +13199,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794205310.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794205310.png"
    }
+  },
+  "noor-quran-s039-45-r9": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الزُّمَرِ ﴿45–47﴾ — أبو بكر الشاطري",
+   "fingerprint": "ff751ed6a9eec4f6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs039-45-shaatree.mp4",
+   "duration": 87.02,
+   "at": "2026-11-09 07:25",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794209118.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794209118.png"
+   }
   }
  },
  "fingerprints": [
@@ -14328,7 +14339,8 @@
   "ae9cbd3d18d15d76",
   "e5524d0b1318a753",
   "86327c1362f3cd8d",
-  "08b54e2a29aea28d"
+  "08b54e2a29aea28d",
+  "ff751ed6a9eec4f6"
  ],
  "last_kind": "quran"
 }
