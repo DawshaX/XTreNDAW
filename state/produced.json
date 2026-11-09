@@ -13320,6 +13320,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794246911.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794246911.png"
    }
+  },
+  "noor-quran-s017-1-r8": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الإِسۡرَاءِ ﴿1–3﴾ — علي الحذيفي",
+   "fingerprint": "6addf614e225c2b9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs017-1-hudhaify.mp4",
+   "duration": 81.52,
+   "at": "2026-11-09 19:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794250816.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794250816.png"
+   }
   }
  },
  "fingerprints": [
@@ -14460,7 +14471,8 @@
   "367e7d21058626f6",
   "a94d2bc58c0373b8",
   "fdbe378c795497fc",
-  "800f4cb556e01d32"
+  "800f4cb556e01d32",
+  "6addf614e225c2b9"
  ],
  "last_kind": "quran"
 }
