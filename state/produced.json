@@ -13364,6 +13364,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794262039.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794262039.png"
    }
+  },
+  "noor-asma-21-r3": {
+   "title": "سلسلة الأسماء الحسنى (22/64): البصير ، يرى دبيب النملة في الليلة…",
+   "fingerprint": "52ffd190bee071af",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.27,
+   "at": "2026-11-09 23:09",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794265750.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794265750.png"
+   }
   }
  },
  "fingerprints": [
@@ -14508,7 +14519,8 @@
   "6addf614e225c2b9",
   "52aa7f7382e4e10c",
   "b77f97391c085428",
-  "8a92e32124ed0a60"
+  "8a92e32124ed0a60",
+  "52ffd190bee071af"
  ],
  "last_kind": "asma"
 }
