@@ -13144,6 +13144,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794179167.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794179167.png"
    }
+  },
+  "noor-quran-s020-1-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ طه ﴿1–4﴾ — أيمن سويد",
+   "fingerprint": "2f7492bc8a8f3b72",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs020-1-aymanswoaid.mp4",
+   "duration": 51.57,
+   "at": "2026-11-09 02:09",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794190153.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794190153.png"
+   }
   }
  },
  "fingerprints": [
@@ -14268,7 +14279,8 @@
   "8a2aeedc7cd588ab",
   "0202ca283a9442d3",
   "747b6bfec8477d0c",
-  "af29d9e9666fb7eb"
+  "af29d9e9666fb7eb",
+  "2f7492bc8a8f3b72"
  ],
- "last_kind": "hadith"
+ "last_kind": "quran"
 }
