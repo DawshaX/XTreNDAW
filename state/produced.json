@@ -13276,6 +13276,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794231732.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794231732.png"
    }
+  },
+  "noor-quran-s019-25-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ مَرۡيَمَ ﴿25–26﴾ — أيمن سويد",
+   "fingerprint": "367e7d21058626f6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs019-25-aymanswoaid.mp4",
+   "duration": 69.59,
+   "at": "2026-11-09 14:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794235538.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794235538.png"
+   }
   }
  },
  "fingerprints": [
@@ -14412,7 +14423,8 @@
   "b6130ebf18302334",
   "f08ebcf48f439db9",
   "de9f7d0a816aa227",
-  "6146c77232132603"
+  "6146c77232132603",
+  "367e7d21058626f6"
  ],
  "last_kind": "quran"
 }
