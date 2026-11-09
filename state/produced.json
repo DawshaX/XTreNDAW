@@ -13342,6 +13342,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794254629.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794254629.png"
    }
+  },
+  "noor-asma-19-r3": {
+   "title": "سلسلة الأسماء الحسنى (20/64): العليم ، لا يعزب عنه مثقال ذرة",
+   "fingerprint": "b77f97391c085428",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.03,
+   "at": "2026-11-09 21:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794258344.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794258344.png"
+   }
   }
  },
  "fingerprints": [
@@ -14484,7 +14495,8 @@
   "fdbe378c795497fc",
   "800f4cb556e01d32",
   "6addf614e225c2b9",
-  "52aa7f7382e4e10c"
+  "52aa7f7382e4e10c",
+  "b77f97391c085428"
  ],
  "last_kind": "quran"
 }
