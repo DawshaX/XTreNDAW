@@ -13254,6 +13254,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794224210.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794224210.png"
    }
+  },
+  "noor-quran-s041-53-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ فُصِّلَتۡ ﴿53–54﴾ — علي الحذيفي",
+   "fingerprint": "de9f7d0a816aa227",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs041-53-hudhaify.mp4",
+   "duration": 71.23,
+   "at": "2026-11-09 12:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794227957.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794227957.png"
+   }
   }
  },
  "fingerprints": [
@@ -14388,7 +14399,8 @@
   "55c4cc61eb2ed2df",
   "661eef63c1053690",
   "b6130ebf18302334",
-  "f08ebcf48f439db9"
+  "f08ebcf48f439db9",
+  "de9f7d0a816aa227"
  ],
  "last_kind": "quran"
 }
