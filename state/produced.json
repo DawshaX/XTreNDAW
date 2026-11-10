@@ -13551,6 +13551,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794325175.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794325175.png"
    }
+  },
+  "noor-quran-s026-105-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الشُّعَرَاءِ ﴿105–108﴾ — علي الحذيفي",
+   "fingerprint": "c44c45f422722dfe",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs026-105-hudhaify.mp4",
+   "duration": 56.98,
+   "at": "2026-11-10 16:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794328946.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794328946.png"
+   }
   }
  },
  "fingerprints": [
@@ -14712,7 +14723,8 @@
   "a956788c3eef6219",
   "664df8824d854978",
   "a97b3f94698ded7e",
-  "97192995fd8da954"
+  "97192995fd8da954",
+  "c44c45f422722dfe"
  ],
  "last_kind": "quran"
 }
