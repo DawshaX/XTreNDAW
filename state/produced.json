@@ -13386,6 +13386,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794269449.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794269449.png"
    }
+  },
+  "noor-asma-23-r3": {
+   "title": "سلسلة الأسماء الحسنى (24/64): العدل ، الذي لا يجور في حكمه",
+   "fingerprint": "2d506dac94596807",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 20.7,
+   "at": "2026-11-10 01:12",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794273154.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794273154.png"
+   }
   }
  },
  "fingerprints": [
@@ -14532,7 +14543,8 @@
   "b77f97391c085428",
   "8a92e32124ed0a60",
   "52ffd190bee071af",
-  "b5aa5e92a0394764"
+  "b5aa5e92a0394764",
+  "2d506dac94596807"
  ],
  "last_kind": "asma"
 }
