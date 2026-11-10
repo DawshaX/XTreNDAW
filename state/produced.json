@@ -13419,6 +13419,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794280532.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794280532.png"
    }
+  },
+  "noor-asma-26-r3": {
+   "title": "سلسلة الأسماء الحسنى (27/64): الحليم ، لا يستفزه غضب ولا يستخفه…",
+   "fingerprint": "9d82a43bc55da19e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.93,
+   "at": "2026-11-10 04:17",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794284232.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794284232.png"
+   }
   }
  },
  "fingerprints": [
@@ -14568,7 +14579,8 @@
   "b5aa5e92a0394764",
   "2d506dac94596807",
   "022b1d27ccf88ab7",
-  "83d81d1a6064cdf4"
+  "83d81d1a6064cdf4",
+  "9d82a43bc55da19e"
  ],
  "last_kind": "asma"
 }
