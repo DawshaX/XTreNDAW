@@ -13441,6 +13441,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794288020.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794288020.png"
    }
+  },
+  "noor-asma-28-r3": {
+   "title": "سلسلة الأسماء الحسنى (29/64): الغفور ، كثير المغفرة يغفر الذنب…",
+   "fingerprint": "f338369e3b86529f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.8,
+   "at": "2026-11-10 06:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794291718.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794291718.png"
+   }
   }
  },
  "fingerprints": [
@@ -14592,7 +14603,8 @@
   "022b1d27ccf88ab7",
   "83d81d1a6064cdf4",
   "9d82a43bc55da19e",
-  "4dcfe0c9d806f6c4"
+  "4dcfe0c9d806f6c4",
+  "f338369e3b86529f"
  ],
  "last_kind": "asma"
 }
