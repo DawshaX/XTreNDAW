@@ -13474,6 +13474,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794299110.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794299110.png"
    }
+  },
+  "noor-asma-31-r3": {
+   "title": "سلسلة الأسماء الحسنى (32/64): الكبير ، الكبير عن كل وصف وإدراك",
+   "fingerprint": "2871239f06f866a2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.5,
+   "at": "2026-11-10 09:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794302792.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794302792.png"
+   }
   }
  },
  "fingerprints": [
@@ -14628,7 +14639,8 @@
   "4dcfe0c9d806f6c4",
   "f338369e3b86529f",
   "1f7ed5160296b5c7",
-  "947ad22d7fc97e42"
+  "947ad22d7fc97e42",
+  "2871239f06f866a2"
  ],
  "last_kind": "asma"
 }
