@@ -13617,6 +13617,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794347782.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794347782.png"
    }
+  },
+  "noor-asma-37-r3": {
+   "title": "سلسلة الأسماء الحسنى (38/64): الرقيب ، المطلع على ما تخفيه…",
+   "fingerprint": "da3aef7953cfb538",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.9,
+   "at": "2026-11-10 22:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794351496.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794351496.png"
+   }
   }
  },
  "fingerprints": [
@@ -14784,7 +14795,8 @@
   "1a80351db8af7e92",
   "2c855aeb4c28520d",
   "7d554e92ebc15380",
-  "0584e833f5db292d"
+  "0584e833f5db292d",
+  "da3aef7953cfb538"
  ],
- "last_kind": "quran"
+ "last_kind": "asma"
 }
