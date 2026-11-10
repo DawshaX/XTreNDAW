@@ -13485,6 +13485,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794302792.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794302792.png"
    }
+  },
+  "noor-asma-32-r3": {
+   "title": "سلسلة الأسماء الحسنى (33/64): الحفيظ ، يحفظ عباده وأعمالهم",
+   "fingerprint": "13de1603da2d1389",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.0,
+   "at": "2026-11-10 10:28",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794306494.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794306494.png"
+   }
   }
  },
  "fingerprints": [
@@ -14640,7 +14651,8 @@
   "f338369e3b86529f",
   "1f7ed5160296b5c7",
   "947ad22d7fc97e42",
-  "2871239f06f866a2"
+  "2871239f06f866a2",
+  "13de1603da2d1389"
  ],
  "last_kind": "asma"
 }
