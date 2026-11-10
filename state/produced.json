@@ -13430,6 +13430,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794284232.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794284232.png"
    }
+  },
+  "noor-asma-27-r3": {
+   "title": "سلسلة الأسماء الحسنى (28/64): العظيم ، الذي لا تحيط العقول…",
+   "fingerprint": "4dcfe0c9d806f6c4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.37,
+   "at": "2026-11-10 05:20",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794288020.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794288020.png"
+   }
   }
  },
  "fingerprints": [
@@ -14580,7 +14591,8 @@
   "2d506dac94596807",
   "022b1d27ccf88ab7",
   "83d81d1a6064cdf4",
-  "9d82a43bc55da19e"
+  "9d82a43bc55da19e",
+  "4dcfe0c9d806f6c4"
  ],
  "last_kind": "asma"
 }
