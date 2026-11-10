@@ -13507,6 +13507,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794310196.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794310196.png"
    }
+  },
+  "noor-asma-34-r3": {
+   "title": "سلسلة الأسماء الحسنى (35/64): الحسيب ، الكافي لعبده، المحاسب لهم",
+   "fingerprint": "a956788c3eef6219",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.57,
+   "at": "2026-11-10 12:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794313882.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794313882.png"
+   }
   }
  },
  "fingerprints": [
@@ -14664,7 +14675,8 @@
   "947ad22d7fc97e42",
   "2871239f06f866a2",
   "13de1603da2d1389",
-  "512fd629d04f9dce"
+  "512fd629d04f9dce",
+  "a956788c3eef6219"
  ],
  "last_kind": "asma"
 }
