@@ -13408,6 +13408,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794276843.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794276843.png"
    }
+  },
+  "noor-asma-25-r3": {
+   "title": "سلسلة الأسماء الحسنى (26/64): الخبير ، العالم ببواطن الأمور",
+   "fingerprint": "83d81d1a6064cdf4",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.93,
+   "at": "2026-11-10 03:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794280532.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794280532.png"
+   }
   }
  },
  "fingerprints": [
@@ -14556,7 +14567,8 @@
   "52ffd190bee071af",
   "b5aa5e92a0394764",
   "2d506dac94596807",
-  "022b1d27ccf88ab7"
+  "022b1d27ccf88ab7",
+  "83d81d1a6064cdf4"
  ],
  "last_kind": "asma"
 }
