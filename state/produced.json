@@ -13606,6 +13606,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794344082.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794344082.png"
    }
+  },
+  "noor-asma-36-r3": {
+   "title": "سلسلة الأسماء الحسنى (37/64): الكريم ، كثير الخير الجواد",
+   "fingerprint": "0584e833f5db292d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 20.5,
+   "at": "2026-11-10 21:56",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794347782.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794347782.png"
+   }
   }
  },
  "fingerprints": [
@@ -14772,7 +14783,8 @@
   "c2f53ee478ccb638",
   "1a80351db8af7e92",
   "2c855aeb4c28520d",
-  "7d554e92ebc15380"
+  "7d554e92ebc15380",
+  "0584e833f5db292d"
  ],
  "last_kind": "quran"
 }
