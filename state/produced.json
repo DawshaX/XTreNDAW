@@ -13496,6 +13496,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794306494.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794306494.png"
    }
+  },
+  "noor-asma-33-r3": {
+   "title": "سلسلة الأسماء الحسنى (34/64): المقيت ، المقدر أقوات الخلائق",
+   "fingerprint": "512fd629d04f9dce",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.9,
+   "at": "2026-11-10 11:30",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794310196.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794310196.png"
+   }
   }
  },
  "fingerprints": [
@@ -14652,7 +14663,8 @@
   "1f7ed5160296b5c7",
   "947ad22d7fc97e42",
   "2871239f06f866a2",
-  "13de1603da2d1389"
+  "13de1603da2d1389",
+  "512fd629d04f9dce"
  ],
  "last_kind": "asma"
 }
