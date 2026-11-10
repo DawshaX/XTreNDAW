@@ -13463,6 +13463,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794295420.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794295420.png"
    }
+  },
+  "noor-asma-30-r3": {
+   "title": "سلسلة الأسماء الحسنى (31/64): العلي ، الأعلى فوق خلقه قهرا وقدرا",
+   "fingerprint": "947ad22d7fc97e42",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.63,
+   "at": "2026-11-10 08:25",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794299110.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794299110.png"
+   }
   }
  },
  "fingerprints": [
@@ -14616,7 +14627,8 @@
   "9d82a43bc55da19e",
   "4dcfe0c9d806f6c4",
   "f338369e3b86529f",
-  "1f7ed5160296b5c7"
+  "1f7ed5160296b5c7",
+  "947ad22d7fc97e42"
  ],
  "last_kind": "asma"
 }
