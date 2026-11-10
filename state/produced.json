@@ -13375,6 +13375,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794265750.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794265750.png"
    }
+  },
+  "noor-asma-22-r3": {
+   "title": "سلسلة الأسماء الحسنى (23/64): الحكم ، الحاكم الذي لا يرد قضاؤه",
+   "fingerprint": "b5aa5e92a0394764",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.9,
+   "at": "2026-11-10 00:10",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794269449.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794269449.png"
+   }
   }
  },
  "fingerprints": [
@@ -14520,7 +14531,8 @@
   "52aa7f7382e4e10c",
   "b77f97391c085428",
   "8a92e32124ed0a60",
-  "52ffd190bee071af"
+  "52ffd190bee071af",
+  "b5aa5e92a0394764"
  ],
  "last_kind": "asma"
 }
