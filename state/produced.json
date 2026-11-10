@@ -13518,6 +13518,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794313882.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794313882.png"
    }
+  },
+  "noor-asma-35-r3": {
+   "title": "سلسلة الأسماء الحسنى (36/64): الجليل ، صاحب الجلال والكمال",
+   "fingerprint": "664df8824d854978",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 20.77,
+   "at": "2026-11-10 13:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794317579.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794317579.png"
+   }
   }
  },
  "fingerprints": [
@@ -14676,7 +14687,8 @@
   "2871239f06f866a2",
   "13de1603da2d1389",
   "512fd629d04f9dce",
-  "a956788c3eef6219"
+  "a956788c3eef6219",
+  "664df8824d854978"
  ],
  "last_kind": "asma"
 }
