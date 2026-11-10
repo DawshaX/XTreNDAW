@@ -13540,6 +13540,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794321362.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794321362.png"
    }
+  },
+  "noor-quran-s063-1-r7": {
+   "title": "دقيقة نور 🌙 سُورَةُ المُنَافِقُونَ ﴿1–2﴾ — أيمن سويد",
+   "fingerprint": "97192995fd8da954",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs063-1-aymanswoaid.mp4",
+   "duration": 88.86,
+   "at": "2026-11-10 15:39",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794325175.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794325175.png"
+   }
   }
  },
  "fingerprints": [
@@ -14700,7 +14711,8 @@
   "512fd629d04f9dce",
   "a956788c3eef6219",
   "664df8824d854978",
-  "a97b3f94698ded7e"
+  "a97b3f94698ded7e",
+  "97192995fd8da954"
  ],
- "last_kind": "asma"
+ "last_kind": "quran"
 }
