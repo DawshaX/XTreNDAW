@@ -13452,6 +13452,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794291718.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794291718.png"
    }
+  },
+  "noor-asma-29-r3": {
+   "title": "سلسلة الأسماء الحسنى (30/64): الشكور ، يثيب الكثير على القليل",
+   "fingerprint": "1f7ed5160296b5c7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.77,
+   "at": "2026-11-10 07:23",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794295420.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794295420.png"
+   }
   }
  },
  "fingerprints": [
@@ -14604,7 +14615,8 @@
   "83d81d1a6064cdf4",
   "9d82a43bc55da19e",
   "4dcfe0c9d806f6c4",
-  "f338369e3b86529f"
+  "f338369e3b86529f",
+  "1f7ed5160296b5c7"
  ],
  "last_kind": "asma"
 }
