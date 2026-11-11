@@ -13694,6 +13694,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794373800.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794373800.png"
    }
+  },
+  "noor-asma-44-r3": {
+   "title": "سلسلة الأسماء الحسنى (45/64): الشهيد ، الحاضر الذي لا يغيب عنه…",
+   "fingerprint": "20c6d30ff5ee10d0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.47,
+   "at": "2026-11-11 06:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794377491.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794377491.png"
+   }
   }
  },
  "fingerprints": [
@@ -14868,7 +14879,8 @@
   "0f5e2a6dabcb420c",
   "b14c789506479582",
   "db2e44fa9701a299",
-  "a1692044da0e460b"
+  "a1692044da0e460b",
+  "20c6d30ff5ee10d0"
  ],
  "last_kind": "asma"
 }
