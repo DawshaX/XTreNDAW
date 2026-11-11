@@ -13738,6 +13738,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794388549.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794388549.png"
    }
+  },
+  "noor-quran-s015-5-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الحِجۡرِ ﴿5–8﴾ — أيمن سويد",
+   "fingerprint": "e9238d8a16f096b2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs015-5-aymanswoaid.mp4",
+   "duration": 79.82,
+   "at": "2026-11-11 10:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794392311.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794392311.png"
+   }
   }
  },
  "fingerprints": [
@@ -14916,7 +14927,8 @@
   "20c6d30ff5ee10d0",
   "5bef1b9408fcdd2d",
   "da8bf730c0844833",
-  "071128819c613f60"
+  "071128819c613f60",
+  "e9238d8a16f096b2"
  ],
  "last_kind": "asma"
 }
