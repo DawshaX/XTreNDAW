@@ -13683,6 +13683,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794370093.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794370093.png"
    }
+  },
+  "noor-asma-43-r3": {
+   "title": "سلسلة الأسماء الحسنى (44/64): الباعث ، باعث الموتى للحساب",
+   "fingerprint": "a1692044da0e460b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 20.77,
+   "at": "2026-11-11 05:10",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794373800.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794373800.png"
+   }
   }
  },
  "fingerprints": [
@@ -14856,7 +14867,8 @@
   "dc5ad0a2076eba15",
   "0f5e2a6dabcb420c",
   "b14c789506479582",
-  "db2e44fa9701a299"
+  "db2e44fa9701a299",
+  "a1692044da0e460b"
  ],
  "last_kind": "asma"
 }
