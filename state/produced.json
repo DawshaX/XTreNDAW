@@ -13661,6 +13661,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794362704.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794362704.png"
    }
+  },
+  "noor-asma-41-r3": {
+   "title": "سلسلة الأسماء الحسنى (42/64): الودود ، يتودد إلى أوليائه ويحبهم",
+   "fingerprint": "b14c789506479582",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.57,
+   "at": "2026-11-11 03:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794366403.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794366403.png"
+   }
   }
  },
  "fingerprints": [
@@ -14832,7 +14843,8 @@
   "da3aef7953cfb538",
   "c4b1c9c124ba8ae7",
   "dc5ad0a2076eba15",
-  "0f5e2a6dabcb420c"
+  "0f5e2a6dabcb420c",
+  "b14c789506479582"
  ],
  "last_kind": "asma"
 }
