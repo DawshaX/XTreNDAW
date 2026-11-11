@@ -13628,6 +13628,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794351496.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794351496.png"
    }
+  },
+  "noor-asma-38-r3": {
+   "title": "سلسلة الأسماء الحسنى (39/64): المجيب ، يجيب دعوة المضطر إذا دعاه",
+   "fingerprint": "c4b1c9c124ba8ae7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.37,
+   "at": "2026-11-11 00:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794355206.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794355206.png"
+   }
   }
  },
  "fingerprints": [
@@ -14796,7 +14807,8 @@
   "2c855aeb4c28520d",
   "7d554e92ebc15380",
   "0584e833f5db292d",
-  "da3aef7953cfb538"
+  "da3aef7953cfb538",
+  "c4b1c9c124ba8ae7"
  ],
  "last_kind": "asma"
 }
