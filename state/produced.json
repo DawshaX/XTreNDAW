@@ -13749,6 +13749,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794392311.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794392311.png"
    }
+  },
+  "noor-quran-s106-1-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ قُرَيۡشٍ ﴿1–4﴾ — علي الحذيفي",
+   "fingerprint": "8b97b2881cdbf8de",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs106-1-hudhaify.mp4",
+   "duration": 59.03,
+   "at": "2026-11-11 11:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794396062.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794396062.png"
+   }
   }
  },
  "fingerprints": [
@@ -14928,7 +14939,8 @@
   "5bef1b9408fcdd2d",
   "da8bf730c0844833",
   "071128819c613f60",
-  "e9238d8a16f096b2"
+  "e9238d8a16f096b2",
+  "8b97b2881cdbf8de"
  ],
- "last_kind": "asma"
+ "last_kind": "quran"
 }
