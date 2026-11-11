@@ -13793,6 +13793,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794407343.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794407343.png"
    }
+  },
+  "noor-quran-s064-1-r9": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ التَّغَابُنِ ﴿1–4﴾ — أبو بكر الشاطري",
+   "fingerprint": "7fbdcea34607ab64",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs064-1-shaatree.mp4",
+   "duration": 72.14,
+   "at": "2026-11-11 15:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794411096.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794411096.png"
+   }
   }
  },
  "fingerprints": [
@@ -14976,7 +14987,8 @@
   "8b97b2881cdbf8de",
   "535beb50ef932c17",
   "97f58bc8d57d847b",
-  "036aed981b9dbd0f"
+  "036aed981b9dbd0f",
+  "7fbdcea34607ab64"
  ],
  "last_kind": "quran"
 }
