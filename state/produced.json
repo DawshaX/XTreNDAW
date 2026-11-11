@@ -13837,6 +13837,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794422420.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794422420.png"
    }
+  },
+  "noor-quran-s075-17-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ القِيَامَةِ ﴿17–20﴾ — أيمن سويد",
+   "fingerprint": "9ed12f47ca066f37",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs075-17-aymanswoaid.mp4",
+   "duration": 53.54,
+   "at": "2026-11-11 19:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794426186.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794426186.png"
+   }
   }
  },
  "fingerprints": [
@@ -15024,7 +15035,8 @@
   "7fbdcea34607ab64",
   "f1f7151593561821",
   "a0897622d64da6c7",
-  "442572faaacda3c0"
+  "442572faaacda3c0",
+  "9ed12f47ca066f37"
  ],
  "last_kind": "quran"
 }
