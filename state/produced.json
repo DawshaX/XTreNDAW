@@ -13650,6 +13650,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794358993.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794358993.png"
    }
+  },
+  "noor-asma-40-r3": {
+   "title": "سلسلة الأسماء الحسنى (41/64): الحكيم ، أحكم خلقه وأتقن تدبيره",
+   "fingerprint": "0f5e2a6dabcb420c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.3,
+   "at": "2026-11-11 02:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794362704.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794362704.png"
+   }
   }
  },
  "fingerprints": [
@@ -14820,7 +14831,8 @@
   "0584e833f5db292d",
   "da3aef7953cfb538",
   "c4b1c9c124ba8ae7",
-  "dc5ad0a2076eba15"
+  "dc5ad0a2076eba15",
+  "0f5e2a6dabcb420c"
  ],
  "last_kind": "asma"
 }
