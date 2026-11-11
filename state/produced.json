@@ -13727,6 +13727,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794384870.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794384870.png"
    }
+  },
+  "noor-asma-47-r3": {
+   "title": "سلسلة الأسماء الحسنى (48/64): القوي ، تام القوة لا يعجزه شيء",
+   "fingerprint": "071128819c613f60",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.33,
+   "at": "2026-11-11 09:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794388549.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794388549.png"
+   }
   }
  },
  "fingerprints": [
@@ -14904,7 +14915,8 @@
   "a1692044da0e460b",
   "20c6d30ff5ee10d0",
   "5bef1b9408fcdd2d",
-  "da8bf730c0844833"
+  "da8bf730c0844833",
+  "071128819c613f60"
  ],
  "last_kind": "asma"
 }
