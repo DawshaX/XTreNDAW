@@ -13716,6 +13716,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794381177.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794381177.png"
    }
+  },
+  "noor-asma-46-r3": {
+   "title": "سلسلة الأسماء الحسنى (47/64): الوكيل ، الكافي لمن توكل عليه",
+   "fingerprint": "da8bf730c0844833",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.8,
+   "at": "2026-11-11 08:14",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794384870.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794384870.png"
+   }
   }
  },
  "fingerprints": [
@@ -14892,7 +14903,8 @@
   "db2e44fa9701a299",
   "a1692044da0e460b",
   "20c6d30ff5ee10d0",
-  "5bef1b9408fcdd2d"
+  "5bef1b9408fcdd2d",
+  "da8bf730c0844833"
  ],
  "last_kind": "asma"
 }
