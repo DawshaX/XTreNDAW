@@ -13870,6 +13870,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794434019.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794434019.png"
    }
+  },
+  "noor-quran-s033-73-r7": {
+   "title": "دقيقة نور 🌙 سُورَةُ الأَحۡزَابِ ﴿73–73﴾ — أيمن سويد",
+   "fingerprint": "6d6383bb84a078a8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs033-73-aymanswoaid.mp4",
+   "duration": 63.02,
+   "at": "2026-11-11 22:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794437740.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794437740.png"
+   }
   }
  },
  "fingerprints": [
@@ -15060,7 +15071,8 @@
   "442572faaacda3c0",
   "9ed12f47ca066f37",
   "761bd09c3fb2819d",
-  "7a4f3da3076444b6"
+  "7a4f3da3076444b6",
+  "6d6383bb84a078a8"
  ],
  "last_kind": "quran"
 }
