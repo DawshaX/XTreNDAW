@@ -13705,6 +13705,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794377491.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794377491.png"
    }
+  },
+  "noor-asma-45-r3": {
+   "title": "سلسلة الأسماء الحسنى (46/64): الحق ، الموجود حقا الثابت",
+   "fingerprint": "5bef1b9408fcdd2d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.7,
+   "at": "2026-11-11 07:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794381177.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794381177.png"
+   }
   }
  },
  "fingerprints": [
@@ -14880,7 +14891,8 @@
   "b14c789506479582",
   "db2e44fa9701a299",
   "a1692044da0e460b",
-  "20c6d30ff5ee10d0"
+  "20c6d30ff5ee10d0",
+  "5bef1b9408fcdd2d"
  ],
  "last_kind": "asma"
 }
