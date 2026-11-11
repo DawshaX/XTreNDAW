@@ -13815,6 +13815,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794414918.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794414918.png"
    }
+  },
+  "noor-quran-s018-13-r8": {
+   "title": "دقيقة نور 🌙 سُورَةُ الكَهۡفِ ﴿13–14﴾ — علي الحذيفي",
+   "fingerprint": "a0897622d64da6c7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs018-13-hudhaify.mp4",
+   "duration": 66.17,
+   "at": "2026-11-11 17:38",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794418687.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794418687.png"
+   }
   }
  },
  "fingerprints": [
@@ -15000,7 +15011,8 @@
   "97f58bc8d57d847b",
   "036aed981b9dbd0f",
   "7fbdcea34607ab64",
-  "f1f7151593561821"
+  "f1f7151593561821",
+  "a0897622d64da6c7"
  ],
  "last_kind": "quran"
 }
