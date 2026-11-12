@@ -14057,6 +14057,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794501171.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794501171.png"
    }
+  },
+  "noor-asma-54-r3": {
+   "title": "سلسلة الأسماء الحسنى (55/64): الحي القيوم ، الذي لا يموت، القائم…",
+   "fingerprint": "af2e152d8a30f887",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.87,
+   "at": "2026-11-12 17:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794504893.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794504893.png"
+   }
   }
  },
  "fingerprints": [
@@ -15264,7 +15275,8 @@
   "8694dd40857fab72",
   "0614c689786feb7b",
   "bf1ff4dcdb88fd2d",
-  "64328e8b13f90aa3"
+  "64328e8b13f90aa3",
+  "af2e152d8a30f887"
  ],
  "last_kind": "asma"
 }
