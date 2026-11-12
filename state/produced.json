@@ -13936,6 +13936,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794456495.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794456495.png"
    }
+  },
+  "noor-quran-s040-21-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ غَافِرٍ ﴿21–21﴾ — أيمن سويد",
+   "fingerprint": "c82c1cbaf431d946",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs040-21-aymanswoaid.mp4",
+   "duration": 79.16,
+   "at": "2026-11-12 05:10",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794460247.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794460247.png"
+   }
   }
  },
  "fingerprints": [
@@ -15132,7 +15143,8 @@
   "5a4252016377a471",
   "228b600c7fbd312b",
   "6f4df25812a94b3d",
-  "10823a3218fcdfaa"
+  "10823a3218fcdfaa",
+  "c82c1cbaf431d946"
  ],
  "last_kind": "quran"
 }
