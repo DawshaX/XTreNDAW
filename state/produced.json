@@ -14101,6 +14101,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794516018.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794516018.png"
    }
+  },
+  "noor-asma-58-r3": {
+   "title": "سلسلة الأسماء الحسنى (59/64): البر التواب ، كثير البر وقابل…",
+   "fingerprint": "acd90314f90e9637",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.17,
+   "at": "2026-11-12 21:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794519724.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794519724.png"
+   }
   }
  },
  "fingerprints": [
@@ -15312,7 +15323,8 @@
   "af2e152d8a30f887",
   "d609186cc9e252fc",
   "b5eba4614c162064",
-  "32d6fb135e69dc7b"
+  "32d6fb135e69dc7b",
+  "acd90314f90e9637"
  ],
  "last_kind": "asma"
 }
