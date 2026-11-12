@@ -14112,6 +14112,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794519724.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794519724.png"
    }
+  },
+  "noor-asma-59-r3": {
+   "title": "سلسلة الأسماء الحسنى (60/64): المنتقم العفو الرؤوف",
+   "fingerprint": "07ce9a9da0dee364",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 19.9,
+   "at": "2026-11-12 22:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794523413.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794523413.png"
+   }
   }
  },
  "fingerprints": [
@@ -15324,7 +15335,8 @@
   "d609186cc9e252fc",
   "b5eba4614c162064",
   "32d6fb135e69dc7b",
-  "acd90314f90e9637"
+  "acd90314f90e9637",
+  "07ce9a9da0dee364"
  ],
  "last_kind": "asma"
 }
