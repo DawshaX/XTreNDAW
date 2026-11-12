@@ -13980,6 +13980,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794471507.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794471507.png"
    }
+  },
+  "noor-quran-s004-165-r8": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ النِّسَاءِ ﴿165–168﴾ — علي الحذيفي",
+   "fingerprint": "a9b97541b26b2d98",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs004-165-hudhaify.mp4",
+   "duration": 86.72,
+   "at": "2026-11-12 09:21",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794475281.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794475281.png"
+   }
   }
  },
  "fingerprints": [
@@ -15180,7 +15191,8 @@
   "c82c1cbaf431d946",
   "7c389b62275dbbfd",
   "7391da79fd262e2a",
-  "eae384f0dabffee5"
+  "eae384f0dabffee5",
+  "a9b97541b26b2d98"
  ],
  "last_kind": "quran"
 }
