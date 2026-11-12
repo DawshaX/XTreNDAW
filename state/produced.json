@@ -14024,6 +14024,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794490048.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794490048.png"
    }
+  },
+  "noor-asma-51-r3": {
+   "title": "سلسلة الأسماء الحسنى (52/64): المحصي ، العالم بعدد كل شيء",
+   "fingerprint": "0614c689786feb7b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.13,
+   "at": "2026-11-12 14:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794493756.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794493756.png"
+   }
   }
  },
  "fingerprints": [
@@ -15228,7 +15239,8 @@
   "a9b97541b26b2d98",
   "363dec2856305d36",
   "a2e8b2407a2ee6c1",
-  "8694dd40857fab72"
+  "8694dd40857fab72",
+  "0614c689786feb7b"
  ],
  "last_kind": "asma"
 }
