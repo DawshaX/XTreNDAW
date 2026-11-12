@@ -14002,6 +14002,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794482612.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794482612.png"
    }
+  },
+  "noor-asma-49-r3": {
+   "title": "سلسلة الأسماء الحسنى (50/64): الولي ، الناصر للمؤمنين",
+   "fingerprint": "a2e8b2407a2ee6c1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 20.4,
+   "at": "2026-11-12 12:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794486363.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794486363.png"
+   }
   }
  },
  "fingerprints": [
@@ -15204,7 +15215,8 @@
   "7391da79fd262e2a",
   "eae384f0dabffee5",
   "a9b97541b26b2d98",
-  "363dec2856305d36"
+  "363dec2856305d36",
+  "a2e8b2407a2ee6c1"
  ],
  "last_kind": "asma"
 }
