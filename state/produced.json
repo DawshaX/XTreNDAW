@@ -13991,6 +13991,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794475281.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794475281.png"
    }
+  },
+  "noor-asma-48-r3": {
+   "title": "سلسلة الأسماء الحسنى (49/64): المتين ، شديد القوة لا تلحقه مشقة",
+   "fingerprint": "363dec2856305d36",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.43,
+   "at": "2026-11-12 11:23",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794482612.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794482612.png"
+   }
   }
  },
  "fingerprints": [
@@ -15192,7 +15203,8 @@
   "7c389b62275dbbfd",
   "7391da79fd262e2a",
   "eae384f0dabffee5",
-  "a9b97541b26b2d98"
+  "a9b97541b26b2d98",
+  "363dec2856305d36"
  ],
- "last_kind": "quran"
+ "last_kind": "asma"
 }
