@@ -13914,6 +13914,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794448997.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794448997.png"
    }
+  },
+  "noor-quran-s021-13-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الأَنبِيَاءِ ﴿13–16﴾ — علي الحذيفي",
+   "fingerprint": "6f4df25812a94b3d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs021-13-hudhaify.mp4",
+   "duration": 71.3,
+   "at": "2026-11-12 03:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794452761.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794452761.png"
+   }
   }
  },
  "fingerprints": [
@@ -15108,7 +15119,8 @@
   "6d6383bb84a078a8",
   "680a26590e46d95b",
   "5a4252016377a471",
-  "228b600c7fbd312b"
+  "228b600c7fbd312b",
+  "6f4df25812a94b3d"
  ],
  "last_kind": "quran"
 }
