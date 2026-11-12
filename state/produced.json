@@ -14068,6 +14068,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794504893.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794504893.png"
    }
+  },
+  "noor-asma-55-r3": {
+   "title": "سلسلة الأسماء الحسنى (56/64): الواحد الأحد الصمد ، الذي لا شبيه…",
+   "fingerprint": "d609186cc9e252fc",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.83,
+   "at": "2026-11-12 18:36",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794508604.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794508604.png"
+   }
   }
  },
  "fingerprints": [
@@ -15276,7 +15287,8 @@
   "0614c689786feb7b",
   "bf1ff4dcdb88fd2d",
   "64328e8b13f90aa3",
-  "af2e152d8a30f887"
+  "af2e152d8a30f887",
+  "d609186cc9e252fc"
  ],
  "last_kind": "asma"
 }
