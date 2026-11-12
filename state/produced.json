@@ -14079,6 +14079,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794508604.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794508604.png"
    }
+  },
+  "noor-asma-56-r3": {
+   "title": "سلسلة الأسماء الحسنى (57/64): القادر المقتدر ، لا يعجزه شيء",
+   "fingerprint": "b5eba4614c162064",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.2,
+   "at": "2026-11-12 19:38",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794512310.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794512310.png"
+   }
   }
  },
  "fingerprints": [
@@ -15288,7 +15299,8 @@
   "bf1ff4dcdb88fd2d",
   "64328e8b13f90aa3",
   "af2e152d8a30f887",
-  "d609186cc9e252fc"
+  "d609186cc9e252fc",
+  "b5eba4614c162064"
  ],
  "last_kind": "asma"
 }
