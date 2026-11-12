@@ -13958,6 +13958,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794464010.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794464010.png"
    }
+  },
+  "noor-quran-s017-81-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الإِسۡرَاءِ ﴿81–84﴾ — أبو بكر الشاطري",
+   "fingerprint": "7391da79fd262e2a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs017-81-shaatree.mp4",
+   "duration": 73.15,
+   "at": "2026-11-12 07:16",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794467760.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794467760.png"
+   }
   }
  },
  "fingerprints": [
@@ -15156,7 +15167,8 @@
   "6f4df25812a94b3d",
   "10823a3218fcdfaa",
   "c82c1cbaf431d946",
-  "7c389b62275dbbfd"
+  "7c389b62275dbbfd",
+  "7391da79fd262e2a"
  ],
  "last_kind": "quran"
 }
