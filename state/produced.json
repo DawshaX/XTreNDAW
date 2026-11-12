@@ -14123,6 +14123,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794523413.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794523413.png"
    }
+  },
+  "noor-asma-60-r3": {
+   "title": "سلسلة الأسماء الحسنى (61/64): مالك الملك ذو الجلال والإكرام",
+   "fingerprint": "8a22bacec7ea988f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.3,
+   "at": "2026-11-12 23:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794527109.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794527109.png"
+   }
   }
  },
  "fingerprints": [
@@ -15336,7 +15347,8 @@
   "b5eba4614c162064",
   "32d6fb135e69dc7b",
   "acd90314f90e9637",
-  "07ce9a9da0dee364"
+  "07ce9a9da0dee364",
+  "8a22bacec7ea988f"
  ],
  "last_kind": "asma"
 }
