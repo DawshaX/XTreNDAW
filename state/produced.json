@@ -13903,6 +13903,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794445244.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794445244.png"
    }
+  },
+  "noor-quran-s022-57-r7": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الحَجِّ ﴿57–58﴾ — أيمن سويد",
+   "fingerprint": "228b600c7fbd312b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs022-57-aymanswoaid.mp4",
+   "duration": 76.72,
+   "at": "2026-11-12 02:03",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794448997.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794448997.png"
+   }
   }
  },
  "fingerprints": [
@@ -15096,7 +15107,8 @@
   "7a4f3da3076444b6",
   "6d6383bb84a078a8",
   "680a26590e46d95b",
-  "5a4252016377a471"
+  "5a4252016377a471",
+  "228b600c7fbd312b"
  ],
  "last_kind": "quran"
 }
