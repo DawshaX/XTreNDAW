@@ -14035,6 +14035,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794493756.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794493756.png"
    }
+  },
+  "noor-asma-52-r3": {
+   "title": "سلسلة الأسماء الحسنى (53/64): المبدئ المعيد ، بدأ الخلق ثم يعيده",
+   "fingerprint": "bf1ff4dcdb88fd2d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 23.3,
+   "at": "2026-11-12 15:31",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794497465.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794497465.png"
+   }
   }
  },
  "fingerprints": [
@@ -15240,7 +15251,8 @@
   "363dec2856305d36",
   "a2e8b2407a2ee6c1",
   "8694dd40857fab72",
-  "0614c689786feb7b"
+  "0614c689786feb7b",
+  "bf1ff4dcdb88fd2d"
  ],
  "last_kind": "asma"
 }
