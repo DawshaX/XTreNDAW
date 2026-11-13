@@ -14299,6 +14299,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794605395.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794605395.png"
    }
+  },
+  "noor-tafsir-s005-69-r7": {
+   "title": "تدبّر: ﴿إن ٱلذين ءامنوا وٱلذين هادوا…﴾ | سورة المائدة ﴿69﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (18/30)",
+   "fingerprint": "ec83855c6cf52230",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-69-aymanswoaid.mp4",
+   "duration": 82.31,
+   "at": "2026-11-13 22:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794609224.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794609224.png"
+   }
   }
  },
  "fingerprints": [
@@ -15528,7 +15539,8 @@
   "2d3e8b7553254d9f",
   "96d6a42cdf84e5b4",
   "3229b30d74eefd42",
-  "fce92748149a75aa"
+  "fce92748149a75aa",
+  "ec83855c6cf52230"
  ],
  "last_kind": "tafsir"
 }
