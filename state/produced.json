@@ -14189,6 +14189,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794560293.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794560293.png"
    }
+  },
+  "noor-tafsir-s005-49-r9": {
+   "title": "تدبّر: ﴿وأن ٱحكم بينهم بما أنزل ٱلله ولا…﴾ | سورة المائدة ﴿49﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (13/30)",
+   "fingerprint": "49021ecfdbbe714c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-49-shaatree.mp4",
+   "duration": 75.66,
+   "at": "2026-11-13 10:01",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794564092.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794564092.png"
+   }
   }
  },
  "fingerprints": [
@@ -15408,7 +15419,8 @@
   "fdd319ac151dc70c",
   "b2cceee7f5c0308a",
   "ffdd369ff5907f38",
-  "da60c241b748bd9f"
+  "da60c241b748bd9f",
+  "49021ecfdbbe714c"
  ],
  "last_kind": "tafsir"
 }
