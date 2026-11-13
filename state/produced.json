@@ -14178,6 +14178,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794549198.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794549198.png"
    }
+  },
+  "noor-tafsir-s005-45-r8": {
+   "title": "تدبّر: ﴿وكتبنا عليهم فيها أن ٱلنفس بٱلنفس…﴾ | سورة المائدة ﴿45﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (12/30)",
+   "fingerprint": "da60c241b748bd9f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-45-hudhaify.mp4",
+   "duration": 85.93,
+   "at": "2026-11-13 08:58",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794560293.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794560293.png"
+   }
   }
  },
  "fingerprints": [
@@ -15396,7 +15407,8 @@
   "144df8e49b6bccca",
   "fdd319ac151dc70c",
   "b2cceee7f5c0308a",
-  "ffdd369ff5907f38"
+  "ffdd369ff5907f38",
+  "da60c241b748bd9f"
  ],
  "last_kind": "tafsir"
 }
