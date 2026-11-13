@@ -14222,6 +14222,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794571687.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794571687.png"
    }
+  },
+  "noor-tafsir-s005-61-r9": {
+   "title": "تدبّر: ﴿وإذا جاءوكم قالوا ءامنا وقد دخلوا…﴾ | سورة المائدة ﴿61–62﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (16/30)",
+   "fingerprint": "e129382888a45c12",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-61-shaatree.mp4",
+   "duration": 87.73,
+   "at": "2026-11-13 13:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794575501.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794575501.png"
+   }
   }
  },
  "fingerprints": [
@@ -15444,7 +15455,8 @@
   "da60c241b748bd9f",
   "49021ecfdbbe714c",
   "3a14a5329c56001d",
-  "0ed48c31b6dcf240"
+  "0ed48c31b6dcf240",
+  "e129382888a45c12"
  ],
  "last_kind": "tafsir"
 }
