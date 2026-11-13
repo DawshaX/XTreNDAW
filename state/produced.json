@@ -14167,6 +14167,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794538214.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794538214.png"
    }
+  },
+  "noor-tafsir-s005-37-r7": {
+   "title": "تدبّر: ﴿يريدون أن يخرجوا من ٱلنار وما هم…﴾ | سورة المائدة ﴿37﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (10/30)",
+   "fingerprint": "ffdd369ff5907f38",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-37-aymanswoaid.mp4",
+   "duration": 55.31,
+   "at": "2026-11-13 05:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794549198.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794549198.png"
+   }
   }
  },
  "fingerprints": [
@@ -15384,7 +15395,8 @@
   "8a22bacec7ea988f",
   "144df8e49b6bccca",
   "fdd319ac151dc70c",
-  "b2cceee7f5c0308a"
+  "b2cceee7f5c0308a",
+  "ffdd369ff5907f38"
  ],
- "last_kind": "asma"
+ "last_kind": "tafsir"
 }
