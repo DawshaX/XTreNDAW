@@ -14310,6 +14310,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794609224.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794609224.png"
    }
+  },
+  "noor-tafsir-s005-73-r8": {
+   "title": "تدبّر: ﴿لقد كفر ٱلذين قالوا إن ٱلله ثالث…﴾ | سورة المائدة ﴿73﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (19/30)",
+   "fingerprint": "9b81c983f23ec080",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-73-hudhaify.mp4",
+   "duration": 71.72,
+   "at": "2026-11-13 23:37",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794613026.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794613026.png"
+   }
   }
  },
  "fingerprints": [
@@ -15540,7 +15551,8 @@
   "96d6a42cdf84e5b4",
   "3229b30d74eefd42",
   "fce92748149a75aa",
-  "ec83855c6cf52230"
+  "ec83855c6cf52230",
+  "9b81c983f23ec080"
  ],
  "last_kind": "tafsir"
 }
