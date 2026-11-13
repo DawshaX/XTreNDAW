@@ -14255,6 +14255,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794583011.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794583011.png"
    }
+  },
+  "noor-quran-s003-113-r9": {
+   "title": "دقيقة نور 🌙 سُورَةُ آلِ عِمۡرَانَ ﴿113–115﴾ — أبو بكر الشاطري",
+   "fingerprint": "2d3e8b7553254d9f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs003-113-shaatree.mp4",
+   "duration": 84.96,
+   "at": "2026-11-13 16:20",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794586795.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794586795.png"
+   }
   }
  },
  "fingerprints": [
@@ -15480,7 +15491,8 @@
   "0ed48c31b6dcf240",
   "e129382888a45c12",
   "795e902544a05cfb",
-  "ea5eb361173bfe9f"
+  "ea5eb361173bfe9f",
+  "2d3e8b7553254d9f"
  ],
  "last_kind": "quran"
 }
