@@ -14134,6 +14134,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794527109.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794527109.png"
    }
+  },
+  "noor-asma-61-r3": {
+   "title": "سلسلة الأسماء الحسنى (62/64): المقسط الجامع الغني المغني",
+   "fingerprint": "144df8e49b6bccca",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 20.13,
+   "at": "2026-11-13 00:46",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794530809.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794530809.png"
+   }
   }
  },
  "fingerprints": [
@@ -15348,7 +15359,8 @@
   "32d6fb135e69dc7b",
   "acd90314f90e9637",
   "07ce9a9da0dee364",
-  "8a22bacec7ea988f"
+  "8a22bacec7ea988f",
+  "144df8e49b6bccca"
  ],
  "last_kind": "asma"
 }
