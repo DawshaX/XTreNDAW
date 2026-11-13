@@ -14288,6 +14288,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794601545.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794601545.png"
    }
+  },
+  "noor-tafsir-s005-65-r9": {
+   "title": "تدبّر: ﴿ولو أن أهل ٱلكتب ءامنوا وٱتقوا…﴾ | سورة المائدة ﴿65﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (17/30)",
+   "fingerprint": "fce92748149a75aa",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-65-shaatree.mp4",
+   "duration": 53.67,
+   "at": "2026-11-13 21:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794605395.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794605395.png"
+   }
   }
  },
  "fingerprints": [
@@ -15516,7 +15527,8 @@
   "ea5eb361173bfe9f",
   "2d3e8b7553254d9f",
   "96d6a42cdf84e5b4",
-  "3229b30d74eefd42"
+  "3229b30d74eefd42",
+  "fce92748149a75aa"
  ],
- "last_kind": "quran"
+ "last_kind": "tafsir"
 }
