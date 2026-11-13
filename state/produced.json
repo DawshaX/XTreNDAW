@@ -14200,6 +14200,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794564092.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794564092.png"
    }
+  },
+  "noor-tafsir-s005-53-r7": {
+   "title": "تدبّر: ﴿ويقول ٱلذين ءامنوا أهؤلاء ٱلذين…﴾ | سورة المائدة ﴿53﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (14/30)",
+   "fingerprint": "3a14a5329c56001d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-53-aymanswoaid.mp4",
+   "duration": 82.33,
+   "at": "2026-11-13 11:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794567875.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794567875.png"
+   }
   }
  },
  "fingerprints": [
@@ -15420,7 +15431,8 @@
   "b2cceee7f5c0308a",
   "ffdd369ff5907f38",
   "da60c241b748bd9f",
-  "49021ecfdbbe714c"
+  "49021ecfdbbe714c",
+  "3a14a5329c56001d"
  ],
  "last_kind": "tafsir"
 }
