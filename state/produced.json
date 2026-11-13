@@ -14145,6 +14145,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794530809.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794530809.png"
    }
+  },
+  "noor-asma-62-r3": {
+   "title": "سلسلة الأسماء الحسنى (63/64): المانع الضار النافع النور الهادي",
+   "fingerprint": "fdd319ac151dc70c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 21.17,
+   "at": "2026-11-13 01:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794534506.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794534506.png"
+   }
   }
  },
  "fingerprints": [
@@ -15360,7 +15371,8 @@
   "acd90314f90e9637",
   "07ce9a9da0dee364",
   "8a22bacec7ea988f",
-  "144df8e49b6bccca"
+  "144df8e49b6bccca",
+  "fdd319ac151dc70c"
  ],
  "last_kind": "asma"
 }
