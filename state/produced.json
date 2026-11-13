@@ -14211,6 +14211,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794567875.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794567875.png"
    }
+  },
+  "noor-tafsir-s005-57-r8": {
+   "title": "تدبّر: ﴿يأيها ٱلذين ءامنوا لا تتخذوا…﴾ | سورة المائدة ﴿57﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (15/30)",
+   "fingerprint": "0ed48c31b6dcf240",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-57-hudhaify.mp4",
+   "duration": 74.84,
+   "at": "2026-11-13 12:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794571687.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794571687.png"
+   }
   }
  },
  "fingerprints": [
@@ -15432,7 +15443,8 @@
   "ffdd369ff5907f38",
   "da60c241b748bd9f",
   "49021ecfdbbe714c",
-  "3a14a5329c56001d"
+  "3a14a5329c56001d",
+  "0ed48c31b6dcf240"
  ],
  "last_kind": "tafsir"
 }
