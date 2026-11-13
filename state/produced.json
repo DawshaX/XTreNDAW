@@ -14233,6 +14233,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794575501.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794575501.png"
    }
+  },
+  "noor-quran-s025-17-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الفُرۡقَانِ ﴿17–17﴾ — أيمن سويد",
+   "fingerprint": "795e902544a05cfb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs025-17-aymanswoaid.mp4",
+   "duration": 60.9,
+   "at": "2026-11-13 14:14",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794579268.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794579268.png"
+   }
   }
  },
  "fingerprints": [
@@ -15456,7 +15467,8 @@
   "49021ecfdbbe714c",
   "3a14a5329c56001d",
   "0ed48c31b6dcf240",
-  "e129382888a45c12"
+  "e129382888a45c12",
+  "795e902544a05cfb"
  ],
- "last_kind": "tafsir"
+ "last_kind": "quran"
 }
