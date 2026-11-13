@@ -14156,6 +14156,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794534506.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794534506.png"
    }
+  },
+  "noor-asma-63-r3": {
+   "title": "سلسلة الأسماء الحسنى (64/64): البديع الباقي الوارث الرشيد الصبور",
+   "fingerprint": "b2cceee7f5c0308a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-asma-3.mp4",
+   "duration": 22.33,
+   "at": "2026-11-13 02:50",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794538214.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794538214.png"
+   }
   }
  },
  "fingerprints": [
@@ -15372,7 +15383,8 @@
   "07ce9a9da0dee364",
   "8a22bacec7ea988f",
   "144df8e49b6bccca",
-  "fdd319ac151dc70c"
+  "fdd319ac151dc70c",
+  "b2cceee7f5c0308a"
  ],
  "last_kind": "asma"
 }
