@@ -14365,6 +14365,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794627936.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794627936.png"
    }
+  },
+  "noor-akhira-11-r3": {
+   "title": "سلسلة الاستعداد للآخرة (12/16): يؤتى بأشد الناس بؤسا فيصبغ في…",
+   "fingerprint": "c688e9dc97282bae",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhira-3.mp4",
+   "duration": 25.03,
+   "at": "2026-11-14 04:47",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794631649.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794631649.png"
+   }
   }
  },
  "fingerprints": [
@@ -15600,7 +15611,8 @@
   "e5a10df9f888c931",
   "c268b2b7a1c67951",
   "a4fac4aa4f02c32d",
-  "56980d5dd47cde61"
+  "56980d5dd47cde61",
+  "c688e9dc97282bae"
  ],
  "last_kind": "akhira"
 }
