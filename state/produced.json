@@ -14519,6 +14519,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794687860.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794687860.png"
    }
+  },
+  "noor-quran-s025-1-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ الفُرۡقَانِ ﴿1–3﴾ — أبو بكر الشاطري",
+   "fingerprint": "1a00a38650559308",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs025-1-shaatree.mp4",
+   "duration": 83.98,
+   "at": "2026-11-14 21:27",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794691653.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794691653.png"
+   }
   }
  },
  "fingerprints": [
@@ -15768,7 +15779,8 @@
   "9aea513d76b265df",
   "234580fcb4296578",
   "5cc8fdbd684b6623",
-  "20c0cf46ffdea18e"
+  "20c0cf46ffdea18e",
+  "1a00a38650559308"
  ],
  "last_kind": "quran"
 }
