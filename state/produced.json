@@ -14354,6 +14354,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794624224.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794624224.png"
    }
+  },
+  "noor-akhira-10-r3": {
+   "title": "سلسلة الاستعداد للآخرة (11/16): أول زمرة يدخلون الجنة على صورة…",
+   "fingerprint": "56980d5dd47cde61",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhira-3.mp4",
+   "duration": 25.03,
+   "at": "2026-11-14 03:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794627936.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794627936.png"
+   }
   }
  },
  "fingerprints": [
@@ -15588,7 +15599,8 @@
   "9b81c983f23ec080",
   "e5a10df9f888c931",
   "c268b2b7a1c67951",
-  "a4fac4aa4f02c32d"
+  "a4fac4aa4f02c32d",
+  "56980d5dd47cde61"
  ],
  "last_kind": "akhira"
 }
