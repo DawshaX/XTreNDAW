@@ -14409,6 +14409,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794642747.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794642747.png"
    }
+  },
+  "noor-akhira-15-r3": {
+   "title": "سلسلة الاستعداد للآخرة (16/16): العمل الصالح ذخيرة اللقاء: إنما…",
+   "fingerprint": "7f3a02fd64c6ad74",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhira-3.mp4",
+   "duration": 25.0,
+   "at": "2026-11-14 08:54",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794646461.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794646461.png"
+   }
   }
  },
  "fingerprints": [
@@ -15648,7 +15659,8 @@
   "c688e9dc97282bae",
   "cc5f7e136eb2fb13",
   "f0e4fb1b71c011a8",
-  "1a4584b37a811961"
+  "1a4584b37a811961",
+  "7f3a02fd64c6ad74"
  ],
  "last_kind": "akhira"
 }
