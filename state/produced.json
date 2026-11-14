@@ -14376,6 +14376,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794631649.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794631649.png"
    }
+  },
+  "noor-akhira-12-r3": {
+   "title": "سلسلة الاستعداد للآخرة (13/16): من مات فقد قامت قيامته ، فاستعد…",
+   "fingerprint": "cc5f7e136eb2fb13",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhira-3.mp4",
+   "duration": 23.43,
+   "at": "2026-11-14 05:49",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794635342.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794635342.png"
+   }
   }
  },
  "fingerprints": [
@@ -15612,7 +15623,8 @@
   "c268b2b7a1c67951",
   "a4fac4aa4f02c32d",
   "56980d5dd47cde61",
-  "c688e9dc97282bae"
+  "c688e9dc97282bae",
+  "cc5f7e136eb2fb13"
  ],
  "last_kind": "akhira"
 }
