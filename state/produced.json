@@ -14541,6 +14541,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794695518.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794695518.png"
    }
+  },
+  "noor-tafsir-s005-85-r8": {
+   "title": "تدبّر: ﴿فأثبهم ٱلله بما قالوا جنت تجرى من…﴾ | سورة المائدة ﴿85﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (22/30)",
+   "fingerprint": "8d3dd511e91e50d2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-85-hudhaify.mp4",
+   "duration": 62.47,
+   "at": "2026-11-14 23:34",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794699285.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794699285.png"
+   }
   }
  },
  "fingerprints": [
@@ -15792,7 +15803,8 @@
   "5cc8fdbd684b6623",
   "20c0cf46ffdea18e",
   "1a00a38650559308",
-  "8099db26c912ca1d"
+  "8099db26c912ca1d",
+  "8d3dd511e91e50d2"
  ],
  "last_kind": "tafsir"
 }
