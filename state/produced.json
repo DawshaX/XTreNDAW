@@ -14387,6 +14387,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794635342.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794635342.png"
    }
+  },
+  "noor-akhira-13-r3": {
+   "title": "سلسلة الاستعداد للآخرة (14/16): أكرم ما تلقى الله به: قلب سليم…",
+   "fingerprint": "f0e4fb1b71c011a8",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhira-3.mp4",
+   "duration": 25.03,
+   "at": "2026-11-14 06:50",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794639043.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794639043.png"
+   }
   }
  },
  "fingerprints": [
@@ -15624,7 +15635,8 @@
   "a4fac4aa4f02c32d",
   "56980d5dd47cde61",
   "c688e9dc97282bae",
-  "cc5f7e136eb2fb13"
+  "cc5f7e136eb2fb13",
+  "f0e4fb1b71c011a8"
  ],
  "last_kind": "akhira"
 }
