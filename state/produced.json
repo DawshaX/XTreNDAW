@@ -14442,6 +14442,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794661248.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794661248.png"
    }
+  },
+  "noor-quran-s021-85-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الأَنبِيَاءِ ﴿85–88﴾ — علي الحذيفي",
+   "fingerprint": "62a321f0848e3a94",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs021-85-hudhaify.mp4",
+   "duration": 87.62,
+   "at": "2026-11-14 14:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794665115.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794665115.png"
+   }
   }
  },
  "fingerprints": [
@@ -15684,7 +15695,8 @@
   "1a4584b37a811961",
   "7f3a02fd64c6ad74",
   "b8740bf3e537aab1",
-  "fea41941433c8581"
+  "fea41941433c8581",
+  "62a321f0848e3a94"
  ],
  "last_kind": "quran"
 }
