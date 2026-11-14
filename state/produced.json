@@ -14420,6 +14420,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794646461.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794646461.png"
    }
+  },
+  "noor-quran-s024-13-r9": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ النُّورِ ﴿13–15﴾ — أبو بكر الشاطري",
+   "fingerprint": "b8740bf3e537aab1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs024-13-shaatree.mp4",
+   "duration": 75.74,
+   "at": "2026-11-14 09:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794650239.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794650239.png"
+   }
   }
  },
  "fingerprints": [
@@ -15660,7 +15671,8 @@
   "cc5f7e136eb2fb13",
   "f0e4fb1b71c011a8",
   "1a4584b37a811961",
-  "7f3a02fd64c6ad74"
+  "7f3a02fd64c6ad74",
+  "b8740bf3e537aab1"
  ],
- "last_kind": "akhira"
+ "last_kind": "quran"
 }
