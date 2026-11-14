@@ -14530,6 +14530,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794691653.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794691653.png"
    }
+  },
+  "noor-tafsir-s005-81-r7": {
+   "title": "تدبّر: ﴿ولو كانوا يؤمنون بٱلله وٱلنبى وما…﴾ | سورة المائدة ﴿81﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (21/30)",
+   "fingerprint": "8099db26c912ca1d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-81-aymanswoaid.mp4",
+   "duration": 75.93,
+   "at": "2026-11-14 22:32",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794695518.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794695518.png"
+   }
   }
  },
  "fingerprints": [
@@ -15780,7 +15791,8 @@
   "234580fcb4296578",
   "5cc8fdbd684b6623",
   "20c0cf46ffdea18e",
-  "1a00a38650559308"
+  "1a00a38650559308",
+  "8099db26c912ca1d"
  ],
- "last_kind": "quran"
+ "last_kind": "tafsir"
 }
