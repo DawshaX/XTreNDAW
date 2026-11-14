@@ -14431,6 +14431,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794650239.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794650239.png"
    }
+  },
+  "noor-quran-s010-85-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ يُونُسَ ﴿85–86﴾ — أيمن سويد",
+   "fingerprint": "fea41941433c8581",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs010-85-aymanswoaid.mp4",
+   "duration": 66.1,
+   "at": "2026-11-14 13:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794661248.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794661248.png"
+   }
   }
  },
  "fingerprints": [
@@ -15672,7 +15683,8 @@
   "f0e4fb1b71c011a8",
   "1a4584b37a811961",
   "7f3a02fd64c6ad74",
-  "b8740bf3e537aab1"
+  "b8740bf3e537aab1",
+  "fea41941433c8581"
  ],
  "last_kind": "quran"
 }
