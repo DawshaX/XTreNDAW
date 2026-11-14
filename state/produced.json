@@ -14332,6 +14332,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794616798.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794616798.png"
    }
+  },
+  "noor-akhira-8-r3": {
+   "title": "سلسلة الاستعداد للآخرة (9/16): أول ما يقضى بين الناس يوم القيامة…",
+   "fingerprint": "c268b2b7a1c67951",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhira-3.mp4",
+   "duration": 22.87,
+   "at": "2026-11-14 01:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794620501.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794620501.png"
+   }
   }
  },
  "fingerprints": [
@@ -15564,7 +15575,8 @@
   "fce92748149a75aa",
   "ec83855c6cf52230",
   "9b81c983f23ec080",
-  "e5a10df9f888c931"
+  "e5a10df9f888c931",
+  "c268b2b7a1c67951"
  ],
- "last_kind": "tafsir"
+ "last_kind": "akhira"
 }
