@@ -14321,6 +14321,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794613026.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794613026.png"
    }
+  },
+  "noor-tafsir-s005-77-r9": {
+   "title": "تدبّر: ﴿قل يأهل ٱلكتب لا تغلوا فى دينكم…﴾ | سورة المائدة ﴿77﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (20/30)",
+   "fingerprint": "e5a10df9f888c931",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-77-shaatree.mp4",
+   "duration": 63.39,
+   "at": "2026-11-14 00:40",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794616798.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794616798.png"
+   }
   }
  },
  "fingerprints": [
@@ -15552,7 +15563,8 @@
   "3229b30d74eefd42",
   "fce92748149a75aa",
   "ec83855c6cf52230",
-  "9b81c983f23ec080"
+  "9b81c983f23ec080",
+  "e5a10df9f888c931"
  ],
  "last_kind": "tafsir"
 }
