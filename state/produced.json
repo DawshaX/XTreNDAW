@@ -14475,6 +14475,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794672634.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794672634.png"
    }
+  },
+  "noor-quran-s008-21-r8": {
+   "title": "دقيقة نور 🌙 سُورَةُ الأَنفَالِ ﴿21–24﴾ — علي الحذيفي",
+   "fingerprint": "9aea513d76b265df",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs008-21-hudhaify.mp4",
+   "duration": 88.04,
+   "at": "2026-11-14 17:14",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794676441.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794676441.png"
+   }
   }
  },
  "fingerprints": [
@@ -15720,7 +15731,8 @@
   "fea41941433c8581",
   "62a321f0848e3a94",
   "59ec3fb034fafc08",
-  "0d95dd7436f9e4a9"
+  "0d95dd7436f9e4a9",
+  "9aea513d76b265df"
  ],
  "last_kind": "quran"
 }
