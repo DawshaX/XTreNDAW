@@ -14398,6 +14398,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794639043.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794639043.png"
    }
+  },
+  "noor-akhira-14-r3": {
+   "title": "سلسلة الاستعداد للآخرة (15/16): الصراط في الدنيا يوصل لصراط الآخرة…",
+   "fingerprint": "1a4584b37a811961",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-akhira-3.mp4",
+   "duration": 25.9,
+   "at": "2026-11-14 07:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794642747.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794642747.png"
+   }
   }
  },
  "fingerprints": [
@@ -15636,7 +15647,8 @@
   "56980d5dd47cde61",
   "c688e9dc97282bae",
   "cc5f7e136eb2fb13",
-  "f0e4fb1b71c011a8"
+  "f0e4fb1b71c011a8",
+  "1a4584b37a811961"
  ],
  "last_kind": "akhira"
 }
