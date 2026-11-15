@@ -14552,6 +14552,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794699285.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794699285.png"
    }
+  },
+  "noor-tafsir-s005-93-r9": {
+   "title": "تدبّر: ﴿ليس على ٱلذين ءامنوا وعملوا…﴾ | سورة المائدة ﴿93﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (24/30)",
+   "fingerprint": "1070a99d9b982ffb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-93-shaatree.mp4",
+   "duration": 67.75,
+   "at": "2026-11-15 02:38",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794710301.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794710301.png"
+   }
   }
  },
  "fingerprints": [
@@ -15804,7 +15815,8 @@
   "20c0cf46ffdea18e",
   "1a00a38650559308",
   "8099db26c912ca1d",
-  "8d3dd511e91e50d2"
+  "8d3dd511e91e50d2",
+  "1070a99d9b982ffb"
  ],
  "last_kind": "tafsir"
 }
