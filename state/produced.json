@@ -14695,6 +14695,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794783325.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794783325.png"
    }
+  },
+  "noor-tafsir-s006-13-r7": {
+   "title": "تدبّر: ﴿۞ ولهۥ ما سكن فى ٱليل وٱلنهار وهو…﴾ | سورة الأنعام ﴿13﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (4/42)",
+   "fingerprint": "e8c7d69e2d38979a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts006-13-aymanswoaid.mp4",
+   "duration": 63.28,
+   "at": "2026-11-15 23:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794787067.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794787067.png"
+   }
   }
  },
  "fingerprints": [
@@ -15960,7 +15971,8 @@
   "8a74ae9082344ba8",
   "a0319e9b3cdcab7e",
   "41c4c58f0c7fd14e",
-  "08833b6e984625ce"
+  "08833b6e984625ce",
+  "e8c7d69e2d38979a"
  ],
  "last_kind": "tafsir"
 }
