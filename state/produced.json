@@ -14684,6 +14684,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794779548.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794779548.png"
    }
+  },
+  "noor-tafsir-s006-9-r9": {
+   "title": "تدبّر: ﴿ولو جعلنه ملكا لجعلنه رجلا…﴾ | سورة الأنعام ﴿9–10﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (3/42)",
+   "fingerprint": "08833b6e984625ce",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts006-9-shaatree.mp4",
+   "duration": 77.47,
+   "at": "2026-11-15 22:55",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794783325.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794783325.png"
+   }
   }
  },
  "fingerprints": [
@@ -15948,7 +15959,8 @@
   "bca38fc78a1172f6",
   "8a74ae9082344ba8",
   "a0319e9b3cdcab7e",
-  "41c4c58f0c7fd14e"
+  "41c4c58f0c7fd14e",
+  "08833b6e984625ce"
  ],
  "last_kind": "tafsir"
 }
