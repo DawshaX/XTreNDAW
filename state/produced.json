@@ -14673,6 +14673,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794775130.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794775130.png"
    }
+  },
+  "noor-tafsir-s006-5-r8": {
+   "title": "تدبّر: ﴿فقد كذبوا بٱلحق لما جاءهم فسوف…﴾ | سورة الأنعام ﴿5﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (2/42)",
+   "fingerprint": "41c4c58f0c7fd14e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts006-5-hudhaify.mp4",
+   "duration": 56.62,
+   "at": "2026-11-15 21:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794779548.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794779548.png"
+   }
   }
  },
  "fingerprints": [
@@ -15936,7 +15947,8 @@
   "f0f7ea25ca399ba1",
   "bca38fc78a1172f6",
   "8a74ae9082344ba8",
-  "a0319e9b3cdcab7e"
+  "a0319e9b3cdcab7e",
+  "41c4c58f0c7fd14e"
  ],
- "last_kind": "quran"
+ "last_kind": "tafsir"
 }
