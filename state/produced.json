@@ -14629,6 +14629,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794732970.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794732970.png"
    }
+  },
+  "noor-tafsir-s006-1-r7": {
+   "title": "تدبّر: ﴿بسم ٱلله ٱلرحمن ٱلرحيم ٱلحمد لله…﴾ | سورة الأنعام ﴿1﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (1/42)",
+   "fingerprint": "f0f7ea25ca399ba1",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts006-1-aymanswoaid.mp4",
+   "duration": 67.43,
+   "at": "2026-11-15 12:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794747191.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794747191.png"
+   }
   }
  },
  "fingerprints": [
@@ -15888,7 +15899,8 @@
   "71d1b609591015db",
   "fb702e2bcb9ac13a",
   "b1b217588e997796",
-  "1e873da8a5a4c3ba"
+  "1e873da8a5a4c3ba",
+  "f0f7ea25ca399ba1"
  ],
  "last_kind": "tafsir"
 }
