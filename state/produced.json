@@ -14640,6 +14640,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794747191.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794747191.png"
    }
+  },
+  "noor-quran-s005-13-r8": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ المَائـِدَةِ ﴿13–13﴾ — علي الحذيفي",
+   "fingerprint": "bca38fc78a1172f6",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs005-13-hudhaify.mp4",
+   "duration": 73.94,
+   "at": "2026-11-15 14:43",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794753778.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794753778.png"
+   }
   }
  },
  "fingerprints": [
@@ -15900,7 +15911,8 @@
   "fb702e2bcb9ac13a",
   "b1b217588e997796",
   "1e873da8a5a4c3ba",
-  "f0f7ea25ca399ba1"
+  "f0f7ea25ca399ba1",
+  "bca38fc78a1172f6"
  ],
- "last_kind": "tafsir"
+ "last_kind": "quran"
 }
