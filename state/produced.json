@@ -14618,6 +14618,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794729203.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794729203.png"
    }
+  },
+  "noor-tafsir-s005-117-r9": {
+   "title": "تدبّر: ﴿ما قلت لهم إلا ما أمرتنى بهۦ أن…﴾ | سورة المائدة ﴿117﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (30/30)",
+   "fingerprint": "1e873da8a5a4c3ba",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-117-shaatree.mp4",
+   "duration": 83.74,
+   "at": "2026-11-15 08:56",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794732970.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794732970.png"
+   }
   }
  },
  "fingerprints": [
@@ -15876,7 +15887,8 @@
   "173500589dbeeeca",
   "71d1b609591015db",
   "fb702e2bcb9ac13a",
-  "b1b217588e997796"
+  "b1b217588e997796",
+  "1e873da8a5a4c3ba"
  ],
  "last_kind": "tafsir"
 }
