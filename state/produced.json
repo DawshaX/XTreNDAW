@@ -14607,6 +14607,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794725447.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794725447.png"
    }
+  },
+  "noor-tafsir-s005-113-r8": {
+   "title": "تدبّر: ﴿قالوا نريد أن نأكل منها وتطمئن…﴾ | سورة المائدة ﴿113﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (29/30)",
+   "fingerprint": "b1b217588e997796",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-113-hudhaify.mp4",
+   "duration": 65.28,
+   "at": "2026-11-15 07:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794729203.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794729203.png"
+   }
   }
  },
  "fingerprints": [
@@ -15864,7 +15875,8 @@
   "f4fe4d3ca85105f2",
   "173500589dbeeeca",
   "71d1b609591015db",
-  "fb702e2bcb9ac13a"
+  "fb702e2bcb9ac13a",
+  "b1b217588e997796"
  ],
  "last_kind": "tafsir"
 }
