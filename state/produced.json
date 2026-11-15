@@ -14574,6 +14574,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794714148.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794714148.png"
    }
+  },
+  "noor-tafsir-s005-101-r8": {
+   "title": "تدبّر: ﴿يأيها ٱلذين ءامنوا لا تس لوا عن…﴾ | سورة المائدة ﴿101﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (26/30)",
+   "fingerprint": "173500589dbeeeca",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-101-hudhaify.mp4",
+   "duration": 69.21,
+   "at": "2026-11-15 04:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794717940.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794717940.png"
+   }
   }
  },
  "fingerprints": [
@@ -15828,7 +15839,8 @@
   "8099db26c912ca1d",
   "8d3dd511e91e50d2",
   "1070a99d9b982ffb",
-  "f4fe4d3ca85105f2"
+  "f4fe4d3ca85105f2",
+  "173500589dbeeeca"
  ],
  "last_kind": "tafsir"
 }
