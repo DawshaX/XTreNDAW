@@ -14662,6 +14662,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794757520.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794757520.png"
    }
+  },
+  "noor-quran-s043-57-r7": {
+   "title": "دقيقة نور 🌙 سُورَةُ الزُّخۡرُفِ ﴿57–59﴾ — أيمن سويد",
+   "fingerprint": "a0319e9b3cdcab7e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs043-57-aymanswoaid.mp4",
+   "duration": 82.84,
+   "at": "2026-11-15 20:38",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794775130.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794775130.png"
+   }
   }
  },
  "fingerprints": [
@@ -15924,7 +15935,8 @@
   "1e873da8a5a4c3ba",
   "f0f7ea25ca399ba1",
   "bca38fc78a1172f6",
-  "8a74ae9082344ba8"
+  "8a74ae9082344ba8",
+  "a0319e9b3cdcab7e"
  ],
  "last_kind": "quran"
 }
