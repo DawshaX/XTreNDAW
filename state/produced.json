@@ -14596,6 +14596,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794721691.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794721691.png"
    }
+  },
+  "noor-tafsir-s005-109-r7": {
+   "title": "تدبّر: ﴿۞ يوم يجمع ٱلله ٱلرسل فيقول ماذا…﴾ | سورة المائدة ﴿109﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (28/30)",
+   "fingerprint": "fb702e2bcb9ac13a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-109-aymanswoaid.mp4",
+   "duration": 72.14,
+   "at": "2026-11-15 06:50",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794725447.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794725447.png"
+   }
   }
  },
  "fingerprints": [
@@ -15852,7 +15863,8 @@
   "1070a99d9b982ffb",
   "f4fe4d3ca85105f2",
   "173500589dbeeeca",
-  "71d1b609591015db"
+  "71d1b609591015db",
+  "fb702e2bcb9ac13a"
  ],
  "last_kind": "tafsir"
 }
