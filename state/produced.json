@@ -14585,6 +14585,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794717940.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794717940.png"
    }
+  },
+  "noor-tafsir-s005-105-r9": {
+   "title": "تدبّر: ﴿يأيها ٱلذين ءامنوا عليكم أنفسكم…﴾ | سورة المائدة ﴿105﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (27/30)",
+   "fingerprint": "71d1b609591015db",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts005-105-shaatree.mp4",
+   "duration": 54.7,
+   "at": "2026-11-15 05:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794721691.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794721691.png"
+   }
   }
  },
  "fingerprints": [
@@ -15840,7 +15851,8 @@
   "8d3dd511e91e50d2",
   "1070a99d9b982ffb",
   "f4fe4d3ca85105f2",
-  "173500589dbeeeca"
+  "173500589dbeeeca",
+  "71d1b609591015db"
  ],
  "last_kind": "tafsir"
 }
