@@ -14750,6 +14750,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794820715.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794820715.png"
    }
+  },
+  "noor-quran-s084-25-r9": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الانشِقَاقِ ﴿25–25﴾ — أبو بكر الشاطري",
+   "fingerprint": "b769ed939c895d76",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs084-25-shaatree.mp4",
+   "duration": 42.11,
+   "at": "2026-11-16 14:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794840491.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794840491.png"
+   }
   }
  },
  "fingerprints": [
@@ -16020,7 +16031,8 @@
   "30a1925398961df5",
   "456929152a493081",
   "a1a990f4f8c23099",
-  "62c1beefa217464f"
+  "62c1beefa217464f",
+  "b769ed939c895d76"
  ],
  "last_kind": "quran"
 }
