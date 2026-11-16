@@ -14739,6 +14739,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794816988.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794816988.png"
    }
+  },
+  "noor-quran-s090-13-r8": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ البَلَدِ ﴿13–16﴾ — علي الحذيفي",
+   "fingerprint": "62c1beefa217464f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs090-13-hudhaify.mp4",
+   "duration": 33.6,
+   "at": "2026-11-16 09:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794820715.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794820715.png"
+   }
   }
  },
  "fingerprints": [
@@ -16008,7 +16019,8 @@
   "e8c7d69e2d38979a",
   "30a1925398961df5",
   "456929152a493081",
-  "a1a990f4f8c23099"
+  "a1a990f4f8c23099",
+  "62c1beefa217464f"
  ],
  "last_kind": "quran"
 }
