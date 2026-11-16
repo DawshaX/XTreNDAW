@@ -14728,6 +14728,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794813177.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794813177.png"
    }
+  },
+  "noor-quran-s049-5-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الحُجُرَاتِ ﴿5–6﴾ — أيمن سويد",
+   "fingerprint": "a1a990f4f8c23099",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs049-5-aymanswoaid.mp4",
+   "duration": 86.66,
+   "at": "2026-11-16 08:16",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794816988.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794816988.png"
+   }
   }
  },
  "fingerprints": [
@@ -15996,7 +16007,8 @@
   "08833b6e984625ce",
   "e8c7d69e2d38979a",
   "30a1925398961df5",
-  "456929152a493081"
+  "456929152a493081",
+  "a1a990f4f8c23099"
  ],
- "last_kind": "tafsir"
+ "last_kind": "quran"
 }
