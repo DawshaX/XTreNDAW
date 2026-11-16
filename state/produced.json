@@ -14717,6 +14717,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794790825.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794790825.png"
    }
+  },
+  "noor-tafsir-s006-21-r9": {
+   "title": "تدبّر: ﴿ومن أظلم ممن ٱفترى على ٱلله كذبا…﴾ | سورة الأنعام ﴿21﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (6/42)",
+   "fingerprint": "456929152a493081",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts006-21-shaatree.mp4",
+   "duration": 55.14,
+   "at": "2026-11-16 07:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794813177.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794813177.png"
+   }
   }
  },
  "fingerprints": [
@@ -15984,7 +15995,8 @@
   "41c4c58f0c7fd14e",
   "08833b6e984625ce",
   "e8c7d69e2d38979a",
-  "30a1925398961df5"
+  "30a1925398961df5",
+  "456929152a493081"
  ],
  "last_kind": "tafsir"
 }
