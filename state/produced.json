@@ -14838,6 +14838,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794904944.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794904944.png"
    }
+  },
+  "noor-quran-s011-81-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ هُودٍ ﴿81–81﴾ — علي الحذيفي",
+   "fingerprint": "d89a56ecb29dc82f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs011-81-hudhaify.mp4",
+   "duration": 71.43,
+   "at": "2026-11-17 11:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794916779.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794916779.png"
+   }
   }
  },
  "fingerprints": [
@@ -16116,7 +16127,8 @@
   "149342d58b98dc89",
   "9ee88a12530d1660",
   "57f98dfbb3fd4d21",
-  "b6f7eab4a5524b12"
+  "b6f7eab4a5524b12",
+  "d89a56ecb29dc82f"
  ],
  "last_kind": "quran"
 }
