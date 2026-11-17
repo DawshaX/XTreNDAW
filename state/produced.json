@@ -14816,6 +14816,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794891897.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794891897.png"
    }
+  },
+  "noor-quran-s021-65-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الأَنبِيَاءِ ﴿65–68﴾ — أبو بكر الشاطري",
+   "fingerprint": "57f98dfbb3fd4d21",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs021-65-shaatree.mp4",
+   "duration": 66.93,
+   "at": "2026-11-17 06:07",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794895673.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794895673.png"
+   }
   }
  },
  "fingerprints": [
@@ -16092,7 +16103,8 @@
   "8ef2df6b898942f9",
   "5f8eaa8d529f4f26",
   "149342d58b98dc89",
-  "9ee88a12530d1660"
+  "9ee88a12530d1660",
+  "57f98dfbb3fd4d21"
  ],
  "last_kind": "quran"
 }
