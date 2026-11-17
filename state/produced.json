@@ -14783,6 +14783,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794865390.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794865390.png"
    }
+  },
+  "noor-quran-s031-21-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ لُقۡمَانَ ﴿21–23﴾ — أبو بكر الشاطري",
+   "fingerprint": "5f8eaa8d529f4f26",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs031-21-shaatree.mp4",
+   "duration": 85.8,
+   "at": "2026-11-17 02:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794884383.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794884383.png"
+   }
   }
  },
  "fingerprints": [
@@ -16056,7 +16067,8 @@
   "62c1beefa217464f",
   "b769ed939c895d76",
   "6452a39b4d271ddc",
-  "8ef2df6b898942f9"
+  "8ef2df6b898942f9",
+  "5f8eaa8d529f4f26"
  ],
  "last_kind": "quran"
 }
