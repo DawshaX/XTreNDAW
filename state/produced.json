@@ -14849,6 +14849,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794916779.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794916779.png"
    }
+  },
+  "noor-quran-s058-9-r9": {
+   "title": "دقيقة نور 🌙 سُورَةُ المُجَادلَةِ ﴿9–10﴾ — أبو بكر الشاطري",
+   "fingerprint": "e39d00f415568ec7",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs058-9-shaatree.mp4",
+   "duration": 80.64,
+   "at": "2026-11-17 13:42",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794922960.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794922960.png"
+   }
   }
  },
  "fingerprints": [
@@ -16128,7 +16139,8 @@
   "9ee88a12530d1660",
   "57f98dfbb3fd4d21",
   "b6f7eab4a5524b12",
-  "d89a56ecb29dc82f"
+  "d89a56ecb29dc82f",
+  "e39d00f415568ec7"
  ],
  "last_kind": "quran"
 }
