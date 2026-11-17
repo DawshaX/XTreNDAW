@@ -14915,6 +14915,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794949704.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794949704.png"
    }
+  },
+  "noor-quran-s006-21-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الأَنۡعَامِ ﴿21–24﴾ — أبو بكر الشاطري",
+   "fingerprint": "1babc6b5227654f9",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs006-21-shaatree.mp4",
+   "duration": 87.99,
+   "at": "2026-11-17 22:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794954359.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794954359.png"
+   }
   }
  },
  "fingerprints": [
@@ -16200,7 +16211,8 @@
   "7d58bd7a2680ae44",
   "a36248c0dbf13a16",
   "275eea6d69deb0cf",
-  "3f6878399651352c"
+  "3f6878399651352c",
+  "1babc6b5227654f9"
  ],
  "last_kind": "quran"
 }
