@@ -14937,6 +14937,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794966728.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794966728.png"
    }
+  },
+  "noor-qissa-abrar-r8": {
+   "title": "سُورَةُ الإِنسَانِ ﴿8–12﴾ — علي الحذيفي",
+   "fingerprint": "ab3913be2e4e90bb",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-abrar-hudhaify.mp4",
+   "duration": 73.41,
+   "at": "2026-11-18 03:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794971067.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794971067.png"
+   }
   }
  },
  "fingerprints": [
@@ -16224,7 +16235,8 @@
   "275eea6d69deb0cf",
   "3f6878399651352c",
   "1babc6b5227654f9",
-  "6bc874676d0c29a0"
+  "6bc874676d0c29a0",
+  "ab3913be2e4e90bb"
  ],
  "last_kind": "qissa"
 }
