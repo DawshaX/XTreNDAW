@@ -14959,6 +14959,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794978337.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794978337.png"
    }
+  },
+  "noor-qissa-musa-staff-r7": {
+   "title": "سُورَةُ النَّمۡلِ ﴿10–11﴾ — أيمن سويد",
+   "fingerprint": "c2125a29813f2e62",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-musa-staff-aymanswoaid.mp4",
+   "duration": 80.49,
+   "at": "2026-11-18 08:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794989151.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794989151.png"
+   }
   }
  },
  "fingerprints": [
@@ -16248,7 +16259,8 @@
   "1babc6b5227654f9",
   "6bc874676d0c29a0",
   "ab3913be2e4e90bb",
-  "a747ae737a4e9cda"
+  "a747ae737a4e9cda",
+  "c2125a29813f2e62"
  ],
  "last_kind": "qissa"
 }
