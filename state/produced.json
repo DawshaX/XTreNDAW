@@ -14948,6 +14948,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794971067.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794971067.png"
    }
+  },
+  "noor-qissa-qarun-r9": {
+   "title": "سُورَةُ القَصَصِ ﴿76–76﴾ — أبو بكر الشاطري",
+   "fingerprint": "a747ae737a4e9cda",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qarun-shaatree.mp4",
+   "duration": 59.97,
+   "at": "2026-11-18 05:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794978337.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794978337.png"
+   }
   }
  },
  "fingerprints": [
@@ -16236,7 +16247,8 @@
   "3f6878399651352c",
   "1babc6b5227654f9",
   "6bc874676d0c29a0",
-  "ab3913be2e4e90bb"
+  "ab3913be2e4e90bb",
+  "a747ae737a4e9cda"
  ],
  "last_kind": "qissa"
 }
