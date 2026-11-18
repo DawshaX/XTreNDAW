@@ -15047,6 +15047,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795029356.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795029356.png"
    }
+  },
+  "noor-quran-s017-109-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الإِسۡرَاءِ ﴿109–111﴾ — أبو بكر الشاطري",
+   "fingerprint": "3e1b600db512873a",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs017-109-shaatree.mp4",
+   "duration": 77.09,
+   "at": "2026-11-18 20:18",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795033124.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795033124.png"
+   }
   }
  },
  "fingerprints": [
@@ -16344,7 +16355,8 @@
   "bc1bd73efe45ce4d",
   "a023d31780e9d80b",
   "976bdd131c62fc69",
-  "8c87f7819c24aa1e"
+  "8c87f7819c24aa1e",
+  "3e1b600db512873a"
  ],
  "last_kind": "quran"
 }
