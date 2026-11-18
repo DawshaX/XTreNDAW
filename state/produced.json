@@ -14981,6 +14981,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795006775.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795006775.png"
    }
+  },
+  "noor-quran-s085-1-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ البُرُوجِ ﴿1–4﴾ — أبو بكر الشاطري",
+   "fingerprint": "044ee38bca49f89e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs085-1-shaatree.mp4",
+   "duration": 41.86,
+   "at": "2026-11-18 14:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795010525.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795010525.png"
+   }
   }
  },
  "fingerprints": [
@@ -16272,7 +16283,8 @@
   "ab3913be2e4e90bb",
   "a747ae737a4e9cda",
   "c2125a29813f2e62",
-  "9df1845871bcf68c"
+  "9df1845871bcf68c",
+  "044ee38bca49f89e"
  ],
- "last_kind": "qissa"
+ "last_kind": "quran"
 }
