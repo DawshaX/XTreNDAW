@@ -14970,6 +14970,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794989151.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794989151.png"
    }
+  },
+  "noor-qissa-maryam-mihrab-r8": {
+   "title": "سُورَةُ آلِ عِمۡرَانَ ﴿37–37﴾ — علي الحذيفي",
+   "fingerprint": "9df1845871bcf68c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-maryam-mihrab-hudhaify.mp4",
+   "duration": 66.83,
+   "at": "2026-11-18 12:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795006775.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795006775.png"
+   }
   }
  },
  "fingerprints": [
@@ -16260,7 +16271,8 @@
   "6bc874676d0c29a0",
   "ab3913be2e4e90bb",
   "a747ae737a4e9cda",
-  "c2125a29813f2e62"
+  "c2125a29813f2e62",
+  "9df1845871bcf68c"
  ],
  "last_kind": "qissa"
 }
