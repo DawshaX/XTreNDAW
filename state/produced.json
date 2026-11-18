@@ -15003,6 +15003,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795014275.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795014275.png"
    }
+  },
+  "noor-quran-s077-17-r8": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ المُرۡسَلَاتِ ﴿17–20﴾ — علي الحذيفي",
+   "fingerprint": "bc1bd73efe45ce4d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs077-17-hudhaify.mp4",
+   "duration": 53.84,
+   "at": "2026-11-18 16:07",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795018017.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795018017.png"
+   }
   }
  },
  "fingerprints": [
@@ -16296,7 +16307,8 @@
   "c2125a29813f2e62",
   "9df1845871bcf68c",
   "044ee38bca49f89e",
-  "06d5727e2ef9bacf"
+  "06d5727e2ef9bacf",
+  "bc1bd73efe45ce4d"
  ],
  "last_kind": "quran"
 }
