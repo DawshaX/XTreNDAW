@@ -14926,6 +14926,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794954359.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794954359.png"
    }
+  },
+  "noor-qissa-sabt-r7": {
+   "title": "سُورَةُ الأَعۡرَافِ ﴿163–163﴾ — أيمن سويد",
+   "fingerprint": "6bc874676d0c29a0",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-sabt-aymanswoaid.mp4",
+   "duration": 73.74,
+   "at": "2026-11-18 01:52",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794966728.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1794966728.png"
+   }
   }
  },
  "fingerprints": [
@@ -16212,7 +16223,8 @@
   "a36248c0dbf13a16",
   "275eea6d69deb0cf",
   "3f6878399651352c",
-  "1babc6b5227654f9"
+  "1babc6b5227654f9",
+  "6bc874676d0c29a0"
  ],
- "last_kind": "quran"
+ "last_kind": "qissa"
 }
