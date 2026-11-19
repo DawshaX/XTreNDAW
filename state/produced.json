@@ -15245,6 +15245,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795111876.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795111876.png"
    }
+  },
+  "noor-quran-s020-33-r9": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ طه ﴿33–36﴾ — أبو بكر الشاطري",
+   "fingerprint": "2641623a52a85700",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs020-33-shaatree.mp4",
+   "duration": 44.27,
+   "at": "2026-11-19 19:13",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795115616.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795115616.png"
+   }
   }
  },
  "fingerprints": [
@@ -16554,7 +16565,8 @@
   "d6e9374f8eecb928",
   "6c7a82941165661e",
   "d095c2df91f8a4e7",
-  "10b88afc7fd31608"
+  "10b88afc7fd31608",
+  "2641623a52a85700"
  ],
  "last_kind": "quran"
 }
