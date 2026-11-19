@@ -15201,6 +15201,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795096762.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795096762.png"
    }
+  },
+  "noor-quran-s026-77-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الشُّعَرَاءِ ﴿77–80﴾ — علي الحذيفي",
+   "fingerprint": "d6e9374f8eecb928",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs026-77-hudhaify.mp4",
+   "duration": 56.16,
+   "at": "2026-11-19 15:01",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795100506.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795100506.png"
+   }
   }
  },
  "fingerprints": [
@@ -16506,7 +16517,8 @@
   "247b05f641f5c391",
   "f5dafc10e4b2b409",
   "799cbca0cf248fec",
-  "a30d9d4d91660543"
+  "a30d9d4d91660543",
+  "d6e9374f8eecb928"
  ],
  "last_kind": "quran"
 }
