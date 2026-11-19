@@ -15212,6 +15212,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795100506.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795100506.png"
    }
+  },
+  "noor-quran-s002-57-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ البَقَرَةِ ﴿57–58﴾ — أبو بكر الشاطري",
+   "fingerprint": "6c7a82941165661e",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs002-57-shaatree.mp4",
+   "duration": 72.07,
+   "at": "2026-11-19 16:04",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795104275.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795104275.png"
+   }
   }
  },
  "fingerprints": [
@@ -16518,7 +16529,8 @@
   "f5dafc10e4b2b409",
   "799cbca0cf248fec",
   "a30d9d4d91660543",
-  "d6e9374f8eecb928"
+  "d6e9374f8eecb928",
+  "6c7a82941165661e"
  ],
  "last_kind": "quran"
 }
