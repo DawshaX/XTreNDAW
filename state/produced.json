@@ -15157,6 +15157,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795081688.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795081688.png"
    }
+  },
+  "noor-tafsir-s006-41-r7": {
+   "title": "تدبّر: ﴿بل إياه تدعون فيكشف ما تدعون إليه…﴾ | سورة الأنعام ﴿41﴾ · تفسير ميسّر بصوت أيمن سويد | سلسلة التدبُّر (11/42)",
+   "fingerprint": "247b05f641f5c391",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts006-41-aymanswoaid.mp4",
+   "duration": 66.9,
+   "at": "2026-11-19 10:50",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795085429.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795085429.png"
+   }
   }
  },
  "fingerprints": [
@@ -16458,7 +16469,8 @@
   "3e1b600db512873a",
   "952bcb9e2f09a02d",
   "a55051c56e7b1021",
-  "c3677320b119e58f"
+  "c3677320b119e58f",
+  "247b05f641f5c391"
  ],
  "last_kind": "tafsir"
 }
