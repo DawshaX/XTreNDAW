@@ -15190,6 +15190,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795092974.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795092974.png"
    }
+  },
+  "noor-quran-s072-25-r7": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الجِنِّ ﴿25–27﴾ — أيمن سويد",
+   "fingerprint": "a30d9d4d91660543",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs072-25-aymanswoaid.mp4",
+   "duration": 78.2,
+   "at": "2026-11-19 13:59",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795096762.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795096762.png"
+   }
   }
  },
  "fingerprints": [
@@ -16494,7 +16505,8 @@
   "c3677320b119e58f",
   "247b05f641f5c391",
   "f5dafc10e4b2b409",
-  "799cbca0cf248fec"
+  "799cbca0cf248fec",
+  "a30d9d4d91660543"
  ],
  "last_kind": "quran"
 }
