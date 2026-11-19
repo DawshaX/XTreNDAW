@@ -15135,6 +15135,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795074183.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795074183.png"
    }
+  },
+  "noor-tafsir-s006-33-r8": {
+   "title": "تدبّر: ﴿قد نعلم إنهۥ ليحزنك ٱلذى يقولون…﴾ | سورة الأنعام ﴿33﴾ · تفسير ميسّر بصوت علي الحذيفي | سلسلة التدبُّر (9/42)",
+   "fingerprint": "a55051c56e7b1021",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts006-33-hudhaify.mp4",
+   "duration": 64.99,
+   "at": "2026-11-19 08:45",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795077936.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795077936.png"
+   }
   }
  },
  "fingerprints": [
@@ -16434,7 +16445,8 @@
   "976bdd131c62fc69",
   "8c87f7819c24aa1e",
   "3e1b600db512873a",
-  "952bcb9e2f09a02d"
+  "952bcb9e2f09a02d",
+  "a55051c56e7b1021"
  ],
  "last_kind": "tafsir"
 }
