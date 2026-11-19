@@ -15146,6 +15146,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795077936.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795077936.png"
    }
+  },
+  "noor-tafsir-s006-37-r9": {
+   "title": "تدبّر: ﴿وقالوا لولا نزل عليه ءاية من ربهۦ…﴾ | سورة الأنعام ﴿37﴾ · تفسير ميسّر بصوت أبو بكر الشاطري | سلسلة التدبُّر (10/42)",
+   "fingerprint": "c3677320b119e58f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-ts006-37-shaatree.mp4",
+   "duration": 61.55,
+   "at": "2026-11-19 09:48",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795081688.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795081688.png"
+   }
   }
  },
  "fingerprints": [
@@ -16446,7 +16457,8 @@
   "8c87f7819c24aa1e",
   "3e1b600db512873a",
   "952bcb9e2f09a02d",
-  "a55051c56e7b1021"
+  "a55051c56e7b1021",
+  "c3677320b119e58f"
  ],
  "last_kind": "tafsir"
 }
