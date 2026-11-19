@@ -15168,6 +15168,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795085429.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795085429.png"
    }
+  },
+  "noor-quran-s051-29-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الذَّارِيَاتِ ﴿29–32﴾ — علي الحذيفي",
+   "fingerprint": "f5dafc10e4b2b409",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs051-29-hudhaify.mp4",
+   "duration": 69.29,
+   "at": "2026-11-19 11:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795089220.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795089220.png"
+   }
   }
  },
  "fingerprints": [
@@ -16470,7 +16481,8 @@
   "952bcb9e2f09a02d",
   "a55051c56e7b1021",
   "c3677320b119e58f",
-  "247b05f641f5c391"
+  "247b05f641f5c391",
+  "f5dafc10e4b2b409"
  ],
- "last_kind": "tafsir"
+ "last_kind": "quran"
 }
