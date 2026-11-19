@@ -15278,6 +15278,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795123198.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795123198.png"
    }
+  },
+  "noor-quran-s092-5-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ اللَّيۡلِ ﴿5–8﴾ — أبو بكر الشاطري",
+   "fingerprint": "615e53ca1326d570",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs092-5-shaatree.mp4",
+   "duration": 43.41,
+   "at": "2026-11-19 22:22",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795126934.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795126934.png"
+   }
   }
  },
  "fingerprints": [
@@ -16590,7 +16601,8 @@
   "10b88afc7fd31608",
   "2641623a52a85700",
   "786e3b6193b40b78",
-  "924ce5878669ccd6"
+  "924ce5878669ccd6",
+  "615e53ca1326d570"
  ],
  "last_kind": "quran"
 }
