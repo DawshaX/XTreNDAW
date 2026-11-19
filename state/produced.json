@@ -15179,6 +15179,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795089220.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795089220.png"
    }
+  },
+  "noor-quran-s013-5-r9": {
+   "title": "دقيقة نور 🌙 سُورَةُ الرَّعۡدِ ﴿5–6﴾ — أبو بكر الشاطري",
+   "fingerprint": "799cbca0cf248fec",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs013-5-shaatree.mp4",
+   "duration": 85.24,
+   "at": "2026-11-19 12:56",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795092974.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795092974.png"
+   }
   }
  },
  "fingerprints": [
@@ -16482,7 +16493,8 @@
   "a55051c56e7b1021",
   "c3677320b119e58f",
   "247b05f641f5c391",
-  "f5dafc10e4b2b409"
+  "f5dafc10e4b2b409",
+  "799cbca0cf248fec"
  ],
  "last_kind": "quran"
 }
