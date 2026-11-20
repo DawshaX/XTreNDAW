@@ -15322,6 +15322,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795154016.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795154016.png"
    }
+  },
+  "noor-quran-s044-33-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الدُّخَانِ ﴿33–36﴾ — أيمن سويد",
+   "fingerprint": "cb6dd315e8cbce4f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs044-33-aymanswoaid.mp4",
+   "duration": 71.85,
+   "at": "2026-11-20 06:56",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795157813.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795157813.png"
+   }
   }
  },
  "fingerprints": [
@@ -16638,7 +16649,8 @@
   "615e53ca1326d570",
   "c2f0222f7da64106",
   "168c20876be2b67c",
-  "b47c37e01131d39d"
+  "b47c37e01131d39d",
+  "cb6dd315e8cbce4f"
  ],
  "last_kind": "quran"
 }
