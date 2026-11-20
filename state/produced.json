@@ -15476,6 +15476,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795208559.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795208559.png"
    }
+  },
+  "noor-quran-s047-17-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ مُحَمَّدٍ ﴿17–19﴾ — أبو بكر الشاطري",
+   "fingerprint": "e83ddd2911d38109",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs047-17-shaatree.mp4",
+   "duration": 67.61,
+   "at": "2026-11-20 22:06",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795212411.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795212411.png"
+   }
   }
  },
  "fingerprints": [
@@ -16806,7 +16817,8 @@
   "d076fa1014d17bb4",
   "0f2cf08771c5032c",
   "84b4e2c2830346ac",
-  "c1309beefef69c20"
+  "c1309beefef69c20",
+  "e83ddd2911d38109"
  ],
  "last_kind": "quran"
 }
