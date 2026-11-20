@@ -15465,6 +15465,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795204833.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795204833.png"
    }
+  },
+  "noor-quran-s085-17-r8": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ البُرُوجِ ﴿17–20﴾ — علي الحذيفي",
+   "fingerprint": "c1309beefef69c20",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs085-17-hudhaify.mp4",
+   "duration": 52.86,
+   "at": "2026-11-20 21:02",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795208559.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795208559.png"
+   }
   }
  },
  "fingerprints": [
@@ -16794,7 +16805,8 @@
   "516ae7b7bcb85456",
   "d076fa1014d17bb4",
   "0f2cf08771c5032c",
-  "84b4e2c2830346ac"
+  "84b4e2c2830346ac",
+  "c1309beefef69c20"
  ],
  "last_kind": "quran"
 }
