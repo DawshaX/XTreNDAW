@@ -15333,6 +15333,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795157813.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795157813.png"
    }
+  },
+  "noor-quran-s029-17-r8": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ العَنكَبُوتِ ﴿17–18﴾ — علي الحذيفي",
+   "fingerprint": "b5ed1e24937fb22f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs029-17-hudhaify.mp4",
+   "duration": 80.84,
+   "at": "2026-11-20 08:00",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795161627.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795161627.png"
+   }
   }
  },
  "fingerprints": [
@@ -16650,7 +16661,8 @@
   "c2f0222f7da64106",
   "168c20876be2b67c",
   "b47c37e01131d39d",
-  "cb6dd315e8cbce4f"
+  "cb6dd315e8cbce4f",
+  "b5ed1e24937fb22f"
  ],
  "last_kind": "quran"
 }
