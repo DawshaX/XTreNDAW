@@ -15377,6 +15377,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795172887.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795172887.png"
    }
+  },
+  "noor-quran-s009-33-r9": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ التَّوۡبَةِ ﴿33–34﴾ — أبو بكر الشاطري",
+   "fingerprint": "6affbddba021008b",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs009-33-shaatree.mp4",
+   "duration": 86.17,
+   "at": "2026-11-20 12:11",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795176705.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795176705.png"
+   }
   }
  },
  "fingerprints": [
@@ -16698,7 +16709,8 @@
   "b5ed1e24937fb22f",
   "014692e8df794272",
   "e98b5dc1e0c9ef6d",
-  "df8463038abd3ac2"
+  "df8463038abd3ac2",
+  "6affbddba021008b"
  ],
  "last_kind": "quran"
 }
