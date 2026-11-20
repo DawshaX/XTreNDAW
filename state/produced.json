@@ -15355,6 +15355,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795165386.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795165386.png"
    }
+  },
+  "noor-quran-s089-17-r7": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الفَجۡرِ ﴿17–20﴾ — أيمن سويد",
+   "fingerprint": "e98b5dc1e0c9ef6d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs089-17-aymanswoaid.mp4",
+   "duration": 65.54,
+   "at": "2026-11-20 10:05",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795169152.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795169152.png"
+   }
   }
  },
  "fingerprints": [
@@ -16674,7 +16685,8 @@
   "b47c37e01131d39d",
   "cb6dd315e8cbce4f",
   "b5ed1e24937fb22f",
-  "014692e8df794272"
+  "014692e8df794272",
+  "e98b5dc1e0c9ef6d"
  ],
  "last_kind": "quran"
 }
