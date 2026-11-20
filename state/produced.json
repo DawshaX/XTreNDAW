@@ -15366,6 +15366,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795169152.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795169152.png"
    }
+  },
+  "noor-quran-s044-29-r8": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ الدُّخَانِ ﴿29–32﴾ — علي الحذيفي",
+   "fingerprint": "df8463038abd3ac2",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs044-29-hudhaify.mp4",
+   "duration": 62.79,
+   "at": "2026-11-20 11:08",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795172887.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795172887.png"
+   }
   }
  },
  "fingerprints": [
@@ -16686,7 +16697,8 @@
   "cb6dd315e8cbce4f",
   "b5ed1e24937fb22f",
   "014692e8df794272",
-  "e98b5dc1e0c9ef6d"
+  "e98b5dc1e0c9ef6d",
+  "df8463038abd3ac2"
  ],
  "last_kind": "quran"
 }
