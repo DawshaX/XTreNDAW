@@ -15311,6 +15311,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795148387.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795148387.png"
    }
+  },
+  "noor-quran-s016-65-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ النَّحۡلِ ﴿65–67﴾ — أبو بكر الشاطري",
+   "fingerprint": "b47c37e01131d39d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs016-65-shaatree.mp4",
+   "duration": 84.47,
+   "at": "2026-11-20 05:53",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795154016.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795154016.png"
+   }
   }
  },
  "fingerprints": [
@@ -16626,7 +16637,8 @@
   "924ce5878669ccd6",
   "615e53ca1326d570",
   "c2f0222f7da64106",
-  "168c20876be2b67c"
+  "168c20876be2b67c",
+  "b47c37e01131d39d"
  ],
  "last_kind": "quran"
 }
