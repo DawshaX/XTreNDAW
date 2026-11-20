@@ -15443,6 +15443,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795197302.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795197302.png"
    }
+  },
+  "noor-quran-s056-93-r9": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الوَاقِعَةِ ﴿93–96﴾ — أبو بكر الشاطري",
+   "fingerprint": "0f2cf08771c5032c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs056-93-shaatree.mp4",
+   "duration": 42.3,
+   "at": "2026-11-20 18:57",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795201052.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795201052.png"
+   }
   }
  },
  "fingerprints": [
@@ -16770,7 +16781,8 @@
   "5b1d8cc7c464f6c7",
   "3a875c09f90da9b8",
   "516ae7b7bcb85456",
-  "d076fa1014d17bb4"
+  "d076fa1014d17bb4",
+  "0f2cf08771c5032c"
  ],
  "last_kind": "quran"
 }
