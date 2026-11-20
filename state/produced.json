@@ -15300,6 +15300,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795130713.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795130713.png"
    }
+  },
+  "noor-quran-s057-25-r8": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الحَدِيدِ ﴿25–25﴾ — علي الحذيفي",
+   "fingerprint": "168c20876be2b67c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs057-25-hudhaify.mp4",
+   "duration": 71.86,
+   "at": "2026-11-20 04:19",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795148387.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795148387.png"
+   }
   }
  },
  "fingerprints": [
@@ -16614,7 +16625,8 @@
   "786e3b6193b40b78",
   "924ce5878669ccd6",
   "615e53ca1326d570",
-  "c2f0222f7da64106"
+  "c2f0222f7da64106",
+  "168c20876be2b67c"
  ],
  "last_kind": "quran"
 }
