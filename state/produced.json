@@ -15388,6 +15388,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795176705.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795176705.png"
    }
+  },
+  "noor-quran-s060-9-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ المُمۡتَحنَةِ ﴿9–9﴾ — أيمن سويد",
+   "fingerprint": "8e16ddb40b716e22",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs060-9-aymanswoaid.mp4",
+   "duration": 74.97,
+   "at": "2026-11-20 13:15",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795180502.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795180502.png"
+   }
   }
  },
  "fingerprints": [
@@ -16710,7 +16721,8 @@
   "014692e8df794272",
   "e98b5dc1e0c9ef6d",
   "df8463038abd3ac2",
-  "6affbddba021008b"
+  "6affbddba021008b",
+  "8e16ddb40b716e22"
  ],
  "last_kind": "quran"
 }
