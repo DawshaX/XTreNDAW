@@ -15608,6 +15608,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795253897.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795253897.png"
    }
+  },
+  "noor-quran-s004-97-r9": {
+   "title": "هديّة لقلبك اليوم 🤍 سُورَةُ النِّسَاءِ ﴿97–98﴾ — أبو بكر الشاطري",
+   "fingerprint": "c6871d639f28659d",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs004-97-shaatree.mp4",
+   "duration": 82.48,
+   "at": "2026-11-21 10:41",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795257679.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795257679.png"
+   }
   }
  },
  "fingerprints": [
@@ -16950,7 +16961,8 @@
   "a3bcb6df6dde1255",
   "dcdc07d9ee776e26",
   "c61cfd7ae351b80c",
-  "2fe337443298ce95"
+  "2fe337443298ce95",
+  "c6871d639f28659d"
  ],
  "last_kind": "quran"
 }
