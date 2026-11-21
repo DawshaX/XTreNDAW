@@ -15553,6 +15553,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795235213.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795235213.png"
    }
+  },
+  "noor-quran-s026-197-r7": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الشُّعَرَاءِ ﴿197–200﴾ — أيمن سويد",
+   "fingerprint": "b45f0f0159b84bd3",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs026-197-aymanswoaid.mp4",
+   "duration": 66.8,
+   "at": "2026-11-21 05:29",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795238975.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795238975.png"
+   }
   }
  },
  "fingerprints": [
@@ -16890,7 +16901,8 @@
   "71c103ca187ac454",
   "47dd19e2df15d736",
   "d5ee11de37224977",
-  "ed798cf2c538934f"
+  "ed798cf2c538934f",
+  "b45f0f0159b84bd3"
  ],
  "last_kind": "quran"
 }
