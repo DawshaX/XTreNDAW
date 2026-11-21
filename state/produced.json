@@ -15575,6 +15575,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795242686.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795242686.png"
    }
+  },
+  "noor-quran-s007-149-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ الأَعۡرَافِ ﴿149–149﴾ — أبو بكر الشاطري",
+   "fingerprint": "dcdc07d9ee776e26",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs007-149-shaatree.mp4",
+   "duration": 50.23,
+   "at": "2026-11-21 07:33",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795246402.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795246402.png"
+   }
   }
  },
  "fingerprints": [
@@ -16914,7 +16925,8 @@
   "d5ee11de37224977",
   "ed798cf2c538934f",
   "b45f0f0159b84bd3",
-  "a3bcb6df6dde1255"
+  "a3bcb6df6dde1255",
+  "dcdc07d9ee776e26"
  ],
  "last_kind": "quran"
 }
