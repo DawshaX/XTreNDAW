@@ -15586,6 +15586,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795246402.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795246402.png"
    }
+  },
+  "noor-quran-s005-69-r7": {
+   "title": "آيةٌ تُريح القلب 🤍 سُورَةُ المَائـِدَةِ ﴿69–69﴾ — أيمن سويد",
+   "fingerprint": "c61cfd7ae351b80c",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs005-69-aymanswoaid.mp4",
+   "duration": 69.45,
+   "at": "2026-11-21 08:35",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795250135.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795250135.png"
+   }
   }
  },
  "fingerprints": [
@@ -16926,7 +16937,8 @@
   "ed798cf2c538934f",
   "b45f0f0159b84bd3",
   "a3bcb6df6dde1255",
-  "dcdc07d9ee776e26"
+  "dcdc07d9ee776e26",
+  "c61cfd7ae351b80c"
  ],
  "last_kind": "quran"
 }
