@@ -15531,6 +15531,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795227674.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795227674.png"
    }
+  },
+  "noor-quran-s061-1-r8": {
+   "title": "استمع بقلبك… 🎧 سُورَةُ الصَّفِّ ﴿1–4﴾ — علي الحذيفي",
+   "fingerprint": "d5ee11de37224977",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs061-1-hudhaify.mp4",
+   "duration": 69.35,
+   "at": "2026-11-21 03:24",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795231451.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795231451.png"
+   }
   }
  },
  "fingerprints": [
@@ -16866,7 +16877,8 @@
   "44aa93cac9359ffd",
   "e12a63a6fb92788b",
   "71c103ca187ac454",
-  "47dd19e2df15d736"
+  "47dd19e2df15d736",
+  "d5ee11de37224977"
  ],
  "last_kind": "quran"
 }
