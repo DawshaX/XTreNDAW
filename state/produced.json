@@ -15542,6 +15542,17 @@
     "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795231451.mp4",
     "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795231451.png"
    }
+  },
+  "noor-quran-s032-25-r9": {
+   "title": "راحةٌ لصدرِك 🤍 سُورَةُ السَّجۡدَةِ ﴿25–28﴾ — أبو بكر الشاطري",
+   "fingerprint": "ed798cf2c538934f",
+   "video": "/home/runner/work/XTreNDAW/XTreNDAW/content/vids/noor-qs032-25-shaatree.mp4",
+   "duration": 81.31,
+   "at": "2026-11-21 04:26",
+   "urls": {
+    "video": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795235213.mp4",
+    "cover": "https://github.com/DawshaX/XTreNDAW/releases/download/vault/q1795235213.png"
+   }
   }
  },
  "fingerprints": [
@@ -16878,7 +16889,8 @@
   "e12a63a6fb92788b",
   "71c103ca187ac454",
   "47dd19e2df15d736",
-  "d5ee11de37224977"
+  "d5ee11de37224977",
+  "ed798cf2c538934f"
  ],
  "last_kind": "quran"
 }
